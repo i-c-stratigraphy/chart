@@ -1,0 +1,19 @@
+# Gets all the Age objects in the Chart, ordered chronologically/stratigraphically
+# returning their lables in a selected language, e.g. "de" for German - &LANG&
+
+PREFIX gts: <http://resource.geosciml.org/ontology/timescale/gts#>
+PREFIX rank: <http://resource.geosciml.org/ontology/timescale/rank/>
+PREFIX sh: <http://www.w3.org/ns/shacl#>
+
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+SELECT *
+WHERE {
+  ?c skos:inScheme <http://resource.geosciml.org/classifier/ics/ischart> ;
+     gts:rank rank:Age ;
+     sh:order ?order ;
+     skos:altLabel ?al ;
+  .
+
+  FILTER (LANG(?al) = "&LANG&")
+}
+ORDER BY ?order

@@ -1,0 +1,5 @@
+= Chart Queries
+
+This directory contains SPARQL queries for use with the Chart data which is queryable online at https://vocabulary.gswa.kurrawong.ai/sparql.
+
+the queries are described with comments in their individual files.
