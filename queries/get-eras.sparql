@@ -1,0 +1,16 @@
+# Gets all the Era objects in the Chart, ordered chronologically
+
+PREFIX gts: <http://resource.geosciml.org/ontology/timescale/gts#>
+PREFIX rank: <http://resource.geosciml.org/ontology/timescale/rank/>
+PREFIX sh: <http://www.w3.org/ns/shacl#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+SELECT ?order ?pl ?c
+WHERE {
+  ?c skos:inScheme <http://resource.geosciml.org/classifier/ics/ischart> ;
+     gts:rank rank:Era ;
+     sh:order ?order ;
+     skos:prefLabel ?pl ;
+  .
+}
+ORDER BY ?order

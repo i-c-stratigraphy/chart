@@ -1,0 +1,10 @@
+# A DESCRIBE query retries a subgraph (RDF result) from a store, centred on
+# an identified resource. The subgraph contains all inbound and outbound predicates
+# for the resource as well as any dependent Blank Nodes
+#
+# The resource can be given by IRI, e.g. DESCRIBE <iri-for-something> or it can be matched using a WHERE clause
+# e.g. DESCRIBE ?r WHERE { ?r a ex:Thing }
+#
+# Expected variable is a resource IRI: %RESOURCE-IRI%
+
+DESCRIBE <%RESOURCE-IRI%>

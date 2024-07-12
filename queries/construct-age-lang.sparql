@@ -1,0 +1,24 @@
+# Gets a few direct properties only for each Cocnept
+
+PREFIX gts: <http://resource.geosciml.org/ontology/timescale/gts#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX sdo: <https://schema.org/>
+
+CONSTRUCT {
+    ?s ?p ?o
+}
+WHERE {
+    # only whole Concepts
+    ?s a skos:Concept .
+
+    # the predicates we want values for
+    VALUES ?p {
+        gts:rank
+        skos:prefLabel
+        skos:definition
+        sdo:color
+    }
+
+    # get everything, respecting constraints above
+    ?s ?p ?o .
+}
