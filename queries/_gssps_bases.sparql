@@ -1,0 +1,12 @@
+PREFIX gts: <http://resource.geosciml.org/ontology/timescale/gts#>
+
+CONSTRUCT {
+   ?iri2 gts:ratifiedGSSP true .
+}
+WHERE {
+
+    ?iri gts:ratifiedGSSP true .
+
+    BIND (IRI(CONCAT("http://resource.geosciml.org/classifier/ics/ischart/", REPLACE(STRBEFORE(STRAFTER(STR(?iri), "/ischart/Base"), "SP"), "Aux", ""))) as ?iri2)
+}
+ORDER BY ?iri2

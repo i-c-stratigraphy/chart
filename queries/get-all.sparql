@@ -1,0 +1,19 @@
+# Gets all the time period objects in the Chart, ordered chronologically/stratigraphically
+
+PREFIX gts: <http://resource.geosciml.org/ontology/timescale/gts#>
+PREFIX rank: <http://resource.geosciml.org/ontology/timescale/rank/>
+PREFIX sh: <http://www.w3.org/ns/shacl#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+SELECT ?order ?pl ?c
+WHERE {
+  ?c skos:inScheme <http://resource.geosciml.org/classifier/ics/ischart> ;
+     sh:order ?order ;
+     skos:prefLabel ?pl ;
+  .
+
+  MINUS {
+    ?c gts:ratifiedGSSP true .
+  }
+}
+ORDER BY ?order

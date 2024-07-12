@@ -278,6 +278,7 @@ ischart:inMYA
 ischart:Aalenian
     a skos:Concept ;
     gts:rank rank:Age ;
+    gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "пален"@bg ,
@@ -321,6 +322,7 @@ ischart:Aalenian
 ischart:Aeronian
     a skos:Concept ;
     gts:rank rank:Age ;
+    gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "перон"@bg ,
@@ -364,6 +366,7 @@ ischart:Aeronian
 ischart:Albian
     a skos:Concept ;
     gts:rank rank:Age ;
+    gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "плб"@bg ,
@@ -491,6 +494,7 @@ ischart:Aptian
 ischart:Aquitanian
     a skos:Concept ;
     gts:rank rank:Age ;
+    gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "пквитан"@bg ,
@@ -532,6 +536,7 @@ ischart:Aquitanian
 ischart:Artinskian
     a skos:Concept ;
     gts:rank rank:Age ;
+    gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "пртин"@bg ,
@@ -575,6 +580,7 @@ ischart:Artinskian
 ischart:Asselian
     a skos:Concept ;
     gts:rank rank:Age ;
+    gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "пѿел"@bg ,
@@ -618,6 +624,7 @@ ischart:Asselian
 ischart:Bajocian
     a skos:Concept ;
     gts:rank rank:Age ;
+    gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Байоѿ"@bg ,
@@ -661,6 +668,7 @@ ischart:Bajocian
 ischart:Barremian
     a skos:Concept ;
     gts:rank rank:Age ;
+    gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Барем"@bg ,
@@ -744,6 +752,7 @@ ischart:Bartonian
 ischart:Bashkirian
     a skos:Concept ;
     gts:rank rank:Age ;
+    gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Башкир"@bg ,
@@ -787,6 +796,7 @@ ischart:Bashkirian
 ischart:Bathonian
     a skos:Concept ;
     gts:rank rank:Age ;
+    gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Бат"@bg ,
@@ -914,6 +924,7 @@ ischart:Burdigalian
 ischart:Calabrian
     a skos:Concept ;
     gts:rank rank:Age ;
+    gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Калабрий"@bg ,
@@ -1211,6 +1222,7 @@ ischart:CambrianStage4
 ischart:Campanian
     a skos:Concept ;
     gts:rank rank:Age ;
+    gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Кампан"@bg ,
@@ -1254,6 +1266,7 @@ ischart:Campanian
 ischart:Capitanian
     a skos:Concept ;
     gts:rank rank:Age ;
+    gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Капитан"@bg ,
@@ -1297,6 +1310,7 @@ ischart:Capitanian
 ischart:Carnian
     a skos:Concept ;
     gts:rank rank:Age ;
+    gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Карн"@bg ,
@@ -1340,6 +1354,7 @@ ischart:Carnian
 ischart:Cenomanian
     a skos:Concept ;
     gts:rank rank:Age ;
+    gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Ценоман"@bg ,
@@ -1381,6 +1396,7 @@ ischart:Cenomanian
 ischart:Changhsingian
     a skos:Concept ;
     gts:rank rank:Age ;
+    gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Чангшинг"@bg ,
@@ -1424,6 +1440,7 @@ ischart:Changhsingian
 ischart:Chattian
     a skos:Concept ;
     gts:rank rank:Age ;
+    gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Хат"@bg ,
@@ -1465,6 +1482,7 @@ ischart:Chattian
 ischart:Chibanian
     a skos:Concept ;
     gts:rank rank:Age ;
+    gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Pleistocene ;
     skos:definition "A time period from 0.774 to 0.129 million years ago" ;
@@ -1485,6 +1503,7 @@ ischart:Chibanian
 ischart:Coniacian
     a skos:Concept ;
     gts:rank rank:Age ;
+    gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Кониак"@bg ,
@@ -1571,6 +1590,7 @@ ischart:Cryogenian
 ischart:Danian
     a skos:Concept ;
     gts:rank rank:Age ;
+    gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Дан"@bg ,
@@ -1612,6 +1632,7 @@ ischart:Danian
 ischart:Dapingian
     a skos:Concept ;
     gts:rank rank:Age ;
+    gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Дапинг"@bg ,
@@ -1655,6 +1676,7 @@ ischart:Dapingian
 ischart:Darriwilian
     a skos:Concept ;
     gts:rank rank:Age ;
+    gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Даривил"@bg ,
@@ -1698,6 +1720,7 @@ ischart:Darriwilian
 ischart:Drumian
     a skos:Concept ;
     gts:rank rank:Age ;
+    gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Друм"@bg ,
@@ -1782,6 +1805,7 @@ ischart:Ectasian
 ischart:Ediacaran
     a skos:Concept ;
     gts:rank rank:Period ;
+    gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Едиакар"@bg ,
@@ -1825,6 +1849,7 @@ ischart:Ediacaran
 ischart:Eifelian
     a skos:Concept ;
     gts:rank rank:Age ;
+    gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "пйфел"@bg ,
@@ -1868,6 +1893,7 @@ ischart:Eifelian
 ischart:Emsian
     a skos:Concept ;
     gts:rank rank:Age ;
+    gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Емѿ"@bg ,
@@ -1955,6 +1981,7 @@ ischart:Eoarchean
 ischart:Famennian
     a skos:Concept ;
     gts:rank rank:Age ;
+    gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Фамен"@bg ,
@@ -1998,6 +2025,7 @@ ischart:Famennian
 ischart:Floian
     a skos:Concept ;
     gts:rank rank:Age ;
+    gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Flo"@cs ,
@@ -2040,6 +2068,7 @@ ischart:Floian
 ischart:Fortunian
     a skos:Concept ;
     gts:rank rank:Age ;
+    gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Фортун"@bg ,
@@ -2083,6 +2112,7 @@ ischart:Fortunian
 ischart:Frasnian
     a skos:Concept ;
     gts:rank rank:Age ;
+    gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Фран"@bg ,
@@ -2126,6 +2156,7 @@ ischart:Frasnian
 ischart:Gelasian
     a skos:Concept ;
     gts:rank rank:Age ;
+    gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Gelas"@cs ,
@@ -2166,6 +2197,7 @@ ischart:Gelasian
 ischart:Givetian
     a skos:Concept ;
     gts:rank rank:Age ;
+    gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Живет"@bg ,
@@ -2209,6 +2241,7 @@ ischart:Givetian
 ischart:Gorstian
     a skos:Concept ;
     gts:rank rank:Age ;
+    gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Горѿт"@bg ,
@@ -2252,6 +2285,7 @@ ischart:Gorstian
 ischart:Greenlandian
     a skos:Concept ;
     gts:rank rank:Age ;
+    gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Holocene ;
     skos:definition "A time period from 0.0117 to 0.0082 million years ago" ;
@@ -2272,6 +2306,7 @@ ischart:Greenlandian
 ischart:Guzhangian
     a skos:Concept ;
     gts:rank rank:Age ;
+    gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Жужанг"@bg ,
@@ -2399,6 +2434,7 @@ ischart:Hadean
 ischart:Hauterivian
     a skos:Concept ;
     gts:rank rank:Age ;
+    gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Хотрив"@bg ,
@@ -2441,6 +2477,7 @@ ischart:Hauterivian
 ischart:Hettangian
     a skos:Concept ;
     gts:rank rank:Age ;
+    gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Хетанж"@bg ,
@@ -2484,6 +2521,7 @@ ischart:Hettangian
 ischart:Hirnantian
     a skos:Concept ;
     gts:rank rank:Age ;
+    gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Хирнант"@bg ,
@@ -2527,6 +2565,7 @@ ischart:Hirnantian
 ischart:Homerian
     a skos:Concept ;
     gts:rank rank:Age ;
+    gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Хомер"@bg ,
@@ -2570,6 +2609,7 @@ ischart:Homerian
 ischart:Induan
     a skos:Concept ;
     gts:rank rank:Age ;
+    gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Инд"@bg ,
@@ -2612,6 +2652,7 @@ ischart:Induan
 ischart:Jiangshanian
     a skos:Concept ;
     gts:rank rank:Age ;
+    gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel "江山期"@zh ;
     skos:broader ischart:Furongian ;
@@ -2678,6 +2719,7 @@ ischart:Kasimovian
 ischart:Katian
     a skos:Concept ;
     gts:rank rank:Age ;
+    gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Кат"@bg ,
@@ -2721,6 +2763,7 @@ ischart:Katian
 ischart:Kimmeridgian
     a skos:Concept ;
     gts:rank rank:Age ;
+    gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Кимеридж"@bg ,
@@ -2807,6 +2850,7 @@ ischart:Kungurian
 ischart:Ladinian
     a skos:Concept ;
     gts:rank rank:Age ;
+    gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Ладин"@bg ,
@@ -2850,6 +2894,7 @@ ischart:Ladinian
 ischart:Langhian
     a skos:Concept ;
     gts:rank rank:Age ;
+    gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Ланг"@bg ,
@@ -2891,6 +2936,7 @@ ischart:Langhian
 ischart:Lochkovian
     a skos:Concept ;
     gts:rank rank:Age ;
+    gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Ложков"@bg ,
@@ -2934,6 +2980,7 @@ ischart:Lochkovian
 ischart:Ludfordian
     a skos:Concept ;
     gts:rank rank:Age ;
+    gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Лудфорд"@bg ,
@@ -2977,6 +3024,7 @@ ischart:Ludfordian
 ischart:Lutetian
     a skos:Concept ;
     gts:rank rank:Age ;
+    gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Лютеѿ"@bg ,
@@ -3018,6 +3066,7 @@ ischart:Lutetian
 ischart:Maastrichtian
     a skos:Concept ;
     gts:rank rank:Age ;
+    gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Маѿтрихт"@bg ,
@@ -3060,6 +3109,7 @@ ischart:Maastrichtian
 ischart:Meghalayan
     a skos:Concept ;
     gts:rank rank:Age ;
+    gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Holocene ;
     skos:definition "A time period from 0.0042 million years ago to the present" ;
@@ -3123,6 +3173,7 @@ ischart:Mesoarchean
 ischart:Messinian
     a skos:Concept ;
     gts:rank rank:Age ;
+    gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Меѿин"@bg ,
@@ -3293,6 +3344,7 @@ ischart:Norian
 ischart:Northgrippian
     a skos:Concept ;
     gts:rank rank:Age ;
+    gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Holocene ;
     skos:definition "A time period from 0.0082 to 0.0042 million years ago" ;
@@ -3438,6 +3490,7 @@ ischart:Oxfordian
 ischart:Paibian
     a skos:Concept ;
     gts:rank rank:Age ;
+    gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Паиб"@bg ,
@@ -3524,6 +3577,7 @@ ischart:Paleoarchean
 ischart:Piacenzian
     a skos:Concept ;
     gts:rank rank:Age ;
+    gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Пиачен"@bg ,
@@ -3565,6 +3619,7 @@ ischart:Piacenzian
 ischart:Pliensbachian
     a skos:Concept ;
     gts:rank rank:Age ;
+    gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Плиинѿбах"@bg ,
@@ -3608,6 +3663,7 @@ ischart:Pliensbachian
 ischart:Pragian
     a skos:Concept ;
     gts:rank rank:Age ;
+    gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Праг"@bg ,
@@ -3651,6 +3707,7 @@ ischart:Pragian
 ischart:Priabonian
     a skos:Concept ;
     gts:rank rank:Age ;
+    gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Приабон"@bg ,
@@ -3735,6 +3792,7 @@ ischart:Rhaetian
 ischart:Rhuddanian
     a skos:Concept ;
     gts:rank rank:Age ;
+    gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Рудан"@bg ,
@@ -3819,6 +3877,7 @@ ischart:Rhyacian
 ischart:Roadian
     a skos:Concept ;
     gts:rank rank:Age ;
+    gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Роад"@bg ,
@@ -3862,6 +3921,7 @@ ischart:Roadian
 ischart:Rupelian
     a skos:Concept ;
     gts:rank rank:Age ;
+    gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Рупел"@bg ,
@@ -3903,6 +3963,7 @@ ischart:Rupelian
 ischart:Sakmarian
     a skos:Concept ;
     gts:rank rank:Age ;
+    gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Сакмар"@bg ,
@@ -3946,6 +4007,7 @@ ischart:Sakmarian
 ischart:Sandbian
     a skos:Concept ;
     gts:rank rank:Age ;
+    gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Сандб"@bg ,
@@ -3989,6 +4051,7 @@ ischart:Sandbian
 ischart:Santonian
     a skos:Concept ;
     gts:rank rank:Age ;
+    gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Сантон"@bg ,
@@ -4032,6 +4095,7 @@ ischart:Santonian
 ischart:Selandian
     a skos:Concept ;
     gts:rank rank:Age ;
+    gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Селанд"@bg ,
@@ -4116,6 +4180,7 @@ ischart:Serpukhovian
 ischart:Serravallian
     a skos:Concept ;
     gts:rank rank:Age ;
+    gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Саравал"@bg ,
@@ -4157,6 +4222,7 @@ ischart:Serravallian
 ischart:Sheinwoodian
     a skos:Concept ;
     gts:rank rank:Age ;
+    gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Шейнуд"@bg ,
@@ -4241,6 +4307,7 @@ ischart:Siderian
 ischart:Sinemurian
     a skos:Concept ;
     gts:rank rank:Age ;
+    gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Синемур"@bg ,
@@ -4366,6 +4433,7 @@ ischart:Stenian
 ischart:Telychian
     a skos:Concept ;
     gts:rank rank:Age ;
+    gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Телич"@bg ,
@@ -4409,6 +4477,7 @@ ischart:Telychian
 ischart:Thanetian
     a skos:Concept ;
     gts:rank rank:Age ;
+    gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Танет"@bg ,
@@ -4493,6 +4562,7 @@ ischart:Tithonian
 ischart:Toarcian
     a skos:Concept ;
     gts:rank rank:Age ;
+    gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Тоар"@bg ,
@@ -4578,6 +4648,7 @@ ischart:Tonian
 ischart:Tortonian
     a skos:Concept ;
     gts:rank rank:Age ;
+    gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Тортон"@bg ,
@@ -4619,6 +4690,7 @@ ischart:Tortonian
 ischart:Tournaisian
     a skos:Concept ;
     gts:rank rank:Age ;
+    gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Турней"@bg ,
@@ -4662,6 +4734,7 @@ ischart:Tournaisian
 ischart:Tremadocian
     a skos:Concept ;
     gts:rank rank:Age ;
+    gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Тремадок"@bg ,
@@ -4705,6 +4778,7 @@ ischart:Tremadocian
 ischart:Turonian
     a skos:Concept ;
     gts:rank rank:Age ;
+    gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Турон"@bg ,
@@ -4827,6 +4901,7 @@ ischart:Valanginian
 ischart:Visean
     a skos:Concept ;
     gts:rank rank:Age ;
+    gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Визей"@bg ,
@@ -4870,6 +4945,7 @@ ischart:Visean
 ischart:Wordian
     a skos:Concept ;
     gts:rank rank:Age ;
+    gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Уорд"@bg ,
@@ -4913,6 +4989,7 @@ ischart:Wordian
 ischart:Wuchiapingian
     a skos:Concept ;
     gts:rank rank:Age ;
+    gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Вучиапинг"@bg ,
@@ -4956,6 +5033,7 @@ ischart:Wuchiapingian
 ischart:Wuliuan
     a skos:Concept ;
     gts:rank rank:Age ;
+    gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Miaolingian ;
     skos:definition "A time period from 509 to 504.5 million years ago" ;
@@ -4978,6 +5056,7 @@ ischart:Wuliuan
 ischart:Ypresian
     a skos:Concept ;
     gts:rank rank:Age ;
+    gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Ипреѿ"@bg ,
@@ -5019,6 +5098,7 @@ ischart:Ypresian
 ischart:Zanclean
     a skos:Concept ;
     gts:rank rank:Age ;
+    gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Занклѿки"@bg ,
@@ -5060,6 +5140,7 @@ ischart:Zanclean
 ischart:LowerMississippian
     a skos:Concept ;
     gts:rank rank:Epoch ;
+    gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "前期ミシシッピアン紀"@ja ,
@@ -5086,6 +5167,7 @@ ischart:LowerMississippian
 ischart:LowerPennsylvanian
     a skos:Concept ;
     gts:rank rank:Epoch ;
+    gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "前期ペンシルバニア紀"@ja ,
@@ -5112,6 +5194,7 @@ ischart:LowerPennsylvanian
 ischart:MiddleMississippian
     a skos:Concept ;
     gts:rank rank:Epoch ;
+    gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "中期ミシシッピアン紀"@ja ,
@@ -5166,6 +5249,7 @@ ischart:Pridoli
     gts:rank
         rank:Age ,
         rank:Epoch ;
+    gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Пржидол"@bg ,
@@ -5287,6 +5371,7 @@ ischart:CambrianSeries2
 ischart:Carboniferous
     a skos:Concept ;
     gts:rank rank:Period ;
+    gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Карбон"@bg ,
@@ -5378,6 +5463,7 @@ ischart:Cretaceous
 ischart:Lopingian
     a skos:Concept ;
     gts:rank rank:Epoch ;
+    gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Лопинг"@bg ,
@@ -5424,6 +5510,7 @@ ischart:Lopingian
 ischart:LowerOrdovician
     a skos:Concept ;
     gts:rank rank:Epoch ;
+    gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Ранен Ордовик"@bg ,
@@ -5470,6 +5557,7 @@ ischart:LowerOrdovician
 ischart:LowerTriassic
     a skos:Concept ;
     gts:rank rank:Epoch ;
+    gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Раннен Триаѿ"@bg ,
@@ -5515,6 +5603,7 @@ ischart:LowerTriassic
 ischart:Ludlow
     a skos:Concept ;
     gts:rank rank:Epoch ;
+    gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Лудлоу"@bg ,
@@ -5561,6 +5650,7 @@ ischart:Ludlow
 ischart:MiddleDevonian
     a skos:Concept ;
     gts:rank rank:Epoch ;
+    gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Среден Девон"@bg ,
@@ -5607,6 +5697,7 @@ ischart:MiddleDevonian
 ischart:MiddleOrdovician
     a skos:Concept ;
     gts:rank rank:Epoch ;
+    gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Среден Ордовик"@bg ,
@@ -5698,6 +5789,7 @@ ischart:MiddleTriassic
 ischart:Neogene
     a skos:Concept ;
     gts:rank rank:Period ;
+    gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "пеоген"@bg ,
@@ -5742,6 +5834,7 @@ ischart:Neogene
 ischart:Oligocene
     a skos:Concept ;
     gts:rank rank:Epoch ;
+    gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Олигоцен"@bg ,
@@ -5786,6 +5879,7 @@ ischart:Oligocene
 ischart:Pliocene
     a skos:Concept ;
     gts:rank rank:Epoch ;
+    gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Плиоцен"@bg ,
@@ -5830,6 +5924,7 @@ ischart:Pliocene
 ischart:Quaternary
     a skos:Concept ;
     gts:rank rank:Period ;
+    gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Кватернер"@bg ,
@@ -5874,6 +5969,7 @@ ischart:Quaternary
 ischart:Terreneuvian
     a skos:Concept ;
     gts:rank rank:Epoch ;
+    gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Теренеув"@bg ,
@@ -5920,6 +6016,7 @@ ischart:Terreneuvian
 ischart:UpperDevonian
     a skos:Concept ;
     gts:rank rank:Epoch ;
+    gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Къѿен Девон"@bg ,
@@ -6004,6 +6101,7 @@ ischart:UpperPennsylvanian
 ischart:Wenlock
     a skos:Concept ;
     gts:rank rank:Epoch ;
+    gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Венлок"@bg ,
@@ -6050,6 +6148,7 @@ ischart:Wenlock
 ischart:Cenozoic
     a skos:Concept ;
     gts:rank rank:Era ;
+    gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "пеозой"@bg ,
@@ -6097,6 +6196,7 @@ ischart:Cenozoic
 ischart:Devonian
     a skos:Concept ;
     gts:rank rank:Period ;
+    gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Девон"@bg ,
@@ -6144,6 +6244,7 @@ ischart:Devonian
 ischart:Furongian
     a skos:Concept ;
     gts:rank rank:Epoch ;
+    gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Фуронг"@bg ,
@@ -6191,6 +6292,7 @@ ischart:Furongian
 ischart:Guadalupian
     a skos:Concept ;
     gts:rank rank:Epoch ;
+    gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Гуадалуп"@bg ,
@@ -6238,6 +6340,7 @@ ischart:Guadalupian
 ischart:Holocene
     a skos:Concept ;
     gts:rank rank:Epoch ;
+    gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Холоцен"@bg ,
@@ -6283,6 +6386,7 @@ ischart:Holocene
 ischart:Jurassic
     a skos:Concept ;
     gts:rank rank:Period ;
+    gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Юра"@bg ,
@@ -6330,6 +6434,7 @@ ischart:Jurassic
 ischart:Llandovery
     a skos:Concept ;
     gts:rank rank:Epoch ;
+    gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Лиандовери"@bg ,
@@ -6377,6 +6482,7 @@ ischart:Llandovery
 ischart:LowerDevonian
     a skos:Concept ;
     gts:rank rank:Epoch ;
+    gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Ранен Девон"@bg ,
@@ -6469,6 +6575,7 @@ ischart:Mesoproterozoic
 ischart:Mesozoic
     a skos:Concept ;
     gts:rank rank:Era ;
+    gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Мезозой"@bg ,
@@ -6515,6 +6622,7 @@ ischart:Mesozoic
 ischart:Miaolingian
     a skos:Concept ;
     gts:rank rank:Epoch ;
+    gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Cambrian ;
     skos:definition "A time period from 509 to 497 million years ago" ;
@@ -6541,6 +6649,7 @@ ischart:Miaolingian
 ischart:Mississippian
     a skos:Concept ;
     gts:rank rank:Sub-Period ;
+    gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Миѿиѿип"@bg ,
@@ -6588,6 +6697,7 @@ ischart:Mississippian
 ischart:Neoproterozoic
     a skos:Concept ;
     gts:rank rank:Era ;
+    gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "пеопротерозой"@bg ,
@@ -6634,6 +6744,7 @@ ischart:Neoproterozoic
 ischart:Ordovician
     a skos:Concept ;
     gts:rank rank:Period ;
+    gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Ордовик"@bg ,
@@ -6681,6 +6792,7 @@ ischart:Ordovician
 ischart:Paleocene
     a skos:Concept ;
     gts:rank rank:Epoch ;
+    gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Палеоцен"@bg ,
@@ -6728,6 +6840,7 @@ ischart:Paleocene
 ischart:Paleogene
     a skos:Concept ;
     gts:rank rank:Period ;
+    gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Палеоген"@bg ,
@@ -6775,6 +6888,7 @@ ischart:Paleogene
 ischart:Pennsylvanian
     a skos:Concept ;
     gts:rank rank:Sub-Period ;
+    gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Пенѿилван"@bg ,
@@ -6822,6 +6936,7 @@ ischart:Pennsylvanian
 ischart:Permian
     a skos:Concept ;
     gts:rank rank:Period ;
+    gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Перм"@bg ,
@@ -6869,6 +6984,7 @@ ischart:Permian
 ischart:Phanerozoic
     a skos:Concept ;
     gts:rank rank:Eon ;
+    gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Фанерозой"@bg ,
@@ -7005,6 +7121,7 @@ ischart:Proterozoic
 ischart:Triassic
     a skos:Concept ;
     gts:rank rank:Period ;
+    gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Триаѿ"@bg ,
@@ -7095,6 +7212,7 @@ ischart:UpperJurassic
 ischart:UpperOrdovician
     a skos:Concept ;
     gts:rank rank:Epoch ;
+    gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Къѿен Ордовик"@bg ,
@@ -7138,6 +7256,7 @@ ischart:UpperOrdovician
 ischart:UpperTriassic
     a skos:Concept ;
     gts:rank rank:Epoch ;
+    gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Къѿен Триаѿ"@bg ,
@@ -7230,6 +7349,7 @@ ischart:Archean
 ischart:Cambrian
     a skos:Concept ;
     gts:rank rank:Period ;
+    gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Камбрий"@bg ,
@@ -7278,6 +7398,7 @@ ischart:Cambrian
 ischart:Cisuralian
     a skos:Concept ;
     gts:rank rank:Epoch ;
+    gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Циѿурал"@bg ,
@@ -7326,6 +7447,7 @@ ischart:Cisuralian
 ischart:Eocene
     a skos:Concept ;
     gts:rank rank:Epoch ;
+    gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Еоцен"@bg ,
@@ -7372,6 +7494,7 @@ ischart:Eocene
 ischart:LowerJurassic
     a skos:Concept ;
     gts:rank rank:Epoch ;
+    gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Ранна Юра"@bg ,
@@ -7420,6 +7543,7 @@ ischart:LowerJurassic
 ischart:MiddleJurassic
     a skos:Concept ;
     gts:rank rank:Epoch ;
+    gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Средна Юра"@bg ,
@@ -7516,6 +7640,7 @@ ischart:Paleoproterozoic
 ischart:Pleistocene
     a skos:Concept ;
     gts:rank rank:Epoch ;
+    gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Плейѿтоцен"@bg ,
@@ -7562,6 +7687,7 @@ ischart:Pleistocene
 ischart:Silurian
     a skos:Concept ;
     gts:rank rank:Period ;
+    gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Силур"@bg ,
@@ -7657,6 +7783,7 @@ ischart:LowerCretaceous
 ischart:Miocene
     a skos:Concept ;
     gts:rank rank:Epoch ;
+    gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Миоцен"@bg ,
@@ -7705,6 +7832,7 @@ ischart:Miocene
 ischart:Paleozoic
     a skos:Concept ;
     gts:rank rank:Era ;
+    gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Палеозой"@bg ,
@@ -7757,6 +7885,7 @@ ischart:Paleozoic
 ischart:UpperCretaceous
     a skos:Concept ;
     gts:rank rank:Epoch ;
+    gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Къѿна Креда"@bg ,
