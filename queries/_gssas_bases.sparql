@@ -1,0 +1,16 @@
+PREFIX ex: <http://example.com/>
+PREFIX gts: <http://resource.geosciml.org/ontology/timescale/gts#>
+PREFIX ischart: <http://resource.geosciml.org/classifier/ics/ischart/>
+PREFIX time: <http://www.w3.org/2006/time#>
+
+CONSTRUCT {
+    ?iri gts:ratifiedGSSA true .
+}
+WHERE {
+    ?iri time:hasBeginning [
+            ischart:inMYA ?age
+        ] ;
+    .
+
+    FILTER (?age > 999)
+}

@@ -242,8 +242,8 @@ ischart:Periods
 ischart:RGBHex
     a owl:Datatype ;
     rdfs:label "CMYK colour notation" ;
-    rdfs:comment """An 8-bit per channel, hexidecimal representation of RGB colours.
-
+    rdfs:comment """An 8-bit per channel, hexidecimal representation of RGB colours.\r
+\r
 This datatype uses a microformat of "#{R}{G}{B}" with hexidecimal value for {R}, {G} & {B} between 00 and FF."""@en ;
 .
 
@@ -1009,6 +1009,7 @@ ischart:Callovian
 ischart:Calymmian
     a skos:Concept ;
     gts:rank rank:Period ;
+    gts:ratifiedGSSA true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Калим"@bg ,
@@ -1764,6 +1765,7 @@ ischart:Drumian
 ischart:Ectasian
     a skos:Concept ;
     gts:rank rank:Period ;
+    gts:ratifiedGSSA true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Ектаз"@bg ,
@@ -1937,6 +1939,7 @@ ischart:Emsian
 ischart:Eoarchean
     a skos:Concept ;
     gts:rank rank:Era ;
+    gts:ratifiedGSSA true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Еоархай"@bg ,
@@ -2393,6 +2396,7 @@ ischart:Gzhelian
 ischart:Hadean
     a skos:Concept ;
     gts:rank rank:Eon ;
+    gts:ratifiedGSSA true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Hád (spodní hranice není definována)"@cs ,
@@ -3130,6 +3134,7 @@ ischart:Meghalayan
 ischart:Mesoarchean
     a skos:Concept ;
     gts:rank rank:Era ;
+    gts:ratifiedGSSA true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Мезоархай"@bg ,
@@ -3258,6 +3263,7 @@ ischart:Moscovian
 ischart:Neoarchean
     a skos:Concept ;
     gts:rank rank:Era ;
+    gts:ratifiedGSSA true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "пеоархай"@bg ,
@@ -3406,6 +3412,7 @@ ischart:Olenekian
 ischart:Orosirian
     a skos:Concept ;
     gts:rank rank:Period ;
+    gts:ratifiedGSSA true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Ороѿир"@bg ,
@@ -3534,6 +3541,7 @@ ischart:Paibian
 ischart:Paleoarchean
     a skos:Concept ;
     gts:rank rank:Era ;
+    gts:ratifiedGSSA true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Палеоархай"@bg ,
@@ -3836,6 +3844,7 @@ ischart:Rhuddanian
 ischart:Rhyacian
     a skos:Concept ;
     gts:rank rank:Period ;
+    gts:ratifiedGSSA true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Риац"@bg ,
@@ -4266,6 +4275,7 @@ ischart:Sheinwoodian
 ischart:Siderian
     a skos:Concept ;
     gts:rank rank:Period ;
+    gts:ratifiedGSSA true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Сидер"@bg ,
@@ -4351,6 +4361,7 @@ ischart:Sinemurian
 ischart:Statherian
     a skos:Concept ;
     gts:rank rank:Period ;
+    gts:ratifiedGSSA true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Статер"@bg ,
@@ -4392,6 +4403,7 @@ ischart:Statherian
 ischart:Stenian
     a skos:Concept ;
     gts:rank rank:Period ;
+    gts:ratifiedGSSA true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Стен"@bg ,
@@ -4606,6 +4618,7 @@ ischart:Toarcian
 ischart:Tonian
     a skos:Concept ;
     gts:rank rank:Period ;
+    gts:ratifiedGSSA true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Тон"@bg ,
@@ -6530,6 +6543,7 @@ ischart:LowerDevonian
 ischart:Mesoproterozoic
     a skos:Concept ;
     gts:rank rank:Era ;
+    gts:ratifiedGSSA true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Мезопротерозой"@bg ,
@@ -6697,6 +6711,7 @@ ischart:Mississippian
 ischart:Neoproterozoic
     a skos:Concept ;
     gts:rank rank:Era ;
+    gts:ratifiedGSSA true ;
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
@@ -7030,6 +7045,7 @@ ischart:Phanerozoic
 ischart:Precambrian
     a skos:Concept ;
     gts:rank rank:Super-Eon ;
+    gts:ratifiedGSSA true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Прекамбрий"@bg ,
@@ -7075,6 +7091,7 @@ ischart:Precambrian
 ischart:Proterozoic
     a skos:Concept ;
     gts:rank rank:Eon ;
+    gts:ratifiedGSSA true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Протерозой"@bg ,
@@ -7300,6 +7317,7 @@ ischart:UpperTriassic
 ischart:Archean
     a skos:Concept ;
     gts:rank rank:Eon ;
+    gts:ratifiedGSSA true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "прхай"@bg ,
@@ -7592,6 +7610,7 @@ ischart:MiddleJurassic
 ischart:Paleoproterozoic
     a skos:Concept ;
     gts:rank rank:Era ;
+    gts:ratifiedGSSA true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Палеопротерозой"@bg ,
@@ -7936,7 +7955,7 @@ cs:
     dcterms:publisher <https://linked.data.gov.au/org/ics> ;
     owl:versionIRI ischart:2023-09 ;
     owl:versionInfo "2023-09" ;
-    skos:definition """This is a SKOS vocabulary presentation of the time units of the International Chronostratigraphic Chart represented as SKOS Concepts. Beginning and End ages are given for each unit in units of Millions of Years Ago (MYA)."""@en ;
+    skos:definition "This is a SKOS vocabulary presentation of the time units of the International Chronostratigraphic Chart represented as SKOS Concepts. Beginning and End ages are given for each unit in units of Millions of Years Ago (MYA)."@en ;
     skos:hasTopConcept
         ischart:Phanerozoic ,
         ischart:Precambrian ;
@@ -7948,3 +7967,4 @@ cs:
     sdo:copyrightNotice "(c) International Commission on Stratigraphy, 2023"@en ;
     sdo:license <https://creativecommons.org/licenses/by/4.0/> ;
 .
+
