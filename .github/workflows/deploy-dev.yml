@@ -1,0 +1,26 @@
+name: Publish GitHub Pages
+
+on:
+  push:
+    branches:
+      - jae/dynamic-chart
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup pnpm & install workspace
+        uses: pnpm/action-setup@v3
+        with:
+            version: latest
+            run_install: true
+      - name: Build prez-lib
+        working-directory: ./chart-ui
+        run: CI=false pnpm build
+     
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: ./chart-ui/dist
