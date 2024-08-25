@@ -16,9 +16,9 @@ jobs:
         with:
             version: latest
             run_install: true
-      - name: Build prez-lib
+      - name: Build chart ui
         working-directory: ./chart-ui
-        run: CI=false pnpm build
+        run: CI=false pnpm generate
      
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
