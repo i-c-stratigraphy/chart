@@ -1,10 +1,9 @@
 <script setup lang="ts">
 import { sortedNode, type chartNode } from "@/utils/util"
 import { contrastColor, hexToRgb } from "@/utils/color"
+import GSSPGoldenSpike from "./GSSPGoldenSpike.vue";
 // import gsspIcon from "@/assets/gssp-golden-spike.svg";
-import gsspIcon from "@/public/gssp-golden-spike.svg";
-// import gssaIcon from "@/assets/gssa-clock.svg";
-import gssaIcon from "@/public/gssa-clock.svg";
+
 
 const props = defineProps<{
     node: chartNode,
@@ -24,8 +23,8 @@ const node = props.node
                 :data-fg-color="contrastColor(hexToRgb(node.color)!)">
                 {{ getLangVariant(node, props.lang) }}
                 <template v-if="!node.narrower">
-                    <div class="gss-icon" v-if="node.ratifiedGSSA"><img src="./gssp-golden-spike.svg" /></div>
-                    <div class="gss-icon" v-if="node.ratifiedGSSP"><img src="./gssa-clock.svg" /></div>
+                    <div class="gss-icon" v-if="node.ratifiedGSSA"><GSSAClock/></div>
+                    <div class="gss-icon" v-if="node.ratifiedGSSP"><GSSPGoldenSpike/></div>
                 </template>
             </td>
 
