@@ -24,8 +24,8 @@ const node = props.node
                 :data-fg-color="contrastColor(hexToRgb(node.color)!)">
                 {{ getLangVariant(node, props.lang) }}
                 <template v-if="!node.narrower">
-                    <div class="gss-icon" v-if="node.ratifiedGSSA"><img :src="gssaIcon" /></div>
-                    <div class="gss-icon" v-if="node.ratifiedGSSP"><img :src="gsspIcon" /></div>
+                    <div class="gss-icon" v-if="node.ratifiedGSSA"><img src="./gssp-golden-spike.svg" /></div>
+                    <div class="gss-icon" v-if="node.ratifiedGSSP"><img src="./gssa-clock.svg" /></div>
                 </template>
             </td>
 
