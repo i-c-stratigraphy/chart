@@ -2,6 +2,7 @@
 import jsonRawData from "@/assets/chart.json";
 import gsspIcon from "@/assets/gssp-golden-spike.svg";
 import gssaIcon from "@/assets/gssa-clock.svg";
+import { hexToRgb } from "~/utils/color";
 const selectedLang = ref("en");
 // type chartNode = {
 //     narrower?: chartNode[]
@@ -53,10 +54,6 @@ const langs = rawData.hasTopConcept.reduce(flattenLangs, []).flat().filter(x => 
 
 const data = rawData
 
-// type ldItem = {
-//     narrower?: ldItem
-//     [key: string]: any
-// }
 // const getTotalChildrenCount = (data: ldItem, num: number): number => {
 //     if (data.narrower && data.narrower.length) {
 //         let len = data.narrower.length;
@@ -82,15 +79,20 @@ const getRootTotal = () => {
     <select v-model="selectedLang">
         <option v-for="lang in langs" :value="lang">{{ lang }}</option>
     </select>
-
-
+{{ selectedLang }}
+    <table>
+        <ChartCell v-for="n0 in data.hasTopConcept" :node="n0" :lang="selectedLang"/>
+            </table>
+    <br/>
+    <br>
+<!-- 
     <table>
         <tr v-for="n0 in data.hasTopConcept">
             <td :style="` background-color: ${n0.color}`">{{ getLangVariant(n0) }}</td>
             <td>
                 <table v-for="n1 in sortedNode(n0)">
                     <tr>
-                        <td :style="` background-color: ${n1.color}`">{{ getLangVariant(n1) }}
+                        <td :style="` background-color: ${n1.color}`" :data-fg-color="contrastColor(hexToRgb(n1.color))">{{ getLangVariant(n1) }}
                             <template v-if="!n1.narrower">
                                 <div class="gss-icon" v-if="n1.ratifiedGSSA"><img :src="gssaIcon" /></div>
                                 <div class="gss-icon" v-if="n1.ratifiedGSSP"><img :src="gsspIcon" /></div>
@@ -99,7 +101,7 @@ const getRootTotal = () => {
                         <td>
                             <table v-for="n2 in sortedNode(n1)">
                                 <tr>
-                                    <td :style="` background-color: ${n2.color}`">{{ getLangVariant(n2) }}
+                                    <td :style="` background-color: ${n2.color}`" :data-fg-color="contrastColor(hexToRgb(n2.color))">{{ getLangVariant(n2) }}
                                         <template v-if="!n2.narrower">
                                             <div class="gss-icon" v-if="n2.ratifiedGSSA"><img :src="gssaIcon" /></div>
                                             <div class="gss-icon" v-if="n2.ratifiedGSSP"><img :src="gsspIcon" /></div>
@@ -110,6 +112,7 @@ const getRootTotal = () => {
                                         <table v-for="n3 in sortedNode(n2)">
                                             <tr>
                                                 <td :style="` background-color: ${n3.color}`"
+                                                :data-fg-color="contrastColor(hexToRgb(n3.color))"
                                                     :data-hasGSSA="n3.ratifiedGSSA">{{
                                                         getLangVariant(n3) }}
                                                     <template v-if="!n3.narrower">
@@ -121,11 +124,11 @@ const getRootTotal = () => {
                                                 </td>
                                                 <td>
                                                     <table v-for="n4 in sortedNode(n3)">
-                                                        <!--  -->
+                                            
                                                         <tr>
                                                             <td :style="`display:relativ; height: ${n4.hasBeginning.inMYA['@value'] - n4.hasEnd.inMYA['@value']}px;line-height: max(1rem, ${(n4.hasBeginning.inMYA['@value'] - n4.hasEnd.inMYA['@value']) * 10}px); background-color: ${n4.color}`"
                                                                 :data-height="parseInt(n4.hasBeginning.inMYA['@value']) - parseInt(n4.hasEnd.inMYA['@value'])"
-                                                                :data-hasGSSP="n4.ratifiedGSSP" :data-color="n4.color"
+                                                                :data-hasGSSP="n4.ratifiedGSSP" :data-color="n4.color" :data-fg-color="contrastColor(hexToRgb(n4.color))"
                                                                 :data-hasGSSA="n4.ratifiedGSSA">
                                                                 {{ getLangVariant(n4) }}
                                                                 <template v-if="!n4.narrower">
@@ -137,7 +140,7 @@ const getRootTotal = () => {
                                                             </td>
                                                             <td v-if="n4.narrower">
                                                                 <table v-for="n5 in sortedNode(n4)">
-                                                                    <!--  -->
+                                                                    
                                                                     <tr>
                                                                         <td :style="`display:relativ; height: ${n5.hasBeginning.inMYA['@value'] - n5.hasEnd.inMYA['@value']}px;line-height: max(1rem, ${(n5.hasBeginning.inMYA['@value'] - n5.hasEnd.inMYA['@value']) * 10}px); background-color: ${n5.color}`"
                                                                             :data-height="parseInt(n5.hasBeginning.inMYA['@value']) - parseInt(n5.hasEnd.inMYA['@value'])"
@@ -192,56 +195,8 @@ const getRootTotal = () => {
                 </table>
             </td>
         </tr>
-    </table>
-    <!-- <ul class="chart" :data-lang="selectedLang" v-show="false">
-       
-        <li>
-            <span class="vlabel">{{ getLangVariant(data.hasTopConcept[0]) }}</span>
-            <ul>
-                <li v-for="n1 in data.hasTopConcept[0].narrower">
-                    <span class="vlabel">{{ getLangVariant(n1) }}</span>
-                    <ul>
-                        <li v-for="n2 in n1.narrower">
-                            <span class="vlabel">{{ getLangVariant(n2) }}</span>
-                            <ul v-if="n2.narrower">
-                                <li v-for="n3 in n2.narrower">
-                                    <span class="hlabel wide">{{ getLangVariant(n3) }}</span>
-                                    <ul v-if="n3.narrower">
-                                        <li v-for="n4 in n3.narrower">
-                                            <span class="hlabel">{{ getLangVariant(n4) }}</span>
-                                            <span class="gssp">{{ n4.ratifiedGSSP === "true" ? 'G' : '' }}</span>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
+    </table> -->
 
-        </li>
-        <li>
-            <span class="vlabel">{{ getLangVariant(data.hasTopConcept[1]) }}</span>
-            <ul>
-                <li v-for="n1 in data.hasTopConcept[1].narrower">
-                    <span :class="n1.narrower ? 'vlabel' : 'hlabel'">{{ getLangVariant(n1) }}</span>
-                    <ul>
-                        <li v-for="n2 in n1.narrower">
-                            <span class="hlabel">{{ getLangVariant(n2) }}</span>
-                            <ul v-if="n2.narrower">
-                                <li v-for="n3 in n2.narrower">
-                                    <span class="hlabel">{{ getLangVariant(n3) }}</span>
-                                    <span class="gssp">{{ n3.ratifiedGSSP === "true" ? 'G' : '' }}</span>
-                                 
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-
-        </li>
-    </ul> -->
     <pre v-show="false">
     {{ JSON.stringify(data, undefined, 2) }}
 </pre>
@@ -252,7 +207,7 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 </style>
-<style scoped>
+<style>
 table,
 tr,
 td {
@@ -275,9 +230,6 @@ td.age {
     text-align: center;
 }
 
-td:last-child {
-    /* width: 400px; */
-}
 
 td {
     --_bg-color: attr(data-color);
@@ -286,21 +238,12 @@ td {
     position: relative;
     background-color: var(--_bg-color, #ff00ff);
 }
-
-/* td[data-hasGSSP="true"]::after{
-position:absolute;
-content:'G';
-bottom:0;
-right:0;
-color:cornflowerblue
+[data-fg-color="black"]{
+    color: black
 }
-td[data-hasGSSA="true"]::after{
-position:absolute;
-content:'A';
-bottom:0;
-right:0;
-color:goldenrod
-} */
+[data-fg-color="white"]{
+    color: white
+}
 
 .chart {
     width: 600px
