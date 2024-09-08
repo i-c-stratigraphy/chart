@@ -1,39 +1,15 @@
-<script setup>
+<script setup >
 import jsonRawData from "@/assets/chart.json";
-import gsspIcon from "@/assets/gssp-golden-spike.svg";
-import gssaIcon from "@/assets/gssa-clock.svg";
-import { hexToRgb } from "~/utils/color";
-const selectedLang = ref("en");
-// type chartNode = {
-//     narrower?: chartNode[]
-//     [key:string]:any
-// }
-// type root = {
-//     hasTopConcept?: chartNode[]
-//     [key:string]:any
+import d1 from "@/assets/chart.1.json";
+import d2 from "@/assets/chart.2.json";
+import d3 from "@/assets/chart.3.json";
+import d4 from "@/assets/chart.4.json";
+import ChartGridPrecambrian from "~/components/ChartGridPrecambrian.vue";
 
-// }
+const selectedLang = ref("en");
 const rawData = jsonRawData
-// type labelStruct = {
-//     "@language":string 
-//     "@value": string 
-// }
 function onlyUnique(value, index, array) {
     return array.indexOf(value) === index;
-}
-function sortedNode(node) {
-    return node.narrower?.sort((a, b) => parseInt(a.order['@value']) > parseInt(b.order['@value']))
-}
-function getLangVariant(node) {
-    if (Array.isArray(node.altLabel)) {
-        const alt = node.altLabel.filter(x => x["@language"] == selectedLang.value)
-        if (alt.length == 1) {
-            console.log(alt[0]["@value"])
-            return alt[0]["@value"]
-        }
-    }
-    return node.prefLabel["@value"]
-
 }
 
 const flattenLangs = (acc, cur) => {
@@ -54,161 +30,69 @@ const langs = rawData.hasTopConcept.reduce(flattenLangs, []).flat().filter(x => 
 
 const data = rawData
 
-// const getTotalChildrenCount = (data: ldItem, num: number): number => {
-//     if (data.narrower && data.narrower.length) {
-//         let len = data.narrower.length;
-//         num += len;
-//         for (let i = 0; i < len; i++) {
-//             console.log(data.narrower[i].prefLabel['@value'])
-//             console.log(num)
-//             getTotalChildrenCount(data.narrower[i], num);
-//         }
-//         // return num//num
-//     }
-//     return 0;
-// }
+const splits = ['', '', '']
 
-const getRootTotal = () => {
-    var total = 0
-    // getTotalChildrenCount(data.hasTopConcept[0].narrower[0], total) //+ getTotalChildrenCount(data.hasTopConcept[1], total)
-    return total
+function getSplitData(root, splitStart, splitEnd) {
+
+
+
+    return root.narrower[0]
 }
+
+const splitContent = [
+data.hasTopConcept[0],
+    // getSplitData(data.hasTopConcept[0], "", "Cretacieous"),
+    getSplitData(data.hasTopConcept[0], "Jurassic", "Carboniferous"),
+    getSplitData(data.hasTopConcept[0], "Devonian", "Cambrain"),
+]
+
+function getSubpaths(root /*chartNode*/, paths /*string[]*/)/* chartNode*/{
+    // let newroot = {root, narrower:[]}
+    const uPaths =  paths.map(path=>{
+        const s = path.split(".")
+        let sArr = []
+        for(let i =0; 1 < s.length; i++){
+            sArr.push(s.slice(0,i+1).join("."))
+        }
+        return sArr
+    }).flat()
+    console.log(uPaths)
+}
+// getSubpaths({}/*data.hasTopConcept[0]*/, ["Phanerozoic.Cenozoic.Quaternary"])
+
+
 </script>
 <template>
     <h1>chart</h1>
+    <pre>
+        <!-- {{ JSON.stringify(n1, null,2)||'broken' }} -->
+    </pre>
     <select v-model="selectedLang">
         <option v-for="lang in langs" :value="lang">{{ lang }}</option>
     </select>
-{{ selectedLang }}
-    <table>
-        <ChartCell v-for="n0 in data.hasTopConcept" :node="n0" :lang="selectedLang"/>
-            </table>
-    <br/>
-    <br>
-<!-- 
-    <table>
-        <tr v-for="n0 in data.hasTopConcept">
-            <td :style="` background-color: ${n0.color}`">{{ getLangVariant(n0) }}</td>
-            <td>
-                <table v-for="n1 in sortedNode(n0)">
-                    <tr>
-                        <td :style="` background-color: ${n1.color}`" :data-fg-color="contrastColor(hexToRgb(n1.color))">{{ getLangVariant(n1) }}
-                            <template v-if="!n1.narrower">
-                                <div class="gss-icon" v-if="n1.ratifiedGSSA"><img :src="gssaIcon" /></div>
-                                <div class="gss-icon" v-if="n1.ratifiedGSSP"><img :src="gsspIcon" /></div>
-                            </template>
-                        </td>
-                        <td>
-                            <table v-for="n2 in sortedNode(n1)">
-                                <tr>
-                                    <td :style="` background-color: ${n2.color}`" :data-fg-color="contrastColor(hexToRgb(n2.color))">{{ getLangVariant(n2) }}
-                                        <template v-if="!n2.narrower">
-                                            <div class="gss-icon" v-if="n2.ratifiedGSSA"><img :src="gssaIcon" /></div>
-                                            <div class="gss-icon" v-if="n2.ratifiedGSSP"><img :src="gsspIcon" /></div>
-                                        </template>
+    <div class="grid-4">
+        <!-- <ChartGrid v-for="splitNode in splitContent" :node="splitNode" :lang="selectedLang" /> -->
+        <ChartGrid :node="d1" :lang="selectedLang" />
+        <ChartGrid :node="d2" :lang="selectedLang" />
+        <ChartGrid :node="d3" :lang="selectedLang" />
+        <ChartGridPrecambrian :node="d4" :lang="selectedLang" />
+    </div>
 
-                                    </td>
-                                    <td>
-                                        <table v-for="n3 in sortedNode(n2)">
-                                            <tr>
-                                                <td :style="` background-color: ${n3.color}`"
-                                                :data-fg-color="contrastColor(hexToRgb(n3.color))"
-                                                    :data-hasGSSA="n3.ratifiedGSSA">{{
-                                                        getLangVariant(n3) }}
-                                                    <template v-if="!n3.narrower">
-                                                        <div class="gss-icon" v-if="n3.ratifiedGSSA"><img
-                                                                :src="gssaIcon" /></div>
-                                                        <div class="gss-icon" v-if="n3.ratifiedGSSP"><img
-                                                                :src="gsspIcon" /></div>
-                                                    </template>
-                                                </td>
-                                                <td>
-                                                    <table v-for="n4 in sortedNode(n3)">
-                                            
-                                                        <tr>
-                                                            <td :style="`display:relativ; height: ${n4.hasBeginning.inMYA['@value'] - n4.hasEnd.inMYA['@value']}px;line-height: max(1rem, ${(n4.hasBeginning.inMYA['@value'] - n4.hasEnd.inMYA['@value']) * 10}px); background-color: ${n4.color}`"
-                                                                :data-height="parseInt(n4.hasBeginning.inMYA['@value']) - parseInt(n4.hasEnd.inMYA['@value'])"
-                                                                :data-hasGSSP="n4.ratifiedGSSP" :data-color="n4.color" :data-fg-color="contrastColor(hexToRgb(n4.color))"
-                                                                :data-hasGSSA="n4.ratifiedGSSA">
-                                                                {{ getLangVariant(n4) }}
-                                                                <template v-if="!n4.narrower">
-                                                                    <div class="gss-icon" v-if="n4.ratifiedGSSA"><img
-                                                                            :src="gssaIcon" /></div>
-                                                                    <div class="gss-icon" v-if="n4.ratifiedGSSP"><img
-                                                                            :src="gsspIcon" /></div>
-                                                                </template>
-                                                            </td>
-                                                            <td v-if="n4.narrower">
-                                                                <table v-for="n5 in sortedNode(n4)">
-                                                                    
-                                                                    <tr>
-                                                                        <td :style="`display:relativ; height: ${n5.hasBeginning.inMYA['@value'] - n5.hasEnd.inMYA['@value']}px;line-height: max(1rem, ${(n5.hasBeginning.inMYA['@value'] - n5.hasEnd.inMYA['@value']) * 10}px); background-color: ${n5.color}`"
-                                                                            :data-height="parseInt(n5.hasBeginning.inMYA['@value']) - parseInt(n5.hasEnd.inMYA['@value'])"
-                                                                            :data-hasGSSP="n5.ratifiedGSSP"
-                                                                            :data-color="n5.color"
-                                                                            :data-hasGSSA="n5.ratifiedGSSA">
-                                                                            {{ getLangVariant(n5) }}
-                                                                            <template v-if="!n5.narrower">
-                                                                                <div class="gss-icon"
-                                                                                    v-if="n5.ratifiedGSSA"><img
-                                                                                        :src="gssaIcon" /></div>
-                                                                                <div class="gss-icon"
-                                                                                    v-if="n5.ratifiedGSSP"><img
-                                                                                        :src="gsspIcon" /></div>
-                                                                            </template>
-                                                                        </td>
-
-                                                                        <td class="age">
-                                                                            {{ n5.hasBeginning?.["skos:note"] ===
-                                                                                "uncertain" ||
-                                                                                n5.hasEnd?.["skos:note"]
-                                                                            === "uncertain" ? "~" : '' }}
-                                                                            {{ n5.hasEnd.inMYA["@value"] == 0 ?
-                                                                                'Present' :
-                                                                            `${n5.hasEnd.inMYA["@value"]}` }}
-                                                                            {{ n5.hasEnd.marginOfError ? `&mnplus;
-                                                                            ${n5.hasEnd.marginOfError["@value"]}` : ''
-                                                                            }}
-                                                                        </td>
-                                                                    </tr>
-                                                                </table>
-                                                            </td>
-                                                            <td v-else class="age">
-                                                                {{ n4.hasBeginning?.["skos:note"] === "uncertain" ||
-                                                                    n4.hasEnd?.["skos:note"] ===
-                                                                    "uncertain" ? "~" : '' }}
-                                                                {{ n4.hasEnd.inMYA["@value"] == 0 ? 'Present' :
-                                                                    `${n4.hasEnd.inMYA["@value"]}` }}
-                                                                {{ n4.hasEnd.marginOfError ? `&mnplus;
-                                                                ${n4.hasEnd.marginOfError["@value"]}` : '' }}
-                                                            </td>
-                                                        </tr>
-                                                    </table>
-                                                </td>
-                                            </tr>
-                                        </table>
-                                    </td>
-                                </tr>
-                            </table>
-                        </td>
-                    </tr>
-                </table>
-            </td>
-        </tr>
-    </table> -->
-
-    <pre v-show="false">
-    {{ JSON.stringify(data, undefined, 2) }}
-</pre>
 </template>
 <style>
-body{
-    print-color-adjust:exact;
+body {
+    print-color-adjust: exact;
     font-family: Arial, Helvetica, sans-serif;
 }
 </style>
 <style>
-table,
+.grid-4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+/* table,
 tr,
 td {
     border: 1px black solid;
@@ -253,7 +137,7 @@ td {
     border: black solid 1px;
     position: relative;
     list-style: none;
-    /* padding:0px; */
+
 
 }
 
@@ -268,13 +152,13 @@ td {
     position: absolute;
     display: inline-block;
 
-    /* transform: translateX(-100%); */
+
 }
 
 li:has(.vlabel) {
     display: block;
     min-height: 1rem;
-    /* width:4rem; */
+
     outline: red solid 2px
 }
 
@@ -310,5 +194,5 @@ li:has(.hlabel) {
 
 ul:has(.wide) {
     min-width: 8rem;
-}
+} */
 </style>
