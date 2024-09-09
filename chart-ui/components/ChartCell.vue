@@ -29,6 +29,7 @@ const node = props.node
             </td>
 
             <td v-if="!node.narrower" class="age">
+                
                 {{ node.hasBeginning?.["skos:note"] ===
                     "uncertain" ||
                     node.hasEnd?.["skos:note"]

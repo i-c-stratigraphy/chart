@@ -50,8 +50,8 @@ let epochDelta = 1
     --_col-end:6;
     --_bg-color:;
     `"
-    
     >
+    <span class="num-age">
         {{ node.hasBeginning?.["skos:note"] ===
             "uncertain" ||
             node.hasEnd?.["skos:note"]
@@ -62,6 +62,7 @@ let epochDelta = 1
         {{ node.hasEnd.marginOfError ? `&mnplus;
         ${node.hasEnd.marginOfError["@value"]}` : ''
         }}
+        </span>
     </div>
 </template>
 <style scoped>
@@ -78,6 +79,7 @@ let epochDelta = 1
 .text-cell{
     grid-column-start: 5;
     grid-column-end:6;
+    position:relative;
     align-items: baseline;
     justify-content: baseline;
     /* grid-row: span var(--_row-span); */
@@ -94,5 +96,9 @@ let epochDelta = 1
     position:absolute;
     bottom:0;
     right:0;
+}
+.num-age{
+    position:absolute;
+    bottom:0px;
 }
 </style>

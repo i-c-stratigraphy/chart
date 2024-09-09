@@ -25,11 +25,13 @@ if (rank === "Epoch" && props.parentRank != "Sub-Period") {
     epochDelta = 2
 }
 
-
+const handleClick = ()=>{
+    console.log(node.id)
+}
 </script>
 <template>
     <div class=" cell" 
-   
+   @click="handleClick"
     :style="`
     --_col-start:${colStart};
     --_col-end:${!node.narrower ? 7 :colStart + epochDelta };
@@ -55,8 +57,8 @@ if (rank === "Epoch" && props.parentRank != "Sub-Period") {
     --_col-end:8;
     --_bg-color:;
     `"
-    
     >
+    <span class="num-age">
         {{ node.hasBeginning?.["skos:note"] ===
             "uncertain" ||
             node.hasEnd?.["skos:note"]
@@ -67,6 +69,7 @@ if (rank === "Epoch" && props.parentRank != "Sub-Period") {
         {{ node.hasEnd.marginOfError ? `&mnplus;
         ${node.hasEnd.marginOfError["@value"]}` : ''
         }}
+        </span>
     </div>
 </template>
 <style scoped>
@@ -83,6 +86,7 @@ if (rank === "Epoch" && props.parentRank != "Sub-Period") {
 .text-cell{
     grid-column-start: 7;
     grid-column-end:8;
+    position:relative;
     align-items: baseline;
     justify-content: baseline;
     /* grid-row: span var(--_row-span); */
@@ -99,5 +103,9 @@ if (rank === "Epoch" && props.parentRank != "Sub-Period") {
     position:absolute;
     bottom:0;
     right:0;
+}
+.num-age{
+    position:absolute;
+    bottom:0px;
 }
 </style>
