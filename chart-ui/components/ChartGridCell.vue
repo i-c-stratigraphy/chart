@@ -66,7 +66,7 @@ const handleClick = ()=>{
         {{ node.hasEnd.inMYA["@value"] == 0 ?
             'Present' :
             `${node.hasEnd.inMYA["@value"]}` }}
-        {{ node.hasEnd.marginOfError ? `&mnplus;
+        {{ node.hasEnd.marginOfError ? `&pm;
         ${node.hasEnd.marginOfError["@value"]}` : ''
         }}
         </span>

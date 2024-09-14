@@ -1,0 +1,5811 @@
+{
+  "id": "ischart:Phanerozoic",
+  "type": "skos:Concept",
+  "rank": "http://resource.geosciml.org/ontology/timescale/rank/Eon",
+  "ratifiedGSSP": "true",
+  "isDefinedBy": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
+  "altLabel": [
+    {
+      "@language": "bg",
+      "@value": "Фанерозой"
+    },
+    {
+      "@language": "cs",
+      "@value": "Fanerozoikum"
+    },
+    {
+      "@language": "da",
+      "@value": "Phanerozoisk"
+    },
+    {
+      "@language": "de",
+      "@value": "Phanerozoikum"
+    },
+    {
+      "@language": "es",
+      "@value": "Fanerozoico"
+    },
+    {
+      "@language": "et",
+      "@value": "Fanerosoikum"
+    },
+    {
+      "@language": "fi",
+      "@value": "Fanerotsoikum"
+    },
+    {
+      "@language": "fr",
+      "@value": "Phanérozoïque"
+    },
+    {
+      "@language": "hu",
+      "@value": "fanerozoikum"
+    },
+    {
+      "@language": "it",
+      "@value": "fanerozoico"
+    },
+    {
+      "@language": "ja",
+      "@value": "顕生代"
+    },
+    {
+      "@language": "lt",
+      "@value": "Fanerozojus"
+    },
+    {
+      "@language": "nl",
+      "@value": "Phanerozoïcum"
+    },
+    {
+      "@language": "no",
+      "@value": "Fanerozoikum"
+    },
+    {
+      "@language": "pl",
+      "@value": "Fanerozoik"
+    },
+    {
+      "@language": "pt",
+      "@value": "Fanerozóico"
+    },
+    {
+      "@language": "sk",
+      "@value": "fanerozoikum"
+    },
+    {
+      "@language": "sl",
+      "@value": "fanerozoik"
+    },
+    {
+      "@language": "sv",
+      "@value": "fanerozoikum"
+    },
+    {
+      "@language": "zh",
+      "@value": "显生宙"
+    }
+  ],
+  "definition": "A time period from 538.8 million years ago to the present",
+  "inScheme": "http://resource.geosciml.org/classifier/ics/ischart",
+  "narrower": [
+    {
+      "id": "ischart:Cenozoic",
+      "type": "skos:Concept",
+      "rank": "http://resource.geosciml.org/ontology/timescale/rank/Era",
+      "ratifiedGSSP": "true",
+      "isDefinedBy": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
+      "altLabel": [
+        {
+          "@language": "bg",
+          "@value": "пеозой"
+        },
+        {
+          "@language": "cs",
+          "@value": "Kenozoikum"
+        },
+        {
+          "@language": "da",
+          "@value": "Kænozoisk"
+        },
+        {
+          "@language": "de",
+          "@value": "Känozoikum"
+        },
+        {
+          "@language": "en-gb",
+          "@value": "Cainozoic"
+        },
+        {
+          "@language": "en-us",
+          "@value": "Cenozoic"
+        },
+        {
+          "@language": "es",
+          "@value": "Cenozoico"
+        },
+        {
+          "@language": "et",
+          "@value": "Kainosoikum"
+        },
+        {
+          "@language": "fi",
+          "@value": "Kenotsoikum"
+        },
+        {
+          "@language": "fr",
+          "@value": "Cénozoïque"
+        },
+        {
+          "@language": "hu",
+          "@value": "kainozoikum"
+        },
+        {
+          "@language": "it",
+          "@value": "cenozoico"
+        },
+        {
+          "@language": "ja",
+          "@value": "新生代"
+        },
+        {
+          "@language": "lt",
+          "@value": "Cenozojus"
+        },
+        {
+          "@language": "nl",
+          "@value": "Kaenozoïcum"
+        },
+        {
+          "@language": "no",
+          "@value": "Kenozoikum"
+        },
+        {
+          "@language": "pl",
+          "@value": "Kenozoik"
+        },
+        {
+          "@language": "pt",
+          "@value": "Cenozóico"
+        },
+        {
+          "@language": "sk",
+          "@value": "kenozoikum"
+        },
+        {
+          "@language": "sl",
+          "@value": "kenozoik"
+        },
+        {
+          "@language": "sv",
+          "@value": "kenozoikum"
+        },
+        {
+          "@language": "zh",
+          "@value": "新生代"
+        }
+      ],
+      "broader": [
+        "ischart:Phanerozoic"
+      ],
+      "definition": "A time period from 66.0 million years ago to the present",
+      "inScheme": "http://resource.geosciml.org/classifier/ics/ischart",
+      "narrower": [
+        {
+          "id": "ischart:Neogene",
+          "type": "skos:Concept",
+          "rank": "http://resource.geosciml.org/ontology/timescale/rank/Period",
+          "ratifiedGSSP": "true",
+          "isDefinedBy": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
+          "altLabel": [
+            {
+              "@language": "bg",
+              "@value": "пеоген"
+            },
+            {
+              "@language": "cs",
+              "@value": "Neogén"
+            },
+            {
+              "@language": "da",
+              "@value": "Neogen"
+            },
+            {
+              "@language": "de",
+              "@value": "Neogen"
+            },
+            {
+              "@language": "es",
+              "@value": "Neógeno"
+            },
+            {
+              "@language": "et",
+              "@value": "Neogeen"
+            },
+            {
+              "@language": "fi",
+              "@value": "Neogeeni"
+            },
+            {
+              "@language": "fr",
+              "@value": "Néogène"
+            },
+            {
+              "@language": "hu",
+              "@value": "neogén"
+            },
+            {
+              "@language": "it",
+              "@value": "neogene"
+            },
+            {
+              "@language": "ja",
+              "@value": "新第三紀"
+            },
+            {
+              "@language": "lt",
+              "@value": "Neogenas"
+            },
+            {
+              "@language": "nl",
+              "@value": "Neogeen"
+            },
+            {
+              "@language": "no",
+              "@value": "Neogen"
+            },
+            {
+              "@language": "pl",
+              "@value": "Neogen"
+            },
+            {
+              "@language": "pt",
+              "@value": "Neogénico"
+            },
+            {
+              "@language": "sk",
+              "@value": "neogén"
+            },
+            {
+              "@language": "sl",
+              "@value": "neogen"
+            },
+            {
+              "@language": "sv",
+              "@value": "neogen"
+            },
+            {
+              "@language": "zh",
+              "@value": "晚第三纪"
+            }
+          ],
+          "broader": [
+            "ischart:Cenozoic"
+          ],
+          "definition": "A time period from 23.03 to 2.58 million years ago",
+          "inScheme": "http://resource.geosciml.org/classifier/ics/ischart",
+          "narrower": [
+            {
+              "id": "ischart:Miocene",
+              "type": "skos:Concept",
+              "rank": "http://resource.geosciml.org/ontology/timescale/rank/Epoch",
+              "ratifiedGSSP": "true",
+              "isDefinedBy": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
+              "altLabel": [
+                {
+                  "@language": "bg",
+                  "@value": "Миоцен"
+                },
+                {
+                  "@language": "cs",
+                  "@value": "Miocén"
+                },
+                {
+                  "@language": "da",
+                  "@value": "Miocæn"
+                },
+                {
+                  "@language": "de",
+                  "@value": "Miozän"
+                },
+                {
+                  "@language": "es",
+                  "@value": "Mioceno"
+                },
+                {
+                  "@language": "et",
+                  "@value": "Miotseen"
+                },
+                {
+                  "@language": "fi",
+                  "@value": "Mioseeni"
+                },
+                {
+                  "@language": "fr",
+                  "@value": "Miocène"
+                },
+                {
+                  "@language": "hu",
+                  "@value": "miocén"
+                },
+                {
+                  "@language": "it",
+                  "@value": "miocene"
+                },
+                {
+                  "@language": "ja",
+                  "@value": "中新世"
+                },
+                {
+                  "@language": "lt",
+                  "@value": "Miocenas"
+                },
+                {
+                  "@language": "nl",
+                  "@value": "Mioceen"
+                },
+                {
+                  "@language": "no",
+                  "@value": "Miocen"
+                },
+                {
+                  "@language": "pl",
+                  "@value": "Miocen"
+                },
+                {
+                  "@language": "pt",
+                  "@value": "Miocénico"
+                },
+                {
+                  "@language": "sk",
+                  "@value": "miocén"
+                },
+                {
+                  "@language": "sl",
+                  "@value": "miocen"
+                },
+                {
+                  "@language": "sv",
+                  "@value": "miocen"
+                },
+                {
+                  "@language": "zh",
+                  "@value": "中新世"
+                }
+              ],
+              "broader": [
+                "ischart:Neogene"
+              ],
+              "definition": "A time period from 23.03 to 5.333 million years ago",
+              "inScheme": "http://resource.geosciml.org/classifier/ics/ischart",
+              "narrower": [
+                {
+                  "id": "ischart:Aquitanian",
+                  "type": "skos:Concept",
+                  "rank": "http://resource.geosciml.org/ontology/timescale/rank/Age",
+                  "ratifiedGSSP": "true",
+                  "isDefinedBy": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
+                  "altLabel": [
+                    {
+                      "@language": "bg",
+                      "@value": "пквитан"
+                    },
+                    {
+                      "@language": "cs",
+                      "@value": "Aquitan"
+                    },
+                    {
+                      "@language": "da",
+                      "@value": "Aquitanien"
+                    },
+                    {
+                      "@language": "de",
+                      "@value": "Aquitanium"
+                    },
+                    {
+                      "@language": "es",
+                      "@value": "Aquitaninse"
+                    },
+                    {
+                      "@language": "et",
+                      "@value": "Aquitani"
+                    },
+                    {
+                      "@language": "fi",
+                      "@value": "Aquitan"
+                    },
+                    {
+                      "@language": "fr",
+                      "@value": "Aquitanien"
+                    },
+                    {
+                      "@language": "hu",
+                      "@value": "aquitaniai"
+                    },
+                    {
+                      "@language": "it",
+                      "@value": "aquitaniano"
+                    },
+                    {
+                      "@language": "ja",
+                      "@value": "アキタニアン期"
+                    },
+                    {
+                      "@language": "lt",
+                      "@value": "Akvitanis"
+                    },
+                    {
+                      "@language": "nl",
+                      "@value": "Aquitaniën-Vierland"
+                    },
+                    {
+                      "@language": "no",
+                      "@value": "Aquitanium"
+                    },
+                    {
+                      "@language": "pl",
+                      "@value": "Akwitan"
+                    },
+                    {
+                      "@language": "pt",
+                      "@value": "Aquitaniano"
+                    },
+                    {
+                      "@language": "sk",
+                      "@value": "akvitán"
+                    },
+                    {
+                      "@language": "sl",
+                      "@value": "akvitanij"
+                    },
+                    {
+                      "@language": "sv",
+                      "@value": "aquitan"
+                    },
+                    {
+                      "@language": "zh",
+                      "@value": "阿启坦期"
+                    }
+                  ],
+                  "broader": [
+                    "ischart:Miocene"
+                  ],
+                  "definition": "A time period from 23.03 to 20.44 million years ago",
+                  "inScheme": "http://resource.geosciml.org/classifier/ics/ischart",
+                  "notation": "n1",
+                  "prefLabel": {
+                    "@language": "en",
+                    "@value": "Aquitanian"
+                  },
+                  "hasBeginning": {
+                    "inMYA": {
+                      "type": "xsd:decimal",
+                      "@value": "23.03"
+                    }
+                  },
+                  "hasEnd": {
+                    "inMYA": {
+                      "type": "xsd:decimal",
+                      "@value": "20.44"
+                    }
+                  },
+                  "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
+                  "order": {
+                    "type": "xsd:integer",
+                    "@value": "19"
+                  },
+                  "color": "#FFFF33"
+                },
+                {
+                  "id": "ischart:Burdigalian",
+                  "type": "skos:Concept",
+                  "rank": "http://resource.geosciml.org/ontology/timescale/rank/Age",
+                  "isDefinedBy": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
+                  "altLabel": [
+                    {
+                      "@language": "bg",
+                      "@value": "Бурдигал"
+                    },
+                    {
+                      "@language": "cs",
+                      "@value": "Burdigal"
+                    },
+                    {
+                      "@language": "da",
+                      "@value": "Burdigalien"
+                    },
+                    {
+                      "@language": "de",
+                      "@value": "Burdigalium"
+                    },
+                    {
+                      "@language": "es",
+                      "@value": "Burdigaliense"
+                    },
+                    {
+                      "@language": "et",
+                      "@value": "Burdigali"
+                    },
+                    {
+                      "@language": "fi",
+                      "@value": "Burdigal"
+                    },
+                    {
+                      "@language": "fr",
+                      "@value": "Burdigalien"
+                    },
+                    {
+                      "@language": "hu",
+                      "@value": "burdigaliai"
+                    },
+                    {
+                      "@language": "it",
+                      "@value": "burdigaliano"
+                    },
+                    {
+                      "@language": "ja",
+                      "@value": "バーディガリアン期"
+                    },
+                    {
+                      "@language": "lt",
+                      "@value": "Burdigalis"
+                    },
+                    {
+                      "@language": "nl",
+                      "@value": "Burdigaliën-Hemmoor"
+                    },
+                    {
+                      "@language": "no",
+                      "@value": "Burdigalium"
+                    },
+                    {
+                      "@language": "pl",
+                      "@value": "Burdygał"
+                    },
+                    {
+                      "@language": "pt",
+                      "@value": "Burdigaliano"
+                    },
+                    {
+                      "@language": "sk",
+                      "@value": "burdigal"
+                    },
+                    {
+                      "@language": "sl",
+                      "@value": "burdigalij"
+                    },
+                    {
+                      "@language": "sv",
+                      "@value": "burdigal"
+                    },
+                    {
+                      "@language": "zh",
+                      "@value": "布迪加尔期"
+                    }
+                  ],
+                  "broader": [
+                    "ischart:Miocene"
+                  ],
+                  "definition": "A time period from 20.44 to 15.98 million years ago",
+                  "inScheme": "http://resource.geosciml.org/classifier/ics/ischart",
+                  "notation": "n2",
+                  "prefLabel": {
+                    "@language": "en",
+                    "@value": "Burdigalian"
+                  },
+                  "hasBeginning": {
+                    "inMYA": {
+                      "type": "xsd:decimal",
+                      "@value": "20.44"
+                    }
+                  },
+                  "hasEnd": {
+                    "inMYA": {
+                      "type": "xsd:decimal",
+                      "@value": "15.98"
+                    }
+                  },
+                  "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
+                  "order": {
+                    "type": "xsd:integer",
+                    "@value": "18"
+                  },
+                  "color": "#FFFF41"
+                },
+                {
+                  "id": "ischart:Langhian",
+                  "type": "skos:Concept",
+                  "rank": "http://resource.geosciml.org/ontology/timescale/rank/Age",
+                  "ratifiedGSSP": "true",
+                  "isDefinedBy": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
+                  "altLabel": [
+                    {
+                      "@language": "bg",
+                      "@value": "Ланг"
+                    },
+                    {
+                      "@language": "cs",
+                      "@value": "Langh"
+                    },
+                    {
+                      "@language": "da",
+                      "@value": "Langhien"
+                    },
+                    {
+                      "@language": "de",
+                      "@value": "Langhium"
+                    },
+                    {
+                      "@language": "es",
+                      "@value": "Langhiense"
+                    },
+                    {
+                      "@language": "et",
+                      "@value": "Langhi"
+                    },
+                    {
+                      "@language": "fi",
+                      "@value": "Langh"
+                    },
+                    {
+                      "@language": "fr",
+                      "@value": "Langhien"
+                    },
+                    {
+                      "@language": "hu",
+                      "@value": "langhei"
+                    },
+                    {
+                      "@language": "it",
+                      "@value": "langhiano"
+                    },
+                    {
+                      "@language": "ja",
+                      "@value": "ランギアン期"
+                    },
+                    {
+                      "@language": "lt",
+                      "@value": "Langis"
+                    },
+                    {
+                      "@language": "nl",
+                      "@value": "Langhiën-Reinbek"
+                    },
+                    {
+                      "@language": "no",
+                      "@value": "Langhium"
+                    },
+                    {
+                      "@language": "pl",
+                      "@value": "Lang"
+                    },
+                    {
+                      "@language": "pt",
+                      "@value": "Langhiano"
+                    },
+                    {
+                      "@language": "sk",
+                      "@value": "langh"
+                    },
+                    {
+                      "@language": "sl",
+                      "@value": "langhij"
+                    },
+                    {
+                      "@language": "sv",
+                      "@value": "langh"
+                    },
+                    {
+                      "@language": "zh",
+                      "@value": "兰海期"
+                    }
+                  ],
+                  "broader": [
+                    "ischart:Miocene"
+                  ],
+                  "definition": "A time period from 15.98 to 13.82 million years ago",
+                  "inScheme": "http://resource.geosciml.org/classifier/ics/ischart",
+                  "notation": "n3",
+                  "prefLabel": {
+                    "@language": "en",
+                    "@value": "Langhian"
+                  },
+                  "hasBeginning": {
+                    "inMYA": {
+                      "type": "xsd:decimal",
+                      "@value": "15.98"
+                    }
+                  },
+                  "hasEnd": {
+                    "inMYA": {
+                      "type": "xsd:decimal",
+                      "@value": "13.82"
+                    }
+                  },
+                  "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
+                  "order": {
+                    "type": "xsd:integer",
+                    "@value": "17"
+                  },
+                  "color": "#FFFF4D"
+                },
+                {
+                  "id": "ischart:Messinian",
+                  "type": "skos:Concept",
+                  "rank": "http://resource.geosciml.org/ontology/timescale/rank/Age",
+                  "ratifiedGSSP": "true",
+                  "isDefinedBy": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
+                  "altLabel": [
+                    {
+                      "@language": "bg",
+                      "@value": "Меѿин"
+                    },
+                    {
+                      "@language": "cs",
+                      "@value": "Messin"
+                    },
+                    {
+                      "@language": "da",
+                      "@value": "Messinien"
+                    },
+                    {
+                      "@language": "de",
+                      "@value": "Messinium"
+                    },
+                    {
+                      "@language": "es",
+                      "@value": "Messiniense"
+                    },
+                    {
+                      "@language": "et",
+                      "@value": "Messini"
+                    },
+                    {
+                      "@language": "fi",
+                      "@value": "Messina"
+                    },
+                    {
+                      "@language": "fr",
+                      "@value": "Messinien"
+                    },
+                    {
+                      "@language": "hu",
+                      "@value": "messinai"
+                    },
+                    {
+                      "@language": "it",
+                      "@value": "messiniano"
+                    },
+                    {
+                      "@language": "ja",
+                      "@value": "メッシニアン期"
+                    },
+                    {
+                      "@language": "lt",
+                      "@value": "Mesinis"
+                    },
+                    {
+                      "@language": "nl",
+                      "@value": "Susteriën"
+                    },
+                    {
+                      "@language": "no",
+                      "@value": "Messinium"
+                    },
+                    {
+                      "@language": "pl",
+                      "@value": "Messyn"
+                    },
+                    {
+                      "@language": "pt",
+                      "@value": "Messiniano"
+                    },
+                    {
+                      "@language": "sk",
+                      "@value": "messin"
+                    },
+                    {
+                      "@language": "sl",
+                      "@value": "messinij"
+                    },
+                    {
+                      "@language": "sv",
+                      "@value": "messin"
+                    },
+                    {
+                      "@language": "zh",
+                      "@value": "墨西拿期"
+                    }
+                  ],
+                  "broader": [
+                    "ischart:Miocene"
+                  ],
+                  "definition": "A time period from 7.246 to 5.333 million years ago",
+                  "inScheme": "http://resource.geosciml.org/classifier/ics/ischart",
+                  "notation": "n6",
+                  "prefLabel": {
+                    "@language": "en",
+                    "@value": "Messinian"
+                  },
+                  "hasBeginning": {
+                    "inMYA": {
+                      "type": "xsd:decimal",
+                      "@value": "7.246"
+                    }
+                  },
+                  "hasEnd": {
+                    "inMYA": {
+                      "type": "xsd:decimal",
+                      "@value": "5.333"
+                    }
+                  },
+                  "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
+                  "order": {
+                    "type": "xsd:integer",
+                    "@value": "14"
+                  },
+                  "color": "#FFFF73"
+                },
+                {
+                  "id": "ischart:Serravallian",
+                  "type": "skos:Concept",
+                  "rank": "http://resource.geosciml.org/ontology/timescale/rank/Age",
+                  "ratifiedGSSP": "true",
+                  "isDefinedBy": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
+                  "altLabel": [
+                    {
+                      "@language": "bg",
+                      "@value": "Саравал"
+                    },
+                    {
+                      "@language": "cs",
+                      "@value": "Serraval"
+                    },
+                    {
+                      "@language": "da",
+                      "@value": "Serravallien"
+                    },
+                    {
+                      "@language": "de",
+                      "@value": "Serravallium"
+                    },
+                    {
+                      "@language": "es",
+                      "@value": "Serravalliense"
+                    },
+                    {
+                      "@language": "et",
+                      "@value": "Serravalli"
+                    },
+                    {
+                      "@language": "fi",
+                      "@value": "Serravall"
+                    },
+                    {
+                      "@language": "fr",
+                      "@value": "Serravallien"
+                    },
+                    {
+                      "@language": "hu",
+                      "@value": "serravallei"
+                    },
+                    {
+                      "@language": "it",
+                      "@value": "serravaliano"
+                    },
+                    {
+                      "@language": "ja",
+                      "@value": "サーラバリアン期"
+                    },
+                    {
+                      "@language": "lt",
+                      "@value": "Seravalis"
+                    },
+                    {
+                      "@language": "nl",
+                      "@value": "Serravalliën - Langeveld"
+                    },
+                    {
+                      "@language": "no",
+                      "@value": "Servallium"
+                    },
+                    {
+                      "@language": "pl",
+                      "@value": "Serrawal"
+                    },
+                    {
+                      "@language": "pt",
+                      "@value": "Serravaliano"
+                    },
+                    {
+                      "@language": "sk",
+                      "@value": "serravall"
+                    },
+                    {
+                      "@language": "sl",
+                      "@value": "serravallij"
+                    },
+                    {
+                      "@language": "sv",
+                      "@value": "serravall"
+                    },
+                    {
+                      "@language": "zh",
+                      "@value": "塞拉瓦尔期"
+                    }
+                  ],
+                  "broader": [
+                    "ischart:Miocene"
+                  ],
+                  "definition": "A time period from 13.82 to 11.63 million years ago",
+                  "inScheme": "http://resource.geosciml.org/classifier/ics/ischart",
+                  "notation": "n4",
+                  "prefLabel": {
+                    "@language": "en",
+                    "@value": "Serravallian"
+                  },
+                  "hasBeginning": {
+                    "inMYA": {
+                      "type": "xsd:decimal",
+                      "@value": "13.82"
+                    }
+                  },
+                  "hasEnd": {
+                    "inMYA": {
+                      "type": "xsd:decimal",
+                      "@value": "11.63"
+                    }
+                  },
+                  "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
+                  "order": {
+                    "type": "xsd:integer",
+                    "@value": "16"
+                  },
+                  "color": "#FFFF59"
+                },
+                {
+                  "id": "ischart:Tortonian",
+                  "type": "skos:Concept",
+                  "rank": "http://resource.geosciml.org/ontology/timescale/rank/Age",
+                  "ratifiedGSSP": "true",
+                  "isDefinedBy": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
+                  "altLabel": [
+                    {
+                      "@language": "bg",
+                      "@value": "Тортон"
+                    },
+                    {
+                      "@language": "cs",
+                      "@value": "Torton"
+                    },
+                    {
+                      "@language": "da",
+                      "@value": "Tortonien"
+                    },
+                    {
+                      "@language": "de",
+                      "@value": "Tortonium"
+                    },
+                    {
+                      "@language": "es",
+                      "@value": "Tortoniense"
+                    },
+                    {
+                      "@language": "et",
+                      "@value": "Tortoni"
+                    },
+                    {
+                      "@language": "fi",
+                      "@value": "Torton"
+                    },
+                    {
+                      "@language": "fr",
+                      "@value": "Tortonien"
+                    },
+                    {
+                      "@language": "hu",
+                      "@value": "tortonai"
+                    },
+                    {
+                      "@language": "it",
+                      "@value": "toroniano"
+                    },
+                    {
+                      "@language": "ja",
+                      "@value": "トートニアン期"
+                    },
+                    {
+                      "@language": "lt",
+                      "@value": "Tortonis"
+                    },
+                    {
+                      "@language": "nl",
+                      "@value": "Tortoniën - Linne"
+                    },
+                    {
+                      "@language": "no",
+                      "@value": "Tortonium"
+                    },
+                    {
+                      "@language": "pl",
+                      "@value": "Torton"
+                    },
+                    {
+                      "@language": "pt",
+                      "@value": "Tortoniano"
+                    },
+                    {
+                      "@language": "sk",
+                      "@value": "tortón"
+                    },
+                    {
+                      "@language": "sl",
+                      "@value": "tortonij"
+                    },
+                    {
+                      "@language": "sv",
+                      "@value": "torton"
+                    },
+                    {
+                      "@language": "zh",
+                      "@value": "托尔顿期"
+                    }
+                  ],
+                  "broader": [
+                    "ischart:Miocene"
+                  ],
+                  "definition": "A time period from 11.63 to 7.246 million years ago",
+                  "inScheme": "http://resource.geosciml.org/classifier/ics/ischart",
+                  "notation": "n5",
+                  "prefLabel": {
+                    "@language": "en",
+                    "@value": "Tortonian"
+                  },
+                  "hasBeginning": {
+                    "inMYA": {
+                      "type": "xsd:decimal",
+                      "@value": "11.63"
+                    }
+                  },
+                  "hasEnd": {
+                    "inMYA": {
+                      "type": "xsd:decimal",
+                      "@value": "7.246"
+                    }
+                  },
+                  "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
+                  "order": {
+                    "type": "xsd:integer",
+                    "@value": "15"
+                  },
+                  "color": "#FFFF66"
+                }
+              ],
+              "notation": "N1",
+              "prefLabel": {
+                "@language": "en",
+                "@value": "Miocene"
+              },
+              "hasBeginning": {
+                "inMYA": {
+                  "type": "xsd:decimal",
+                  "@value": "23.03"
+                }
+              },
+              "hasEnd": {
+                "inMYA": {
+                  "type": "xsd:decimal",
+                  "@value": "5.333"
+                }
+              },
+              "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
+              "order": {
+                "type": "xsd:integer",
+                "@value": "20"
+              },
+              "color": "#FFFF00"
+            },
+            {
+              "id": "ischart:Pliocene",
+              "type": "skos:Concept",
+              "rank": "http://resource.geosciml.org/ontology/timescale/rank/Epoch",
+              "ratifiedGSSP": "true",
+              "isDefinedBy": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
+              "altLabel": [
+                {
+                  "@language": "bg",
+                  "@value": "Плиоцен"
+                },
+                {
+                  "@language": "cs",
+                  "@value": "Pliocén"
+                },
+                {
+                  "@language": "da",
+                  "@value": "Pliocæn"
+                },
+                {
+                  "@language": "de",
+                  "@value": "Pliozän"
+                },
+                {
+                  "@language": "es",
+                  "@value": "Ploceno"
+                },
+                {
+                  "@language": "et",
+                  "@value": "Pliotseen"
+                },
+                {
+                  "@language": "fi",
+                  "@value": "Plioseeni"
+                },
+                {
+                  "@language": "fr",
+                  "@value": "Pliocène"
+                },
+                {
+                  "@language": "hu",
+                  "@value": "pliocén"
+                },
+                {
+                  "@language": "it",
+                  "@value": "pliocene"
+                },
+                {
+                  "@language": "ja",
+                  "@value": "鮮新世"
+                },
+                {
+                  "@language": "lt",
+                  "@value": "Pliocenas"
+                },
+                {
+                  "@language": "nl",
+                  "@value": "Plioceen"
+                },
+                {
+                  "@language": "no",
+                  "@value": "Pliocen"
+                },
+                {
+                  "@language": "pl",
+                  "@value": "Pliocen"
+                },
+                {
+                  "@language": "pt",
+                  "@value": "Pliocénico"
+                },
+                {
+                  "@language": "sk",
+                  "@value": "pliocén"
+                },
+                {
+                  "@language": "sl",
+                  "@value": "pliocen"
+                },
+                {
+                  "@language": "sv",
+                  "@value": "pliocen"
+                },
+                {
+                  "@language": "zh",
+                  "@value": "上新世"
+                }
+              ],
+              "broader": [
+                "ischart:Neogene"
+              ],
+              "definition": "A time period from 5.333 to 2.58 million years ago",
+              "inScheme": "http://resource.geosciml.org/classifier/ics/ischart",
+              "narrower": [
+                {
+                  "id": "ischart:Piacenzian",
+                  "type": "skos:Concept",
+                  "rank": "http://resource.geosciml.org/ontology/timescale/rank/Age",
+                  "ratifiedGSSP": "true",
+                  "isDefinedBy": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
+                  "altLabel": [
+                    {
+                      "@language": "bg",
+                      "@value": "Пиачен"
+                    },
+                    {
+                      "@language": "cs",
+                      "@value": "Piacenz"
+                    },
+                    {
+                      "@language": "da",
+                      "@value": "Piacenzien"
+                    },
+                    {
+                      "@language": "de",
+                      "@value": "Piacenzium"
+                    },
+                    {
+                      "@language": "es",
+                      "@value": "Plazenciense"
+                    },
+                    {
+                      "@language": "et",
+                      "@value": "Piacenzi"
+                    },
+                    {
+                      "@language": "fi",
+                      "@value": "Piacenz"
+                    },
+                    {
+                      "@language": "fr",
+                      "@value": "Piacenzien"
+                    },
+                    {
+                      "@language": "hu",
+                      "@value": "piacenzai"
+                    },
+                    {
+                      "@language": "it",
+                      "@value": "piacenziano"
+                    },
+                    {
+                      "@language": "ja",
+                      "@value": "ﾋﾟｱｾﾝｼﾞｱﾝ期"
+                    },
+                    {
+                      "@language": "lt",
+                      "@value": "PiaĿenzis"
+                    },
+                    {
+                      "@language": "nl",
+                      "@value": "Reuveriën"
+                    },
+                    {
+                      "@language": "no",
+                      "@value": "Piecenzium"
+                    },
+                    {
+                      "@language": "pl",
+                      "@value": "Piacenz"
+                    },
+                    {
+                      "@language": "pt",
+                      "@value": "Placenciano"
+                    },
+                    {
+                      "@language": "sk",
+                      "@value": "piaĿenz"
+                    },
+                    {
+                      "@language": "sl",
+                      "@value": "piacenzij"
+                    },
+                    {
+                      "@language": "sv",
+                      "@value": "piacenz"
+                    },
+                    {
+                      "@language": "zh",
+                      "@value": "皮亚琴期"
+                    }
+                  ],
+                  "broader": [
+                    "ischart:Pliocene"
+                  ],
+                  "definition": "A time period from 3.60 to 2.58 million years ago",
+                  "inScheme": "http://resource.geosciml.org/classifier/ics/ischart",
+                  "notation": "n8",
+                  "prefLabel": {
+                    "@language": "en",
+                    "@value": "Piacenzian"
+                  },
+                  "hasBeginning": {
+                    "inMYA": {
+                      "type": "xsd:decimal",
+                      "@value": "3.6"
+                    }
+                  },
+                  "hasEnd": {
+                    "inMYA": {
+                      "type": "xsd:decimal",
+                      "@value": "2.58"
+                    }
+                  },
+                  "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
+                  "order": {
+                    "type": "xsd:integer",
+                    "@value": "11"
+                  },
+                  "color": "#FFFFBF"
+                },
+                {
+                  "id": "ischart:Zanclean",
+                  "type": "skos:Concept",
+                  "rank": "http://resource.geosciml.org/ontology/timescale/rank/Age",
+                  "ratifiedGSSP": "true",
+                  "isDefinedBy": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
+                  "altLabel": [
+                    {
+                      "@language": "bg",
+                      "@value": "Занклѿки"
+                    },
+                    {
+                      "@language": "cs",
+                      "@value": "Zancl"
+                    },
+                    {
+                      "@language": "da",
+                      "@value": "Zanclien"
+                    },
+                    {
+                      "@language": "de",
+                      "@value": "Zanclium"
+                    },
+                    {
+                      "@language": "es",
+                      "@value": "Zanclayense"
+                    },
+                    {
+                      "@language": "et",
+                      "@value": "Zancle"
+                    },
+                    {
+                      "@language": "fi",
+                      "@value": "Zancl"
+                    },
+                    {
+                      "@language": "fr",
+                      "@value": "Zancléen"
+                    },
+                    {
+                      "@language": "hu",
+                      "@value": "zanclai"
+                    },
+                    {
+                      "@language": "it",
+                      "@value": "zancleano"
+                    },
+                    {
+                      "@language": "ja",
+                      "@value": "ザンクレアン期"
+                    },
+                    {
+                      "@language": "lt",
+                      "@value": "Zanklis"
+                    },
+                    {
+                      "@language": "nl",
+                      "@value": "Brunssummiën"
+                    },
+                    {
+                      "@language": "no",
+                      "@value": "Zancleium"
+                    },
+                    {
+                      "@language": "pl",
+                      "@value": "Zankl"
+                    },
+                    {
+                      "@language": "pt",
+                      "@value": "Zancleano"
+                    },
+                    {
+                      "@language": "sk",
+                      "@value": "zanclean"
+                    },
+                    {
+                      "@language": "sl",
+                      "@value": "zanclij"
+                    },
+                    {
+                      "@language": "sv",
+                      "@value": "zancl"
+                    },
+                    {
+                      "@language": "zh",
+                      "@value": "赞克勒期"
+                    }
+                  ],
+                  "broader": [
+                    "ischart:Pliocene"
+                  ],
+                  "definition": "A time period from 5.333 to 3.6 million years ago",
+                  "inScheme": "http://resource.geosciml.org/classifier/ics/ischart",
+                  "notation": "n7",
+                  "prefLabel": {
+                    "@language": "en",
+                    "@value": "Zanclean"
+                  },
+                  "hasBeginning": {
+                    "inMYA": {
+                      "type": "xsd:decimal",
+                      "@value": "5.333"
+                    }
+                  },
+                  "hasEnd": {
+                    "inMYA": {
+                      "type": "xsd:decimal",
+                      "@value": "3.6"
+                    }
+                  },
+                  "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
+                  "order": {
+                    "type": "xsd:integer",
+                    "@value": "13"
+                  },
+                  "color": "#FFFFB3"
+                }
+              ],
+              "notation": "N2",
+              "prefLabel": {
+                "@language": "en",
+                "@value": "Pliocene"
+              },
+              "hasBeginning": {
+                "inMYA": {
+                  "type": "xsd:decimal",
+                  "@value": "5.333"
+                }
+              },
+              "hasEnd": {
+                "inMYA": {
+                  "type": "xsd:decimal",
+                  "@value": "2.58"
+                }
+              },
+              "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
+              "order": {
+                "type": "xsd:integer",
+                "@value": "12"
+              },
+              "color": "#FFFF99"
+            }
+          ],
+          "notation": "N",
+          "prefLabel": {
+            "@language": "en",
+            "@value": "Neogene"
+          },
+          "hasBeginning": {
+            "inMYA": {
+              "type": "xsd:decimal",
+              "@value": "23.03"
+            }
+          },
+          "hasEnd": {
+            "inMYA": {
+              "type": "xsd:decimal",
+              "@value": "2.58"
+            }
+          },
+          "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
+          "order": {
+            "type": "xsd:integer",
+            "@value": "21"
+          },
+          "color": "#FFE619"
+        },
+        {
+          "id": "ischart:Paleogene",
+          "type": "skos:Concept",
+          "rank": "http://resource.geosciml.org/ontology/timescale/rank/Period",
+          "ratifiedGSSP": "true",
+          "isDefinedBy": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
+          "altLabel": [
+            {
+              "@language": "bg",
+              "@value": "Палеоген"
+            },
+            {
+              "@language": "cs",
+              "@value": "Paleogén"
+            },
+            {
+              "@language": "da",
+              "@value": "Palæogen"
+            },
+            {
+              "@language": "de",
+              "@value": "Paläogen"
+            },
+            {
+              "@language": "en-gb",
+              "@value": "Palaeogene"
+            },
+            {
+              "@language": "en-us",
+              "@value": "Paleogene"
+            },
+            {
+              "@language": "es",
+              "@value": "Paleógeno"
+            },
+            {
+              "@language": "et",
+              "@value": "Paleogeen"
+            },
+            {
+              "@language": "fi",
+              "@value": "Paleogeeni"
+            },
+            {
+              "@language": "fr",
+              "@value": "Paléogène"
+            },
+            {
+              "@language": "hu",
+              "@value": "paleogén"
+            },
+            {
+              "@language": "it",
+              "@value": "paleogene"
+            },
+            {
+              "@language": "ja",
+              "@value": "古第三紀"
+            },
+            {
+              "@language": "lt",
+              "@value": "Paleogenas"
+            },
+            {
+              "@language": "nl",
+              "@value": "Paleogeen"
+            },
+            {
+              "@language": "no",
+              "@value": "Paleogen"
+            },
+            {
+              "@language": "pl",
+              "@value": "Paleogen"
+            },
+            {
+              "@language": "pt",
+              "@value": "Paleogénico"
+            },
+            {
+              "@language": "sk",
+              "@value": "paleogén"
+            },
+            {
+              "@language": "sl",
+              "@value": "paleogen"
+            },
+            {
+              "@language": "sv",
+              "@value": "paleogen"
+            },
+            {
+              "@language": "zh",
+              "@value": "早第三纪"
+            }
+          ],
+          "broader": [
+            "ischart:Cenozoic"
+          ],
+          "definition": "A time period from 66.0 to 23.03 million years ago",
+          "inScheme": "http://resource.geosciml.org/classifier/ics/ischart",
+          "narrower": [
+            {
+              "id": "ischart:Eocene",
+              "type": "skos:Concept",
+              "rank": "http://resource.geosciml.org/ontology/timescale/rank/Epoch",
+              "ratifiedGSSP": "true",
+              "isDefinedBy": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
+              "altLabel": [
+                {
+                  "@language": "bg",
+                  "@value": "Еоцен"
+                },
+                {
+                  "@language": "cs",
+                  "@value": "Eocén"
+                },
+                {
+                  "@language": "da",
+                  "@value": "Eocæn"
+                },
+                {
+                  "@language": "de",
+                  "@value": "Eozän"
+                },
+                {
+                  "@language": "es",
+                  "@value": "Eoceno"
+                },
+                {
+                  "@language": "et",
+                  "@value": "Eotseen"
+                },
+                {
+                  "@language": "fi",
+                  "@value": "Eoseeni"
+                },
+                {
+                  "@language": "fr",
+                  "@value": "Eocène"
+                },
+                {
+                  "@language": "hu",
+                  "@value": "eocén"
+                },
+                {
+                  "@language": "it",
+                  "@value": "eocene"
+                },
+                {
+                  "@language": "ja",
+                  "@value": "始新世"
+                },
+                {
+                  "@language": "lt",
+                  "@value": "Eocenas"
+                },
+                {
+                  "@language": "nl",
+                  "@value": "Eoceen"
+                },
+                {
+                  "@language": "no",
+                  "@value": "Eocen"
+                },
+                {
+                  "@language": "pl",
+                  "@value": "Eocen"
+                },
+                {
+                  "@language": "pt",
+                  "@value": "Eocénico"
+                },
+                {
+                  "@language": "sk",
+                  "@value": "eocén"
+                },
+                {
+                  "@language": "sl",
+                  "@value": "eocen"
+                },
+                {
+                  "@language": "sv",
+                  "@value": "eocen"
+                },
+                {
+                  "@language": "zh",
+                  "@value": "始新世"
+                }
+              ],
+              "broader": [
+                "ischart:Paleogene"
+              ],
+              "definition": "A time period from 56.0 to 33.9 million years ago",
+              "inScheme": "http://resource.geosciml.org/classifier/ics/ischart",
+              "narrower": [
+                {
+                  "id": "ischart:Bartonian",
+                  "type": "skos:Concept",
+                  "rank": "http://resource.geosciml.org/ontology/timescale/rank/Age",
+                  "isDefinedBy": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
+                  "altLabel": [
+                    {
+                      "@language": "bg",
+                      "@value": "Бартон"
+                    },
+                    {
+                      "@language": "cs",
+                      "@value": "Barton"
+                    },
+                    {
+                      "@language": "da",
+                      "@value": "Bartonien"
+                    },
+                    {
+                      "@language": "de",
+                      "@value": "Bartonium"
+                    },
+                    {
+                      "@language": "es",
+                      "@value": "Bartoniense"
+                    },
+                    {
+                      "@language": "et",
+                      "@value": "Bartoni"
+                    },
+                    {
+                      "@language": "fi",
+                      "@value": "Barton"
+                    },
+                    {
+                      "@language": "fr",
+                      "@value": "Bartonien"
+                    },
+                    {
+                      "@language": "hu",
+                      "@value": "bartoni"
+                    },
+                    {
+                      "@language": "it",
+                      "@value": "bartoniano"
+                    },
+                    {
+                      "@language": "ja",
+                      "@value": "バートニアン期"
+                    },
+                    {
+                      "@language": "lt",
+                      "@value": "Bartonis"
+                    },
+                    {
+                      "@language": "nl",
+                      "@value": "Bartoniën"
+                    },
+                    {
+                      "@language": "no",
+                      "@value": "Barton"
+                    },
+                    {
+                      "@language": "pl",
+                      "@value": "Barton"
+                    },
+                    {
+                      "@language": "pt",
+                      "@value": "Bartoniano"
+                    },
+                    {
+                      "@language": "sk",
+                      "@value": "bartón"
+                    },
+                    {
+                      "@language": "sl",
+                      "@value": "bartonij"
+                    },
+                    {
+                      "@language": "sv",
+                      "@value": "barton"
+                    },
+                    {
+                      "@language": "zh",
+                      "@value": "巴尔顿期"
+                    }
+                  ],
+                  "broader": [
+                    "ischart:Eocene"
+                  ],
+                  "definition": "A time period from 41.2 to 37.71 million years ago",
+                  "inScheme": "http://resource.geosciml.org/classifier/ics/ischart",
+                  "notation": "e6",
+                  "prefLabel": {
+                    "@language": "en",
+                    "@value": "Bartonian"
+                  },
+                  "hasBeginning": {
+                    "inMYA": {
+                      "type": "xsd:decimal",
+                      "@value": "41.2"
+                    }
+                  },
+                  "hasEnd": {
+                    "inMYA": {
+                      "type": "xsd:decimal",
+                      "@value": "37.71"
+                    }
+                  },
+                  "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
+                  "order": {
+                    "type": "xsd:integer",
+                    "@value": "26"
+                  },
+                  "color": "#FDC091"
+                },
+                {
+                  "id": "ischart:Lutetian",
+                  "type": "skos:Concept",
+                  "rank": "http://resource.geosciml.org/ontology/timescale/rank/Age",
+                  "ratifiedGSSP": "true",
+                  "isDefinedBy": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
+                  "altLabel": [
+                    {
+                      "@language": "bg",
+                      "@value": "Лютеѿ"
+                    },
+                    {
+                      "@language": "cs",
+                      "@value": "Lutet"
+                    },
+                    {
+                      "@language": "da",
+                      "@value": "Lutetien"
+                    },
+                    {
+                      "@language": "de",
+                      "@value": "Lutetium"
+                    },
+                    {
+                      "@language": "es",
+                      "@value": "Luteciense"
+                    },
+                    {
+                      "@language": "et",
+                      "@value": "Luteti"
+                    },
+                    {
+                      "@language": "fi",
+                      "@value": "Lutet"
+                    },
+                    {
+                      "@language": "fr",
+                      "@value": "Lutétien"
+                    },
+                    {
+                      "@language": "hu",
+                      "@value": "lutetiai"
+                    },
+                    {
+                      "@language": "it",
+                      "@value": "leteziano"
+                    },
+                    {
+                      "@language": "ja",
+                      "@value": "ルテシアン期"
+                    },
+                    {
+                      "@language": "lt",
+                      "@value": "Liutetis"
+                    },
+                    {
+                      "@language": "nl",
+                      "@value": "Lutetiën"
+                    },
+                    {
+                      "@language": "no",
+                      "@value": "Litetium"
+                    },
+                    {
+                      "@language": "pl",
+                      "@value": "Lutet"
+                    },
+                    {
+                      "@language": "pt",
+                      "@value": "Luteciano"
+                    },
+                    {
+                      "@language": "sk",
+                      "@value": "lutét"
+                    },
+                    {
+                      "@language": "sl",
+                      "@value": "lutecij"
+                    },
+                    {
+                      "@language": "sv",
+                      "@value": "lutet"
+                    },
+                    {
+                      "@language": "zh",
+                      "@value": "卢台特期"
+                    }
+                  ],
+                  "broader": [
+                    "ischart:Eocene"
+                  ],
+                  "definition": "A time period from 47.8 to 41.2 million years ago",
+                  "inScheme": "http://resource.geosciml.org/classifier/ics/ischart",
+                  "notation": "e5",
+                  "prefLabel": {
+                    "@language": "en",
+                    "@value": "Lutetian"
+                  },
+                  "hasBeginning": {
+                    "inMYA": {
+                      "type": "xsd:decimal",
+                      "@value": "47.8"
+                    }
+                  },
+                  "hasEnd": {
+                    "inMYA": {
+                      "type": "xsd:decimal",
+                      "@value": "41.2"
+                    }
+                  },
+                  "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
+                  "order": {
+                    "type": "xsd:integer",
+                    "@value": "27"
+                  },
+                  "color": "#FDB482"
+                },
+                {
+                  "id": "ischart:Priabonian",
+                  "type": "skos:Concept",
+                  "rank": "http://resource.geosciml.org/ontology/timescale/rank/Age",
+                  "ratifiedGSSP": "true",
+                  "isDefinedBy": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
+                  "altLabel": [
+                    {
+                      "@language": "bg",
+                      "@value": "Приабон"
+                    },
+                    {
+                      "@language": "cs",
+                      "@value": "Priabon"
+                    },
+                    {
+                      "@language": "da",
+                      "@value": "Priabonien"
+                    },
+                    {
+                      "@language": "de",
+                      "@value": "Priabonium"
+                    },
+                    {
+                      "@language": "es",
+                      "@value": "Priaboniense"
+                    },
+                    {
+                      "@language": "et",
+                      "@value": "Priaboni"
+                    },
+                    {
+                      "@language": "fi",
+                      "@value": "Priabon"
+                    },
+                    {
+                      "@language": "fr",
+                      "@value": "Priabonien"
+                    },
+                    {
+                      "@language": "hu",
+                      "@value": "priabonai"
+                    },
+                    {
+                      "@language": "it",
+                      "@value": "priaboniano"
+                    },
+                    {
+                      "@language": "ja",
+                      "@value": "プリアボニアン期"
+                    },
+                    {
+                      "@language": "lt",
+                      "@value": "Priabonis"
+                    },
+                    {
+                      "@language": "nl",
+                      "@value": "Priaboniën"
+                    },
+                    {
+                      "@language": "no",
+                      "@value": "Priabon"
+                    },
+                    {
+                      "@language": "pl",
+                      "@value": "Priabon"
+                    },
+                    {
+                      "@language": "pt",
+                      "@value": "Priaboniano"
+                    },
+                    {
+                      "@language": "sk",
+                      "@value": "priabón"
+                    },
+                    {
+                      "@language": "sl",
+                      "@value": "priabonij"
+                    },
+                    {
+                      "@language": "sv",
+                      "@value": "priabon"
+                    },
+                    {
+                      "@language": "zh",
+                      "@value": "普里阿邦期"
+                    }
+                  ],
+                  "broader": [
+                    "ischart:Eocene"
+                  ],
+                  "definition": "A time period from 37.71 to 33.9 million years ago",
+                  "inScheme": "http://resource.geosciml.org/classifier/ics/ischart",
+                  "notation": "e7",
+                  "prefLabel": {
+                    "@language": "en",
+                    "@value": "Priabonian"
+                  },
+                  "hasBeginning": {
+                    "inMYA": {
+                      "type": "xsd:decimal",
+                      "@value": "37.71"
+                    }
+                  },
+                  "hasEnd": {
+                    "inMYA": {
+                      "type": "xsd:decimal",
+                      "@value": "33.9"
+                    }
+                  },
+                  "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
+                  "order": {
+                    "type": "xsd:integer",
+                    "@value": "25"
+                  },
+                  "color": "#FDCDA1"
+                },
+                {
+                  "id": "ischart:Ypresian",
+                  "type": "skos:Concept",
+                  "rank": "http://resource.geosciml.org/ontology/timescale/rank/Age",
+                  "ratifiedGSSP": "true",
+                  "isDefinedBy": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
+                  "altLabel": [
+                    {
+                      "@language": "bg",
+                      "@value": "Ипреѿ"
+                    },
+                    {
+                      "@language": "cs",
+                      "@value": "Ypres"
+                    },
+                    {
+                      "@language": "da",
+                      "@value": "Ypresien"
+                    },
+                    {
+                      "@language": "de",
+                      "@value": "Ypersium"
+                    },
+                    {
+                      "@language": "es",
+                      "@value": "Ypresiense"
+                    },
+                    {
+                      "@language": "et",
+                      "@value": "Ypresi"
+                    },
+                    {
+                      "@language": "fi",
+                      "@value": "Ypres"
+                    },
+                    {
+                      "@language": "fr",
+                      "@value": "Yprésien"
+                    },
+                    {
+                      "@language": "hu",
+                      "@value": "ypresi"
+                    },
+                    {
+                      "@language": "it",
+                      "@value": "ypresiano"
+                    },
+                    {
+                      "@language": "ja",
+                      "@value": "イプレシアン期"
+                    },
+                    {
+                      "@language": "lt",
+                      "@value": "Ypris"
+                    },
+                    {
+                      "@language": "nl",
+                      "@value": "Ypresiën"
+                    },
+                    {
+                      "@language": "no",
+                      "@value": "Ypres"
+                    },
+                    {
+                      "@language": "pl",
+                      "@value": "Ipr"
+                    },
+                    {
+                      "@language": "pt",
+                      "@value": "Ipresiano"
+                    },
+                    {
+                      "@language": "sk",
+                      "@value": "ypres"
+                    },
+                    {
+                      "@language": "sl",
+                      "@value": "ypresij"
+                    },
+                    {
+                      "@language": "sv",
+                      "@value": "ypres"
+                    },
+                    {
+                      "@language": "zh",
+                      "@value": "伊普雷斯期"
+                    }
+                  ],
+                  "broader": [
+                    "ischart:Eocene"
+                  ],
+                  "definition": "A time period from 56.0 to 47.8 million years ago",
+                  "inScheme": "http://resource.geosciml.org/classifier/ics/ischart",
+                  "notation": "e4",
+                  "prefLabel": {
+                    "@language": "en",
+                    "@value": "Ypresian"
+                  },
+                  "hasBeginning": {
+                    "inMYA": {
+                      "type": "xsd:decimal",
+                      "@value": "56.0"
+                    }
+                  },
+                  "hasEnd": {
+                    "inMYA": {
+                      "type": "xsd:decimal",
+                      "@value": "47.8"
+                    }
+                  },
+                  "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
+                  "order": {
+                    "type": "xsd:integer",
+                    "@value": "29"
+                  },
+                  "color": "#FCA773"
+                }
+              ],
+              "notation": "E2",
+              "prefLabel": {
+                "@language": "en",
+                "@value": "Eocene"
+              },
+              "hasBeginning": {
+                "inMYA": {
+                  "type": "xsd:decimal",
+                  "@value": "56.0"
+                }
+              },
+              "hasEnd": {
+                "inMYA": {
+                  "type": "xsd:decimal",
+                  "@value": "33.9"
+                }
+              },
+              "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
+              "order": {
+                "type": "xsd:integer",
+                "@value": "28"
+              },
+              "color": "#FDB46C"
+            },
+            {
+              "id": "ischart:Oligocene",
+              "type": "skos:Concept",
+              "rank": "http://resource.geosciml.org/ontology/timescale/rank/Epoch",
+              "ratifiedGSSP": "true",
+              "isDefinedBy": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
+              "altLabel": [
+                {
+                  "@language": "bg",
+                  "@value": "Олигоцен"
+                },
+                {
+                  "@language": "cs",
+                  "@value": "Oligocén"
+                },
+                {
+                  "@language": "da",
+                  "@value": "Oligocæn"
+                },
+                {
+                  "@language": "de",
+                  "@value": "Oligozän"
+                },
+                {
+                  "@language": "es",
+                  "@value": "Oligoceno"
+                },
+                {
+                  "@language": "et",
+                  "@value": "Oligotseen"
+                },
+                {
+                  "@language": "fi",
+                  "@value": "Oligoseeni"
+                },
+                {
+                  "@language": "fr",
+                  "@value": "Oligocène"
+                },
+                {
+                  "@language": "hu",
+                  "@value": "oligocén"
+                },
+                {
+                  "@language": "it",
+                  "@value": "oligocene"
+                },
+                {
+                  "@language": "ja",
+                  "@value": "漸新世"
+                },
+                {
+                  "@language": "lt",
+                  "@value": "Oligocenas"
+                },
+                {
+                  "@language": "nl",
+                  "@value": "Oliogoceen"
+                },
+                {
+                  "@language": "no",
+                  "@value": "Oligocen"
+                },
+                {
+                  "@language": "pl",
+                  "@value": "Oligocen"
+                },
+                {
+                  "@language": "pt",
+                  "@value": "Oligocénico"
+                },
+                {
+                  "@language": "sk",
+                  "@value": "oligocén"
+                },
+                {
+                  "@language": "sl",
+                  "@value": "oligocen"
+                },
+                {
+                  "@language": "sv",
+                  "@value": "oligocen"
+                },
+                {
+                  "@language": "zh",
+                  "@value": "渐新世"
+                }
+              ],
+              "broader": [
+                "ischart:Paleogene"
+              ],
+              "definition": "A time period from 33.9 to 23.03 million years ago",
+              "inScheme": "http://resource.geosciml.org/classifier/ics/ischart",
+              "narrower": [
+                {
+                  "id": "ischart:Chattian",
+                  "type": "skos:Concept",
+                  "rank": "http://resource.geosciml.org/ontology/timescale/rank/Age",
+                  "ratifiedGSSP": "true",
+                  "isDefinedBy": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
+                  "altLabel": [
+                    {
+                      "@language": "bg",
+                      "@value": "Хат"
+                    },
+                    {
+                      "@language": "cs",
+                      "@value": "Chat"
+                    },
+                    {
+                      "@language": "da",
+                      "@value": "Chattien"
+                    },
+                    {
+                      "@language": "de",
+                      "@value": "Chattium"
+                    },
+                    {
+                      "@language": "es",
+                      "@value": "Chattiense"
+                    },
+                    {
+                      "@language": "et",
+                      "@value": "Chatti"
+                    },
+                    {
+                      "@language": "fi",
+                      "@value": "Chatt"
+                    },
+                    {
+                      "@language": "fr",
+                      "@value": "Chattien"
+                    },
+                    {
+                      "@language": "hu",
+                      "@value": "katti"
+                    },
+                    {
+                      "@language": "it",
+                      "@value": "chattiano"
+                    },
+                    {
+                      "@language": "ja",
+                      "@value": "シャティアン期"
+                    },
+                    {
+                      "@language": "lt",
+                      "@value": "Chatis"
+                    },
+                    {
+                      "@language": "nl",
+                      "@value": "Chattiën"
+                    },
+                    {
+                      "@language": "no",
+                      "@value": "Chattium"
+                    },
+                    {
+                      "@language": "pl",
+                      "@value": "Szat"
+                    },
+                    {
+                      "@language": "pt",
+                      "@value": "Chatiano"
+                    },
+                    {
+                      "@language": "sk",
+                      "@value": "chatt"
+                    },
+                    {
+                      "@language": "sl",
+                      "@value": "chattij"
+                    },
+                    {
+                      "@language": "sv",
+                      "@value": "chatt"
+                    },
+                    {
+                      "@language": "zh",
+                      "@value": "恰特期"
+                    }
+                  ],
+                  "broader": [
+                    "ischart:Oligocene"
+                  ],
+                  "definition": "A time period from 27.82 to 23.03 million years ago",
+                  "inScheme": "http://resource.geosciml.org/classifier/ics/ischart",
+                  "notation": "e9",
+                  "prefLabel": {
+                    "@language": "en",
+                    "@value": "Chattian"
+                  },
+                  "hasBeginning": {
+                    "inMYA": {
+                      "type": "xsd:decimal",
+                      "@value": "27.82"
+                    }
+                  },
+                  "hasEnd": {
+                    "inMYA": {
+                      "type": "xsd:decimal",
+                      "@value": "23.03"
+                    }
+                  },
+                  "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
+                  "order": {
+                    "type": "xsd:integer",
+                    "@value": "22"
+                  },
+                  "color": "#FEE6AA"
+                },
+                {
+                  "id": "ischart:Rupelian",
+                  "type": "skos:Concept",
+                  "rank": "http://resource.geosciml.org/ontology/timescale/rank/Age",
+                  "ratifiedGSSP": "true",
+                  "isDefinedBy": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
+                  "altLabel": [
+                    {
+                      "@language": "bg",
+                      "@value": "Рупел"
+                    },
+                    {
+                      "@language": "cs",
+                      "@value": "Rupel"
+                    },
+                    {
+                      "@language": "da",
+                      "@value": "Rupelien"
+                    },
+                    {
+                      "@language": "de",
+                      "@value": "Rupelium"
+                    },
+                    {
+                      "@language": "es",
+                      "@value": "Rupeliense"
+                    },
+                    {
+                      "@language": "et",
+                      "@value": "Rupeli"
+                    },
+                    {
+                      "@language": "fi",
+                      "@value": "Rupel"
+                    },
+                    {
+                      "@language": "fr",
+                      "@value": "Rupélien"
+                    },
+                    {
+                      "@language": "hu",
+                      "@value": "rupeli"
+                    },
+                    {
+                      "@language": "it",
+                      "@value": "rupeliano"
+                    },
+                    {
+                      "@language": "ja",
+                      "@value": "ルペル期"
+                    },
+                    {
+                      "@language": "lt",
+                      "@value": "Rupelis"
+                    },
+                    {
+                      "@language": "nl",
+                      "@value": "Rupeliën"
+                    },
+                    {
+                      "@language": "no",
+                      "@value": "Rupel"
+                    },
+                    {
+                      "@language": "pl",
+                      "@value": "Rupel"
+                    },
+                    {
+                      "@language": "pt",
+                      "@value": "Rupeliano"
+                    },
+                    {
+                      "@language": "sk",
+                      "@value": "rupel"
+                    },
+                    {
+                      "@language": "sl",
+                      "@value": "rupelij"
+                    },
+                    {
+                      "@language": "sv",
+                      "@value": "rupel"
+                    },
+                    {
+                      "@language": "zh",
+                      "@value": "鲁珀利期"
+                    }
+                  ],
+                  "broader": [
+                    "ischart:Oligocene"
+                  ],
+                  "definition": "A time period from 33.9 to 27.82 million years ago",
+                  "inScheme": "http://resource.geosciml.org/classifier/ics/ischart",
+                  "notation": "e8",
+                  "prefLabel": {
+                    "@language": "en",
+                    "@value": "Rupelian"
+                  },
+                  "hasBeginning": {
+                    "inMYA": {
+                      "type": "xsd:decimal",
+                      "@value": "33.9"
+                    }
+                  },
+                  "hasEnd": {
+                    "inMYA": {
+                      "type": "xsd:decimal",
+                      "@value": "27.82"
+                    }
+                  },
+                  "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
+                  "order": {
+                    "type": "xsd:integer",
+                    "@value": "24"
+                  },
+                  "color": "#FED99A"
+                }
+              ],
+              "notation": "E3",
+              "prefLabel": {
+                "@language": "en",
+                "@value": "Oligocene"
+              },
+              "hasBeginning": {
+                "inMYA": {
+                  "type": "xsd:decimal",
+                  "@value": "33.9"
+                }
+              },
+              "hasEnd": {
+                "inMYA": {
+                  "type": "xsd:decimal",
+                  "@value": "23.03"
+                }
+              },
+              "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
+              "order": {
+                "type": "xsd:integer",
+                "@value": "23"
+              },
+              "color": "#FEC07A"
+            },
+            {
+              "id": "ischart:Paleocene",
+              "type": "skos:Concept",
+              "rank": "http://resource.geosciml.org/ontology/timescale/rank/Epoch",
+              "ratifiedGSSP": "true",
+              "isDefinedBy": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
+              "altLabel": [
+                {
+                  "@language": "bg",
+                  "@value": "Палеоцен"
+                },
+                {
+                  "@language": "cs",
+                  "@value": "Paleocén"
+                },
+                {
+                  "@language": "da",
+                  "@value": "Paleocæn"
+                },
+                {
+                  "@language": "de",
+                  "@value": "Paläozän"
+                },
+                {
+                  "@language": "en-gb",
+                  "@value": "Palaeocene"
+                },
+                {
+                  "@language": "en-us",
+                  "@value": "Paleocene"
+                },
+                {
+                  "@language": "es",
+                  "@value": "Paleoceno"
+                },
+                {
+                  "@language": "et",
+                  "@value": "Paleotseen"
+                },
+                {
+                  "@language": "fi",
+                  "@value": "Paleoseeni"
+                },
+                {
+                  "@language": "fr",
+                  "@value": "Paléocène"
+                },
+                {
+                  "@language": "hu",
+                  "@value": "paleocén"
+                },
+                {
+                  "@language": "it",
+                  "@value": "paleocene"
+                },
+                {
+                  "@language": "ja",
+                  "@value": "暁新世"
+                },
+                {
+                  "@language": "lt",
+                  "@value": "Paleocenas"
+                },
+                {
+                  "@language": "nl",
+                  "@value": "Paleoceen"
+                },
+                {
+                  "@language": "no",
+                  "@value": "Paleocen"
+                },
+                {
+                  "@language": "pl",
+                  "@value": "Paleocen"
+                },
+                {
+                  "@language": "pt",
+                  "@value": "Paleocénico"
+                },
+                {
+                  "@language": "sk",
+                  "@value": "paleocén"
+                },
+                {
+                  "@language": "sl",
+                  "@value": "paleocen"
+                },
+                {
+                  "@language": "sv",
+                  "@value": "paleocen"
+                },
+                {
+                  "@language": "zh",
+                  "@value": "古新世"
+                }
+              ],
+              "broader": [
+                "ischart:Paleogene"
+              ],
+              "definition": "A time period from 66.0 to 56.0 million years ago",
+              "inScheme": "http://resource.geosciml.org/classifier/ics/ischart",
+              "narrower": [
+                {
+                  "id": "ischart:Danian",
+                  "type": "skos:Concept",
+                  "rank": "http://resource.geosciml.org/ontology/timescale/rank/Age",
+                  "ratifiedGSSP": "true",
+                  "isDefinedBy": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
+                  "altLabel": [
+                    {
+                      "@language": "bg",
+                      "@value": "Дан"
+                    },
+                    {
+                      "@language": "cs",
+                      "@value": "Dan"
+                    },
+                    {
+                      "@language": "da",
+                      "@value": "Danien"
+                    },
+                    {
+                      "@language": "de",
+                      "@value": "Danium"
+                    },
+                    {
+                      "@language": "es",
+                      "@value": "Daninese"
+                    },
+                    {
+                      "@language": "et",
+                      "@value": "Taani"
+                    },
+                    {
+                      "@language": "fi",
+                      "@value": "Dan"
+                    },
+                    {
+                      "@language": "fr",
+                      "@value": "Danien"
+                    },
+                    {
+                      "@language": "hu",
+                      "@value": "dániai"
+                    },
+                    {
+                      "@language": "it",
+                      "@value": "daniano"
+                    },
+                    {
+                      "@language": "ja",
+                      "@value": "ダニアン期"
+                    },
+                    {
+                      "@language": "lt",
+                      "@value": "Danis"
+                    },
+                    {
+                      "@language": "nl",
+                      "@value": "Daniën"
+                    },
+                    {
+                      "@language": "no",
+                      "@value": "Danium"
+                    },
+                    {
+                      "@language": "pl",
+                      "@value": "Dan"
+                    },
+                    {
+                      "@language": "pt",
+                      "@value": "Daniano"
+                    },
+                    {
+                      "@language": "sk",
+                      "@value": "dán"
+                    },
+                    {
+                      "@language": "sl",
+                      "@value": "danij"
+                    },
+                    {
+                      "@language": "sv",
+                      "@value": "dan"
+                    },
+                    {
+                      "@language": "zh",
+                      "@value": "丹麦期"
+                    }
+                  ],
+                  "broader": [
+                    "ischart:Paleocene"
+                  ],
+                  "definition": "A time period from 66.0 to 61.6 million years ago",
+                  "inScheme": "http://resource.geosciml.org/classifier/ics/ischart",
+                  "notation": "e1",
+                  "prefLabel": {
+                    "@language": "en",
+                    "@value": "Danian"
+                  },
+                  "hasBeginning": {
+                    "inMYA": {
+                      "type": "xsd:decimal",
+                      "@value": "66.0"
+                    }
+                  },
+                  "hasEnd": {
+                    "inMYA": {
+                      "type": "xsd:decimal",
+                      "@value": "61.6"
+                    }
+                  },
+                  "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
+                  "order": {
+                    "type": "xsd:integer",
+                    "@value": "33"
+                  },
+                  "color": "#FDB462"
+                },
+                {
+                  "id": "ischart:Selandian",
+                  "type": "skos:Concept",
+                  "rank": "http://resource.geosciml.org/ontology/timescale/rank/Age",
+                  "ratifiedGSSP": "true",
+                  "isDefinedBy": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
+                  "altLabel": [
+                    {
+                      "@language": "bg",
+                      "@value": "Селанд"
+                    },
+                    {
+                      "@language": "cs",
+                      "@value": "Seland"
+                    },
+                    {
+                      "@language": "da",
+                      "@value": "Selandien"
+                    },
+                    {
+                      "@language": "de",
+                      "@value": "Selandium"
+                    },
+                    {
+                      "@language": "es",
+                      "@value": "Selandiense"
+                    },
+                    {
+                      "@language": "et",
+                      "@value": "Selandi"
+                    },
+                    {
+                      "@language": "fi",
+                      "@value": "Seland"
+                    },
+                    {
+                      "@language": "fr",
+                      "@value": "Sélandien"
+                    },
+                    {
+                      "@language": "hu",
+                      "@value": "selandi"
+                    },
+                    {
+                      "@language": "it",
+                      "@value": "selandiano"
+                    },
+                    {
+                      "@language": "ja",
+                      "@value": "セランディアン期"
+                    },
+                    {
+                      "@language": "lt",
+                      "@value": "Selandis"
+                    },
+                    {
+                      "@language": "nl",
+                      "@value": "Selandiën"
+                    },
+                    {
+                      "@language": "no",
+                      "@value": "Selandium"
+                    },
+                    {
+                      "@language": "pl",
+                      "@value": "Zeland"
+                    },
+                    {
+                      "@language": "pt",
+                      "@value": "Selandiano"
+                    },
+                    {
+                      "@language": "sk",
+                      "@value": "seland"
+                    },
+                    {
+                      "@language": "sl",
+                      "@value": "selandij"
+                    },
+                    {
+                      "@language": "sv",
+                      "@value": "seland"
+                    },
+                    {
+                      "@language": "zh",
+                      "@value": "塞兰特期"
+                    }
+                  ],
+                  "broader": [
+                    "ischart:Paleocene"
+                  ],
+                  "definition": "A time period from 61.6 to 59.2 million years ago",
+                  "inScheme": "http://resource.geosciml.org/classifier/ics/ischart",
+                  "notation": "e2",
+                  "prefLabel": {
+                    "@language": "en",
+                    "@value": "Selandian"
+                  },
+                  "hasBeginning": {
+                    "inMYA": {
+                      "type": "xsd:decimal",
+                      "@value": "61.6"
+                    }
+                  },
+                  "hasEnd": {
+                    "inMYA": {
+                      "type": "xsd:decimal",
+                      "@value": "59.2"
+                    }
+                  },
+                  "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
+                  "order": {
+                    "type": "xsd:integer",
+                    "@value": "31"
+                  },
+                  "color": "#FEBF65"
+                },
+                {
+                  "id": "ischart:Thanetian",
+                  "type": "skos:Concept",
+                  "rank": "http://resource.geosciml.org/ontology/timescale/rank/Age",
+                  "ratifiedGSSP": "true",
+                  "isDefinedBy": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
+                  "altLabel": [
+                    {
+                      "@language": "bg",
+                      "@value": "Танет"
+                    },
+                    {
+                      "@language": "cs",
+                      "@value": "Thanet"
+                    },
+                    {
+                      "@language": "da",
+                      "@value": "Thanetien"
+                    },
+                    {
+                      "@language": "de",
+                      "@value": "Thanetium"
+                    },
+                    {
+                      "@language": "es",
+                      "@value": "Thanetiense"
+                    },
+                    {
+                      "@language": "et",
+                      "@value": "Thaneti"
+                    },
+                    {
+                      "@language": "fi",
+                      "@value": "Thanet"
+                    },
+                    {
+                      "@language": "fr",
+                      "@value": "Thanétien"
+                    },
+                    {
+                      "@language": "hu",
+                      "@value": "thaneti"
+                    },
+                    {
+                      "@language": "it",
+                      "@value": "thanetiano"
+                    },
+                    {
+                      "@language": "ja",
+                      "@value": "サネティアン期"
+                    },
+                    {
+                      "@language": "lt",
+                      "@value": "Tanetis"
+                    },
+                    {
+                      "@language": "nl",
+                      "@value": "Thanetiën"
+                    },
+                    {
+                      "@language": "no",
+                      "@value": "Thanetium"
+                    },
+                    {
+                      "@language": "pl",
+                      "@value": "Tanet"
+                    },
+                    {
+                      "@language": "pt",
+                      "@value": "Tanetiano"
+                    },
+                    {
+                      "@language": "sk",
+                      "@value": "tanet"
+                    },
+                    {
+                      "@language": "sl",
+                      "@value": "thanetij"
+                    },
+                    {
+                      "@language": "sv",
+                      "@value": "thanet"
+                    },
+                    {
+                      "@language": "zh",
+                      "@value": "塔内提期"
+                    }
+                  ],
+                  "broader": [
+                    "ischart:Paleocene"
+                  ],
+                  "definition": "A time period from 59.2 to 56.0 million years ago",
+                  "inScheme": "http://resource.geosciml.org/classifier/ics/ischart",
+                  "notation": "e3",
+                  "prefLabel": {
+                    "@language": "en",
+                    "@value": "Thanetian"
+                  },
+                  "hasBeginning": {
+                    "inMYA": {
+                      "type": "xsd:decimal",
+                      "@value": "59.2"
+                    }
+                  },
+                  "hasEnd": {
+                    "inMYA": {
+                      "type": "xsd:decimal",
+                      "@value": "56.0"
+                    }
+                  },
+                  "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
+                  "order": {
+                    "type": "xsd:integer",
+                    "@value": "30"
+                  },
+                  "color": "#FDBF6F"
+                }
+              ],
+              "notation": "E1",
+              "prefLabel": {
+                "@language": "en",
+                "@value": "Paleocene"
+              },
+              "hasBeginning": {
+                "inMYA": {
+                  "type": "xsd:decimal",
+                  "@value": "66.0"
+                }
+              },
+              "hasEnd": {
+                "inMYA": {
+                  "type": "xsd:decimal",
+                  "@value": "56.0"
+                }
+              },
+              "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
+              "order": {
+                "type": "xsd:integer",
+                "@value": "34"
+              },
+              "color": "#FDA75F"
+            }
+          ],
+          "notation": "E",
+          "prefLabel": {
+            "@language": "en",
+            "@value": "Paleogene"
+          },
+          "hasBeginning": {
+            "inMYA": {
+              "type": "xsd:decimal",
+              "@value": "66.0"
+            }
+          },
+          "hasEnd": {
+            "inMYA": {
+              "type": "xsd:decimal",
+              "@value": "23.03"
+            }
+          },
+          "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
+          "order": {
+            "type": "xsd:integer",
+            "@value": "35"
+          },
+          "color": "#FD9A52"
+        },
+        {
+          "id": "ischart:Quaternary",
+          "type": "skos:Concept",
+          "rank": "http://resource.geosciml.org/ontology/timescale/rank/Period",
+          "ratifiedGSSP": "true",
+          "isDefinedBy": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
+          "altLabel": [
+            {
+              "@language": "bg",
+              "@value": "Кватернер"
+            },
+            {
+              "@language": "cs",
+              "@value": "Kvartér"
+            },
+            {
+              "@language": "da",
+              "@value": "Kvartær"
+            },
+            {
+              "@language": "de",
+              "@value": "Quartär"
+            },
+            {
+              "@language": "es",
+              "@value": "Cuaternario"
+            },
+            {
+              "@language": "et",
+              "@value": "Kvaternaar"
+            },
+            {
+              "@language": "fi",
+              "@value": "Kvartääri"
+            },
+            {
+              "@language": "fr",
+              "@value": "Quaternaire"
+            },
+            {
+              "@language": "hu",
+              "@value": "negyedidőszak"
+            },
+            {
+              "@language": "it",
+              "@value": "quaternario"
+            },
+            {
+              "@language": "ja",
+              "@value": "第四紀"
+            },
+            {
+              "@language": "lt",
+              "@value": "Kvarteras"
+            },
+            {
+              "@language": "nl",
+              "@value": "Kwartair"
+            },
+            {
+              "@language": "no",
+              "@value": "Kvartær"
+            },
+            {
+              "@language": "pl",
+              "@value": "Czwartorzęd"
+            },
+            {
+              "@language": "pt",
+              "@value": "Quaternário"
+            },
+            {
+              "@language": "sk",
+              "@value": "kvartér"
+            },
+            {
+              "@language": "sl",
+              "@value": "kvartar"
+            },
+            {
+              "@language": "sv",
+              "@value": "kvartär"
+            },
+            {
+              "@language": "zh",
+              "@value": "第四纪"
+            }
+          ],
+          "broader": [
+            "ischart:Cenozoic"
+          ],
+          "definition": "A time period from 2.58 million years ago to the present",
+          "inScheme": "http://resource.geosciml.org/classifier/ics/ischart",
+          "narrower": [
+            {
+              "id": "ischart:Holocene",
+              "type": "skos:Concept",
+              "rank": "http://resource.geosciml.org/ontology/timescale/rank/Epoch",
+              "ratifiedGSSP": "true",
+              "isDefinedBy": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
+              "altLabel": [
+                {
+                  "@language": "bg",
+                  "@value": "Холоцен"
+                },
+                {
+                  "@language": "cs",
+                  "@value": "Holocén"
+                },
+                {
+                  "@language": "da",
+                  "@value": "Holocæn"
+                },
+                {
+                  "@language": "de",
+                  "@value": "Holozän"
+                },
+                {
+                  "@language": "es",
+                  "@value": "Holoceno"
+                },
+                {
+                  "@language": "et",
+                  "@value": "Holotseen"
+                },
+                {
+                  "@language": "fi",
+                  "@value": "Holoseeni"
+                },
+                {
+                  "@language": "fr",
+                  "@value": "Holocène"
+                },
+                {
+                  "@language": "hu",
+                  "@value": "holocén"
+                },
+                {
+                  "@language": "it",
+                  "@value": "olocene"
+                },
+                {
+                  "@language": "ja",
+                  "@value": "完新世"
+                },
+                {
+                  "@language": "lt",
+                  "@value": "Holocenas"
+                },
+                {
+                  "@language": "nl",
+                  "@value": "Holoceen"
+                },
+                {
+                  "@language": "no",
+                  "@value": "Holocen"
+                },
+                {
+                  "@language": "pl",
+                  "@value": "Holocen"
+                },
+                {
+                  "@language": "pt",
+                  "@value": "Holocénico"
+                },
+                {
+                  "@language": "sk",
+                  "@value": "holocén"
+                },
+                {
+                  "@language": "sl",
+                  "@value": "holocen"
+                },
+                {
+                  "@language": "sv",
+                  "@value": "holocen"
+                },
+                {
+                  "@language": "zh",
+                  "@value": "全新世"
+                }
+              ],
+              "broader": [
+                "ischart:Quaternary"
+              ],
+              "definition": "A time period from 0.0117 million years ago to the present",
+              "inScheme": "http://resource.geosciml.org/classifier/ics/ischart",
+              "narrower": [
+                {
+                  "id": "ischart:Greenlandian",
+                  "type": "skos:Concept",
+                  "rank": "http://resource.geosciml.org/ontology/timescale/rank/Age",
+                  "ratifiedGSSP": "true",
+                  "isDefinedBy": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
+                  "broader": [
+                    "ischart:Holocene"
+                  ],
+                  "definition": "A time period from 0.0117 to 0.0082 million years ago",
+                  "inScheme": "http://resource.geosciml.org/classifier/ics/ischart",
+                  "notation": "q5",
+                  "prefLabel": {
+                    "@language": "en",
+                    "@value": "Greenlandian"
+                  },
+                  "hasBeginning": {
+                    "inMYA": {
+                      "type": "xsd:decimal",
+                      "@value": "0.0117"
+                    }
+                  },
+                  "hasEnd": {
+                    "inMYA": {
+                      "type": "xsd:decimal",
+                      "@value": "0.0082"
+                    }
+                  },
+                  "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
+                  "order": {
+                    "type": "xsd:integer",
+                    "@value": "3"
+                  },
+                  "color": "#FEECDB"
+                },
+                {
+                  "id": "ischart:Meghalayan",
+                  "type": "skos:Concept",
+                  "rank": "http://resource.geosciml.org/ontology/timescale/rank/Age",
+                  "ratifiedGSSP": "true",
+                  "isDefinedBy": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
+                  "broader": [
+                    "ischart:Holocene"
+                  ],
+                  "definition": "A time period from 0.0042 million years ago to the present",
+                  "inScheme": "http://resource.geosciml.org/classifier/ics/ischart",
+                  "notation": "q7",
+                  "prefLabel": {
+                    "@language": "en",
+                    "@value": "Meghalayan"
+                  },
+                  "hasBeginning": {
+                    "inMYA": {
+                      "type": "xsd:decimal",
+                      "@value": "0.0042"
+                    }
+                  },
+                  "hasEnd": {
+                    "inMYA": {
+                      "type": "xsd:integer",
+                      "@value": "0"
+                    }
+                  },
+                  "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
+                  "order": {
+                    "type": "xsd:integer",
+                    "@value": "1"
+                  },
+                  "color": "#FDEDEC"
+                },
+                {
+                  "id": "ischart:Northgrippian",
+                  "type": "skos:Concept",
+                  "rank": "http://resource.geosciml.org/ontology/timescale/rank/Age",
+                  "ratifiedGSSP": "true",
+                  "isDefinedBy": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
+                  "broader": [
+                    "ischart:Holocene"
+                  ],
+                  "definition": "A time period from 0.0082 to 0.0042 million years ago",
+                  "inScheme": "http://resource.geosciml.org/classifier/ics/ischart",
+                  "notation": "q6",
+                  "prefLabel": {
+                    "@language": "en",
+                    "@value": "Northgrippian"
+                  },
+                  "hasBeginning": {
+                    "inMYA": {
+                      "type": "xsd:decimal",
+                      "@value": "0.0082"
+                    }
+                  },
+                  "hasEnd": {
+                    "inMYA": {
+                      "type": "xsd:decimal",
+                      "@value": "0.0042"
+                    }
+                  },
+                  "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
+                  "order": {
+                    "type": "xsd:integer",
+                    "@value": "2"
+                  },
+                  "color": "#FDECE4"
+                }
+              ],
+              "notation": "Q2",
+              "prefLabel": {
+                "@language": "en",
+                "@value": "Holocene"
+              },
+              "hasBeginning": {
+                "inMYA": {
+                  "type": "xsd:decimal",
+                  "@value": "0.0117"
+                }
+              },
+              "hasEnd": {
+                "inMYA": {
+                  "type": "xsd:integer",
+                  "@value": "0"
+                }
+              },
+              "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
+              "order": {
+                "type": "xsd:integer",
+                "@value": "4"
+              },
+              "color": "#FEEBD2"
+            },
+            {
+              "id": "ischart:Pleistocene",
+              "type": "skos:Concept",
+              "rank": "http://resource.geosciml.org/ontology/timescale/rank/Epoch",
+              "ratifiedGSSP": "true",
+              "isDefinedBy": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
+              "altLabel": [
+                {
+                  "@language": "bg",
+                  "@value": "Плейѿтоцен"
+                },
+                {
+                  "@language": "cs",
+                  "@value": "Pleistocén"
+                },
+                {
+                  "@language": "da",
+                  "@value": "Pleistocæn"
+                },
+                {
+                  "@language": "de",
+                  "@value": "Pleistozän"
+                },
+                {
+                  "@language": "es",
+                  "@value": "Pleistoceno"
+                },
+                {
+                  "@language": "et",
+                  "@value": "Pleistotseen"
+                },
+                {
+                  "@language": "fi",
+                  "@value": "Pleistoseeni"
+                },
+                {
+                  "@language": "fr",
+                  "@value": "Pléistocène"
+                },
+                {
+                  "@language": "hu",
+                  "@value": "pleisztocén"
+                },
+                {
+                  "@language": "it",
+                  "@value": "pleistocene"
+                },
+                {
+                  "@language": "ja",
+                  "@value": "更新世"
+                },
+                {
+                  "@language": "lt",
+                  "@value": "Pleistocenas"
+                },
+                {
+                  "@language": "nl",
+                  "@value": "Pleistoceen"
+                },
+                {
+                  "@language": "no",
+                  "@value": "Pleistocen"
+                },
+                {
+                  "@language": "pl",
+                  "@value": "Plejstocen"
+                },
+                {
+                  "@language": "pt",
+                  "@value": "Plistocénico"
+                },
+                {
+                  "@language": "sk",
+                  "@value": "pleistocén"
+                },
+                {
+                  "@language": "sl",
+                  "@value": "pleistocen"
+                },
+                {
+                  "@language": "sv",
+                  "@value": "pleistocen"
+                },
+                {
+                  "@language": "zh",
+                  "@value": "更新世"
+                }
+              ],
+              "broader": [
+                "ischart:Quaternary"
+              ],
+              "definition": "A time period from 2.58 to 0.0117 million years ago",
+              "inScheme": "http://resource.geosciml.org/classifier/ics/ischart",
+              "narrower": [
+                {
+                  "id": "ischart:Calabrian",
+                  "type": "skos:Concept",
+                  "rank": "http://resource.geosciml.org/ontology/timescale/rank/Age",
+                  "ratifiedGSSP": "true",
+                  "isDefinedBy": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
+                  "altLabel": [
+                    {
+                      "@language": "bg",
+                      "@value": "Калабрий"
+                    },
+                    {
+                      "@language": "cs",
+                      "@value": "Calabr"
+                    },
+                    {
+                      "@language": "da",
+                      "@value": "Calabrian"
+                    },
+                    {
+                      "@language": "de",
+                      "@value": "Calabrium"
+                    },
+                    {
+                      "@language": "es",
+                      "@value": "Calabriense"
+                    },
+                    {
+                      "@language": "et",
+                      "@value": "Kalaabria"
+                    },
+                    {
+                      "@language": "fi",
+                      "@value": "Calabria"
+                    },
+                    {
+                      "@language": "fr",
+                      "@value": "Calabrien"
+                    },
+                    {
+                      "@language": "hu",
+                      "@value": "kalabriai"
+                    },
+                    {
+                      "@language": "it",
+                      "@value": "calabriano"
+                    },
+                    {
+                      "@language": "ja",
+                      "@value": "カラブリア期"
+                    },
+                    {
+                      "@language": "lt",
+                      "@value": "Kalabris"
+                    },
+                    {
+                      "@language": "nl",
+                      "@value": "Onder Pleistoceen/ Hoog Terras"
+                    },
+                    {
+                      "@language": "no",
+                      "@value": "Calabrium"
+                    },
+                    {
+                      "@language": "pl",
+                      "@value": "Kalambr"
+                    },
+                    {
+                      "@language": "pt",
+                      "@value": "Calabriano"
+                    },
+                    {
+                      "@language": "sk",
+                      "@value": "kalábrian"
+                    },
+                    {
+                      "@language": "sl",
+                      "@value": "calabrij"
+                    },
+                    {
+                      "@language": "sv",
+                      "@value": "calabr"
+                    },
+                    {
+                      "@language": "zh",
+                      "@value": "卡拉布里亚期"
+                    }
+                  ],
+                  "broader": [
+                    "ischart:Pleistocene"
+                  ],
+                  "definition": "A time period from 1.8 to 0.774 million years ago",
+                  "inScheme": "http://resource.geosciml.org/classifier/ics/ischart",
+                  "notation": "q2",
+                  "prefLabel": {
+                    "@language": "en",
+                    "@value": "Calabrian"
+                  },
+                  "hasBeginning": {
+                    "inMYA": {
+                      "type": "xsd:decimal",
+                      "@value": "1.8"
+                    }
+                  },
+                  "hasEnd": {
+                    "inMYA": {
+                      "type": "xsd:decimal",
+                      "@value": "0.774"
+                    }
+                  },
+                  "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
+                  "order": {
+                    "type": "xsd:integer",
+                    "@value": "7"
+                  },
+                  "color": "#FFF2BA"
+                },
+                {
+                  "id": "ischart:Chibanian",
+                  "type": "skos:Concept",
+                  "rank": "http://resource.geosciml.org/ontology/timescale/rank/Age",
+                  "ratifiedGSSP": "true",
+                  "isDefinedBy": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
+                  "broader": [
+                    "ischart:Pleistocene"
+                  ],
+                  "definition": "A time period from 0.774 to 0.129 million years ago",
+                  "inScheme": "http://resource.geosciml.org/classifier/ics/ischart",
+                  "notation": "q3",
+                  "prefLabel": {
+                    "@language": "en",
+                    "@value": "Chibanian"
+                  },
+                  "hasBeginning": {
+                    "inMYA": {
+                      "type": "xsd:decimal",
+                      "@value": "0.774"
+                    }
+                  },
+                  "hasEnd": {
+                    "inMYA": {
+                      "type": "xsd:decimal",
+                      "@value": "0.129"
+                    }
+                  },
+                  "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
+                  "order": {
+                    "type": "xsd:integer",
+                    "@value": "6"
+                  },
+                  "color": "#FFF2C7"
+                },
+                {
+                  "id": "ischart:Gelasian",
+                  "type": "skos:Concept",
+                  "rank": "http://resource.geosciml.org/ontology/timescale/rank/Age",
+                  "ratifiedGSSP": "true",
+                  "isDefinedBy": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
+                  "altLabel": [
+                    {
+                      "@language": "cs",
+                      "@value": "Gelas"
+                    },
+                    {
+                      "@language": "da",
+                      "@value": "Gelasian"
+                    },
+                    {
+                      "@language": "de",
+                      "@value": "Gelasium"
+                    },
+                    {
+                      "@language": "es",
+                      "@value": "Gelasiense"
+                    },
+                    {
+                      "@language": "et",
+                      "@value": "Gelasi"
+                    },
+                    {
+                      "@language": "fi",
+                      "@value": "Gelas"
+                    },
+                    {
+                      "@language": "fr",
+                      "@value": "Gelasien"
+                    },
+                    {
+                      "@language": "hu",
+                      "@value": "gelasi"
+                    },
+                    {
+                      "@language": "it",
+                      "@value": "gelasiano"
+                    },
+                    {
+                      "@language": "ja",
+                      "@value": "ゲラシアン期"
+                    },
+                    {
+                      "@language": "lt",
+                      "@value": "Gelasis"
+                    },
+                    {
+                      "@language": "nl",
+                      "@value": "Pretigliën + Tigliën"
+                    },
+                    {
+                      "@language": "no",
+                      "@value": "Gelasium"
+                    },
+                    {
+                      "@language": "pl",
+                      "@value": "Gelas"
+                    },
+                    {
+                      "@language": "pt",
+                      "@value": "Gelasiano"
+                    },
+                    {
+                      "@language": "sk",
+                      "@value": "gelas"
+                    },
+                    {
+                      "@language": "sl",
+                      "@value": "gelasij"
+                    },
+                    {
+                      "@language": "sv",
+                      "@value": "gelas"
+                    },
+                    {
+                      "@language": "zh",
+                      "@value": "格拉斯期"
+                    }
+                  ],
+                  "broader": [
+                    "ischart:Pleistocene"
+                  ],
+                  "definition": "A time period from 2.58 to 1.8 million years ago",
+                  "inScheme": "http://resource.geosciml.org/classifier/ics/ischart",
+                  "notation": "q1",
+                  "prefLabel": {
+                    "@language": "en",
+                    "@value": "Gelasian"
+                  },
+                  "hasBeginning": {
+                    "inMYA": {
+                      "type": "xsd:decimal",
+                      "@value": "2.58"
+                    }
+                  },
+                  "hasEnd": {
+                    "inMYA": {
+                      "type": "xsd:decimal",
+                      "@value": "1.8"
+                    }
+                  },
+                  "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
+                  "order": {
+                    "type": "xsd:integer",
+                    "@value": "8"
+                  },
+                  "color": "#FFEDB3"
+                },
+                {
+                  "id": "ischart:UpperPleistocene",
+                  "type": "skos:Concept",
+                  "rank": "http://resource.geosciml.org/ontology/timescale/rank/Age",
+                  "isDefinedBy": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
+                  "altLabel": [
+                    {
+                      "@language": "bg",
+                      "@value": "Къѿен плейѿтоцен"
+                    },
+                    {
+                      "@language": "cs",
+                      "@value": "Pozdní pleistocén"
+                    },
+                    {
+                      "@language": "da",
+                      "@value": "Sen Pleistocæn"
+                    },
+                    {
+                      "@language": "de",
+                      "@value": "Spätes Pleistozän"
+                    },
+                    {
+                      "@language": "et",
+                      "@value": "Hiline pleistotseen"
+                    },
+                    {
+                      "@language": "fi",
+                      "@value": "Myöhäis-Pleistoseeni"
+                    },
+                    {
+                      "@language": "hu",
+                      "@value": "késő pleisztocén"
+                    },
+                    {
+                      "@language": "ja",
+                      "@value": "後期更新世"
+                    },
+                    {
+                      "@language": "lt",
+                      "@value": "Apatinis Pleistocenas"
+                    },
+                    {
+                      "@language": "nl",
+                      "@value": "Laat Pleistoceen"
+                    },
+                    {
+                      "@language": "no",
+                      "@value": "Yngre pleistocen"
+                    },
+                    {
+                      "@language": "pl",
+                      "@value": "Późny Plejstocen"
+                    },
+                    {
+                      "@language": "sk",
+                      "@value": "mladší pleistocén"
+                    },
+                    {
+                      "@language": "sl",
+                      "@value": "pozni pleistocen"
+                    },
+                    {
+                      "@language": "sv",
+                      "@value": "yngre pleistocen"
+                    },
+                    {
+                      "@language": "zh",
+                      "@value": "晚更新世"
+                    }
+                  ],
+                  "broader": [
+                    "ischart:Pleistocene"
+                  ],
+                  "definition": "A time period from 0.129 to 0.0117 million years ago",
+                  "inScheme": "http://resource.geosciml.org/classifier/ics/ischart",
+                  "notation": "q4",
+                  "prefLabel": {
+                    "@language": "en",
+                    "@value": "Late Pleistocene"
+                  },
+                  "hasBeginning": {
+                    "inMYA": {
+                      "type": "xsd:decimal",
+                      "@value": "0.129"
+                    }
+                  },
+                  "hasEnd": {
+                    "inMYA": {
+                      "type": "xsd:decimal",
+                      "@value": "0.0117"
+                    }
+                  },
+                  "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
+                  "order": {
+                    "type": "xsd:integer",
+                    "@value": "5"
+                  },
+                  "color": "#FFF2D3"
+                }
+              ],
+              "notation": "Q1",
+              "prefLabel": {
+                "@language": "en",
+                "@value": "Pleistocene"
+              },
+              "hasBeginning": {
+                "inMYA": {
+                  "type": "xsd:decimal",
+                  "@value": "2.58"
+                }
+              },
+              "hasEnd": {
+                "inMYA": {
+                  "type": "xsd:decimal",
+                  "@value": "0.0117"
+                }
+              },
+              "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
+              "order": {
+                "type": "xsd:integer",
+                "@value": "9"
+              },
+              "color": "#FFEFAF"
+            }
+          ],
+          "notation": "Q",
+          "prefLabel": {
+            "@language": "en",
+            "@value": "Quaternary"
+          },
+          "hasBeginning": {
+            "inMYA": {
+              "type": "xsd:decimal",
+              "@value": "2.58"
+            }
+          },
+          "hasEnd": {
+            "inMYA": {
+              "type": "xsd:integer",
+              "@value": "0"
+            }
+          },
+          "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
+          "order": {
+            "type": "xsd:integer",
+            "@value": "10"
+          },
+          "color": "#F9F97F"
+        }
+      ],
+      "notation": "CZ",
+      "prefLabel": {
+        "@language": "en",
+        "@value": "Cenozoic"
+      },
+      "hasBeginning": {
+        "inMYA": {
+          "type": "xsd:decimal",
+          "@value": "66.0"
+        }
+      },
+      "hasEnd": {
+        "inMYA": {
+          "type": "xsd:integer",
+          "@value": "0"
+        }
+      },
+      "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
+      "order": {
+        "type": "xsd:integer",
+        "@value": "32"
+      },
+      "color": "#F2F91D"
+    },
+    {
+      "id": "ischart:Mesozoic",
+      "type": "skos:Concept",
+      "rank": "http://resource.geosciml.org/ontology/timescale/rank/Era",
+      "ratifiedGSSP": "true",
+      "isDefinedBy": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
+      "altLabel": [
+        {
+          "@language": "bg",
+          "@value": "Мезозой"
+        },
+        {
+          "@language": "cs",
+          "@value": "Mezozoikum"
+        },
+        {
+          "@language": "da",
+          "@value": "Mesozoisk"
+        },
+        {
+          "@language": "de",
+          "@value": "Mesozoikum"
+        },
+        {
+          "@language": "es",
+          "@value": "Mesozoico"
+        },
+        {
+          "@language": "et",
+          "@value": "Mesosoikum"
+        },
+        {
+          "@language": "fi",
+          "@value": "Mesotsoikum"
+        },
+        {
+          "@language": "fr",
+          "@value": "Mésozoïque"
+        },
+        {
+          "@language": "hu",
+          "@value": "mezozoikum"
+        },
+        {
+          "@language": "it",
+          "@value": "mesozoico"
+        },
+        {
+          "@language": "ja",
+          "@value": "中生代"
+        },
+        {
+          "@language": "lt",
+          "@value": "Mezozojus"
+        },
+        {
+          "@language": "nl",
+          "@value": "Mesozoïcum"
+        },
+        {
+          "@language": "no",
+          "@value": "Mesozoikum"
+        },
+        {
+          "@language": "pl",
+          "@value": "Mezozoik"
+        },
+        {
+          "@language": "pt",
+          "@value": "Mesozóico"
+        },
+        {
+          "@language": "sk",
+          "@value": "mezozoikum"
+        },
+        {
+          "@language": "sl",
+          "@value": "mezozoik"
+        },
+        {
+          "@language": "sv",
+          "@value": "mesozoikum"
+        },
+        {
+          "@language": "zh",
+          "@value": "中生代"
+        }
+      ],
+      "broader": [
+        "ischart:Phanerozoic"
+      ],
+      "definition": "A time period from 251.902 to 66.0 million years ago",
+      "inScheme": "http://resource.geosciml.org/classifier/ics/ischart",
+      "narrower": [
+        {
+          "id": "ischart:Cretaceous",
+          "type": "skos:Concept",
+          "rank": "http://resource.geosciml.org/ontology/timescale/rank/Period",
+          "isDefinedBy": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
+          "altLabel": [
+            {
+              "@language": "bg",
+              "@value": "Креда"
+            },
+            {
+              "@language": "cs",
+              "@value": "Křída"
+            },
+            {
+              "@language": "da",
+              "@value": "Kridt"
+            },
+            {
+              "@language": "de",
+              "@value": "Kreide"
+            },
+            {
+              "@language": "es",
+              "@value": "Cretácico"
+            },
+            {
+              "@language": "et",
+              "@value": "Kriit"
+            },
+            {
+              "@language": "fi",
+              "@value": "Liitu"
+            },
+            {
+              "@language": "fr",
+              "@value": "Crétacé"
+            },
+            {
+              "@language": "hu",
+              "@value": "kréta"
+            },
+            {
+              "@language": "it",
+              "@value": "cretacico"
+            },
+            {
+              "@language": "ja",
+              "@value": "白亜紀"
+            },
+            {
+              "@language": "lt",
+              "@value": "Kreida"
+            },
+            {
+              "@language": "nl",
+              "@value": "Krijt"
+            },
+            {
+              "@language": "no",
+              "@value": "Kritt"
+            },
+            {
+              "@language": "pl",
+              "@value": "Kreda"
+            },
+            {
+              "@language": "pt",
+              "@value": "Cretácico"
+            },
+            {
+              "@language": "sk",
+              "@value": "krieda"
+            },
+            {
+              "@language": "sl",
+              "@value": "kreda"
+            },
+            {
+              "@language": "sv",
+              "@value": "krita"
+            },
+            {
+              "@language": "zh",
+              "@value": "白垩纪"
+            }
+          ],
+          "broader": [
+            "ischart:Mesozoic"
+          ],
+          "definition": "A time period from 145.0 to 66.0 million years ago",
+          "inScheme": "http://resource.geosciml.org/classifier/ics/ischart",
+          "narrower": [
+            {
+              "id": "ischart:LowerCretaceous",
+              "type": "skos:Concept",
+              "rank": "http://resource.geosciml.org/ontology/timescale/rank/Epoch",
+              "isDefinedBy": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
+              "altLabel": [
+                {
+                  "@language": "bg",
+                  "@value": "Ранна Креда"
+                },
+                {
+                  "@language": "da",
+                  "@value": "Tidlig Kridt"
+                },
+                {
+                  "@language": "de",
+                  "@value": "Frühe Kreide"
+                },
+                {
+                  "@language": "es",
+                  "@value": "Cretácico temprano"
+                },
+                {
+                  "@language": "et",
+                  "@value": "Varajane kriit"
+                },
+                {
+                  "@language": "fi",
+                  "@value": "Varhais-Liitu"
+                },
+                {
+                  "@language": "fr",
+                  "@value": "Crétacé précoce"
+                },
+                {
+                  "@language": "hu",
+                  "@value": "kora-kréta"
+                },
+                {
+                  "@language": "it",
+                  "@value": "Cretaceo precoce"
+                },
+                {
+                  "@language": "ja",
+                  "@value": "白亜紀前期"
+                },
+                {
+                  "@language": "lt",
+                  "@value": "Ankstyvoji Kreida"
+                },
+                {
+                  "@language": "nl",
+                  "@value": "Vroeg Krijt"
+                },
+                {
+                  "@language": "pl",
+                  "@value": "Wczesna Kreda"
+                },
+                {
+                  "@language": "pt",
+                  "@value": "Cretáceo Primitivo"
+                },
+                {
+                  "@language": "sk",
+                  "@value": "raná  krieda"
+                },
+                {
+                  "@language": "sl",
+                  "@value": "zgodnja kreda"
+                },
+                {
+                  "@language": "sv",
+                  "@value": "äldre krita"
+                },
+                {
+                  "@language": "zh",
+                  "@value": "早白垩世"
+                }
+              ],
+              "broader": [
+                "ischart:Cretaceous"
+              ],
+              "definition": "A time period from 145.0 to 100.5 million years ago",
+              "inScheme": "http://resource.geosciml.org/classifier/ics/ischart",
+              "narrower": [
+                {
+                  "id": "ischart:Albian",
+                  "type": "skos:Concept",
+                  "rank": "http://resource.geosciml.org/ontology/timescale/rank/Age",
+                  "ratifiedGSSP": "true",
+                  "isDefinedBy": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
+                  "altLabel": [
+                    {
+                      "@language": "bg",
+                      "@value": "плб"
+                    },
+                    {
+                      "@language": "cs",
+                      "@value": "Alb"
+                    },
+                    {
+                      "@language": "da",
+                      "@value": "Albien"
+                    },
+                    {
+                      "@language": "de",
+                      "@value": "Albium"
+                    },
+                    {
+                      "@language": "es",
+                      "@value": "Albiense"
+                    },
+                    {
+                      "@language": "et",
+                      "@value": "Albi"
+                    },
+                    {
+                      "@language": "fi",
+                      "@value": "Alb"
+                    },
+                    {
+                      "@language": "fr",
+                      "@value": "Albien"
+                    },
+                    {
+                      "@language": "hu",
+                      "@value": "albai"
+                    },
+                    {
+                      "@language": "it",
+                      "@value": "albiano"
+                    },
+                    {
+                      "@language": "ja",
+                      "@value": "アルビアン期"
+                    },
+                    {
+                      "@language": "lt",
+                      "@value": "Albis"
+                    },
+                    {
+                      "@language": "nl",
+                      "@value": "Albiën"
+                    },
+                    {
+                      "@language": "no",
+                      "@value": "Alb"
+                    },
+                    {
+                      "@language": "pl",
+                      "@value": "Alb"
+                    },
+                    {
+                      "@language": "pt",
+                      "@value": "Albiano"
+                    },
+                    {
+                      "@language": "sk",
+                      "@value": "alb"
+                    },
+                    {
+                      "@language": "sl",
+                      "@value": "albij"
+                    },
+                    {
+                      "@language": "sv",
+                      "@value": "alban"
+                    },
+                    {
+                      "@language": "zh",
+                      "@value": "阿尔布期"
+                    }
+                  ],
+                  "broader": [
+                    "ischart:LowerCretaceous"
+                  ],
+                  "definition": "A time period from 113.0 to 100.5 million years ago",
+                  "inScheme": "http://resource.geosciml.org/classifier/ics/ischart",
+                  "notation": "b6",
+                  "prefLabel": {
+                    "@language": "en",
+                    "@value": "Albian"
+                  },
+                  "hasBeginning": {
+                    "inMYA": {
+                      "type": "xsd:decimal",
+                      "@value": "113.0"
+                    },
+                    "skos:note": "uncertain"
+                  },
+                  "hasEnd": {
+                    "inMYA": {
+                      "type": "xsd:decimal",
+                      "@value": "100.5"
+                    }
+                  },
+                  "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
+                  "order": {
+                    "type": "xsd:integer",
+                    "@value": "43"
+                  },
+                  "color": "#CCEA97"
+                },
+                {
+                  "id": "ischart:Aptian",
+                  "type": "skos:Concept",
+                  "rank": "http://resource.geosciml.org/ontology/timescale/rank/Age",
+                  "isDefinedBy": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
+                  "altLabel": [
+                    {
+                      "@language": "bg",
+                      "@value": "ппт"
+                    },
+                    {
+                      "@language": "cs",
+                      "@value": "Apt"
+                    },
+                    {
+                      "@language": "da",
+                      "@value": "Aptien"
+                    },
+                    {
+                      "@language": "de",
+                      "@value": "Aptium"
+                    },
+                    {
+                      "@language": "es",
+                      "@value": "Aptiense"
+                    },
+                    {
+                      "@language": "et",
+                      "@value": "Apti"
+                    },
+                    {
+                      "@language": "fi",
+                      "@value": "Apt"
+                    },
+                    {
+                      "@language": "fr",
+                      "@value": "Aptien"
+                    },
+                    {
+                      "@language": "hu",
+                      "@value": "apti"
+                    },
+                    {
+                      "@language": "it",
+                      "@value": "aptiano"
+                    },
+                    {
+                      "@language": "ja",
+                      "@value": "アプチアン期"
+                    },
+                    {
+                      "@language": "lt",
+                      "@value": "Aptis"
+                    },
+                    {
+                      "@language": "nl",
+                      "@value": "Aptiën"
+                    },
+                    {
+                      "@language": "no",
+                      "@value": "Apt"
+                    },
+                    {
+                      "@language": "pl",
+                      "@value": "Apt"
+                    },
+                    {
+                      "@language": "pt",
+                      "@value": "Aptiano"
+                    },
+                    {
+                      "@language": "sk",
+                      "@value": "apt"
+                    },
+                    {
+                      "@language": "sl",
+                      "@value": "aptij"
+                    },
+                    {
+                      "@language": "sv",
+                      "@value": "apt"
+                    },
+                    {
+                      "@language": "zh",
+                      "@value": "阿普弟期"
+                    }
+                  ],
+                  "broader": [
+                    "ischart:LowerCretaceous"
+                  ],
+                  "definition": "A time period from 121.4 to 113.0 million years ago",
+                  "inScheme": "http://resource.geosciml.org/classifier/ics/ischart",
+                  "notation": "b5",
+                  "prefLabel": {
+                    "@language": "en",
+                    "@value": "Aptian"
+                  },
+                  "hasBeginning": {
+                    "inMYA": {
+                      "type": "xsd:decimal",
+                      "@value": "121.4"
+                    },
+                    "skos:note": "uncertain"
+                  },
+                  "hasEnd": {
+                    "inMYA": {
+                      "type": "xsd:decimal",
+                      "@value": "113.0"
+                    },
+                    "skos:note": "uncertain"
+                  },
+                  "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
+                  "order": {
+                    "type": "xsd:integer",
+                    "@value": "44"
+                  },
+                  "color": "#BFE48A"
+                },
+                {
+                  "id": "ischart:Barremian",
+                  "type": "skos:Concept",
+                  "rank": "http://resource.geosciml.org/ontology/timescale/rank/Age",
+                  "ratifiedGSSP": "true",
+                  "isDefinedBy": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
+                  "altLabel": [
+                    {
+                      "@language": "bg",
+                      "@value": "Барем"
+                    },
+                    {
+                      "@language": "cs",
+                      "@value": "Barrem"
+                    },
+                    {
+                      "@language": "da",
+                      "@value": "Barremien"
+                    },
+                    {
+                      "@language": "de",
+                      "@value": "Barrêmium"
+                    },
+                    {
+                      "@language": "es",
+                      "@value": "Barremiense"
+                    },
+                    {
+                      "@language": "et",
+                      "@value": "Barremi"
+                    },
+                    {
+                      "@language": "fi",
+                      "@value": "Barrem"
+                    },
+                    {
+                      "@language": "fr",
+                      "@value": "Barrémien"
+                    },
+                    {
+                      "@language": "hu",
+                      "@value": "barremi"
+                    },
+                    {
+                      "@language": "it",
+                      "@value": "berremiano"
+                    },
+                    {
+                      "@language": "ja",
+                      "@value": "バレミアン期"
+                    },
+                    {
+                      "@language": "lt",
+                      "@value": "Baremis"
+                    },
+                    {
+                      "@language": "nl",
+                      "@value": "Barremiën"
+                    },
+                    {
+                      "@language": "no",
+                      "@value": "Barremium"
+                    },
+                    {
+                      "@language": "pl",
+                      "@value": "Barrem"
+                    },
+                    {
+                      "@language": "pt",
+                      "@value": "Barremiano"
+                    },
+                    {
+                      "@language": "sk",
+                      "@value": "barém"
+                    },
+                    {
+                      "@language": "sl",
+                      "@value": "barremij"
+                    },
+                    {
+                      "@language": "sv",
+                      "@value": "barrem"
+                    },
+                    {
+                      "@language": "zh",
+                      "@value": "巴列姆期"
+                    }
+                  ],
+                  "broader": [
+                    "ischart:LowerCretaceous"
+                  ],
+                  "definition": "A time period from 125.77 to 121.4 million years ago",
+                  "inScheme": "http://resource.geosciml.org/classifier/ics/ischart",
+                  "notation": "b4",
+                  "prefLabel": {
+                    "@language": "en",
+                    "@value": "Barremian"
+                  },
+                  "hasBeginning": {
+                    "inMYA": {
+                      "type": "xsd:decimal",
+                      "@value": "125.77"
+                    }
+                  },
+                  "hasEnd": {
+                    "inMYA": {
+                      "type": "xsd:decimal",
+                      "@value": "121.4"
+                    },
+                    "skos:note": "uncertain"
+                  },
+                  "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
+                  "order": {
+                    "type": "xsd:integer",
+                    "@value": "45"
+                  },
+                  "color": "#B3DF7F"
+                },
+                {
+                  "id": "ischart:Berriasian",
+                  "type": "skos:Concept",
+                  "rank": "http://resource.geosciml.org/ontology/timescale/rank/Age",
+                  "isDefinedBy": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
+                  "altLabel": [
+                    {
+                      "@language": "bg",
+                      "@value": "Бериаѿ"
+                    },
+                    {
+                      "@language": "cs",
+                      "@value": "Berrias"
+                    },
+                    {
+                      "@language": "da",
+                      "@value": "Berriasien"
+                    },
+                    {
+                      "@language": "de",
+                      "@value": "Berriasium"
+                    },
+                    {
+                      "@language": "es",
+                      "@value": "Berriasiense"
+                    },
+                    {
+                      "@language": "et",
+                      "@value": "Berriasi"
+                    },
+                    {
+                      "@language": "fi",
+                      "@value": "Berrias"
+                    },
+                    {
+                      "@language": "fr",
+                      "@value": "Berriasien"
+                    },
+                    {
+                      "@language": "hu",
+                      "@value": "berriasi"
+                    },
+                    {
+                      "@language": "it",
+                      "@value": "berriasiano"
+                    },
+                    {
+                      "@language": "ja",
+                      "@value": "ベリアシアン期"
+                    },
+                    {
+                      "@language": "lt",
+                      "@value": "Beriasis"
+                    },
+                    {
+                      "@language": "nl",
+                      "@value": "Berrasiën"
+                    },
+                    {
+                      "@language": "no",
+                      "@value": "Berriasium"
+                    },
+                    {
+                      "@language": "pl",
+                      "@value": "Berias"
+                    },
+                    {
+                      "@language": "pt",
+                      "@value": "Berriasiano"
+                    },
+                    {
+                      "@language": "sk",
+                      "@value": "berias"
+                    },
+                    {
+                      "@language": "sl",
+                      "@value": "berriasij"
+                    },
+                    {
+                      "@language": "sv",
+                      "@value": "berrias"
+                    },
+                    {
+                      "@language": "zh",
+                      "@value": "贝利亚斯期"
+                    }
+                  ],
+                  "broader": [
+                    "ischart:LowerCretaceous"
+                  ],
+                  "definition": "A time period from 145.0 to 139.8 million years ago",
+                  "inScheme": "http://resource.geosciml.org/classifier/ics/ischart",
+                  "notation": "b1",
+                  "prefLabel": {
+                    "@language": "en",
+                    "@value": "Berriasian"
+                  },
+                  "hasBeginning": {
+                    "inMYA": {
+                      "type": "xsd:decimal",
+                      "@value": "145.0"
+                    },
+                    "skos:note": "uncertain"
+                  },
+                  "hasEnd": {
+                    "inMYA": {
+                      "type": "xsd:decimal",
+                      "@value": "139.8"
+                    },
+                    "skos:note": "uncertain"
+                  },
+                  "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
+                  "order": {
+                    "type": "xsd:integer",
+                    "@value": "48"
+                  },
+                  "color": "#8CCD60"
+                },
+                {
+                  "id": "ischart:Hauterivian",
+                  "type": "skos:Concept",
+                  "rank": "http://resource.geosciml.org/ontology/timescale/rank/Age",
+                  "ratifiedGSSP": "true",
+                  "isDefinedBy": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
+                  "altLabel": [
+                    {
+                      "@language": "bg",
+                      "@value": "Хотрив"
+                    },
+                    {
+                      "@language": "cs",
+                      "@value": "Hauteriv"
+                    },
+                    {
+                      "@language": "da",
+                      "@value": "Hauterivien"
+                    },
+                    {
+                      "@language": "de",
+                      "@value": "Hauterivium"
+                    },
+                    {
+                      "@language": "es",
+                      "@value": "Hauteviriense"
+                    },
+                    {
+                      "@language": "et",
+                      "@value": "Hauterivi"
+                    },
+                    {
+                      "@language": "fi",
+                      "@value": "Hauteriv"
+                    },
+                    {
+                      "@language": "fr",
+                      "@value": "Hauterivien"
+                    },
+                    {
+                      "@language": "hu",
+                      "@value": "hauterivi"
+                    },
+                    {
+                      "@language": "it",
+                      "@value": "hauteriviano"
+                    },
+                    {
+                      "@language": "ja",
+                      "@value": "オーテリビアン期"
+                    },
+                    {
+                      "@language": "lt",
+                      "@value": "Hoterivis"
+                    },
+                    {
+                      "@language": "nl",
+                      "@value": "Hauteriviën"
+                    },
+                    {
+                      "@language": "no",
+                      "@value": "Hauterivium"
+                    },
+                    {
+                      "@language": "pl",
+                      "@value": "Hoteryw"
+                    },
+                    {
+                      "@language": "pt",
+                      "@value": "Hauteriviano"
+                    },
+                    {
+                      "@language": "sk",
+                      "@value": "hauteriv"
+                    },
+                    {
+                      "@language": "sl",
+                      "@value": "hauterivij"
+                    },
+                    {
+                      "@language": "sv",
+                      "@value": "hauteriv"
+                    },
+                    {
+                      "@language": "zh",
+                      "@value": "豪特里维期"
+                    }
+                  ],
+                  "broader": [
+                    "ischart:LowerCretaceous"
+                  ],
+                  "definition": "A time period from 132.6 to 125.77 million years ago",
+                  "inScheme": "http://resource.geosciml.org/classifier/ics/ischart",
+                  "notation": "b3",
+                  "prefLabel": {
+                    "@language": "en",
+                    "@value": "Hauterivian"
+                  },
+                  "hasBeginning": {
+                    "inMYA": {
+                      "type": "xsd:decimal",
+                      "@value": "132.6"
+                    },
+                    "skos:note": "uncertain"
+                  },
+                  "hasEnd": {
+                    "inMYA": {
+                      "type": "xsd:decimal",
+                      "@value": "125.77"
+                    }
+                  },
+                  "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
+                  "order": {
+                    "type": "xsd:integer",
+                    "@value": "46"
+                  },
+                  "color": "#A6D975"
+                },
+                {
+                  "id": "ischart:Valanginian",
+                  "type": "skos:Concept",
+                  "rank": "http://resource.geosciml.org/ontology/timescale/rank/Age",
+                  "isDefinedBy": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
+                  "altLabel": [
+                    {
+                      "@language": "bg",
+                      "@value": "Валанжин"
+                    },
+                    {
+                      "@language": "cs",
+                      "@value": "Valangin"
+                    },
+                    {
+                      "@language": "da",
+                      "@value": "Valanginien"
+                    },
+                    {
+                      "@language": "de",
+                      "@value": "Valanginium"
+                    },
+                    {
+                      "@language": "es",
+                      "@value": "Valanginiense"
+                    },
+                    {
+                      "@language": "et",
+                      "@value": "Valangini"
+                    },
+                    {
+                      "@language": "fi",
+                      "@value": "Valangin"
+                    },
+                    {
+                      "@language": "fr",
+                      "@value": "Valanginien"
+                    },
+                    {
+                      "@language": "hu",
+                      "@value": "valangini"
+                    },
+                    {
+                      "@language": "it",
+                      "@value": "valanginiano"
+                    },
+                    {
+                      "@language": "ja",
+                      "@value": "バランギニアン期"
+                    },
+                    {
+                      "@language": "lt",
+                      "@value": "Valendis"
+                    },
+                    {
+                      "@language": "nl",
+                      "@value": "Vanlangiën"
+                    },
+                    {
+                      "@language": "no",
+                      "@value": "Valanginium"
+                    },
+                    {
+                      "@language": "pl",
+                      "@value": "Walanżyn"
+                    },
+                    {
+                      "@language": "pt",
+                      "@value": "Valanginiano"
+                    },
+                    {
+                      "@language": "sk",
+                      "@value": "valanžin"
+                    },
+                    {
+                      "@language": "sl",
+                      "@value": "valanginij"
+                    },
+                    {
+                      "@language": "sv",
+                      "@value": "valangin"
+                    },
+                    {
+                      "@language": "zh",
+                      "@value": "凡兰吟期"
+                    }
+                  ],
+                  "broader": [
+                    "ischart:LowerCretaceous"
+                  ],
+                  "definition": "A time period from 132.6 to 139.8 million years ago",
+                  "inScheme": "http://resource.geosciml.org/classifier/ics/ischart",
+                  "notation": "b2",
+                  "prefLabel": {
+                    "@language": "en",
+                    "@value": "Valanginian"
+                  },
+                  "hasBeginning": {
+                    "inMYA": {
+                      "type": "xsd:decimal",
+                      "@value": "132.6"
+                    },
+                    "skos:note": "uncertain"
+                  },
+                  "hasEnd": {
+                    "inMYA": {
+                      "type": "xsd:decimal",
+                      "@value": "139.8"
+                    },
+                    "skos:note": "uncertain"
+                  },
+                  "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
+                  "order": {
+                    "type": "xsd:integer",
+                    "@value": "47"
+                  },
+                  "color": "#99D36A"
+                }
+              ],
+              "notation": "K1",
+              "prefLabel": {
+                "@language": "en",
+                "@value": "Early Cretaceous"
+              },
+              "hasBeginning": {
+                "inMYA": {
+                  "type": "xsd:decimal",
+                  "@value": "145.0"
+                },
+                "skos:note": "uncertain"
+              },
+              "hasEnd": {
+                "inMYA": {
+                  "type": "xsd:decimal",
+                  "@value": "100.5"
+                }
+              },
+              "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
+              "order": {
+                "type": "xsd:integer",
+                "@value": "50"
+              },
+              "color": "#8CCD57"
+            },
+            {
+              "id": "ischart:UpperCretaceous",
+              "type": "skos:Concept",
+              "rank": "http://resource.geosciml.org/ontology/timescale/rank/Epoch",
+              "ratifiedGSSP": "true",
+              "isDefinedBy": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
+              "altLabel": [
+                {
+                  "@language": "bg",
+                  "@value": "Къѿна Креда"
+                },
+                {
+                  "@language": "cs",
+                  "@value": "Pozdní křída"
+                },
+                {
+                  "@language": "da",
+                  "@value": "Sen Kridt"
+                },
+                {
+                  "@language": "de",
+                  "@value": "Späte Kreide"
+                },
+                {
+                  "@language": "et",
+                  "@value": "Hilis-Kriit"
+                },
+                {
+                  "@language": "fi",
+                  "@value": "Myöhäis-Liitu"
+                },
+                {
+                  "@language": "hu",
+                  "@value": "késő-kréta"
+                },
+                {
+                  "@language": "ja",
+                  "@value": "後期白亜紀"
+                },
+                {
+                  "@language": "lt",
+                  "@value": "Vėlyva kreida"
+                },
+                {
+                  "@language": "nl",
+                  "@value": "Laat Krijt"
+                },
+                {
+                  "@language": "no",
+                  "@value": "Sen kritt"
+                },
+                {
+                  "@language": "pl",
+                  "@value": "Późna Kreda"
+                },
+                {
+                  "@language": "sk",
+                  "@value": "mladšia krieda"
+                },
+                {
+                  "@language": "sl",
+                  "@value": "pozna kreda"
+                },
+                {
+                  "@language": "sv",
+                  "@value": "yngre krita"
+                },
+                {
+                  "@language": "zh",
+                  "@value": "晚白垩世"
+                }
+              ],
+              "broader": [
+                "ischart:Cretaceous"
+              ],
+              "definition": "A time period from 100.5 to 66.0 million years ago",
+              "inScheme": "http://resource.geosciml.org/classifier/ics/ischart",
+              "narrower": [
+                {
+                  "id": "ischart:Campanian",
+                  "type": "skos:Concept",
+                  "rank": "http://resource.geosciml.org/ontology/timescale/rank/Age",
+                  "ratifiedGSSP": "true",
+                  "isDefinedBy": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
+                  "altLabel": [
+                    {
+                      "@language": "bg",
+                      "@value": "Кампан"
+                    },
+                    {
+                      "@language": "cs",
+                      "@value": "Campan"
+                    },
+                    {
+                      "@language": "da",
+                      "@value": "Campanien"
+                    },
+                    {
+                      "@language": "de",
+                      "@value": "Campanium"
+                    },
+                    {
+                      "@language": "es",
+                      "@value": "Campaniense"
+                    },
+                    {
+                      "@language": "et",
+                      "@value": "Campani"
+                    },
+                    {
+                      "@language": "fi",
+                      "@value": "Campan"
+                    },
+                    {
+                      "@language": "fr",
+                      "@value": "Campanien"
+                    },
+                    {
+                      "@language": "hu",
+                      "@value": "campaniai"
+                    },
+                    {
+                      "@language": "it",
+                      "@value": "campaniano"
+                    },
+                    {
+                      "@language": "ja",
+                      "@value": "カンパニアン期"
+                    },
+                    {
+                      "@language": "lt",
+                      "@value": "Kampanis"
+                    },
+                    {
+                      "@language": "nl",
+                      "@value": "Campaniën"
+                    },
+                    {
+                      "@language": "no",
+                      "@value": "Campanium"
+                    },
+                    {
+                      "@language": "pl",
+                      "@value": "Kampan"
+                    },
+                    {
+                      "@language": "pt",
+                      "@value": "Campaniano"
+                    },
+                    {
+                      "@language": "sk",
+                      "@value": "kampán"
+                    },
+                    {
+                      "@language": "sl",
+                      "@value": "campanij"
+                    },
+                    {
+                      "@language": "sv",
+                      "@value": "campan"
+                    },
+                    {
+                      "@language": "zh",
+                      "@value": "坎佩尼期"
+                    }
+                  ],
+                  "broader": [
+                    "ischart:UpperCretaceous"
+                  ],
+                  "definition": "A time period from 83.6 to 72.1 million years ago",
+                  "inScheme": "http://resource.geosciml.org/classifier/ics/ischart",
+                  "notation": "k5",
+                  "prefLabel": {
+                    "@language": "en",
+                    "@value": "Campanian"
+                  },
+                  "hasBeginning": {
+                    "inMYA": {
+                      "type": "xsd:decimal",
+                      "@value": "83.6"
+                    },
+                    "marginOfError": {
+                      "type": "xsd:decimal",
+                      "@value": "0.2"
+                    }
+                  },
+                  "hasEnd": {
+                    "inMYA": {
+                      "type": "xsd:decimal",
+                      "@value": "72.1"
+                    },
+                    "marginOfError": {
+                      "type": "xsd:decimal",
+                      "@value": "0.2"
+                    }
+                  },
+                  "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
+                  "order": {
+                    "type": "xsd:integer",
+                    "@value": "37"
+                  },
+                  "color": "#E6F47F"
+                },
+                {
+                  "id": "ischart:Cenomanian",
+                  "type": "skos:Concept",
+                  "rank": "http://resource.geosciml.org/ontology/timescale/rank/Age",
+                  "ratifiedGSSP": "true",
+                  "isDefinedBy": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
+                  "altLabel": [
+                    {
+                      "@language": "bg",
+                      "@value": "Ценоман"
+                    },
+                    {
+                      "@language": "cs",
+                      "@value": "Cenoman"
+                    },
+                    {
+                      "@language": "da",
+                      "@value": "Cenomanien"
+                    },
+                    {
+                      "@language": "de",
+                      "@value": "Cenomanium"
+                    },
+                    {
+                      "@language": "es",
+                      "@value": "Cenomaniense"
+                    },
+                    {
+                      "@language": "et",
+                      "@value": "Cenomani"
+                    },
+                    {
+                      "@language": "fi",
+                      "@value": "Cenoman"
+                    },
+                    {
+                      "@language": "fr",
+                      "@value": "Cénomanien"
+                    },
+                    {
+                      "@language": "hu",
+                      "@value": "cenoman"
+                    },
+                    {
+                      "@language": "it",
+                      "@value": "cenomaniano"
+                    },
+                    {
+                      "@language": "ja",
+                      "@value": "セノマニアン期"
+                    },
+                    {
+                      "@language": "lt",
+                      "@value": "Cenomanis"
+                    },
+                    {
+                      "@language": "nl",
+                      "@value": "Laat/Boven Krijt"
+                    },
+                    {
+                      "@language": "no",
+                      "@value": "Cenomanium"
+                    },
+                    {
+                      "@language": "pl",
+                      "@value": "Cenoman"
+                    },
+                    {
+                      "@language": "pt",
+                      "@value": "Cenomaniano"
+                    },
+                    {
+                      "@language": "sk",
+                      "@value": "cenoman"
+                    },
+                    {
+                      "@language": "sl",
+                      "@value": "cenomanij"
+                    },
+                    {
+                      "@language": "sv",
+                      "@value": "cenoman"
+                    },
+                    {
+                      "@language": "zh",
+                      "@value": "森诺曼期"
+                    }
+                  ],
+                  "broader": [
+                    "ischart:UpperCretaceous"
+                  ],
+                  "definition": "A time period from 100.5 to 93.9 million years ago",
+                  "inScheme": "http://resource.geosciml.org/classifier/ics/ischart",
+                  "notation": "k1",
+                  "prefLabel": {
+                    "@language": "en",
+                    "@value": "Cenomanian"
+                  },
+                  "hasBeginning": {
+                    "inMYA": {
+                      "type": "xsd:decimal",
+                      "@value": "100.5"
+                    }
+                  },
+                  "hasEnd": {
+                    "inMYA": {
+                      "type": "xsd:decimal",
+                      "@value": "93.9"
+                    }
+                  },
+                  "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
+                  "order": {
+                    "type": "xsd:integer",
+                    "@value": "41"
+                  },
+                  "color": "#B3DE53"
+                },
+                {
+                  "id": "ischart:Coniacian",
+                  "type": "skos:Concept",
+                  "rank": "http://resource.geosciml.org/ontology/timescale/rank/Age",
+                  "ratifiedGSSP": "true",
+                  "isDefinedBy": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
+                  "altLabel": [
+                    {
+                      "@language": "bg",
+                      "@value": "Кониак"
+                    },
+                    {
+                      "@language": "cs",
+                      "@value": "Coniak"
+                    },
+                    {
+                      "@language": "da",
+                      "@value": "Coniacien"
+                    },
+                    {
+                      "@language": "de",
+                      "@value": "Coniacium"
+                    },
+                    {
+                      "@language": "es",
+                      "@value": "Coni"
+                    },
+                    {
+                      "@language": "et",
+                      "@value": "Coniaci"
+                    },
+                    {
+                      "@language": "fi",
+                      "@value": "Coniac"
+                    },
+                    {
+                      "@language": "fr",
+                      "@value": "Coniacien"
+                    },
+                    {
+                      "@language": "hu",
+                      "@value": "coniaci"
+                    },
+                    {
+                      "@language": "it",
+                      "@value": "coniaciano"
+                    },
+                    {
+                      "@language": "ja",
+                      "@value": "コニアシアン期"
+                    },
+                    {
+                      "@language": "lt",
+                      "@value": "Konjakis"
+                    },
+                    {
+                      "@language": "nl",
+                      "@value": "Conaciën"
+                    },
+                    {
+                      "@language": "no",
+                      "@value": "Coniacium"
+                    },
+                    {
+                      "@language": "pl",
+                      "@value": "Koniak"
+                    },
+                    {
+                      "@language": "pt",
+                      "@value": "Coniaciano"
+                    },
+                    {
+                      "@language": "sk",
+                      "@value": "koňak"
+                    },
+                    {
+                      "@language": "sl",
+                      "@value": "coniacij"
+                    },
+                    {
+                      "@language": "sv",
+                      "@value": "coniac"
+                    },
+                    {
+                      "@language": "zh",
+                      "@value": "科尼亚克期"
+                    }
+                  ],
+                  "broader": [
+                    "ischart:UpperCretaceous"
+                  ],
+                  "definition": "A time period from 89.8 to 86.3 million years ago",
+                  "inScheme": "http://resource.geosciml.org/classifier/ics/ischart",
+                  "notation": "k3",
+                  "prefLabel": {
+                    "@language": "en",
+                    "@value": "Coniacian"
+                  },
+                  "hasBeginning": {
+                    "inMYA": {
+                      "type": "xsd:decimal",
+                      "@value": "89.8"
+                    },
+                    "marginOfError": {
+                      "type": "xsd:decimal",
+                      "@value": "0.3"
+                    }
+                  },
+                  "hasEnd": {
+                    "inMYA": {
+                      "type": "xsd:decimal",
+                      "@value": "86.3"
+                    },
+                    "marginOfError": {
+                      "type": "xsd:decimal",
+                      "@value": "0.5"
+                    }
+                  },
+                  "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
+                  "order": {
+                    "type": "xsd:integer",
+                    "@value": "39"
+                  },
+                  "color": "#CCE968"
+                },
+                {
+                  "id": "ischart:Maastrichtian",
+                  "type": "skos:Concept",
+                  "rank": "http://resource.geosciml.org/ontology/timescale/rank/Age",
+                  "ratifiedGSSP": "true",
+                  "isDefinedBy": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
+                  "altLabel": [
+                    {
+                      "@language": "bg",
+                      "@value": "Маѿтрихт"
+                    },
+                    {
+                      "@language": "cs",
+                      "@value": "Maastricht"
+                    },
+                    {
+                      "@language": "da",
+                      "@value": "Maastrichtien"
+                    },
+                    {
+                      "@language": "de",
+                      "@value": "Maastrichtium"
+                    },
+                    {
+                      "@language": "es",
+                      "@value": "Maastrichtiense"
+                    },
+                    {
+                      "@language": "et",
+                      "@value": "Maastrichti"
+                    },
+                    {
+                      "@language": "fi",
+                      "@value": "Maastricht"
+                    },
+                    {
+                      "@language": "fr",
+                      "@value": "Maastrichtien"
+                    },
+                    {
+                      "@language": "hu",
+                      "@value": "maastrichti"
+                    },
+                    {
+                      "@language": "it",
+                      "@value": "maastrichtiano"
+                    },
+                    {
+                      "@language": "ja",
+                      "@value": "マーストリヒシアン期"
+                    },
+                    {
+                      "@language": "lt",
+                      "@value": "Mastrichtis"
+                    },
+                    {
+                      "@language": "nl",
+                      "@value": "Maastrichtiën"
+                    },
+                    {
+                      "@language": "no",
+                      "@value": "Maastricht"
+                    },
+                    {
+                      "@language": "pl",
+                      "@value": "Mastrycht"
+                    },
+                    {
+                      "@language": "pt",
+                      "@value": "Maestrichtiano"
+                    },
+                    {
+                      "@language": "sk",
+                      "@value": "mástricht"
+                    },
+                    {
+                      "@language": "sl",
+                      "@value": "maastrichtij"
+                    },
+                    {
+                      "@language": "sv",
+                      "@value": "maastricht"
+                    },
+                    {
+                      "@language": "zh",
+                      "@value": "马斯特里赫特期"
+                    }
+                  ],
+                  "broader": [
+                    "ischart:UpperCretaceous"
+                  ],
+                  "definition": "A time period from 72.1 to 66.0 million years ago",
+                  "inScheme": "http://resource.geosciml.org/classifier/ics/ischart",
+                  "notation": "k6",
+                  "prefLabel": {
+                    "@language": "en",
+                    "@value": "Maastrichtian"
+                  },
+                  "hasBeginning": {
+                    "inMYA": {
+                      "type": "xsd:decimal",
+                      "@value": "72.1"
+                    },
+                    "marginOfError": {
+                      "type": "xsd:decimal",
+                      "@value": "0.2"
+                    }
+                  },
+                  "hasEnd": {
+                    "inMYA": {
+                      "type": "xsd:decimal",
+                      "@value": "66.0"
+                    }
+                  },
+                  "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
+                  "order": {
+                    "type": "xsd:integer",
+                    "@value": "36"
+                  },
+                  "color": "#F2FA8C"
+                },
+                {
+                  "id": "ischart:Santonian",
+                  "type": "skos:Concept",
+                  "rank": "http://resource.geosciml.org/ontology/timescale/rank/Age",
+                  "ratifiedGSSP": "true",
+                  "isDefinedBy": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
+                  "altLabel": [
+                    {
+                      "@language": "bg",
+                      "@value": "Сантон"
+                    },
+                    {
+                      "@language": "cs",
+                      "@value": "Santon"
+                    },
+                    {
+                      "@language": "da",
+                      "@value": "Santonien"
+                    },
+                    {
+                      "@language": "de",
+                      "@value": "Santonium"
+                    },
+                    {
+                      "@language": "es",
+                      "@value": "Santoniense"
+                    },
+                    {
+                      "@language": "et",
+                      "@value": "Santoni"
+                    },
+                    {
+                      "@language": "fi",
+                      "@value": "Santon"
+                    },
+                    {
+                      "@language": "fr",
+                      "@value": "Santonien"
+                    },
+                    {
+                      "@language": "hu",
+                      "@value": "santoni"
+                    },
+                    {
+                      "@language": "it",
+                      "@value": "santoniano"
+                    },
+                    {
+                      "@language": "ja",
+                      "@value": "サントニアン期"
+                    },
+                    {
+                      "@language": "lt",
+                      "@value": "Santonis"
+                    },
+                    {
+                      "@language": "nl",
+                      "@value": "Santoniën"
+                    },
+                    {
+                      "@language": "no",
+                      "@value": "Santonium"
+                    },
+                    {
+                      "@language": "pl",
+                      "@value": "Santon"
+                    },
+                    {
+                      "@language": "pt",
+                      "@value": "Santoniano"
+                    },
+                    {
+                      "@language": "sk",
+                      "@value": "santón"
+                    },
+                    {
+                      "@language": "sl",
+                      "@value": "santonij"
+                    },
+                    {
+                      "@language": "sv",
+                      "@value": "santon"
+                    },
+                    {
+                      "@language": "zh",
+                      "@value": "桑托期"
+                    }
+                  ],
+                  "broader": [
+                    "ischart:UpperCretaceous"
+                  ],
+                  "definition": "A time period from 86.3 to 83.6 million years ago",
+                  "inScheme": "http://resource.geosciml.org/classifier/ics/ischart",
+                  "notation": "k4",
+                  "prefLabel": {
+                    "@language": "en",
+                    "@value": "Santonian"
+                  },
+                  "hasBeginning": {
+                    "inMYA": {
+                      "type": "xsd:decimal",
+                      "@value": "86.3"
+                    },
+                    "marginOfError": {
+                      "type": "xsd:decimal",
+                      "@value": "0.5"
+                    }
+                  },
+                  "hasEnd": {
+                    "inMYA": {
+                      "type": "xsd:decimal",
+                      "@value": "83.6"
+                    },
+                    "marginOfError": {
+                      "type": "xsd:decimal",
+                      "@value": "0.2"
+                    }
+                  },
+                  "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
+                  "order": {
+                    "type": "xsd:integer",
+                    "@value": "38"
+                  },
+                  "color": "#D9EF74"
+                },
+                {
+                  "id": "ischart:Turonian",
+                  "type": "skos:Concept",
+                  "rank": "http://resource.geosciml.org/ontology/timescale/rank/Age",
+                  "ratifiedGSSP": "true",
+                  "isDefinedBy": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
+                  "altLabel": [
+                    {
+                      "@language": "bg",
+                      "@value": "Турон"
+                    },
+                    {
+                      "@language": "cs",
+                      "@value": "Turon"
+                    },
+                    {
+                      "@language": "da",
+                      "@value": "Turonien"
+                    },
+                    {
+                      "@language": "de",
+                      "@value": "Turonium"
+                    },
+                    {
+                      "@language": "es",
+                      "@value": "Turoniense"
+                    },
+                    {
+                      "@language": "et",
+                      "@value": "Turoni"
+                    },
+                    {
+                      "@language": "fi",
+                      "@value": "Turon"
+                    },
+                    {
+                      "@language": "fr",
+                      "@value": "Turonien"
+                    },
+                    {
+                      "@language": "hu",
+                      "@value": "turon"
+                    },
+                    {
+                      "@language": "it",
+                      "@value": "turoniano"
+                    },
+                    {
+                      "@language": "ja",
+                      "@value": "チュロニアン期"
+                    },
+                    {
+                      "@language": "lt",
+                      "@value": "Turonis"
+                    },
+                    {
+                      "@language": "nl",
+                      "@value": "Tuironiën"
+                    },
+                    {
+                      "@language": "no",
+                      "@value": "Turonium"
+                    },
+                    {
+                      "@language": "pl",
+                      "@value": "Turon"
+                    },
+                    {
+                      "@language": "pt",
+                      "@value": "Turoniano"
+                    },
+                    {
+                      "@language": "sk",
+                      "@value": "turón"
+                    },
+                    {
+                      "@language": "sl",
+                      "@value": "turonij"
+                    },
+                    {
+                      "@language": "sv",
+                      "@value": "turon"
+                    },
+                    {
+                      "@language": "zh",
+                      "@value": "土仑期"
+                    }
+                  ],
+                  "broader": [
+                    "ischart:UpperCretaceous"
+                  ],
+                  "definition": "A time period from 93.9 to 89.8 million years ago",
+                  "inScheme": "http://resource.geosciml.org/classifier/ics/ischart",
+                  "notation": "k2",
+                  "prefLabel": {
+                    "@language": "en",
+                    "@value": "Turonian"
+                  },
+                  "hasBeginning": {
+                    "inMYA": {
+                      "type": "xsd:decimal",
+                      "@value": "93.9"
+                    }
+                  },
+                  "hasEnd": {
+                    "inMYA": {
+                      "type": "xsd:decimal",
+                      "@value": "89.8"
+                    },
+                    "marginOfError": {
+                      "type": "xsd:decimal",
+                      "@value": "0.3"
+                    }
+                  },
+                  "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
+                  "order": {
+                    "type": "xsd:integer",
+                    "@value": "40"
+                  },
+                  "color": "#BFE35D"
+                }
+              ],
+              "notation": "K2",
+              "prefLabel": {
+                "@language": "en",
+                "@value": "Late Cretaceous"
+              },
+              "hasBeginning": {
+                "inMYA": {
+                  "type": "xsd:decimal",
+                  "@value": "100.5"
+                }
+              },
+              "hasEnd": {
+                "inMYA": {
+                  "type": "xsd:decimal",
+                  "@value": "66.0"
+                }
+              },
+              "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
+              "order": {
+                "type": "xsd:integer",
+                "@value": "42"
+              },
+              "color": "#A6D84A"
+            }
+          ],
+          "notation": "K",
+          "prefLabel": {
+            "@language": "en",
+            "@value": "Cretaceous"
+          },
+          "hasBeginning": {
+            "inMYA": {
+              "type": "xsd:decimal",
+              "@value": "145.0"
+            },
+            "skos:note": "uncertain"
+          },
+          "hasEnd": {
+            "inMYA": {
+              "type": "xsd:decimal",
+              "@value": "66.0"
+            }
+          },
+          "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
+          "order": {
+            "type": "xsd:integer",
+            "@value": "49"
+          },
+          "color": "#7FC64E"
+        }
+
+       
+      ],
+      "notation": "MZ",
+      "prefLabel": {
+        "@language": "en",
+        "@value": "Mesozoic"
+      },
+      "hasBeginning": {
+        "inMYA": {
+          "type": "xsd:decimal",
+          "@value": "251.902"
+        },
+        "marginOfError": {
+          "type": "xsd:decimal",
+          "@value": "0.024"
+        }
+      },
+      "hasEnd": {
+        "inMYA": {
+          "type": "xsd:decimal",
+          "@value": "66.0"
+        }
+      },
+      "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
+      "order": {
+        "type": "xsd:integer",
+        "@value": "76"
+      },
+      "color": "#67C5CA"
+    }
+   
+  ],
+  "notation": "PH",
+  "prefLabel": {
+    "@language": "en",
+    "@value": "Phanerozoic"
+  },
+  "hasBeginning": {
+    "inMYA": {
+      "type": "xsd:decimal",
+      "@value": "538.8"
+    },
+    "marginOfError": {
+      "type": "xsd:decimal",
+      "@value": "0.2"
+    }
+  },
+  "hasEnd": {
+    "inMYA": {
+      "type": "xsd:integer",
+      "@value": "0"
+    }
+  },
+  "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
+  "order": {
+    "type": "xsd:integer",
+    "@value": "156"
+  },
+  "color": "#9AD9DD"
+}

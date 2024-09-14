@@ -251,7 +251,7 @@
          id="path4602" />
     </clipPath>
   </defs>
-  <sodipodi:namedview
+  <!-- <sodipodi:namedview
      id="namedview134"
      pagecolor="#ffffff"
      bordercolor="#666666"
@@ -276,7 +276,7 @@
        id="page138"
        width="13.257586"
        height="14.781254" />
-  </sodipodi:namedview>
+  </sodipodi:namedview> -->
   <g
      inkscape:groupmode="layer"
      id="layer1"
