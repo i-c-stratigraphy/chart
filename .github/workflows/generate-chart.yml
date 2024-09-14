@@ -31,7 +31,9 @@ jobs:
   
         - name: run script
           run: |
+            pushd ./chart-generate
             poetry run chartgen.py
+            popd 
   
         - name: Deploy 🚀
           uses: JamesIves/github-pages-deploy-action@v4
