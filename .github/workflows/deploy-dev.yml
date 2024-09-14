@@ -24,4 +24,6 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           folder: chart-ui/.output/public
-          clean: false
+          clean-exclude: |
+            chart.json
+            chart.*.json
