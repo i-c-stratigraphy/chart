@@ -1,9 +1,13 @@
 <script setup lang="ts">
-import {getRecurseChildCount, getLangVariant ,sortedNode} from "@/utils/util"
+import {getRecurseChildCount, getLangVariant ,sortedNode, getScaledHeight, type scalingFactor} from "@/utils/util"
 const props = defineProps<{
     node: chartNode,
     lang: string,
+    scaling:scalingFactor
     parentRank: string
+}>()
+const emit = defineEmits<{
+    (e: 'view', node: string): void
 }>()
 const node = props.node
 const ranking: { [key: string]: number } = {
@@ -15,22 +19,25 @@ const ranking: { [key: string]: number } = {
 const rankSplit = (node.rank+'').split("/")
 
 const rank = rankSplit[rankSplit.length-1]||"Age"
-// console.log("ranks=", rankSplit[rankSplit.length-1] )
 let colStart = ranking[rank]!
 let epochDelta = 1
 
 
 
+const handleClick = ()=>{
+    emit("view",node.id)
+}
 </script>
 <template>
     <div class=" cell" 
-   
+   @click="handleClick"
     :style="`
     --_col-start:${colStart};
     --_col-end:${!node.narrower ? 5 :colStart + epochDelta };
     --_bg-color:${node.color};
     --_row-span:${getRecurseChildCount(1,node)};
     --_fg-color:${contrastColor(hexToRgb(node.color)!)};
+    --_height:${!node.narrower ? getScaledHeight(props.scaling,node.hasEnd.inMYA['@value'],node.hasBeginning?.inMYA['@value']):''};
     `"
     >
         <p :class="`label ${(rank === 'Eon' && !node.narrower )|| colStart >=3?``:`v-text`}`">{{ getLangVariant(node, props.lang) }}</p>
@@ -43,7 +50,7 @@ let epochDelta = 1
             </div>
         </template>
     </div>
-    <ChartGridPrecambrianCell v-for="narrower in sortedNode(node)"  :key="narrower.id"  :lang="props.lang" :node="narrower" :parent-rank="rank"/>
+    <ChartGridPrecambrianCell v-for="narrower in sortedNode(node)"  :key="narrower.id"  :lang="props.lang" :node="narrower" :parent-rank="rank" :scaling="props.scaling" @view="(n)=>emit('view', n)"/>
     <div v-if="!node.narrower" class="text-cell"
     :style="`
     --_col-start:5;
@@ -75,6 +82,7 @@ let epochDelta = 1
     grid-column-end:var(--_col-end);
     grid-row: span var(--_row-span);
     height:100%;
+    height: var(--_height)
 }
 .text-cell{
     grid-column-start: 5;

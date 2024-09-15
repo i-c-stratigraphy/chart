@@ -6,34 +6,39 @@ import { onlyUnique } from "~/utils/util";
 const ready = ref(false)
 const error = ref(null)
 const data = ref([])
-function getSubChart(segment, idx){
-    console.log(`chart.${segment}.json => ${idx}`)
-    return fetch(`/chart-data/chart.${segment}.json`).then(r=>{
-            if (!r.ok || (r.status > 300)){
-                throw "error"
-            }
-            return r
-        }).then(r=>{
-            return r.json()
-        }).then(r=>{
-            console.log(r)
-            data.value[idx] = r
-        }).catch((err)=>{
-            error.value ={...error.value, files:[...error.value.files, `chart-${segment}`], message:"Error fetching chart files"} 
-            throw err
-        })
+const dataLookup = ref({})
+const showInfo = ref(false)
+const info = ref(null)
+function getSubChart(segment, idx) {
+    return fetch(`/chart-data/chart.${segment}.json`).then(r => {
+        if (!r.ok || (r.status > 300)) {
+            throw "error"
+        }
+        return r
+    }).then(r => {
+        return r.json()
+    }).then(r => {
+        data.value[idx] = r
+    }).catch((err) => {
+        error.value = { ...error.value, files: [...error.value.files, `chart-${segment}`], message: "Error fetching chart files" }
+        throw err
+    })
 }
 onMounted(() => {
-    const timeout = setTimeout(()=>{error.value = {message:"Timed out fetching chart data"}},20*1000)
+    const timeout = setTimeout(() => { error.value = { message: "Timed out fetching chart data" } }, 20 * 1000)
     Promise.all([
-        getSubChart(1,0),
-        getSubChart(2,1),
-        getSubChart(3,2),
-        getSubChart(4,3),
+        getSubChart(1, 0),
+        getSubChart(2, 1),
+        getSubChart(3, 2),
+        getSubChart(4, 3),
 
-    ]).then(all=>{
-        ready.value=true 
+    ]).then(all => {
+        ready.value = true
         clearTimeout(timeout)
+        data.value.forEach(elem => {
+            flattenData(elem)
+        });
+        localStorage.setItem("lookup",JSON.stringify(dataLookup.value))
     }).catch(() => {
         error.value = { message: "An error occured grabbing chart data" }
     })
@@ -47,11 +52,11 @@ const scaleOptions = [
     },
     {
         name: "Logarithmic",
-        value: "none"
+        value: "log"
     },
     {
         name: "Linear",
-        value: "none"
+        value: "linear"
     }
 ]
 
@@ -70,7 +75,6 @@ const flattenLangs = (acc, cur) => {
 
     return acc
 }
-// const data  = [d1,d2,d3,d4]
 
 const langs = computed(() => {
     if (data.length < 1) {
@@ -78,14 +82,34 @@ const langs = computed(() => {
     }
     return data.value.reduce(flattenLangs, []).flat().filter(x => x != undefined).map(x => x["@language"]).filter(onlyUnique)
 })
-
+function flattenData(node) {
+    if (node.narrower) {
+        node.narrower.forEach(n => {
+            flattenData(n)
+        })
+    }
+    dataLookup.value[node.id] = { ...node }
+}
 
 const languageNames = new Intl.DisplayNames(['en'], {
     type: 'language'
 });
-
+const handleView = (node) => {
+    console.log(node)
+    info.value = dataLookup.value[node]
+    showInfo.value = true
+}
 </script>
 <template>
+    <teleport to="body">
+        <div class="lightbox" v-if="showInfo" @click.self="showInfo = false">
+            <div class="content">
+                <InfoBox :node="info" :key="info.id" :lang="selectedLang" @view="handleView"
+                    @close="showInfo = false" />
+                <!-- <pre>{{ info }}</pre> -->
+            </div>
+        </div>
+    </teleport>
     <div class="grid-5">
         <div class="cell" style="--_col-span: 1; --_row-span:2"><img src="/IUGSLOGOright.gif" /></div>
         <div class="cell" style="--_col-span: 3; --_row-span:1">
@@ -122,33 +146,43 @@ const languageNames = new Intl.DisplayNames(['en'], {
                     </select>
                 </label>
                 <label> Scaling:
-                    <select v-model="selectedScale" disabled>
+                    <select v-model="selectedScale">
                         <option v-for="scale in scaleOptions" :value="scale">{{ scale.name }}</option>
                     </select>
-       
+
                 </label>
             </div>
             <div class="grid-4">
-                <ChartGrid :node="data[0]" :lang="selectedLang" :key="'1' + selectedLang" />
-                <ChartGrid :node="data[1]" :lang="selectedLang" :key="'2' + selectedLang" />
-                <ChartGrid :node="data[2]" :lang="selectedLang" :key="'3' + selectedLang" />
-                <ChartGridPrecambrian :node="data[3]" :lang="selectedLang" :key="'4' + selectedLang" />
+                <ChartGrid :node="data[0]" :lang="selectedLang" :key="'1' + selectedLang" :scaling="selectedScale"
+                    @view="handleView" />
+                <ChartGrid :node="data[1]" :lang="selectedLang" :key="'2' + selectedLang" :scaling="selectedScale"
+                    @view="handleView" />
+                <ChartGrid :node="data[2]" :lang="selectedLang" :key="'3' + selectedLang" :scaling="selectedScale"
+                    @view="handleView" />
+                <ChartGridPrecambrian :node="data[3]" :lang="selectedLang" :key="'4' + selectedLang"
+                    :scaling="selectedScale" @view="handleView" />
             </div>
         </div>
     </div>
 </template>
 <style>
+* {
+
+    box-sizing: border-box;
+}
+
 body {
     print-color-adjust: exact;
     font-family: Arial, Helvetica, sans-serif;
 }
 </style>
 <style scoped>
-.error-banner{
-    padding:1.5rem;
+.error-banner {
+    padding: 1.5rem;
     border: solid red 2px;
-    border-radius:1rem
+    border-radius: 1rem
 }
+
 .grid-4 {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -167,6 +201,7 @@ body {
 }
 
 .cell img {
+    /* max-width: fit-content; */
     max-height: 8rem;
 }
 
@@ -175,9 +210,67 @@ body {
     gap: 1rem;
 }
 
+.lightbox {
+    position: absolute;
+    inset: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    z-index: 999;
+    background-color: rgba(0 0 0 /0.6);
+}
+
+.lightbox>.content {
+    background-color: white;
+    /* border:black solid 2px;  */
+    /* border-radius: 2rem; */
+    max-height: calc(100svh - 4rem);
+    overflow: hidden;
+    width: 600px;
+    max-width: 90vw;
+    margin-inline: auto;
+    margin-block: 4rem;
+}
+
 @media print {
     .no-print {
         visibility: hidden;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+.grid-4 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+@media (min-width: 576px) {
+    .grid-4 {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .grid-4 {}
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .grid-4 {}
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .grid-4 {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+    .grid-4 {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
     }
 }
 </style>

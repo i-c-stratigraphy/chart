@@ -1,10 +1,16 @@
 <script setup lang="ts">
-import { type chartNode } from "@/utils/util"
+import { type chartNode, type scalingFactor } from "@/utils/util"
 
+const popupState = ref<chartNode|null>(null)
 
 const props = defineProps<{
     node: chartNode,
     lang: string,
+    scaling:scalingFactor
+}>()
+
+const emit = defineEmits<{
+    (e: 'view', node: string): void
 }>()
 
 </script>
@@ -18,7 +24,7 @@ const props = defineProps<{
                 <span class="v-text gssp-text ">GSSP/GSSA</span>
             </div>
             <div class="header">Numeric Age</div>
-            <ChartGridPrecambrianCell :lang="props.lang" :node="props.node" :parent-rank="''" />
+            <ChartGridPrecambrianCell :lang="props.lang" :node="props.node" :parent-rank="''" :scaling="props.scaling" @view="x=>emit('view',x)"/>
         </div>
         <p>Units of all ranks are in the process of being defined by Global Boundary
 Stratotype Section and Points (GSSP) for their lower boundaries, including
@@ -49,7 +55,7 @@ Precambrian were provided by the relevant ICS subcommissions.</p>
     display: grid;
     grid-template-columns:
         repeat(2, var(--_thin-col)) repeat(3, var(--_wide-col));
-    font-size: 0.8em;
+    font-size: 0.6em;
 }
 
 .header {
@@ -71,8 +77,9 @@ Precambrian were provided by the relevant ICS subcommissions.</p>
 .gssp-text{
     position:absolute;
     right:0rem;
+    bottom: 0;
     transform-origin: 0 0;
-    transform: rotate(-90deg) translateY(-100%);
+    transform: rotate(-90deg) translateY(400%);
 }
 
 

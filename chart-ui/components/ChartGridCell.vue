@@ -1,9 +1,13 @@
 <script setup lang="ts">
-import {getRecurseChildCount, getLangVariant ,sortedNode} from "@/utils/util"
+import {getRecurseChildCount, getLangVariant ,sortedNode, type scalingFactor, type chartNode} from "@/utils/util"
 const props = defineProps<{
     node: chartNode,
     lang: string,
-    parentRank: string
+    parentRank: string,
+    scaling:scalingFactor
+}>()
+const emit = defineEmits<{
+    (e: 'view', node: string): void
 }>()
 const node = props.node
 const ranking: { [key: string]: number } = {
@@ -17,7 +21,6 @@ const ranking: { [key: string]: number } = {
 const rankSplit = (node.rank+'').split("/")
 
 const rank = rankSplit[rankSplit.length-1]||"Age"
-// console.log("ranks=", rankSplit[rankSplit.length-1] )
 let colStart = ranking[rank]!
 let epochDelta = 1
 if (rank === "Epoch" && props.parentRank != "Sub-Period") {
@@ -26,7 +29,7 @@ if (rank === "Epoch" && props.parentRank != "Sub-Period") {
 }
 
 const handleClick = ()=>{
-    console.log(node.id)
+    emit("view",node.id)
 }
 </script>
 <template>
@@ -38,6 +41,8 @@ const handleClick = ()=>{
     --_bg-color:${node.color};
     --_row-span:${getRecurseChildCount(1,node)};
     --_fg-color:${contrastColor(hexToRgb(node.color)!)};
+    --_height:${!node.narrower ? getScaledHeight(props.scaling,node.hasEnd.inMYA['@value'],node.hasBeginning?.inMYA['@value']):''};
+    --_width: ${rank == 'Sub-Period' || colStart <4?`3rem`:``}
     `"
     >
         <p :class="`label ${rank == 'Sub-Period' || colStart <4?`v-text`:``}`">{{ getLangVariant(node, props.lang) }}</p>
@@ -50,7 +55,7 @@ const handleClick = ()=>{
             </div>
         </template>
     </div>
-    <ChartGridCell v-for="narrower in sortedNode(node)"  :key="narrower.id"  :lang="props.lang" :node="narrower" :parent-rank="rank"/>
+    <ChartGridCell v-for="narrower in sortedNode(node)"  :key="narrower.id"  :lang="props.lang" :node="narrower" :parent-rank="rank" :scaling="props.scaling" @view="(n)=>emit('view', n)"/>
     <div v-if="!node.narrower" class="text-cell"
     :style="`
     --_col-start:7;
@@ -82,6 +87,14 @@ const handleClick = ()=>{
     grid-column-end:var(--_col-end);
     grid-row: span var(--_row-span);
     height:100%;
+    height: var(--_height, 100%);
+    max-width: var(--_width);
+    padding:0.25rem;
+    overflow: hidden;
+}
+p{
+    padding:0;
+    margin:0;
 }
 .text-cell{
     grid-column-start: 7;
