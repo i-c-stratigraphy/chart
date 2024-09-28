@@ -22,72 +22,41 @@ const languageNames = new Intl.DisplayNames(['en'], {
            --_bg-color:${node.color};
             --_fg-color:${contrastColor(hexToRgb(node.color)!)};
     `">
-            <span class="pref-label">{{ prefLabel }}</span>
-            <span v-if="localLang != prefLabel">{{ localLang }}</span>
+            <!-- <span class="pref-label">{{ prefLabel }}</span> -->
+            <span class="pref-label">{{ localLang }}</span>
             <button @click="emit('close')">Close</button>
+            <GSSPGoldenSpike  v-if="props.node.ratifiedGSSP && props.node.ratifiedGSSP ==='true'" class="icon"/>
+            <GSSAClock  v-if="props.node.ratifiedGSSA && props.node.ratifiedGSSA ==='true'" class="icon"/>
         </div>
         <div class="definition">
             <p>{{ props.node.definition }}</p>
         </div>
         <div class="details">
             <table class="table-details">
-                <tr>
-                    <th>Derived from</th>
-                    <td><a :href="props.node.wasDerivedFrom" target="_blank">{{ props.node.wasDerivedFrom }}</a></td>
-                </tr>
+
                 <tr v-if="props.node.broader">
-                    <th>Broader Scope</th>
+                    <th>Within</th>
                     <!-- <td @click="emit('view', props.node.broader[0])">{{ props.node.broader[0].replace('ischart:','') }}</td> -->
                     <td>
                         <ul>
                             <li v-for="n in props.node.broader" :key="n" @click="emit('view', n)">{{
-                                n.replace('ischart:','') }} <span v-if="localLang != prefLabel">({{
-                                    getLangVariantById(n,props.lang) }})</span></li>
+                                    getLangVariantById(n,props.lang) }}</li>
                         </ul>
                     </td>
 
                 </tr>
                 <tr v-if="props.node.narrower">
-                    <th>Narrower Scopes</th>
+                    <th>Contains</th>
                     <td>
                         <ul>
                             <li v-for="n in props.node.narrower" :key="n.id" @click="emit('view', n.id)">{{
-                                n.prefLabel['@value'] }} <span v-if="localLang != prefLabel">({{
-                                    getLangVariant(n,props.lang) }})</span></li>
+                                    getLangVariant(n,props.lang) }}</li>
                         </ul>
                     </td>
                 </tr>
-                <tr>
-                    <th>Geological Type</th>
-                    <td>{{ rank }}</td>
-                </tr>
-                <tr v-if="props.node.ratifiedGSSP">
-                    <th>
-                        <GSSPGoldenSpike />Global Boundry Stratotype Section and Points
-                    </th>
-                    <td>{{ props.node.ratifiedGSSP }}</td>
-                </tr>
-                <tr v-if="props.node.ratifiedGSSA">
-                    <th>
-                        <GSSAClock />Global Standard Stratigraphic Ages
-                    </th>
-                    <td>{{ props.node.ratifiedGSSA }}</td>
-                </tr>
-                <tr>
-                    <th>Alternate Labels</th>
-                    <td>
-                        <div class="lang-table">
-                        <table>
-                            <tr v-for="al in props.node.altLabel" :key="al['@language']">
-                                <td>{{ languageNames.of(al['@language']) }} ({{ new
-                                    Intl.DisplayNames([al['@language']], { type: 'language' }).of(al['@language']) }})
-                                </td>
-                                <td>{{ al['@value'] }}</td>
-                            </tr>
-                        </table>
-                    </div>
-                    </td>
-                </tr>
+                
+                
+                
             </table>
         </div>
     </div>
@@ -115,7 +84,10 @@ button {
     position: absolute;
     right: 10px;
 }
-
+.icon{
+    position: absolute;
+    left: 10px;
+}
 .definition {
     padding: 0.75rem;
 }
@@ -133,6 +105,7 @@ button {
 }
 table {
     border-collapse: collapse;
+    width:100%;
 }
 
 tr {

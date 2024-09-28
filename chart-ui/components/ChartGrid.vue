@@ -7,6 +7,7 @@ const props = defineProps<{
     lang: string,
     scaling:scalingFactor
 }>()
+
 const emit = defineEmits<{
     (e: 'view', node: string): void
 }>()
@@ -32,7 +33,6 @@ const emit = defineEmits<{
     /* padding:1rem */
 }
 .grid-7 {
-    max-width:25vw;
     margin-top: 4rem;
     --_thin-col: 3rem;
     --_mid-col: 6fr;
@@ -54,11 +54,9 @@ const emit = defineEmits<{
 }
 
 .v-text {
-    /* position: absolute; */
     display: inline-block;
     transform-origin: 0 0;
     transform: rotate(-90deg)
-        /*translateX(-100%);*/
 }
 .gssp-text{
     position:absolute;

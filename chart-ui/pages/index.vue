@@ -1,14 +1,30 @@
 <script setup>
 // import jsonRawData from "@/assets/chart.json";
 import ChartGridPrecambrian from "~/components/ChartGridPrecambrian.vue";
-import { onlyUnique } from "~/utils/util";
+import { onlyUnique,scaleOptions,getScaleOptionLabel,getScaleObj } from "~/utils/util";
+import { useRouteQuery } from '@vueuse/router'
 
+
+function getCachedInfo(target){
+    const val = localStorage.getItem("target")
+    if (val == ""|| val === null){
+        return {}
+    }
+    return JSON.parse(val)
+
+}
+
+const target = useRouteQuery('target',"")
+const selectedLang = useRouteQuery('language','en')
+const selectedScale = useRouteQuery('scale',scaleOptions[0])
+const dataLookup = ref({})
+const infoTarget = ref(getCachedInfo())
 const ready = ref(false)
 const error = ref(null)
 const data = ref([])
-const dataLookup = ref({})
-const showInfo = ref(false)
-const info = ref(null)
+
+const showInfo = computed(()=>target.value !== "")
+
 function getSubChart(segment, idx) {
     return fetch(`/chart-data/chart.${segment}.json`).then(r => {
         if (!r.ok || (r.status > 300)) {
@@ -45,24 +61,6 @@ onMounted(() => {
 })
 
 
-const scaleOptions = [
-    {
-        name: "Equal",
-        value: "none"
-    },
-    {
-        name: "Logarithmic",
-        value: "log"
-    },
-    {
-        name: "Linear",
-        value: "linear"
-    }
-]
-
-const selectedLang = ref("en");
-const selectedScale = ref(scaleOptions[0]);
-
 const flattenLangs = (acc, cur) => {
     if (cur.narrower) {
         cur.narrower.reduce(flattenLangs, acc)
@@ -96,20 +94,30 @@ const languageNames = new Intl.DisplayNames(['en'], {
 });
 const handleView = (node) => {
     console.log(node)
-    info.value = dataLookup.value[node]
-    showInfo.value = true
+    target.value = node
+    infoTarget.value = dataLookup.value[target.value]
+    localStorage.setItem("target",JSON.stringify(infoTarget.value))
 }
+// watch(target,()=>{
+//     infoTarget.value = dataLookup.value[target.value]
+// })
+watch(dataLookup,()=>{
+    infoTarget.value = dataLookup.value[target.value]
+    localStorage.setItem("target",JSON.stringify(infoTarget.value))
+})
 </script>
 <template>
+    
     <teleport to="body">
-        <div class="lightbox" v-if="showInfo" @click.self="showInfo = false">
+        <div class="lightbox" v-if="showInfo &&infoTarget&&dataLookup" @click.self="target = ''">
             <div class="content">
-                <InfoBox :node="info" :key="info.id" :lang="selectedLang" @view="handleView"
-                    @close="showInfo = false" />
+                <InfoBox :node="infoTarget" :key="infoTarget.id" :lang="selectedLang" @view="handleView"
+                    @close="target = ''" />
                 <!-- <pre>{{ info }}</pre> -->
             </div>
         </div>
     </teleport>
+
     <div class="grid-5">
         <div class="cell" style="--_col-span: 1; --_row-span:2"><img src="/IUGSLOGOright.gif" /></div>
         <div class="cell" style="--_col-span: 3; --_row-span:1">
@@ -147,20 +155,20 @@ const handleView = (node) => {
                 </label>
                 <label> Scaling:
                     <select v-model="selectedScale">
-                        <option v-for="scale in scaleOptions" :value="scale">{{ scale.name }}</option>
+                        <option v-for="scale in scaleOptions" :value="scale">{{ getScaleOptionLabel(scale) }}</option>
                     </select>
 
                 </label>
             </div>
             <div class="grid-4">
-                <ChartGrid :node="data[0]" :lang="selectedLang" :key="'1' + selectedLang" :scaling="selectedScale"
+                <ChartGrid :node="data[0]" :lang="selectedLang" :key="'1' + selectedLang" :scaling="getScaleObj(selectedScale)"
                     @view="handleView" />
-                <ChartGrid :node="data[1]" :lang="selectedLang" :key="'2' + selectedLang" :scaling="selectedScale"
+                <ChartGrid :node="data[1]" :lang="selectedLang" :key="'2' + selectedLang" :scaling="getScaleObj(selectedScale)"
                     @view="handleView" />
-                <ChartGrid :node="data[2]" :lang="selectedLang" :key="'3' + selectedLang" :scaling="selectedScale"
+                <ChartGrid :node="data[2]" :lang="selectedLang" :key="'3' + selectedLang" :scaling="getScaleObj(selectedScale)"
                     @view="handleView" />
                 <ChartGridPrecambrian :node="data[3]" :lang="selectedLang" :key="'4' + selectedLang"
-                    :scaling="selectedScale" @view="handleView" />
+                    :scaling="getScaleObj(selectedScale)" @view="handleView" />
             </div>
         </div>
     </div>
@@ -175,6 +183,7 @@ body {
     print-color-adjust: exact;
     font-family: Arial, Helvetica, sans-serif;
 }
+
 </style>
 <style scoped>
 .error-banner {
@@ -233,12 +242,6 @@ body {
     margin-block: 4rem;
 }
 
-@media print {
-    .no-print {
-        visibility: hidden;
-    }
-}
-
 /* Small devices (landscape phones, 576px and up) */
 .grid-4 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
@@ -271,6 +274,16 @@ body {
 @media (min-width: 1400px) {
     .grid-4 {
         grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+}
+@media print {
+    .grid-5 h1,
+    .grid-5 h2{
+        font-size:0.6em; 
+        margin-top:0px
+    }
+    .grid-5 img {
+        max-height:4rem;
     }
 }
 </style>

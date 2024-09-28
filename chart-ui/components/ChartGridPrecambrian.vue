@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import { type chartNode, type scalingFactor } from "@/utils/util"
 
-const popupState = ref<chartNode|null>(null)
 
 const props = defineProps<{
     node: chartNode,
@@ -61,18 +60,15 @@ Precambrian were provided by the relevant ICS subcommissions.</p>
 .header {
     position: relative;
     width:100%;
-    /* text-align: center; */
 }
 
 .col-span-2 {
     grid-column: span 2;
 }
 .v-text {
-    /* position: absolute; */
     display: inline-block;
     transform-origin: 0 0;
     transform: rotate(-90deg)
-        
 }
 .gssp-text{
     position:absolute;
@@ -82,9 +78,9 @@ Precambrian were provided by the relevant ICS subcommissions.</p>
     transform: rotate(-90deg) translateY(400%);
 }
 
-
-.eg {
-    min-height: 6rem;
-    outline: black solid 1px;
+@media print {
+    p {
+        font-size: 0.6em;
+    }
 }
 </style>

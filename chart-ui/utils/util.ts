@@ -75,3 +75,36 @@ export function getScaledHeight(scale: scalingFactor, beggining: number, end: nu
             return null
     }
 }
+
+const intScaleOptions: Record<string,string> = {
+    "none": "Equal",
+    "log": "Logarithmic",
+    "linear": "Linear",
+}
+export const scaleOptions = [
+    "none",
+    "log",
+    "linear",
+]
+export function getScaleOptionLabel(v: string): string {
+    try {
+        return intScaleOptions[v]
+    }catch{
+        return "none"
+    }
+}
+export function getScaleObj(v: string): scalingFactor {
+return {
+    name:getScaleOptionLabel(v),
+    value:v,
+}
+}
+
+export function getCachedInfo(target:string){
+    const val = window.localStorage.getItem("target")
+    if (val == ""|| val === null){
+        return {}
+    }
+    return JSON.parse(val)
+
+}
