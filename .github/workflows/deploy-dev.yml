@@ -21,7 +21,7 @@ jobs:
         run: CI=false pnpm generate
      
       - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@v4
+        uses: JamesIves/github-pages-deploy-action@v4.6.4
         with:
           folder: chart-ui/.output/public
           clean-exclude: |
