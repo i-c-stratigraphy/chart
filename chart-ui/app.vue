@@ -28,7 +28,8 @@
     }
 }
 @page {
-  size: landscape;
+  size: A3 landscape;
+  margin:0px;
 }
 
 /*
