@@ -285,5 +285,8 @@ body {
     .grid-5 img {
         max-height:4rem;
     }
+    .grid-4 {
+        grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+    }
 }
 </style>
