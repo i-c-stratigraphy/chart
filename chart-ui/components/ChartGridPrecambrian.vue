@@ -15,7 +15,7 @@ const emit = defineEmits<{
 </script>
 <template>
     <div>
-        <div class="grid-5">
+        <div class="grid-5 precambrian-grid">
             <div class="header v-text">Super Eon</div>
             <div class="header v-text">Eon</div>
             <div class="header">Era</div>

@@ -26,6 +26,9 @@
     p{
       font-size:0.6em;
     }
+    .grid-7, .precambrian-grid{
+        margin-top:2rem !important;
+    }
 }
 @page {
   size: A3 landscape;
