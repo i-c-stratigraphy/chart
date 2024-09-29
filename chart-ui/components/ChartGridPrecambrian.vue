@@ -5,7 +5,7 @@ import { type chartNode, type scalingFactor } from "@/utils/util"
 const props = defineProps<{
     node: chartNode,
     lang: string,
-    scaling:scalingFactor
+    scaling: scalingFactor
 }>()
 
 const emit = defineEmits<{
@@ -23,27 +23,31 @@ const emit = defineEmits<{
                 <span class="v-text gssp-text ">GSSP/GSSA</span>
             </div>
             <div class="header">Numeric Age</div>
-            <ChartGridPrecambrianCell :lang="props.lang" :node="props.node" :parent-rank="''" :scaling="props.scaling" @view="x=>emit('view',x)"/>
+            <ChartGridPrecambrianCell :lang="props.lang" :node="props.node" :parent-rank="''" :scaling="props.scaling"
+                @view="x => emit('view', x)" />
         </div>
-        <p>Units of all ranks are in the process of being defined by Global Boundary
-Stratotype Section and Points (GSSP) for their lower boundaries, including
-those of the Archean and Proterozoic, long defined by Global Standard
-Stratigraphic Ages (GSSA). Italic fonts indicate informal units and
-placeholders for unnamed units. Versioned charts and detailed information
-on ratified GSSPs are available at the website http://www.stratigraphy.org.
-The URL to this chart is found below.</p>
-<p>
-Numerical ages are subject to revision and do not define units in the
-Phanerozoic and the Ediacaran; only GSSPs do. For boundaries in the
-Phanerozoic without ratified GSSPs or without constrained numerical
-ages, an approximate numerical age (~) is provided.</p><p>
-Ratified Subseries/Subepochs are abbreviated as U/L (Upper/Late), M
-(Middle) and L/E (Lower/Early). Numerical ages for all systems except
-Quaternary, upper Paleogene, Cretaceous, Jurassic, Triassic, Permian,
-Cambrian and Precambrian are taken from ‘A Geologic Time Scale
-2012’ by Gradstein et al. (2012), those for the Quaternary, upper
-Paleogene, Cretaceous, Jurassic, Triassic, Permian, Cambrian and
-Precambrian were provided by the relevant ICS subcommissions.</p>
+        <div class="chart-notes">
+            <p>Units of all ranks are in the process of being defined by Global Boundary
+                Stratotype Section and Points (GSSP) for their lower boundaries, including
+                those of the Archean and Proterozoic, long defined by Global Standard
+                Stratigraphic Ages (GSSA). Italic fonts indicate informal units and
+                placeholders for unnamed units. Versioned charts and detailed information
+                on ratified GSSPs are available at the website http://www.stratigraphy.org.
+                The URL to this chart is found below.</p>
+            <p>
+                Numerical ages are subject to revision and do not define units in the
+                Phanerozoic and the Ediacaran; only GSSPs do. For boundaries in the
+                Phanerozoic without ratified GSSPs or without constrained numerical
+                ages, an approximate numerical age (~) is provided.</p>
+            <p>
+                Ratified Subseries/Subepochs are abbreviated as U/L (Upper/Late), M
+                (Middle) and L/E (Lower/Early). Numerical ages for all systems except
+                Quaternary, upper Paleogene, Cretaceous, Jurassic, Triassic, Permian,
+                Cambrian and Precambrian are taken from ‘A Geologic Time Scale
+                2012’ by Gradstein et al. (2012), those for the Quaternary, upper
+                Paleogene, Cretaceous, Jurassic, Triassic, Permian, Cambrian and
+                Precambrian were provided by the relevant ICS subcommissions.</p>
+        </div>
     </div>
 </template>
 <style scoped>
@@ -59,20 +63,22 @@ Precambrian were provided by the relevant ICS subcommissions.</p>
 
 .header {
     position: relative;
-    width:100%;
+    width: 100%;
 }
 
 .col-span-2 {
     grid-column: span 2;
 }
+
 .v-text {
     display: inline-block;
     transform-origin: 0 0;
     transform: rotate(-90deg)
 }
-.gssp-text{
-    position:absolute;
-    right:0rem;
+
+.gssp-text {
+    position: absolute;
+    right: 0rem;
     bottom: 0;
     transform-origin: 0 0;
     transform: rotate(-90deg) translateY(400%);
