@@ -69,9 +69,9 @@ export function getScaledHeight(scale: scalingFactor, beggining: number, end: nu
             return "2rem"
         case "log":
             return `calc( 1rem + ${(Math.log(end - beggining) < 0 ? 0 : Math.log(end - beggining)) * SCALE_OFFSET}px)`
-        case "log":
+        case "print":
             const print_offset = 5
-            return `calc( 0.5rem + ${(Math.log(end - beggining) < 0 ? 0 : Math.log(end - beggining)) * print_offset}px)`
+            return `calc( 1.1rem + ${(Math.log(end - beggining) < 0 ? 0 : Math.log(end - beggining)) * print_offset}px)`
         case "linear":
             return `calc( 1rem + ${(end - beggining) * SCALE_OFFSET}px)`
         default:
