@@ -1,0 +1,1303 @@
+{
+    "ischart:Aquitanian": {
+        "narrower": null,
+        "broader": [
+            "ischart:Miocene"
+        ]
+    },
+    "ischart:Burdigalian": {
+        "narrower": null,
+        "broader": [
+            "ischart:Miocene"
+        ]
+    },
+    "ischart:Langhian": {
+        "narrower": null,
+        "broader": [
+            "ischart:Miocene"
+        ]
+    },
+    "ischart:Messinian": {
+        "narrower": null,
+        "broader": [
+            "ischart:Miocene"
+        ]
+    },
+    "ischart:Serravallian": {
+        "narrower": null,
+        "broader": [
+            "ischart:Miocene"
+        ]
+    },
+    "ischart:Tortonian": {
+        "narrower": null,
+        "broader": [
+            "ischart:Miocene"
+        ]
+    },
+    "ischart:Miocene": {
+        "narrower": [
+            "ischart:Aquitanian",
+            "ischart:Burdigalian",
+            "ischart:Langhian",
+            "ischart:Messinian",
+            "ischart:Serravallian",
+            "ischart:Tortonian"
+        ],
+        "broader": [
+            "ischart:Neogene"
+        ]
+    },
+    "ischart:Piacenzian": {
+        "narrower": null,
+        "broader": [
+            "ischart:Pliocene"
+        ]
+    },
+    "ischart:Zanclean": {
+        "narrower": null,
+        "broader": [
+            "ischart:Pliocene"
+        ]
+    },
+    "ischart:Pliocene": {
+        "narrower": [
+            "ischart:Piacenzian",
+            "ischart:Zanclean"
+        ],
+        "broader": [
+            "ischart:Neogene"
+        ]
+    },
+    "ischart:Neogene": {
+        "narrower": [
+            "ischart:Miocene",
+            "ischart:Pliocene"
+        ],
+        "broader": [
+            "ischart:Cenozoic"
+        ]
+    },
+    "ischart:Bartonian": {
+        "narrower": null,
+        "broader": [
+            "ischart:Eocene"
+        ]
+    },
+    "ischart:Lutetian": {
+        "narrower": null,
+        "broader": [
+            "ischart:Eocene"
+        ]
+    },
+    "ischart:Priabonian": {
+        "narrower": null,
+        "broader": [
+            "ischart:Eocene"
+        ]
+    },
+    "ischart:Ypresian": {
+        "narrower": null,
+        "broader": [
+            "ischart:Eocene"
+        ]
+    },
+    "ischart:Eocene": {
+        "narrower": [
+            "ischart:Bartonian",
+            "ischart:Lutetian",
+            "ischart:Priabonian",
+            "ischart:Ypresian"
+        ],
+        "broader": [
+            "ischart:Paleogene"
+        ]
+    },
+    "ischart:Chattian": {
+        "narrower": null,
+        "broader": [
+            "ischart:Oligocene"
+        ]
+    },
+    "ischart:Rupelian": {
+        "narrower": null,
+        "broader": [
+            "ischart:Oligocene"
+        ]
+    },
+    "ischart:Oligocene": {
+        "narrower": [
+            "ischart:Chattian",
+            "ischart:Rupelian"
+        ],
+        "broader": [
+            "ischart:Paleogene"
+        ]
+    },
+    "ischart:Danian": {
+        "narrower": null,
+        "broader": [
+            "ischart:Paleocene"
+        ]
+    },
+    "ischart:Selandian": {
+        "narrower": null,
+        "broader": [
+            "ischart:Paleocene"
+        ]
+    },
+    "ischart:Thanetian": {
+        "narrower": null,
+        "broader": [
+            "ischart:Paleocene"
+        ]
+    },
+    "ischart:Paleocene": {
+        "narrower": [
+            "ischart:Danian",
+            "ischart:Selandian",
+            "ischart:Thanetian"
+        ],
+        "broader": [
+            "ischart:Paleogene"
+        ]
+    },
+    "ischart:Paleogene": {
+        "narrower": [
+            "ischart:Eocene",
+            "ischart:Oligocene",
+            "ischart:Paleocene"
+        ],
+        "broader": [
+            "ischart:Cenozoic"
+        ]
+    },
+    "ischart:Greenlandian": {
+        "narrower": null,
+        "broader": [
+            "ischart:Holocene"
+        ]
+    },
+    "ischart:Meghalayan": {
+        "narrower": null,
+        "broader": [
+            "ischart:Holocene"
+        ]
+    },
+    "ischart:Northgrippian": {
+        "narrower": null,
+        "broader": [
+            "ischart:Holocene"
+        ]
+    },
+    "ischart:Holocene": {
+        "narrower": [
+            "ischart:Greenlandian",
+            "ischart:Meghalayan",
+            "ischart:Northgrippian"
+        ],
+        "broader": [
+            "ischart:Quaternary"
+        ]
+    },
+    "ischart:Calabrian": {
+        "narrower": null,
+        "broader": [
+            "ischart:Pleistocene"
+        ]
+    },
+    "ischart:Chibanian": {
+        "narrower": null,
+        "broader": [
+            "ischart:Pleistocene"
+        ]
+    },
+    "ischart:Gelasian": {
+        "narrower": null,
+        "broader": [
+            "ischart:Pleistocene"
+        ]
+    },
+    "ischart:UpperPleistocene": {
+        "narrower": null,
+        "broader": [
+            "ischart:Pleistocene"
+        ]
+    },
+    "ischart:Pleistocene": {
+        "narrower": [
+            "ischart:Calabrian",
+            "ischart:Chibanian",
+            "ischart:Gelasian",
+            "ischart:UpperPleistocene"
+        ],
+        "broader": [
+            "ischart:Quaternary"
+        ]
+    },
+    "ischart:Quaternary": {
+        "narrower": [
+            "ischart:Holocene",
+            "ischart:Pleistocene"
+        ],
+        "broader": [
+            "ischart:Cenozoic"
+        ]
+    },
+    "ischart:Cenozoic": {
+        "narrower": [
+            "ischart:Neogene",
+            "ischart:Paleogene",
+            "ischart:Quaternary"
+        ],
+        "broader": [
+            "ischart:Phanerozoic"
+        ]
+    },
+    "ischart:Albian": {
+        "narrower": null,
+        "broader": [
+            "ischart:LowerCretaceous"
+        ]
+    },
+    "ischart:Aptian": {
+        "narrower": null,
+        "broader": [
+            "ischart:LowerCretaceous"
+        ]
+    },
+    "ischart:Barremian": {
+        "narrower": null,
+        "broader": [
+            "ischart:LowerCretaceous"
+        ]
+    },
+    "ischart:Berriasian": {
+        "narrower": null,
+        "broader": [
+            "ischart:LowerCretaceous"
+        ]
+    },
+    "ischart:Hauterivian": {
+        "narrower": null,
+        "broader": [
+            "ischart:LowerCretaceous"
+        ]
+    },
+    "ischart:Valanginian": {
+        "narrower": null,
+        "broader": [
+            "ischart:LowerCretaceous"
+        ]
+    },
+    "ischart:LowerCretaceous": {
+        "narrower": [
+            "ischart:Albian",
+            "ischart:Aptian",
+            "ischart:Barremian",
+            "ischart:Berriasian",
+            "ischart:Hauterivian",
+            "ischart:Valanginian"
+        ],
+        "broader": [
+            "ischart:Cretaceous"
+        ]
+    },
+    "ischart:Campanian": {
+        "narrower": null,
+        "broader": [
+            "ischart:UpperCretaceous"
+        ]
+    },
+    "ischart:Cenomanian": {
+        "narrower": null,
+        "broader": [
+            "ischart:UpperCretaceous"
+        ]
+    },
+    "ischart:Coniacian": {
+        "narrower": null,
+        "broader": [
+            "ischart:UpperCretaceous"
+        ]
+    },
+    "ischart:Maastrichtian": {
+        "narrower": null,
+        "broader": [
+            "ischart:UpperCretaceous"
+        ]
+    },
+    "ischart:Santonian": {
+        "narrower": null,
+        "broader": [
+            "ischart:UpperCretaceous"
+        ]
+    },
+    "ischart:Turonian": {
+        "narrower": null,
+        "broader": [
+            "ischart:UpperCretaceous"
+        ]
+    },
+    "ischart:UpperCretaceous": {
+        "narrower": [
+            "ischart:Campanian",
+            "ischart:Cenomanian",
+            "ischart:Coniacian",
+            "ischart:Maastrichtian",
+            "ischart:Santonian",
+            "ischart:Turonian"
+        ],
+        "broader": [
+            "ischart:Cretaceous"
+        ]
+    },
+    "ischart:Cretaceous": {
+        "narrower": [
+            "ischart:LowerCretaceous",
+            "ischart:UpperCretaceous"
+        ],
+        "broader": [
+            "ischart:Mesozoic"
+        ]
+    },
+    "ischart:Hettangian": {
+        "narrower": null,
+        "broader": [
+            "ischart:LowerJurassic"
+        ]
+    },
+    "ischart:Pliensbachian": {
+        "narrower": null,
+        "broader": [
+            "ischart:LowerJurassic"
+        ]
+    },
+    "ischart:Sinemurian": {
+        "narrower": null,
+        "broader": [
+            "ischart:LowerJurassic"
+        ]
+    },
+    "ischart:Toarcian": {
+        "narrower": null,
+        "broader": [
+            "ischart:LowerJurassic"
+        ]
+    },
+    "ischart:LowerJurassic": {
+        "narrower": [
+            "ischart:Hettangian",
+            "ischart:Pliensbachian",
+            "ischart:Sinemurian",
+            "ischart:Toarcian"
+        ],
+        "broader": [
+            "ischart:Jurassic"
+        ]
+    },
+    "ischart:Aalenian": {
+        "narrower": null,
+        "broader": [
+            "ischart:MiddleJurassic"
+        ]
+    },
+    "ischart:Bajocian": {
+        "narrower": null,
+        "broader": [
+            "ischart:MiddleJurassic"
+        ]
+    },
+    "ischart:Bathonian": {
+        "narrower": null,
+        "broader": [
+            "ischart:MiddleJurassic"
+        ]
+    },
+    "ischart:Callovian": {
+        "narrower": null,
+        "broader": [
+            "ischart:MiddleJurassic"
+        ]
+    },
+    "ischart:MiddleJurassic": {
+        "narrower": [
+            "ischart:Aalenian",
+            "ischart:Bajocian",
+            "ischart:Bathonian",
+            "ischart:Callovian"
+        ],
+        "broader": [
+            "ischart:Jurassic"
+        ]
+    },
+    "ischart:Kimmeridgian": {
+        "narrower": null,
+        "broader": [
+            "ischart:UpperJurassic"
+        ]
+    },
+    "ischart:Oxfordian": {
+        "narrower": null,
+        "broader": [
+            "ischart:UpperJurassic"
+        ]
+    },
+    "ischart:Tithonian": {
+        "narrower": null,
+        "broader": [
+            "ischart:UpperJurassic"
+        ]
+    },
+    "ischart:UpperJurassic": {
+        "narrower": [
+            "ischart:Kimmeridgian",
+            "ischart:Oxfordian",
+            "ischart:Tithonian"
+        ],
+        "broader": [
+            "ischart:Jurassic"
+        ]
+    },
+    "ischart:Jurassic": {
+        "narrower": [
+            "ischart:LowerJurassic",
+            "ischart:MiddleJurassic",
+            "ischart:UpperJurassic"
+        ],
+        "broader": [
+            "ischart:Mesozoic"
+        ]
+    },
+    "ischart:Induan": {
+        "narrower": null,
+        "broader": [
+            "ischart:LowerTriassic"
+        ]
+    },
+    "ischart:Olenekian": {
+        "narrower": null,
+        "broader": [
+            "ischart:LowerTriassic"
+        ]
+    },
+    "ischart:LowerTriassic": {
+        "narrower": [
+            "ischart:Induan",
+            "ischart:Olenekian"
+        ],
+        "broader": [
+            "ischart:Triassic"
+        ]
+    },
+    "ischart:Anisian": {
+        "narrower": null,
+        "broader": [
+            "ischart:MiddleTriassic"
+        ]
+    },
+    "ischart:Ladinian": {
+        "narrower": null,
+        "broader": [
+            "ischart:MiddleTriassic"
+        ]
+    },
+    "ischart:MiddleTriassic": {
+        "narrower": [
+            "ischart:Anisian",
+            "ischart:Ladinian"
+        ],
+        "broader": [
+            "ischart:Triassic"
+        ]
+    },
+    "ischart:Carnian": {
+        "narrower": null,
+        "broader": [
+            "ischart:UpperTriassic"
+        ]
+    },
+    "ischart:Norian": {
+        "narrower": null,
+        "broader": [
+            "ischart:UpperTriassic"
+        ]
+    },
+    "ischart:Rhaetian": {
+        "narrower": null,
+        "broader": [
+            "ischart:UpperTriassic"
+        ]
+    },
+    "ischart:UpperTriassic": {
+        "narrower": [
+            "ischart:Carnian",
+            "ischart:Norian",
+            "ischart:Rhaetian"
+        ],
+        "broader": [
+            "ischart:Triassic"
+        ]
+    },
+    "ischart:Triassic": {
+        "narrower": [
+            "ischart:LowerTriassic",
+            "ischart:MiddleTriassic",
+            "ischart:UpperTriassic"
+        ],
+        "broader": [
+            "ischart:Mesozoic"
+        ]
+    },
+    "ischart:Mesozoic": {
+        "narrower": [
+            "ischart:Cretaceous",
+            "ischart:Jurassic",
+            "ischart:Triassic"
+        ],
+        "broader": [
+            "ischart:Phanerozoic"
+        ]
+    },
+    "ischart:CambrianStage3": {
+        "narrower": null,
+        "broader": [
+            "ischart:CambrianSeries2"
+        ]
+    },
+    "ischart:CambrianStage4": {
+        "narrower": null,
+        "broader": [
+            "ischart:CambrianSeries2"
+        ]
+    },
+    "ischart:CambrianSeries2": {
+        "narrower": [
+            "ischart:CambrianStage3",
+            "ischart:CambrianStage4"
+        ],
+        "broader": [
+            "ischart:Cambrian"
+        ]
+    },
+    "ischart:CambrianStage10": {
+        "narrower": null,
+        "broader": [
+            "ischart:Furongian"
+        ]
+    },
+    "ischart:Jiangshanian": {
+        "narrower": null,
+        "broader": [
+            "ischart:Furongian"
+        ]
+    },
+    "ischart:Paibian": {
+        "narrower": null,
+        "broader": [
+            "ischart:Furongian"
+        ]
+    },
+    "ischart:Furongian": {
+        "narrower": [
+            "ischart:CambrianStage10",
+            "ischart:Jiangshanian",
+            "ischart:Paibian"
+        ],
+        "broader": [
+            "ischart:Cambrian"
+        ]
+    },
+    "ischart:Drumian": {
+        "narrower": null,
+        "broader": [
+            "ischart:Miaolingian"
+        ]
+    },
+    "ischart:Guzhangian": {
+        "narrower": null,
+        "broader": [
+            "ischart:Miaolingian"
+        ]
+    },
+    "ischart:Wuliuan": {
+        "narrower": null,
+        "broader": [
+            "ischart:Miaolingian"
+        ]
+    },
+    "ischart:Miaolingian": {
+        "narrower": [
+            "ischart:Drumian",
+            "ischart:Guzhangian",
+            "ischart:Wuliuan"
+        ],
+        "broader": [
+            "ischart:Cambrian"
+        ]
+    },
+    "ischart:CambrianStage2": {
+        "narrower": null,
+        "broader": [
+            "ischart:Terreneuvian"
+        ]
+    },
+    "ischart:Fortunian": {
+        "narrower": null,
+        "broader": [
+            "ischart:Terreneuvian"
+        ]
+    },
+    "ischart:Terreneuvian": {
+        "narrower": [
+            "ischart:CambrianStage2",
+            "ischart:Fortunian"
+        ],
+        "broader": [
+            "ischart:Cambrian"
+        ]
+    },
+    "ischart:Cambrian": {
+        "narrower": [
+            "ischart:CambrianSeries2",
+            "ischart:Furongian",
+            "ischart:Miaolingian",
+            "ischart:Terreneuvian"
+        ],
+        "broader": [
+            "ischart:Paleozoic"
+        ]
+    },
+    "ischart:Tournaisian": {
+        "narrower": null,
+        "broader": [
+            "ischart:LowerMississippian"
+        ]
+    },
+    "ischart:LowerMississippian": {
+        "narrower": [
+            "ischart:Tournaisian"
+        ],
+        "broader": [
+            "ischart:Mississippian"
+        ]
+    },
+    "ischart:Visean": {
+        "narrower": null,
+        "broader": [
+            "ischart:MiddleMississippian"
+        ]
+    },
+    "ischart:MiddleMississippian": {
+        "narrower": [
+            "ischart:Visean"
+        ],
+        "broader": [
+            "ischart:Mississippian"
+        ]
+    },
+    "ischart:Serpukhovian": {
+        "narrower": null,
+        "broader": [
+            "ischart:UpperMississippian"
+        ]
+    },
+    "ischart:UpperMississippian": {
+        "narrower": [
+            "ischart:Serpukhovian"
+        ],
+        "broader": [
+            "ischart:Mississippian"
+        ]
+    },
+    "ischart:Mississippian": {
+        "narrower": [
+            "ischart:LowerMississippian",
+            "ischart:MiddleMississippian",
+            "ischart:UpperMississippian"
+        ],
+        "broader": [
+            "ischart:Carboniferous"
+        ]
+    },
+    "ischart:Bashkirian": {
+        "narrower": null,
+        "broader": [
+            "ischart:LowerPennsylvanian"
+        ]
+    },
+    "ischart:LowerPennsylvanian": {
+        "narrower": [
+            "ischart:Bashkirian"
+        ],
+        "broader": [
+            "ischart:Pennsylvanian"
+        ]
+    },
+    "ischart:Moscovian": {
+        "narrower": null,
+        "broader": [
+            "ischart:MiddlePennsylvanian"
+        ]
+    },
+    "ischart:MiddlePennsylvanian": {
+        "narrower": [
+            "ischart:Moscovian"
+        ],
+        "broader": [
+            "ischart:Pennsylvanian"
+        ]
+    },
+    "ischart:Gzhelian": {
+        "narrower": null,
+        "broader": [
+            "ischart:UpperPennsylvanian"
+        ]
+    },
+    "ischart:Kasimovian": {
+        "narrower": null,
+        "broader": [
+            "ischart:UpperPennsylvanian"
+        ]
+    },
+    "ischart:UpperPennsylvanian": {
+        "narrower": [
+            "ischart:Gzhelian",
+            "ischart:Kasimovian"
+        ],
+        "broader": [
+            "ischart:Pennsylvanian"
+        ]
+    },
+    "ischart:Pennsylvanian": {
+        "narrower": [
+            "ischart:LowerPennsylvanian",
+            "ischart:MiddlePennsylvanian",
+            "ischart:UpperPennsylvanian"
+        ],
+        "broader": [
+            "ischart:Carboniferous"
+        ]
+    },
+    "ischart:Carboniferous": {
+        "narrower": [
+            "ischart:Mississippian",
+            "ischart:Pennsylvanian"
+        ],
+        "broader": [
+            "ischart:Paleozoic"
+        ]
+    },
+    "ischart:Emsian": {
+        "narrower": null,
+        "broader": [
+            "ischart:LowerDevonian"
+        ]
+    },
+    "ischart:Lochkovian": {
+        "narrower": null,
+        "broader": [
+            "ischart:LowerDevonian"
+        ]
+    },
+    "ischart:Pragian": {
+        "narrower": null,
+        "broader": [
+            "ischart:LowerDevonian"
+        ]
+    },
+    "ischart:LowerDevonian": {
+        "narrower": [
+            "ischart:Emsian",
+            "ischart:Lochkovian",
+            "ischart:Pragian"
+        ],
+        "broader": [
+            "ischart:Devonian"
+        ]
+    },
+    "ischart:Eifelian": {
+        "narrower": null,
+        "broader": [
+            "ischart:MiddleDevonian"
+        ]
+    },
+    "ischart:Givetian": {
+        "narrower": null,
+        "broader": [
+            "ischart:MiddleDevonian"
+        ]
+    },
+    "ischart:MiddleDevonian": {
+        "narrower": [
+            "ischart:Eifelian",
+            "ischart:Givetian"
+        ],
+        "broader": [
+            "ischart:Devonian"
+        ]
+    },
+    "ischart:Famennian": {
+        "narrower": null,
+        "broader": [
+            "ischart:UpperDevonian"
+        ]
+    },
+    "ischart:Frasnian": {
+        "narrower": null,
+        "broader": [
+            "ischart:UpperDevonian"
+        ]
+    },
+    "ischart:UpperDevonian": {
+        "narrower": [
+            "ischart:Famennian",
+            "ischart:Frasnian"
+        ],
+        "broader": [
+            "ischart:Devonian"
+        ]
+    },
+    "ischart:Devonian": {
+        "narrower": [
+            "ischart:LowerDevonian",
+            "ischart:MiddleDevonian",
+            "ischart:UpperDevonian"
+        ],
+        "broader": [
+            "ischart:Paleozoic"
+        ]
+    },
+    "ischart:Floian": {
+        "narrower": null,
+        "broader": [
+            "ischart:LowerOrdovician"
+        ]
+    },
+    "ischart:Tremadocian": {
+        "narrower": null,
+        "broader": [
+            "ischart:LowerOrdovician"
+        ]
+    },
+    "ischart:LowerOrdovician": {
+        "narrower": [
+            "ischart:Floian",
+            "ischart:Tremadocian"
+        ],
+        "broader": [
+            "ischart:Ordovician"
+        ]
+    },
+    "ischart:Dapingian": {
+        "narrower": null,
+        "broader": [
+            "ischart:MiddleOrdovician"
+        ]
+    },
+    "ischart:Darriwilian": {
+        "narrower": null,
+        "broader": [
+            "ischart:MiddleOrdovician"
+        ]
+    },
+    "ischart:MiddleOrdovician": {
+        "narrower": [
+            "ischart:Dapingian",
+            "ischart:Darriwilian"
+        ],
+        "broader": [
+            "ischart:Ordovician"
+        ]
+    },
+    "ischart:Hirnantian": {
+        "narrower": null,
+        "broader": [
+            "ischart:UpperOrdovician"
+        ]
+    },
+    "ischart:Katian": {
+        "narrower": null,
+        "broader": [
+            "ischart:UpperOrdovician"
+        ]
+    },
+    "ischart:Sandbian": {
+        "narrower": null,
+        "broader": [
+            "ischart:UpperOrdovician"
+        ]
+    },
+    "ischart:UpperOrdovician": {
+        "narrower": [
+            "ischart:Hirnantian",
+            "ischart:Katian",
+            "ischart:Sandbian"
+        ],
+        "broader": [
+            "ischart:Ordovician"
+        ]
+    },
+    "ischart:Ordovician": {
+        "narrower": [
+            "ischart:LowerOrdovician",
+            "ischart:MiddleOrdovician",
+            "ischart:UpperOrdovician"
+        ],
+        "broader": [
+            "ischart:Paleozoic"
+        ]
+    },
+    "ischart:Artinskian": {
+        "narrower": null,
+        "broader": [
+            "ischart:Cisuralian"
+        ]
+    },
+    "ischart:Asselian": {
+        "narrower": null,
+        "broader": [
+            "ischart:Cisuralian"
+        ]
+    },
+    "ischart:Kungurian": {
+        "narrower": null,
+        "broader": [
+            "ischart:Cisuralian"
+        ]
+    },
+    "ischart:Sakmarian": {
+        "narrower": null,
+        "broader": [
+            "ischart:Cisuralian"
+        ]
+    },
+    "ischart:Cisuralian": {
+        "narrower": [
+            "ischart:Artinskian",
+            "ischart:Asselian",
+            "ischart:Kungurian",
+            "ischart:Sakmarian"
+        ],
+        "broader": [
+            "ischart:Permian"
+        ]
+    },
+    "ischart:Capitanian": {
+        "narrower": null,
+        "broader": [
+            "ischart:Guadalupian"
+        ]
+    },
+    "ischart:Roadian": {
+        "narrower": null,
+        "broader": [
+            "ischart:Guadalupian"
+        ]
+    },
+    "ischart:Wordian": {
+        "narrower": null,
+        "broader": [
+            "ischart:Guadalupian"
+        ]
+    },
+    "ischart:Guadalupian": {
+        "narrower": [
+            "ischart:Capitanian",
+            "ischart:Roadian",
+            "ischart:Wordian"
+        ],
+        "broader": [
+            "ischart:Permian"
+        ]
+    },
+    "ischart:Changhsingian": {
+        "narrower": null,
+        "broader": [
+            "ischart:Lopingian"
+        ]
+    },
+    "ischart:Wuchiapingian": {
+        "narrower": null,
+        "broader": [
+            "ischart:Lopingian"
+        ]
+    },
+    "ischart:Lopingian": {
+        "narrower": [
+            "ischart:Changhsingian",
+            "ischart:Wuchiapingian"
+        ],
+        "broader": [
+            "ischart:Permian"
+        ]
+    },
+    "ischart:Permian": {
+        "narrower": [
+            "ischart:Cisuralian",
+            "ischart:Guadalupian",
+            "ischart:Lopingian"
+        ],
+        "broader": [
+            "ischart:Paleozoic"
+        ]
+    },
+    "ischart:Aeronian": {
+        "narrower": null,
+        "broader": [
+            "ischart:Llandovery"
+        ]
+    },
+    "ischart:Rhuddanian": {
+        "narrower": null,
+        "broader": [
+            "ischart:Llandovery"
+        ]
+    },
+    "ischart:Telychian": {
+        "narrower": null,
+        "broader": [
+            "ischart:Llandovery"
+        ]
+    },
+    "ischart:Llandovery": {
+        "narrower": [
+            "ischart:Aeronian",
+            "ischart:Rhuddanian",
+            "ischart:Telychian"
+        ],
+        "broader": [
+            "ischart:Silurian"
+        ]
+    },
+    "ischart:Gorstian": {
+        "narrower": null,
+        "broader": [
+            "ischart:Ludlow"
+        ]
+    },
+    "ischart:Ludfordian": {
+        "narrower": null,
+        "broader": [
+            "ischart:Ludlow"
+        ]
+    },
+    "ischart:Ludlow": {
+        "narrower": [
+            "ischart:Gorstian",
+            "ischart:Ludfordian"
+        ],
+        "broader": [
+            "ischart:Silurian"
+        ]
+    },
+    "ischart:Pridoli": {
+        "narrower": null,
+        "broader": [
+            "ischart:Silurian"
+        ]
+    },
+    "ischart:Homerian": {
+        "narrower": null,
+        "broader": [
+            "ischart:Wenlock"
+        ]
+    },
+    "ischart:Sheinwoodian": {
+        "narrower": null,
+        "broader": [
+            "ischart:Wenlock"
+        ]
+    },
+    "ischart:Wenlock": {
+        "narrower": [
+            "ischart:Homerian",
+            "ischart:Sheinwoodian"
+        ],
+        "broader": [
+            "ischart:Silurian"
+        ]
+    },
+    "ischart:Silurian": {
+        "narrower": [
+            "ischart:Llandovery",
+            "ischart:Ludlow",
+            "ischart:Pridoli",
+            "ischart:Wenlock"
+        ],
+        "broader": [
+            "ischart:Paleozoic"
+        ]
+    },
+    "ischart:Paleozoic": {
+        "narrower": [
+            "ischart:Cambrian",
+            "ischart:Carboniferous",
+            "ischart:Devonian",
+            "ischart:Ordovician",
+            "ischart:Permian",
+            "ischart:Silurian"
+        ],
+        "broader": [
+            "ischart:Phanerozoic"
+        ]
+    },
+    "ischart:Phanerozoic": {
+        "narrower": [
+            "ischart:Cenozoic",
+            "ischart:Mesozoic",
+            "ischart:Paleozoic"
+        ],
+        "broader": null
+    },
+    "ischart:Eoarchean": {
+        "narrower": null,
+        "broader": [
+            "ischart:Archean"
+        ]
+    },
+    "ischart:Mesoarchean": {
+        "narrower": null,
+        "broader": [
+            "ischart:Archean"
+        ]
+    },
+    "ischart:Neoarchean": {
+        "narrower": null,
+        "broader": [
+            "ischart:Archean"
+        ]
+    },
+    "ischart:Paleoarchean": {
+        "narrower": null,
+        "broader": [
+            "ischart:Archean"
+        ]
+    },
+    "ischart:Archean": {
+        "narrower": [
+            "ischart:Eoarchean",
+            "ischart:Mesoarchean",
+            "ischart:Neoarchean",
+            "ischart:Paleoarchean"
+        ],
+        "broader": [
+            "ischart:Precambrian"
+        ]
+    },
+    "ischart:Hadean": {
+        "narrower": null,
+        "broader": [
+            "ischart:Precambrian"
+        ]
+    },
+    "ischart:Calymmian": {
+        "narrower": null,
+        "broader": [
+            "ischart:Mesoproterozoic"
+        ]
+    },
+    "ischart:Ectasian": {
+        "narrower": null,
+        "broader": [
+            "ischart:Mesoproterozoic"
+        ]
+    },
+    "ischart:Stenian": {
+        "narrower": null,
+        "broader": [
+            "ischart:Mesoproterozoic"
+        ]
+    },
+    "ischart:Mesoproterozoic": {
+        "narrower": [
+            "ischart:Calymmian",
+            "ischart:Ectasian",
+            "ischart:Stenian"
+        ],
+        "broader": [
+            "ischart:Proterozoic"
+        ]
+    },
+    "ischart:Cryogenian": {
+        "narrower": null,
+        "broader": [
+            "ischart:Neoproterozoic"
+        ]
+    },
+    "ischart:Ediacaran": {
+        "narrower": null,
+        "broader": [
+            "ischart:Neoproterozoic"
+        ]
+    },
+    "ischart:Tonian": {
+        "narrower": null,
+        "broader": [
+            "ischart:Neoproterozoic"
+        ]
+    },
+    "ischart:Neoproterozoic": {
+        "narrower": [
+            "ischart:Cryogenian",
+            "ischart:Ediacaran",
+            "ischart:Tonian"
+        ],
+        "broader": [
+            "ischart:Proterozoic"
+        ]
+    },
+    "ischart:Orosirian": {
+        "narrower": null,
+        "broader": [
+            "ischart:Paleoproterozoic"
+        ]
+    },
+    "ischart:Rhyacian": {
+        "narrower": null,
+        "broader": [
+            "ischart:Paleoproterozoic"
+        ]
+    },
+    "ischart:Siderian": {
+        "narrower": null,
+        "broader": [
+            "ischart:Paleoproterozoic"
+        ]
+    },
+    "ischart:Statherian": {
+        "narrower": null,
+        "broader": [
+            "ischart:Paleoproterozoic"
+        ]
+    },
+    "ischart:Paleoproterozoic": {
+        "narrower": [
+            "ischart:Orosirian",
+            "ischart:Rhyacian",
+            "ischart:Siderian",
+            "ischart:Statherian"
+        ],
+        "broader": [
+            "ischart:Proterozoic"
+        ]
+    },
+    "ischart:Proterozoic": {
+        "narrower": [
+            "ischart:Mesoproterozoic",
+            "ischart:Neoproterozoic",
+            "ischart:Paleoproterozoic"
+        ],
+        "broader": [
+            "ischart:Precambrian"
+        ]
+    },
+    "ischart:Precambrian": {
+        "narrower": [
+            "ischart:Archean",
+            "ischart:Hadean",
+            "ischart:Proterozoic"
+        ],
+        "broader": null
+    }
+}
