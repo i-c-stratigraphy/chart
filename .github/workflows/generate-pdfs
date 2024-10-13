@@ -1,0 +1,40 @@
+name: CI
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      # Runs a set of commands using the runners shell
+      - name: Run a multi-line script
+        run: |
+          langs=$(curl https://stratigraphy.org/chart-data/chart.json | jq -r '.. | .["@language"]?|select( . != null )'|sort -u)
+          date=$(date '+%y.%m')
+          version=$date # $(git describe --tags --abbrev=0 )
+
+          #get official version first
+          google-chrome --headless --disable-gpu --print-to-pdf=$output --no-pdf-header-footer --virtual-time-budget=5000 "https://stratigraphy.org/chart-data/?scale=print"
+          for i in $langs
+          do
+            output="chart-$i-$version.json"
+            echo "creating $output"
+            #generate each language version
+            google-chrome --headless --disable-gpu --print-to-pdf=$output --no-pdf-header-footer --virtual-time-budget=5000 "https://stratigraphy.org/chart-data/?scale=print&lang=$i"
+          done
+      - name: Upload a Build Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: chart pdf 
+          path:  "*.pdf"
+      # - uses: "marvinpinto/action-automatic-releases@latest"
+      #   with:
+      #     repo_token: "${{ secrets.GITHUB_TOKEN }}"
+      #     draft: true
+      #     prerelease: false
+      #     files: |
+      #       *.pdf
