@@ -1,9 +1,9 @@
 name: generate-pdfs
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "main", "jae/chartgen" ]
   pull_request:
-    branches: [ "main" ]
+    branches: [ "main", "jae/chartgen" ]
   workflow_dispatch:
 
 jobs:
