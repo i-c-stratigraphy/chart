@@ -13,14 +13,18 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
         run: |
+          echo "starting"
           langs=$(curl https://stratigraphy.org/chart-data/chart.json | jq -r '.. | .["@language"]?|select( . != null )'|sort -u)
           date=$(date '+%y.%m')
           version=$date # $(git describe --tags --abbrev=0 )
-
+          echo $langs 
+          echo $date 
+          echo $version
           #get official version first
           google-chrome --headless --disable-gpu --print-to-pdf=$output --no-pdf-header-footer --virtual-time-budget=5000 "https://stratigraphy.org/chart-data/?scale=print"
           for i in $langs
           do
+            echo $i 
             output="chart-$i-$version.json"
             echo "creating $output"
             #generate each language version
