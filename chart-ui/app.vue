@@ -1,6 +1,6 @@
 <template>
   <div class="alert-alpha no-print">
-    <p>This is an early access version of a Stratographic Chart derived from data in the triple store</p>
+    <p>This is an early access version of a Stratigraphic Chart derived from data in the triple store</p>
   </div>
   <div>
     <NuxtPage />
