@@ -26,7 +26,7 @@ const data = ref([])
 const showInfo = computed(()=>target.value !== "")
 
 function getSubChart(segment, idx) {
-    return fetch(`/chart-data/chart.${segment}.json`).then(r => {
+    return fetch(`https://cdn.jsdelivr.net/gh/i-c-stratigraphy/chart-data@gh-pages/chart.${segment}.json`).then(r => {
         if (!r.ok || (r.status > 300)) {
             throw "error"
         }
