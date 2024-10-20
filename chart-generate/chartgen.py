@@ -11,16 +11,37 @@ def split_chart(root: dict, inc: list[str]):
     local["narrower"] = [n1 for n1 in local["narrower"] if len(n1["narrower"])>0]
     return local
 
-def get_sub_info(node,root):
-    if 'broader' in node:
-        broader = node['broader']
-    else:
-        broader = None
+def get_sub_info(node,root,  g: Graph):
+    broader = None
+    if  'broader' in node:
+        print(str(node["broader"][0]))
+        res1 = g.query(f'''
+            PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+            PREFIX ischart: <http://resource.geosciml.org/classifier/ics/ischart/>
+            SELECT ?iri ?prefLabel ?altLabel 
+                WHERE {{
+                    BIND ({str(node["broader"][0])} AS ?iri)
+                    ?iri skos:prefLabel ?prefLabel .
+                    OPTIONAL{{
+                        ?iri skos:altLabel ?altLabel .
+                    }}   
+                }}
+        ''')
+        print(res1.bindings)
+        results1 = res1.bindings
+        print(len(results1))
+        broader = {
+            "id": node["broader"][0],
+            "prefLabel": {"value": results1[0]["prefLabel"], "language":results1[0]["prefLabel"].language},
+            "altLabel": [ { "language": x['altLabel'].language, "value": x['altLabel'], } for x in results1 if 'altLabel' in x]
+        }
+
+    # broader = node["broader"] if 'broader' in node else None
     if 'narrower' in node:
         for n in node['narrower']:
-            root[n["id"]] = get_sub_info(n, root)
+            root[n["id"]] = get_sub_info(n, root, g)
         return {
-                'narrower': [n["id"] for n in node['narrower']],
+                'narrower': [{"id":n["id"] ,  "prefLabel":n["prefLabel"], "altLabel":n["altLabel"] if "altLabel" in n else None }for n in node['narrower']],
                 'broader': broader
             }
     else:
@@ -29,11 +50,35 @@ def get_sub_info(node,root):
                 'broader': broader 
             }
     
-def get_hierachy(framed):
+'''
+"ischart:id:{
+    "narrower: [
+        {
+        "id":
+            PrefLabel:{
+            }
+            altLabel:[
+                {
+                    lang 
+                    value
+                }
+            ]
+        }
+    ]
+    broader: [
+    ]
+}
+
+'''
+
+
+
+
+def get_hierachy(framed, g):
     root = {}
     topConcepts = [tl for tl in framed["hasTopConcept"] ]
     for tc in topConcepts:
-        root[tc["id"]] = get_sub_info(tc, root)
+        root[tc["id"]] = get_sub_info(tc, root, g)
     return root
 
 
@@ -89,7 +134,7 @@ def main():
     framed = jsonld.frame(doc, frame)
     
     with open('./out/chart.hierachy.json', 'w',encoding = 'utf8') as out:
-        out.write(json.dumps(get_hierachy(framed),ensure_ascii=False,indent=4).encode('utf8').decode())
+        out.write(json.dumps(get_hierachy(framed, g),ensure_ascii=False,indent=4).encode('utf8').decode())
 
     with open('./out/chart.1.json', 'w',encoding = 'utf8') as out:
         out.write(json.dumps(split_chart(framed["hasTopConcept"][0],['ischart:Cretaceous','ischart:Paleogene','ischart:Neogene','ischart:Quaternary']),ensure_ascii=False,indent=4).encode('utf8').decode())
