@@ -2,6 +2,10 @@
 export type chartNode = {
     narrower?: chartNode[]
     rank: string
+    counts: {
+        directNarrowers: number
+        indirectNarrowers: number
+    }
     [key: string]: any
 }
 export type root = {
@@ -13,23 +17,51 @@ export type scalingFactor = {
     value: string
 }
 
+
+type LangLabel = {
+    value: string
+    language: string
+}
+type HierachyItem = {
+    id:string 
+    prefLabel: LangLabel
+    altLabel: LangLabel[] | null
+}
+
+type HierachyRecord ={
+    narrower: HierachyItem[] | null
+    broader: HierachyItem | null
+}
+
+export type Hierachy = Record<string,HierachyRecord>
+
+
+
+
 export function onlyUnique(value: string, index: number, array: string[]) {
     return array.indexOf(value) === index;
 }
 export function sortedNode(node: chartNode) {
-    return node.narrower?.sort((a, b) =>
-        parseInt(a.order['@value']) == parseInt(b.order['@value']) ? 0 :
-            parseInt(a.order['@value']) > parseInt(b.order['@value']) ? 1 : -1
-    )
+    return node.narrower?.toSorted((a, b) => a.order - b.order)
 }
 export function getLangVariant(node: chartNode, lang: string) {
     if (Array.isArray(node.altLabel)) {
-        const alt = node.altLabel.filter(x => x["@language"] == lang)
+        const alt = node.altLabel.filter(x => x.language == lang)
         if (alt.length == 1) {
-            return alt[0]["@value"]
+            return alt[0].value
         }
     }
-    return node.prefLabel["@value"]
+    return node.prefLabel.value
+}
+
+export function getLangVarientFromHierachy(node: HierachyItem, lang:string):string{
+    if (node.altLabel){
+        const alt = node.altLabel.filter(x => x.language === lang)
+        if (alt.length == 1) {
+            return alt[0].value
+        }
+    }
+    return node.prefLabel.value
 }
 
 let lookup: Record<string, chartNode> | null = null
@@ -41,25 +73,14 @@ export function getLangVariantById(nodeId: string, lang: string) {
     if (lookup) {
         const node = lookup[nodeId]
         if (Array.isArray(node.altLabel)) {
-            const alt = node.altLabel.filter(x => x["@language"] == lang)
+            const alt = node.altLabel.filter(x => x.language == lang)
             if (alt.length == 1) {
-                return alt[0]["@value"]
+                return alt[0].value
             }
         }
-        return node.prefLabel["@value"]
+        return node.prefLabel.value
     }
     return ""
-}
-export function getRecurseChildCount(cnt: number, node: chartNode): number {
-    let intCnt = cnt
-    if (!node.narrower) {
-        return 1
-    }
-    node.narrower.forEach(narrower => {
-        intCnt += getRecurseChildCount(intCnt, narrower)
-    });
-    return intCnt
-
 }
 
 const SCALE_OFFSET = 10

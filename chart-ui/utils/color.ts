@@ -6,7 +6,7 @@ export type RGBColor = {
     b:number
 }
 
-export function hexToRgb(hex:string): RGBColor|null{
+export function hexToRgb(hex:string): RGBColor{
     // Expand shorthand form (e.g. "03F") to full form (e.g. "0033FF")
     var shorthandRegex = /^#?([a-f\d])([a-f\d])([a-f\d])$/i;
     hex = hex.replace(shorthandRegex, function(m, r, g, b) {
@@ -18,7 +18,11 @@ export function hexToRgb(hex:string): RGBColor|null{
       r: parseInt(result[1], 16),
       g: parseInt(result[2], 16),
       b: parseInt(result[3], 16)
-    } : null;
+    } : {
+      r:255,
+      g:255,
+      b:255
+    };
   }
 
 export function contrastColor(color:RGBColor): "white"|"black"{
