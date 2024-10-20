@@ -18,7 +18,7 @@ const target = useRouteQuery('target',"")
 const selectedLang = useRouteQuery('language','en')
 const selectedScale = useRouteQuery('scale',scaleOptions[0])
 const dataLookup = ref({})
-const infoTarget = ref(getCachedInfo())
+const infoTarget = ref(null)
 const ready = ref(false)
 const error = ref(null)
 const data = ref([])
@@ -47,13 +47,14 @@ onMounted(() => {
         getSubChart(2, 1),
         getSubChart(3, 2),
         getSubChart(4, 3),
-
+        getSubChart("hierachy",4),
     ]).then(all => {
         ready.value = true
         clearTimeout(timeout)
         data.value.forEach(elem => {
             flattenData(elem)
         });
+        infoTarget.value = dataLookup.value[target.value]
         localStorage.setItem("lookup",JSON.stringify(dataLookup.value))
     }).catch(() => {
         error.value = { message: "An error occured grabbing chart data" }
@@ -98,9 +99,7 @@ const handleView = (node) => {
     infoTarget.value = dataLookup.value[target.value]
     localStorage.setItem("target",JSON.stringify(infoTarget.value))
 }
-// watch(target,()=>{
-//     infoTarget.value = dataLookup.value[target.value]
-// })
+
 watch(dataLookup,()=>{
     infoTarget.value = dataLookup.value[target.value]
     localStorage.setItem("target",JSON.stringify(infoTarget.value))
@@ -111,14 +110,13 @@ watch(dataLookup,()=>{
     <teleport to="body">
         <div class="lightbox" v-if="showInfo &&infoTarget&&dataLookup" @click.self="target = ''">
             <div class="content">
-                <InfoBox :node="infoTarget" :key="infoTarget.id" :lang="selectedLang" @view="handleView"
+                <InfoBox :node="infoTarget" :key="infoTarget.id" :lang="selectedLang" @view="handleView" :hierachy="data[4]"
                     @close="target = ''" />
-                <!-- <pre>{{ info }}</pre> -->
             </div>
         </div>
     </teleport>
 
-    <div class="grid-5">
+    <div class="grid-5 only-print">
         <div class="cell" style="--_col-span: 1; --_row-span:2"><img src="/IUGSLOGOright.gif" /></div>
         <div class="cell" style="--_col-span: 3; --_row-span:1">
             <h1>INTERNATIONAL CHRONOSTRATIGRAPHIC CHART</h1>
