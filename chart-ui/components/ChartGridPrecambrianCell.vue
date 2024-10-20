@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import {getRecurseChildCount, getLangVariant ,sortedNode, getScaledHeight, type scalingFactor} from "@/utils/util"
+import { getLangVariant ,sortedNode, getScaledHeight, type scalingFactor} from "@/utils/util"
 const props = defineProps<{
     node: chartNode,
     lang: string,
@@ -35,9 +35,9 @@ const handleClick = ()=>{
     --_col-start:${colStart};
     --_col-end:${!node.narrower ? 5 :colStart + epochDelta };
     --_bg-color:${node.color};
-    --_row-span:${getRecurseChildCount(1,node)};
+    --_row-span:${node.counts.indirectNarrowers};
     --_fg-color:${contrastColor(hexToRgb(node.color)!)};
-    --_height:${!node.narrower ? getScaledHeight(props.scaling,node.hasEnd.inMYA['@value'],node.hasBeginning?.inMYA['@value']):''};
+    --_height:${!node.narrower ? getScaledHeight(props.scaling,node.hasEnd.inMYA.value,node.hasBeginning?.inMYA.value):''};
     `"
     >
         <p :class="`label ${(rank === 'Eon' && !node.narrower )|| colStart >=3?``:`v-text`}`">{{ getLangVariant(node, props.lang) }}</p>
@@ -59,16 +59,23 @@ const handleClick = ()=>{
     `"
     >
     <span class="num-age">
-        {{ node.hasBeginning?.["skos:note"] ===
+        {{ node.hasBeginning?.note ===
             "uncertain" ||
-            node.hasEnd?.["skos:note"]
+            node.hasEnd?.note
             === "uncertain" ? "~" : '' }}
-        {{ node.hasEnd.inMYA["@value"] == 0 ?
+        {{ node.hasBeginning?.inMYA.value == 0 ?
             'Present' :
-            `${node.hasEnd.inMYA["@value"]}` }}
-        {{ node.hasEnd.marginOfError ? `&mnplus;
-        ${node.hasEnd.marginOfError["@value"]}` : ''
+            `${node.hasBeginning?.inMYA.value? node.hasBeginning?.inMYA.value:node.hasBeginning?.inMYA }`}}
+        {{ node.hasBeginning?.marginOfError ? `&mnplus;
+        ${node.hasBeginning?.marginOfError.value?node.hasBeginning?.marginOfError.value: node.hasBeginning?.marginOfError}` : ''
         }}
+            
+        <!-- {{ node.hasEnd.inMYA.value == 0 ?
+            'Present' :
+            `${node.hasEnd.inMYA.value}` }}
+        {{ node.hasEnd.marginOfError ? `&mnplus;
+        ${node.hasEnd.marginOfError.value}` : ''
+        }} -->
         </span>
     </div>
 </template>

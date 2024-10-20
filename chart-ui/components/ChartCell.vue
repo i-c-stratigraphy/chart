@@ -15,9 +15,9 @@ const node = props.node
     <!-- <table v-for="node in sortedNode(props.node)"> -->
         <!--  -->
         <tr>
-            <td :style="!node.narrower?`display:relative; height: clamp(1rem, ${(node.hasBeginning.inMYA['@value'] - node.hasEnd.inMYA['@value']) * 10}px, 10rem);
-            line-height: clamp(1rem, ${(node.hasBeginning.inMYA['@value'] - node.hasEnd.inMYA['@value']) * 10}px, 10rem); background-color: ${node.color}`:`background-color: ${node.color}`"
-                :data-height="parseInt(node.hasBeginning.inMYA['@value']) - parseInt(node.hasEnd.inMYA['@value'])"
+            <td :style="!node.narrower?`display:relative; height: clamp(1rem, ${(node.hasBeginning.inMYA.value - node.hasEnd.inMYA.value) * 10}px, 10rem);
+            line-height: clamp(1rem, ${(node.hasBeginning.inMYA.value - node.hasEnd.inMYA.value) * 10}px, 10rem); background-color: ${node.color}`:`background-color: ${node.color}`"
+                :data-height="parseInt(node.hasBeginning.inMYA.value) - parseInt(node.hasEnd.inMYA.value)"
                 :data-hasGSSP="node.ratifiedGSSP" :data-color="node.color"
                 :data-hasGSSA="node.ratifiedGSSA"
                 :data-fg-color="contrastColor(hexToRgb(node.color)!)">
@@ -30,15 +30,15 @@ const node = props.node
 
             <td v-if="!node.narrower" class="age">
                 
-                {{ node.hasBeginning?.["skos:note"] ===
+                {{ node.hasBeginning?.note ===
                     "uncertain" ||
-                    node.hasEnd?.["skos:note"]
+                    node.hasEnd?.note
                     === "uncertain" ? "~" : '' }}
-                {{ node.hasEnd.inMYA["@value"] == 0 ?
+                {{ node.hasEnd.inMYA.value == 0 ?
                     'Present' :
-                    `${node.hasEnd.inMYA["@value"]}` }}
+                    `${node.hasEnd.inMYA.value}` }}
                 {{ node.hasEnd.marginOfError ? `&mnplus;
-                ${node.hasEnd.marginOfError["@value"]}` : ''
+                ${node.hasEnd.marginOfError.value}` : ''
                 }}
             </td>
             <td v-else>
@@ -50,13 +50,13 @@ const node = props.node
     <!-- </table> -->
     <!-- </td>
     <td v-else class="age">
-        {{ childNode.hasBeginning?.["skos:note"] === "uncertain" ||
-            childNode.hasEnd?.["skos:note"] ===
+        {{ childNode.hasBeginning?.note === "uncertain" ||
+            childNode.hasEnd?.note ===
             "uncertain" ? "~" : '' }}
-        {{ childNode.hasEnd.inMYA["@value"] == 0 ? 'Present' :
-            `${childNode.hasEnd.inMYA["@value"]}` }}
+        {{ childNode.hasEnd.inMYA.value == 0 ? 'Present' :
+            `${childNode.hasEnd.inMYA.value}` }}
         {{ childNode.hasEnd.marginOfError ? `&mnplus;
-        ${childNode.hasEnd.marginOfError["@value"]}` : '' }}
+        ${childNode.hasEnd.marginOfError.value}` : '' }}
     </td>
     </tr>
     </table> -->

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-type Hierachy = Record<string,Record<'narrower'|'broader',string[]|null>>
+import { type Hierachy, getLangVarientFromHierachy } from '~/utils/util';
 const props = defineProps<{
     node: chartNode,
     lang: string,
@@ -10,7 +10,7 @@ const emit = defineEmits<{
     (e: 'close'): void
 }>()
 const localLang = getLangVariant(props.node, props.lang)
-const prefLabel = props.node.prefLabel['@value']
+const prefLabel = props.node.prefLabel.value
 const rankSplit = (props.node.rank + '').split("/")
 const rank = rankSplit[rankSplit.length - 1] || "Age"
 const languageNames = new Intl.DisplayNames(['en'], {
@@ -39,11 +39,15 @@ const NodeId = props.node["id"]
 
                 <tr v-if="props.hierachy[NodeId].broader">
                     <th>Within</th>
+                   
                     <!-- <td @click="emit('view', props.node.broader[0])">{{ props.node.broader[0].replace('ischart:','') }}</td> -->
                     <td>
-                        <ul>
-                            <li v-for="n in props.hierachy[NodeId].broader" :key="n" @click="emit('view', n)">{{
-                                    getLangVariantById(n,props.lang) }}</li>
+                        <ul v-if= props.hierachy[NodeId].broader>
+
+                            <li  @click="emit('view', props.hierachy[NodeId].broader?.id!)">{{
+                                    // getLangVarientFromHierachy(props.hierachy[NodeId].broader!, props.lang) 
+                                    props.hierachy[NodeId].broader
+                                    }}</li>
                         </ul>
                     </td>
 
@@ -52,8 +56,10 @@ const NodeId = props.node["id"]
                     <th>Contains</th>
                     <td>
                         <ul>
-                            <li v-for="n in props.hierachy[NodeId].narrower" :key="n" @click="emit('view', n)">{{
-                                     getLangVariantById(n,props.lang) }}</li>
+                            <li v-for="n in props.hierachy[NodeId].narrower" :key="n.id" @click="emit('view', n.id)">{{
+                                    //  getLangVarientFromHierachy(n,props.lang) 
+                                    n.id
+                                     }}</li>
                         </ul>
                     </td>
                 </tr>

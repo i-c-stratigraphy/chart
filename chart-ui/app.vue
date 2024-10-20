@@ -1,6 +1,6 @@
 <template>
 
-  <StratigraphyHeader class="no-print"/>
+  <!-- <StratigraphyHeader class="no-print"/> -->
   <div class="content">
     <NuxtPage />
   </div>
