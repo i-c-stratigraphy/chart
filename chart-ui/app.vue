@@ -1,27 +1,25 @@
 <template>
-  <div class="alert-alpha no-print">
-    <p>This is an early access version of a Stratigraphic Chart derived from data in the triple store</p>
-  </div>
-  <div>
+
+  <StratigraphyHeader class="no-print"/>
+  <div class="content">
     <NuxtPage />
   </div>
+
 </template>
 <style>
 *{
   box-sizing: border-box;
 }
-.alert-alpha{
-  height: 6rem; 
-  padding:1rem;
-  /* background-color:rgb(217, 217, 2); */
-  border: 1px black solid;
-  border-radius: 1rem;
+.only-print{
+  display:none !important;
 }
-
 @media print {
     .no-print {
         visibility: hidden;
         display:none;
+    }
+    .only-print{
+      display: unset;
     }
     p{
       font-size:0.6em;
@@ -34,7 +32,9 @@
   size: A3 landscape;
   margin:0px;
 }
-
+.content{
+  background-color: white;
+}
 /*
 js deliver chart versions 
 */

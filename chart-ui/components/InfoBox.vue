@@ -1,7 +1,9 @@
 <script setup lang="ts">
+type Hierachy = Record<string,Record<'narrower'|'broader',string[]|null>>
 const props = defineProps<{
     node: chartNode,
-    lang: string
+    lang: string,
+    hierachy:Hierachy
 }>()
 const emit = defineEmits<{
     (e: 'view', node: string): void
@@ -14,6 +16,7 @@ const rank = rankSplit[rankSplit.length - 1] || "Age"
 const languageNames = new Intl.DisplayNames(['en'], {
     type: 'language'
 });
+const NodeId = props.node["id"]
 </script>
 <template>
     <div class="info-box">
@@ -34,23 +37,23 @@ const languageNames = new Intl.DisplayNames(['en'], {
         <div class="details">
             <table class="table-details">
 
-                <tr v-if="props.node.broader">
+                <tr v-if="props.hierachy[NodeId].broader">
                     <th>Within</th>
                     <!-- <td @click="emit('view', props.node.broader[0])">{{ props.node.broader[0].replace('ischart:','') }}</td> -->
                     <td>
                         <ul>
-                            <li v-for="n in props.node.broader" :key="n" @click="emit('view', n)">{{
+                            <li v-for="n in props.hierachy[NodeId].broader" :key="n" @click="emit('view', n)">{{
                                     getLangVariantById(n,props.lang) }}</li>
                         </ul>
                     </td>
 
                 </tr>
-                <tr v-if="props.node.narrower">
+                <tr v-if="props.hierachy[NodeId].narrower">
                     <th>Contains</th>
                     <td>
                         <ul>
-                            <li v-for="n in props.node.narrower" :key="n.id" @click="emit('view', n.id)">{{
-                                    getLangVariant(n,props.lang) }}</li>
+                            <li v-for="n in props.hierachy[NodeId].narrower" :key="n" @click="emit('view', n)">{{
+                                     getLangVariantById(n,props.lang) }}</li>
                         </ul>
                     </td>
                 </tr>
@@ -119,5 +122,11 @@ th {
 
 li {
     cursor: pointer;
+}
+.details{
+    list-style: none;
+}
+.detials li{
+    text-decoration: underline;
 }
 </style>
