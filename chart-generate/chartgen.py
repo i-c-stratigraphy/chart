@@ -50,30 +50,6 @@ def get_sub_info(node,root,  g: Graph):
                 'broader': broader 
             }
     
-'''
-"ischart:id:{
-    "narrower: [
-        {
-        "id":
-            PrefLabel:{
-            }
-            altLabel:[
-                {
-                    lang 
-                    value
-                }
-            ]
-        }
-    ]
-    broader: [
-    ]
-}
-
-'''
-
-
-
-
 def get_hierachy(framed, g):
     root = {}
     topConcepts = [tl for tl in framed["hasTopConcept"] ]
@@ -123,7 +99,6 @@ def main():
             }}
         ''')
 
-        #print(x, coll.bindings[0]["indirectChildren"], coll.bindings[0]["directChildren"])
         res = coll.bindings[0]
         bnode = BNode()
         g.add((x,URIRef('https://example.com/counts'), bnode))
