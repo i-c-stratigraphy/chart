@@ -19,7 +19,7 @@
         display:none;
     }
     .only-print{
-      display: unset;
+      display: unset !important;
     }
     p{
       font-size:0.6em;

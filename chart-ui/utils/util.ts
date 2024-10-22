@@ -1,13 +1,46 @@
 
 export type chartNode = {
+    id:string 
+    type:string 
+    rank: string 
+    ratifiedGSSP?: boolean 
+    ratifiedGSSA?: boolean
+    isDefinedBy: string 
+    altLabel?:chartLanguage[]
+    broader?: string[]
+    definition: string 
+    inScheme: string
+    notation: string 
+    prefLabel: chartLanguage
+    hasBeginning:timeMarker
+    hasEnd:timeMarker
     narrower?: chartNode[]
-    rank: string
+    order:number
+    wasDerivedFrom: string 
+    color: string 
     counts: {
         directNarrowers: number
         indirectNarrowers: number
     }
+
     [key: string]: any
 }
+type chartLanguage = {
+    language: string 
+    value: string 
+}
+type timeMarker = {
+    inMYA: number | {
+        type: string 
+        value: number 
+    }
+    marginOfError?:number | {
+        type: string 
+        value: number 
+    }
+    note:string
+}
+
 export type root = {
     hasTopConcept?: chartNode[]
     [key: string]: any
@@ -35,7 +68,33 @@ type HierachyRecord ={
 
 export type Hierachy = Record<string,HierachyRecord>
 
+export function getTimeMarker(beginning: timeMarker, end: timeMarker) :string {
+    end.inMYA
+    let out = ""
+    if(beginning.note === "uncertain" || end.note === "uncertain")  {
+        out +="~"
+    }
+    let isPresent:boolean = false
+    let strTime:string = ""
+    let MarginOfError:string = ""
+    if (typeof end.inMYA === 'number'){
+        isPresent = end?.inMYA === 0 
+        strTime = end?.inMYA.toString()
+        
+    }else{
+        isPresent = end?.inMYA.value == 0
+        strTime = end?.inMYA.value.toString()
+        MarginOfError
+    }
+    if (end.marginOfError && typeof end.marginOfError == "number"){
+        MarginOfError = end.marginOfError.toString()
+    }else if (end.marginOfError&& !(typeof end.marginOfError == "number")){
+        MarginOfError = end.marginOfError.value.toString()
+    }
+    
 
+    return `${isPresent? 'Present': strTime} ${MarginOfError!= '' ? '&plusmn; '+ MarginOfError:''}` 
+}
 
 
 export function onlyUnique(value: string, index: number, array: string[]) {
@@ -84,17 +143,26 @@ export function getLangVariantById(nodeId: string, lang: string) {
 }
 
 const SCALE_OFFSET = 10
-export function getScaledHeight(scale: scalingFactor, beggining: number, end: number) {
+function getTimeMarkerValue(t: timeMarker):number{
+    if (typeof t.inMYA == "number"){
+        return t.inMYA
+    }else{
+        return t.inMYA.value
+    }
+}
+export function getScaledHeight(scale: scalingFactor, beggining: timeMarker, end: timeMarker) {
+    const endVal = getTimeMarkerValue(end)
+    const beginVal = getTimeMarkerValue(beggining)
     switch (scale.value) {
         case "none":
             return "2rem"
         case "log":
-            return `calc( 1rem + ${(Math.log(end - beggining) < 0 ? 0 : Math.log(end - beggining)) * SCALE_OFFSET}px)`
+            return `calc( 1rem + ${(Math.log(endVal - beginVal) < 0 ? 0 : Math.log(endVal - beginVal)) * SCALE_OFFSET}px)`
         case "print":
             const print_offset = 5
-            return `calc( 1.1rem + ${(Math.log(end - beggining) < 0 ? 0 : Math.log(end - beggining)) * print_offset}px)`
+            return `calc( 1.1rem + ${(Math.log(endVal - beginVal) < 0 ? 0 : Math.log(endVal - beginVal)) * print_offset}px)`
         case "linear":
-            return `calc( 1rem + ${(end - beggining) * SCALE_OFFSET}px)`
+            return `calc( 1rem + ${(endVal - beginVal) * SCALE_OFFSET}px)`
         default:
             return null
     }

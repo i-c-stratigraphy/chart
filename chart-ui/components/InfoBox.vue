@@ -28,8 +28,8 @@ const NodeId = props.node["id"]
             <!-- <span class="pref-label">{{ prefLabel }}</span> -->
             <span class="pref-label">{{ localLang }}</span>
             <button @click="emit('close')">Close</button>
-            <GSSPGoldenSpike  v-if="props.node.ratifiedGSSP && props.node.ratifiedGSSP ==='true'" class="icon"/>
-            <GSSAClock  v-if="props.node.ratifiedGSSA && props.node.ratifiedGSSA ==='true'" class="icon"/>
+            <GSSPGoldenSpike  v-if="props.node.ratifiedGSSP " class="icon"/>
+            <GSSAClock  v-if="props.node.ratifiedGSSA " class="icon"/>
         </div>
         <div class="definition">
             <p>{{ props.node.definition }}</p>
@@ -42,12 +42,11 @@ const NodeId = props.node["id"]
                    
                     <!-- <td @click="emit('view', props.node.broader[0])">{{ props.node.broader[0].replace('ischart:','') }}</td> -->
                     <td>
-                        <ul v-if= props.hierachy[NodeId].broader>
+                        <ul v-if= props.hierachy[NodeId].broader class="linked-periods">
 
-                            <li  @click="emit('view', props.hierachy[NodeId].broader?.id!)">{{
-                                    // getLangVarientFromHierachy(props.hierachy[NodeId].broader!, props.lang) 
-                                    props.hierachy[NodeId].broader
-                                    }}</li>
+                            <li  @click="emit('view', props.hierachy[NodeId].broader?.id!)">
+                                {{ getLangVarientFromHierachy(props.hierachy[NodeId].broader!, props.lang) }}
+                            </li>
                         </ul>
                     </td>
 
@@ -55,11 +54,10 @@ const NodeId = props.node["id"]
                 <tr v-if="props.hierachy[NodeId].narrower">
                     <th>Contains</th>
                     <td>
-                        <ul>
-                            <li v-for="n in props.hierachy[NodeId].narrower" :key="n.id" @click="emit('view', n.id)">{{
-                                    //  getLangVarientFromHierachy(n,props.lang) 
-                                    n.id
-                                     }}</li>
+                        <ul class="linked-periods" v-if="props.hierachy[NodeId].narrower">
+                            <li v-for="n in props.hierachy[NodeId].narrower" :key="n.id" @click="emit('view', n.id)" >
+                                {{ getLangVarientFromHierachy(n, props.lang)  }}
+                            </li>
                         </ul>
                     </td>
                 </tr>
@@ -77,7 +75,12 @@ const NodeId = props.node["id"]
     overflow-y: auto;
 
 }
-
+.linked-periods{
+    list-style-image: none;
+    list-style-type:none;
+    cursor: pointer;
+    color: #0000EE; 
+}
 .info-header {
     background-color: var(--_bg-color);
     color: var(--_fg-color, black);

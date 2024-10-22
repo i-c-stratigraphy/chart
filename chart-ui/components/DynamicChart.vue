@@ -17,7 +17,8 @@ const data = ref([])
 const showInfo = computed(()=>target.value !== "")
 
 function getSubChart(segment, idx) {
-    return fetch(`https://cdn.jsdelivr.net/gh/i-c-stratigraphy/chart-data@gh-pages/chart.${segment}.json`).then(r => {
+    //Cache breaking is ok cos the cdn has its own cache layer 
+    return fetch(`https://cdn.jsdelivr.net/gh/i-c-stratigraphy/chart-data@gh-pages/chart.${segment}.json?cachebreaker=${Math.random()}`).then(r => {
         if (!r.ok || (r.status > 300)) {
             throw "error"
         }
@@ -173,6 +174,11 @@ body {
 
 </style>
 <style scoped>
+@media print{
+.only-print{
+      display: grid !important;
+    }
+}
 .error-banner {
     padding: 1.5rem;
     border: solid red 2px;

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { getLangVariant, sortedNode, type scalingFactor, type chartNode } from "@/utils/util"
+import { getLangVariant, sortedNode,getTimeMarker, type scalingFactor, type chartNode } from "@/utils/util"
 const props = defineProps<{
     node: chartNode,
     lang: string,
@@ -41,10 +41,7 @@ const handleClick = () => {
     --_bg-color:${props.node.color};
     --_row-span:${props.node.counts.indirectNarrowers};
     --_fg-color:${contrastColor(hexToRgb(props.node.color))};
-    --_height:${!props.node.narrower ? getScaledHeight(props.scaling,
-        (props.node.hasEnd.inMYA.value ? props.node.hasEnd.inMYA.value : props.node.hasEnd.inMYA),
-        (props.node.hasBeginning?.inMYA.value ? props.node.hasBeginning?.inMYA.value : props.node.hasBeginning?.inMYA.value)
-    ) : ''};
+    --_height:${!props.node.narrower ? getScaledHeight(props.scaling, props.node.hasEnd, props.node.hasBeginning):''};
     --_width: ${rank == 'Sub-Period' || colStart < 4 ? `3rem` : ``}
     `">
         <p :class="`label ${rank == 'Sub-Period' || colStart < 4 ? `v-text` : ``}`">{{ getLangVariant(props.node, props.lang)
@@ -65,18 +62,7 @@ const handleClick = () => {
     --_col-end:8;
     --_bg-color:;
     `">
-        <span class="num-age">
-            {{ node.hasBeginning?.note ===
-                "uncertain" ||
-                node.hasEnd?.note
-                === "uncertain" ? "~" : '' }}
-            {{ node.hasEnd.inMYA.value == 0 ?
-                'Present' :
-                node.hasEnd.inMYA.value ?? node.hasBeginning.inMYA.value }}
-            {{ node.hasEnd.marginOfError ? `&pm;
-            ${node.hasEnd.marginOfError.value}` : ''
-            }}
-        </span>
+         <span class="num-age" v-html="getTimeMarker(node.hasBeginning,node.hasEnd)"></span>
     </div>
 </template>
 <style scoped>
@@ -93,6 +79,7 @@ const handleClick = () => {
     max-width: var(--_width);
     padding: 0.25rem;
     overflow: hidden;
+    cursor: pointer;
 }
 
 p {

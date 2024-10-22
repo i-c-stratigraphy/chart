@@ -42,7 +42,7 @@ onUnmounted(() => {
   </div>
     </div>
 </template>
-<style>
+<style scoped>
 .alert-alpha{
   /* height: 6rem;  */
   padding: 0.5rem 1rem;
