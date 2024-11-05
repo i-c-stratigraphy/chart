@@ -115,7 +115,7 @@ p {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    bottom: 0px;
+    top: 0px;
     width: max-content;
 }
 </style>

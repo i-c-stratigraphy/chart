@@ -69,10 +69,10 @@ type HierachyRecord ={
 export type Hierachy = Record<string,HierachyRecord>
 
 export function getTimeMarker(beginning: timeMarker, end: timeMarker) :string {
-    end.inMYA
-    let out = ""
+    // end.inMYA
+    let certainty = ""
     if(beginning.note === "uncertain" || end.note === "uncertain")  {
-        out +="~"
+        certainty +="~"
     }
     let isPresent:boolean = false
     let strTime:string = ""
@@ -91,9 +91,11 @@ export function getTimeMarker(beginning: timeMarker, end: timeMarker) :string {
     }else if (end.marginOfError&& !(typeof end.marginOfError == "number")){
         MarginOfError = end.marginOfError.value.toString()
     }
-    
+    if (isPresent){
+        return 'Present'
+    }
 
-    return `${isPresent? 'Present': strTime} ${MarginOfError!= '' ? '&plusmn; '+ MarginOfError:''}` 
+    return `${certainty}${strTime} ${MarginOfError!= '' ? '&plusmn; '+ MarginOfError:''}` 
 }
 
 

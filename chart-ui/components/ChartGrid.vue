@@ -23,7 +23,7 @@ const emit = defineEmits<{
             <div class="header">Age
                 <span class="gssp-text v-text">GSSP</span>
             </div>
-            <div class="header">Numeric Age</div>
+            <div class="header center">Numeric Age</div>
             <ChartGridCell :lang="props.lang" :node="props.node" :parent-rank="''" :scaling="props.scaling" @view="n=>emit('view',n)"/>
         </div>
     </div>
@@ -47,22 +47,28 @@ const emit = defineEmits<{
 
 .header {
     position: relative;
+    margin-bottom:0.25rem;
 }
-
+div.header:not(.v-text){
+    padding-left:5px;
+}
 .col-span-2 {
     grid-column: span 2;
 }
 
 .v-text {
     display: inline-block;
-    transform-origin: 0 0;
+    transform-origin: 5px 5px;
     transform: rotate(-90deg)
 }
 .gssp-text{
     position:absolute;
     right:0;
-    transform-origin: 0 0;
+    /* transform-origin: 0 0; */
     transform: rotate(-90deg)
         translateY(150%);
+}
+.center{
+    text-align: center;
 }
 </style>
