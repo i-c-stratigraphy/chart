@@ -30,7 +30,7 @@ jobs:
           for i in $langs
           do
             echo $i 
-            output="chart-$i-$version.json"
+            output="chart-$i-$version.pdf"
             echo "creating $output"
             #generate each language version
             echo "https://stratigraphy.org/chart-data/?scale=print&language=$i"
