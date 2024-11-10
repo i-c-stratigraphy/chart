@@ -35,6 +35,7 @@ jobs:
             #generate each language version
             echo "https://stratigraphy.org/chart-data/?scale=print&language=$i"
             ${{ steps.setup-chrome.outputs.chrome-path }} --user-data-dir=./chrome-temp-profile --headless --no-sandbox --disable-gpu --print-to-pdf=$output --no-pdf-header-footer --virtual-time-budget=5000 "https://stratigraphy.org/chart-data/?scale=print&language=$i"
+            ls
           done
       - name: Upload a Build Artifact
         uses: actions/upload-artifact@v4
