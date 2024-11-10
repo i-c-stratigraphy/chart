@@ -47,5 +47,6 @@ jobs:
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
           draft: true
           prerelease: false
+          automatic_release_tag: latest
           files: |
             *.pdf
