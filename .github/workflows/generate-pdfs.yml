@@ -10,6 +10,10 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      - uses: browser-actions/setup-chrome@v1
+        id: setup-chrome
+      - run: |
+          ${{ steps.setup-chrome.outputs.chrome-path }} --version
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
         run: |
@@ -21,14 +25,14 @@ jobs:
           echo $date 
           echo $version
           #get official version first
-          google-chrome --headless --disable-gpu --print-to-pdf=$output --no-pdf-header-footer --virtual-time-budget=5000 "https://stratigraphy.org/chart-data/?scale=print"
+          ${{ steps.setup-chrome.outputs.chrome-path }}  --headless --disable-gpu --print-to-pdf=$output --no-pdf-header-footer --virtual-time-budget=5000 "https://stratigraphy.org/chart-data/?scale=print"
           for i in $langs
           do
             echo $i 
             output="chart-$i-$version.json"
             echo "creating $output"
             #generate each language version
-            google-chrome --headless --disable-gpu --print-to-pdf=$output --no-pdf-header-footer --virtual-time-budget=5000 "https://stratigraphy.org/chart-data/?scale=print&lang=$i"
+            ${{ steps.setup-chrome.outputs.chrome-path }}  --headless --disable-gpu --print-to-pdf=$output --no-pdf-header-footer --virtual-time-budget=5000 "https://stratigraphy.org/chart-data/?scale=print&lang=$i"
           done
       - name: Upload a Build Artifact
         uses: actions/upload-artifact@v4
