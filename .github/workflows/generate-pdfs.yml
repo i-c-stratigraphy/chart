@@ -26,7 +26,7 @@ jobs:
           echo $date 
           echo $version
           #get official version first
-          #${{ steps.setup-chrome.outputs.chrome-path }}  --headless --no-sandbox --disable-gpu --print-to-pdf=$output --no-pdf-header-footer --virtual-time-budget=5000 "https://stratigraphy.org/chart-data/?scale=print"
+          ${{ steps.setup-chrome.outputs.chrome-path }}  --headless --no-sandbox --disable-gpu --print-to-pdf=$output --no-pdf-header-footer --virtual-time-budget=5000 "https://stratigraphy.org/chart-data/?scale=print"
           for i in $langs
           do
             echo $i 
@@ -34,7 +34,7 @@ jobs:
             echo "creating $output"
             #generate each language version
             echo "https://stratigraphy.org/chart-data/?scale=print&language=$i"
-            #${{ steps.setup-chrome.outputs.chrome-path }}  --headless --no-sandbox --disable-gpu --print-to-pdf=$output --no-pdf-header-footer --virtual-time-budget=5000 "https://stratigraphy.org/chart-data/?scale=print&language=$i"
+            ${{ steps.setup-chrome.outputs.chrome-path }}  --headless --no-sandbox --disable-gpu --print-to-pdf=$output --no-pdf-header-footer --virtual-time-budget=5000 "https://stratigraphy.org/chart-data/?scale=print&language=$i"
           done
       - name: Upload a Build Artifact
         uses: actions/upload-artifact@v4
