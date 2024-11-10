@@ -42,10 +42,10 @@ jobs:
         with:
           name: chart pdf 
           path:  "*.pdf"
-      # - uses: "marvinpinto/action-automatic-releases@latest"
-      #   with:
-      #     repo_token: "${{ secrets.GITHUB_TOKEN }}"
-      #     draft: true
-      #     prerelease: false
-      #     files: |
-      #       *.pdf
+      - uses: "marvinpinto/action-automatic-releases@latest"
+        with:
+          repo_token: "${{ secrets.GITHUB_TOKEN }}"
+          draft: true
+          prerelease: false
+          files: |
+            *.pdf
