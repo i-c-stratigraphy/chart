@@ -29,20 +29,19 @@ const emit = defineEmits<{
     </div>
 </template>
 <style scoped>
-.grid-wrapper{
-    /* padding:1rem */
-}
 .grid-7 {
     margin-top: 4rem;
     --_thin-col: 3rem;
     --_mid-col: 6fr;
     --_wide-col: calc(var(--_thin-col, 3rem) + var(--_mid-col));
     display: grid;
-    /* grid-template-columns:
-        repeat(3, var(--_thin-col)) var(--_thin-col) var(--_mid-col) repeat(2, var(--_wide-col)); */
-
-        grid-template-columns: 3rem 3rem 3rem     3rem 1fr    1fr 1fr ;
+    grid-template-columns: 3rem 3rem 3rem     3rem 1fr    1fr 1fr ;
     font-size: 0.6em;
+}
+.grid-7 :deep(div:last-child>.num-age-beginning){
+    display:block;
+    transform: translate(-50%,50%);
+    bottom: 0px;
 }
 
 .header {
@@ -64,7 +63,6 @@ div.header:not(.v-text){
 .gssp-text{
     position:absolute;
     right:0;
-    /* transform-origin: 0 0; */
     transform: rotate(-90deg)
         translateY(150%);
 }

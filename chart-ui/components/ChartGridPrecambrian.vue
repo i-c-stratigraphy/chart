@@ -69,6 +69,11 @@ const emit = defineEmits<{
 .col-span-2 {
     grid-column: span 2;
 }
+.grid-5 :deep(div:last-child>.num-age-beginning){
+    display:block;
+    transform: translate(-50%,50%);
+    bottom: 0px;
+}
 
 .v-text {
     display: inline-block;

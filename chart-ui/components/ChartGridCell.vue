@@ -63,6 +63,7 @@ const handleClick = () => {
     --_bg-color:;
     `">
          <span class="num-age" v-html="getTimeMarker(node.hasBeginning,node.hasEnd)"></span>
+         <span class="num-age-beginning" v-html="getTimeMarker(node.hasEnd,node.hasBeginning)"></span>
     </div>
 </template>
 <style scoped>
@@ -80,6 +81,7 @@ const handleClick = () => {
     padding: 0.25rem;
     overflow: hidden;
     cursor: pointer;
+    min-height: 1.25rem;
 }
 
 p {
@@ -93,13 +95,11 @@ p {
     position: relative;
     align-items: baseline;
     justify-content: baseline;
-    /* grid-row: span var(--_row-span); */
     text-align: center;
     height: 100%;
 }
 
 .v-text {
-    /* position: absolute; */
     display: inline-block;
     transform-origin: 0 0;
     transform: rotate(-90deg) translateX(-100%);
@@ -114,8 +114,17 @@ p {
 .num-age {
     position: absolute;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translate(-50%, -50%);
     top: 0px;
+    width: max-content;
+}
+
+.num-age-beginning{
+    position: absolute;
+    display:none;
+    left: 50%;
+    transform: translate(-50%,50%);
+    bottom: 10px;
     width: max-content;
 }
 </style>

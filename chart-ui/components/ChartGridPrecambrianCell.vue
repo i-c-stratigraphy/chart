@@ -17,12 +17,9 @@ const ranking: { [key: string]: number } = {
     'Super-Eon':1
 }
 const rankSplit = (node.rank+'').split("/")
-
 const rank = rankSplit[rankSplit.length-1]||"Age"
 let colStart = ranking[rank]!
 let epochDelta = 1
-
-
 
 const handleClick = ()=>{
     emit("view",node.id)
@@ -59,6 +56,8 @@ const handleClick = ()=>{
     `"
     >
     <span class="num-age" v-html="getTimeMarker(node.hasBeginning,node.hasEnd)"></span>
+    <span class="num-age-beginning" v-html="getTimeMarker(node.hasEnd,node.hasBeginning)"></span>
+
     </div>
 </template>
 <style scoped>
@@ -73,6 +72,7 @@ const handleClick = ()=>{
     height:100%;
     height: var(--_height);
     cursor:pointer;
+    min-height: 1.25rem;
 }
 .text-cell{
     grid-column-start: 5;
@@ -80,12 +80,10 @@ const handleClick = ()=>{
     position:relative;
     align-items: baseline;
     justify-content: baseline;
-    /* grid-row: span var(--_row-span); */
     text-align: center;
     height:100%;
 }
 .v-text {
-    /* position: absolute; */
     display: inline-block;
     transform-origin: 0 0;
     transform: rotate(-90deg) translateX(-100%);
@@ -101,5 +99,13 @@ const handleClick = ()=>{
     transform: translateX(-50%);
     top:0px;
     width:max-content;
+}
+.num-age-beginning{
+    position: absolute;
+    display:none;
+    left: 50%;
+    transform: translate(-50%,50%);
+    bottom: 10px;
+    width: max-content;
 }
 </style>
