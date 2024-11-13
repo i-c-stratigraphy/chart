@@ -8184,13 +8184,13 @@
                                             "hasBeginning": {
                                                 "inMYA": {
                                                     "type": "xsd:decimal",
-                                                    "value": "247.2"
+                                                    "value": "251.2"
                                                 }
                                             },
                                             "hasEnd": {
                                                 "inMYA": {
                                                     "type": "xsd:decimal",
-                                                    "value": "251.2"
+                                                    "value": "247.2"
                                                 }
                                             },
                                             "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
