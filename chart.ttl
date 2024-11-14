@@ -4899,11 +4899,11 @@ ischart:Valanginian
     skos:notation "b2"^^ischart:ccgmShortCode ;
     skos:prefLabel "Valanginian"@en ;
     time:hasBeginning [
-            ischart:inMYA 132.6 ;
+            ischart:inMYA 139.8 ;
             skos:note "uncertain"
         ] ;
     time:hasEnd [
-            ischart:inMYA 139.8 ;
+            ischart:inMYA 132.6 ;
             skos:note "uncertain"
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
@@ -7889,12 +7889,12 @@ ischart:Paleozoic
     skos:notation "PZ"^^ischart:ccgmShortCode ;
     skos:prefLabel "Paleozoic"@en ;
     time:hasBeginning [
-            ischart:inMYA 251.902 ;
-            sdo:marginOfError 0.024
-        ] ;
-    time:hasEnd [
             ischart:inMYA 538.8 ;
             sdo:marginOfError 0.2
+        ] ;
+    time:hasEnd [
+            ischart:inMYA 251.902 ;
+            sdo:marginOfError 0.024
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 77 ;
