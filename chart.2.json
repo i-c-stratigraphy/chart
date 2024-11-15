@@ -6778,21 +6778,21 @@
             "hasBeginning": {
                 "inMYA": {
                     "type": "xsd:decimal",
-                    "value": "251.902"
-                },
-                "marginOfError": {
-                    "type": "xsd:decimal",
-                    "value": "0.024"
-                }
-            },
-            "hasEnd": {
-                "inMYA": {
-                    "type": "xsd:decimal",
                     "value": "538.8"
                 },
                 "marginOfError": {
                     "type": "xsd:decimal",
                     "value": "0.2"
+                }
+            },
+            "hasEnd": {
+                "inMYA": {
+                    "type": "xsd:decimal",
+                    "value": "251.902"
+                },
+                "marginOfError": {
+                    "type": "xsd:decimal",
+                    "value": "0.024"
                 }
             },
             "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",

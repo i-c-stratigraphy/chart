@@ -4869,14 +4869,14 @@
                                     "hasBeginning": {
                                         "inMYA": {
                                             "type": "xsd:decimal",
-                                            "value": "132.6"
+                                            "value": "139.8"
                                         },
                                         "note": "uncertain"
                                     },
                                     "hasEnd": {
                                         "inMYA": {
                                             "type": "xsd:decimal",
-                                            "value": "139.8"
+                                            "value": "132.6"
                                         },
                                         "note": "uncertain"
                                     },
