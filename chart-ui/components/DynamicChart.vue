@@ -1,5 +1,4 @@
 <script setup>
-// import jsonRawData from "@/assets/chart.json";
 import ChartGridPrecambrian from "~/components/ChartGridPrecambrian.vue";
 import { onlyUnique,scaleOptions,getScaleOptionLabel,getScaleObj } from "~/utils/util";
 import { useRouteQuery } from '@vueuse/router'
@@ -7,6 +6,8 @@ import { useRouteQuery } from '@vueuse/router'
 const target = useRouteQuery('target',"")
 const selectedLang = useRouteQuery('language','en')
 const selectedScale = useRouteQuery('scale',scaleOptions[0])
+
+const useCDN = false
 
 const dataLookup = ref({})
 const infoTarget = ref(null)
@@ -17,8 +18,8 @@ const data = ref([])
 const showInfo = computed(()=>target.value !== "")
 
 function getSubChart(segment, idx) {
-    //Cache breaking is ok cos the cdn has its own cache layer 
-    return fetch(`https://cdn.jsdelivr.net/gh/i-c-stratigraphy/chart-data@gh-pages/chart.${segment}.json?cachebreaker=${Math.random()}`).then(r => {
+    const apiUrl = useCDN?'https://cdn.jsdelivr.net/gh/i-c-stratigraphy/chart-data@gh-pages':'https://stratigraphy.org/chart-data/'
+    return fetch(`${apiUrl}/chart.${segment}.json?cachebreaker=${Math.random()}`).then(r => {
         if (!r.ok || (r.status > 300)) {
             throw "error"
         }
@@ -45,7 +46,6 @@ onMounted(() => {
         data.value.map(elem => {
             flattenData(elem)
         });
-        // dataLookup.value = 
         infoTarget.value = target.value? dataLookup.value[target.value]:null
         ready.value = true
     }).catch((e) => {
@@ -63,7 +63,6 @@ const flattenLangs = (acc, cur) => {
     } else {
         acc.push([cur.prefLabel, cur.altLabel])
     }
-
     return acc
 }
 
@@ -122,7 +121,7 @@ watch(dataLookup,(newValue)=>{
             <h2>v2023/09</h2>
         </div>
     </div>
-    <!-- {{ data }}{{ ready }}{{ error }} -->
+
     <div v-if="error" class="error-banner">
         {{ error.message }}
         <ul v-if="error.files">
@@ -203,7 +202,6 @@ body {
 }
 
 .cell img {
-    /* max-width: fit-content; */
     max-height: 8rem;
 }
 
@@ -225,8 +223,6 @@ body {
 
 .lightbox>.content {
     background-color: white;
-    /* border:black solid 2px;  */
-    /* border-radius: 2rem; */
     max-height: calc(100svh - 4rem);
     overflow: hidden;
     width: 600px;

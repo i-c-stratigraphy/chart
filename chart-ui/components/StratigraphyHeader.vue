@@ -44,9 +44,7 @@ onUnmounted(() => {
 </template>
 <style scoped>
 .alert-alpha{
-  /* height: 6rem;  */
   padding: 0.5rem 1rem;
-  /* background-color:rgb(217, 217, 2); */
   border: 1px black solid;
   border-radius: 1rem;
 }
@@ -86,12 +84,6 @@ body {
     background-color: white;
 }
 
-/*         
-h1 {
-    color: blue;
-    font-family: 'Palatino', sans-serif;
-}
- */
 
 h2,
 h3,

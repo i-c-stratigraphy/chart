@@ -1,6 +1,4 @@
 <template>
-
-  <!-- <StratigraphyHeader class="no-print"/> -->
   <div class="content">
     <NuxtPage />
   </div>
@@ -35,7 +33,4 @@
 .content{
   background-color: white;
 }
-/*
-js deliver chart versions 
-*/
 </style>
