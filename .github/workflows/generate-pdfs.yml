@@ -1,9 +1,11 @@
 name: generate-pdfs
 on:
   push:
-    branches: [ "main", "jae/chartgen" ]
+    branches: 
+      - "main"
   pull_request:
-    branches: [ "main", "jae/chartgen" ]
+    branches: 
+      - "main"
   workflow_dispatch:
 
 jobs:
@@ -42,11 +44,3 @@ jobs:
         with:
           name: chart pdf 
           path:  "*.pdf"
-      - uses: "marvinpinto/action-automatic-releases@latest"
-        with:
-          repo_token: "${{ secrets.GITHUB_TOKEN }}"
-          draft: true
-          prerelease: false
-          automatic_release_tag: latest
-          files: |
-            *.pdf

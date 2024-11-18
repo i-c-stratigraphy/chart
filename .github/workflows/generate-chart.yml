@@ -3,7 +3,7 @@ name: Create and Publish chart
 on:
   push:
     branches:
-      - jae/chartgen
+      - main
 
 defaults:
   run:
