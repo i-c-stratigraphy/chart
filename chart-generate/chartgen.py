@@ -26,7 +26,10 @@ def get_sub_info(node,root,  g: Graph):
                     }}   
                 }}
         ''')
+
+        print(res1.bindings)
         results1 = res1.bindings
+        print(len(results1))
         broader = {
             "id": node["broader"][0],
             "prefLabel": {"value": results1[0]["prefLabel"], "language":results1[0]["prefLabel"].language},
@@ -52,6 +55,7 @@ def get_hierarchy(framed, g):
     for tc in topConcepts:
         root[tc["id"]] = get_sub_info(tc, root, g)
     return root
+
 
 def get_meta(framed):
     meta = deepcopy(framed)
@@ -144,40 +148,26 @@ def main():
         res = coll.bindings[0]
         bnode = BNode()
         g.add((x,URIRef('https://example.com/counts'), bnode))
-        print("indirectChildren",res["indirectChildren"])
         g.add((bnode,URIRef('https://example.com/indirectNarrowers'), res["indirectChildren"]))
-        print("directChildren",res["directChildren"])
         g.add((bnode,URIRef('https://example.com/directNarrowers'), res["directChildren"]))
 
     doc = json.loads(g.serialize(format='json-ld'))
     framed = jsonld.frame(doc, frame)
     
-
-    s1=get_irregular_heights(split_chart(framed["hasTopConcept"][0],['ischart:Cretaceous','ischart:Paleogene','ischart:Neogene','ischart:Quaternary']))
-    s2=get_irregular_heights(split_chart(framed["hasTopConcept"][0],['ischart:Jurassic','ischart:Triassic','ischart:Permian','ischart:Carboniferous']))
-    s3=get_irregular_heights(split_chart(framed["hasTopConcept"][0],['ischart:Devonian','ischart:Silurian','ischart:Ordovician','ischart:Cambrian']))
-    s4 =get_irregular_heights(framed["hasTopConcept"][1])
-    with open('./out/chart.hierarchy.json', 'w',encoding = 'utf8') as out:
-        out.write(json.dumps(get_hierarchy(framed, g),ensure_ascii=False,indent=4).encode('utf8').decode())
+    with open('./out/chart.hierachy.json', 'w',encoding = 'utf8') as out:
+        out.write(json.dumps(get_hierachy(framed, g),ensure_ascii=False,indent=4).encode('utf8').decode())
 
     with open('./out/chart.1.json', 'w',encoding = 'utf8') as out:
-        out.write(json.dumps(s1,ensure_ascii=False,indent=4).encode('utf8').decode())
-        # out.write(json.dumps(split_chart(framed["hasTopConcept"][0],['ischart:Cretaceous','ischart:Paleogene','ischart:Neogene','ischart:Quaternary']),ensure_ascii=False,indent=4).encode('utf8').decode())
+        out.write(json.dumps(split_chart(framed["hasTopConcept"][0],['ischart:Cretaceous','ischart:Paleogene','ischart:Neogene','ischart:Quaternary']),ensure_ascii=False,indent=4).encode('utf8').decode())
 
     with open('./out/chart.2.json', 'w',encoding = 'utf8') as out:
-        out.write(json.dumps(s2,ensure_ascii=False,indent=4).encode('utf8').decode())
-        # out.write(json.dumps(split_chart(framed["hasTopConcept"][0],['ischart:Jurassic','ischart:Triassic','ischart:Permian','ischart:Carboniferous']),ensure_ascii=False,indent=4).encode('utf8').decode())
+        out.write(json.dumps(split_chart(framed["hasTopConcept"][0],['ischart:Jurassic','ischart:Triassic','ischart:Permian','ischart:Carboniferous']),ensure_ascii=False,indent=4).encode('utf8').decode())
 
     with open('./out/chart.3.json', 'w',encoding = 'utf8') as out:
-        out.write(json.dumps(s3,ensure_ascii=False,indent=4).encode('utf8').decode())
-        # out.write(json.dumps(split_chart(framed["hasTopConcept"][0],['ischart:Devonian','ischart:Silurian','ischart:Ordovician','ischart:Cambrian']),ensure_ascii=False,indent=4).encode('utf8').decode())
+        out.write(json.dumps(split_chart(framed["hasTopConcept"][0],['ischart:Devonian','ischart:Silurian','ischart:Ordovician','ischart:Cambrian']),ensure_ascii=False,indent=4).encode('utf8').decode())
 
     with open('./out/chart.4.json', 'w',encoding = 'utf8') as out:
-        out.write(json.dumps(s4,ensure_ascii=False,indent=4).encode('utf8').decode())
-        # out.write(json.dumps(framed["hasTopConcept"][1],ensure_ascii=False,indent=4).encode('utf8').decode())
-
-    with open('./out/chart.meta.json', 'w',encoding = 'utf8') as out:
-        out.write(json.dumps(get_meta(framed),ensure_ascii=False,indent=4).encode('utf8').decode())
+        out.write(json.dumps(framed["hasTopConcept"][1],ensure_ascii=False,indent=4).encode('utf8').decode())
 
     with open('./out/chart.json', 'w',encoding = 'utf8') as out:
         out.write(json.dumps(framed,ensure_ascii=False,indent=4).encode('utf8').decode())
