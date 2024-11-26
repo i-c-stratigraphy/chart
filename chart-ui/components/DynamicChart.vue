@@ -54,16 +54,13 @@ onMounted(() => {
     }).catch((e) => {
         error.value = { message: `An error occured grabbing chart data ${e}` }
     })
-    // fetch("https://data.jsdelivr.com/v1/packages/gh/i-c-stratigraphy/chart-data/resolved",{
-    //     headers: new Headers({'content-type': 'application/json'}),
-    //     mode: 'no-cors'
-    // })
     fetch("https://api.github.com/repos/i-c-stratigraphy/chart-data/tags", {
         headers: new Headers({ 'content-type': 'application/json' }),
     })
     .then(x => x.json())
     .then(x => {
-        pdfVersion.value = x[0].name ?? ''
+        const regexp = new RegExp(/v(\d)*\.(\d)*\.(\d)*/)
+        pdfVersion.value = x.filter(x=> regexp.test(x.name) )[0].name ?? ''
     })
 })
 
@@ -171,7 +168,7 @@ watch(dataLookup, (newValue) => {
                             </option>
                         </select>
                     </label>
-                    <label> Download:
+                    <label v-if="pdfVersion != ''"> Download:
                         <select v-model="downloadVersion">
                             <option value="official"> Official</option>
                             <option v-for="lang in langs" :keye="lang" :value="lang"> {{ languageNames.of(lang) }} ({{
