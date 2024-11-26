@@ -30,7 +30,5 @@
   size: A3 landscape;
   margin:0px;
 }
-.content{
-  background-color: white;
-}
+
 </style>

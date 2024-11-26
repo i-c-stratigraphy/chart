@@ -1,11 +1,12 @@
 <script setup>
 import ChartGridPrecambrian from "~/components/ChartGridPrecambrian.vue";
-import { onlyUnique,scaleOptions,getScaleOptionLabel,getScaleObj } from "~/utils/util";
+import { onlyUnique, scaleOptions, getScaleOptionLabel, getScaleObj } from "~/utils/util";
 import { useRouteQuery } from '@vueuse/router'
+import { computed } from "vue";
 
-const target = useRouteQuery('target',"")
-const selectedLang = useRouteQuery('language','en')
-const selectedScale = useRouteQuery('scale',scaleOptions[0])
+const target = useRouteQuery('target', "")
+const selectedLang = useRouteQuery('language', 'en')
+const selectedScale = useRouteQuery('scale', scaleOptions[0])
 
 const useCDN = false
 
@@ -15,10 +16,10 @@ const ready = ref(false)
 const error = ref(null)
 const data = ref([])
 
-const showInfo = computed(()=>target.value !== "")
+const showInfo = computed(() => target.value !== "")
 
 function getSubChart(segment, idx) {
-    const apiUrl = useCDN?'https://cdn.jsdelivr.net/gh/i-c-stratigraphy/chart-data@gh-pages':'https://stratigraphy.org/chart-data/'
+    const apiUrl = useCDN ? 'https://cdn.jsdelivr.net/gh/i-c-stratigraphy/chart-data@gh-pages' : 'https://stratigraphy.org/chart-data/'
     return fetch(`${apiUrl}/chart.${segment}.json?cachebreaker=${Math.random()}`).then(r => {
         if (!r.ok || (r.status > 300)) {
             throw "error"
@@ -33,6 +34,8 @@ function getSubChart(segment, idx) {
         throw err
     })
 }
+const pdfVersion = ref("")
+const downloadVersion = ref("official")
 onMounted(() => {
     const timeout = setTimeout(() => { error.value = { message: "Timed out fetching chart data" } }, 20 * 1000)
     Promise.all([
@@ -40,16 +43,27 @@ onMounted(() => {
         getSubChart(2, 1),
         getSubChart(3, 2),
         getSubChart(4, 3),
-        getSubChart("hierachy",4),
+        getSubChart("hierachy", 4),
     ]).then(all => {
         clearTimeout(timeout)
         data.value.map(elem => {
             flattenData(elem)
         });
-        infoTarget.value = target.value? dataLookup.value[target.value]:null
+        infoTarget.value = target.value ? dataLookup.value[target.value] : null
         ready.value = true
     }).catch((e) => {
         error.value = { message: `An error occured grabbing chart data ${e}` }
+    })
+    // fetch("https://data.jsdelivr.com/v1/packages/gh/i-c-stratigraphy/chart-data/resolved",{
+    //     headers: new Headers({'content-type': 'application/json'}),
+    //     mode: 'no-cors'
+    // })
+    fetch("https://api.github.com/repos/i-c-stratigraphy/chart-data/tags", {
+        headers: new Headers({ 'content-type': 'application/json' }),
+    })
+    .then(x => x.json())
+    .then(x => {
+        pdfVersion.value = x[0].name ?? ''
     })
 })
 
@@ -78,7 +92,7 @@ function flattenData(node) {
             flattenData(n)
         })
     }
-    dataLookup.value[node.id] =  JSON.parse(JSON.stringify(node))
+    dataLookup.value[node.id] = JSON.parse(JSON.stringify(node))
 }
 
 const languageNames = new Intl.DisplayNames(['en'], {
@@ -89,73 +103,94 @@ const handleView = (node) => {
     target.value = node
     infoTarget.value = dataLookup.value[target.value]
 }
-
-watch(dataLookup,(newValue)=>{
+const downlaodLink = computed(()=>{
+    return `https://github.com/i-c-stratigraphy/chart-data/releases/download/${pdfVersion.value}/chart-${downloadVersion.value}.pdf`
+})
+const downloadPdf = (e) => {
+    const link = downlaodLink.value
+    const a = document.createElement('a')
+    a.href = link
+    a.download = link.split('/').pop()
+    document.body.appendChild(a)
+    a.click()
+    document.body.removeChild(a)
+}
+watch(dataLookup, (newValue) => {
     infoTarget.value = newValue[target.value]
-},{deep:true})
+}, { deep: true })
 </script>
 <template>
+    <div class="dynamic-chart">
+        <teleport to="body">
+            <div class="lightbox" v-if="showInfo && infoTarget && dataLookup" @click.self="target = ''">
+                <div class="content">
+                    <InfoBox :node="infoTarget" :key="infoTarget.id" :lang="selectedLang" @view="handleView"
+                        :hierachy="data[4]" @close="target = ''" />
+                </div>
+            </div>
+        </teleport>
 
-    <teleport to="body">
-        <div class="lightbox" v-if="showInfo &&infoTarget&&dataLookup" @click.self="target = ''">
-            <div class="content">
-                <InfoBox :node="infoTarget" :key="infoTarget.id" :lang="selectedLang" @view="handleView" :hierachy="data[4]"
-                    @close="target = ''" />
+        <div class="grid-5 only-print">
+            <div class="cell" style="--_col-span: 1; --_row-span:2"><img src="/IUGSLOGOright.gif" /></div>
+            <div class="cell" style="--_col-span: 3; --_row-span:1">
+                <h1>INTERNATIONAL CHRONOSTRATIGRAPHIC CHART</h1>
+            </div>
+            <div class="cell" style="--_col-span: 1; --_row-span:2"><img src="/logo-ics-3D-dark.png" /></div>
+            <div class="cell" style="--_col-span: 1; --_row-span:1">
+                <h2>www.stratigraphy.org</h2>
+            </div>
+            <div class="cell" style="--_col-span: 1; --_row-span:1">
+                <h2>International Commision on Stratigraphy</h2>
+            </div>
+            <div class="cell" style="--_col-span: 1; --_row-span:1">
+                <h2>v2023/09</h2>
             </div>
         </div>
-    </teleport>
 
-    <div class="grid-5 only-print">
-        <div class="cell" style="--_col-span: 1; --_row-span:2"><img src="/IUGSLOGOright.gif" /></div>
-        <div class="cell" style="--_col-span: 3; --_row-span:1">
-            <h1>INTERNATIONAL CHRONOSTRATIGRAPHIC CHART</h1>
-        </div>
-        <div class="cell" style="--_col-span: 1; --_row-span:2"><img src="/logo-ics-3D-dark.png" /></div>
-        <div class="cell" style="--_col-span: 1; --_row-span:1">
-            <h2>www.stratigraphy.org</h2>
-        </div>
-        <div class="cell" style="--_col-span: 1; --_row-span:1">
-            <h2>International Commision on Stratigraphy</h2>
-        </div>
-        <div class="cell" style="--_col-span: 1; --_row-span:1">
-            <h2>v2023/09</h2>
-        </div>
-    </div>
-
-    <div v-if="error" class="error-banner">
-        {{ error.message }}
-        <ul v-if="error.files">
-            <li v-for="f in error.files">{{ f }}</li>
-        </ul>
-    </div>
-    <div v-else>
-        <div v-if="!ready">
-            LOADING
+        <div v-if="error" class="error-banner">
+            {{ error.message }}
+            <ul v-if="error.files">
+                <li v-for="f in error.files">{{ f }}</li>
+            </ul>
         </div>
         <div v-else>
-            <div class="no-print chart-controls">
-                <label> Language:
-                    <select v-model="selectedLang">
-                        <option v-for="lang in langs" :value="lang">{{ languageNames.of(lang) }} ({{ new
-                            Intl.DisplayNames([lang], { type: 'language' }).of(lang) }})</option>
-                    </select>
-                </label>
-                <label> Scaling:
-                    <select v-model="selectedScale">
-                        <option v-for="scale in scaleOptions" :value="scale">{{ getScaleOptionLabel(scale) }}</option>
-                    </select>
-
-                </label>
+            <div v-if="!ready">
+                LOADING
             </div>
-            <div class="grid-4">           
-                <ChartGrid :node="data[0]" :lang="selectedLang" :key="'1' + selectedLang" :scaling="getScaleObj(selectedScale)"
-                    @view="handleView" />
-                <ChartGrid :node="data[1]" :lang="selectedLang" :key="'2' + selectedLang" :scaling="getScaleObj(selectedScale)"
-                    @view="handleView" />
-                <ChartGrid :node="data[2]" :lang="selectedLang" :key="'3' + selectedLang" :scaling="getScaleObj(selectedScale)"
-                    @view="handleView" />
-                <ChartGridPrecambrian :node="data[3]" :lang="selectedLang" :key="'4' + selectedLang"
-                    :scaling="getScaleObj(selectedScale)" @view="handleView" />
+            <div v-else>
+                <div class="no-print chart-controls widther">
+                    <label> Language:
+                        <select v-model="selectedLang">
+                            <option v-for="lang in langs" :value="lang">{{ languageNames.of(lang) }} ({{ new
+                                Intl.DisplayNames([lang], { type: 'language' }).of(lang) }})</option>
+                        </select>
+                    </label>
+                    <label> Scaling:
+                        <select v-model="selectedScale">
+                            <option v-for="scale in scaleOptions" :value="scale">{{ getScaleOptionLabel(scale) }}
+                            </option>
+                        </select>
+                    </label>
+                    <label> Download:
+                        <select v-model="downloadVersion">
+                            <option value="official"> Official</option>
+                            <option v-for="lang in langs" :keye="lang" :value="lang"> {{ languageNames.of(lang) }} ({{
+                                new Intl.DisplayNames([lang], { type: 'language' }).of(lang) }})
+                            </option>
+                        </select>
+                        <button @click="downloadPdf">Chart PDF</button>
+                    </label>
+                </div>
+                <div class="grid-4">
+                    <ChartGrid :node="data[0]" :lang="selectedLang" :key="'1' + selectedLang"
+                        :scaling="getScaleObj(selectedScale)" @view="handleView" />
+                    <ChartGrid :node="data[1]" :lang="selectedLang" :key="'2' + selectedLang"
+                        :scaling="getScaleObj(selectedScale)" @view="handleView" />
+                    <ChartGrid :node="data[2]" :lang="selectedLang" :key="'3' + selectedLang"
+                        :scaling="getScaleObj(selectedScale)" @view="handleView" />
+                    <ChartGridPrecambrian :node="data[3]" :lang="selectedLang" :key="'4' + selectedLang"
+                        :scaling="getScaleObj(selectedScale)" @view="handleView" />
+                </div>
             </div>
         </div>
     </div>
@@ -170,14 +205,20 @@ body {
     print-color-adjust: exact;
     font-family: Arial, Helvetica, sans-serif;
 }
-
 </style>
 <style scoped>
-@media print{
-.only-print{
-      display: grid !important;
+@media print {
+    .only-print {
+        display: grid !important;
     }
 }
+
+.dynamic-chart {
+    background-color: white;
+    padding: 1rem;
+    box-shadow: 0pt 0pt 3px rgb(136, 136, 136);
+}
+
 .error-banner {
     padding: 1.5rem;
     border: solid red 2px;
@@ -208,6 +249,8 @@ body {
 .chart-controls {
     display: flex;
     gap: 1rem;
+    box-shadow: none;
+    justify-content: space-between;
 }
 
 .lightbox {
@@ -265,20 +308,23 @@ body {
         grid-template-columns: repeat(4, minmax(0, 1fr));
     }
 }
+
 @media print {
+
     .grid-5 h1,
-    .grid-5 h2{
-        font-size:0.6em; 
-        margin-top:0px
+    .grid-5 h2 {
+        font-size: 0.6em;
+        margin-top: 0px
+    }   .grid-5 img {
+        max-height: 4rem;
     }
-    .grid-5 img {
-        max-height:4rem;
-    }
+
     .grid-4 {
         grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
     }
-    .chart-notes{
-        font-size:0.6em;
+
+    .chart-notes {
+        font-size: 0.6em;
     }
 }
 </style>

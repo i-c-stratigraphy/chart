@@ -10,6 +10,16 @@ const imagesArray = [
     "/images/banner-08.png"
 ];
 
+const navLinks = [
+    { label: "Home", href: "/" },
+    { label: "Executive", href: "/executive" },
+    { label: "Subcommissions", href: "/subcommissions" },
+    { label: "Supplementary Chart Info", href: "/supplementary" },
+    { label: "GSSPs", href: "gssps" },
+    { label: "Stratigraphic Guide", href: "guide" },
+    { label: "Statutes & Guidelines", href: "/statuses" },
+    { label: "Publications", href: "/publications" },
+]
 const interval = ref()
 const bgImage = ref("")
 function displayImage() {
@@ -24,7 +34,7 @@ onUnmounted(() => {
 })
 </script>
 <template>
-    <div id="widther">
+    <div class="widther">
         <div id="header">
             <div style="text-align:right;">
                 <a href="https://stratigraphy.org"><img src="/logo-ics-3D-dark.png" alt="ICS logo"
@@ -37,43 +47,72 @@ onUnmounted(() => {
             </div>
         </div>
         <div id="banner" :style="`background-image: url(${bgImage})`"></div>
-        <div class="alert-alpha no-print">
-    <p>This is an early access version of a Stratigraphic Chart derived from data in the triple store</p>
-  </div>
+        <nav class="nav">
+            <a v-for="navLink in navLinks" :key="navLink.href" :href="navLink.href">{{ navLink.label }}</a>
+        </nav>
+        <div class="page-info">
+
+            <h1>Chronostratigraphic Chart</h1>
+            <p>
+                This page contains the latest version of the Chronostratigraphic Chart (v2024-11) which visually
+                presents
+                the time periods and stratigraphic
+                layers of Earth's geological history. It is available in multiple languages.</p>
+            <p>
+                If you are looking for older versions or other supporting material, please see the <a
+                    href="/supplimentary">Supplementary Chart
+                    Information</a> page.
+            </p>
+        </div>
+        <!-- <div class="alert-alpha no-print">
+            <p>This is an early access version of a Stratigraphic Chart derived from data in the triple store</p>
+        </div> -->
     </div>
 </template>
+
 <style scoped>
-.alert-alpha{
-  padding: 0.5rem 1rem;
-  border: 1px black solid;
-  border-radius: 1rem;
+.alert-alpha {
+    padding: 0.5rem 1rem;
+    border: 1px black solid;
+    border-radius: 1rem;
 }
 
-@font-face {
-    font-family: 'Palatino';
-    src: url('/style/Palatino.eot?#iefix') format('embedded-opentype'), url('/style/Palatino.woff') format('woff'), url('/style/Palatino.ttf') format('truetype'), url('/style/Palatino.svg#Palatino') format('svg');
-    font-weight: normal;
-    font-style: normal;
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.25rem;
+    ;
 }
 
-body {
+nav>a {
+    display: block;
+    /* outline:magenta 1px solid; */
+    padding: 0.5rem;
+    border: transparent 1px solid;
+    border-bottom-width: 2px;
+}
+
+nav>a:hover {
+    text-decoration: none;
+    border-bottom: #095197 2px solid
+}
+
+.page-info{
+    padding:1rem;
+}
+.page-info>h1{
     text-align: center;
-    line-height: 1.5em;
-    background-size: 100%;
-    background-color: #e0dedf;
-    padding: 0;
-    margin: 0;
-    font-family: arial, helvetica, sans-serif;
 }
-@print{
-    body {
-    text-align: center !important;
-    line-height: unset !important;
-    background-size: unset !important;
-    background-color: white !important;
 
-    font-family: arial, helvetica, sans-serif;
-}
+@print {
+    body {
+        text-align: center !important;
+        line-height: unset !important;
+        background-size: unset !important;
+        background-color: white !important;
+
+        font-family: arial, helvetica, sans-serif;
+    }
 }
 
 #widther {
@@ -156,7 +195,6 @@ li>ul>li {
     display: block;
     height: 270px;
     background-size: contain;
-    margin-bottom: 30px;
 }
 
 #body-grid {
