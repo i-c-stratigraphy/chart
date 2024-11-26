@@ -4773,6 +4773,7 @@
                                     "id": "ischart:Valanginian",
                                     "type": "skos:Concept",
                                     "rank": "http://resource.geosciml.org/ontology/timescale/rank/Age",
+                                    "ratifiedGSSP": true,
                                     "isDefinedBy": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
                                     "altLabel": [
                                         {
@@ -4869,9 +4870,12 @@
                                     "hasBeginning": {
                                         "inMYA": {
                                             "type": "xsd:decimal",
-                                            "value": "139.8"
+                                            "value": "137.05"
                                         },
-                                        "note": "uncertain"
+                                        "marginOfError": {
+                                            "type": "xsd:decimal",
+                                            "value": "0.2"
+                                        }
                                     },
                                     "hasEnd": {
                                         "inMYA": {
