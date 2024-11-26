@@ -9,6 +9,13 @@ The Chart is formulated as a https://www.w3.org/TR/skos-primer/[SKOS Vocabulary]
 This data form of the Chart will soon be used to produce all PDF and other visual forms of the Chart.
 
 
+== Creating a Release
+
+To publish a release, go to the Github releases page and create a new release. this release should be set to create a new tag with the format of SemVer preceded with a 'v', however the major and minor should reflect the stratigraphic versions. I.e `v2023.09.1`   
+
+Creating this tag will trigger a workflow which in turn will generate the PDfs and publish them to the release. 
+
+
 == Copyright & License
 
 This data is copyrighted as follows:
