@@ -4871,7 +4871,6 @@ ischart:UpperPleistocene
 ischart:Valanginian
     a skos:Concept ;
     gts:rank rank:Age ;
-    gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Валанжин"@bg ,
@@ -4900,8 +4899,8 @@ ischart:Valanginian
     skos:notation "b2"^^ischart:ccgmShortCode ;
     skos:prefLabel "Valanginian"@en ;
     time:hasBeginning [
-            ischart:inMYA 137.05 ;
-            sdo:marginOfError 0.2 ;
+            ischart:inMYA 139.8 ;
+            skos:note "uncertain"
         ] ;
     time:hasEnd [
             ischart:inMYA 132.6 ;
@@ -7950,12 +7949,12 @@ ischart:UpperCretaceous
 cs:
     a skos:ConceptScheme ;
     dcterms:conformsTo <https://w3id.org/profile/vocpub/4.6> ;
-    dcterms:created "2024-11-26"^^xsd:date ;
+    dcterms:created "2023-11-05"^^xsd:date ;
     dcterms:creator <https://linked.data.gov.au/org/ics> ;
     dcterms:modified "2024-11-22"^^xsd:date ;
     dcterms:publisher <https://linked.data.gov.au/org/ics> ;
-    owl:versionIRI ischart:2024-12 ;
-    owl:versionInfo "2024-12" ;
+    owl:versionIRI ischart:2023-09 ;
+    owl:versionInfo "2023-09" ;
     skos:altLabel
         "TAULA CRONOESTRATIGRÀFICA INTERNACIONAL"@ca ,
         "MEZINÁRODNÍ CHRONOSTRATIGRAFICKÁ TABULKA"@cs ,
@@ -7980,19 +7979,13 @@ cs:
     skos:hasTopConcept
         ischart:Phanerozoic ,
         ischart:Precambrian ;
-    skos:historyNote "This vocabulary uses IRIs originally created for the Geologic Timescale (2020) data (see http://resource.geosciml.org/vocabulary/timescale/)" ;
+    skos:historyNote "This vocabulary uses IRIs created for the Geologic Timescale (2020) data (see http://resource.geosciml.org/vocabulary/timescale/) with dates updated from the 2023-09 Chart (see https://stratigraphy.org/chart)" ;
     skos:prefLabel "International Chronostratigraphic Chart"@en ;
     prov:wasDerivedFrom ts:gts2020 ;
     sdo:citation "https://stratigraphy.org/chart"^^xsd:anyURI ;
     sdo:copyrightHolder <https://linked.data.gov.au/org/ics> ;
-    sdo:copyrightNotice "(c) International Commission on Stratigraphy, 2024"@en ;
+    sdo:copyrightNotice "(c) International Commission on Stratigraphy, 2023"@en ;
     sdo:license <https://creativecommons.org/licenses/by/4.0/> ;
-    skos:versionInfo """2024-12: Updated Chart to include:
-
-* ratification of the Valanginian GSSP
-* numeric age of Valanginian updated to 137.05 +/- 0.2
-
-2023-09: updated form of the Geologic Timescale (2020) (see http://resource.geosciml.org/vocabulary/timescale/) to match the 2023-09 Chart, as released at https://stratigraphy.org/chart in late 2023.""" ;
     skos:scopeNote
         """Units of all ranks are in the process of being defined by Global Boundary Stratotype Section and Points (GSSP) for their lower boundaries, including those of the Archean and Proterozoic, long defined by Global Standard Stratigraphic Ages (GSSA). Italic fonts indicate informal units and placeholders for unnamed units. Versioned charts and detailed information on ratified GSSPs are available at the website http://www.stratigraphy.org. The URL to this chart is found below.
 
@@ -8004,7 +7997,7 @@ Colouring follows the Commission for the Geological Map of the World <www.ccgm.o
 
 Chart drafted by K.M. Cohen, D.A.T. Harper, P.L. Gibbard, N. Car
 
-(c) International Commission on Stratigraphy, September 2024.
+(c) International Commission on Stratigraphy, September 2023.
 
 To cite: Cohen, K.M., Finney, S.C., Gibbard, P.L. & Fan, J.-X. (2013; updated), _The ICS International Chronostratigraphic Chart_. Episodes 36: 199-204"""@en ,
 
@@ -8016,7 +8009,7 @@ Les Subsèries/Subèpoques ratificades s’abrevien com S/T (Superior/Tardà), M
 
 Taula dissenyada per K.M. Cohen, D.A.T. Harper, P.L. Gibbard, N. Car
 
-(c) Comissió Internacional d’Estratigrafia (IUGS), Setembre 2024.
+(c) Comissió Internacional d’Estratigrafia (IUGS), Setembre 2023.
 
 Citacio: Cohen, K.M., Finney, S.C., Gibbard, P.L., y Fan, J.-X. (2013; actualilzat) The ICS Intemational Chronostratigraphic Chart. Episodes 36: 199-204.
 
@@ -8052,7 +8045,7 @@ Las edades absolutas, expresadas en millones de años (Ma), son sólo orientativ
 
 Tabla diseñada por K.M. Cohen, D.A.T. Harper, P.L. Gibbard y N. Car
 
-(c) International Commission on Stratigraphy (IUGS), Septiembre 2024.
+(c) International Commission on Stratigraphy (IUGS), Septiembre 2023
 
 Citar como: Cohen, K.M., Finney, S.C., Gibbard, P.L. & Fan, J.-X. (2013; actualizada). The ICS International Chronostratigraphic Chart. Episodes 36: 199-204"""@es ,
 
@@ -8064,7 +8057,7 @@ Sistema guztien adin numerikoak, Behe Pleistozeno, Permiar, Triasiko, Kretazeo e
 
 Taula hau K.M. Cohen, S.C. Finney eta P.L. Gibbard-ek diseinatu dute
 
-(c) International Commission on Stratigraphy (IUGS), 2024 eko urtarrila.
+(c) International Commission on Stratigraphy (IUGS), 2015eko urtarrila
 
 Aipamena egiteko: Cohen, K.M., Finney, S.C., Gibbard, P.L. eta Fan, J.-X. (2013; eguneratua) The ICS International Chronostratigraphic Chart. Episodes 36: 199-204"""@eu ,
 
@@ -8078,7 +8071,7 @@ Väritys noudattaa Maailman geologisen karttakomission Geological Map of World (
 
 Taulun ovat laatineet K.M. Cohen, D.A.T. Harper, P.L. Gibbard, N. Car
 
-(c) International Commission on Stratigraphy, Syyskuu 2024.
+(c) International Commission on Stratigraphy, Syyskuu 2022
 
 Viittausohje: Cohen, K.M., Finney, S.C., Gibbard, P.L. & Fan, J.-X. (2013; updated) The ICS International Chronostratigraphic Chart. Episodes 36: 199-204."""@fi ,
 
@@ -8090,7 +8083,7 @@ Les couleurs suivent les recommendations de la Commission de la Carte Géologiqu
 
 Chart faite par K.M. Cohen, D.A.T. Harper, P.L. Gibbard, N. Car
 
-(c) Commission Internationale de Stratigraphie, Septembre 2024.
+(c) Commission Internationale de Stratigraphie, Septembre 2023
 
 Citation: Cohen, K.M., Finney, S.C., Gibbard, P..L. & Fan, J.X. (2013; updated) The ICS International Chronostratigraphic Chart. Episodes 36:199-204"""@fr ,
 
@@ -8104,7 +8097,7 @@ A színek a Földtani Világtérkép Bizottság (CGMW) rendszerét követik. ( w
 
 A táblázat kidolgozói: K.M. Cohen, D.A.T. Harper, P.L. Gibbard, N. Car
 
-(c) Nemzetközi Rétegtani Bizottság (ICS), 2024. szeptember
+(c) Nemzetközi Rétegtani Bizottság (ICS), 2023. szeptember
 
 Javasolt idézés: Cohen, K.M., Finney, S.C., Gibbard, P.L. & Fan, J.-X. (2013; frissítve) The ICS International Chronostratigraphic Chart. Episodes 36: 199-204."""@hu ,
 
@@ -8114,7 +8107,7 @@ I colori seguono le indicazioni della Commission for the Geological Map of the W
 
 Carta redatta da K.M. Cohen, D.A.T. Harper, P.L. Gibbard, N. Car
 
-(c) International Commission on Stratigraphy, settembre 2024.
+(c) International Commission on Stratigraphy, settembre 2023
 
 Da citare: Cohen, K.M., Finney, S.C., Gibbard, P.L. & Fan, J.-X. (2013; aggiornato)
 The ICS International Chronostratigraphic Chart. Episodes 36: 199-204
@@ -8127,11 +8120,11 @@ Traduzione a cura della Commissione Italiana di Stratigrafia"""@it ,
 
 第四系，上部古第三系，白亜系，三畳系，ペルム系，カンブリア系，先カンブリア（累）界を除く全ての界の年代値は，Gradstein et al.（2012） の‘The Geologic Time Scale 2012’による．第四系，上部古第三系，白亜系，三畳系，ペルム系，カンブリア系，先カンブリア（累）界の年代値に関しては，当該問題を扱う国際層序委員会の小委員会による．
 
-この日本語版ISC Chart（2024年6月版）は，IUGS（国際地質科学 連合）の許諾を得て，日本地質学会が作成した．表の色は，国際地質図委員会（Commission for the Geological Map of the World (www.cgmw.org）の 推奨に従う
+この日本語版ISC Chart（2023年6月版）は，IUGS（国際地質科学 連合）の許諾を得て，日本地質学会が作成した．表の色は，国際地質図委員会（Commission for the Geological Map of the World (www.cgmw.org）の 推奨に従う
 
 図案 (オリジナル): K.M. Cohen, D.A.T. Harper, P.L. Gibbard, N. Car
 
-(c) 国際層序委員会，2024年12月
+(c) 国際層序委員会，2023年9月
 
 引用: Cohen, K.M., Finney, S.C., Gibbard, P.L. & Fan, J.-X. (2013; updated) The ICS International Chronostratigraphic Chart. Episodes 36: 199-204."""@ja ,
 
@@ -8141,7 +8134,7 @@ Traduzione a cura della Commissione Italiana di Stratigrafia"""@it ,
 
 표의 색채는 세계지질도위원회 (www.ccgm.org) 를 따랐다.
 
-표의 초안은 2024년 06월 (c) 국제층서위원회의 K.M. Cohen, D.A.T. Harper, P.L. Gibbard, N. Car가 만들었다.
+표의 초안은 2023년 06월 (c) 국제층서위원회의 K.M. Cohen, D.A.T. Harper, P.L. Gibbard, N. Car가 만들었다.
 
 인용: Cohen, K.M., Finney, S.C., Gibbard, P.L. & Fan, J.-X. (2013; updated) The ICS International Chronostratigraphic Chart. Episodes 36: 199-204."""@ko ,
 
@@ -8153,7 +8146,7 @@ Visų sistemų amžius, išskyrus apatinį pleistoceną, permą, triasą, kreid�
 
 Lentelė sudaryta: K.M. Cohen, S.C. Finney, P.L. Gibbard
 
-(c) Tarptautinė stratigrafijos komisija, 2024 sausis.
+(c) Tarptautinė stratigrafijos komisija, 2015 sausis.
 
 Cituoti: Cohen, K.M., Finney, S.C., Gibbard, P.L., ir Fan, J.-X. (2013; papildyta) The ICS International Chronostratigraphic Chart. Episodes 36: 199-204."""@lt ,
 
@@ -8167,7 +8160,7 @@ De kleuren volgen deze van de Commissie voor de Geologische Kaart van de Wereld 
 
 Tabel opgesteld door K.M. Cohen, D.A.T. Harper, P.L. Gibbard & N. Car
 
-(c) International Commission on Stratigraphy, September 2024.
+(c) International Commission on Stratigraphy, September 2023
 
 Citeren: Cohen, K.M., Finney, S.C., Gibbard, P.L. & Fan, J.-X. (2013; updated). The ICS International Chronostratigraphic Chart. Episodes 36: 199-204.
 """@nl ,
@@ -8182,7 +8175,7 @@ Fargeskalaen følger retningslinjene til The Commission for the Geological Map o
 
 Tabellen er tegnet av K.M. Cohen, D.A.T. Harper, P.L. Gibbard & J.-X. Fan
 
-(c) International Commission on Stratigraphy, Septemebr 2024.
+(c) International Commission on Stratigraphy, Septemebr 2023
 
 Referanse: Cohen, K.M., Finney, S.C., Gibbard, P.L. & Fan, J.-X. (2013; updated). The ICS International Chronostratigraphic Chart. Episodes 36: 199-204."""@no ,
 
@@ -8190,7 +8183,7 @@ Referanse: Cohen, K.M., Finney, S.C., Gibbard, P.L. & Fan, J.-X. (2013; updated)
 
 As Subséries e Subépocas ratificadas estão abreviadas como S (Superior), M (Médio) e I (Inferior). A datação absoluta em milhões de anos (Ma) para a base do Ediacárico e das restantes unidades do Fanerozoico é apenas orientadora, em especial para os limites sem GSSP formal (~Ma). Estes valores poderão ser revistos no futuro ou serem recalibrados geocronometricamente. Os valores indicados são provenientes de Gradstein et al. (A Geologic Time Scale 2012), excetuando as datações do Quaternário, Paleogénico Superior, Cretácico, Jurássico, Triássico, Pérmico, Câmbrico e Precâmbrico, fornecidas pelas subcomissões respetivas da ICS-IUGS.
 
-Tabela desenhada por K.M. Cohen, D.A.T. Harper, P.L. Gibbard e N. Car Setembro de 2024 © International Commission on Stratigraphy (IUGS)
+Tabela desenhada por K.M. Cohen, D.A.T. Harper, P.L. Gibbard e N. Car Setembro de 2023 © International Commission on Stratigraphy (IUGS)
 
 Citar: Cohen, K.M., Finney, S.C., Gibbard, P.L. & Fan, J.-X. (2013; atualizada) The ICS International chronostratigraphic Chart. Episodes 36: 199-204."""@pt ,
 
@@ -8206,7 +8199,7 @@ Citar: Cohen, K.M., Finney, S.C., Gibbard, P.L. & Fan, J.-X. (2013; atualizada) 
 
 Шкала представлена K.M. Cohen, D.A.T. Harper, P.L. Gibbard
 
-(с) Международная комиссия по стратиграфии, февраль 2024 г.
+(с) Международная комиссия по стратиграфии, февраль 2017 г.
 
 Цитировать: Cohen, K.M., Finney, S.C., Gibbard, P.L. & Fan, J.-X. (2013; с дополнениями) The ICS International Chronostratigraphic Chart. Episodes 36: 199-204."""@ru ,
 
@@ -8218,7 +8211,7 @@ Farby podľa Komisie pre geologickú mapu sveta (www.ccgm.org)
 
 Anglickú tabuľku nakreslili K.M. Cohen, D.A.T. Harper, P.L. Gibbard a N. Car
 
-(c) Medzinárodná stratigrafická komisia, septembra 2024.
+(c) Medzinárodná stratigrafická komisia, septembra 2023
 
 Citovať ako: Cohen, K.M., Finney, S.C., Gibbard, P.L. & Fan, J.-X. (2013; updated) The ICS International Chronostratigraphic Chart. Episodes 36"""@sk ,
 
@@ -8232,7 +8225,7 @@ Renklendirme kodları için Dünya Jeoloji Haritası Komisyonu (http://www.ccgm.
 
 Çizelge tasarımı: K.M. Cohen, D.A.T. Harper, P.L. Gibbard
 
-(c) International Commission on Stratigraphy, Eylül 2024.
+(c) International Commission on Stratigraphy, Eylül 2023
 
 Kaynak gösterimi: Cohen, K.M., Finney, S.C., Gibbard, P.L. & Fan, J.-X. (2013; updated) The ICS International Chronostratigraphic Chart. Episodes 36: 199-204."""@tr ,
 
@@ -8246,9 +8239,9 @@ Kaynak gösterimi: Cohen, K.M., Finney, S.C., Gibbard, P.L. & Fan, J.-X. (2013; 
 
 本图件由K.M. Cohen、D.A.T. Harper、P.L. Gibbard和N. Car绘制
 
-(c)国际地层委员会，2024年12月（英文版)
+(c)国际地层委员会，2023年09月（英文版)
 
-(c)国际地层委员会，2024年12月（中文版)
+(c)国际地层委员会，2023年09月（中文版)
 
 引用：Cohen, K.M., Finney, S.C., Gibbard, P.L. & Fan, J.-X. (2013; updated) The ICS International Chronostratigraphic Chart. Episodes 36: 199-204.
 """@zh ;
