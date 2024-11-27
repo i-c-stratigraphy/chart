@@ -1,17 +1,17 @@
-name: generate-pdfs
+name: Main
+
 on:
   push:
-    branches: 
-      - "main"
-  pull_request:
-    branches: 
-      - "main"
+    tags:
+      - "v*.*.*"
   workflow_dispatch:
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout
+        uses: actions/checkout@v4
       - uses: browser-actions/setup-chrome@v1
         id: setup-chrome
       - run: |
@@ -33,7 +33,6 @@ jobs:
           do
             echo $i 
             output="chart-$i.pdf"
-
             echo "creating $output"
             #generate each language version
             echo "https://stratigraphy.org/chart-data/?scale=print&language=$i"
@@ -45,3 +44,9 @@ jobs:
         with:
           name: chart pdf 
           path:  "*.pdf"
+      - name: Release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: | 
+            *.pdf
+ 
