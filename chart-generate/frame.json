@@ -20,6 +20,15 @@
     "indirectNarrowers": "https://example.com/indirectNarrowers",
     "note": "skos:note",
     "versionInfo": "owl:versionInfo",
+    "skosVersionInfo":"skos:versionInfo",
+    "citation":"sdo:citation", 
+    "copyrightHolder":"sdo:copyrightHolder",
+    "copyrightNotice":"sdo:copyrightNotice",
+    "license":"sdo:license",
+    "scopeNote":"skos:scopeNote",
+    "historyNote":"skos:historyNote", 
+
+
     "conformsTo": {
       "@id": "dcterms:conformsTo",
       "@type": "@id"
