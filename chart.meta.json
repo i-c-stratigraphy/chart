@@ -1,0 +1,201 @@
+{
+    "id": "http://resource.geosciml.org/classifier/ics/ischart",
+    "type": "skos:ConceptScheme",
+    "conformsTo": "https://w3id.org/profile/vocpub/4.6",
+    "created": "2024-11-26",
+    "creator": {
+        "id": "https://linked.data.gov.au/org/ics",
+        "type": "sdo:Organization",
+        "name": "International Commission on Stratigraphy",
+        "url": "https://stratigraphy.org"
+    },
+    "modified": "2024-11-22",
+    "publisher": "https://linked.data.gov.au/org/ics",
+    "versionIRI": "ischart:2024-12",
+    "versionInfo": "2024-12",
+    "altLabel": [
+        {
+            "language": "ca",
+            "value": "TAULA CRONOESTRATIGRÀFICA INTERNACIONAL"
+        },
+        {
+            "language": "cs",
+            "value": "MEZINÁRODNÍ CHRONOSTRATIGRAFICKÁ TABULKA"
+        },
+        {
+            "language": "de",
+            "value": "INTERNATIONALE CHRONOSTRATIGRAPHISCHE TABELLE"
+        },
+        {
+            "language": "es",
+            "value": "TABLA CRONOESTRATIGRÁFICA INTERNACIONAL"
+        },
+        {
+            "language": "eu",
+            "value": "NAZIOARTEKO TAULA KRONOESTRATIGRAFIKOA"
+        },
+        {
+            "language": "fi",
+            "value": "KANSAINVÄLINEN KRONOSTRATIGRAFINEN TAULU"
+        },
+        {
+            "language": "fr",
+            "value": "CHARTE CHRONOSTRATIGRAPHIQUE INTERNATIONALE"
+        },
+        {
+            "language": "hu",
+            "value": "NEMZETKÖZI IDŐRÉTEGTANI TÁBLÁZAT"
+        },
+        {
+            "language": "it",
+            "value": "SCALA CRONOSTRATIGRAFICA INTERNAZIONALE"
+        },
+        {
+            "language": "ja",
+            "value": "国際年代層序表"
+        },
+        {
+            "language": "ko",
+            "value": "국 제 지 질 연 대 층 서 표"
+        },
+        {
+            "language": "lt",
+            "value": "TARPTAUTINĖ CHRONOSTRATIGRAFIJOS SKALĖ"
+        },
+        {
+            "language": "nl",
+            "value": "INTERNATIONALE CHRONOSTRATIGRAFISCHE TABEL"
+        },
+        {
+            "language": "no",
+            "value": "INTERNASJONAL KRONOSTRATIGRAFISK TABELL"
+        },
+        {
+            "language": "pt",
+            "value": "TABELA CRONOESTRATIGRÁFICA INTERNACIONAL"
+        },
+        {
+            "language": "ru",
+            "value": "МЕЖДУНАРОДНАЯ ХРОНОСТРАТИГРАФИЧЕСКАЯ ШКАЛА"
+        },
+        {
+            "language": "sk",
+            "value": "MEDZINÁRODNÁ CHRONOSTRATIGRAFICKÁ TABUĽKA"
+        },
+        {
+            "language": "tr",
+            "value": "ULUSLARARASI KRONOSTRATİGRAFİK ÇİZELGE"
+        },
+        {
+            "language": "zh",
+            "value": "国 际 年 代 地 层 表"
+        }
+    ],
+    "definition": {
+        "language": "en",
+        "value": "This is a SKOS vocabulary presentation of the time units of the International Chronostratigraphic Chart represented as SKOS Concepts. Beginning and End ages are given for each unit in units of Millions of Years Ago (MYA)."
+    },
+    "historyNote": "This vocabulary uses IRIs originally created for the Geologic Timescale (2020) data (see http://resource.geosciml.org/vocabulary/timescale/)",
+    "prefLabel": {
+        "language": "en",
+        "value": "International Chronostratigraphic Chart"
+    },
+    "scopeNote": [
+        {
+            "language": "en",
+            "value": "Units of all ranks are in the process of being defined by Global Boundary Stratotype Section and Points (GSSP) for their lower boundaries, including those of the Archean and Proterozoic, long defined by Global Standard Stratigraphic Ages (GSSA). Italic fonts indicate informal units and placeholders for unnamed units. Versioned charts and detailed information on ratified GSSPs are available at the website http://www.stratigraphy.org. The URL to this chart is found below.\n\nNumerical ages are subject to revision and do not define units in the Phanerozoic and the Ediacaran; only GSSPs do. For boundaries in the Phanerozoic without ratified GSSPs or without constrained numerical ages, an approximate numerical age (~) is provided.\n\nRatified Subseries/Subepochs are abbreviated as U/L (Upper/Late), M (Middle) and L/E (Lower/Early). Numerical ages for all systems except Quaternary, upper Paleogene, Cretaceous, Jurassic, Triassic, Permian, Cambrian and Precambrian are taken from ‘A Geologic Time Scale 2012’ by Gradstein et al. (2012), those for the Quaternary, upper Paleogene, Cretaceous, Jurassic, Triassic, Permian, Cambrian and Precambrian were provided by the relevant ICS subcommissions.\n\nColouring follows the Commission for the Geological Map of the World <www.ccgm.org>.\n\nChart drafted by K.M. Cohen, D.A.T. Harper, P.L. Gibbard, N. Car\n\n(c) International Commission on Stratigraphy, September 2024.\n\nTo cite: Cohen, K.M., Finney, S.C., Gibbard, P.L. & Fan, J.-X. (2013; updated), _The ICS International Chronostratigraphic Chart_. Episodes 36: 199-204"
+        },
+        {
+            "language": "ca",
+            "value": "Els límits inferiors de les unitats de tots els rangs es troben actualment en procés de ser definits com a Estratotips Globals de Límit (GSSP - Global Boundary Stratotype Section and Point), incloses les de l'Arqueà i el Proterozoic que, per convenció, havien estat definits cronomètricament segons edats numèriques absolutes (GSSA-Global Standard Stratigraphic Ages). Hom pot trobar la taula original i la informació detallada sobre els GSSP ratificats a http://www.stratigraphy.org.\n\nLes edats numèriques (Ma) estan subjectes a revisió i no defineixen unitats en el Fanerozoic ni en I’Ediacarià. Això només ho fan els GSSP. Pel que fa als límits d'aquelles unitats del Fanerozoic que encara no tenen un GSSP ratificat, o dels quals no es disposa d'una edat numèrica acotada, la taula dona una edat numèrica aproximada (~).\n\nLes Subsèries/Subèpoques ratificades s’abrevien com S/T (Superior/Tardà), M (Mitjà) i I/P (Inferior/Primerenc). Les edats numèriques de tots els sistemes, excepte el Quaternari, el Paleogen superior, el Cretaci, el Juràssic, el Triàsic, el Permià i el Precambrià provenen de “A Geologic Time Scale 2012” de Gradstein et al. (2012). Les del Quaternari, Paleogen superior, Cretaci, Juràssic, Triàsic, Permià, Cambrià i Precambrià són aportacions originals de les subcomissions respectives de la ICS (Int. Commission on Stratigraphy).\n\nTaula dissenyada per K.M. Cohen, D.A.T. Harper, P.L. Gibbard, N. Car\n\n(c) Comissió Internacional d’Estratigrafia (IUGS), Setembre 2024.\n\nCitacio: Cohen, K.M., Finney, S.C., Gibbard, P.L., y Fan, J.-X. (2013; actualilzat) The ICS Intemational Chronostratigraphic Chart. Episodes 36: 199-204.\n\nTraducció al català per iniciativa de Juan Carlos Gutiérrez-Marco (CSIC)."
+        },
+        {
+            "language": "cs",
+            "value": "Postupně se pracuje na tom, aby všechny jednotky byly definovány svými spodními hranicemi na globálních stratotypech (GSSP - Global Boundary Stratotype Section and Point). To platí i pro jednotky archaika a proterozoika, dosud definované globálním standardním stratigrafickým stářím (GSSA - Global Standard Stratigraphic Age). Neformální jednotky a jednotky doposud nepojmenované jsou psány kurzívou. Další verze tabulky a detailní informace o ratifikovaných GSSP jsou dostupné na webu http://www.stratigraphy.org. URL této tabulky je uveden níže.\n\nAbsolutní stáří jsou průběžně revidována a nedefinují jednotky ve fanerozoiku a ediakaru, kde jsou rozhodující pouze GSSP. Pro absolutního stáří hranic fanerozoických jednotek bez ratifikovaného GSSP nebo bez přesného absolutního datování je použit symbol (~).\n\nOznačení schválených pododdělení/podepoch jsou v tabulce zkrácena na sp/sta (spodní/starší), stř (střední) a sv/ml (svrchní/mladší). Absolutní stáří jednotek jsou převzata z Gradstein et al. (2012) ‘A Geologic Time Scale 2012’, s výjimkou kvartéru, svrchního paleogénu, křídy, jurský, triasu, permu a prekambria, pro něž byla data poskytnuta příslušnými ICS subkomisemi.\n\nBarvy jednotek převzaty podle Komise pro geologickou mapu světa (Commission for the Geological Map of the World; www.ccgm.org).\n\nNávrh originální tabulky v angličtině: K.M. Cohen, D.A.T. Harper, P.L. Gibbard, N. Car\n\n(c) Mezinárodní stratigrafická komise, září 2023\n\nZpůsob citace původní tabulky: Cohen, K.M., Finney, S.C., Gibbard, P.L. & Fan, J.-X. (2013; updated) The ICS International Chronostratigraphic Chart. Episodes 36:199-204"
+        },
+        {
+            "language": "de",
+            "value": "Globale stratigraphische Einheiten werden mit ihrer Basis definiert an Globalen Stratotyp Profilen und Punkten (GSSP, Global Stratotyp Section and Point). Dagegen sind Einheiten ≥ 1000 Ma definiert mit Globalen Stratigraphischen Standardaltern (GSSA). Mehr Informationen dazu unter: http://www.stratigraphy.org. Bis 09/2023 ratifizierte Grenzen sind mit einem Goldenen Nagel markiert.\n\nDie numerischen Alter stammen aus der Global Time Scale 2012 (GTS 2012, Gradstein et al. 2012), die Alter für das untere Pleistozän, das Chattium, die untere Kreide, die Jura, die Trias, das Perm und das Kryogenium von den zuständigen ICS-Subkommissionen. Das Zeichen ~ steht vor relativ unsicheren Altern.\n\nFarben: Commission for the Geological Map of the World (CGMW, http://www.ccgm.org).\n\nZitierweize: Cohen, K.M., Finney, S.C., Gibbard, P.L. & Fan, J.-X. (2013;aktualisiert) The ICS International Chronostratigraphic Chart. Episodes 36:199-204. URL: http://www.stratigraphy.org/ICSchart/ChronostratChart2022-02.pdf\n\nVersion in Deutsch: Deutsche Stratigraphische Kommission (DSK, M. Menning) Österreichische Stratigraphische Kommission (ASC, W. Piller)"
+        },
+        {
+            "language": "es",
+            "value": "odas las unidades de esta Tabla, cualquiera que sea su rango, se definen por el Estratotipo Global de Límite (GSSP - Global Boundary Stratotype Section and Point) referido siempre a su límite inferior. Este proceso se halla todavía inacabado e incluirá las unidades del Arcaico y Proterozoico, cuyas divisiones se convinieron inicialmente mediante edades absolutas (GSSA - Global Standard Stratigraphic Ages). La posición de los GSSP oficiales se indica en la tabla mediante el símbolo del “Clavo Dorado” (Golden Spike), que los materializa en el terreno. El original de la tabla en distintos idiomas y formatos, junto con los detalles de los estratotipos globales de límite (criterio de definición de cada uno, localización geográfica y geológica, correlación, etc.), están disponibles en la web www.stratigraphy.org.\n\nLas edades absolutas, expresadas en millones de años (Ma), son sólo orientativas, pues tanto el Ediacárico como las unidades del Fanerozoico se definen formalmente por sus correspondientes GSSP, en vez de por edades numéricas. No obstante, para aquellas divisiones que no cuentan aún con un estratotipo global o con edades bien establecidas, se indican las dataciones aproximadas (~ Ma) de sus límites. Las edades numéricas han sido tomadas de Gradstein et al. (A Geologic Time Scale 2012), con excepción de las correspondientes al Cuaternario, Paleógeno superior, Cretácico, Jurásico, Triásico, Pérmico, Cámbrico y Precámbrico, que fueron aportadas por las subcomisiones respectivas de la ICS-IUGS.\n\nTabla diseñada por K.M. Cohen, D.A.T. Harper, P.L. Gibbard y N. Car\n\n(c) International Commission on Stratigraphy (IUGS), Septiembre 2024.\n\nCitar como: Cohen, K.M., Finney, S.C., Gibbard, P.L. & Fan, J.-X. (2013; actualizada). The ICS International Chronostratigraphic Chart. Episodes 36: 199-204"
+        },
+        {
+            "language": "eu",
+            "value": "Kategoria guztietako unitateak definitzeko prozesuan daude beren beheko mugen muga-estratotipo globaleko ebaki eta puntuen bidez (GSSP-Global Boundary Stratotype Section and Point); baita Arkearrekoak eta Proterozoikokoak ere, denbora luzean adin estratigrafiko estandar globalez (GSSA-Global Standard Startigraphic Ages) definituak izan direnak. Taulak eta onetsitako GSSPen informazio xehea ondorengo web orrian eskuragarri daude: http://www.stratigraphy.org. Taula honen URLa behean adierazita dago.\n\nAdin numerikoak berrikusi egin daitezke eta ez dute unitaterik definitzen Fanerozoikoan eta Ediacararrean; soilik GSSPek definitzen dituzte unitateak. GSSPrik onetsita edo adin numeriko mugaturik ez duten mugentzako gutxi gorabeharko adin numeriko bat (~) eman da.\n\nSistema guztien adin numerikoak, Behe Pleistozeno, Permiar, Triasiko, Kretazeo eta Kanbriarraurrekoak izan ezik, “A Geological Time Scale 2012” (Gradstein et al., 2012) argitalpenetik hartuak dira; Behe Pleistozeno, Permiar, Triasiko eta Kretazeokoak dagozkien ICSko azpibatzordeek emanak dira.\n\nTaula hau K.M. Cohen, S.C. Finney eta P.L. Gibbard-ek diseinatu dute\n\n(c) International Commission on Stratigraphy (IUGS), 2024 eko urtarrila.\n\nAipamena egiteko: Cohen, K.M., Finney, S.C., Gibbard, P.L. eta Fan, J.-X. (2013; eguneratua) The ICS International Chronostratigraphic Chart. Episodes 36: 199-204"
+        },
+        {
+            "language": "fi",
+            "value": "Kaikkien stratigrafisten tasojen yksiköille määritetään alarajoja Global Boundary Stratotype Section and Points (GSSP) -periaatteen mukaisesti. Tämä koskee myös arkeeisten ja proterotsooisten yksiköiden rajoja, jotka on aikaisemmin määritetty Global Standard Stratigraphic Ages (GSSA) -periaatteen mukaan. Epäviralliset yksiköt on kirjoitettu kursiivilla. Aiemmat versiot ja yksityiskohtaiset tiedot ratifioitujen globaalien stratotyyppileikkausten alakontaktien maantieteellisistä sijainneista (GSSP-kohteista) on saatavana verkkosivustolla http://www.stratigraphy.org. Kaavion verkkosivun URL-osoite on annettu alla.\n\nNumeeriset iät saattavat muuttua eikä niillä määritetä fanerotsooisia eikä ediakaran yksiköitä; ne rajautuvat yksinomaan globaalien stratotyyppileikkausten alakontaktien (GSSP:t) perusteella. Fanerotsooisille yksikkörajoille annetaan ikäarvio (~), mikäli rajoilla ei ole ratifioitua GSSP:tä tai vahvistettua numeerista ikää.\n\nRatifioidut sarjojen ja epookkien alajaot on lyhennetty Y/M (ylä-/myöhäis-), K (keski) ja A/V (ala-/varhais-). Kvartääriä, yläpaleogeenia, liitua, triasta, permiä ja prekambria lukuun ottamatta numeeriset iät on esitetty Gradstein et al. (2012) julkaisussa ”A Geologic Time Scale 2012”; kvartäärin, yläpaleogeenin, liidun, jura, triaksen, permin ja prekambrin iät on saatu asianomaisilta ICS:n alakomiteoilta.\n\nVäritys noudattaa Maailman geologisen karttakomission Geological Map of World (http://www.ccgm.org) värejä\n\nTaulun ovat laatineet K.M. Cohen, D.A.T. Harper, P.L. Gibbard, N. Car\n\n(c) International Commission on Stratigraphy, Syyskuu 2024.\n\nViittausohje: Cohen, K.M., Finney, S.C., Gibbard, P.L. & Fan, J.-X. (2013; updated) The ICS International Chronostratigraphic Chart. Episodes 36: 199-204."
+        },
+        {
+            "language": "fr",
+            "value": "La définition de la limite inférieure de chaque unité formelle par un point précis dans la coupe d’un stratotype de limite global (GSSP-Global Boundary Stratotype Section and Points) est encore en cours, y compris celle des unités de l’Archéen et du Protérozoïque, auparavant définie par des âges absolus (GSSA-Global Standard Stratigraphic Ages). Les noms en italique indiquent des unités informelles et l’espace pour des unités à nommer. Les chartes et des informations plus détaillées sur les GSSP sont disponibles sur le site web de l’International Commission on Stratigraphy (ICS) www.stratigraphy.org.\n\nLes âges numériques sont sujets à révision et ne définissent pas les unités du Phanérozoïque et de l’Édicarien; seuls les GSSP le font. Pour les limites du Phanérozoïque qui n’ont pas de GSSP ratifiés ou des âges numériques calibrés, un âge numérique approximatif (~) est indiqué. Les sous-séries/-sous-époques ratifiées sont abbrégées par S (Supérieur), M (Moyen) et I (Inférieur). Les âges numériques de tous les systèmes à l’exception du Précambrien, Cambrien, Permien, Trias, Jurassique, Crétacé, Paléogène supérieur et Quaternaire sont tirés du livre A Geologic Time Scale 2012 par Gradstein et al. (2012); ceux Précambrien, Cambrien, Permien, Trias, Jurassique, Crétacé, Paléogène supérieur et Quaternaire ont été définis par les subcommissions de l’ICS.\n\nLes couleurs suivent les recommendations de la Commission de la Carte Géologique du Monde (www.ccgm.org)\n\nChart faite par K.M. Cohen, D.A.T. Harper, P.L. Gibbard, N. Car\n\n(c) Commission Internationale de Stratigraphie, Septembre 2024.\n\nCitation: Cohen, K.M., Finney, S.C., Gibbard, P..L. & Fan, J.X. (2013; updated) The ICS International Chronostratigraphic Chart. Episodes 36:199-204"
+        },
+        {
+            "language": "hu",
+            "value": "Bármely rendű egység alsó határának kijelölése globális határsztratotípus-szelvény és pont (GSSP) alapján történik, beleértve az archaikum és proterozoikum egységeit is, bár ezeket sokáig globális standard rétegtani korok (GSSA) útján definiálták. Az informális, valamint a még elnevezésre váró egységeket dőlt betű jelzi. A táblázat különböző verziói és a ratifikált GSSP-kre vonatkozó részletes információk a http://www.stratigraphy.org honlapról érhetők el. E táblázat webcímét lásd alább.\n\nA számszerű korok új kormeghatározási eredmények alapján változhatnak, de a fanerozoikum egységeinek és az ediacarainak a definíciójában nincs szerepük. A ratifikált GSSP-vel vagy megbízhatóan meghatározott számszerű korral nem rendelkező fanerozoikumi egységeknél közelítő számszerű kor (~) szerepel.\n\nA ratifikált alsorozatok/alkorok rövidítése f/k (felső/késő), k (középső) és a/k (alsó/kora). A számszerű korok forrása Gradstein et al. (2012) „A Geologic Time Scale 2012” c. műve, kivéve a kvarter, felső paleogén, kréta, jura, triász, perm és prekambrium egységeit, melyekhez a Nemzetközi Rétegtani Bizottság illetékes albizottságai szolgáltattak adatot.\n\nA színek a Földtani Világtérkép Bizottság (CGMW) rendszerét követik. ( www.ccgm.org )\n\nA táblázat kidolgozói: K.M. Cohen, D.A.T. Harper, P.L. Gibbard, N. Car\n\n(c) Nemzetközi Rétegtani Bizottság (ICS), 2024. szeptember\n\nJavasolt idézés: Cohen, K.M., Finney, S.C., Gibbard, P.L. & Fan, J.-X. (2013; frissítve) The ICS International Chronostratigraphic Chart. Episodes 36: 199-204."
+        },
+        {
+            "language": "it",
+            "value": "Le unità stratigrafiche del Fanerozoico e dell'Ediacarano, sono state o sono in procinto di essere definite da GSSP (Global Boundary Stratotype Section and Points) tramite il loro limite inferiore. Le unità con età ≥ 1000 Ma, ovvero quelle dell'Archeano e del Proterozoico, sono al momento definite da GSSA (Global Stratigraphic Standard Ages). I nomi in corsivo identificano le unità informali, mentre le unità non ancora definite sono indicate con il nome generico del proprio rango. Schemi aggiornati e informazioni dettagliate sui GSSP ratificati sono disponibili sul sito web http://www.stratigraphy.org. Le datazioni numeriche sono oggetto di revisione e, a differenza dei GSSP, non definiscono unità nel Fanerozoico e nell’Ediacarano. Per le unità del Fanerozoico non definite da GSSP o senza un’età precisa, viene indicata un’età numerica approssimata (~). Le età numeriche per tutti i sistemi eccetto che per il Quaternario, il Paleogene superiore, il Cretacico, il Triassico, il Permiano, il Cambriano e il Precambriano sono prese da “A Geologic Time Scale 2012” di Gradstein et al. (2012), quelle per il Quaternario, il Paleogene superiore, il Cretacico, il Giurassico, il Triassico, il Permiano, il Cambriano e il Precambriano sono state fornite dalle relative sottocommissioni della ICS.\n\nI colori seguono le indicazioni della Commission for the Geological Map of the World (www.ccgm.org)\n\nCarta redatta da K.M. Cohen, D.A.T. Harper, P.L. Gibbard, N. Car\n\n(c) International Commission on Stratigraphy, settembre 2024.\n\nDa citare: Cohen, K.M., Finney, S.C., Gibbard, P.L. & Fan, J.-X. (2013; aggiornato)\nThe ICS International Chronostratigraphic Chart. Episodes 36: 199-204\n\nTraduzione a cura della Commissione Italiana di Stratigrafia"
+        },
+        {
+            "language": "ja",
+            "value": "すべての階層の層序区分単位に対して，その下限をGSSPs（国際境界模式層断面とポイント）によって定義する作業が進行中である．これは，長らくGSSA（国際標準層序年代）によって定義されてきた太古（累）界および原生（累）界の下限に対しても同様である．GSSPsに関する図および詳細な情報は，ウェブサイト http://www.stratigraphy.org に掲載されている．\n\n本表に掲載されている年代値は見直されることがあるが，それは顕生（累）界およびエディアカラン系の層序区分単位の定義の変更を伴うものではない．そのような定義の変更は，GSSPsによってのみ可能である．GSSPsにより定義されていない境界や確定した年代値がない顕生（累）界の層序区分単位境界に対しては，おおよその年代値を「~」を付して示した．\n\n第四系，上部古第三系，白亜系，三畳系，ペルム系，カンブリア系，先カンブリア（累）界を除く全ての界の年代値は，Gradstein et al.（2012） の‘The Geologic Time Scale 2012’による．第四系，上部古第三系，白亜系，三畳系，ペルム系，カンブリア系，先カンブリア（累）界の年代値に関しては，当該問題を扱う国際層序委員会の小委員会による．\n\nこの日本語版ISC Chart（2024年6月版）は，IUGS（国際地質科学 連合）の許諾を得て，日本地質学会が作成した．表の色は，国際地質図委員会（Commission for the Geological Map of the World (www.cgmw.org）の 推奨に従う\n\n図案 (オリジナル): K.M. Cohen, D.A.T. Harper, P.L. Gibbard, N. Car\n\n(c) 国際層序委員会，2024年12月\n\n引用: Cohen, K.M., Finney, S.C., Gibbard, P.L. & Fan, J.-X. (2013; updated) The ICS International Chronostratigraphic Chart. Episodes 36: 199-204."
+        },
+        {
+            "language": "ko",
+            "value": "오 랫 동 안 국 제 표 준 층 서 연 령 ( G S S A ) 으 로 지 정 된 시 생 누 대 와 원생누대의 하부경계를 포함하여, 모든 지질시대의 하부경계에 대한 국제표준층서구역(GSSP)을 지정하고 있는 중이다. 이탤릭체는 비공식적인 지질시대나 이름이 붙여지지 않은 지질시대를 나타낸다. 이 표 의 모 든 버 전 과 승 인 된 G S S P 에 대 한 자 세 한 정 보 는 http://www.stratigraphy.org에서 찾아볼 수 있다. 이 표의 URL은 아래에 적어 놓았다.\n\n수 치 연 령 은 수 정 될 수 있 으 며 , 현 생 누 대 의 지 질 시 대 와 에디아카리기는 수치연령이 아니라 GSSP에 의해서만 정의된다. GSSP가 승인되지 않았거나 범위가 제한된 수치연령이 주어지지 않은 현생누대 지질시대의 경계에는 수치연령의 근사값(~)을 적어 놓았다. 승인된 아세/아통은 후기, 중기, 전기로 표기하였다. 제4기, 상부 고진기, 백악기, 트라이아스기, 쥐라기, 페름기, 캄브리아기 그리고 선 캄 브 리 아 시 대 의 수 치 연 령 은 국 제 층 서 위 원 회 의 해 당 지질시대위원회에서 제공하였으며, 이를 제외한 모든 지질시대 경계의 수치연령은 ‘Gradstein et al. (2012)의 ‘A Geologic Time Scale 2012’로 부터 인용하였다.\n\n표의 색채는 세계지질도위원회 (www.ccgm.org) 를 따랐다.\n\n표의 초안은 2024년 06월 (c) 국제층서위원회의 K.M. Cohen, D.A.T. Harper, P.L. Gibbard, N. Car가 만들었다.\n\n인용: Cohen, K.M., Finney, S.C., Gibbard, P.L. & Fan, J.-X. (2013; updated) The ICS International Chronostratigraphic Chart. Episodes 36: 199-204."
+        },
+        {
+            "language": "lt",
+            "value": "Visų rangų padaliniai yra apibrėžti Globalinio stratotipo pjūvio apatinės ribos tašku (GSPT), o archejaus ir proterozojaus padaliniai nusakomi Globalinio stratigrafinio amžiaus standartu (GSAS). Patvirtintu GSPT lentelėje detali informacija yra tikra tinklalapyje http://www.stratigraphy.org\n\nFanerozojaus ir ediakaro GSPT padalinių amžiaus skaičiai yra neapibrėžti ir gali būti tikslinami toms fanerozojaus riboms, kurioms nėra GSPT patvirtinimo arba jos negalutinės, skaičiai rodo apytikrį amžių (~), yra sąlyginiai.\n\nVisų sistemų amžius, išskyrus apatinį pleistoceną, permą, triasą, kreidą ir prekambrą yra paimti iš Geologinės laiko skalės 2012 (Gradstein ir kt., 2012), o toms apatinio pleistoceno, permo, triaso ir kreidos, sąlygiškai pagal pakomisių duomenis. Spalvos suderintos su pasaulinio geologinio žemėlapio spalvomis (http://www.ccgm.org).\n\nLentelė sudaryta: K.M. Cohen, S.C. Finney, P.L. Gibbard\n\n(c) Tarptautinė stratigrafijos komisija, 2024 sausis.\n\nCituoti: Cohen, K.M., Finney, S.C., Gibbard, P.L., ir Fan, J.-X. (2013; papildyta) The ICS International Chronostratigraphic Chart. Episodes 36: 199-204."
+        },
+        {
+            "language": "nl",
+            "value": "De ondergrens van eenheden van verschillende rang, wordt momenteel stapsgewijs gedefinieerd op basis van Global Boundary Stratotype Section and Points (GSSPs), ook die in het Archeïcum en het Proterozoïcum welke vooralsnog als Global Standard Stratigraphic Age (GSSA) vastgesteld zijn. Tabellen en nadere informatie over geratificeerde GSSPs zijn te vinden op www.stratigraphy.org. De URL van deze tabel is hieronder gegeven.\n\nVan eenheden met hun door een GSSP gedefinieerde ondergrens, wordt de veronderstelde ouderdom in Ma van tijd tot tijd herzien (naar nieuw inzicht bijgesteld). Voor Fanerozoïsche eenheden waarvoor nog geen GSSP en/of numerieke ouderdom is vastgesteld, is een ouderdom bij benadering gegeven (~).\n\nDe ouderdommen in Ma zijn overgenomen uit ‘A Geological Time Scale 2012’ door Gradstein et al. (2012), met uitzondering van die voor het Precambrium, Cambrium, Perm, Trias, Jura, Krijt, boven Paleogeen en Kwartair, die afkomstig zijn van de betreffende ICS subcommissies.\n\nDe kleuren volgen deze van de Commissie voor de Geologische Kaart van de Wereld www.ccgm.org\n\nTabel opgesteld door K.M. Cohen, D.A.T. Harper, P.L. Gibbard & N. Car\n\n(c) International Commission on Stratigraphy, September 2024.\n\nCiteren: Cohen, K.M., Finney, S.C., Gibbard, P.L. & Fan, J.-X. (2013; updated). The ICS International Chronostratigraphic Chart. Episodes 36: 199-204.\n"
+        },
+        {
+            "language": "no",
+            "value": "Det pågår nå en prosess der de nedre grensene for alle enhetene i tabellen defineres med Global Boundary Stratotype Section and Points (GSSP). Dette gjelder også for grensene i arkeikum og proterozoikum som lenge har vært definert med Global Standard Stratigraphical Ages (GSSA). Tabeller og detaljert informasjon om ratifiserte GSSP er tilgjengelig på websiden www.stratigraphy.org. Denne tabellens URL finnes nedenfor.\n\nNumeriske aldre underkastes revisjon og definerer ikke enheter i fanerozoikum og ediacara; kun ratifiserte GSSP gjelder. For grenser i fanerozoikum uten ratifisert GSSP eller kalibrerte numeriske aldere, er bare tilnærmete aldre (~) oppgitt.\n\nNumeriske aldre for alle systemer unntatt prekambrium, perm, trias, jura, kritt, øvre paleogen og kvartær er hentet fra ‘A Geological Time Scale 2012’ av Gradstein et al. (2012), mens de fra prekambrium, perm, trias, jura, kritt, øvre paleogen og kvartær er fremskaffet av de relevante underkomiteer i ICS.\n\nFargeskalaen følger retningslinjene til The Commission for the Geological Map of the World www.ccgm.org\n\nTabellen er tegnet av K.M. Cohen, D.A.T. Harper, P.L. Gibbard & J.-X. Fan\n\n(c) International Commission on Stratigraphy, Septemebr 2024.\n\nReferanse: Cohen, K.M., Finney, S.C., Gibbard, P.L. & Fan, J.-X. (2013; updated). The ICS International Chronostratigraphic Chart. Episodes 36: 199-204."
+        },
+        {
+            "language": "pt",
+            "value": "A definição do Estratotipo Global de Limite (GSSP - Global Boundary Stratotype Section and Point) para a base dos diversos andares, séries, sistemas e eratemas, é um processo ainda incompleto. O mesmo ocorre A Tabela original e os detalhes sobre os GSSP (critério de definição de cada um, localização geográfica e geológica, correlação, etc.), atualizam-se regularmente na web page: http://www.stratigraphy.org.\n\nAs Subséries e Subépocas ratificadas estão abreviadas como S (Superior), M (Médio) e I (Inferior). A datação absoluta em milhões de anos (Ma) para a base do Ediacárico e das restantes unidades do Fanerozoico é apenas orientadora, em especial para os limites sem GSSP formal (~Ma). Estes valores poderão ser revistos no futuro ou serem recalibrados geocronometricamente. Os valores indicados são provenientes de Gradstein et al. (A Geologic Time Scale 2012), excetuando as datações do Quaternário, Paleogénico Superior, Cretácico, Jurássico, Triássico, Pérmico, Câmbrico e Precâmbrico, fornecidas pelas subcomissões respetivas da ICS-IUGS.\n\nTabela desenhada por K.M. Cohen, D.A.T. Harper, P.L. Gibbard e N. Car Setembro de 2024 © International Commission on Stratigraphy (IUGS)\n\nCitar: Cohen, K.M., Finney, S.C., Gibbard, P.L. & Fan, J.-X. (2013; atualizada) The ICS International chronostratigraphic Chart. Episodes 36: 199-204."
+        },
+        {
+            "language": "ru",
+            "value": "Нижние границы всех подразделений, определяемые Точкой глобального стратотипа границ (ТГСГ) постоянно уточняются, в том числе подразделения архея и протерозоя, давно определяемые геохронологическими данными (ГССВ /GSSA).\n\nШкалы и подробная информация о ратифицированных GSSP доступна на сайте: http://www.stratigraphy.org. URL-адрес данной шкалы приводится ниже.\n\nГеохронологические возрасты границ постоянно уточняются и не определяют поразделения фанерозоя и эдиакария, которые фиксируются только через GSSP. Для границ в фанерозое, которые не имеют ратифицированных GSSP или рассчитанных геохронологических оценок, указано приблизительное значение (~).\n\nОценки возрастов для всех систем, за исключением раннего плейстоцена, мелового, триасового, пермского периодов и докембрия приведены по «A Geologic Time Scale 2012» (Gradstein et al., 2012); а для указанных выше систем представлены соответствующими подкомиссиями ICS.\n\nЦвета шкалы соответствуют требованиям Комиссии по геологической карте Мира (http://ccgm.org/)\n\nШкала представлена K.M. Cohen, D.A.T. Harper, P.L. Gibbard\n\n(с) Международная комиссия по стратиграфии, февраль 2024 г.\n\nЦитировать: Cohen, K.M., Finney, S.C., Gibbard, P.L. & Fan, J.-X. (2013; с дополнениями) The ICS International Chronostratigraphic Chart. Episodes 36: 199-204."
+        },
+        {
+            "language": "sk",
+            "value": "Spodné hranice všetkých rádov sú definované na základe stratotypových profilov a bodov globálnych hraníc (GSSP) vrátane archaických a peroterozoických, ktoré sú definované na základe globálnych štandardných Numerické veky sú predmetom revízie a na rozdiel od GSSP nedefinujú jednotky fanerozoika a ediakaru. Pre hranice fanerozoických stupňov bez ratifikovaných GSSP alebo bez definovaného numerického veku, je použitý približný numerický vek (~).\n\nRatifikované pododdelenia/podepochy sú skrátene označené v./m. (vrchný/mladší), str. (stredný) a sp./st. (spodný/starší). Numerické veky pri všetkých útvaroch okrem kvartéru, vrchného paleogénu, kriedy, triasu, permu a predkambria sú prevzaté z práce Gradstein et al. (2012)A Geologic Time Scale 2012. Kvartérne, vrchnopaleogénne, kriedové, jurský, triasové, permské a predkambrické veky poskytli príslušné subkomisie ICS.\n\nFarby podľa Komisie pre geologickú mapu sveta (www.ccgm.org)\n\nAnglickú tabuľku nakreslili K.M. Cohen, D.A.T. Harper, P.L. Gibbard a N. Car\n\n(c) Medzinárodná stratigrafická komisia, septembra 2024.\n\nCitovať ako: Cohen, K.M., Finney, S.C., Gibbard, P.L. & Fan, J.-X. (2013; updated) The ICS International Chronostratigraphic Chart. Episodes 36"
+        },
+        {
+            "language": "tr",
+            "value": "Bütün kademelerin birimlerinin alt sınırları Küresel Stratotip Kesit ve Noktaların Sınırları (GSSP) kapsamında tanımlanmıştır ve buna Küresel Standart Stratigrafik Yaşlar (GSSA) tarafından uzun zamandır tanımlanan Arkeen ile Proterozoyik de dâhildir. Çizelgeler ve tasdikli GSSP’ler hakkında daha detaylı bilgiler http://www.stratigraphy.org sayfasından temin edilebilir. Bu çizelgenin URL’si aşağıda verilmiştir.\n\nSayısal yaş değerleri gözden geçirilmeye açıktır ve Fanerozoyik ile Ediyakaran içindeki birimlerin sınırlanmasını sağlamaz; sadece GSSP ile elde edilmiştir. Tasdikli GSSP’den veya sınırlandırılmış sayısal yaş değerlerinden yoksun Fanerozoyikteki sınırlar için, yaklaşık sayısal değer (~) verilmiştir.\n\nTasdikli Alt Seri/Devreler Ü/G (Üst/Geç), O (Orta) ve A/E (Alt/Erken) olarak kısaltılmıştır. Kuvaterner, Üst Paleojen, Kretase, Jura, Triyas, Permiyen ve Pre-Kambriyen dışında tüm sistemlerin sayısal yaş değerleri “Jeolojik Zaman Tablosu 2012”den alınmıştır (Gradstein vd. 2012); Kuvaterner, Üst Paleojen, Kretase, Jura, Triyas, Permiyen ve Pre-Kambriyen için olan yaşlar, Uluslararası Stratigrafi Komisyonu’nun ilgili alt komisyonları tarafından sağlanmıştır.\n\nRenklendirme kodları için Dünya Jeoloji Haritası Komisyonu (http://www.ccgm.org) temel alınmıştır.\n\nÇizelge tasarımı: K.M. Cohen, D.A.T. Harper, P.L. Gibbard\n\n(c) International Commission on Stratigraphy, Eylül 2024.\n\nKaynak gösterimi: Cohen, K.M., Finney, S.C., Gibbard, P.L. & Fan, J.-X. (2013; updated) The ICS International Chronostratigraphic Chart. Episodes 36: 199-204."
+        },
+        {
+            "language": "zh",
+            "value": "所有全球年代地层单位均由其底界的全球界线层型剖面和点位（GSSP）界定，包括长期由全球标准地层年龄（GSSA）界定的太古宇和元古宇各单位。斜体代表非正式名称或尚未命名单位的临时名称。图件及已批准GSSP的详情参见国际地层委员会官网。本图件的网址见右下角。\n\n年龄值仍在不断修订；显生宇和埃迪卡拉系的单位不能由 年龄界定，而只能由GSSP界定。显生宇中没有确定GSSP或精 确年龄值的单位，则标注了近似年龄值（～）。\n\n已批准的亚统/亚世简写为上/晚、中、下/早；第四系、古 近系上部、白垩系、侏罗系、三叠系、二叠系、寒武系和前寒 武系的年龄值由各分会提供；其他年龄值引自Gradstein等主 编的《地质年代表2012》一书。\n\n所图中各单位的颜色参照了世界地质图委员会 发布的色谱(http://www.ccgm.org)。\n\n本图件由K.M. Cohen、D.A.T. Harper、P.L. Gibbard和N. Car绘制\n\n(c)国际地层委员会，2024年12月（英文版)\n\n(c)国际地层委员会，2024年12月（中文版)\n\n引用：Cohen, K.M., Finney, S.C., Gibbard, P.L. & Fan, J.-X. (2013; updated) The ICS International Chronostratigraphic Chart. Episodes 36: 199-204.\n"
+        }
+    ],
+    "skosVersionInfo": "2024-12: Updated Chart to include:\n\n* ratification of the Valanginian GSSP\n* numeric age of Valanginian updated to 137.05 +/- 0.2\n\n2023-09: updated form of the Geologic Timescale (2020) (see http://resource.geosciml.org/vocabulary/timescale/) to match the 2023-09 Chart, as released at https://stratigraphy.org/chart in late 2023.",
+    "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
+    "citation": {
+        "type": "xsd:anyURI",
+        "value": "https://stratigraphy.org/chart"
+    },
+    "copyrightHolder": {
+        "id": "https://linked.data.gov.au/org/ics"
+    },
+    "copyrightNotice": {
+        "language": "en",
+        "value": "(c) International Commission on Stratigraphy, 2024"
+    },
+    "license": {
+        "id": "https://creativecommons.org/licenses/by/4.0/"
+    }
+}
