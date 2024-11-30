@@ -57,6 +57,11 @@ def get_hierachy(framed, g):
         root[tc["id"]] = get_sub_info(tc, root, g)
     return root
 
+def get_meta(framed):
+    meta = deepcopy(framed)
+    del meta["hasTopConcept"]
+    del meta["@context"]
+    return meta
 
 def main():
     data=""
@@ -122,6 +127,9 @@ def main():
 
     with open('./out/chart.4.json', 'w',encoding = 'utf8') as out:
         out.write(json.dumps(framed["hasTopConcept"][1],ensure_ascii=False,indent=4).encode('utf8').decode())
+
+    with open('./out/chart.meta.json', 'w',encoding = 'utf8') as out:
+        out.write(json.dumps(get_meta(framed),ensure_ascii=False,indent=4).encode('utf8').decode())
 
     with open('./out/chart.json', 'w',encoding = 'utf8') as out:
         out.write(json.dumps(framed,ensure_ascii=False,indent=4).encode('utf8').decode())
