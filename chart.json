@@ -18761,7 +18761,11 @@
                                 "directNarrowers": 0,
                                 "indirectNarrowers": 0
                             },
-                            "color": "#DA037F"
+                            "color": "#DA037F",
+                            "height": 431,
+                            "remainderHeigt": 7.489697631696539,
+                            "irregularHeight": 9.48969763169654,
+                            "rawPercent": 0.15
                         },
                         {
                             "id": "ischart:Mesoarchean",
@@ -18881,7 +18885,11 @@
                                 "directNarrowers": 0,
                                 "indirectNarrowers": 0
                             },
-                            "color": "#F768A9"
+                            "color": "#F768A9",
+                            "height": 400,
+                            "remainderHeigt": 6.950995481852937,
+                            "irregularHeight": 8.950995481852937,
+                            "rawPercent": 0.15
                         },
                         {
                             "id": "ischart:Neoarchean",
@@ -19001,7 +19009,11 @@
                                 "directNarrowers": 0,
                                 "indirectNarrowers": 0
                             },
-                            "color": "#F99BC1"
+                            "color": "#F99BC1",
+                            "height": 300,
+                            "remainderHeigt": 5.213246611389702,
+                            "irregularHeight": 7.213246611389702,
+                            "rawPercent": 0.15
                         },
                         {
                             "id": "ischart:Paleoarchean",
@@ -19121,7 +19133,11 @@
                                 "directNarrowers": 0,
                                 "indirectNarrowers": 0
                             },
-                            "color": "#F4449F"
+                            "color": "#F4449F",
+                            "height": 400,
+                            "remainderHeigt": 6.950995481852937,
+                            "irregularHeight": 8.950995481852937,
+                            "rawPercent": 0.15
                         }
                     ],
                     "notation": "AR",
@@ -19251,7 +19267,11 @@
                         "directNarrowers": 0,
                         "indirectNarrowers": 0
                     },
-                    "color": "#AE027E"
+                    "color": "#AE027E",
+                    "height": 536,
+                    "remainderHeigt": 9.314333945682934,
+                    "irregularHeight": 11.314333945682934,
+                    "rawPercent": 0.15
                 },
                 {
                     "id": "ischart:Proterozoic",
@@ -19551,7 +19571,11 @@
                                         "directNarrowers": 0,
                                         "indirectNarrowers": 0
                                     },
-                                    "color": "#FDC07A"
+                                    "color": "#FDC07A",
+                                    "height": 200,
+                                    "remainderHeigt": 3.4754977409264685,
+                                    "irregularHeight": 5.4754977409264685,
+                                    "rawPercent": 0.15
                                 },
                                 {
                                     "id": "ischart:Ectasian",
@@ -19663,7 +19687,11 @@
                                         "directNarrowers": 0,
                                         "indirectNarrowers": 0
                                     },
-                                    "color": "#FDCC8A"
+                                    "color": "#FDCC8A",
+                                    "height": 200,
+                                    "remainderHeigt": 3.4754977409264685,
+                                    "irregularHeight": 5.4754977409264685,
+                                    "rawPercent": 0.15
                                 },
                                 {
                                     "id": "ischart:Stenian",
@@ -19775,7 +19803,11 @@
                                         "directNarrowers": 0,
                                         "indirectNarrowers": 0
                                     },
-                                    "color": "#FED99A"
+                                    "color": "#FED99A",
+                                    "height": 200,
+                                    "remainderHeigt": 3.4754977409264685,
+                                    "irregularHeight": 5.4754977409264685,
+                                    "rawPercent": 0.15
                                 }
                             ],
                             "notation": "MP",
@@ -20003,7 +20035,11 @@
                                         "directNarrowers": 0,
                                         "indirectNarrowers": 0
                                     },
-                                    "color": "#FECC5C"
+                                    "color": "#FECC5C",
+                                    "height": 85,
+                                    "remainderHeigt": 1.4770865398937492,
+                                    "irregularHeight": 3.477086539893749,
+                                    "rawPercent": 0.15
                                 },
                                 {
                                     "id": "ischart:Ediacaran",
@@ -20123,7 +20159,11 @@
                                         "directNarrowers": 0,
                                         "indirectNarrowers": 0
                                     },
-                                    "color": "#FED96A"
+                                    "color": "#FED96A",
+                                    "height": 96.20000000000005,
+                                    "remainderHeigt": 1.671714413385632,
+                                    "irregularHeight": 3.671714413385632,
+                                    "rawPercent": 0.15
                                 },
                                 {
                                     "id": "ischart:Tonian",
@@ -20236,7 +20276,11 @@
                                         "directNarrowers": 0,
                                         "indirectNarrowers": 0
                                     },
-                                    "color": "#FEBF4E"
+                                    "color": "#FEBF4E",
+                                    "height": 280,
+                                    "remainderHeigt": 4.8656968372970555,
+                                    "irregularHeight": 6.8656968372970555,
+                                    "rawPercent": 0.15
                                 }
                             ],
                             "notation": "NP",
@@ -20477,7 +20521,11 @@
                                         "directNarrowers": 0,
                                         "indirectNarrowers": 0
                                     },
-                                    "color": "#F76898"
+                                    "color": "#F76898",
+                                    "height": 250,
+                                    "remainderHeigt": 4.344372176158085,
+                                    "irregularHeight": 6.344372176158085,
+                                    "rawPercent": 0.15
                                 },
                                 {
                                     "id": "ischart:Rhyacian",
@@ -20589,7 +20637,11 @@
                                         "directNarrowers": 0,
                                         "indirectNarrowers": 0
                                     },
-                                    "color": "#F75B89"
+                                    "color": "#F75B89",
+                                    "height": 250,
+                                    "remainderHeigt": 4.344372176158085,
+                                    "irregularHeight": 6.344372176158085,
+                                    "rawPercent": 0.15
                                 },
                                 {
                                     "id": "ischart:Siderian",
@@ -20701,7 +20753,11 @@
                                         "directNarrowers": 0,
                                         "indirectNarrowers": 0
                                     },
-                                    "color": "#F74F7C"
+                                    "color": "#F74F7C",
+                                    "height": 200,
+                                    "remainderHeigt": 3.4754977409264685,
+                                    "irregularHeight": 5.4754977409264685,
+                                    "rawPercent": 0.15
                                 },
                                 {
                                     "id": "ischart:Statherian",
@@ -20813,7 +20869,11 @@
                                         "directNarrowers": 0,
                                         "indirectNarrowers": 0
                                     },
-                                    "color": "#F875A7"
+                                    "color": "#F875A7",
+                                    "height": 200,
+                                    "remainderHeigt": 3.4754977409264685,
+                                    "irregularHeight": 5.4754977409264685,
+                                    "rawPercent": 0.15
                                 }
                             ],
                             "notation": "PP",
