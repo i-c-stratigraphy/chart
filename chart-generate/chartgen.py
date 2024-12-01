@@ -95,7 +95,10 @@ def get_irregular_heights(subGraph):
         lookup[key]["remainderHeigt"] = (lookup[key]["height"]/childSum)*remainderPc
         lookup[key]["irregularHeight"] = EQPROVISION + lookup[key]["remainderHeigt"] 
         lookup[key]["rawPercent"] = len(children)/100
-    return lookup
+
+
+        # @toto update hierachy not list
+    return subGraph
 
 def main():
     data=""
@@ -141,7 +144,9 @@ def main():
         res = coll.bindings[0]
         bnode = BNode()
         g.add((x,URIRef('https://example.com/counts'), bnode))
+        print("indirectChildren",res["indirectChildren"])
         g.add((bnode,URIRef('https://example.com/indirectNarrowers'), res["indirectChildren"]))
+        print("directChildren",res["directChildren"])
         g.add((bnode,URIRef('https://example.com/directNarrowers'), res["directChildren"]))
 
     doc = json.loads(g.serialize(format='json-ld'))
