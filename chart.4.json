@@ -1,1782 +1,2500 @@
 {
-    "ischart:Eoarchean": {
-        "id": "ischart:Eoarchean",
-        "type": "skos:Concept",
-        "rank": "http://resource.geosciml.org/ontology/timescale/rank/Era",
-        "ratifiedGSSA": true,
-        "isDefinedBy": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
-        "altLabel": [
-            {
-                "language": "bg",
-                "value": "Еоархай"
-            },
-            {
-                "language": "cs",
-                "value": "Eoarchaikum"
-            },
-            {
-                "language": "da",
-                "value": "Eoarkæisk"
-            },
-            {
-                "language": "de",
-                "value": "Eoarchaikum"
-            },
-            {
-                "language": "en-gb",
-                "value": "Eoarchaean"
-            },
-            {
-                "language": "en-us",
-                "value": "Eoarchean"
-            },
-            {
-                "language": "es",
-                "value": "Eoarcaico"
-            },
-            {
-                "language": "et",
-                "value": "Eoarhaikum"
-            },
-            {
-                "language": "fi",
-                "value": "Eoarkeikum"
-            },
-            {
-                "language": "fr",
-                "value": "Eoarchéen"
-            },
-            {
-                "language": "hu",
-                "value": "eoarchaikum"
-            },
-            {
-                "language": "it",
-                "value": "eoarcheano"
-            },
-            {
-                "language": "ja",
-                "value": "暁始生代"
-            },
-            {
-                "language": "lt",
-                "value": "Eoarchejus"
-            },
-            {
-                "language": "nl",
-                "value": "Eo-archaicum"
-            },
-            {
-                "language": "no",
-                "value": "Eoarkeikum"
-            },
-            {
-                "language": "pl",
-                "value": "Eoarchaik"
-            },
-            {
-                "language": "pt",
-                "value": "Eoarcaico"
-            },
-            {
-                "language": "sk",
-                "value": "eoarchaikum"
-            },
-            {
-                "language": "sl",
-                "value": "eoarhaik"
-            },
-            {
-                "language": "sv",
-                "value": "eoarkeikum"
-            },
-            {
-                "language": "zh",
-                "value": "始太古代"
-            }
-        ],
-        "broader": [
-            "ischart:Archean"
-        ],
-        "definition": "A time period from 4031 to 3600 million years ago",
-        "inScheme": "http://resource.geosciml.org/classifier/ics/ischart",
-        "notation": "EA",
-        "prefLabel": {
-            "language": "en",
-            "value": "Eoarchean"
+    "id": "ischart:Precambrian",
+    "type": "skos:Concept",
+    "rank": "http://resource.geosciml.org/ontology/timescale/rank/Super-Eon",
+    "ratifiedGSSA": true,
+    "isDefinedBy": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
+    "altLabel": [
+        {
+            "language": "bg",
+            "value": "Прекамбрий"
         },
-        "hasBeginning": {
-            "inMYA": 4031,
-            "marginOfError": 3
+        {
+            "language": "cs",
+            "value": "Prekambrium"
         },
-        "hasEnd": {
-            "inMYA": 3600
+        {
+            "language": "da",
+            "value": "Prækambrium"
         },
-        "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
-        "order": 176,
-        "counts": {
-            "directNarrowers": 0,
-            "indirectNarrowers": 0
+        {
+            "language": "de",
+            "value": "Präkambrium"
         },
-        "color": "#DA037F",
-        "height": 431,
-        "remainderHeigt": 7.489697631696539,
-        "irregularHeight": 9.48969763169654,
-        "rawPercent": 0.15
-    },
-    "ischart:Mesoarchean": {
-        "id": "ischart:Mesoarchean",
-        "type": "skos:Concept",
-        "rank": "http://resource.geosciml.org/ontology/timescale/rank/Era",
-        "ratifiedGSSA": true,
-        "isDefinedBy": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
-        "altLabel": [
-            {
-                "language": "bg",
-                "value": "Мезоархай"
-            },
-            {
-                "language": "cs",
-                "value": "Mezoarchaikum"
-            },
-            {
-                "language": "da",
-                "value": "Mesoarkæisk"
-            },
-            {
-                "language": "de",
-                "value": "Mesoarchaikum"
-            },
-            {
-                "language": "en-gb",
-                "value": "Mesoarchaean"
-            },
-            {
-                "language": "en-us",
-                "value": "Mesoarchean"
-            },
-            {
-                "language": "es",
-                "value": "Mesoarcaico"
-            },
-            {
-                "language": "et",
-                "value": "Mesoarhaikum"
-            },
-            {
-                "language": "fi",
-                "value": "Mesoarkeikum"
-            },
-            {
-                "language": "fr",
-                "value": "Mésoarchéen"
-            },
-            {
-                "language": "hu",
-                "value": "mezoarchai"
-            },
-            {
-                "language": "it",
-                "value": "mesoarcheano"
-            },
-            {
-                "language": "ja",
-                "value": "中始生代"
-            },
-            {
-                "language": "lt",
-                "value": "Mezoarchejus"
-            },
-            {
-                "language": "nl",
-                "value": "Meso-archaicum"
-            },
-            {
-                "language": "no",
-                "value": "Mesoarkeikum"
-            },
-            {
-                "language": "pl",
-                "value": "Mezoarchaik"
-            },
-            {
-                "language": "pt",
-                "value": "Mesoarcaico"
-            },
-            {
-                "language": "sk",
-                "value": "mezoarchaikum"
-            },
-            {
-                "language": "sl",
-                "value": "mezoarhaik"
-            },
-            {
-                "language": "sv",
-                "value": "mesoarkeikum"
-            },
-            {
-                "language": "zh",
-                "value": "中太古代"
-            }
-        ],
-        "broader": [
-            "ischart:Archean"
-        ],
-        "definition": "A time period from 3200 to 2800 million years ago",
-        "inScheme": "http://resource.geosciml.org/classifier/ics/ischart",
-        "notation": "MA",
-        "prefLabel": {
-            "language": "en",
-            "value": "Mesoarchean"
+        {
+            "language": "es",
+            "value": "Precámbrico"
         },
-        "hasBeginning": {
-            "inMYA": 3200
+        {
+            "language": "et",
+            "value": "Prekambrium"
         },
-        "hasEnd": {
-            "inMYA": 2800
+        {
+            "language": "fi",
+            "value": "Prekambri"
         },
-        "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
-        "order": 173,
-        "counts": {
-            "directNarrowers": 0,
-            "indirectNarrowers": 0
+        {
+            "language": "fr",
+            "value": "Précambrien"
         },
-        "color": "#F768A9",
-        "height": 400,
-        "remainderHeigt": 6.950995481852937,
-        "irregularHeight": 8.950995481852937,
-        "rawPercent": 0.15
-    },
-    "ischart:Neoarchean": {
-        "id": "ischart:Neoarchean",
-        "type": "skos:Concept",
-        "rank": "http://resource.geosciml.org/ontology/timescale/rank/Era",
-        "ratifiedGSSA": true,
-        "isDefinedBy": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
-        "altLabel": [
-            {
-                "language": "bg",
-                "value": "пеоархай"
-            },
-            {
-                "language": "cs",
-                "value": "Neoarchaikum"
-            },
-            {
-                "language": "da",
-                "value": "Neoarkæisk"
-            },
-            {
-                "language": "de",
-                "value": "Neoarchaikum"
-            },
-            {
-                "language": "en-gb",
-                "value": "Neoarchaean"
-            },
-            {
-                "language": "en-us",
-                "value": "Neoarchean"
-            },
-            {
-                "language": "es",
-                "value": "Neoarcaico"
-            },
-            {
-                "language": "et",
-                "value": "Neoarhaikum"
-            },
-            {
-                "language": "fi",
-                "value": "Neoarkeikum"
-            },
-            {
-                "language": "fr",
-                "value": "Néoarchéen"
-            },
-            {
-                "language": "hu",
-                "value": "neoarchaikum"
-            },
-            {
-                "language": "it",
-                "value": "neoarcheano"
-            },
-            {
-                "language": "ja",
-                "value": "新始生代"
-            },
-            {
-                "language": "lt",
-                "value": "Neoarchejus"
-            },
-            {
-                "language": "nl",
-                "value": "Neo-archaicum"
-            },
-            {
-                "language": "no",
-                "value": "Neoarkeikum"
-            },
-            {
-                "language": "pl",
-                "value": "Neoarchaik"
-            },
-            {
-                "language": "pt",
-                "value": "Neoarcaico"
-            },
-            {
-                "language": "sk",
-                "value": "neoarchaikum"
-            },
-            {
-                "language": "sl",
-                "value": "neoarhaik"
-            },
-            {
-                "language": "sv",
-                "value": "neoarkeikum"
-            },
-            {
-                "language": "zh",
-                "value": "新太古代"
-            }
-        ],
-        "broader": [
-            "ischart:Archean"
-        ],
-        "definition": "A time period from 2800 to 2500 million years ago",
-        "inScheme": "http://resource.geosciml.org/classifier/ics/ischart",
-        "notation": "NA",
-        "prefLabel": {
-            "language": "en",
-            "value": "Neoarchean"
+        {
+            "language": "hu",
+            "value": "prekambrium"
         },
-        "hasBeginning": {
-            "inMYA": 2800
+        {
+            "language": "it",
+            "value": "precambriano"
         },
-        "hasEnd": {
-            "inMYA": 2500
+        {
+            "language": "ja",
+            "value": "先カンブリア時代"
         },
-        "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
-        "order": 172,
-        "counts": {
-            "directNarrowers": 0,
-            "indirectNarrowers": 0
+        {
+            "language": "lt",
+            "value": "Prekambras"
         },
-        "color": "#F99BC1",
-        "height": 300,
-        "remainderHeigt": 5.213246611389702,
-        "irregularHeight": 7.213246611389702,
-        "rawPercent": 0.15
-    },
-    "ischart:Paleoarchean": {
-        "id": "ischart:Paleoarchean",
-        "type": "skos:Concept",
-        "rank": "http://resource.geosciml.org/ontology/timescale/rank/Era",
-        "ratifiedGSSA": true,
-        "isDefinedBy": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
-        "altLabel": [
-            {
-                "language": "bg",
-                "value": "Палеоархай"
-            },
-            {
-                "language": "cs",
-                "value": "Paleoarchaikum"
-            },
-            {
-                "language": "da",
-                "value": "Palæoarkæisk"
-            },
-            {
-                "language": "de",
-                "value": "Paläoarchaikum"
-            },
-            {
-                "language": "en-gb",
-                "value": "Palaeoarchaean"
-            },
-            {
-                "language": "en-us",
-                "value": "Paleoarchean"
-            },
-            {
-                "language": "es",
-                "value": "Paleoarcaico"
-            },
-            {
-                "language": "et",
-                "value": "Paleoarhaikum"
-            },
-            {
-                "language": "fi",
-                "value": "Paleoarkeikum"
-            },
-            {
-                "language": "fr",
-                "value": "Paléoarchéen"
-            },
-            {
-                "language": "hu",
-                "value": "paleoarchai"
-            },
-            {
-                "language": "it",
-                "value": "paleoarcheano"
-            },
-            {
-                "language": "ja",
-                "value": "古始生代"
-            },
-            {
-                "language": "lt",
-                "value": "Paleoarchejus"
-            },
-            {
-                "language": "nl",
-                "value": "Paleo-archaicum"
-            },
-            {
-                "language": "no",
-                "value": "Paleoarkeikum"
-            },
-            {
-                "language": "pl",
-                "value": "Paleoarchaik"
-            },
-            {
-                "language": "pt",
-                "value": "Paleoarcaico"
-            },
-            {
-                "language": "sk",
-                "value": "paleoarchaikum"
-            },
-            {
-                "language": "sl",
-                "value": "paleoarhaik"
-            },
-            {
-                "language": "sv",
-                "value": "paleoarkeikum"
-            },
-            {
-                "language": "zh",
-                "value": "古太古代"
-            }
-        ],
-        "broader": [
-            "ischart:Archean"
-        ],
-        "definition": "A time period from 3600 to 3200 million years ago",
-        "inScheme": "http://resource.geosciml.org/classifier/ics/ischart",
-        "notation": "PA",
-        "prefLabel": {
-            "language": "en",
-            "value": "Paleoarchean"
+        {
+            "language": "nl",
+            "value": "Precambrium"
         },
-        "hasBeginning": {
-            "inMYA": 3600
+        {
+            "language": "no",
+            "value": "Prekambrium"
         },
-        "hasEnd": {
-            "inMYA": 3200
+        {
+            "language": "pl",
+            "value": "Prekambr"
         },
-        "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
-        "order": 174,
-        "counts": {
-            "directNarrowers": 0,
-            "indirectNarrowers": 0
+        {
+            "language": "pt",
+            "value": "Precâmbrico"
         },
-        "color": "#F4449F",
-        "height": 400,
-        "remainderHeigt": 6.950995481852937,
-        "irregularHeight": 8.950995481852937,
-        "rawPercent": 0.15
-    },
-    "ischart:Hadean": {
-        "id": "ischart:Hadean",
-        "type": "skos:Concept",
-        "rank": "http://resource.geosciml.org/ontology/timescale/rank/Eon",
-        "ratifiedGSSA": true,
-        "isDefinedBy": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
-        "altLabel": [
-            {
-                "language": "cs",
-                "value": "Hád (spodní hranice není definována)"
+        {
+            "language": "sk",
+            "value": "prekambrium"
+        },
+        {
+            "language": "sl",
+            "value": "predkambrij"
+        },
+        {
+            "language": "sv",
+            "value": "prekambrium"
+        },
+        {
+            "language": "zh",
+            "value": "前寒武纪"
+        }
+    ],
+    "definition": "A time period from 4567 to 538.8 million years ago",
+    "inScheme": "http://resource.geosciml.org/classifier/ics/ischart",
+    "narrower": [
+        {
+            "id": "ischart:Archean",
+            "type": "skos:Concept",
+            "rank": "http://resource.geosciml.org/ontology/timescale/rank/Eon",
+            "ratifiedGSSA": true,
+            "isDefinedBy": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
+            "altLabel": [
+                {
+                    "language": "bg",
+                    "value": "прхай"
+                },
+                {
+                    "language": "cs",
+                    "value": "Archaikum"
+                },
+                {
+                    "language": "da",
+                    "value": "Arkæisk"
+                },
+                {
+                    "language": "de",
+                    "value": "Archaikum"
+                },
+                {
+                    "language": "en-gb",
+                    "value": "Archaean"
+                },
+                {
+                    "language": "en-us",
+                    "value": "Archean"
+                },
+                {
+                    "language": "es",
+                    "value": "Arcaico"
+                },
+                {
+                    "language": "et",
+                    "value": "Arhaikum"
+                },
+                {
+                    "language": "fi",
+                    "value": "Arkeikum"
+                },
+                {
+                    "language": "fr",
+                    "value": "Archéen"
+                },
+                {
+                    "language": "hu",
+                    "value": "archaikum"
+                },
+                {
+                    "language": "it",
+                    "value": "archeano"
+                },
+                {
+                    "language": "ja",
+                    "value": "始生代"
+                },
+                {
+                    "language": "lt",
+                    "value": "Archejus"
+                },
+                {
+                    "language": "nl",
+                    "value": "Archaïcum"
+                },
+                {
+                    "language": "no",
+                    "value": "Arkeikum"
+                },
+                {
+                    "language": "pl",
+                    "value": "Archaik"
+                },
+                {
+                    "language": "pt",
+                    "value": "Arcaico"
+                },
+                {
+                    "language": "sk",
+                    "value": "archaikum, prahory"
+                },
+                {
+                    "language": "sl",
+                    "value": "arhaik"
+                },
+                {
+                    "language": "sv",
+                    "value": "arkeikum"
+                },
+                {
+                    "language": "zh",
+                    "value": "太古宙"
+                }
+            ],
+            "broader": [
+                "ischart:Precambrian"
+            ],
+            "definition": "A time period from 4031 to 2500 million years ago",
+            "inScheme": "http://resource.geosciml.org/classifier/ics/ischart",
+            "narrower": [
+                {
+                    "id": "ischart:Eoarchean",
+                    "type": "skos:Concept",
+                    "rank": "http://resource.geosciml.org/ontology/timescale/rank/Era",
+                    "ratifiedGSSA": true,
+                    "isDefinedBy": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
+                    "altLabel": [
+                        {
+                            "language": "bg",
+                            "value": "Еоархай"
+                        },
+                        {
+                            "language": "cs",
+                            "value": "Eoarchaikum"
+                        },
+                        {
+                            "language": "da",
+                            "value": "Eoarkæisk"
+                        },
+                        {
+                            "language": "de",
+                            "value": "Eoarchaikum"
+                        },
+                        {
+                            "language": "en-gb",
+                            "value": "Eoarchaean"
+                        },
+                        {
+                            "language": "en-us",
+                            "value": "Eoarchean"
+                        },
+                        {
+                            "language": "es",
+                            "value": "Eoarcaico"
+                        },
+                        {
+                            "language": "et",
+                            "value": "Eoarhaikum"
+                        },
+                        {
+                            "language": "fi",
+                            "value": "Eoarkeikum"
+                        },
+                        {
+                            "language": "fr",
+                            "value": "Eoarchéen"
+                        },
+                        {
+                            "language": "hu",
+                            "value": "eoarchaikum"
+                        },
+                        {
+                            "language": "it",
+                            "value": "eoarcheano"
+                        },
+                        {
+                            "language": "ja",
+                            "value": "暁始生代"
+                        },
+                        {
+                            "language": "lt",
+                            "value": "Eoarchejus"
+                        },
+                        {
+                            "language": "nl",
+                            "value": "Eo-archaicum"
+                        },
+                        {
+                            "language": "no",
+                            "value": "Eoarkeikum"
+                        },
+                        {
+                            "language": "pl",
+                            "value": "Eoarchaik"
+                        },
+                        {
+                            "language": "pt",
+                            "value": "Eoarcaico"
+                        },
+                        {
+                            "language": "sk",
+                            "value": "eoarchaikum"
+                        },
+                        {
+                            "language": "sl",
+                            "value": "eoarhaik"
+                        },
+                        {
+                            "language": "sv",
+                            "value": "eoarkeikum"
+                        },
+                        {
+                            "language": "zh",
+                            "value": "始太古代"
+                        }
+                    ],
+                    "broader": [
+                        "ischart:Archean"
+                    ],
+                    "definition": "A time period from 4031 to 3600 million years ago",
+                    "inScheme": "http://resource.geosciml.org/classifier/ics/ischart",
+                    "notation": "EA",
+                    "prefLabel": {
+                        "language": "en",
+                        "value": "Eoarchean"
+                    },
+                    "hasBeginning": {
+                        "inMYA": 4031,
+                        "marginOfError": 3
+                    },
+                    "hasEnd": {
+                        "inMYA": 3600
+                    },
+                    "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
+                    "order": 176,
+                    "counts": {
+                        "directNarrowers": 0,
+                        "indirectNarrowers": 0
+                    },
+                    "color": "#DA037F",
+                    "height": 431,
+                    "remainderHeigt": 7.489697631696539,
+                    "irregularHeight": 9.48969763169654,
+                    "rawPercent": 0.15
+                },
+                {
+                    "id": "ischart:Mesoarchean",
+                    "type": "skos:Concept",
+                    "rank": "http://resource.geosciml.org/ontology/timescale/rank/Era",
+                    "ratifiedGSSA": true,
+                    "isDefinedBy": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
+                    "altLabel": [
+                        {
+                            "language": "bg",
+                            "value": "Мезоархай"
+                        },
+                        {
+                            "language": "cs",
+                            "value": "Mezoarchaikum"
+                        },
+                        {
+                            "language": "da",
+                            "value": "Mesoarkæisk"
+                        },
+                        {
+                            "language": "de",
+                            "value": "Mesoarchaikum"
+                        },
+                        {
+                            "language": "en-gb",
+                            "value": "Mesoarchaean"
+                        },
+                        {
+                            "language": "en-us",
+                            "value": "Mesoarchean"
+                        },
+                        {
+                            "language": "es",
+                            "value": "Mesoarcaico"
+                        },
+                        {
+                            "language": "et",
+                            "value": "Mesoarhaikum"
+                        },
+                        {
+                            "language": "fi",
+                            "value": "Mesoarkeikum"
+                        },
+                        {
+                            "language": "fr",
+                            "value": "Mésoarchéen"
+                        },
+                        {
+                            "language": "hu",
+                            "value": "mezoarchai"
+                        },
+                        {
+                            "language": "it",
+                            "value": "mesoarcheano"
+                        },
+                        {
+                            "language": "ja",
+                            "value": "中始生代"
+                        },
+                        {
+                            "language": "lt",
+                            "value": "Mezoarchejus"
+                        },
+                        {
+                            "language": "nl",
+                            "value": "Meso-archaicum"
+                        },
+                        {
+                            "language": "no",
+                            "value": "Mesoarkeikum"
+                        },
+                        {
+                            "language": "pl",
+                            "value": "Mezoarchaik"
+                        },
+                        {
+                            "language": "pt",
+                            "value": "Mesoarcaico"
+                        },
+                        {
+                            "language": "sk",
+                            "value": "mezoarchaikum"
+                        },
+                        {
+                            "language": "sl",
+                            "value": "mezoarhaik"
+                        },
+                        {
+                            "language": "sv",
+                            "value": "mesoarkeikum"
+                        },
+                        {
+                            "language": "zh",
+                            "value": "中太古代"
+                        }
+                    ],
+                    "broader": [
+                        "ischart:Archean"
+                    ],
+                    "definition": "A time period from 3200 to 2800 million years ago",
+                    "inScheme": "http://resource.geosciml.org/classifier/ics/ischart",
+                    "notation": "MA",
+                    "prefLabel": {
+                        "language": "en",
+                        "value": "Mesoarchean"
+                    },
+                    "hasBeginning": {
+                        "inMYA": 3200
+                    },
+                    "hasEnd": {
+                        "inMYA": 2800
+                    },
+                    "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
+                    "order": 173,
+                    "counts": {
+                        "directNarrowers": 0,
+                        "indirectNarrowers": 0
+                    },
+                    "color": "#F768A9",
+                    "height": 400,
+                    "remainderHeigt": 6.950995481852937,
+                    "irregularHeight": 8.950995481852937,
+                    "rawPercent": 0.15
+                },
+                {
+                    "id": "ischart:Neoarchean",
+                    "type": "skos:Concept",
+                    "rank": "http://resource.geosciml.org/ontology/timescale/rank/Era",
+                    "ratifiedGSSA": true,
+                    "isDefinedBy": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
+                    "altLabel": [
+                        {
+                            "language": "bg",
+                            "value": "пеоархай"
+                        },
+                        {
+                            "language": "cs",
+                            "value": "Neoarchaikum"
+                        },
+                        {
+                            "language": "da",
+                            "value": "Neoarkæisk"
+                        },
+                        {
+                            "language": "de",
+                            "value": "Neoarchaikum"
+                        },
+                        {
+                            "language": "en-gb",
+                            "value": "Neoarchaean"
+                        },
+                        {
+                            "language": "en-us",
+                            "value": "Neoarchean"
+                        },
+                        {
+                            "language": "es",
+                            "value": "Neoarcaico"
+                        },
+                        {
+                            "language": "et",
+                            "value": "Neoarhaikum"
+                        },
+                        {
+                            "language": "fi",
+                            "value": "Neoarkeikum"
+                        },
+                        {
+                            "language": "fr",
+                            "value": "Néoarchéen"
+                        },
+                        {
+                            "language": "hu",
+                            "value": "neoarchaikum"
+                        },
+                        {
+                            "language": "it",
+                            "value": "neoarcheano"
+                        },
+                        {
+                            "language": "ja",
+                            "value": "新始生代"
+                        },
+                        {
+                            "language": "lt",
+                            "value": "Neoarchejus"
+                        },
+                        {
+                            "language": "nl",
+                            "value": "Neo-archaicum"
+                        },
+                        {
+                            "language": "no",
+                            "value": "Neoarkeikum"
+                        },
+                        {
+                            "language": "pl",
+                            "value": "Neoarchaik"
+                        },
+                        {
+                            "language": "pt",
+                            "value": "Neoarcaico"
+                        },
+                        {
+                            "language": "sk",
+                            "value": "neoarchaikum"
+                        },
+                        {
+                            "language": "sl",
+                            "value": "neoarhaik"
+                        },
+                        {
+                            "language": "sv",
+                            "value": "neoarkeikum"
+                        },
+                        {
+                            "language": "zh",
+                            "value": "新太古代"
+                        }
+                    ],
+                    "broader": [
+                        "ischart:Archean"
+                    ],
+                    "definition": "A time period from 2800 to 2500 million years ago",
+                    "inScheme": "http://resource.geosciml.org/classifier/ics/ischart",
+                    "notation": "NA",
+                    "prefLabel": {
+                        "language": "en",
+                        "value": "Neoarchean"
+                    },
+                    "hasBeginning": {
+                        "inMYA": 2800
+                    },
+                    "hasEnd": {
+                        "inMYA": 2500
+                    },
+                    "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
+                    "order": 172,
+                    "counts": {
+                        "directNarrowers": 0,
+                        "indirectNarrowers": 0
+                    },
+                    "color": "#F99BC1",
+                    "height": 300,
+                    "remainderHeigt": 5.213246611389702,
+                    "irregularHeight": 7.213246611389702,
+                    "rawPercent": 0.15
+                },
+                {
+                    "id": "ischart:Paleoarchean",
+                    "type": "skos:Concept",
+                    "rank": "http://resource.geosciml.org/ontology/timescale/rank/Era",
+                    "ratifiedGSSA": true,
+                    "isDefinedBy": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
+                    "altLabel": [
+                        {
+                            "language": "bg",
+                            "value": "Палеоархай"
+                        },
+                        {
+                            "language": "cs",
+                            "value": "Paleoarchaikum"
+                        },
+                        {
+                            "language": "da",
+                            "value": "Palæoarkæisk"
+                        },
+                        {
+                            "language": "de",
+                            "value": "Paläoarchaikum"
+                        },
+                        {
+                            "language": "en-gb",
+                            "value": "Palaeoarchaean"
+                        },
+                        {
+                            "language": "en-us",
+                            "value": "Paleoarchean"
+                        },
+                        {
+                            "language": "es",
+                            "value": "Paleoarcaico"
+                        },
+                        {
+                            "language": "et",
+                            "value": "Paleoarhaikum"
+                        },
+                        {
+                            "language": "fi",
+                            "value": "Paleoarkeikum"
+                        },
+                        {
+                            "language": "fr",
+                            "value": "Paléoarchéen"
+                        },
+                        {
+                            "language": "hu",
+                            "value": "paleoarchai"
+                        },
+                        {
+                            "language": "it",
+                            "value": "paleoarcheano"
+                        },
+                        {
+                            "language": "ja",
+                            "value": "古始生代"
+                        },
+                        {
+                            "language": "lt",
+                            "value": "Paleoarchejus"
+                        },
+                        {
+                            "language": "nl",
+                            "value": "Paleo-archaicum"
+                        },
+                        {
+                            "language": "no",
+                            "value": "Paleoarkeikum"
+                        },
+                        {
+                            "language": "pl",
+                            "value": "Paleoarchaik"
+                        },
+                        {
+                            "language": "pt",
+                            "value": "Paleoarcaico"
+                        },
+                        {
+                            "language": "sk",
+                            "value": "paleoarchaikum"
+                        },
+                        {
+                            "language": "sl",
+                            "value": "paleoarhaik"
+                        },
+                        {
+                            "language": "sv",
+                            "value": "paleoarkeikum"
+                        },
+                        {
+                            "language": "zh",
+                            "value": "古太古代"
+                        }
+                    ],
+                    "broader": [
+                        "ischart:Archean"
+                    ],
+                    "definition": "A time period from 3600 to 3200 million years ago",
+                    "inScheme": "http://resource.geosciml.org/classifier/ics/ischart",
+                    "notation": "PA",
+                    "prefLabel": {
+                        "language": "en",
+                        "value": "Paleoarchean"
+                    },
+                    "hasBeginning": {
+                        "inMYA": 3600
+                    },
+                    "hasEnd": {
+                        "inMYA": 3200
+                    },
+                    "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
+                    "order": 174,
+                    "counts": {
+                        "directNarrowers": 0,
+                        "indirectNarrowers": 0
+                    },
+                    "color": "#F4449F",
+                    "height": 400,
+                    "remainderHeigt": 6.950995481852937,
+                    "irregularHeight": 8.950995481852937,
+                    "rawPercent": 0.15
+                }
+            ],
+            "notation": "AR",
+            "prefLabel": {
+                "language": "en",
+                "value": "Archean"
             },
-            {
-                "language": "da",
+            "hasBeginning": {
+                "inMYA": 4031,
+                "marginOfError": 3
+            },
+            "hasEnd": {
+                "inMYA": 2500
+            },
+            "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
+            "order": 175,
+            "counts": {
+                "directNarrowers": 4,
+                "indirectNarrowers": 4
+            },
+            "color": "#F0047F"
+        },
+        {
+            "id": "ischart:Hadean",
+            "type": "skos:Concept",
+            "rank": "http://resource.geosciml.org/ontology/timescale/rank/Eon",
+            "ratifiedGSSA": true,
+            "isDefinedBy": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
+            "altLabel": [
+                {
+                    "language": "cs",
+                    "value": "Hád (spodní hranice není definována)"
+                },
+                {
+                    "language": "da",
+                    "value": "Hadean"
+                },
+                {
+                    "language": "de",
+                    "value": "Hadaikum"
+                },
+                {
+                    "language": "es",
+                    "value": "Hadeánico"
+                },
+                {
+                    "language": "et",
+                    "value": "Hadesi??"
+                },
+                {
+                    "language": "fi",
+                    "value": "Hadea"
+                },
+                {
+                    "language": "fr",
+                    "value": "Hadéen"
+                },
+                {
+                    "language": "hu",
+                    "value": "hadei"
+                },
+                {
+                    "language": "it",
+                    "value": "adeano"
+                },
+                {
+                    "language": "ja",
+                    "value": "冥王代（非公式の）"
+                },
+                {
+                    "language": "lt",
+                    "value": "Hadejus (neoficialus)"
+                },
+                {
+                    "language": "nl",
+                    "value": "Hadeïcum"
+                },
+                {
+                    "language": "no",
+                    "value": "Hadeikum"
+                },
+                {
+                    "language": "pl",
+                    "value": "Hadean (Nieformalny)"
+                },
+                {
+                    "language": "pt",
+                    "value": "Hadeano"
+                },
+                {
+                    "language": "sk",
+                    "value": "hadaikum"
+                },
+                {
+                    "language": "sl",
+                    "value": "hadej (neformalno)"
+                },
+                {
+                    "language": "sv",
+                    "value": "hadeikum"
+                },
+                {
+                    "language": "zh",
+                    "value": "冥古宙（非正式）"
+                }
+            ],
+            "broader": [
+                "ischart:Precambrian"
+            ],
+            "definition": "A time period from 4567 to 4031 million years ago",
+            "inScheme": "http://resource.geosciml.org/classifier/ics/ischart",
+            "notation": "HA",
+            "prefLabel": {
+                "language": "en",
                 "value": "Hadean"
             },
-            {
-                "language": "de",
-                "value": "Hadaikum"
+            "hasBeginning": {
+                "inMYA": 4567
             },
-            {
-                "language": "es",
-                "value": "Hadeánico"
+            "hasEnd": {
+                "inMYA": 4031,
+                "marginOfError": 3
             },
-            {
-                "language": "et",
-                "value": "Hadesi??"
+            "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
+            "order": 177,
+            "counts": {
+                "directNarrowers": 0,
+                "indirectNarrowers": 0
             },
-            {
-                "language": "fi",
-                "value": "Hadea"
-            },
-            {
-                "language": "fr",
-                "value": "Hadéen"
-            },
-            {
-                "language": "hu",
-                "value": "hadei"
-            },
-            {
-                "language": "it",
-                "value": "adeano"
-            },
-            {
-                "language": "ja",
-                "value": "冥王代（非公式の）"
-            },
-            {
-                "language": "lt",
-                "value": "Hadejus (neoficialus)"
-            },
-            {
-                "language": "nl",
-                "value": "Hadeïcum"
-            },
-            {
-                "language": "no",
-                "value": "Hadeikum"
-            },
-            {
-                "language": "pl",
-                "value": "Hadean (Nieformalny)"
-            },
-            {
-                "language": "pt",
-                "value": "Hadeano"
-            },
-            {
-                "language": "sk",
-                "value": "hadaikum"
-            },
-            {
-                "language": "sl",
-                "value": "hadej (neformalno)"
-            },
-            {
-                "language": "sv",
-                "value": "hadeikum"
-            },
-            {
-                "language": "zh",
-                "value": "冥古宙（非正式）"
-            }
-        ],
-        "broader": [
-            "ischart:Precambrian"
-        ],
-        "definition": "A time period from 4567 to 4031 million years ago",
-        "inScheme": "http://resource.geosciml.org/classifier/ics/ischart",
-        "notation": "HA",
-        "prefLabel": {
-            "language": "en",
-            "value": "Hadean"
+            "color": "#AE027E",
+            "height": 536,
+            "remainderHeigt": 9.314333945682934,
+            "irregularHeight": 11.314333945682934,
+            "rawPercent": 0.15
         },
-        "hasBeginning": {
-            "inMYA": 4567
-        },
-        "hasEnd": {
-            "inMYA": 4031,
-            "marginOfError": 3
-        },
-        "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
-        "order": 177,
-        "counts": {
-            "directNarrowers": 0,
-            "indirectNarrowers": 0
-        },
-        "color": "#AE027E",
-        "height": 536,
-        "remainderHeigt": 9.314333945682934,
-        "irregularHeight": 11.314333945682934,
-        "rawPercent": 0.15
+        {
+            "id": "ischart:Proterozoic",
+            "type": "skos:Concept",
+            "rank": "http://resource.geosciml.org/ontology/timescale/rank/Eon",
+            "ratifiedGSSA": true,
+            "isDefinedBy": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
+            "altLabel": [
+                {
+                    "language": "bg",
+                    "value": "Протерозой"
+                },
+                {
+                    "language": "cs",
+                    "value": "Proterozoikum"
+                },
+                {
+                    "language": "da",
+                    "value": "Proterozoikum"
+                },
+                {
+                    "language": "de",
+                    "value": "Proterozoikum"
+                },
+                {
+                    "language": "es",
+                    "value": "Proterozoico"
+                },
+                {
+                    "language": "et",
+                    "value": "Proterosoikum"
+                },
+                {
+                    "language": "fi",
+                    "value": "Proterotsoikum"
+                },
+                {
+                    "language": "fr",
+                    "value": "Protérozoïque"
+                },
+                {
+                    "language": "hu",
+                    "value": "proterozoos"
+                },
+                {
+                    "language": "it",
+                    "value": "proterozoico"
+                },
+                {
+                    "language": "ja",
+                    "value": "原生代"
+                },
+                {
+                    "language": "lt",
+                    "value": "Proterozojus"
+                },
+                {
+                    "language": "nl",
+                    "value": "Proterozoïcum"
+                },
+                {
+                    "language": "no",
+                    "value": "Proterozoisk"
+                },
+                {
+                    "language": "pl",
+                    "value": "Proterozoik"
+                },
+                {
+                    "language": "pt",
+                    "value": "Proterozóico"
+                },
+                {
+                    "language": "sk",
+                    "value": "proterozoikum"
+                },
+                {
+                    "language": "sl",
+                    "value": "proterozoik"
+                },
+                {
+                    "language": "sv",
+                    "value": "proterozoikum"
+                },
+                {
+                    "language": "zh",
+                    "value": "元古宙"
+                }
+            ],
+            "broader": [
+                "ischart:Precambrian"
+            ],
+            "definition": "A time period from 2500 to 538.8 million years ago",
+            "inScheme": "http://resource.geosciml.org/classifier/ics/ischart",
+            "narrower": [
+                {
+                    "id": "ischart:Mesoproterozoic",
+                    "type": "skos:Concept",
+                    "rank": "http://resource.geosciml.org/ontology/timescale/rank/Era",
+                    "ratifiedGSSA": true,
+                    "isDefinedBy": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
+                    "altLabel": [
+                        {
+                            "language": "bg",
+                            "value": "Мезопротерозой"
+                        },
+                        {
+                            "language": "cs",
+                            "value": "Mezoproterozoikum"
+                        },
+                        {
+                            "language": "da",
+                            "value": "Mesoproterozoisk"
+                        },
+                        {
+                            "language": "de",
+                            "value": "Mesoproterozoikum"
+                        },
+                        {
+                            "language": "es",
+                            "value": "Mesoproterozoico"
+                        },
+                        {
+                            "language": "et",
+                            "value": "Mesoproterosoikum"
+                        },
+                        {
+                            "language": "fi",
+                            "value": "Mesoproterotsoikum"
+                        },
+                        {
+                            "language": "fr",
+                            "value": "Mésoprotérozoïque"
+                        },
+                        {
+                            "language": "hu",
+                            "value": "mezoproterozoikum"
+                        },
+                        {
+                            "language": "it",
+                            "value": "mesoproterozoico"
+                        },
+                        {
+                            "language": "ja",
+                            "value": "原生代中期"
+                        },
+                        {
+                            "language": "lt",
+                            "value": "Mezoproterozojus"
+                        },
+                        {
+                            "language": "nl",
+                            "value": "Mesoproterozoïcum"
+                        },
+                        {
+                            "language": "no",
+                            "value": "Mesoproterozoikum"
+                        },
+                        {
+                            "language": "pl",
+                            "value": "Mezoproterozoik"
+                        },
+                        {
+                            "language": "pt",
+                            "value": "Mesoproterozóico"
+                        },
+                        {
+                            "language": "sk",
+                            "value": "mezoproterozoikum"
+                        },
+                        {
+                            "language": "sl",
+                            "value": "mezoproterozoik"
+                        },
+                        {
+                            "language": "sv",
+                            "value": "mesoproterozoikum"
+                        },
+                        {
+                            "language": "zh",
+                            "value": "中元古代"
+                        }
+                    ],
+                    "broader": [
+                        "ischart:Proterozoic"
+                    ],
+                    "definition": "A time period from 1600 to 1000 million years ago",
+                    "inScheme": "http://resource.geosciml.org/classifier/ics/ischart",
+                    "narrower": [
+                        {
+                            "id": "ischart:Calymmian",
+                            "type": "skos:Concept",
+                            "rank": "http://resource.geosciml.org/ontology/timescale/rank/Period",
+                            "ratifiedGSSA": true,
+                            "isDefinedBy": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
+                            "altLabel": [
+                                {
+                                    "language": "bg",
+                                    "value": "Калим"
+                                },
+                                {
+                                    "language": "cs",
+                                    "value": "Calymm"
+                                },
+                                {
+                                    "language": "da",
+                                    "value": "Calymmien"
+                                },
+                                {
+                                    "language": "de",
+                                    "value": "Calymmium"
+                                },
+                                {
+                                    "language": "es",
+                                    "value": "Calymmiense"
+                                },
+                                {
+                                    "language": "et",
+                                    "value": "Calymm"
+                                },
+                                {
+                                    "language": "fi",
+                                    "value": "Calym"
+                                },
+                                {
+                                    "language": "fr",
+                                    "value": "Calymmien"
+                                },
+                                {
+                                    "language": "hu",
+                                    "value": "calymmi"
+                                },
+                                {
+                                    "language": "it",
+                                    "value": "calymmiano"
+                                },
+                                {
+                                    "language": "ja",
+                                    "value": "カリミアン紀"
+                                },
+                                {
+                                    "language": "lt",
+                                    "value": "Kalymis"
+                                },
+                                {
+                                    "language": "nl",
+                                    "value": "Calymmiën"
+                                },
+                                {
+                                    "language": "no",
+                                    "value": "Kalymmium"
+                                },
+                                {
+                                    "language": "pl",
+                                    "value": "Kalym"
+                                },
+                                {
+                                    "language": "pt",
+                                    "value": "Calymiano"
+                                },
+                                {
+                                    "language": "sk",
+                                    "value": "kalymnium"
+                                },
+                                {
+                                    "language": "sl",
+                                    "value": "calymmij"
+                                },
+                                {
+                                    "language": "sv",
+                                    "value": "kalymmium"
+                                },
+                                {
+                                    "language": "zh",
+                                    "value": "盖层纪"
+                                }
+                            ],
+                            "broader": [
+                                "ischart:Mesoproterozoic"
+                            ],
+                            "definition": "A time period from 1600 to 1400 million years ago",
+                            "inScheme": "http://resource.geosciml.org/classifier/ics/ischart",
+                            "notation": "MP1",
+                            "prefLabel": {
+                                "language": "en",
+                                "value": "Calymmian"
+                            },
+                            "hasBeginning": {
+                                "inMYA": 1600
+                            },
+                            "hasEnd": {
+                                "inMYA": 1400
+                            },
+                            "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
+                            "order": 164,
+                            "counts": {
+                                "directNarrowers": 0,
+                                "indirectNarrowers": 0
+                            },
+                            "color": "#FDC07A",
+                            "height": 200,
+                            "remainderHeigt": 3.4754977409264685,
+                            "irregularHeight": 5.4754977409264685,
+                            "rawPercent": 0.15
+                        },
+                        {
+                            "id": "ischart:Ectasian",
+                            "type": "skos:Concept",
+                            "rank": "http://resource.geosciml.org/ontology/timescale/rank/Period",
+                            "ratifiedGSSA": true,
+                            "isDefinedBy": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
+                            "altLabel": [
+                                {
+                                    "language": "bg",
+                                    "value": "Ектаз"
+                                },
+                                {
+                                    "language": "cs",
+                                    "value": "Ectas"
+                                },
+                                {
+                                    "language": "da",
+                                    "value": "Ectasien"
+                                },
+                                {
+                                    "language": "de",
+                                    "value": "Ectasium"
+                                },
+                                {
+                                    "language": "es",
+                                    "value": "Ectasiense"
+                                },
+                                {
+                                    "language": "et",
+                                    "value": "Ectas"
+                                },
+                                {
+                                    "language": "fi",
+                                    "value": "Ectas"
+                                },
+                                {
+                                    "language": "fr",
+                                    "value": "Ectasien"
+                                },
+                                {
+                                    "language": "hu",
+                                    "value": "ectasi"
+                                },
+                                {
+                                    "language": "it",
+                                    "value": "ectasiano"
+                                },
+                                {
+                                    "language": "ja",
+                                    "value": "エクタシアン紀"
+                                },
+                                {
+                                    "language": "lt",
+                                    "value": "Ektasis"
+                                },
+                                {
+                                    "language": "nl",
+                                    "value": "Ectasiën"
+                                },
+                                {
+                                    "language": "no",
+                                    "value": "Ektasium"
+                                },
+                                {
+                                    "language": "pl",
+                                    "value": "Ektas"
+                                },
+                                {
+                                    "language": "pt",
+                                    "value": "Ectasiano"
+                                },
+                                {
+                                    "language": "sk",
+                                    "value": "ektazium"
+                                },
+                                {
+                                    "language": "sl",
+                                    "value": "ectasij"
+                                },
+                                {
+                                    "language": "sv",
+                                    "value": "ectasium"
+                                },
+                                {
+                                    "language": "zh",
+                                    "value": "延展纪"
+                                }
+                            ],
+                            "broader": [
+                                "ischart:Mesoproterozoic"
+                            ],
+                            "definition": "A time period from 1400 to 1200 million years ago",
+                            "inScheme": "http://resource.geosciml.org/classifier/ics/ischart",
+                            "notation": "MP2",
+                            "prefLabel": {
+                                "language": "en",
+                                "value": "Ectasian"
+                            },
+                            "hasBeginning": {
+                                "inMYA": 1400
+                            },
+                            "hasEnd": {
+                                "inMYA": 1200
+                            },
+                            "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
+                            "order": 163,
+                            "counts": {
+                                "directNarrowers": 0,
+                                "indirectNarrowers": 0
+                            },
+                            "color": "#FDCC8A",
+                            "height": 200,
+                            "remainderHeigt": 3.4754977409264685,
+                            "irregularHeight": 5.4754977409264685,
+                            "rawPercent": 0.15
+                        },
+                        {
+                            "id": "ischart:Stenian",
+                            "type": "skos:Concept",
+                            "rank": "http://resource.geosciml.org/ontology/timescale/rank/Period",
+                            "ratifiedGSSA": true,
+                            "isDefinedBy": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
+                            "altLabel": [
+                                {
+                                    "language": "bg",
+                                    "value": "Стен"
+                                },
+                                {
+                                    "language": "cs",
+                                    "value": "Sten"
+                                },
+                                {
+                                    "language": "da",
+                                    "value": "Stenien"
+                                },
+                                {
+                                    "language": "de",
+                                    "value": "Stenium"
+                                },
+                                {
+                                    "language": "es",
+                                    "value": "Esteniense"
+                                },
+                                {
+                                    "language": "et",
+                                    "value": "Sten"
+                                },
+                                {
+                                    "language": "fi",
+                                    "value": "Sten"
+                                },
+                                {
+                                    "language": "fr",
+                                    "value": "Sténien"
+                                },
+                                {
+                                    "language": "hu",
+                                    "value": "steni"
+                                },
+                                {
+                                    "language": "it",
+                                    "value": "steniano"
+                                },
+                                {
+                                    "language": "ja",
+                                    "value": "ステニアン紀"
+                                },
+                                {
+                                    "language": "lt",
+                                    "value": "Stenis"
+                                },
+                                {
+                                    "language": "nl",
+                                    "value": "Steniën"
+                                },
+                                {
+                                    "language": "no",
+                                    "value": "Stenium"
+                                },
+                                {
+                                    "language": "pl",
+                                    "value": "Sten"
+                                },
+                                {
+                                    "language": "pt",
+                                    "value": "Steniano"
+                                },
+                                {
+                                    "language": "sk",
+                                    "value": "stenium"
+                                },
+                                {
+                                    "language": "sl",
+                                    "value": "stenij"
+                                },
+                                {
+                                    "language": "sv",
+                                    "value": "stenium"
+                                },
+                                {
+                                    "language": "zh",
+                                    "value": "狭带纪"
+                                }
+                            ],
+                            "broader": [
+                                "ischart:Mesoproterozoic"
+                            ],
+                            "definition": "A time period from 1200 to 1000 million years ago",
+                            "inScheme": "http://resource.geosciml.org/classifier/ics/ischart",
+                            "notation": "MP3",
+                            "prefLabel": {
+                                "language": "en",
+                                "value": "Stenian"
+                            },
+                            "hasBeginning": {
+                                "inMYA": 1200
+                            },
+                            "hasEnd": {
+                                "inMYA": 1000
+                            },
+                            "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
+                            "order": 162,
+                            "counts": {
+                                "directNarrowers": 0,
+                                "indirectNarrowers": 0
+                            },
+                            "color": "#FED99A",
+                            "height": 200,
+                            "remainderHeigt": 3.4754977409264685,
+                            "irregularHeight": 5.4754977409264685,
+                            "rawPercent": 0.15
+                        }
+                    ],
+                    "notation": "MP",
+                    "prefLabel": {
+                        "language": "en",
+                        "value": "Mesoproterozoic"
+                    },
+                    "hasBeginning": {
+                        "inMYA": 1600
+                    },
+                    "hasEnd": {
+                        "inMYA": 1000
+                    },
+                    "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
+                    "order": 165,
+                    "counts": {
+                        "directNarrowers": 3,
+                        "indirectNarrowers": 3
+                    },
+                    "color": "#FDB462"
+                },
+                {
+                    "id": "ischart:Neoproterozoic",
+                    "type": "skos:Concept",
+                    "rank": "http://resource.geosciml.org/ontology/timescale/rank/Era",
+                    "ratifiedGSSA": true,
+                    "ratifiedGSSP": true,
+                    "isDefinedBy": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
+                    "altLabel": [
+                        {
+                            "language": "bg",
+                            "value": "пеопротерозой"
+                        },
+                        {
+                            "language": "cs",
+                            "value": "Neoproterozoikum"
+                        },
+                        {
+                            "language": "da",
+                            "value": "Neoproterozoisk"
+                        },
+                        {
+                            "language": "de",
+                            "value": "Neoproterozoikum"
+                        },
+                        {
+                            "language": "es",
+                            "value": "Neoproerozoico"
+                        },
+                        {
+                            "language": "et",
+                            "value": "Neoproterosoikum"
+                        },
+                        {
+                            "language": "fi",
+                            "value": "Neoproterotsoikum"
+                        },
+                        {
+                            "language": "fr",
+                            "value": "Néoprotérozoïque"
+                        },
+                        {
+                            "language": "hu",
+                            "value": "neoproterozoikum"
+                        },
+                        {
+                            "language": "it",
+                            "value": "neoproterozoico"
+                        },
+                        {
+                            "language": "ja",
+                            "value": "原生代後期"
+                        },
+                        {
+                            "language": "lt",
+                            "value": "Neoproterozojus"
+                        },
+                        {
+                            "language": "nl",
+                            "value": "Neoproterozoïcum"
+                        },
+                        {
+                            "language": "no",
+                            "value": "Neoproterozoikum"
+                        },
+                        {
+                            "language": "pl",
+                            "value": "Neoproterozoik"
+                        },
+                        {
+                            "language": "pt",
+                            "value": "Neoproterozóico"
+                        },
+                        {
+                            "language": "sk",
+                            "value": "neoproterozoikum"
+                        },
+                        {
+                            "language": "sl",
+                            "value": "neoproterozoik"
+                        },
+                        {
+                            "language": "sv",
+                            "value": "neoproterozoikum"
+                        },
+                        {
+                            "language": "zh",
+                            "value": "新元古代"
+                        }
+                    ],
+                    "broader": [
+                        "ischart:Proterozoic"
+                    ],
+                    "definition": "A time period from 1000 to 538.8 million years ago",
+                    "inScheme": "http://resource.geosciml.org/classifier/ics/ischart",
+                    "narrower": [
+                        {
+                            "id": "ischart:Cryogenian",
+                            "type": "skos:Concept",
+                            "rank": "http://resource.geosciml.org/ontology/timescale/rank/Period",
+                            "isDefinedBy": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
+                            "altLabel": [
+                                {
+                                    "language": "bg",
+                                    "value": "Криоген"
+                                },
+                                {
+                                    "language": "cs",
+                                    "value": "Cryogen"
+                                },
+                                {
+                                    "language": "da",
+                                    "value": "Cryogenien"
+                                },
+                                {
+                                    "language": "de",
+                                    "value": "Kryogenium"
+                                },
+                                {
+                                    "language": "es",
+                                    "value": "Criogeniense"
+                                },
+                                {
+                                    "language": "et",
+                                    "value": "Krüogeen"
+                                },
+                                {
+                                    "language": "fi",
+                                    "value": "Cryogen"
+                                },
+                                {
+                                    "language": "fr",
+                                    "value": "Cryogénien"
+                                },
+                                {
+                                    "language": "hu",
+                                    "value": "cryogeni"
+                                },
+                                {
+                                    "language": "it",
+                                    "value": "cryogeniano"
+                                },
+                                {
+                                    "language": "ja",
+                                    "value": "クリオジェニアン紀"
+                                },
+                                {
+                                    "language": "lt",
+                                    "value": "Kriogenis"
+                                },
+                                {
+                                    "language": "nl",
+                                    "value": "Cryogeniën"
+                                },
+                                {
+                                    "language": "no",
+                                    "value": "Kryogenium"
+                                },
+                                {
+                                    "language": "pl",
+                                    "value": "Kriogen"
+                                },
+                                {
+                                    "language": "pt",
+                                    "value": "Criogeniano"
+                                },
+                                {
+                                    "language": "sk",
+                                    "value": "kryogén"
+                                },
+                                {
+                                    "language": "sl",
+                                    "value": "cryogenij"
+                                },
+                                {
+                                    "language": "sv",
+                                    "value": "kryogenium"
+                                },
+                                {
+                                    "language": "zh",
+                                    "value": "成冰纪"
+                                }
+                            ],
+                            "broader": [
+                                "ischart:Neoproterozoic"
+                            ],
+                            "definition": "A time period from 720 to 635 million years ago",
+                            "inScheme": "http://resource.geosciml.org/classifier/ics/ischart",
+                            "notation": "NP2",
+                            "prefLabel": {
+                                "language": "en",
+                                "value": "Cryogenian"
+                            },
+                            "hasBeginning": {
+                                "inMYA": 720,
+                                "note": "uncertain"
+                            },
+                            "hasEnd": {
+                                "inMYA": 635,
+                                "note": "uncertain"
+                            },
+                            "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
+                            "order": 159,
+                            "counts": {
+                                "directNarrowers": 0,
+                                "indirectNarrowers": 0
+                            },
+                            "color": "#FECC5C",
+                            "height": 85,
+                            "remainderHeigt": 1.4770865398937492,
+                            "irregularHeight": 3.477086539893749,
+                            "rawPercent": 0.15
+                        },
+                        {
+                            "id": "ischart:Ediacaran",
+                            "type": "skos:Concept",
+                            "rank": "http://resource.geosciml.org/ontology/timescale/rank/Period",
+                            "ratifiedGSSP": true,
+                            "isDefinedBy": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
+                            "altLabel": [
+                                {
+                                    "language": "bg",
+                                    "value": "Едиакар"
+                                },
+                                {
+                                    "language": "cs",
+                                    "value": "Ediacar"
+                                },
+                                {
+                                    "language": "da",
+                                    "value": "Ediacara"
+                                },
+                                {
+                                    "language": "de",
+                                    "value": "Ediacarium"
+                                },
+                                {
+                                    "language": "es",
+                                    "value": "Ediacariense"
+                                },
+                                {
+                                    "language": "et",
+                                    "value": "Ediacara"
+                                },
+                                {
+                                    "language": "fi",
+                                    "value": "Ediacar"
+                                },
+                                {
+                                    "language": "fr",
+                                    "value": "Ediacarien"
+                                },
+                                {
+                                    "language": "hu",
+                                    "value": "ediacaranum"
+                                },
+                                {
+                                    "language": "it",
+                                    "value": "ediacariano"
+                                },
+                                {
+                                    "language": "ja",
+                                    "value": "エディアカラ紀"
+                                },
+                                {
+                                    "language": "lt",
+                                    "value": "Ediakaras"
+                                },
+                                {
+                                    "language": "nl",
+                                    "value": "Ediacaran"
+                                },
+                                {
+                                    "language": "no",
+                                    "value": "Ediacara"
+                                },
+                                {
+                                    "language": "pl",
+                                    "value": "Ediakar"
+                                },
+                                {
+                                    "language": "pt",
+                                    "value": "Ediacariano"
+                                },
+                                {
+                                    "language": "sk",
+                                    "value": "ediakarium"
+                                },
+                                {
+                                    "language": "sl",
+                                    "value": "ediacarij"
+                                },
+                                {
+                                    "language": "sv",
+                                    "value": "ediacara"
+                                },
+                                {
+                                    "language": "zh",
+                                    "value": "埃迪卡拉纪"
+                                }
+                            ],
+                            "broader": [
+                                "ischart:Neoproterozoic"
+                            ],
+                            "definition": "A time period from 635 to 538.8 million years ago",
+                            "inScheme": "http://resource.geosciml.org/classifier/ics/ischart",
+                            "notation": "NP3",
+                            "prefLabel": {
+                                "language": "en",
+                                "value": "Ediacaran"
+                            },
+                            "hasBeginning": {
+                                "inMYA": 635,
+                                "note": "uncertain"
+                            },
+                            "hasEnd": {
+                                "inMYA": {
+                                    "type": "xsd:decimal",
+                                    "value": "538.8"
+                                },
+                                "marginOfError": {
+                                    "type": "xsd:decimal",
+                                    "value": "0.2"
+                                }
+                            },
+                            "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
+                            "order": 158,
+                            "counts": {
+                                "directNarrowers": 0,
+                                "indirectNarrowers": 0
+                            },
+                            "color": "#FED96A",
+                            "height": 96.20000000000005,
+                            "remainderHeigt": 1.671714413385632,
+                            "irregularHeight": 3.671714413385632,
+                            "rawPercent": 0.15
+                        },
+                        {
+                            "id": "ischart:Tonian",
+                            "type": "skos:Concept",
+                            "rank": "http://resource.geosciml.org/ontology/timescale/rank/Period",
+                            "ratifiedGSSA": true,
+                            "isDefinedBy": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
+                            "altLabel": [
+                                {
+                                    "language": "bg",
+                                    "value": "Тон"
+                                },
+                                {
+                                    "language": "cs",
+                                    "value": "Ton"
+                                },
+                                {
+                                    "language": "da",
+                                    "value": "Tonien"
+                                },
+                                {
+                                    "language": "de",
+                                    "value": "Tonium"
+                                },
+                                {
+                                    "language": "es",
+                                    "value": "Toniense"
+                                },
+                                {
+                                    "language": "et",
+                                    "value": "Ton"
+                                },
+                                {
+                                    "language": "fi",
+                                    "value": "Ton"
+                                },
+                                {
+                                    "language": "fr",
+                                    "value": "Tonien"
+                                },
+                                {
+                                    "language": "hu",
+                                    "value": "toni"
+                                },
+                                {
+                                    "language": "it",
+                                    "value": "toniano"
+                                },
+                                {
+                                    "language": "ja",
+                                    "value": "トニアン紀"
+                                },
+                                {
+                                    "language": "lt",
+                                    "value": "Tonis"
+                                },
+                                {
+                                    "language": "nl",
+                                    "value": "Toniën"
+                                },
+                                {
+                                    "language": "no",
+                                    "value": "Tonium"
+                                },
+                                {
+                                    "language": "pl",
+                                    "value": "Ton"
+                                },
+                                {
+                                    "language": "pt",
+                                    "value": "Toniano"
+                                },
+                                {
+                                    "language": "sk",
+                                    "value": "tonium"
+                                },
+                                {
+                                    "language": "sl",
+                                    "value": "tonij"
+                                },
+                                {
+                                    "language": "sv",
+                                    "value": "tonium"
+                                },
+                                {
+                                    "language": "zh",
+                                    "value": "拉伸纪"
+                                }
+                            ],
+                            "broader": [
+                                "ischart:Neoproterozoic"
+                            ],
+                            "definition": "A time period from 1000 to 720 million years ago",
+                            "inScheme": "http://resource.geosciml.org/classifier/ics/ischart",
+                            "notation": "NP1",
+                            "prefLabel": {
+                                "language": "en",
+                                "value": "Tonian"
+                            },
+                            "hasBeginning": {
+                                "inMYA": 1000
+                            },
+                            "hasEnd": {
+                                "inMYA": 720,
+                                "note": "uncertain"
+                            },
+                            "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
+                            "order": 161,
+                            "counts": {
+                                "directNarrowers": 0,
+                                "indirectNarrowers": 0
+                            },
+                            "color": "#FEBF4E",
+                            "height": 280,
+                            "remainderHeigt": 4.8656968372970555,
+                            "irregularHeight": 6.8656968372970555,
+                            "rawPercent": 0.15
+                        }
+                    ],
+                    "notation": "NP",
+                    "prefLabel": {
+                        "language": "en",
+                        "value": "Neoproterozoic"
+                    },
+                    "hasBeginning": {
+                        "inMYA": 1000
+                    },
+                    "hasEnd": {
+                        "inMYA": {
+                            "type": "xsd:decimal",
+                            "value": "538.8"
+                        },
+                        "marginOfError": {
+                            "type": "xsd:decimal",
+                            "value": "0.2"
+                        }
+                    },
+                    "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
+                    "order": 160,
+                    "counts": {
+                        "directNarrowers": 3,
+                        "indirectNarrowers": 3
+                    },
+                    "color": "#FEB342"
+                },
+                {
+                    "id": "ischart:Paleoproterozoic",
+                    "type": "skos:Concept",
+                    "rank": "http://resource.geosciml.org/ontology/timescale/rank/Era",
+                    "ratifiedGSSA": true,
+                    "isDefinedBy": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
+                    "altLabel": [
+                        {
+                            "language": "bg",
+                            "value": "Палеопротерозой"
+                        },
+                        {
+                            "language": "cs",
+                            "value": "Paleoproterozoikum"
+                        },
+                        {
+                            "language": "da",
+                            "value": "Palæoproterozoisk"
+                        },
+                        {
+                            "language": "de",
+                            "value": "Paläoproteroizoikum"
+                        },
+                        {
+                            "language": "en-gb",
+                            "value": "Palaeoproterozoic"
+                        },
+                        {
+                            "language": "en-us",
+                            "value": "Paleoproterozoic"
+                        },
+                        {
+                            "language": "es",
+                            "value": "Paleoproterozoico"
+                        },
+                        {
+                            "language": "et",
+                            "value": "Paleoproterosoikum"
+                        },
+                        {
+                            "language": "fi",
+                            "value": "Paleoproterotsoikum"
+                        },
+                        {
+                            "language": "fr",
+                            "value": "Paléoprotérozoïque"
+                        },
+                        {
+                            "language": "hu",
+                            "value": "paleoproterozikum"
+                        },
+                        {
+                            "language": "it",
+                            "value": "paleoproterozoico"
+                        },
+                        {
+                            "language": "ja",
+                            "value": "原生代前期"
+                        },
+                        {
+                            "language": "lt",
+                            "value": "Paleoproterozojus"
+                        },
+                        {
+                            "language": "nl",
+                            "value": "paleoproterozoïcum"
+                        },
+                        {
+                            "language": "no",
+                            "value": "Paleoproterozoikum"
+                        },
+                        {
+                            "language": "pl",
+                            "value": "Paleoproterozoik"
+                        },
+                        {
+                            "language": "pt",
+                            "value": "Paleoproterozóico"
+                        },
+                        {
+                            "language": "sk",
+                            "value": "paleoproterozoikum"
+                        },
+                        {
+                            "language": "sl",
+                            "value": "paleoproterozoik"
+                        },
+                        {
+                            "language": "sv",
+                            "value": "paleoproterozoikum"
+                        },
+                        {
+                            "language": "zh",
+                            "value": "古元古代"
+                        }
+                    ],
+                    "broader": [
+                        "ischart:Proterozoic"
+                    ],
+                    "definition": "A time period from 2500 to 1600 million years ago",
+                    "inScheme": "http://resource.geosciml.org/classifier/ics/ischart",
+                    "narrower": [
+                        {
+                            "id": "ischart:Orosirian",
+                            "type": "skos:Concept",
+                            "rank": "http://resource.geosciml.org/ontology/timescale/rank/Period",
+                            "ratifiedGSSA": true,
+                            "isDefinedBy": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
+                            "altLabel": [
+                                {
+                                    "language": "bg",
+                                    "value": "Ороѿир"
+                                },
+                                {
+                                    "language": "cs",
+                                    "value": "Orosir"
+                                },
+                                {
+                                    "language": "da",
+                                    "value": "Orosirien"
+                                },
+                                {
+                                    "language": "de",
+                                    "value": "Orosirium"
+                                },
+                                {
+                                    "language": "es",
+                                    "value": "Orosiriense"
+                                },
+                                {
+                                    "language": "et",
+                                    "value": "Orosir"
+                                },
+                                {
+                                    "language": "fi",
+                                    "value": "Orosir"
+                                },
+                                {
+                                    "language": "fr",
+                                    "value": "Orosirien"
+                                },
+                                {
+                                    "language": "hu",
+                                    "value": "orosiri"
+                                },
+                                {
+                                    "language": "it",
+                                    "value": "orosiriano"
+                                },
+                                {
+                                    "language": "ja",
+                                    "value": "オロシリアン紀"
+                                },
+                                {
+                                    "language": "lt",
+                                    "value": "Orosiris"
+                                },
+                                {
+                                    "language": "nl",
+                                    "value": "Orosiriën"
+                                },
+                                {
+                                    "language": "no",
+                                    "value": "Orosirium"
+                                },
+                                {
+                                    "language": "pl",
+                                    "value": "Orosir"
+                                },
+                                {
+                                    "language": "pt",
+                                    "value": "Orosiriano"
+                                },
+                                {
+                                    "language": "sk",
+                                    "value": "orosirium"
+                                },
+                                {
+                                    "language": "sl",
+                                    "value": "orosijrij"
+                                },
+                                {
+                                    "language": "sv",
+                                    "value": "orosirium"
+                                },
+                                {
+                                    "language": "zh",
+                                    "value": "造山纪"
+                                }
+                            ],
+                            "broader": [
+                                "ischart:Paleoproterozoic"
+                            ],
+                            "definition": "A time period from 2050 to 1800 million years ago",
+                            "inScheme": "http://resource.geosciml.org/classifier/ics/ischart",
+                            "notation": "PP3",
+                            "prefLabel": {
+                                "language": "en",
+                                "value": "Orosirian"
+                            },
+                            "hasBeginning": {
+                                "inMYA": 2050
+                            },
+                            "hasEnd": {
+                                "inMYA": 1800
+                            },
+                            "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
+                            "order": 167,
+                            "counts": {
+                                "directNarrowers": 0,
+                                "indirectNarrowers": 0
+                            },
+                            "color": "#F76898",
+                            "height": 250,
+                            "remainderHeigt": 4.344372176158085,
+                            "irregularHeight": 6.344372176158085,
+                            "rawPercent": 0.15
+                        },
+                        {
+                            "id": "ischart:Rhyacian",
+                            "type": "skos:Concept",
+                            "rank": "http://resource.geosciml.org/ontology/timescale/rank/Period",
+                            "ratifiedGSSA": true,
+                            "isDefinedBy": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
+                            "altLabel": [
+                                {
+                                    "language": "bg",
+                                    "value": "Риац"
+                                },
+                                {
+                                    "language": "cs",
+                                    "value": "Rhyak"
+                                },
+                                {
+                                    "language": "da",
+                                    "value": "Rhyacien"
+                                },
+                                {
+                                    "language": "de",
+                                    "value": "Rhyacium"
+                                },
+                                {
+                                    "language": "es",
+                                    "value": "Ryaciense"
+                                },
+                                {
+                                    "language": "et",
+                                    "value": "Rhyac"
+                                },
+                                {
+                                    "language": "fi",
+                                    "value": "Ryak"
+                                },
+                                {
+                                    "language": "fr",
+                                    "value": "Rhyacien"
+                                },
+                                {
+                                    "language": "hu",
+                                    "value": "rhyaci"
+                                },
+                                {
+                                    "language": "it",
+                                    "value": "rhyaciano"
+                                },
+                                {
+                                    "language": "ja",
+                                    "value": "リヤシアン紀"
+                                },
+                                {
+                                    "language": "lt",
+                                    "value": "Riacis"
+                                },
+                                {
+                                    "language": "nl",
+                                    "value": "Rhyaciën"
+                                },
+                                {
+                                    "language": "no",
+                                    "value": "Ryasium"
+                                },
+                                {
+                                    "language": "pl",
+                                    "value": "Riak"
+                                },
+                                {
+                                    "language": "pt",
+                                    "value": "Riaciano"
+                                },
+                                {
+                                    "language": "sk",
+                                    "value": "rhyacium"
+                                },
+                                {
+                                    "language": "sl",
+                                    "value": "rhyacij"
+                                },
+                                {
+                                    "language": "sv",
+                                    "value": "ryacium"
+                                },
+                                {
+                                    "language": "zh",
+                                    "value": "层侵纪"
+                                }
+                            ],
+                            "broader": [
+                                "ischart:Paleoproterozoic"
+                            ],
+                            "definition": "A time period from 2300 to 2050 million years ago",
+                            "inScheme": "http://resource.geosciml.org/classifier/ics/ischart",
+                            "notation": "PP2",
+                            "prefLabel": {
+                                "language": "en",
+                                "value": "Rhyacian"
+                            },
+                            "hasBeginning": {
+                                "inMYA": 2300
+                            },
+                            "hasEnd": {
+                                "inMYA": 2050
+                            },
+                            "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
+                            "order": 168,
+                            "counts": {
+                                "directNarrowers": 0,
+                                "indirectNarrowers": 0
+                            },
+                            "color": "#F75B89",
+                            "height": 250,
+                            "remainderHeigt": 4.344372176158085,
+                            "irregularHeight": 6.344372176158085,
+                            "rawPercent": 0.15
+                        },
+                        {
+                            "id": "ischart:Siderian",
+                            "type": "skos:Concept",
+                            "rank": "http://resource.geosciml.org/ontology/timescale/rank/Period",
+                            "ratifiedGSSA": true,
+                            "isDefinedBy": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
+                            "altLabel": [
+                                {
+                                    "language": "bg",
+                                    "value": "Сидер"
+                                },
+                                {
+                                    "language": "cs",
+                                    "value": "Sider"
+                                },
+                                {
+                                    "language": "da",
+                                    "value": "Siderien"
+                                },
+                                {
+                                    "language": "de",
+                                    "value": "Siderium"
+                                },
+                                {
+                                    "language": "es",
+                                    "value": "Sideriense"
+                                },
+                                {
+                                    "language": "et",
+                                    "value": "Sider"
+                                },
+                                {
+                                    "language": "fi",
+                                    "value": "Sider"
+                                },
+                                {
+                                    "language": "fr",
+                                    "value": "Sidérien"
+                                },
+                                {
+                                    "language": "hu",
+                                    "value": "sideri"
+                                },
+                                {
+                                    "language": "it",
+                                    "value": "sideriano"
+                                },
+                                {
+                                    "language": "ja",
+                                    "value": "シデリアン紀"
+                                },
+                                {
+                                    "language": "lt",
+                                    "value": "Sideris"
+                                },
+                                {
+                                    "language": "nl",
+                                    "value": "Sideriën"
+                                },
+                                {
+                                    "language": "no",
+                                    "value": "Siderium"
+                                },
+                                {
+                                    "language": "pl",
+                                    "value": "Sider"
+                                },
+                                {
+                                    "language": "pt",
+                                    "value": "Sideriano"
+                                },
+                                {
+                                    "language": "sk",
+                                    "value": "siderium"
+                                },
+                                {
+                                    "language": "sl",
+                                    "value": "siderij"
+                                },
+                                {
+                                    "language": "sv",
+                                    "value": "siderium"
+                                },
+                                {
+                                    "language": "zh",
+                                    "value": "成铁纪"
+                                }
+                            ],
+                            "broader": [
+                                "ischart:Paleoproterozoic"
+                            ],
+                            "definition": "A time period from 2500 to 2300 million years ago",
+                            "inScheme": "http://resource.geosciml.org/classifier/ics/ischart",
+                            "notation": "PP1",
+                            "prefLabel": {
+                                "language": "en",
+                                "value": "Siderian"
+                            },
+                            "hasBeginning": {
+                                "inMYA": 2500
+                            },
+                            "hasEnd": {
+                                "inMYA": 2300
+                            },
+                            "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
+                            "order": 171,
+                            "counts": {
+                                "directNarrowers": 0,
+                                "indirectNarrowers": 0
+                            },
+                            "color": "#F74F7C",
+                            "height": 200,
+                            "remainderHeigt": 3.4754977409264685,
+                            "irregularHeight": 5.4754977409264685,
+                            "rawPercent": 0.15
+                        },
+                        {
+                            "id": "ischart:Statherian",
+                            "type": "skos:Concept",
+                            "rank": "http://resource.geosciml.org/ontology/timescale/rank/Period",
+                            "ratifiedGSSA": true,
+                            "isDefinedBy": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
+                            "altLabel": [
+                                {
+                                    "language": "bg",
+                                    "value": "Статер"
+                                },
+                                {
+                                    "language": "cs",
+                                    "value": "Stather"
+                                },
+                                {
+                                    "language": "da",
+                                    "value": "Statherien"
+                                },
+                                {
+                                    "language": "de",
+                                    "value": "Statherium"
+                                },
+                                {
+                                    "language": "es",
+                                    "value": "Statheriense"
+                                },
+                                {
+                                    "language": "et",
+                                    "value": "Stather"
+                                },
+                                {
+                                    "language": "fi",
+                                    "value": "Stather"
+                                },
+                                {
+                                    "language": "fr",
+                                    "value": "Stathérien"
+                                },
+                                {
+                                    "language": "hu",
+                                    "value": "statheri"
+                                },
+                                {
+                                    "language": "it",
+                                    "value": "statheriano"
+                                },
+                                {
+                                    "language": "ja",
+                                    "value": "スタテリアン紀"
+                                },
+                                {
+                                    "language": "lt",
+                                    "value": "Stateris"
+                                },
+                                {
+                                    "language": "nl",
+                                    "value": "Statheriën"
+                                },
+                                {
+                                    "language": "no",
+                                    "value": "Staterium"
+                                },
+                                {
+                                    "language": "pl",
+                                    "value": "Stater"
+                                },
+                                {
+                                    "language": "pt",
+                                    "value": "Stateriano"
+                                },
+                                {
+                                    "language": "sk",
+                                    "value": "staterium"
+                                },
+                                {
+                                    "language": "sl",
+                                    "value": "statherij"
+                                },
+                                {
+                                    "language": "sv",
+                                    "value": "staterium"
+                                },
+                                {
+                                    "language": "zh",
+                                    "value": "固结纪"
+                                }
+                            ],
+                            "broader": [
+                                "ischart:Paleoproterozoic"
+                            ],
+                            "definition": "A time period from 1800 to 1600 million years ago",
+                            "inScheme": "http://resource.geosciml.org/classifier/ics/ischart",
+                            "notation": "PP4",
+                            "prefLabel": {
+                                "language": "en",
+                                "value": "Statherian"
+                            },
+                            "hasBeginning": {
+                                "inMYA": 1800
+                            },
+                            "hasEnd": {
+                                "inMYA": 1600
+                            },
+                            "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
+                            "order": 166,
+                            "counts": {
+                                "directNarrowers": 0,
+                                "indirectNarrowers": 0
+                            },
+                            "color": "#F875A7",
+                            "height": 200,
+                            "remainderHeigt": 3.4754977409264685,
+                            "irregularHeight": 5.4754977409264685,
+                            "rawPercent": 0.15
+                        }
+                    ],
+                    "notation": "PP",
+                    "prefLabel": {
+                        "language": "en",
+                        "value": "Paleoproterozoic"
+                    },
+                    "hasBeginning": {
+                        "inMYA": 2500
+                    },
+                    "hasEnd": {
+                        "inMYA": 1600
+                    },
+                    "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
+                    "order": 169,
+                    "counts": {
+                        "directNarrowers": 4,
+                        "indirectNarrowers": 4
+                    },
+                    "color": "#F74370"
+                }
+            ],
+            "notation": "PR",
+            "prefLabel": {
+                "language": "en",
+                "value": "Proterozoic"
+            },
+            "hasBeginning": {
+                "inMYA": 2500
+            },
+            "hasEnd": {
+                "inMYA": {
+                    "type": "xsd:decimal",
+                    "value": "538.8"
+                },
+                "marginOfError": {
+                    "type": "xsd:decimal",
+                    "value": "0.2"
+                }
+            },
+            "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
+            "order": 170,
+            "counts": {
+                "directNarrowers": 3,
+                "indirectNarrowers": 13
+            },
+            "color": "#F73563"
+        }
+    ],
+    "notation": "PE",
+    "prefLabel": {
+        "language": "en",
+        "value": "Precambrian"
     },
-    "ischart:Calymmian": {
-        "id": "ischart:Calymmian",
-        "type": "skos:Concept",
-        "rank": "http://resource.geosciml.org/ontology/timescale/rank/Period",
-        "ratifiedGSSA": true,
-        "isDefinedBy": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
-        "altLabel": [
-            {
-                "language": "bg",
-                "value": "Калим"
-            },
-            {
-                "language": "cs",
-                "value": "Calymm"
-            },
-            {
-                "language": "da",
-                "value": "Calymmien"
-            },
-            {
-                "language": "de",
-                "value": "Calymmium"
-            },
-            {
-                "language": "es",
-                "value": "Calymmiense"
-            },
-            {
-                "language": "et",
-                "value": "Calymm"
-            },
-            {
-                "language": "fi",
-                "value": "Calym"
-            },
-            {
-                "language": "fr",
-                "value": "Calymmien"
-            },
-            {
-                "language": "hu",
-                "value": "calymmi"
-            },
-            {
-                "language": "it",
-                "value": "calymmiano"
-            },
-            {
-                "language": "ja",
-                "value": "カリミアン紀"
-            },
-            {
-                "language": "lt",
-                "value": "Kalymis"
-            },
-            {
-                "language": "nl",
-                "value": "Calymmiën"
-            },
-            {
-                "language": "no",
-                "value": "Kalymmium"
-            },
-            {
-                "language": "pl",
-                "value": "Kalym"
-            },
-            {
-                "language": "pt",
-                "value": "Calymiano"
-            },
-            {
-                "language": "sk",
-                "value": "kalymnium"
-            },
-            {
-                "language": "sl",
-                "value": "calymmij"
-            },
-            {
-                "language": "sv",
-                "value": "kalymmium"
-            },
-            {
-                "language": "zh",
-                "value": "盖层纪"
-            }
-        ],
-        "broader": [
-            "ischart:Mesoproterozoic"
-        ],
-        "definition": "A time period from 1600 to 1400 million years ago",
-        "inScheme": "http://resource.geosciml.org/classifier/ics/ischart",
-        "notation": "MP1",
-        "prefLabel": {
-            "language": "en",
-            "value": "Calymmian"
-        },
-        "hasBeginning": {
-            "inMYA": 1600
-        },
-        "hasEnd": {
-            "inMYA": 1400
-        },
-        "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
-        "order": 164,
-        "counts": {
-            "directNarrowers": 0,
-            "indirectNarrowers": 0
-        },
-        "color": "#FDC07A",
-        "height": 200,
-        "remainderHeigt": 3.4754977409264685,
-        "irregularHeight": 5.4754977409264685,
-        "rawPercent": 0.15
+    "hasBeginning": {
+        "inMYA": 4567
     },
-    "ischart:Ectasian": {
-        "id": "ischart:Ectasian",
-        "type": "skos:Concept",
-        "rank": "http://resource.geosciml.org/ontology/timescale/rank/Period",
-        "ratifiedGSSA": true,
-        "isDefinedBy": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
-        "altLabel": [
-            {
-                "language": "bg",
-                "value": "Ектаз"
-            },
-            {
-                "language": "cs",
-                "value": "Ectas"
-            },
-            {
-                "language": "da",
-                "value": "Ectasien"
-            },
-            {
-                "language": "de",
-                "value": "Ectasium"
-            },
-            {
-                "language": "es",
-                "value": "Ectasiense"
-            },
-            {
-                "language": "et",
-                "value": "Ectas"
-            },
-            {
-                "language": "fi",
-                "value": "Ectas"
-            },
-            {
-                "language": "fr",
-                "value": "Ectasien"
-            },
-            {
-                "language": "hu",
-                "value": "ectasi"
-            },
-            {
-                "language": "it",
-                "value": "ectasiano"
-            },
-            {
-                "language": "ja",
-                "value": "エクタシアン紀"
-            },
-            {
-                "language": "lt",
-                "value": "Ektasis"
-            },
-            {
-                "language": "nl",
-                "value": "Ectasiën"
-            },
-            {
-                "language": "no",
-                "value": "Ektasium"
-            },
-            {
-                "language": "pl",
-                "value": "Ektas"
-            },
-            {
-                "language": "pt",
-                "value": "Ectasiano"
-            },
-            {
-                "language": "sk",
-                "value": "ektazium"
-            },
-            {
-                "language": "sl",
-                "value": "ectasij"
-            },
-            {
-                "language": "sv",
-                "value": "ectasium"
-            },
-            {
-                "language": "zh",
-                "value": "延展纪"
-            }
-        ],
-        "broader": [
-            "ischart:Mesoproterozoic"
-        ],
-        "definition": "A time period from 1400 to 1200 million years ago",
-        "inScheme": "http://resource.geosciml.org/classifier/ics/ischart",
-        "notation": "MP2",
-        "prefLabel": {
-            "language": "en",
-            "value": "Ectasian"
+    "hasEnd": {
+        "inMYA": {
+            "type": "xsd:decimal",
+            "value": "538.8"
         },
-        "hasBeginning": {
-            "inMYA": 1400
-        },
-        "hasEnd": {
-            "inMYA": 1200
-        },
-        "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
-        "order": 163,
-        "counts": {
-            "directNarrowers": 0,
-            "indirectNarrowers": 0
-        },
-        "color": "#FDCC8A",
-        "height": 200,
-        "remainderHeigt": 3.4754977409264685,
-        "irregularHeight": 5.4754977409264685,
-        "rawPercent": 0.15
+        "marginOfError": {
+            "type": "xsd:decimal",
+            "value": "0.2"
+        }
     },
-    "ischart:Stenian": {
-        "id": "ischart:Stenian",
-        "type": "skos:Concept",
-        "rank": "http://resource.geosciml.org/ontology/timescale/rank/Period",
-        "ratifiedGSSA": true,
-        "isDefinedBy": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
-        "altLabel": [
-            {
-                "language": "bg",
-                "value": "Стен"
-            },
-            {
-                "language": "cs",
-                "value": "Sten"
-            },
-            {
-                "language": "da",
-                "value": "Stenien"
-            },
-            {
-                "language": "de",
-                "value": "Stenium"
-            },
-            {
-                "language": "es",
-                "value": "Esteniense"
-            },
-            {
-                "language": "et",
-                "value": "Sten"
-            },
-            {
-                "language": "fi",
-                "value": "Sten"
-            },
-            {
-                "language": "fr",
-                "value": "Sténien"
-            },
-            {
-                "language": "hu",
-                "value": "steni"
-            },
-            {
-                "language": "it",
-                "value": "steniano"
-            },
-            {
-                "language": "ja",
-                "value": "ステニアン紀"
-            },
-            {
-                "language": "lt",
-                "value": "Stenis"
-            },
-            {
-                "language": "nl",
-                "value": "Steniën"
-            },
-            {
-                "language": "no",
-                "value": "Stenium"
-            },
-            {
-                "language": "pl",
-                "value": "Sten"
-            },
-            {
-                "language": "pt",
-                "value": "Steniano"
-            },
-            {
-                "language": "sk",
-                "value": "stenium"
-            },
-            {
-                "language": "sl",
-                "value": "stenij"
-            },
-            {
-                "language": "sv",
-                "value": "stenium"
-            },
-            {
-                "language": "zh",
-                "value": "狭带纪"
-            }
-        ],
-        "broader": [
-            "ischart:Mesoproterozoic"
-        ],
-        "definition": "A time period from 1200 to 1000 million years ago",
-        "inScheme": "http://resource.geosciml.org/classifier/ics/ischart",
-        "notation": "MP3",
-        "prefLabel": {
-            "language": "en",
-            "value": "Stenian"
-        },
-        "hasBeginning": {
-            "inMYA": 1200
-        },
-        "hasEnd": {
-            "inMYA": 1000
-        },
-        "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
-        "order": 162,
-        "counts": {
-            "directNarrowers": 0,
-            "indirectNarrowers": 0
-        },
-        "color": "#FED99A",
-        "height": 200,
-        "remainderHeigt": 3.4754977409264685,
-        "irregularHeight": 5.4754977409264685,
-        "rawPercent": 0.15
+    "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
+    "order": 178,
+    "counts": {
+        "directNarrowers": 3,
+        "indirectNarrowers": 20
     },
-    "ischart:Cryogenian": {
-        "id": "ischart:Cryogenian",
-        "type": "skos:Concept",
-        "rank": "http://resource.geosciml.org/ontology/timescale/rank/Period",
-        "isDefinedBy": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
-        "altLabel": [
-            {
-                "language": "bg",
-                "value": "Криоген"
-            },
-            {
-                "language": "cs",
-                "value": "Cryogen"
-            },
-            {
-                "language": "da",
-                "value": "Cryogenien"
-            },
-            {
-                "language": "de",
-                "value": "Kryogenium"
-            },
-            {
-                "language": "es",
-                "value": "Criogeniense"
-            },
-            {
-                "language": "et",
-                "value": "Krüogeen"
-            },
-            {
-                "language": "fi",
-                "value": "Cryogen"
-            },
-            {
-                "language": "fr",
-                "value": "Cryogénien"
-            },
-            {
-                "language": "hu",
-                "value": "cryogeni"
-            },
-            {
-                "language": "it",
-                "value": "cryogeniano"
-            },
-            {
-                "language": "ja",
-                "value": "クリオジェニアン紀"
-            },
-            {
-                "language": "lt",
-                "value": "Kriogenis"
-            },
-            {
-                "language": "nl",
-                "value": "Cryogeniën"
-            },
-            {
-                "language": "no",
-                "value": "Kryogenium"
-            },
-            {
-                "language": "pl",
-                "value": "Kriogen"
-            },
-            {
-                "language": "pt",
-                "value": "Criogeniano"
-            },
-            {
-                "language": "sk",
-                "value": "kryogén"
-            },
-            {
-                "language": "sl",
-                "value": "cryogenij"
-            },
-            {
-                "language": "sv",
-                "value": "kryogenium"
-            },
-            {
-                "language": "zh",
-                "value": "成冰纪"
-            }
-        ],
-        "broader": [
-            "ischart:Neoproterozoic"
-        ],
-        "definition": "A time period from 720 to 635 million years ago",
-        "inScheme": "http://resource.geosciml.org/classifier/ics/ischart",
-        "notation": "NP2",
-        "prefLabel": {
-            "language": "en",
-            "value": "Cryogenian"
-        },
-        "hasBeginning": {
-            "inMYA": 720,
-            "note": "uncertain"
-        },
-        "hasEnd": {
-            "inMYA": 635,
-            "note": "uncertain"
-        },
-        "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
-        "order": 159,
-        "counts": {
-            "directNarrowers": 0,
-            "indirectNarrowers": 0
-        },
-        "color": "#FECC5C",
-        "height": 85,
-        "remainderHeigt": 1.4770865398937492,
-        "irregularHeight": 3.477086539893749,
-        "rawPercent": 0.15
-    },
-    "ischart:Ediacaran": {
-        "id": "ischart:Ediacaran",
-        "type": "skos:Concept",
-        "rank": "http://resource.geosciml.org/ontology/timescale/rank/Period",
-        "ratifiedGSSP": true,
-        "isDefinedBy": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
-        "altLabel": [
-            {
-                "language": "bg",
-                "value": "Едиакар"
-            },
-            {
-                "language": "cs",
-                "value": "Ediacar"
-            },
-            {
-                "language": "da",
-                "value": "Ediacara"
-            },
-            {
-                "language": "de",
-                "value": "Ediacarium"
-            },
-            {
-                "language": "es",
-                "value": "Ediacariense"
-            },
-            {
-                "language": "et",
-                "value": "Ediacara"
-            },
-            {
-                "language": "fi",
-                "value": "Ediacar"
-            },
-            {
-                "language": "fr",
-                "value": "Ediacarien"
-            },
-            {
-                "language": "hu",
-                "value": "ediacaranum"
-            },
-            {
-                "language": "it",
-                "value": "ediacariano"
-            },
-            {
-                "language": "ja",
-                "value": "エディアカラ紀"
-            },
-            {
-                "language": "lt",
-                "value": "Ediakaras"
-            },
-            {
-                "language": "nl",
-                "value": "Ediacaran"
-            },
-            {
-                "language": "no",
-                "value": "Ediacara"
-            },
-            {
-                "language": "pl",
-                "value": "Ediakar"
-            },
-            {
-                "language": "pt",
-                "value": "Ediacariano"
-            },
-            {
-                "language": "sk",
-                "value": "ediakarium"
-            },
-            {
-                "language": "sl",
-                "value": "ediacarij"
-            },
-            {
-                "language": "sv",
-                "value": "ediacara"
-            },
-            {
-                "language": "zh",
-                "value": "埃迪卡拉纪"
-            }
-        ],
-        "broader": [
-            "ischart:Neoproterozoic"
-        ],
-        "definition": "A time period from 635 to 538.8 million years ago",
-        "inScheme": "http://resource.geosciml.org/classifier/ics/ischart",
-        "notation": "NP3",
-        "prefLabel": {
-            "language": "en",
-            "value": "Ediacaran"
-        },
-        "hasBeginning": {
-            "inMYA": 635,
-            "note": "uncertain"
-        },
-        "hasEnd": {
-            "inMYA": {
-                "type": "xsd:decimal",
-                "value": "538.8"
-            },
-            "marginOfError": {
-                "type": "xsd:decimal",
-                "value": "0.2"
-            }
-        },
-        "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
-        "order": 158,
-        "counts": {
-            "directNarrowers": 0,
-            "indirectNarrowers": 0
-        },
-        "color": "#FED96A",
-        "height": 96.20000000000005,
-        "remainderHeigt": 1.671714413385632,
-        "irregularHeight": 3.671714413385632,
-        "rawPercent": 0.15
-    },
-    "ischart:Tonian": {
-        "id": "ischart:Tonian",
-        "type": "skos:Concept",
-        "rank": "http://resource.geosciml.org/ontology/timescale/rank/Period",
-        "ratifiedGSSA": true,
-        "isDefinedBy": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
-        "altLabel": [
-            {
-                "language": "bg",
-                "value": "Тон"
-            },
-            {
-                "language": "cs",
-                "value": "Ton"
-            },
-            {
-                "language": "da",
-                "value": "Tonien"
-            },
-            {
-                "language": "de",
-                "value": "Tonium"
-            },
-            {
-                "language": "es",
-                "value": "Toniense"
-            },
-            {
-                "language": "et",
-                "value": "Ton"
-            },
-            {
-                "language": "fi",
-                "value": "Ton"
-            },
-            {
-                "language": "fr",
-                "value": "Tonien"
-            },
-            {
-                "language": "hu",
-                "value": "toni"
-            },
-            {
-                "language": "it",
-                "value": "toniano"
-            },
-            {
-                "language": "ja",
-                "value": "トニアン紀"
-            },
-            {
-                "language": "lt",
-                "value": "Tonis"
-            },
-            {
-                "language": "nl",
-                "value": "Toniën"
-            },
-            {
-                "language": "no",
-                "value": "Tonium"
-            },
-            {
-                "language": "pl",
-                "value": "Ton"
-            },
-            {
-                "language": "pt",
-                "value": "Toniano"
-            },
-            {
-                "language": "sk",
-                "value": "tonium"
-            },
-            {
-                "language": "sl",
-                "value": "tonij"
-            },
-            {
-                "language": "sv",
-                "value": "tonium"
-            },
-            {
-                "language": "zh",
-                "value": "拉伸纪"
-            }
-        ],
-        "broader": [
-            "ischart:Neoproterozoic"
-        ],
-        "definition": "A time period from 1000 to 720 million years ago",
-        "inScheme": "http://resource.geosciml.org/classifier/ics/ischart",
-        "notation": "NP1",
-        "prefLabel": {
-            "language": "en",
-            "value": "Tonian"
-        },
-        "hasBeginning": {
-            "inMYA": 1000
-        },
-        "hasEnd": {
-            "inMYA": 720,
-            "note": "uncertain"
-        },
-        "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
-        "order": 161,
-        "counts": {
-            "directNarrowers": 0,
-            "indirectNarrowers": 0
-        },
-        "color": "#FEBF4E",
-        "height": 280,
-        "remainderHeigt": 4.8656968372970555,
-        "irregularHeight": 6.8656968372970555,
-        "rawPercent": 0.15
-    },
-    "ischart:Orosirian": {
-        "id": "ischart:Orosirian",
-        "type": "skos:Concept",
-        "rank": "http://resource.geosciml.org/ontology/timescale/rank/Period",
-        "ratifiedGSSA": true,
-        "isDefinedBy": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
-        "altLabel": [
-            {
-                "language": "bg",
-                "value": "Ороѿир"
-            },
-            {
-                "language": "cs",
-                "value": "Orosir"
-            },
-            {
-                "language": "da",
-                "value": "Orosirien"
-            },
-            {
-                "language": "de",
-                "value": "Orosirium"
-            },
-            {
-                "language": "es",
-                "value": "Orosiriense"
-            },
-            {
-                "language": "et",
-                "value": "Orosir"
-            },
-            {
-                "language": "fi",
-                "value": "Orosir"
-            },
-            {
-                "language": "fr",
-                "value": "Orosirien"
-            },
-            {
-                "language": "hu",
-                "value": "orosiri"
-            },
-            {
-                "language": "it",
-                "value": "orosiriano"
-            },
-            {
-                "language": "ja",
-                "value": "オロシリアン紀"
-            },
-            {
-                "language": "lt",
-                "value": "Orosiris"
-            },
-            {
-                "language": "nl",
-                "value": "Orosiriën"
-            },
-            {
-                "language": "no",
-                "value": "Orosirium"
-            },
-            {
-                "language": "pl",
-                "value": "Orosir"
-            },
-            {
-                "language": "pt",
-                "value": "Orosiriano"
-            },
-            {
-                "language": "sk",
-                "value": "orosirium"
-            },
-            {
-                "language": "sl",
-                "value": "orosijrij"
-            },
-            {
-                "language": "sv",
-                "value": "orosirium"
-            },
-            {
-                "language": "zh",
-                "value": "造山纪"
-            }
-        ],
-        "broader": [
-            "ischart:Paleoproterozoic"
-        ],
-        "definition": "A time period from 2050 to 1800 million years ago",
-        "inScheme": "http://resource.geosciml.org/classifier/ics/ischart",
-        "notation": "PP3",
-        "prefLabel": {
-            "language": "en",
-            "value": "Orosirian"
-        },
-        "hasBeginning": {
-            "inMYA": 2050
-        },
-        "hasEnd": {
-            "inMYA": 1800
-        },
-        "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
-        "order": 167,
-        "counts": {
-            "directNarrowers": 0,
-            "indirectNarrowers": 0
-        },
-        "color": "#F76898",
-        "height": 250,
-        "remainderHeigt": 4.344372176158085,
-        "irregularHeight": 6.344372176158085,
-        "rawPercent": 0.15
-    },
-    "ischart:Rhyacian": {
-        "id": "ischart:Rhyacian",
-        "type": "skos:Concept",
-        "rank": "http://resource.geosciml.org/ontology/timescale/rank/Period",
-        "ratifiedGSSA": true,
-        "isDefinedBy": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
-        "altLabel": [
-            {
-                "language": "bg",
-                "value": "Риац"
-            },
-            {
-                "language": "cs",
-                "value": "Rhyak"
-            },
-            {
-                "language": "da",
-                "value": "Rhyacien"
-            },
-            {
-                "language": "de",
-                "value": "Rhyacium"
-            },
-            {
-                "language": "es",
-                "value": "Ryaciense"
-            },
-            {
-                "language": "et",
-                "value": "Rhyac"
-            },
-            {
-                "language": "fi",
-                "value": "Ryak"
-            },
-            {
-                "language": "fr",
-                "value": "Rhyacien"
-            },
-            {
-                "language": "hu",
-                "value": "rhyaci"
-            },
-            {
-                "language": "it",
-                "value": "rhyaciano"
-            },
-            {
-                "language": "ja",
-                "value": "リヤシアン紀"
-            },
-            {
-                "language": "lt",
-                "value": "Riacis"
-            },
-            {
-                "language": "nl",
-                "value": "Rhyaciën"
-            },
-            {
-                "language": "no",
-                "value": "Ryasium"
-            },
-            {
-                "language": "pl",
-                "value": "Riak"
-            },
-            {
-                "language": "pt",
-                "value": "Riaciano"
-            },
-            {
-                "language": "sk",
-                "value": "rhyacium"
-            },
-            {
-                "language": "sl",
-                "value": "rhyacij"
-            },
-            {
-                "language": "sv",
-                "value": "ryacium"
-            },
-            {
-                "language": "zh",
-                "value": "层侵纪"
-            }
-        ],
-        "broader": [
-            "ischart:Paleoproterozoic"
-        ],
-        "definition": "A time period from 2300 to 2050 million years ago",
-        "inScheme": "http://resource.geosciml.org/classifier/ics/ischart",
-        "notation": "PP2",
-        "prefLabel": {
-            "language": "en",
-            "value": "Rhyacian"
-        },
-        "hasBeginning": {
-            "inMYA": 2300
-        },
-        "hasEnd": {
-            "inMYA": 2050
-        },
-        "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
-        "order": 168,
-        "counts": {
-            "directNarrowers": 0,
-            "indirectNarrowers": 0
-        },
-        "color": "#F75B89",
-        "height": 250,
-        "remainderHeigt": 4.344372176158085,
-        "irregularHeight": 6.344372176158085,
-        "rawPercent": 0.15
-    },
-    "ischart:Siderian": {
-        "id": "ischart:Siderian",
-        "type": "skos:Concept",
-        "rank": "http://resource.geosciml.org/ontology/timescale/rank/Period",
-        "ratifiedGSSA": true,
-        "isDefinedBy": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
-        "altLabel": [
-            {
-                "language": "bg",
-                "value": "Сидер"
-            },
-            {
-                "language": "cs",
-                "value": "Sider"
-            },
-            {
-                "language": "da",
-                "value": "Siderien"
-            },
-            {
-                "language": "de",
-                "value": "Siderium"
-            },
-            {
-                "language": "es",
-                "value": "Sideriense"
-            },
-            {
-                "language": "et",
-                "value": "Sider"
-            },
-            {
-                "language": "fi",
-                "value": "Sider"
-            },
-            {
-                "language": "fr",
-                "value": "Sidérien"
-            },
-            {
-                "language": "hu",
-                "value": "sideri"
-            },
-            {
-                "language": "it",
-                "value": "sideriano"
-            },
-            {
-                "language": "ja",
-                "value": "シデリアン紀"
-            },
-            {
-                "language": "lt",
-                "value": "Sideris"
-            },
-            {
-                "language": "nl",
-                "value": "Sideriën"
-            },
-            {
-                "language": "no",
-                "value": "Siderium"
-            },
-            {
-                "language": "pl",
-                "value": "Sider"
-            },
-            {
-                "language": "pt",
-                "value": "Sideriano"
-            },
-            {
-                "language": "sk",
-                "value": "siderium"
-            },
-            {
-                "language": "sl",
-                "value": "siderij"
-            },
-            {
-                "language": "sv",
-                "value": "siderium"
-            },
-            {
-                "language": "zh",
-                "value": "成铁纪"
-            }
-        ],
-        "broader": [
-            "ischart:Paleoproterozoic"
-        ],
-        "definition": "A time period from 2500 to 2300 million years ago",
-        "inScheme": "http://resource.geosciml.org/classifier/ics/ischart",
-        "notation": "PP1",
-        "prefLabel": {
-            "language": "en",
-            "value": "Siderian"
-        },
-        "hasBeginning": {
-            "inMYA": 2500
-        },
-        "hasEnd": {
-            "inMYA": 2300
-        },
-        "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
-        "order": 171,
-        "counts": {
-            "directNarrowers": 0,
-            "indirectNarrowers": 0
-        },
-        "color": "#F74F7C",
-        "height": 200,
-        "remainderHeigt": 3.4754977409264685,
-        "irregularHeight": 5.4754977409264685,
-        "rawPercent": 0.15
-    },
-    "ischart:Statherian": {
-        "id": "ischart:Statherian",
-        "type": "skos:Concept",
-        "rank": "http://resource.geosciml.org/ontology/timescale/rank/Period",
-        "ratifiedGSSA": true,
-        "isDefinedBy": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
-        "altLabel": [
-            {
-                "language": "bg",
-                "value": "Статер"
-            },
-            {
-                "language": "cs",
-                "value": "Stather"
-            },
-            {
-                "language": "da",
-                "value": "Statherien"
-            },
-            {
-                "language": "de",
-                "value": "Statherium"
-            },
-            {
-                "language": "es",
-                "value": "Statheriense"
-            },
-            {
-                "language": "et",
-                "value": "Stather"
-            },
-            {
-                "language": "fi",
-                "value": "Stather"
-            },
-            {
-                "language": "fr",
-                "value": "Stathérien"
-            },
-            {
-                "language": "hu",
-                "value": "statheri"
-            },
-            {
-                "language": "it",
-                "value": "statheriano"
-            },
-            {
-                "language": "ja",
-                "value": "スタテリアン紀"
-            },
-            {
-                "language": "lt",
-                "value": "Stateris"
-            },
-            {
-                "language": "nl",
-                "value": "Statheriën"
-            },
-            {
-                "language": "no",
-                "value": "Staterium"
-            },
-            {
-                "language": "pl",
-                "value": "Stater"
-            },
-            {
-                "language": "pt",
-                "value": "Stateriano"
-            },
-            {
-                "language": "sk",
-                "value": "staterium"
-            },
-            {
-                "language": "sl",
-                "value": "statherij"
-            },
-            {
-                "language": "sv",
-                "value": "staterium"
-            },
-            {
-                "language": "zh",
-                "value": "固结纪"
-            }
-        ],
-        "broader": [
-            "ischart:Paleoproterozoic"
-        ],
-        "definition": "A time period from 1800 to 1600 million years ago",
-        "inScheme": "http://resource.geosciml.org/classifier/ics/ischart",
-        "notation": "PP4",
-        "prefLabel": {
-            "language": "en",
-            "value": "Statherian"
-        },
-        "hasBeginning": {
-            "inMYA": 1800
-        },
-        "hasEnd": {
-            "inMYA": 1600
-        },
-        "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
-        "order": 166,
-        "counts": {
-            "directNarrowers": 0,
-            "indirectNarrowers": 0
-        },
-        "color": "#F875A7",
-        "height": 200,
-        "remainderHeigt": 3.4754977409264685,
-        "irregularHeight": 5.4754977409264685,
-        "rawPercent": 0.15
-    }
+    "color": "#F74370"
 }
