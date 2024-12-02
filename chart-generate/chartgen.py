@@ -94,7 +94,7 @@ def get_irregular_heights(subGraph):
     for key in lookup.keys():
         lookup[key]["remainderHeigt"] = (lookup[key]["height"]/childSum)*remainderPc
         lookup[key]["irregularHeight"] = EQPROVISION + lookup[key]["remainderHeigt"] 
-        lookup[key]["rawPercent"] = len(children)/100
+        lookup[key]["rawPercent"] = 100/len(children)
 
 
         # @toto update hierachy not list
