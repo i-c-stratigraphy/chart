@@ -314,7 +314,7 @@
                     "height": 431,
                     "remainderHeigt": 7.489697631696539,
                     "irregularHeight": 9.48969763169654,
-                    "rawPercent": 0.15
+                    "rawPercent": 6.666666666666667
                 },
                 {
                     "id": "ischart:Mesoarchean",
@@ -438,7 +438,7 @@
                     "height": 400,
                     "remainderHeigt": 6.950995481852937,
                     "irregularHeight": 8.950995481852937,
-                    "rawPercent": 0.15
+                    "rawPercent": 6.666666666666667
                 },
                 {
                     "id": "ischart:Neoarchean",
@@ -562,7 +562,7 @@
                     "height": 300,
                     "remainderHeigt": 5.213246611389702,
                     "irregularHeight": 7.213246611389702,
-                    "rawPercent": 0.15
+                    "rawPercent": 6.666666666666667
                 },
                 {
                     "id": "ischart:Paleoarchean",
@@ -686,7 +686,7 @@
                     "height": 400,
                     "remainderHeigt": 6.950995481852937,
                     "irregularHeight": 8.950995481852937,
-                    "rawPercent": 0.15
+                    "rawPercent": 6.666666666666667
                 }
             ],
             "notation": "AR",
@@ -820,7 +820,7 @@
             "height": 536,
             "remainderHeigt": 9.314333945682934,
             "irregularHeight": 11.314333945682934,
-            "rawPercent": 0.15
+            "rawPercent": 6.666666666666667
         },
         {
             "id": "ischart:Proterozoic",
@@ -1124,7 +1124,7 @@
                             "height": 200,
                             "remainderHeigt": 3.4754977409264685,
                             "irregularHeight": 5.4754977409264685,
-                            "rawPercent": 0.15
+                            "rawPercent": 6.666666666666667
                         },
                         {
                             "id": "ischart:Ectasian",
@@ -1240,7 +1240,7 @@
                             "height": 200,
                             "remainderHeigt": 3.4754977409264685,
                             "irregularHeight": 5.4754977409264685,
-                            "rawPercent": 0.15
+                            "rawPercent": 6.666666666666667
                         },
                         {
                             "id": "ischart:Stenian",
@@ -1356,7 +1356,7 @@
                             "height": 200,
                             "remainderHeigt": 3.4754977409264685,
                             "irregularHeight": 5.4754977409264685,
-                            "rawPercent": 0.15
+                            "rawPercent": 6.666666666666667
                         }
                     ],
                     "notation": "MP",
@@ -1588,7 +1588,7 @@
                             "height": 85,
                             "remainderHeigt": 1.4770865398937492,
                             "irregularHeight": 3.477086539893749,
-                            "rawPercent": 0.15
+                            "rawPercent": 6.666666666666667
                         },
                         {
                             "id": "ischart:Ediacaran",
@@ -1712,7 +1712,7 @@
                             "height": 96.20000000000005,
                             "remainderHeigt": 1.671714413385632,
                             "irregularHeight": 3.671714413385632,
-                            "rawPercent": 0.15
+                            "rawPercent": 6.666666666666667
                         },
                         {
                             "id": "ischart:Tonian",
@@ -1829,7 +1829,7 @@
                             "height": 280,
                             "remainderHeigt": 4.8656968372970555,
                             "irregularHeight": 6.8656968372970555,
-                            "rawPercent": 0.15
+                            "rawPercent": 6.666666666666667
                         }
                     ],
                     "notation": "NP",
@@ -2074,7 +2074,7 @@
                             "height": 250,
                             "remainderHeigt": 4.344372176158085,
                             "irregularHeight": 6.344372176158085,
-                            "rawPercent": 0.15
+                            "rawPercent": 6.666666666666667
                         },
                         {
                             "id": "ischart:Rhyacian",
@@ -2190,7 +2190,7 @@
                             "height": 250,
                             "remainderHeigt": 4.344372176158085,
                             "irregularHeight": 6.344372176158085,
-                            "rawPercent": 0.15
+                            "rawPercent": 6.666666666666667
                         },
                         {
                             "id": "ischart:Siderian",
@@ -2306,7 +2306,7 @@
                             "height": 200,
                             "remainderHeigt": 3.4754977409264685,
                             "irregularHeight": 5.4754977409264685,
-                            "rawPercent": 0.15
+                            "rawPercent": 6.666666666666667
                         },
                         {
                             "id": "ischart:Statherian",
@@ -2422,7 +2422,7 @@
                             "height": 200,
                             "remainderHeigt": 3.4754977409264685,
                             "irregularHeight": 5.4754977409264685,
-                            "rawPercent": 0.15
+                            "rawPercent": 6.666666666666667
                         }
                     ],
                     "notation": "PP",

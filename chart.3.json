@@ -493,7 +493,7 @@
                                     "height": 7,
                                     "remainderHeigt": 1.3703099510603591,
                                     "irregularHeight": 3.370309951060359,
-                                    "rawPercent": 0.32
+                                    "rawPercent": 3.125
                                 },
                                 {
                                     "id": "ischart:CambrianStage4",
@@ -610,7 +610,7 @@
                                     "height": 5,
                                     "remainderHeigt": 0.9787928221859707,
                                     "irregularHeight": 2.9787928221859707,
-                                    "rawPercent": 0.32
+                                    "rawPercent": 3.125
                                 }
                             ],
                             "notation": "Ep2",
@@ -852,7 +852,7 @@
                                     "height": 4.100000000000023,
                                     "remainderHeigt": 0.8026101141925005,
                                     "irregularHeight": 2.8026101141925004,
-                                    "rawPercent": 0.32
+                                    "rawPercent": 3.125
                                 },
                                 {
                                     "id": "ischart:Jiangshanian",
@@ -895,7 +895,7 @@
                                     "height": 4.5,
                                     "remainderHeigt": 0.8809135399673736,
                                     "irregularHeight": 2.8809135399673735,
-                                    "rawPercent": 0.32
+                                    "rawPercent": 3.125
                                 },
                                 {
                                     "id": "ischart:Paibian",
@@ -1013,7 +1013,7 @@
                                     "height": 3,
                                     "remainderHeigt": 0.5872756933115825,
                                     "irregularHeight": 2.5872756933115824,
-                                    "rawPercent": 0.32
+                                    "rawPercent": 3.125
                                 }
                             ],
                             "notation": "Ep4",
@@ -1177,7 +1177,7 @@
                                     "height": 4.0,
                                     "remainderHeigt": 0.7830342577487766,
                                     "irregularHeight": 2.7830342577487768,
-                                    "rawPercent": 0.32
+                                    "rawPercent": 3.125
                                 },
                                 {
                                     "id": "ischart:Guzhangian",
@@ -1298,7 +1298,7 @@
                                     "height": 3.5,
                                     "remainderHeigt": 0.6851549755301796,
                                     "irregularHeight": 2.6851549755301796,
-                                    "rawPercent": 0.32
+                                    "rawPercent": 3.125
                                 },
                                 {
                                     "id": "ischart:Wuliuan",
@@ -1337,7 +1337,7 @@
                                     "height": 4.5,
                                     "remainderHeigt": 0.8809135399673736,
                                     "irregularHeight": 2.8809135399673735,
-                                    "rawPercent": 0.32
+                                    "rawPercent": 3.125
                                 }
                             ],
                             "notation": "Ep3",
@@ -1570,7 +1570,7 @@
                                     "height": 12,
                                     "remainderHeigt": 2.34910277324633,
                                     "irregularHeight": 4.349102773246329,
-                                    "rawPercent": 0.32
+                                    "rawPercent": 3.125
                                 },
                                 {
                                     "id": "ischart:Fortunian",
@@ -1694,7 +1694,7 @@
                                     "height": 9.799999999999955,
                                     "remainderHeigt": 1.9184339314844938,
                                     "irregularHeight": 3.918433931484494,
-                                    "rawPercent": 0.32
+                                    "rawPercent": 3.125
                                 }
                             ],
                             "notation": "Ep1",
@@ -2074,7 +2074,7 @@
                                     "height": 14.300000000000011,
                                     "remainderHeigt": 2.7993474714518785,
                                     "irregularHeight": 4.7993474714518785,
-                                    "rawPercent": 0.32
+                                    "rawPercent": 3.125
                                 },
                                 {
                                     "id": "ischart:Lochkovian",
@@ -2204,7 +2204,7 @@
                                     "height": 8.399999999999977,
                                     "remainderHeigt": 1.6443719412724265,
                                     "irregularHeight": 3.6443719412724267,
-                                    "rawPercent": 0.32
+                                    "rawPercent": 3.125
                                 },
                                 {
                                     "id": "ischart:Pragian",
@@ -2334,7 +2334,7 @@
                                     "height": 3.1999999999999886,
                                     "remainderHeigt": 0.626427406199019,
                                     "irregularHeight": 2.626427406199019,
-                                    "rawPercent": 0.32
+                                    "rawPercent": 3.125
                                 }
                             ],
                             "notation": "D1",
@@ -2592,7 +2592,7 @@
                                     "height": 5.600000000000023,
                                     "remainderHeigt": 1.0962479608482916,
                                     "irregularHeight": 3.0962479608482916,
-                                    "rawPercent": 0.32
+                                    "rawPercent": 3.125
                                 },
                                 {
                                     "id": "ischart:Givetian",
@@ -2722,7 +2722,7 @@
                                     "height": 5.0,
                                     "remainderHeigt": 0.9787928221859707,
                                     "irregularHeight": 2.9787928221859707,
-                                    "rawPercent": 0.32
+                                    "rawPercent": 3.125
                                 }
                             ],
                             "notation": "D2",
@@ -2964,7 +2964,7 @@
                                     "height": 13.300000000000011,
                                     "remainderHeigt": 2.6035889070146845,
                                     "irregularHeight": 4.603588907014684,
-                                    "rawPercent": 0.32
+                                    "rawPercent": 3.125
                                 },
                                 {
                                     "id": "ischart:Frasnian",
@@ -3094,7 +3094,7 @@
                                     "height": 10.5,
                                     "remainderHeigt": 2.0554649265905387,
                                     "irregularHeight": 4.055464926590538,
-                                    "rawPercent": 0.32
+                                    "rawPercent": 3.125
                                 }
                             ],
                             "notation": "D3",
@@ -3476,7 +3476,7 @@
                                     "height": 7.699999999999989,
                                     "remainderHeigt": 1.5073409461663927,
                                     "irregularHeight": 3.5073409461663925,
-                                    "rawPercent": 0.32
+                                    "rawPercent": 3.125
                                 },
                                 {
                                     "id": "ischart:Tremadocian",
@@ -3606,7 +3606,7 @@
                                     "height": 7.699999999999989,
                                     "remainderHeigt": 1.5073409461663927,
                                     "irregularHeight": 3.5073409461663925,
-                                    "rawPercent": 0.32
+                                    "rawPercent": 3.125
                                 }
                             ],
                             "notation": "O1",
@@ -3864,7 +3864,7 @@
                                     "height": 2.6999999999999886,
                                     "remainderHeigt": 0.528548123980422,
                                     "irregularHeight": 2.528548123980422,
-                                    "rawPercent": 0.32
+                                    "rawPercent": 3.125
                                 },
                                 {
                                     "id": "ischart:Darriwilian",
@@ -3994,7 +3994,7 @@
                                     "height": 8.900000000000034,
                                     "remainderHeigt": 1.7422512234910348,
                                     "irregularHeight": 3.742251223491035,
-                                    "rawPercent": 0.32
+                                    "rawPercent": 3.125
                                 }
                             ],
                             "notation": "O2",
@@ -4236,7 +4236,7 @@
                                     "height": 1.3999999999999773,
                                     "remainderHeigt": 0.27406199021206734,
                                     "irregularHeight": 2.2740619902120676,
-                                    "rawPercent": 0.32
+                                    "rawPercent": 3.125
                                 },
                                 {
                                     "id": "ischart:Katian",
@@ -4366,7 +4366,7 @@
                                     "height": 7.800000000000011,
                                     "remainderHeigt": 1.5269168026101165,
                                     "irregularHeight": 3.5269168026101165,
-                                    "rawPercent": 0.32
+                                    "rawPercent": 3.125
                                 },
                                 {
                                     "id": "ischart:Sandbian",
@@ -4496,7 +4496,7 @@
                                     "height": 5.399999999999977,
                                     "remainderHeigt": 1.057096247960844,
                                     "irregularHeight": 3.057096247960844,
-                                    "rawPercent": 0.32
+                                    "rawPercent": 3.125
                                 }
                             ],
                             "notation": "O3",
@@ -4882,7 +4882,7 @@
                                     "height": 2.3000000000000114,
                                     "remainderHeigt": 0.45024469820554874,
                                     "irregularHeight": 2.4502446982055486,
-                                    "rawPercent": 0.32
+                                    "rawPercent": 3.125
                                 },
                                 {
                                     "id": "ischart:Rhuddanian",
@@ -5012,7 +5012,7 @@
                                     "height": 3.0,
                                     "remainderHeigt": 0.5872756933115825,
                                     "irregularHeight": 2.5872756933115824,
-                                    "rawPercent": 0.32
+                                    "rawPercent": 3.125
                                 },
                                 {
                                     "id": "ischart:Telychian",
@@ -5142,7 +5142,7 @@
                                     "height": 5.100000000000023,
                                     "remainderHeigt": 0.9983686786296946,
                                     "irregularHeight": 2.998368678629695,
-                                    "rawPercent": 0.32
+                                    "rawPercent": 3.125
                                 }
                             ],
                             "notation": "S1",
@@ -5400,7 +5400,7 @@
                                     "height": 1.7999999999999545,
                                     "remainderHeigt": 0.3523654159869406,
                                     "irregularHeight": 2.3523654159869407,
-                                    "rawPercent": 0.32
+                                    "rawPercent": 3.125
                                 },
                                 {
                                     "id": "ischart:Ludfordian",
@@ -5530,7 +5530,7 @@
                                     "height": 2.6000000000000227,
                                     "remainderHeigt": 0.5089722675367092,
                                     "irregularHeight": 2.508972267536709,
-                                    "rawPercent": 0.32
+                                    "rawPercent": 3.125
                                 }
                             ],
                             "notation": "S3",
@@ -5697,7 +5697,7 @@
                             "height": 3.8000000000000114,
                             "remainderHeigt": 0.74388254486134,
                             "irregularHeight": 2.74388254486134,
-                            "rawPercent": 0.32
+                            "rawPercent": 3.125
                         },
                         {
                             "id": "ischart:Wenlock",
@@ -5921,7 +5921,7 @@
                                     "height": 3.1000000000000227,
                                     "remainderHeigt": 0.6068515497553064,
                                     "irregularHeight": 2.6068515497553064,
-                                    "rawPercent": 0.32
+                                    "rawPercent": 3.125
                                 },
                                 {
                                     "id": "ischart:Sheinwoodian",
@@ -6051,7 +6051,7 @@
                                     "height": 2.8999999999999773,
                                     "remainderHeigt": 0.5676998368678585,
                                     "irregularHeight": 2.5676998368678587,
-                                    "rawPercent": 0.32
+                                    "rawPercent": 3.125
                                 }
                             ],
                             "notation": "S2",
