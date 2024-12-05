@@ -1,44 +1,83 @@
 
 export type chartNode = {
-    id:string 
-    type:string 
-    rank: string 
-    ratifiedGSSP?: boolean 
+    id: string
+    type: string
+    rank: string
+    ratifiedGSSP?: boolean
     ratifiedGSSA?: boolean
-    isDefinedBy: string 
-    altLabel?:chartLanguage[]
+    isDefinedBy: string
+    altLabel?: chartLanguage[]
     broader?: string[]
-    definition: string 
+    definition: string
     inScheme: string
-    notation: string 
+    notation: string
     prefLabel: chartLanguage
-    hasBeginning:timeMarker
-    hasEnd:timeMarker
+    hasBeginning: timeMarker
+    hasEnd: timeMarker
     narrower?: chartNode[]
-    order:number
-    wasDerivedFrom: string 
-    color: string 
+    order: number
+    wasDerivedFrom: string
+    color: string
     counts: {
         directNarrowers: number
         indirectNarrowers: number
     }
-
+    height: number
+    remainderHeigt: number
+    irregularHeight: number
+    rawPercent: number
     [key: string]: any
 }
 type chartLanguage = {
-    language: string 
-    value: string 
+    language: string
+    value: string
 }
 type timeMarker = {
     inMYA: number | {
-        type: string 
-        value: number 
+        type: string
+        value: number
     }
-    marginOfError?:number | {
-        type: string 
-        value: number 
+    marginOfError?: number | {
+        type: string
+        value: number
     }
-    note:string
+    note: string
+}
+
+export type chartMeta = {
+    id: string
+    type: string
+    conformsTo: string
+    created: string
+    creator: {
+        id: string
+        type: string
+        name: string
+        url: string
+    }
+    modified: string
+    publisher: string
+    versionURI: string
+    versionInfo: string
+    altLabel: chartLanguage[]
+    definition: chartLanguage
+    historyNote: string
+    prefLabel: chartLanguage
+    scopeNote: chartLanguage[]
+    skosVersionInfo: string
+    wasDerivedFrom: string
+    citation: {
+        type: string
+        value: string
+    }
+    copyrightHolder: {
+        id: string
+    }
+    copyrightNotice: chartLanguage
+    license: {
+        id: string
+    }
+
 }
 
 export type root = {
@@ -56,46 +95,46 @@ type LangLabel = {
     language: string
 }
 type HierachyItem = {
-    id:string 
+    id: string
     prefLabel: LangLabel
     altLabel: LangLabel[] | null
 }
 
-type HierachyRecord ={
+type HierachyRecord = {
     narrower: HierachyItem[] | null
     broader: HierachyItem | null
 }
 
-export type Hierachy = Record<string,HierachyRecord>
+export type Hierachy = Record<string, HierachyRecord>
 
-export function getTimeMarker(beginning: timeMarker, end: timeMarker) :string {
+export function getTimeMarker(beginning: timeMarker, end: timeMarker): string {
     // end.inMYA
     let certainty = ""
-    if(beginning.note === "uncertain" || end.note === "uncertain")  {
-        certainty +="~"
+    if (beginning.note === "uncertain" || end.note === "uncertain") {
+        certainty += "~"
     }
-    let isPresent:boolean = false
-    let strTime:string = ""
-    let MarginOfError:string = ""
-    if (typeof end.inMYA === 'number'){
-        isPresent = end?.inMYA === 0 
+    let isPresent: boolean = false
+    let strTime: string = ""
+    let MarginOfError: string = ""
+    if (typeof end.inMYA === 'number') {
+        isPresent = end?.inMYA === 0
         strTime = end?.inMYA.toString()
-        
-    }else{
+
+    } else {
         isPresent = end?.inMYA.value == 0
         strTime = end?.inMYA.value.toString()
         MarginOfError
     }
-    if (end.marginOfError && typeof end.marginOfError == "number"){
+    if (end.marginOfError && typeof end.marginOfError == "number") {
         MarginOfError = end.marginOfError.toString()
-    }else if (end.marginOfError&& !(typeof end.marginOfError == "number")){
+    } else if (end.marginOfError && !(typeof end.marginOfError == "number")) {
         MarginOfError = end.marginOfError.value.toString()
     }
-    if (isPresent){
+    if (isPresent) {
         return 'Present'
     }
 
-    return `${certainty}${strTime} ${MarginOfError!= '' ? '&plusmn; '+ MarginOfError:''}` 
+    return `${certainty}${strTime} ${MarginOfError != '' ? '&plusmn; ' + MarginOfError : ''}`
 }
 
 
@@ -114,9 +153,20 @@ export function getLangVariant(node: chartNode, lang: string) {
     }
     return node.prefLabel.value
 }
+export function getTitleLangVariant(meta: chartMeta, lang: string) {
+    if (Array.isArray(meta.altLabel)) {
+        const alt = meta.altLabel.filter(x => x.language == lang)
+        if (alt.length == 1) {
+            console.log(alt[0].value)
+            return alt[0].value
+        }
+    }
+    console.log(meta.prefLabel.value)
+    return meta.prefLabel.value
+}
 
-export function getLangVarientFromHierachy(node: HierachyItem, lang:string):string{
-    if (node.altLabel){
+export function getLangVarientFromHierachy(node: HierachyItem, lang: string): string {
+    if (node.altLabel) {
         const alt = node.altLabel.filter(x => x.language === lang)
         if (alt.length == 1) {
             return alt[0].value
@@ -145,22 +195,43 @@ export function getLangVariantById(nodeId: string, lang: string) {
 }
 
 const SCALE_OFFSET = 10
-function getTimeMarkerValue(t: timeMarker):number{
-    if (typeof t.inMYA == "number"){
+function getTimeMarkerValue(t: timeMarker): number {
+    if (typeof t.inMYA == "number") {
         return t.inMYA
-    }else{
+    } else {
         return t.inMYA.value
     }
 }
-export function getScaledHeight(scale: scalingFactor, beggining: timeMarker, end: timeMarker) {
+export function getScaledHeight(scale: scalingFactor, beggining: timeMarker, end: timeMarker, rawPercent?: number, irregularHeight?: number, precambrian = false) {
+    const COLHEIGHT = 1200
     const endVal = getTimeMarkerValue(end)
     const beginVal = getTimeMarkerValue(beggining)
     switch (scale.value) {
-        case "none":
+        case "irregular":
+            let ih = ((irregularHeight ?? 10) / 100) * COLHEIGHT
+            if (precambrian) {
+                ih = ih / 2
+            }
+            return `${ih}px`
+        case "equal-rows":
             return "2rem"
+        case "equal":
+            if (!rawPercent) {
+                return ''
+            }
+            let eqh = (rawPercent / 100) * COLHEIGHT
+            if (precambrian) {
+                eqh = eqh / 2
+            }
+            return `${eqh}px`
         case "log":
             return `calc( 1rem + ${(Math.log(endVal - beginVal) < 0 ? 0 : Math.log(endVal - beginVal)) * SCALE_OFFSET}px)`
         case "print":
+            let pp = (((irregularHeight ?? 10) / 100) * COLHEIGHT)/2
+            if (precambrian) {
+                pp = pp / 2
+            }
+            return `${pp}px`
             const print_offset = 5
             return `calc( 1.1rem + ${(Math.log(endVal - beginVal) < 0 ? 0 : Math.log(endVal - beginVal)) * print_offset}px)`
         case "linear":
@@ -170,36 +241,82 @@ export function getScaledHeight(scale: scalingFactor, beggining: timeMarker, end
     }
 }
 
-const intScaleOptions: Record<string,string> = {
-    "none": "Equal",
+const intScaleOptions: Record<string, string> = {
+    "irregular": "Irregular",
+    "equal": "Equal Columns",
+    "equal-rows": "Equal Rows",
     "log": "Logarithmic",
     "linear": "Linear",
     "print": "Print",
 }
-export const scaleOptions = [
-    "none",
-    "log",
-    "linear",
-]
+const hiddenScales = ['print']
+export const scaleOptions = Object.keys(intScaleOptions).filter(x => !hiddenScales.includes(x))
+
 export function getScaleOptionLabel(v: string): string {
     try {
         return intScaleOptions[v]
-    }catch{
-        return "none"
+    } catch {
+        return "equal-rows"
     }
 }
 export function getScaleObj(v: string): scalingFactor {
-return {
-    name:getScaleOptionLabel(v),
-    value:v,
-}
+    return {
+        name: getScaleOptionLabel(v),
+        value: v,
+    }
 }
 
-export function getCachedInfo(target:string){
+export function getCachedInfo(target: string) {
     const val = window.localStorage.getItem("target")
-    if (val == ""|| val === null){
+    if (val == "" || val === null) {
         return {}
     }
     return JSON.parse(val)
 
+}
+
+export function getScopedNote(meta: chartMeta, lang: string) {
+    const scopeNote = meta.scopeNote.filter(x => x.language === lang)
+    if (scopeNote.length != 1) {
+        return meta.scopeNote.filter(x => x.language === "en")[0]
+    }
+    return scopeNote[0]
+}
+
+const colNames = {
+    'Super-Eon': {
+        stratigraphic: "",
+        timescale: "Super Eon",
+    },
+    Eon: {
+        stratigraphic: "Eonothem",
+        timescale: "Eon",
+    },
+    Era: {
+        stratigraphic: "Erathem",
+        timescale: "Era",
+    },
+    Period: {
+        stratigraphic: "System",
+        timescale: "Period",
+    },
+    Epoch: {
+        stratigraphic: "Series",
+        timescale: "Epoch",
+    },
+    Age: {
+        stratigraphic: "Stage",
+        timescale: "Age",
+    },
+}
+export function getColLabel(col: keyof typeof colNames,mode: "stratigraphic" | "timescale" | "both"):string {
+    switch (mode) {
+        case "stratigraphic":
+            return colNames[col].stratigraphic
+        case "timescale":
+            return colNames[col].timescale
+        case "both":
+            return colNames[col].stratigraphic+" / "+colNames[col].timescale
+
+    }
 }

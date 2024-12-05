@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import { type chartNode, type scalingFactor } from "@/utils/util"
 
-
 const props = defineProps<{
     node: chartNode,
     lang: string,
@@ -31,12 +30,12 @@ const emit = defineEmits<{
 <style scoped>
 .grid-7 {
     margin-top: 4rem;
-    --_thin-col: 3rem;
+    --_thin-col: 2rem;
     --_mid-col: 6fr;
     --_wide-col: calc(var(--_thin-col, 3rem) + var(--_mid-col));
     display: grid;
-    grid-template-columns: 3rem 3rem 3rem     3rem 1fr    1fr 1fr ;
-    font-size: 0.6em;
+    grid-template-columns: var(--_thin-col) var(--_thin-col) var(--_thin-col)     var(--_thin-col) 1fr    1fr 1fr ;
+    /* font-size: 0.6em; */
 }
 .grid-7 :deep(div:last-child>.num-age-beginning){
     display:block;

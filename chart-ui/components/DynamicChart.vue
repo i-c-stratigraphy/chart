@@ -1,8 +1,9 @@
 <script setup>
 import ChartGridPrecambrian from "~/components/ChartGridPrecambrian.vue";
-import { onlyUnique, scaleOptions, getScaleOptionLabel, getScaleObj } from "~/utils/util";
+import { onlyUnique, scaleOptions, getScaleOptionLabel, getScaleObj,getTitleLangVariant } from "~/utils/util";
 import { useRouteQuery } from '@vueuse/router'
 import { computed } from "vue";
+// import type {  chartMeta } from "~/utils/util";
 
 const target = useRouteQuery('target', "")
 const selectedLang = useRouteQuery('language', 'en')
@@ -15,12 +16,31 @@ const infoTarget = ref(null)
 const ready = ref(false)
 const error = ref(null)
 const data = ref([])
-
+const meta = ref(undefined)
 const showInfo = computed(() => target.value !== "")
 
+function getMeta(){
+    const apiUrl = useCDN ? 'https://cdn.jsdelivr.net/gh/i-c-stratigraphy/chart-data@gh-pages' : 'https://stratigraphy.org/chart-data/'
+
+    return fetch(`${apiUrl}/chart.meta.json?cachebreaker=${Math.random()}`).then(r => {
+        if (!r.ok || (r.status > 300)) {
+            throw "error"
+        }
+        return r
+    }).then(r => {
+        return r.json()
+    }).then(r => {
+        meta.value = r
+    }).catch((err) => {
+        error.value = { ...error.value, files: [...error.value.files, `chart-${segment}`], message: "Error fetching chart files" }
+        throw err
+    })
+}
 function getSubChart(segment, idx) {
     const apiUrl = useCDN ? 'https://cdn.jsdelivr.net/gh/i-c-stratigraphy/chart-data@gh-pages' : 'https://stratigraphy.org/chart-data/'
-    return fetch(`${apiUrl}/chart.${segment}.json?cachebreaker=${Math.random()}`).then(r => {
+    const seg = segment !== ""? `.${segment}` : ''
+
+    return fetch(`${apiUrl}/chart${seg}.json?cachebreaker=${Math.random()}`).then(r => {
         if (!r.ok || (r.status > 300)) {
             throw "error"
         }
@@ -36,17 +56,22 @@ function getSubChart(segment, idx) {
 }
 const pdfVersion = ref("")
 const downloadVersion = ref("official")
-onMounted(() => {
+onMounted(async () => {
     const timeout = setTimeout(() => { error.value = { message: "Timed out fetching chart data" } }, 20 * 1000)
-    Promise.all([
+    await getMeta()
+    await Promise.all([
         getSubChart(1, 0),
         getSubChart(2, 1),
         getSubChart(3, 2),
         getSubChart(4, 3),
         getSubChart("hierachy", 4),
+        // getSubChart("meta", 5),
     ]).then(all => {
         clearTimeout(timeout)
-        data.value.map(elem => {
+        data.value.forEach(elem => {
+            if (elem.scopedNote){
+                return
+            }
             flattenData(elem)
         });
         infoTarget.value = target.value ? dataLookup.value[target.value] : null
@@ -54,14 +79,12 @@ onMounted(() => {
     }).catch((e) => {
         error.value = { message: `An error occured grabbing chart data ${e}` }
     })
-    fetch("https://api.github.com/repos/i-c-stratigraphy/chart-data/tags", {
-        headers: new Headers({ 'content-type': 'application/json' }),
-    })
-    .then(x => x.json())
-    .then(x => {
-        const regexp = new RegExp(/v(\d)*\.(\d)*\.(\d)*/)
-        pdfVersion.value = x.filter(x=> regexp.test(x.name) )[0].name ?? ''
-    })
+    //"https://api.github.com/repos/i-c-stratigraphy/chart-data/tags"
+    const v = await (await fetch("https://data.jsdelivr.com/v1/packages/gh/i-c-stratigraphy/chart-data")).json()
+    const regexp = new RegExp(/(\d)*\.(\d)*\.(\d)*/)
+    // console.log(v.versions.filter(x=> regexp.test(x.version) )[0].version ?? ''    )
+    pdfVersion.value = v.versions.filter(x=> regexp.test(x.version) )[0].version ?? ''
+
 })
 
 
@@ -115,6 +138,28 @@ const downloadPdf = (e) => {
 watch(dataLookup, (newValue) => {
     infoTarget.value = newValue[target.value]
 }, { deep: true })
+
+const labelOptions = [
+    {
+        label: "Stratigraphic", 
+        value: "stratigraphic"
+    },
+    {
+        label: "Timescale", 
+        value:"timescale"
+    },
+    {
+        label: "Both", 
+        value:"both"
+    }
+]
+const chartLabel = ref(labelOptions[0].value)
+const chartTitle = computed(()=>{
+    if (!meta.value){
+        return 'loading'
+    }
+    return getTitleLangVariant(meta.value, selectedLang.value)
+})
 </script>
 <template>
     <div class="dynamic-chart">
@@ -130,7 +175,7 @@ watch(dataLookup, (newValue) => {
         <div class="grid-5 only-print">
             <div class="cell" style="--_col-span: 1; --_row-span:2"><img src="/IUGSLOGOright.gif" /></div>
             <div class="cell" style="--_col-span: 3; --_row-span:1">
-                <h1>INTERNATIONAL CHRONOSTRATIGRAPHIC CHART</h1>
+                <h1>{{chartTitle}}</h1>
             </div>
             <div class="cell" style="--_col-span: 1; --_row-span:2"><img src="/logo-ics-3D-dark.png" /></div>
             <div class="cell" style="--_col-span: 1; --_row-span:1">
@@ -168,6 +213,12 @@ watch(dataLookup, (newValue) => {
                             </option>
                         </select>
                     </label>
+                    <label> Labels:
+                        <select v-model="chartLabel">
+                            <option v-for="label in labelOptions" :value="label.value">{{ label.label }}
+                            </option>
+                        </select>
+                    </label>
                     <label v-if="pdfVersion != ''"> Download:
                         <select v-model="downloadVersion">
                             <option value="official"> Official</option>
@@ -179,14 +230,25 @@ watch(dataLookup, (newValue) => {
                     </label>
                 </div>
                 <div class="grid-4">
-                    <ChartGrid :node="data[0]" :lang="selectedLang" :key="'1' + selectedLang"
+                    <ChartGridCombined 
+                    v-for="num in 4" 
+                        :node="data[num-1]" 
+                        :lang="selectedLang" 
+                        :key="(num-1) + selectedLang"
+                        :scaling="getScaleObj(selectedScale)" 
+                        :kind="num===4?'precambrian':'default'" 
+                        :meta="meta"
+                        :label="chartLabel"
+                        @view="handleView" 
+                    />
+                    <!-- <ChartGrid :node="data[0]" :lang="selectedLang" :key="'1' + selectedLang"
                         :scaling="getScaleObj(selectedScale)" @view="handleView" />
                     <ChartGrid :node="data[1]" :lang="selectedLang" :key="'2' + selectedLang"
                         :scaling="getScaleObj(selectedScale)" @view="handleView" />
                     <ChartGrid :node="data[2]" :lang="selectedLang" :key="'3' + selectedLang"
                         :scaling="getScaleObj(selectedScale)" @view="handleView" />
                     <ChartGridPrecambrian :node="data[3]" :lang="selectedLang" :key="'4' + selectedLang"
-                        :scaling="getScaleObj(selectedScale)" @view="handleView" />
+                        :scaling="getScaleObj(selectedScale)" @view="handleView" /> -->
                 </div>
             </div>
         </div>
@@ -208,6 +270,9 @@ body {
     .only-print {
         display: grid !important;
     }
+    .dynamic-chart {
+        box-shadow: none !important;
+}
 }
 
 .dynamic-chart {
@@ -248,6 +313,7 @@ body {
     gap: 1rem;
     box-shadow: none;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .lightbox {

@@ -1,7 +1,7 @@
 <template>
     <StratigraphyHeader class="no-print" />
     <DynamicChart />
-    <div class="widther">
+    <div class="widther no-print">
         <footer>
             © 2013-2023 International Commission on Stratigraphy, all rights reserved
         </footer>
@@ -43,5 +43,8 @@ footer {
     color: white;
     text-align: center;
     padding: 25px;
+}
+@media print{
+    body{background-color: white}
 }
 </style>

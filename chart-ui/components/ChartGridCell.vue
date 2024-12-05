@@ -23,9 +23,26 @@ const rankSplit = (props.node.rank + '').split("/")
 const rank = rankSplit[rankSplit.length - 1] || "Age"
 let colStart = ranking[rank]!
 let epochDelta = 1
+let useShortNames = false
 if (rank === "Epoch" && props.parentRank != "Sub-Period") {
     colStart = 4
     epochDelta = 2
+}
+if (rank === "Epoch" && props.parentRank === "Sub-Period") {
+    useShortNames = true
+}
+function transformNames(name: string):string {
+    if (!useShortNames){
+        return name 
+    }
+    if (name.startsWith('Late')){
+        return "Upper"
+    }else if (name.startsWith('Middle')){
+        return "Middle"
+    }else if (name.startsWith('Early')){
+        return "Lower"
+    }
+    return name
 }
 
 const handleClick = () => {
@@ -34,17 +51,19 @@ const handleClick = () => {
 
 </script>
 <template>
-
-    <div class=" cell" @click="handleClick" :style="`
-    --_col-start:${colStart};
-    --_col-end:${!props.node.narrower ? 7 : colStart + epochDelta};
-    --_bg-color:${props.node.color};
-    --_row-span:${props.node.counts.indirectNarrowers};
-    --_fg-color:${contrastColor(hexToRgb(props.node.color))};
-    --_height:${!props.node.narrower ? getScaledHeight(props.scaling, props.node.hasEnd, props.node.hasBeginning):''};
-    --_width: ${rank == 'Sub-Period' || colStart < 4 ? `3rem` : ``}
+<!--     
+ -->
+    <div :class="`cell rank-${rank}`" @click="handleClick" :style="`
+        --_row-span:${props.node.counts.indirectNarrowers??1};
+        --_col-start:${colStart};
+        --_col-end:${!props.node.narrower ? 7 : colStart + epochDelta};
+        --_bg-color:${props.node.color};
+        --_row-span:${props.node.counts.indirectNarrowers};
+        --_fg-color:${contrastColor(hexToRgb(props.node.color))};
+        --_width: ${rank == 'Sub-Period' || colStart < 4 ? `3rem` : ``};
+        --_height:${!props.node.narrower ? getScaledHeight(props.scaling, props.node.hasEnd, props.node.hasBeginning,props.node.rawPercent, props.node.irregularHeight):''};
     `">
-        <p :class="`label ${rank == 'Sub-Period' || colStart < 4 ? `v-text` : ``}`">{{ getLangVariant(props.node, props.lang)
+        <p :class="`label ${rank == 'Sub-Period' || colStart < 4 ? `v-text` : ``}`">{{ transformNames(getLangVariant(props.node, props.lang))
             }}</p>
         <template v-if="!props.node.narrower">
             <div class="gss-icon" v-if="props.node.ratifiedGSSA">
@@ -67,6 +86,13 @@ const handleClick = () => {
     </div>
 </template>
 <style scoped>
+.label{
+    margin-top:0.25rem;
+}
+.rank-Sub-Period{
+    /* outline-color: magenta !important; */
+    margin-left: -0.5rem !important;
+}
 .cell {
     outline: black solid 1px;
     position: relative;
@@ -76,17 +102,19 @@ const handleClick = () => {
     grid-column-end: var(--_col-end);
     grid-row: span var(--_row-span);
     height: 100%;
-    height: var(--_height, 100%);
+    height: var(--_height, 2%);
     max-width: var(--_width);
-    padding: 0.25rem;
+    /* padding: 0.25rem; */
     overflow: hidden;
     cursor: pointer;
-    min-height: 1.25rem;
+    min-height: 1rem;
+     /* min-height: 1.25rem; */
 }
 
 p {
     padding: 0;
     margin: 0;
+    word-break:normal;
 }
 
 .text-cell {
@@ -109,6 +137,7 @@ p {
     position: absolute;
     bottom: 0;
     right: 0;
+    margin-bottom: -5px;
 }
 
 .num-age {

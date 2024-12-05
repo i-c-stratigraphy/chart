@@ -14,13 +14,13 @@ const emit = defineEmits<{
 
 </script>
 <template>
-    <div>
+     <div class="grid-wrapper">
         <div class="grid-5 precambrian-grid">
             <div class="header v-text">Super Eon</div>
             <div class="header v-text">Eon</div>
             <div class="header">Era</div>
             <div class="header">Period
-                <span class="v-text gssp-text ">GSSP/GSSA</span>
+                <span class="v-text gssp-text ">GSSP / GSSA</span>
             </div>
             <div class="header">Numeric Age</div>
             <ChartGridPrecambrianCell :lang="props.lang" :node="props.node" :parent-rank="''" :scaling="props.scaling"
@@ -53,19 +53,22 @@ const emit = defineEmits<{
 <style scoped>
 .grid-5 {
     margin-top: 4rem;
-    --_thin-col: 2fr;
+    --_thin-col: 2rem;
     --_mid-col: 6fr;
     display: grid;
     grid-template-columns:
-        repeat(2, var(--_thin-col)) repeat(3, var(--_wide-col));
-    font-size: 0.6em;
+        repeat(2, var(--_thin-col)) repeat(3, var(--_wide-col, 1fr));
+    /* font-size: 0.6em; */
 }
 
 .header {
     position: relative;
-    width: 100%;
+    /* width: 100%; */
+    /* margin-bottom:-1rem; */
 }
-
+div.header:not(.v-text){
+    padding-left:5px;
+}
 .col-span-2 {
     grid-column: span 2;
 }
@@ -87,6 +90,8 @@ const emit = defineEmits<{
     bottom: 0;
     transform-origin: 0 0;
     transform: rotate(-90deg) translateY(400%);
+    word-break: normal;
+    /* font-size: 0.8em;; */
 }
 
 @media print {

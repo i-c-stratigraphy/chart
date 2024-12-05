@@ -34,7 +34,7 @@ const handleClick = ()=>{
     --_bg-color:${node.color};
     --_row-span:${node.counts.indirectNarrowers};
     --_fg-color:${contrastColor(hexToRgb(node.color)!)};
-    --_height:${!node.narrower ? getScaledHeight(props.scaling,node.hasEnd,node.hasBeginning):''};
+    --_height:${!node.narrower ? getScaledHeight(props.scaling,node.hasEnd,node.hasBeginning,props.node.rawPercent, props.node.irregularHeight,true):''};
     `"
     >
         <p :class="`label ${(rank === 'Eon' && !node.narrower )|| colStart >=3?``:`v-text`}`">{{ getLangVariant(node, props.lang) }}</p>
@@ -61,6 +61,9 @@ const handleClick = ()=>{
     </div>
 </template>
 <style scoped>
+.label{
+    margin-top:0.25rem;
+}
 .cell{
     outline:black solid 1px;
     position:relative;
@@ -70,10 +73,18 @@ const handleClick = ()=>{
     grid-column-end:var(--_col-end);
     grid-row: span var(--_row-span);
     height:100%;
-    height: var(--_height);
+    height: var(--_height, 100%);
+    overflow:hidden;
     cursor:pointer;
-    min-height: 1.25rem;
+    min-height: 1rem;
+    /* 1.25rem; */
 }
+p {
+    padding: 0;
+    margin: 0;
+    word-break:normal;
+}
+
 .text-cell{
     grid-column-start: 5;
     grid-column-end:6;
@@ -92,11 +103,12 @@ const handleClick = ()=>{
     position:absolute;
     bottom:0;
     right:0;
+    margin-bottom: -5px;
 }
 .num-age{
     position:absolute;
     left:50%;
-    transform: translateX(-50%);
+    transform: translate(-50%, -50%);;
     top:0px;
     width:max-content;
 }

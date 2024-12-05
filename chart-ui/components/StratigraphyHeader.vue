@@ -81,7 +81,7 @@ nav {
     display: flex;
     justify-content: space-between;
     margin-bottom: 0.25rem;
-    ;
+    flex-wrap: wrap;
 }
 
 nav>a {
