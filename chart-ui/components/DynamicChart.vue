@@ -124,7 +124,7 @@ const handleView = (node) => {
     infoTarget.value = dataLookup.value[target.value]
 }
 const downlaodLink = computed(()=>{
-    return `https://github.com/i-c-stratigraphy/chart-data/releases/download/${pdfVersion.value}/chart-${downloadVersion.value}.pdf`
+    return `https://github.com/i-c-stratigraphy/chart-data/releases/download/v${pdfVersion.value}/chart-${downloadVersion.value}.pdf`
 })
 const downloadPdf = (e) => {
     const link = downlaodLink.value
