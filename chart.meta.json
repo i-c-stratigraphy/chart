@@ -46,6 +46,42 @@
             {
                 "language": "ko",
                 "value": "국 제 층 서 위 원 회"
+            },
+            {
+                "language": "nl",
+                "value": "Internationale Commissie voor Stratigrafie"
+            },
+            {
+                "language": "no",
+                "value": "Den internasjonale stratigrafiske kommisjon"
+            },
+            {
+                "language": "pt",
+                "value": "Comissão Internacional de Estratigrafia"
+            },
+            {
+                "language": "sk",
+                "value": "Medzinárodná stratigrafická komisia"
+            },
+            {
+                "language": "es",
+                "value": "Comisión Internacional de Estratigrafía"
+            },
+            {
+                "language": "tr",
+                "value": "Uluslararası Stratigrafi Komisyonu"
+            },
+            {
+                "language": "ru",
+                "value": "Международная комиссия по стратиграфии"
+            },
+            {
+                "language": "eu",
+                "value": "Estratigrafiako Nazioarteko Batzordea"
+            },
+            {
+                "language": "lt",
+                "value": "Tarptautinė stratigrafijos komisija"
             }
         ],
         "name": "International Commission on Stratigraphy",
