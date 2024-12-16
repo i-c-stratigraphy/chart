@@ -8262,5 +8262,14 @@ Kaynak gösterimi: Cohen, K.M., Finney, S.C., Gibbard, P.L. & Fan, J.-X. (2013; 
         "Commissione Internazionale di Stratigrafia"@it ,
         "国際層序委員会"@jp ,
         "국 제 층 서 위 원 회"@ko ;
+        "Internationale Commissie voor Stratigrafie"@nl ,
+        "Den internasjonale stratigrafiske kommisjon"@no ,
+        "Comissão Internacional de Estratigrafia"@pt ,
+        "Medzinárodná stratigrafická komisia"@sk ,
+        "Comisión Internacional de Estratigrafía"@es ,
+        "Uluslararası Stratigrafi Komisyonu"@tr ,
+        "Международная комиссия по стратиграфии"@ru ;
+        "Estratigrafiako Nazioarteko Batzordea"@eu ,
+        "Tarptautinė stratigrafijos komisija"@lt .
     sdo:url "https://stratigraphy.org"^^xsd:anyURI ;
 .
