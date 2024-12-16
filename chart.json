@@ -118,6 +118,48 @@
     "creator": {
         "id": "https://linked.data.gov.au/org/ics",
         "type": "sdo:Organization",
+        "sdo:alternateName": [
+            {
+                "language": "ca",
+                "value": "Comissió Internacional d’Estratigrafia"
+            },
+            {
+                "language": "zh",
+                "value": "国 际 地 层 委 员 会"
+            },
+            {
+                "language": "cz",
+                "value": "Mezinárodní stratigrafická komise"
+            },
+            {
+                "language": "fi",
+                "value": "Kansainvälinen stratigrafian komitea"
+            },
+            {
+                "language": "fr",
+                "value": "Commission Internationale de Stratigraphie"
+            },
+            {
+                "language": "de",
+                "value": "Internationale Stratigraphische Kommission"
+            },
+            {
+                "language": "hu",
+                "value": "Nemzetközi Rétegtani Bizottság"
+            },
+            {
+                "language": "it",
+                "value": "Commissione Internazionale di Stratigrafia"
+            },
+            {
+                "language": "jp",
+                "value": "国際層序委員会"
+            },
+            {
+                "language": "ko",
+                "value": "국 제 층 서 위 원 회"
+            }
+        ],
         "name": "International Commission on Stratigraphy",
         "url": "https://stratigraphy.org"
     },
