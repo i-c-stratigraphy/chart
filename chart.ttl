@@ -5330,12 +5330,6 @@ ischart:UpperMississippian
     sdo:color "#B3BE6C"^^ischart:RGBHex ;
 .
 
-<https://linked.data.gov.au/org/ics>
-    a sdo:Organization ;
-    sdo:name "International Commission on Stratigraphy" ;
-    sdo:url "https://stratigraphy.org"^^xsd:anyURI ;
-.
-
 ischart:CambrianSeries2
     a skos:Concept ;
     gts:rank rank:Epoch ;
@@ -8254,3 +8248,19 @@ Kaynak gösterimi: Cohen, K.M., Finney, S.C., Gibbard, P.L. & Fan, J.-X. (2013; 
 """@zh ;
 .
 
+<https://linked.data.gov.au/org/ics>
+    a sdo:Organization ;
+    sdo:name "International Commission on Stratigraphy" ;
+    sdo:alternateName
+        "Comissió Internacional d’Estratigrafia"@ca ,
+        "国 际 地 层 委 员 会"@zh ,
+        "Mezinárodní stratigrafická komise"@cz ,
+        "Kansainvälinen stratigrafian komitea"@fi ,
+        "Commission Internationale de Stratigraphie"@fr ,
+        "Internationale Stratigraphische Kommission"@de ,
+        "Nemzetközi Rétegtani Bizottság"@hu ,
+        "Commissione Internazionale di Stratigrafia"@it ,
+        "国際層序委員会"@jp ,
+        "국 제 층 서 위 원 회"@ko ;
+    sdo:url "https://stratigraphy.org"^^xsd:anyURI ;
+.
