@@ -44,6 +44,10 @@ type timeMarker = {
     note: string
 }
 
+export interface sdoname {
+    name: string 
+    alternateName: chartLanguage[]
+}
 export type chartMeta = {
     id: string
     type: string
@@ -54,6 +58,7 @@ export type chartMeta = {
         type: string
         name: string
         url: string
+        alternateName: chartLanguage[]
     }
     modified: string
     publisher: string
@@ -164,6 +169,17 @@ export function getTitleLangVariant(meta: chartMeta, lang: string) {
     console.log(meta.prefLabel.value)
     return meta.prefLabel.value
 }
+export function getNameLangVariant<t extends sdoname>(meta: t, lang: string) {
+    if (Array.isArray(meta.alternateName)) {
+        const alt = meta.alternateName.filter(x => x.language == lang)
+        if (alt.length == 1) {
+            console.log(alt[0].value)
+            return alt[0].value
+        }
+    }
+    console.log(meta.name)
+    return meta.name
+}
 
 export function getLangVarientFromHierachy(node: HierachyItem, lang: string): string {
     if (node.altLabel) {
@@ -227,7 +243,7 @@ export function getScaledHeight(scale: scalingFactor, beggining: timeMarker, end
         case "log":
             return `calc( 1rem + ${(Math.log(endVal - beginVal) < 0 ? 0 : Math.log(endVal - beginVal)) * SCALE_OFFSET}px)`
         case "print":
-            let pp = (((irregularHeight ?? 10) / 100) * COLHEIGHT)/2
+            let pp = (((irregularHeight ?? 10) / 100) * COLHEIGHT)/1.5
             if (precambrian) {
                 pp = pp / 2
             }

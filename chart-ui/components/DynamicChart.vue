@@ -160,6 +160,15 @@ const chartTitle = computed(()=>{
     }
     return getTitleLangVariant(meta.value, selectedLang.value)
 })
+const commissionTitle = computed(()=>{
+    if (!meta.value){
+        return 'loading'
+    }
+    if (!meta.value.creator){
+        return 'loading'
+    }
+    return getNameLangVariant(meta.value.creator, selectedLang.value)
+})
 </script>
 <template>
     <div class="dynamic-chart">
@@ -172,7 +181,7 @@ const chartTitle = computed(()=>{
             </div>
         </teleport>
 
-        <div class="grid-5 only-print">
+        <div class="grid-5 only-xprint">
             <div class="cell" style="--_col-span: 1; --_row-span:2"><img src="/IUGSLOGOright.gif" /></div>
             <div class="cell" style="--_col-span: 3; --_row-span:1">
                 <h1>{{chartTitle}}</h1>
@@ -182,7 +191,7 @@ const chartTitle = computed(()=>{
                 <h2>www.stratigraphy.org</h2>
             </div>
             <div class="cell" style="--_col-span: 1; --_row-span:1">
-                <h2>International Commision on Stratigraphy</h2>
+                <h2>{{commissionTitle}}</h2>
             </div>
             <div class="cell" style="--_col-span: 1; --_row-span:1">
                 <h2>v2023/09</h2>
