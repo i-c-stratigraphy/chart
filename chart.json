@@ -27,6 +27,7 @@
         "license": "sdo:license",
         "scopeNote": "skos:scopeNote",
         "historyNote": "skos:historyNote",
+        "alternateName": "sdo:alternateName",
         "conformsTo": {
             "@id": "dcterms:conformsTo",
             "@type": "@id"
@@ -118,7 +119,7 @@
     "creator": {
         "id": "https://linked.data.gov.au/org/ics",
         "type": "sdo:Organization",
-        "sdo:alternateName": [
+        "alternateName": [
             {
                 "language": "ca",
                 "value": "Comissió Internacional d’Estratigrafia"

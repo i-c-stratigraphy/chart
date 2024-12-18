@@ -6,7 +6,7 @@
     "creator": {
         "id": "https://linked.data.gov.au/org/ics",
         "type": "sdo:Organization",
-        "sdo:alternateName": [
+        "alternateName": [
             {
                 "language": "ca",
                 "value": "Comissió Internacional d’Estratigrafia"
