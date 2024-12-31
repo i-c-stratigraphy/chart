@@ -1,0 +1,1 @@
+*{box-sizing:border-box}.only-print{display:none!important}@media print{.no-print{display:none;visibility:hidden}.only-print{display:unset!important}p{font-size:.6em}.grid-7,.precambrian-grid{margin-top:2rem!important}}@page{margin:0}
