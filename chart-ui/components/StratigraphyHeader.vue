@@ -54,7 +54,7 @@ onUnmounted(() => {
 
             <h1>Chronostratigraphic Chart</h1>
             <p>
-                This page contains the latest version of the Chronostratigraphic Chart (v2024-11) which visually
+                This page contains the latest version of the Chronostratigraphic Chart (v2024-12) which visually
                 presents
                 the time periods and stratigraphic
                 layers of Earth's geological history. It is available in multiple languages.</p>

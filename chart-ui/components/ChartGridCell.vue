@@ -62,7 +62,7 @@ const handleClick = () => {
         --_fg-color:${contrastColor(hexToRgb(props.node.color))};
         --_width: ${rank == 'Sub-Period' || colStart < 4 ? `3rem` : ``};
         --_height:${!props.node.narrower ? getScaledHeight(props.scaling, props.node.hasEnd, props.node.hasBeginning,props.node.rawPercent, props.node.irregularHeight):''};
-    `">
+    `" :title=" transformNames(getLangVariant(props.node, props.lang))">
         <p :class="`label ${rank == 'Sub-Period' || colStart < 4 ? `v-text` : ``}`">{{ transformNames(getLangVariant(props.node, props.lang))
             }}</p>
         <template v-if="!props.node.narrower">
@@ -87,13 +87,17 @@ const handleClick = () => {
 </template>
 <style scoped>
 .label{
-    margin-top:0.25rem;
+    /* margin-top:0.25rem; */
+    font-size: 13px;
+    line-height: 13px;
 }
 .rank-Sub-Period{
     /* outline-color: magenta !important; */
     margin-left: -0.5rem !important;
 }
 .cell {
+    container-type: inline-size;
+    container-name: cell;
     outline: black solid 1px;
     position: relative;
     background-color: var(--_bg-color);
@@ -110,7 +114,13 @@ const handleClick = () => {
     min-height: 1rem;
      /* min-height: 1.25rem; */
 }
-
+@container (max-height: 2rem) {
+    p.label {
+        margin:0;
+        font-size: 10px;
+        line-height: 1;
+    }
+}
 p {
     padding: 0;
     margin: 0;
@@ -125,12 +135,16 @@ p {
     justify-content: baseline;
     text-align: center;
     height: 100%;
+    font-size: 13px;
 }
 
 .v-text {
     display: inline-block;
     transform-origin: 0 0;
     transform: rotate(-90deg) translateX(-100%);
+    height:100px; 
+    width:500px;
+    text-align: end;
 }
 
 .gss-icon {

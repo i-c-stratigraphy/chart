@@ -27,7 +27,7 @@
     }
 }
 @page {
-  size: A3 landscape;
+  /* size: A3 landscape; */
   margin:0px;
 }
 

@@ -35,7 +35,7 @@ const handleClick = ()=>{
     --_row-span:${node.counts.indirectNarrowers};
     --_fg-color:${contrastColor(hexToRgb(node.color)!)};
     --_height:${!node.narrower ? getScaledHeight(props.scaling,node.hasEnd,node.hasBeginning,props.node.rawPercent, props.node.irregularHeight,true):''};
-    `"
+    `" :title="getLangVariant(node, props.lang)"
     >
         <p :class="`label ${(rank === 'Eon' && !node.narrower )|| colStart >=3?``:`v-text`}`">{{ getLangVariant(node, props.lang) }}</p>
         <template v-if="!node.narrower">
@@ -62,7 +62,9 @@ const handleClick = ()=>{
 </template>
 <style scoped>
 .label{
-    margin-top:0.25rem;
+    /* margin-top:0.25rem; */
+    font-size: 13px;
+    line-height: 13px;
 }
 .cell{
     outline:black solid 1px;
@@ -93,11 +95,16 @@ p {
     justify-content: baseline;
     text-align: center;
     height:100%;
+    font-size: 13px;
 }
 .v-text {
     display: inline-block;
     transform-origin: 0 0;
     transform: rotate(-90deg) translateX(-100%);
+    /* outline:lime 10px solid; */
+    height:100px; 
+    width:500px;
+    text-align: end;
 }
 .gss-icon{
     position:absolute;

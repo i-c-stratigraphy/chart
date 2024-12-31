@@ -219,7 +219,7 @@ function getTimeMarkerValue(t: timeMarker): number {
     }
 }
 export function getScaledHeight(scale: scalingFactor, beggining: timeMarker, end: timeMarker, rawPercent?: number, irregularHeight?: number, precambrian = false) {
-    const COLHEIGHT = 1200
+    const COLHEIGHT = 1600 //1200
     const endVal = getTimeMarkerValue(end)
     const beginVal = getTimeMarkerValue(beggining)
     switch (scale.value) {
@@ -243,7 +243,7 @@ export function getScaledHeight(scale: scalingFactor, beggining: timeMarker, end
         case "log":
             return `calc( 1rem + ${(Math.log(endVal - beginVal) < 0 ? 0 : Math.log(endVal - beginVal)) * SCALE_OFFSET}px)`
         case "print":
-            let pp = (((irregularHeight ?? 10) / 100) * COLHEIGHT)/1.5
+            let pp = (((irregularHeight ?? 10) / 100) * (COLHEIGHT)/2.1)
             if (precambrian) {
                 pp = pp / 2
             }
@@ -301,7 +301,7 @@ export function getScopedNote(meta: chartMeta, lang: string) {
 
 const colNames = {
     'Super-Eon': {
-        stratigraphic: "",
+        stratigraphic: "Super Eonothem",
         timescale: "Super Eon",
     },
     Eon: {

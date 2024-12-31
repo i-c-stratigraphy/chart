@@ -1,6 +1,6 @@
 <script setup>
 import ChartGridPrecambrian from "~/components/ChartGridPrecambrian.vue";
-import { onlyUnique, scaleOptions, getScaleOptionLabel, getScaleObj,getTitleLangVariant } from "~/utils/util";
+import { onlyUnique, scaleOptions, getScaleOptionLabel, getScaleObj, getTitleLangVariant } from "~/utils/util";
 import { useRouteQuery } from '@vueuse/router'
 import { computed } from "vue";
 // import type {  chartMeta } from "~/utils/util";
@@ -19,7 +19,7 @@ const data = ref([])
 const meta = ref(undefined)
 const showInfo = computed(() => target.value !== "")
 
-function getMeta(){
+function getMeta() {
     const apiUrl = useCDN ? 'https://cdn.jsdelivr.net/gh/i-c-stratigraphy/chart-data@gh-pages' : 'https://stratigraphy.org/chart-data/'
 
     return fetch(`${apiUrl}/chart.meta.json?cachebreaker=${Math.random()}`).then(r => {
@@ -38,7 +38,7 @@ function getMeta(){
 }
 function getSubChart(segment, idx) {
     const apiUrl = useCDN ? 'https://cdn.jsdelivr.net/gh/i-c-stratigraphy/chart-data@gh-pages' : 'https://stratigraphy.org/chart-data/'
-    const seg = segment !== ""? `.${segment}` : ''
+    const seg = segment !== "" ? `.${segment}` : ''
 
     return fetch(`${apiUrl}/chart${seg}.json?cachebreaker=${Math.random()}`).then(r => {
         if (!r.ok || (r.status > 300)) {
@@ -69,7 +69,7 @@ onMounted(async () => {
     ]).then(all => {
         clearTimeout(timeout)
         data.value.forEach(elem => {
-            if (elem.scopedNote){
+            if (elem.scopedNote) {
                 return
             }
             flattenData(elem)
@@ -83,8 +83,8 @@ onMounted(async () => {
     const v = await (await fetch("https://data.jsdelivr.com/v1/packages/gh/i-c-stratigraphy/chart-data")).json()
     const regexp = new RegExp(/(\d)*\.(\d)*\.(\d)*/)
     // console.log(v.versions.filter(x=> regexp.test(x.version) )[0].version ?? ''    )
-    pdfVersion.value = v.versions.filter(x=> regexp.test(x.version) )[0].version ?? ''
-
+    pdfVersion.value = v.versions.filter(x => regexp.test(x.version))[0].version ?? ''
+    console.log(v.versions.filter(x => regexp.test(x.version)))
 })
 
 
@@ -123,7 +123,7 @@ const handleView = (node) => {
     target.value = node
     infoTarget.value = dataLookup.value[target.value]
 }
-const downlaodLink = computed(()=>{
+const downlaodLink = computed(() => {
     return `https://github.com/i-c-stratigraphy/chart-data/releases/download/v${pdfVersion.value}/chart-${downloadVersion.value}.pdf`
 })
 const downloadPdf = (e) => {
@@ -141,30 +141,31 @@ watch(dataLookup, (newValue) => {
 
 const labelOptions = [
     {
-        label: "Stratigraphic", 
+        label: "Both",
+        value: "both"
+    },
+    {
+        label: "Stratigraphic",
         value: "stratigraphic"
     },
     {
-        label: "Timescale", 
-        value:"timescale"
+        label: "Timescale",
+        value: "timescale"
     },
-    {
-        label: "Both", 
-        value:"both"
-    }
+
 ]
 const chartLabel = ref(labelOptions[0].value)
-const chartTitle = computed(()=>{
-    if (!meta.value){
+const chartTitle = computed(() => {
+    if (!meta.value) {
         return 'loading'
     }
     return getTitleLangVariant(meta.value, selectedLang.value)
 })
-const commissionTitle = computed(()=>{
-    if (!meta.value){
+const commissionTitle = computed(() => {
+    if (!meta.value) {
         return 'loading'
     }
-    if (!meta.value.creator){
+    if (!meta.value.creator) {
         return 'loading'
     }
     return getNameLangVariant(meta.value.creator, selectedLang.value)
@@ -181,20 +182,20 @@ const commissionTitle = computed(()=>{
             </div>
         </teleport>
 
-        <div class="grid-5 only-xprint">
+        <div class="grid-5 only-print" v-if="meta">
             <div class="cell" style="--_col-span: 1; --_row-span:2"><img src="/IUGSLOGOright.gif" /></div>
             <div class="cell" style="--_col-span: 3; --_row-span:1">
-                <h1>{{chartTitle}}</h1>
+                <h1>{{ chartTitle }}</h1>
             </div>
             <div class="cell" style="--_col-span: 1; --_row-span:2"><img src="/logo-ics-3D-dark.png" /></div>
             <div class="cell" style="--_col-span: 1; --_row-span:1">
-                <h2>www.stratigraphy.org</h2>
+                <h2>{{  meta ? meta.creator?.url :"www.stratigraphy.org"}}</h2>
             </div>
             <div class="cell" style="--_col-span: 1; --_row-span:1">
-                <h2>{{commissionTitle}}</h2>
+                <h2>{{ commissionTitle }}</h2>
             </div>
             <div class="cell" style="--_col-span: 1; --_row-span:1">
-                <h2>v2023/09</h2>
+                <h2>v{{  meta.versionInfo.replace("-","/")}}</h2>
             </div>
         </div>
 
@@ -230,26 +231,18 @@ const commissionTitle = computed(()=>{
                     </label>
                     <label v-if="pdfVersion != ''"> Download:
                         <select v-model="downloadVersion">
-                            <option value="official"> Official</option>
+                            <option value="official"> Main</option>
                             <option v-for="lang in langs" :keye="lang" :value="lang"> {{ languageNames.of(lang) }} ({{
                                 new Intl.DisplayNames([lang], { type: 'language' }).of(lang) }})
                             </option>
                         </select>
-                        <button @click="downloadPdf">Chart PDF</button>
+                        <button @click="downloadPdf">Data-generated PDF (test version)</button>
                     </label>
                 </div>
                 <div class="grid-4">
-                    <ChartGridCombined 
-                    v-for="num in 4" 
-                        :node="data[num-1]" 
-                        :lang="selectedLang" 
-                        :key="(num-1) + selectedLang"
-                        :scaling="getScaleObj(selectedScale)" 
-                        :kind="num===4?'precambrian':'default'" 
-                        :meta="meta"
-                        :label="chartLabel"
-                        @view="handleView" 
-                    />
+                    <ChartGridCombined v-for="num in 4" :node="data[num - 1]" :lang="selectedLang"
+                        :key="(num - 1) + selectedLang" :scaling="getScaleObj(selectedScale)"
+                        :kind="num === 4 ? 'precambrian' : 'default'" :meta="meta" :label="chartLabel" @view="handleView" />
                     <!-- <ChartGrid :node="data[0]" :lang="selectedLang" :key="'1' + selectedLang"
                         :scaling="getScaleObj(selectedScale)" @view="handleView" />
                     <ChartGrid :node="data[1]" :lang="selectedLang" :key="'2' + selectedLang"
@@ -279,9 +272,10 @@ body {
     .only-print {
         display: grid !important;
     }
+
     .dynamic-chart {
         box-shadow: none !important;
-}
+    }
 }
 
 .dynamic-chart {
@@ -382,12 +376,18 @@ body {
 }
 
 @media print {
+    .grid-5 h1{
+        font-size: 1.9em;
+        font-weight:500
 
-    .grid-5 h1,
+    }
+    /* .grid-5 h1, */
     .grid-5 h2 {
-        font-size: 0.6em;
+        font-size: 1.6em;
         margin-top: 0px
-    }   .grid-5 img {
+    }
+
+    .grid-5 img {
         max-height: 4rem;
     }
 
