@@ -2,7 +2,10 @@
     "id": "ischart:Phanerozoic",
     "type": "skos:Concept",
     "rank": "http://resource.geosciml.org/ontology/timescale/rank/Eon",
-    "ratifiedGSSP": true,
+    "ratifiedGSSP": {
+        "type": "xsd:boolean",
+        "value": true
+    },
     "isDefinedBy": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
     "altLabel": [
         {
@@ -93,7 +96,10 @@
             "id": "ischart:Paleozoic",
             "type": "skos:Concept",
             "rank": "http://resource.geosciml.org/ontology/timescale/rank/Era",
-            "ratifiedGSSP": true,
+            "ratifiedGSSP": {
+                "type": "xsd:boolean",
+                "value": true
+            },
             "isDefinedBy": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
             "altLabel": [
                 {
@@ -195,7 +201,10 @@
                     "id": "ischart:Cambrian",
                     "type": "skos:Concept",
                     "rank": "http://resource.geosciml.org/ontology/timescale/rank/Period",
-                    "ratifiedGSSP": true,
+                    "ratifiedGSSP": {
+                        "type": "xsd:boolean",
+                        "value": true
+                    },
                     "isDefinedBy": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
                     "altLabel": [
                         {
@@ -476,21 +485,36 @@
                                         "value": "Cambrian-Stage 3"
                                     },
                                     "hasBeginning": {
-                                        "inMYA": 521,
+                                        "inMYA": {
+                                            "type": "xsd:integer",
+                                            "value": 521
+                                        },
                                         "note": "uncertain"
                                     },
                                     "hasEnd": {
-                                        "inMYA": 514,
+                                        "inMYA": {
+                                            "type": "xsd:integer",
+                                            "value": 514
+                                        },
                                         "note": "uncertain"
                                     },
                                     "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
-                                    "order": 153,
+                                    "order": {
+                                        "type": "xsd:integer",
+                                        "value": 153
+                                    },
                                     "counts": {
-                                        "directNarrowers": 0,
-                                        "indirectNarrowers": 0
+                                        "directNarrowers": {
+                                            "type": "xsd:integer",
+                                            "value": 0
+                                        },
+                                        "indirectNarrowers": {
+                                            "type": "xsd:integer",
+                                            "value": 0
+                                        }
                                     },
                                     "color": "#A6C583",
-                                    "height": 7,
+                                    "height": 7.0,
                                     "remainderHeigt": 1.3703099510603591,
                                     "irregularHeight": 3.370309951060359,
                                     "rawPercent": 3.125
@@ -593,21 +617,36 @@
                                         "value": "Cambrian-Stage 4"
                                     },
                                     "hasBeginning": {
-                                        "inMYA": 514,
+                                        "inMYA": {
+                                            "type": "xsd:integer",
+                                            "value": 514
+                                        },
                                         "note": "uncertain"
                                     },
                                     "hasEnd": {
-                                        "inMYA": 509,
+                                        "inMYA": {
+                                            "type": "xsd:integer",
+                                            "value": 509
+                                        },
                                         "note": "uncertain"
                                     },
                                     "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
-                                    "order": 150,
+                                    "order": {
+                                        "type": "xsd:integer",
+                                        "value": 150
+                                    },
                                     "counts": {
-                                        "directNarrowers": 0,
-                                        "indirectNarrowers": 0
+                                        "directNarrowers": {
+                                            "type": "xsd:integer",
+                                            "value": 0
+                                        },
+                                        "indirectNarrowers": {
+                                            "type": "xsd:integer",
+                                            "value": 0
+                                        }
                                     },
                                     "color": "#B3CA8E",
-                                    "height": 5,
+                                    "height": 5.0,
                                     "remainderHeigt": 0.9787928221859707,
                                     "irregularHeight": 2.9787928221859707,
                                     "rawPercent": 3.125
@@ -619,18 +658,33 @@
                                 "value": "Cambrian Series 2"
                             },
                             "hasBeginning": {
-                                "inMYA": 521,
+                                "inMYA": {
+                                    "type": "xsd:integer",
+                                    "value": 521
+                                },
                                 "note": "uncertain"
                             },
                             "hasEnd": {
-                                "inMYA": 509,
+                                "inMYA": {
+                                    "type": "xsd:integer",
+                                    "value": 509
+                                },
                                 "note": "uncertain"
                             },
                             "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
-                            "order": 151,
+                            "order": {
+                                "type": "xsd:integer",
+                                "value": 151
+                            },
                             "counts": {
-                                "directNarrowers": 2,
-                                "indirectNarrowers": 2
+                                "directNarrowers": {
+                                    "type": "xsd:integer",
+                                    "value": 2
+                                },
+                                "indirectNarrowers": {
+                                    "type": "xsd:integer",
+                                    "value": 2
+                                }
                             },
                             "color": "#99C078"
                         },
@@ -638,7 +692,10 @@
                             "id": "ischart:Furongian",
                             "type": "skos:Concept",
                             "rank": "http://resource.geosciml.org/ontology/timescale/rank/Epoch",
-                            "ratifiedGSSP": true,
+                            "ratifiedGSSP": {
+                                "type": "xsd:boolean",
+                                "value": true
+                            },
                             "isDefinedBy": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
                             "altLabel": [
                                 {
@@ -843,10 +900,19 @@
                                         }
                                     },
                                     "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
-                                    "order": 142,
+                                    "order": {
+                                        "type": "xsd:integer",
+                                        "value": 142
+                                    },
                                     "counts": {
-                                        "directNarrowers": 0,
-                                        "indirectNarrowers": 0
+                                        "directNarrowers": {
+                                            "type": "xsd:integer",
+                                            "value": 0
+                                        },
+                                        "indirectNarrowers": {
+                                            "type": "xsd:integer",
+                                            "value": 0
+                                        }
                                     },
                                     "color": "#E6F5C9",
                                     "height": 4.100000000000023,
@@ -858,7 +924,10 @@
                                     "id": "ischart:Jiangshanian",
                                     "type": "skos:Concept",
                                     "rank": "http://resource.geosciml.org/ontology/timescale/rank/Age",
-                                    "ratifiedGSSP": true,
+                                    "ratifiedGSSP": {
+                                        "type": "xsd:boolean",
+                                        "value": true
+                                    },
                                     "isDefinedBy": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
                                     "altLabel": {
                                         "language": "zh",
@@ -875,7 +944,10 @@
                                         "value": "Jiangshanian"
                                     },
                                     "hasBeginning": {
-                                        "inMYA": 494,
+                                        "inMYA": {
+                                            "type": "xsd:integer",
+                                            "value": 494
+                                        },
                                         "note": "uncertain"
                                     },
                                     "hasEnd": {
@@ -886,10 +958,19 @@
                                         "note": "uncertain"
                                     },
                                     "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
-                                    "order": 143,
+                                    "order": {
+                                        "type": "xsd:integer",
+                                        "value": 143
+                                    },
                                     "counts": {
-                                        "directNarrowers": 0,
-                                        "indirectNarrowers": 0
+                                        "directNarrowers": {
+                                            "type": "xsd:integer",
+                                            "value": 0
+                                        },
+                                        "indirectNarrowers": {
+                                            "type": "xsd:integer",
+                                            "value": 0
+                                        }
                                     },
                                     "color": "#D9F0BB",
                                     "height": 4.5,
@@ -901,7 +982,10 @@
                                     "id": "ischart:Paibian",
                                     "type": "skos:Concept",
                                     "rank": "http://resource.geosciml.org/ontology/timescale/rank/Age",
-                                    "ratifiedGSSP": true,
+                                    "ratifiedGSSP": {
+                                        "type": "xsd:boolean",
+                                        "value": true
+                                    },
                                     "isDefinedBy": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
                                     "altLabel": [
                                         {
@@ -996,21 +1080,36 @@
                                         "value": "Paibian"
                                     },
                                     "hasBeginning": {
-                                        "inMYA": 497,
+                                        "inMYA": {
+                                            "type": "xsd:integer",
+                                            "value": 497
+                                        },
                                         "note": "uncertain"
                                     },
                                     "hasEnd": {
-                                        "inMYA": 494,
+                                        "inMYA": {
+                                            "type": "xsd:integer",
+                                            "value": 494
+                                        },
                                         "note": "uncertain"
                                     },
                                     "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
-                                    "order": 145,
+                                    "order": {
+                                        "type": "xsd:integer",
+                                        "value": 145
+                                    },
                                     "counts": {
-                                        "directNarrowers": 0,
-                                        "indirectNarrowers": 0
+                                        "directNarrowers": {
+                                            "type": "xsd:integer",
+                                            "value": 0
+                                        },
+                                        "indirectNarrowers": {
+                                            "type": "xsd:integer",
+                                            "value": 0
+                                        }
                                     },
                                     "color": "#CCEBAE",
-                                    "height": 3,
+                                    "height": 3.0,
                                     "remainderHeigt": 0.5872756933115825,
                                     "irregularHeight": 2.5872756933115824,
                                     "rawPercent": 3.125
@@ -1022,7 +1121,10 @@
                                 "value": "Furongian"
                             },
                             "hasBeginning": {
-                                "inMYA": 497,
+                                "inMYA": {
+                                    "type": "xsd:integer",
+                                    "value": 497
+                                },
                                 "note": "uncertain"
                             },
                             "hasEnd": {
@@ -1036,10 +1138,19 @@
                                 }
                             },
                             "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
-                            "order": 144,
+                            "order": {
+                                "type": "xsd:integer",
+                                "value": 144
+                            },
                             "counts": {
-                                "directNarrowers": 3,
-                                "indirectNarrowers": 3
+                                "directNarrowers": {
+                                    "type": "xsd:integer",
+                                    "value": 3
+                                },
+                                "indirectNarrowers": {
+                                    "type": "xsd:integer",
+                                    "value": 3
+                                }
                             },
                             "color": "#B3E095"
                         },
@@ -1047,7 +1158,10 @@
                             "id": "ischart:Miaolingian",
                             "type": "skos:Concept",
                             "rank": "http://resource.geosciml.org/ontology/timescale/rank/Epoch",
-                            "ratifiedGSSP": true,
+                            "ratifiedGSSP": {
+                                "type": "xsd:boolean",
+                                "value": true
+                            },
                             "isDefinedBy": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
                             "broader": [
                                 "ischart:Cambrian"
@@ -1059,7 +1173,10 @@
                                     "id": "ischart:Drumian",
                                     "type": "skos:Concept",
                                     "rank": "http://resource.geosciml.org/ontology/timescale/rank/Age",
-                                    "ratifiedGSSP": true,
+                                    "ratifiedGSSP": {
+                                        "type": "xsd:boolean",
+                                        "value": true
+                                    },
                                     "isDefinedBy": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
                                     "altLabel": [
                                         {
@@ -1168,10 +1285,19 @@
                                         "note": "uncertain"
                                     },
                                     "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
-                                    "order": 147,
+                                    "order": {
+                                        "type": "xsd:integer",
+                                        "value": 147
+                                    },
                                     "counts": {
-                                        "directNarrowers": 0,
-                                        "indirectNarrowers": 0
+                                        "directNarrowers": {
+                                            "type": "xsd:integer",
+                                            "value": 0
+                                        },
+                                        "indirectNarrowers": {
+                                            "type": "xsd:integer",
+                                            "value": 0
+                                        }
                                     },
                                     "color": "#BFD99D",
                                     "height": 4.0,
@@ -1183,7 +1309,10 @@
                                     "id": "ischart:Guzhangian",
                                     "type": "skos:Concept",
                                     "rank": "http://resource.geosciml.org/ontology/timescale/rank/Age",
-                                    "ratifiedGSSP": true,
+                                    "ratifiedGSSP": {
+                                        "type": "xsd:boolean",
+                                        "value": true
+                                    },
                                     "isDefinedBy": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
                                     "altLabel": [
                                         {
@@ -1285,14 +1414,26 @@
                                         "note": "uncertain"
                                     },
                                     "hasEnd": {
-                                        "inMYA": 497,
+                                        "inMYA": {
+                                            "type": "xsd:integer",
+                                            "value": 497
+                                        },
                                         "note": "uncertain"
                                     },
                                     "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
-                                    "order": 146,
+                                    "order": {
+                                        "type": "xsd:integer",
+                                        "value": 146
+                                    },
                                     "counts": {
-                                        "directNarrowers": 0,
-                                        "indirectNarrowers": 0
+                                        "directNarrowers": {
+                                            "type": "xsd:integer",
+                                            "value": 0
+                                        },
+                                        "indirectNarrowers": {
+                                            "type": "xsd:integer",
+                                            "value": 0
+                                        }
                                     },
                                     "color": "#CCDFAA",
                                     "height": 3.5,
@@ -1304,7 +1445,10 @@
                                     "id": "ischart:Wuliuan",
                                     "type": "skos:Concept",
                                     "rank": "http://resource.geosciml.org/ontology/timescale/rank/Age",
-                                    "ratifiedGSSP": true,
+                                    "ratifiedGSSP": {
+                                        "type": "xsd:boolean",
+                                        "value": true
+                                    },
                                     "isDefinedBy": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
                                     "broader": [
                                         "ischart:Miaolingian"
@@ -1317,7 +1461,10 @@
                                         "value": "Wuliuan"
                                     },
                                     "hasBeginning": {
-                                        "inMYA": 509,
+                                        "inMYA": {
+                                            "type": "xsd:integer",
+                                            "value": 509
+                                        },
                                         "note": "uncertain"
                                     },
                                     "hasEnd": {
@@ -1328,10 +1475,19 @@
                                         "note": "uncertain"
                                     },
                                     "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
-                                    "order": 149,
+                                    "order": {
+                                        "type": "xsd:integer",
+                                        "value": 149
+                                    },
                                     "counts": {
-                                        "directNarrowers": 0,
-                                        "indirectNarrowers": 0
+                                        "directNarrowers": {
+                                            "type": "xsd:integer",
+                                            "value": 0
+                                        },
+                                        "indirectNarrowers": {
+                                            "type": "xsd:integer",
+                                            "value": 0
+                                        }
                                     },
                                     "color": "#B3D492",
                                     "height": 4.5,
@@ -1346,18 +1502,33 @@
                                 "value": "Miaolingian"
                             },
                             "hasBeginning": {
-                                "inMYA": 509,
+                                "inMYA": {
+                                    "type": "xsd:integer",
+                                    "value": 509
+                                },
                                 "note": "uncertain"
                             },
                             "hasEnd": {
-                                "inMYA": 497,
+                                "inMYA": {
+                                    "type": "xsd:integer",
+                                    "value": 497
+                                },
                                 "note": "uncertain"
                             },
                             "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
-                            "order": 148,
+                            "order": {
+                                "type": "xsd:integer",
+                                "value": 148
+                            },
                             "counts": {
-                                "directNarrowers": 3,
-                                "indirectNarrowers": 3
+                                "directNarrowers": {
+                                    "type": "xsd:integer",
+                                    "value": 3
+                                },
+                                "indirectNarrowers": {
+                                    "type": "xsd:integer",
+                                    "value": 3
+                                }
                             },
                             "color": "#A6CF86"
                         },
@@ -1365,7 +1536,10 @@
                             "id": "ischart:Terreneuvian",
                             "type": "skos:Concept",
                             "rank": "http://resource.geosciml.org/ontology/timescale/rank/Epoch",
-                            "ratifiedGSSP": true,
+                            "ratifiedGSSP": {
+                                "type": "xsd:boolean",
+                                "value": true
+                            },
                             "isDefinedBy": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
                             "altLabel": [
                                 {
@@ -1553,21 +1727,36 @@
                                         "value": "Cambrian-Stage 2"
                                     },
                                     "hasBeginning": {
-                                        "inMYA": 521,
+                                        "inMYA": {
+                                            "type": "xsd:integer",
+                                            "value": 521
+                                        },
                                         "note": "uncertain"
                                     },
                                     "hasEnd": {
-                                        "inMYA": 509,
+                                        "inMYA": {
+                                            "type": "xsd:integer",
+                                            "value": 509
+                                        },
                                         "note": "uncertain"
                                     },
                                     "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
-                                    "order": 152,
+                                    "order": {
+                                        "type": "xsd:integer",
+                                        "value": 152
+                                    },
                                     "counts": {
-                                        "directNarrowers": 0,
-                                        "indirectNarrowers": 0
+                                        "directNarrowers": {
+                                            "type": "xsd:integer",
+                                            "value": 0
+                                        },
+                                        "indirectNarrowers": {
+                                            "type": "xsd:integer",
+                                            "value": 0
+                                        }
                                     },
                                     "color": "#A6BA80",
-                                    "height": 12,
+                                    "height": 12.0,
                                     "remainderHeigt": 2.34910277324633,
                                     "irregularHeight": 4.349102773246329,
                                     "rawPercent": 3.125
@@ -1576,7 +1765,10 @@
                                     "id": "ischart:Fortunian",
                                     "type": "skos:Concept",
                                     "rank": "http://resource.geosciml.org/ontology/timescale/rank/Age",
-                                    "ratifiedGSSP": true,
+                                    "ratifiedGSSP": {
+                                        "type": "xsd:boolean",
+                                        "value": true
+                                    },
                                     "isDefinedBy": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
                                     "altLabel": [
                                         {
@@ -1681,14 +1873,26 @@
                                         }
                                     },
                                     "hasEnd": {
-                                        "inMYA": 529,
+                                        "inMYA": {
+                                            "type": "xsd:integer",
+                                            "value": 529
+                                        },
                                         "note": "uncertain"
                                     },
                                     "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
-                                    "order": 155,
+                                    "order": {
+                                        "type": "xsd:integer",
+                                        "value": 155
+                                    },
                                     "counts": {
-                                        "directNarrowers": 0,
-                                        "indirectNarrowers": 0
+                                        "directNarrowers": {
+                                            "type": "xsd:integer",
+                                            "value": 0
+                                        },
+                                        "indirectNarrowers": {
+                                            "type": "xsd:integer",
+                                            "value": 0
+                                        }
                                     },
                                     "color": "#99B575",
                                     "height": 9.799999999999955,
@@ -1713,14 +1917,26 @@
                                 }
                             },
                             "hasEnd": {
-                                "inMYA": 521,
+                                "inMYA": {
+                                    "type": "xsd:integer",
+                                    "value": 521
+                                },
                                 "note": "uncertain"
                             },
                             "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
-                            "order": 157,
+                            "order": {
+                                "type": "xsd:integer",
+                                "value": 157
+                            },
                             "counts": {
-                                "directNarrowers": 2,
-                                "indirectNarrowers": 2
+                                "directNarrowers": {
+                                    "type": "xsd:integer",
+                                    "value": 2
+                                },
+                                "indirectNarrowers": {
+                                    "type": "xsd:integer",
+                                    "value": 2
+                                }
                             },
                             "color": "#8CB06C"
                         }
@@ -1751,10 +1967,19 @@
                         }
                     },
                     "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
-                    "order": 154,
+                    "order": {
+                        "type": "xsd:integer",
+                        "value": 154
+                    },
                     "counts": {
-                        "directNarrowers": 4,
-                        "indirectNarrowers": 14
+                        "directNarrowers": {
+                            "type": "xsd:integer",
+                            "value": 4
+                        },
+                        "indirectNarrowers": {
+                            "type": "xsd:integer",
+                            "value": 14
+                        }
                     },
                     "color": "#7FA056"
                 },
@@ -1762,7 +1987,10 @@
                     "id": "ischart:Devonian",
                     "type": "skos:Concept",
                     "rank": "http://resource.geosciml.org/ontology/timescale/rank/Period",
-                    "ratifiedGSSP": true,
+                    "ratifiedGSSP": {
+                        "type": "xsd:boolean",
+                        "value": true
+                    },
                     "isDefinedBy": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
                     "altLabel": [
                         {
@@ -1856,7 +2084,10 @@
                             "id": "ischart:LowerDevonian",
                             "type": "skos:Concept",
                             "rank": "http://resource.geosciml.org/ontology/timescale/rank/Epoch",
-                            "ratifiedGSSP": true,
+                            "ratifiedGSSP": {
+                                "type": "xsd:boolean",
+                                "value": true
+                            },
                             "isDefinedBy": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
                             "altLabel": [
                                 {
@@ -1950,7 +2181,10 @@
                                     "id": "ischart:Emsian",
                                     "type": "skos:Concept",
                                     "rank": "http://resource.geosciml.org/ontology/timescale/rank/Age",
-                                    "ratifiedGSSP": true,
+                                    "ratifiedGSSP": {
+                                        "type": "xsd:boolean",
+                                        "value": true
+                                    },
                                     "isDefinedBy": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
                                     "altLabel": [
                                         {
@@ -2065,10 +2299,19 @@
                                         }
                                     },
                                     "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
-                                    "order": 114,
+                                    "order": {
+                                        "type": "xsd:integer",
+                                        "value": 114
+                                    },
                                     "counts": {
-                                        "directNarrowers": 0,
-                                        "indirectNarrowers": 0
+                                        "directNarrowers": {
+                                            "type": "xsd:integer",
+                                            "value": 0
+                                        },
+                                        "indirectNarrowers": {
+                                            "type": "xsd:integer",
+                                            "value": 0
+                                        }
                                     },
                                     "color": "#E5D075",
                                     "height": 14.300000000000011,
@@ -2080,7 +2323,10 @@
                                     "id": "ischart:Lochkovian",
                                     "type": "skos:Concept",
                                     "rank": "http://resource.geosciml.org/ontology/timescale/rank/Age",
-                                    "ratifiedGSSP": true,
+                                    "ratifiedGSSP": {
+                                        "type": "xsd:boolean",
+                                        "value": true
+                                    },
                                     "isDefinedBy": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
                                     "altLabel": [
                                         {
@@ -2195,10 +2441,19 @@
                                         }
                                     },
                                     "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
-                                    "order": 117,
+                                    "order": {
+                                        "type": "xsd:integer",
+                                        "value": 117
+                                    },
                                     "counts": {
-                                        "directNarrowers": 0,
-                                        "indirectNarrowers": 0
+                                        "directNarrowers": {
+                                            "type": "xsd:integer",
+                                            "value": 0
+                                        },
+                                        "indirectNarrowers": {
+                                            "type": "xsd:integer",
+                                            "value": 0
+                                        }
                                     },
                                     "color": "#E5B75A",
                                     "height": 8.399999999999977,
@@ -2210,7 +2465,10 @@
                                     "id": "ischart:Pragian",
                                     "type": "skos:Concept",
                                     "rank": "http://resource.geosciml.org/ontology/timescale/rank/Age",
-                                    "ratifiedGSSP": true,
+                                    "ratifiedGSSP": {
+                                        "type": "xsd:boolean",
+                                        "value": true
+                                    },
                                     "isDefinedBy": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
                                     "altLabel": [
                                         {
@@ -2325,10 +2583,19 @@
                                         }
                                     },
                                     "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
-                                    "order": 115,
+                                    "order": {
+                                        "type": "xsd:integer",
+                                        "value": 115
+                                    },
                                     "counts": {
-                                        "directNarrowers": 0,
-                                        "indirectNarrowers": 0
+                                        "directNarrowers": {
+                                            "type": "xsd:integer",
+                                            "value": 0
+                                        },
+                                        "indirectNarrowers": {
+                                            "type": "xsd:integer",
+                                            "value": 0
+                                        }
                                     },
                                     "color": "#E5C468",
                                     "height": 3.1999999999999886,
@@ -2363,10 +2630,19 @@
                                 }
                             },
                             "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
-                            "order": 118,
+                            "order": {
+                                "type": "xsd:integer",
+                                "value": 118
+                            },
                             "counts": {
-                                "directNarrowers": 3,
-                                "indirectNarrowers": 3
+                                "directNarrowers": {
+                                    "type": "xsd:integer",
+                                    "value": 3
+                                },
+                                "indirectNarrowers": {
+                                    "type": "xsd:integer",
+                                    "value": 3
+                                }
                             },
                             "color": "#E5AC4D"
                         },
@@ -2374,7 +2650,10 @@
                             "id": "ischart:MiddleDevonian",
                             "type": "skos:Concept",
                             "rank": "http://resource.geosciml.org/ontology/timescale/rank/Epoch",
-                            "ratifiedGSSP": true,
+                            "ratifiedGSSP": {
+                                "type": "xsd:boolean",
+                                "value": true
+                            },
                             "isDefinedBy": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
                             "altLabel": [
                                 {
@@ -2468,7 +2747,10 @@
                                     "id": "ischart:Eifelian",
                                     "type": "skos:Concept",
                                     "rank": "http://resource.geosciml.org/ontology/timescale/rank/Age",
-                                    "ratifiedGSSP": true,
+                                    "ratifiedGSSP": {
+                                        "type": "xsd:boolean",
+                                        "value": true
+                                    },
                                     "isDefinedBy": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
                                     "altLabel": [
                                         {
@@ -2583,10 +2865,19 @@
                                         }
                                     },
                                     "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
-                                    "order": 112,
+                                    "order": {
+                                        "type": "xsd:integer",
+                                        "value": 112
+                                    },
                                     "counts": {
-                                        "directNarrowers": 0,
-                                        "indirectNarrowers": 0
+                                        "directNarrowers": {
+                                            "type": "xsd:integer",
+                                            "value": 0
+                                        },
+                                        "indirectNarrowers": {
+                                            "type": "xsd:integer",
+                                            "value": 0
+                                        }
                                     },
                                     "color": "#F1D576",
                                     "height": 5.600000000000023,
@@ -2598,7 +2889,10 @@
                                     "id": "ischart:Givetian",
                                     "type": "skos:Concept",
                                     "rank": "http://resource.geosciml.org/ontology/timescale/rank/Age",
-                                    "ratifiedGSSP": true,
+                                    "ratifiedGSSP": {
+                                        "type": "xsd:boolean",
+                                        "value": true
+                                    },
                                     "isDefinedBy": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
                                     "altLabel": [
                                         {
@@ -2713,10 +3007,19 @@
                                         }
                                     },
                                     "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
-                                    "order": 111,
+                                    "order": {
+                                        "type": "xsd:integer",
+                                        "value": 111
+                                    },
                                     "counts": {
-                                        "directNarrowers": 0,
-                                        "indirectNarrowers": 0
+                                        "directNarrowers": {
+                                            "type": "xsd:integer",
+                                            "value": 0
+                                        },
+                                        "indirectNarrowers": {
+                                            "type": "xsd:integer",
+                                            "value": 0
+                                        }
                                     },
                                     "color": "#F1E185",
                                     "height": 5.0,
@@ -2751,10 +3054,19 @@
                                 }
                             },
                             "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
-                            "order": 113,
+                            "order": {
+                                "type": "xsd:integer",
+                                "value": 113
+                            },
                             "counts": {
-                                "directNarrowers": 2,
-                                "indirectNarrowers": 2
+                                "directNarrowers": {
+                                    "type": "xsd:integer",
+                                    "value": 2
+                                },
+                                "indirectNarrowers": {
+                                    "type": "xsd:integer",
+                                    "value": 2
+                                }
                             },
                             "color": "#F1C868"
                         },
@@ -2762,7 +3074,10 @@
                             "id": "ischart:UpperDevonian",
                             "type": "skos:Concept",
                             "rank": "http://resource.geosciml.org/ontology/timescale/rank/Epoch",
-                            "ratifiedGSSP": true,
+                            "ratifiedGSSP": {
+                                "type": "xsd:boolean",
+                                "value": true
+                            },
                             "isDefinedBy": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
                             "altLabel": [
                                 {
@@ -2840,7 +3155,10 @@
                                     "id": "ischart:Famennian",
                                     "type": "skos:Concept",
                                     "rank": "http://resource.geosciml.org/ontology/timescale/rank/Age",
-                                    "ratifiedGSSP": true,
+                                    "ratifiedGSSP": {
+                                        "type": "xsd:boolean",
+                                        "value": true
+                                    },
                                     "isDefinedBy": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
                                     "altLabel": [
                                         {
@@ -2955,10 +3273,19 @@
                                         }
                                     },
                                     "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
-                                    "order": 108,
+                                    "order": {
+                                        "type": "xsd:integer",
+                                        "value": 108
+                                    },
                                     "counts": {
-                                        "directNarrowers": 0,
-                                        "indirectNarrowers": 0
+                                        "directNarrowers": {
+                                            "type": "xsd:integer",
+                                            "value": 0
+                                        },
+                                        "indirectNarrowers": {
+                                            "type": "xsd:integer",
+                                            "value": 0
+                                        }
                                     },
                                     "color": "#F2EDB3",
                                     "height": 13.300000000000011,
@@ -2970,7 +3297,10 @@
                                     "id": "ischart:Frasnian",
                                     "type": "skos:Concept",
                                     "rank": "http://resource.geosciml.org/ontology/timescale/rank/Age",
-                                    "ratifiedGSSP": true,
+                                    "ratifiedGSSP": {
+                                        "type": "xsd:boolean",
+                                        "value": true
+                                    },
                                     "isDefinedBy": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
                                     "altLabel": [
                                         {
@@ -3085,10 +3415,19 @@
                                         }
                                     },
                                     "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
-                                    "order": 109,
+                                    "order": {
+                                        "type": "xsd:integer",
+                                        "value": 109
+                                    },
                                     "counts": {
-                                        "directNarrowers": 0,
-                                        "indirectNarrowers": 0
+                                        "directNarrowers": {
+                                            "type": "xsd:integer",
+                                            "value": 0
+                                        },
+                                        "indirectNarrowers": {
+                                            "type": "xsd:integer",
+                                            "value": 0
+                                        }
                                     },
                                     "color": "#F2EDAD",
                                     "height": 10.5,
@@ -3123,10 +3462,19 @@
                                 }
                             },
                             "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
-                            "order": 110,
+                            "order": {
+                                "type": "xsd:integer",
+                                "value": 110
+                            },
                             "counts": {
-                                "directNarrowers": 2,
-                                "indirectNarrowers": 2
+                                "directNarrowers": {
+                                    "type": "xsd:integer",
+                                    "value": 2
+                                },
+                                "indirectNarrowers": {
+                                    "type": "xsd:integer",
+                                    "value": 2
+                                }
                             },
                             "color": "#F1E19D"
                         }
@@ -3157,10 +3505,19 @@
                         }
                     },
                     "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
-                    "order": 116,
+                    "order": {
+                        "type": "xsd:integer",
+                        "value": 116
+                    },
                     "counts": {
-                        "directNarrowers": 3,
-                        "indirectNarrowers": 10
+                        "directNarrowers": {
+                            "type": "xsd:integer",
+                            "value": 3
+                        },
+                        "indirectNarrowers": {
+                            "type": "xsd:integer",
+                            "value": 10
+                        }
                     },
                     "color": "#CB8C37"
                 },
@@ -3168,7 +3525,10 @@
                     "id": "ischart:Ordovician",
                     "type": "skos:Concept",
                     "rank": "http://resource.geosciml.org/ontology/timescale/rank/Period",
-                    "ratifiedGSSP": true,
+                    "ratifiedGSSP": {
+                        "type": "xsd:boolean",
+                        "value": true
+                    },
                     "isDefinedBy": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
                     "altLabel": [
                         {
@@ -3262,7 +3622,10 @@
                             "id": "ischart:LowerOrdovician",
                             "type": "skos:Concept",
                             "rank": "http://resource.geosciml.org/ontology/timescale/rank/Epoch",
-                            "ratifiedGSSP": true,
+                            "ratifiedGSSP": {
+                                "type": "xsd:boolean",
+                                "value": true
+                            },
                             "isDefinedBy": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
                             "altLabel": [
                                 {
@@ -3356,7 +3719,10 @@
                                     "id": "ischart:Floian",
                                     "type": "skos:Concept",
                                     "rank": "http://resource.geosciml.org/ontology/timescale/rank/Age",
-                                    "ratifiedGSSP": true,
+                                    "ratifiedGSSP": {
+                                        "type": "xsd:boolean",
+                                        "value": true
+                                    },
                                     "isDefinedBy": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
                                     "altLabel": [
                                         {
@@ -3467,10 +3833,19 @@
                                         }
                                     },
                                     "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
-                                    "order": 138,
+                                    "order": {
+                                        "type": "xsd:integer",
+                                        "value": 138
+                                    },
                                     "counts": {
-                                        "directNarrowers": 0,
-                                        "indirectNarrowers": 0
+                                        "directNarrowers": {
+                                            "type": "xsd:integer",
+                                            "value": 0
+                                        },
+                                        "indirectNarrowers": {
+                                            "type": "xsd:integer",
+                                            "value": 0
+                                        }
                                     },
                                     "color": "#41B087",
                                     "height": 7.699999999999989,
@@ -3482,7 +3857,10 @@
                                     "id": "ischart:Tremadocian",
                                     "type": "skos:Concept",
                                     "rank": "http://resource.geosciml.org/ontology/timescale/rank/Age",
-                                    "ratifiedGSSP": true,
+                                    "ratifiedGSSP": {
+                                        "type": "xsd:boolean",
+                                        "value": true
+                                    },
                                     "isDefinedBy": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
                                     "altLabel": [
                                         {
@@ -3597,10 +3975,19 @@
                                         }
                                     },
                                     "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
-                                    "order": 141,
+                                    "order": {
+                                        "type": "xsd:integer",
+                                        "value": 141
+                                    },
                                     "counts": {
-                                        "directNarrowers": 0,
-                                        "indirectNarrowers": 0
+                                        "directNarrowers": {
+                                            "type": "xsd:integer",
+                                            "value": 0
+                                        },
+                                        "indirectNarrowers": {
+                                            "type": "xsd:integer",
+                                            "value": 0
+                                        }
                                     },
                                     "color": "#33A97E",
                                     "height": 7.699999999999989,
@@ -3635,10 +4022,19 @@
                                 }
                             },
                             "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
-                            "order": 139,
+                            "order": {
+                                "type": "xsd:integer",
+                                "value": 139
+                            },
                             "counts": {
-                                "directNarrowers": 2,
-                                "indirectNarrowers": 2
+                                "directNarrowers": {
+                                    "type": "xsd:integer",
+                                    "value": 2
+                                },
+                                "indirectNarrowers": {
+                                    "type": "xsd:integer",
+                                    "value": 2
+                                }
                             },
                             "color": "#1A9D6F"
                         },
@@ -3646,7 +4042,10 @@
                             "id": "ischart:MiddleOrdovician",
                             "type": "skos:Concept",
                             "rank": "http://resource.geosciml.org/ontology/timescale/rank/Epoch",
-                            "ratifiedGSSP": true,
+                            "ratifiedGSSP": {
+                                "type": "xsd:boolean",
+                                "value": true
+                            },
                             "isDefinedBy": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
                             "altLabel": [
                                 {
@@ -3740,7 +4139,10 @@
                                     "id": "ischart:Dapingian",
                                     "type": "skos:Concept",
                                     "rank": "http://resource.geosciml.org/ontology/timescale/rank/Age",
-                                    "ratifiedGSSP": true,
+                                    "ratifiedGSSP": {
+                                        "type": "xsd:boolean",
+                                        "value": true
+                                    },
                                     "isDefinedBy": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
                                     "altLabel": [
                                         {
@@ -3855,10 +4257,19 @@
                                         }
                                     },
                                     "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
-                                    "order": 136,
+                                    "order": {
+                                        "type": "xsd:integer",
+                                        "value": 136
+                                    },
                                     "counts": {
-                                        "directNarrowers": 0,
-                                        "indirectNarrowers": 0
+                                        "directNarrowers": {
+                                            "type": "xsd:integer",
+                                            "value": 0
+                                        },
+                                        "indirectNarrowers": {
+                                            "type": "xsd:integer",
+                                            "value": 0
+                                        }
                                     },
                                     "color": "#66C092",
                                     "height": 2.6999999999999886,
@@ -3870,7 +4281,10 @@
                                     "id": "ischart:Darriwilian",
                                     "type": "skos:Concept",
                                     "rank": "http://resource.geosciml.org/ontology/timescale/rank/Age",
-                                    "ratifiedGSSP": true,
+                                    "ratifiedGSSP": {
+                                        "type": "xsd:boolean",
+                                        "value": true
+                                    },
                                     "isDefinedBy": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
                                     "altLabel": [
                                         {
@@ -3985,10 +4399,19 @@
                                         }
                                     },
                                     "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
-                                    "order": 135,
+                                    "order": {
+                                        "type": "xsd:integer",
+                                        "value": 135
+                                    },
                                     "counts": {
-                                        "directNarrowers": 0,
-                                        "indirectNarrowers": 0
+                                        "directNarrowers": {
+                                            "type": "xsd:integer",
+                                            "value": 0
+                                        },
+                                        "indirectNarrowers": {
+                                            "type": "xsd:integer",
+                                            "value": 0
+                                        }
                                     },
                                     "color": "#74C69C",
                                     "height": 8.900000000000034,
@@ -4023,10 +4446,19 @@
                                 }
                             },
                             "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
-                            "order": 137,
+                            "order": {
+                                "type": "xsd:integer",
+                                "value": 137
+                            },
                             "counts": {
-                                "directNarrowers": 2,
-                                "indirectNarrowers": 2
+                                "directNarrowers": {
+                                    "type": "xsd:integer",
+                                    "value": 2
+                                },
+                                "indirectNarrowers": {
+                                    "type": "xsd:integer",
+                                    "value": 2
+                                }
                             },
                             "color": "#4DB47E"
                         },
@@ -4034,7 +4466,10 @@
                             "id": "ischart:UpperOrdovician",
                             "type": "skos:Concept",
                             "rank": "http://resource.geosciml.org/ontology/timescale/rank/Epoch",
-                            "ratifiedGSSP": true,
+                            "ratifiedGSSP": {
+                                "type": "xsd:boolean",
+                                "value": true
+                            },
                             "isDefinedBy": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
                             "altLabel": [
                                 {
@@ -4112,7 +4547,10 @@
                                     "id": "ischart:Hirnantian",
                                     "type": "skos:Concept",
                                     "rank": "http://resource.geosciml.org/ontology/timescale/rank/Age",
-                                    "ratifiedGSSP": true,
+                                    "ratifiedGSSP": {
+                                        "type": "xsd:boolean",
+                                        "value": true
+                                    },
                                     "isDefinedBy": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
                                     "altLabel": [
                                         {
@@ -4227,10 +4665,19 @@
                                         }
                                     },
                                     "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
-                                    "order": 131,
+                                    "order": {
+                                        "type": "xsd:integer",
+                                        "value": 131
+                                    },
                                     "counts": {
-                                        "directNarrowers": 0,
-                                        "indirectNarrowers": 0
+                                        "directNarrowers": {
+                                            "type": "xsd:integer",
+                                            "value": 0
+                                        },
+                                        "indirectNarrowers": {
+                                            "type": "xsd:integer",
+                                            "value": 0
+                                        }
                                     },
                                     "color": "#A6DBAB",
                                     "height": 1.3999999999999773,
@@ -4242,7 +4689,10 @@
                                     "id": "ischart:Katian",
                                     "type": "skos:Concept",
                                     "rank": "http://resource.geosciml.org/ontology/timescale/rank/Age",
-                                    "ratifiedGSSP": true,
+                                    "ratifiedGSSP": {
+                                        "type": "xsd:boolean",
+                                        "value": true
+                                    },
                                     "isDefinedBy": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
                                     "altLabel": [
                                         {
@@ -4357,10 +4807,19 @@
                                         }
                                     },
                                     "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
-                                    "order": 132,
+                                    "order": {
+                                        "type": "xsd:integer",
+                                        "value": 132
+                                    },
                                     "counts": {
-                                        "directNarrowers": 0,
-                                        "indirectNarrowers": 0
+                                        "directNarrowers": {
+                                            "type": "xsd:integer",
+                                            "value": 0
+                                        },
+                                        "indirectNarrowers": {
+                                            "type": "xsd:integer",
+                                            "value": 0
+                                        }
                                     },
                                     "color": "#99D69F",
                                     "height": 7.800000000000011,
@@ -4372,7 +4831,10 @@
                                     "id": "ischart:Sandbian",
                                     "type": "skos:Concept",
                                     "rank": "http://resource.geosciml.org/ontology/timescale/rank/Age",
-                                    "ratifiedGSSP": true,
+                                    "ratifiedGSSP": {
+                                        "type": "xsd:boolean",
+                                        "value": true
+                                    },
                                     "isDefinedBy": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
                                     "altLabel": [
                                         {
@@ -4487,10 +4949,19 @@
                                         }
                                     },
                                     "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
-                                    "order": 133,
+                                    "order": {
+                                        "type": "xsd:integer",
+                                        "value": 133
+                                    },
                                     "counts": {
-                                        "directNarrowers": 0,
-                                        "indirectNarrowers": 0
+                                        "directNarrowers": {
+                                            "type": "xsd:integer",
+                                            "value": 0
+                                        },
+                                        "indirectNarrowers": {
+                                            "type": "xsd:integer",
+                                            "value": 0
+                                        }
                                     },
                                     "color": "#8CD094",
                                     "height": 5.399999999999977,
@@ -4525,10 +4996,19 @@
                                 }
                             },
                             "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
-                            "order": 134,
+                            "order": {
+                                "type": "xsd:integer",
+                                "value": 134
+                            },
                             "counts": {
-                                "directNarrowers": 3,
-                                "indirectNarrowers": 3
+                                "directNarrowers": {
+                                    "type": "xsd:integer",
+                                    "value": 3
+                                },
+                                "indirectNarrowers": {
+                                    "type": "xsd:integer",
+                                    "value": 3
+                                }
                             },
                             "color": "#7FCA93"
                         }
@@ -4559,10 +5039,19 @@
                         }
                     },
                     "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
-                    "order": 140,
+                    "order": {
+                        "type": "xsd:integer",
+                        "value": 140
+                    },
                     "counts": {
-                        "directNarrowers": 3,
-                        "indirectNarrowers": 10
+                        "directNarrowers": {
+                            "type": "xsd:integer",
+                            "value": 3
+                        },
+                        "indirectNarrowers": {
+                            "type": "xsd:integer",
+                            "value": 10
+                        }
                     },
                     "color": "#009270"
                 },
@@ -4570,7 +5059,10 @@
                     "id": "ischart:Silurian",
                     "type": "skos:Concept",
                     "rank": "http://resource.geosciml.org/ontology/timescale/rank/Period",
-                    "ratifiedGSSP": true,
+                    "ratifiedGSSP": {
+                        "type": "xsd:boolean",
+                        "value": true
+                    },
                     "isDefinedBy": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
                     "altLabel": [
                         {
@@ -4664,7 +5156,10 @@
                             "id": "ischart:Llandovery",
                             "type": "skos:Concept",
                             "rank": "http://resource.geosciml.org/ontology/timescale/rank/Epoch",
-                            "ratifiedGSSP": true,
+                            "ratifiedGSSP": {
+                                "type": "xsd:boolean",
+                                "value": true
+                            },
                             "isDefinedBy": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
                             "altLabel": [
                                 {
@@ -4758,7 +5253,10 @@
                                     "id": "ischart:Aeronian",
                                     "type": "skos:Concept",
                                     "rank": "http://resource.geosciml.org/ontology/timescale/rank/Age",
-                                    "ratifiedGSSP": true,
+                                    "ratifiedGSSP": {
+                                        "type": "xsd:boolean",
+                                        "value": true
+                                    },
                                     "isDefinedBy": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
                                     "altLabel": [
                                         {
@@ -4873,10 +5371,19 @@
                                         }
                                     },
                                     "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
-                                    "order": 127,
+                                    "order": {
+                                        "type": "xsd:integer",
+                                        "value": 127
+                                    },
                                     "counts": {
-                                        "directNarrowers": 0,
-                                        "indirectNarrowers": 0
+                                        "directNarrowers": {
+                                            "type": "xsd:integer",
+                                            "value": 0
+                                        },
+                                        "indirectNarrowers": {
+                                            "type": "xsd:integer",
+                                            "value": 0
+                                        }
                                     },
                                     "color": "#B3E1C2",
                                     "height": 2.3000000000000114,
@@ -4888,7 +5395,10 @@
                                     "id": "ischart:Rhuddanian",
                                     "type": "skos:Concept",
                                     "rank": "http://resource.geosciml.org/ontology/timescale/rank/Age",
-                                    "ratifiedGSSP": true,
+                                    "ratifiedGSSP": {
+                                        "type": "xsd:boolean",
+                                        "value": true
+                                    },
                                     "isDefinedBy": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
                                     "altLabel": [
                                         {
@@ -5003,10 +5513,19 @@
                                         }
                                     },
                                     "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
-                                    "order": 129,
+                                    "order": {
+                                        "type": "xsd:integer",
+                                        "value": 129
+                                    },
                                     "counts": {
-                                        "directNarrowers": 0,
-                                        "indirectNarrowers": 0
+                                        "directNarrowers": {
+                                            "type": "xsd:integer",
+                                            "value": 0
+                                        },
+                                        "indirectNarrowers": {
+                                            "type": "xsd:integer",
+                                            "value": 0
+                                        }
                                     },
                                     "color": "#A6DCB5",
                                     "height": 3.0,
@@ -5018,7 +5537,10 @@
                                     "id": "ischart:Telychian",
                                     "type": "skos:Concept",
                                     "rank": "http://resource.geosciml.org/ontology/timescale/rank/Age",
-                                    "ratifiedGSSP": true,
+                                    "ratifiedGSSP": {
+                                        "type": "xsd:boolean",
+                                        "value": true
+                                    },
                                     "isDefinedBy": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
                                     "altLabel": [
                                         {
@@ -5133,10 +5655,19 @@
                                         }
                                     },
                                     "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
-                                    "order": 126,
+                                    "order": {
+                                        "type": "xsd:integer",
+                                        "value": 126
+                                    },
                                     "counts": {
-                                        "directNarrowers": 0,
-                                        "indirectNarrowers": 0
+                                        "directNarrowers": {
+                                            "type": "xsd:integer",
+                                            "value": 0
+                                        },
+                                        "indirectNarrowers": {
+                                            "type": "xsd:integer",
+                                            "value": 0
+                                        }
                                     },
                                     "color": "#BFE6CF",
                                     "height": 5.100000000000023,
@@ -5171,10 +5702,19 @@
                                 }
                             },
                             "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
-                            "order": 128,
+                            "order": {
+                                "type": "xsd:integer",
+                                "value": 128
+                            },
                             "counts": {
-                                "directNarrowers": 3,
-                                "indirectNarrowers": 3
+                                "directNarrowers": {
+                                    "type": "xsd:integer",
+                                    "value": 3
+                                },
+                                "indirectNarrowers": {
+                                    "type": "xsd:integer",
+                                    "value": 3
+                                }
                             },
                             "color": "#99D7B3"
                         },
@@ -5182,7 +5722,10 @@
                             "id": "ischart:Ludlow",
                             "type": "skos:Concept",
                             "rank": "http://resource.geosciml.org/ontology/timescale/rank/Epoch",
-                            "ratifiedGSSP": true,
+                            "ratifiedGSSP": {
+                                "type": "xsd:boolean",
+                                "value": true
+                            },
                             "isDefinedBy": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
                             "altLabel": [
                                 {
@@ -5276,7 +5819,10 @@
                                     "id": "ischart:Gorstian",
                                     "type": "skos:Concept",
                                     "rank": "http://resource.geosciml.org/ontology/timescale/rank/Age",
-                                    "ratifiedGSSP": true,
+                                    "ratifiedGSSP": {
+                                        "type": "xsd:boolean",
+                                        "value": true
+                                    },
                                     "isDefinedBy": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
                                     "altLabel": [
                                         {
@@ -5391,10 +5937,19 @@
                                         }
                                     },
                                     "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
-                                    "order": 121,
+                                    "order": {
+                                        "type": "xsd:integer",
+                                        "value": 121
+                                    },
                                     "counts": {
-                                        "directNarrowers": 0,
-                                        "indirectNarrowers": 0
+                                        "directNarrowers": {
+                                            "type": "xsd:integer",
+                                            "value": 0
+                                        },
+                                        "indirectNarrowers": {
+                                            "type": "xsd:integer",
+                                            "value": 0
+                                        }
                                     },
                                     "color": "#CCECDD",
                                     "height": 1.7999999999999545,
@@ -5406,7 +5961,10 @@
                                     "id": "ischart:Ludfordian",
                                     "type": "skos:Concept",
                                     "rank": "http://resource.geosciml.org/ontology/timescale/rank/Age",
-                                    "ratifiedGSSP": true,
+                                    "ratifiedGSSP": {
+                                        "type": "xsd:boolean",
+                                        "value": true
+                                    },
                                     "isDefinedBy": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
                                     "altLabel": [
                                         {
@@ -5521,10 +6079,19 @@
                                         }
                                     },
                                     "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
-                                    "order": 120,
+                                    "order": {
+                                        "type": "xsd:integer",
+                                        "value": 120
+                                    },
                                     "counts": {
-                                        "directNarrowers": 0,
-                                        "indirectNarrowers": 0
+                                        "directNarrowers": {
+                                            "type": "xsd:integer",
+                                            "value": 0
+                                        },
+                                        "indirectNarrowers": {
+                                            "type": "xsd:integer",
+                                            "value": 0
+                                        }
                                     },
                                     "color": "#D9F0DF",
                                     "height": 2.6000000000000227,
@@ -5559,10 +6126,19 @@
                                 }
                             },
                             "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
-                            "order": 122,
+                            "order": {
+                                "type": "xsd:integer",
+                                "value": 122
+                            },
                             "counts": {
-                                "directNarrowers": 2,
-                                "indirectNarrowers": 2
+                                "directNarrowers": {
+                                    "type": "xsd:integer",
+                                    "value": 2
+                                },
+                                "indirectNarrowers": {
+                                    "type": "xsd:integer",
+                                    "value": 2
+                                }
                             },
                             "color": "#BFE6CF"
                         },
@@ -5573,7 +6149,10 @@
                                 "http://resource.geosciml.org/ontology/timescale/rank/Age",
                                 "http://resource.geosciml.org/ontology/timescale/rank/Epoch"
                             ],
-                            "ratifiedGSSP": true,
+                            "ratifiedGSSP": {
+                                "type": "xsd:boolean",
+                                "value": true
+                            },
                             "isDefinedBy": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
                             "altLabel": [
                                 {
@@ -5688,10 +6267,19 @@
                                 }
                             },
                             "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
-                            "order": 119,
+                            "order": {
+                                "type": "xsd:integer",
+                                "value": 119
+                            },
                             "counts": {
-                                "directNarrowers": 0,
-                                "indirectNarrowers": 0
+                                "directNarrowers": {
+                                    "type": "xsd:integer",
+                                    "value": 0
+                                },
+                                "indirectNarrowers": {
+                                    "type": "xsd:integer",
+                                    "value": 0
+                                }
                             },
                             "color": "#E6F5E1",
                             "height": 3.8000000000000114,
@@ -5703,7 +6291,10 @@
                             "id": "ischart:Wenlock",
                             "type": "skos:Concept",
                             "rank": "http://resource.geosciml.org/ontology/timescale/rank/Epoch",
-                            "ratifiedGSSP": true,
+                            "ratifiedGSSP": {
+                                "type": "xsd:boolean",
+                                "value": true
+                            },
                             "isDefinedBy": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
                             "altLabel": [
                                 {
@@ -5797,7 +6388,10 @@
                                     "id": "ischart:Homerian",
                                     "type": "skos:Concept",
                                     "rank": "http://resource.geosciml.org/ontology/timescale/rank/Age",
-                                    "ratifiedGSSP": true,
+                                    "ratifiedGSSP": {
+                                        "type": "xsd:boolean",
+                                        "value": true
+                                    },
                                     "isDefinedBy": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
                                     "altLabel": [
                                         {
@@ -5912,10 +6506,19 @@
                                         }
                                     },
                                     "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
-                                    "order": 123,
+                                    "order": {
+                                        "type": "xsd:integer",
+                                        "value": 123
+                                    },
                                     "counts": {
-                                        "directNarrowers": 0,
-                                        "indirectNarrowers": 0
+                                        "directNarrowers": {
+                                            "type": "xsd:integer",
+                                            "value": 0
+                                        },
+                                        "indirectNarrowers": {
+                                            "type": "xsd:integer",
+                                            "value": 0
+                                        }
                                     },
                                     "color": "#CCEBD1",
                                     "height": 3.1000000000000227,
@@ -5927,7 +6530,10 @@
                                     "id": "ischart:Sheinwoodian",
                                     "type": "skos:Concept",
                                     "rank": "http://resource.geosciml.org/ontology/timescale/rank/Age",
-                                    "ratifiedGSSP": true,
+                                    "ratifiedGSSP": {
+                                        "type": "xsd:boolean",
+                                        "value": true
+                                    },
                                     "isDefinedBy": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
                                     "altLabel": [
                                         {
@@ -6042,10 +6648,19 @@
                                         }
                                     },
                                     "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
-                                    "order": 124,
+                                    "order": {
+                                        "type": "xsd:integer",
+                                        "value": 124
+                                    },
                                     "counts": {
-                                        "directNarrowers": 0,
-                                        "indirectNarrowers": 0
+                                        "directNarrowers": {
+                                            "type": "xsd:integer",
+                                            "value": 0
+                                        },
+                                        "indirectNarrowers": {
+                                            "type": "xsd:integer",
+                                            "value": 0
+                                        }
                                     },
                                     "color": "#BFE6C3",
                                     "height": 2.8999999999999773,
@@ -6080,10 +6695,19 @@
                                 }
                             },
                             "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
-                            "order": 125,
+                            "order": {
+                                "type": "xsd:integer",
+                                "value": 125
+                            },
                             "counts": {
-                                "directNarrowers": 2,
-                                "indirectNarrowers": 2
+                                "directNarrowers": {
+                                    "type": "xsd:integer",
+                                    "value": 2
+                                },
+                                "indirectNarrowers": {
+                                    "type": "xsd:integer",
+                                    "value": 2
+                                }
                             },
                             "color": "#B3E1C2"
                         }
@@ -6114,10 +6738,19 @@
                         }
                     },
                     "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
-                    "order": 130,
+                    "order": {
+                        "type": "xsd:integer",
+                        "value": 130
+                    },
                     "counts": {
-                        "directNarrowers": 4,
-                        "indirectNarrowers": 11
+                        "directNarrowers": {
+                            "type": "xsd:integer",
+                            "value": 4
+                        },
+                        "indirectNarrowers": {
+                            "type": "xsd:integer",
+                            "value": 11
+                        }
                     },
                     "color": "#B3E1B6"
                 }
@@ -6148,10 +6781,19 @@
                 }
             },
             "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
-            "order": 77,
+            "order": {
+                "type": "xsd:integer",
+                "value": 77
+            },
             "counts": {
-                "directNarrowers": 6,
-                "indirectNarrowers": 78
+                "directNarrowers": {
+                    "type": "xsd:integer",
+                    "value": 6
+                },
+                "indirectNarrowers": {
+                    "type": "xsd:integer",
+                    "value": 78
+                }
             },
             "color": "#99C08D"
         }
@@ -6172,13 +6814,25 @@
         }
     },
     "hasEnd": {
-        "inMYA": 0
+        "inMYA": {
+            "type": "xsd:integer",
+            "value": 0
+        }
     },
     "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
-    "order": 156,
+    "order": {
+        "type": "xsd:integer",
+        "value": 156
+    },
     "counts": {
-        "directNarrowers": 3,
-        "indirectNarrowers": 156
+        "directNarrowers": {
+            "type": "xsd:integer",
+            "value": 3
+        },
+        "indirectNarrowers": {
+            "type": "xsd:integer",
+            "value": 156
+        }
     },
     "color": "#9AD9DD"
 }

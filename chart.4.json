@@ -2,7 +2,10 @@
     "id": "ischart:Precambrian",
     "type": "skos:Concept",
     "rank": "http://resource.geosciml.org/ontology/timescale/rank/Super-Eon",
-    "ratifiedGSSA": true,
+    "ratifiedGSSA": {
+        "type": "xsd:boolean",
+        "value": true
+    },
     "isDefinedBy": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
     "altLabel": [
         {
@@ -93,7 +96,10 @@
             "id": "ischart:Archean",
             "type": "skos:Concept",
             "rank": "http://resource.geosciml.org/ontology/timescale/rank/Eon",
-            "ratifiedGSSA": true,
+            "ratifiedGSSA": {
+                "type": "xsd:boolean",
+                "value": true
+            },
             "isDefinedBy": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
             "altLabel": [
                 {
@@ -195,7 +201,10 @@
                     "id": "ischart:Eoarchean",
                     "type": "skos:Concept",
                     "rank": "http://resource.geosciml.org/ontology/timescale/rank/Era",
-                    "ratifiedGSSA": true,
+                    "ratifiedGSSA": {
+                        "type": "xsd:boolean",
+                        "value": true
+                    },
                     "isDefinedBy": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
                     "altLabel": [
                         {
@@ -298,20 +307,38 @@
                         "value": "Eoarchean"
                     },
                     "hasBeginning": {
-                        "inMYA": 4031,
-                        "marginOfError": 3
+                        "inMYA": {
+                            "type": "xsd:integer",
+                            "value": 4031
+                        },
+                        "marginOfError": {
+                            "type": "xsd:integer",
+                            "value": 3
+                        }
                     },
                     "hasEnd": {
-                        "inMYA": 3600
+                        "inMYA": {
+                            "type": "xsd:integer",
+                            "value": 3600
+                        }
                     },
                     "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
-                    "order": 176,
+                    "order": {
+                        "type": "xsd:integer",
+                        "value": 176
+                    },
                     "counts": {
-                        "directNarrowers": 0,
-                        "indirectNarrowers": 0
+                        "directNarrowers": {
+                            "type": "xsd:integer",
+                            "value": 0
+                        },
+                        "indirectNarrowers": {
+                            "type": "xsd:integer",
+                            "value": 0
+                        }
                     },
                     "color": "#DA037F",
-                    "height": 431,
+                    "height": 431.0,
                     "remainderHeigt": 7.489697631696539,
                     "irregularHeight": 9.48969763169654,
                     "rawPercent": 6.666666666666667
@@ -320,7 +347,10 @@
                     "id": "ischart:Mesoarchean",
                     "type": "skos:Concept",
                     "rank": "http://resource.geosciml.org/ontology/timescale/rank/Era",
-                    "ratifiedGSSA": true,
+                    "ratifiedGSSA": {
+                        "type": "xsd:boolean",
+                        "value": true
+                    },
                     "isDefinedBy": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
                     "altLabel": [
                         {
@@ -423,19 +453,34 @@
                         "value": "Mesoarchean"
                     },
                     "hasBeginning": {
-                        "inMYA": 3200
+                        "inMYA": {
+                            "type": "xsd:integer",
+                            "value": 3200
+                        }
                     },
                     "hasEnd": {
-                        "inMYA": 2800
+                        "inMYA": {
+                            "type": "xsd:integer",
+                            "value": 2800
+                        }
                     },
                     "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
-                    "order": 173,
+                    "order": {
+                        "type": "xsd:integer",
+                        "value": 173
+                    },
                     "counts": {
-                        "directNarrowers": 0,
-                        "indirectNarrowers": 0
+                        "directNarrowers": {
+                            "type": "xsd:integer",
+                            "value": 0
+                        },
+                        "indirectNarrowers": {
+                            "type": "xsd:integer",
+                            "value": 0
+                        }
                     },
                     "color": "#F768A9",
-                    "height": 400,
+                    "height": 400.0,
                     "remainderHeigt": 6.950995481852937,
                     "irregularHeight": 8.950995481852937,
                     "rawPercent": 6.666666666666667
@@ -444,7 +489,10 @@
                     "id": "ischart:Neoarchean",
                     "type": "skos:Concept",
                     "rank": "http://resource.geosciml.org/ontology/timescale/rank/Era",
-                    "ratifiedGSSA": true,
+                    "ratifiedGSSA": {
+                        "type": "xsd:boolean",
+                        "value": true
+                    },
                     "isDefinedBy": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
                     "altLabel": [
                         {
@@ -547,19 +595,34 @@
                         "value": "Neoarchean"
                     },
                     "hasBeginning": {
-                        "inMYA": 2800
+                        "inMYA": {
+                            "type": "xsd:integer",
+                            "value": 2800
+                        }
                     },
                     "hasEnd": {
-                        "inMYA": 2500
+                        "inMYA": {
+                            "type": "xsd:integer",
+                            "value": 2500
+                        }
                     },
                     "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
-                    "order": 172,
+                    "order": {
+                        "type": "xsd:integer",
+                        "value": 172
+                    },
                     "counts": {
-                        "directNarrowers": 0,
-                        "indirectNarrowers": 0
+                        "directNarrowers": {
+                            "type": "xsd:integer",
+                            "value": 0
+                        },
+                        "indirectNarrowers": {
+                            "type": "xsd:integer",
+                            "value": 0
+                        }
                     },
                     "color": "#F99BC1",
-                    "height": 300,
+                    "height": 300.0,
                     "remainderHeigt": 5.213246611389702,
                     "irregularHeight": 7.213246611389702,
                     "rawPercent": 6.666666666666667
@@ -568,7 +631,10 @@
                     "id": "ischart:Paleoarchean",
                     "type": "skos:Concept",
                     "rank": "http://resource.geosciml.org/ontology/timescale/rank/Era",
-                    "ratifiedGSSA": true,
+                    "ratifiedGSSA": {
+                        "type": "xsd:boolean",
+                        "value": true
+                    },
                     "isDefinedBy": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
                     "altLabel": [
                         {
@@ -671,19 +737,34 @@
                         "value": "Paleoarchean"
                     },
                     "hasBeginning": {
-                        "inMYA": 3600
+                        "inMYA": {
+                            "type": "xsd:integer",
+                            "value": 3600
+                        }
                     },
                     "hasEnd": {
-                        "inMYA": 3200
+                        "inMYA": {
+                            "type": "xsd:integer",
+                            "value": 3200
+                        }
                     },
                     "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
-                    "order": 174,
+                    "order": {
+                        "type": "xsd:integer",
+                        "value": 174
+                    },
                     "counts": {
-                        "directNarrowers": 0,
-                        "indirectNarrowers": 0
+                        "directNarrowers": {
+                            "type": "xsd:integer",
+                            "value": 0
+                        },
+                        "indirectNarrowers": {
+                            "type": "xsd:integer",
+                            "value": 0
+                        }
                     },
                     "color": "#F4449F",
-                    "height": 400,
+                    "height": 400.0,
                     "remainderHeigt": 6.950995481852937,
                     "irregularHeight": 8.950995481852937,
                     "rawPercent": 6.666666666666667
@@ -695,17 +776,35 @@
                 "value": "Archean"
             },
             "hasBeginning": {
-                "inMYA": 4031,
-                "marginOfError": 3
+                "inMYA": {
+                    "type": "xsd:integer",
+                    "value": 4031
+                },
+                "marginOfError": {
+                    "type": "xsd:integer",
+                    "value": 3
+                }
             },
             "hasEnd": {
-                "inMYA": 2500
+                "inMYA": {
+                    "type": "xsd:integer",
+                    "value": 2500
+                }
             },
             "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
-            "order": 175,
+            "order": {
+                "type": "xsd:integer",
+                "value": 175
+            },
             "counts": {
-                "directNarrowers": 4,
-                "indirectNarrowers": 4
+                "directNarrowers": {
+                    "type": "xsd:integer",
+                    "value": 4
+                },
+                "indirectNarrowers": {
+                    "type": "xsd:integer",
+                    "value": 4
+                }
             },
             "color": "#F0047F"
         },
@@ -713,7 +812,10 @@
             "id": "ischart:Hadean",
             "type": "skos:Concept",
             "rank": "http://resource.geosciml.org/ontology/timescale/rank/Eon",
-            "ratifiedGSSA": true,
+            "ratifiedGSSA": {
+                "type": "xsd:boolean",
+                "value": true
+            },
             "isDefinedBy": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
             "altLabel": [
                 {
@@ -804,20 +906,38 @@
                 "value": "Hadean"
             },
             "hasBeginning": {
-                "inMYA": 4567
+                "inMYA": {
+                    "type": "xsd:integer",
+                    "value": 4567
+                }
             },
             "hasEnd": {
-                "inMYA": 4031,
-                "marginOfError": 3
+                "inMYA": {
+                    "type": "xsd:integer",
+                    "value": 4031
+                },
+                "marginOfError": {
+                    "type": "xsd:integer",
+                    "value": 3
+                }
             },
             "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
-            "order": 177,
+            "order": {
+                "type": "xsd:integer",
+                "value": 177
+            },
             "counts": {
-                "directNarrowers": 0,
-                "indirectNarrowers": 0
+                "directNarrowers": {
+                    "type": "xsd:integer",
+                    "value": 0
+                },
+                "indirectNarrowers": {
+                    "type": "xsd:integer",
+                    "value": 0
+                }
             },
             "color": "#AE027E",
-            "height": 536,
+            "height": 536.0,
             "remainderHeigt": 9.314333945682934,
             "irregularHeight": 11.314333945682934,
             "rawPercent": 6.666666666666667
@@ -826,7 +946,10 @@
             "id": "ischart:Proterozoic",
             "type": "skos:Concept",
             "rank": "http://resource.geosciml.org/ontology/timescale/rank/Eon",
-            "ratifiedGSSA": true,
+            "ratifiedGSSA": {
+                "type": "xsd:boolean",
+                "value": true
+            },
             "isDefinedBy": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
             "altLabel": [
                 {
@@ -920,7 +1043,10 @@
                     "id": "ischart:Mesoproterozoic",
                     "type": "skos:Concept",
                     "rank": "http://resource.geosciml.org/ontology/timescale/rank/Era",
-                    "ratifiedGSSA": true,
+                    "ratifiedGSSA": {
+                        "type": "xsd:boolean",
+                        "value": true
+                    },
                     "isDefinedBy": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
                     "altLabel": [
                         {
@@ -1014,7 +1140,10 @@
                             "id": "ischart:Calymmian",
                             "type": "skos:Concept",
                             "rank": "http://resource.geosciml.org/ontology/timescale/rank/Period",
-                            "ratifiedGSSA": true,
+                            "ratifiedGSSA": {
+                                "type": "xsd:boolean",
+                                "value": true
+                            },
                             "isDefinedBy": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
                             "altLabel": [
                                 {
@@ -1109,19 +1238,34 @@
                                 "value": "Calymmian"
                             },
                             "hasBeginning": {
-                                "inMYA": 1600
+                                "inMYA": {
+                                    "type": "xsd:integer",
+                                    "value": 1600
+                                }
                             },
                             "hasEnd": {
-                                "inMYA": 1400
+                                "inMYA": {
+                                    "type": "xsd:integer",
+                                    "value": 1400
+                                }
                             },
                             "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
-                            "order": 164,
+                            "order": {
+                                "type": "xsd:integer",
+                                "value": 164
+                            },
                             "counts": {
-                                "directNarrowers": 0,
-                                "indirectNarrowers": 0
+                                "directNarrowers": {
+                                    "type": "xsd:integer",
+                                    "value": 0
+                                },
+                                "indirectNarrowers": {
+                                    "type": "xsd:integer",
+                                    "value": 0
+                                }
                             },
                             "color": "#FDC07A",
-                            "height": 200,
+                            "height": 200.0,
                             "remainderHeigt": 3.4754977409264685,
                             "irregularHeight": 5.4754977409264685,
                             "rawPercent": 6.666666666666667
@@ -1130,7 +1274,10 @@
                             "id": "ischart:Ectasian",
                             "type": "skos:Concept",
                             "rank": "http://resource.geosciml.org/ontology/timescale/rank/Period",
-                            "ratifiedGSSA": true,
+                            "ratifiedGSSA": {
+                                "type": "xsd:boolean",
+                                "value": true
+                            },
                             "isDefinedBy": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
                             "altLabel": [
                                 {
@@ -1225,19 +1372,34 @@
                                 "value": "Ectasian"
                             },
                             "hasBeginning": {
-                                "inMYA": 1400
+                                "inMYA": {
+                                    "type": "xsd:integer",
+                                    "value": 1400
+                                }
                             },
                             "hasEnd": {
-                                "inMYA": 1200
+                                "inMYA": {
+                                    "type": "xsd:integer",
+                                    "value": 1200
+                                }
                             },
                             "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
-                            "order": 163,
+                            "order": {
+                                "type": "xsd:integer",
+                                "value": 163
+                            },
                             "counts": {
-                                "directNarrowers": 0,
-                                "indirectNarrowers": 0
+                                "directNarrowers": {
+                                    "type": "xsd:integer",
+                                    "value": 0
+                                },
+                                "indirectNarrowers": {
+                                    "type": "xsd:integer",
+                                    "value": 0
+                                }
                             },
                             "color": "#FDCC8A",
-                            "height": 200,
+                            "height": 200.0,
                             "remainderHeigt": 3.4754977409264685,
                             "irregularHeight": 5.4754977409264685,
                             "rawPercent": 6.666666666666667
@@ -1246,7 +1408,10 @@
                             "id": "ischart:Stenian",
                             "type": "skos:Concept",
                             "rank": "http://resource.geosciml.org/ontology/timescale/rank/Period",
-                            "ratifiedGSSA": true,
+                            "ratifiedGSSA": {
+                                "type": "xsd:boolean",
+                                "value": true
+                            },
                             "isDefinedBy": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
                             "altLabel": [
                                 {
@@ -1341,19 +1506,34 @@
                                 "value": "Stenian"
                             },
                             "hasBeginning": {
-                                "inMYA": 1200
+                                "inMYA": {
+                                    "type": "xsd:integer",
+                                    "value": 1200
+                                }
                             },
                             "hasEnd": {
-                                "inMYA": 1000
+                                "inMYA": {
+                                    "type": "xsd:integer",
+                                    "value": 1000
+                                }
                             },
                             "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
-                            "order": 162,
+                            "order": {
+                                "type": "xsd:integer",
+                                "value": 162
+                            },
                             "counts": {
-                                "directNarrowers": 0,
-                                "indirectNarrowers": 0
+                                "directNarrowers": {
+                                    "type": "xsd:integer",
+                                    "value": 0
+                                },
+                                "indirectNarrowers": {
+                                    "type": "xsd:integer",
+                                    "value": 0
+                                }
                             },
                             "color": "#FED99A",
-                            "height": 200,
+                            "height": 200.0,
                             "remainderHeigt": 3.4754977409264685,
                             "irregularHeight": 5.4754977409264685,
                             "rawPercent": 6.666666666666667
@@ -1365,16 +1545,31 @@
                         "value": "Mesoproterozoic"
                     },
                     "hasBeginning": {
-                        "inMYA": 1600
+                        "inMYA": {
+                            "type": "xsd:integer",
+                            "value": 1600
+                        }
                     },
                     "hasEnd": {
-                        "inMYA": 1000
+                        "inMYA": {
+                            "type": "xsd:integer",
+                            "value": 1000
+                        }
                     },
                     "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
-                    "order": 165,
+                    "order": {
+                        "type": "xsd:integer",
+                        "value": 165
+                    },
                     "counts": {
-                        "directNarrowers": 3,
-                        "indirectNarrowers": 3
+                        "directNarrowers": {
+                            "type": "xsd:integer",
+                            "value": 3
+                        },
+                        "indirectNarrowers": {
+                            "type": "xsd:integer",
+                            "value": 3
+                        }
                     },
                     "color": "#FDB462"
                 },
@@ -1382,8 +1577,14 @@
                     "id": "ischart:Neoproterozoic",
                     "type": "skos:Concept",
                     "rank": "http://resource.geosciml.org/ontology/timescale/rank/Era",
-                    "ratifiedGSSA": true,
-                    "ratifiedGSSP": true,
+                    "ratifiedGSSA": {
+                        "type": "xsd:boolean",
+                        "value": true
+                    },
+                    "ratifiedGSSP": {
+                        "type": "xsd:boolean",
+                        "value": true
+                    },
                     "isDefinedBy": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
                     "altLabel": [
                         {
@@ -1571,21 +1772,36 @@
                                 "value": "Cryogenian"
                             },
                             "hasBeginning": {
-                                "inMYA": 720,
+                                "inMYA": {
+                                    "type": "xsd:integer",
+                                    "value": 720
+                                },
                                 "note": "uncertain"
                             },
                             "hasEnd": {
-                                "inMYA": 635,
+                                "inMYA": {
+                                    "type": "xsd:integer",
+                                    "value": 635
+                                },
                                 "note": "uncertain"
                             },
                             "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
-                            "order": 159,
+                            "order": {
+                                "type": "xsd:integer",
+                                "value": 159
+                            },
                             "counts": {
-                                "directNarrowers": 0,
-                                "indirectNarrowers": 0
+                                "directNarrowers": {
+                                    "type": "xsd:integer",
+                                    "value": 0
+                                },
+                                "indirectNarrowers": {
+                                    "type": "xsd:integer",
+                                    "value": 0
+                                }
                             },
                             "color": "#FECC5C",
-                            "height": 85,
+                            "height": 85.0,
                             "remainderHeigt": 1.4770865398937492,
                             "irregularHeight": 3.477086539893749,
                             "rawPercent": 6.666666666666667
@@ -1594,7 +1810,10 @@
                             "id": "ischart:Ediacaran",
                             "type": "skos:Concept",
                             "rank": "http://resource.geosciml.org/ontology/timescale/rank/Period",
-                            "ratifiedGSSP": true,
+                            "ratifiedGSSP": {
+                                "type": "xsd:boolean",
+                                "value": true
+                            },
                             "isDefinedBy": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
                             "altLabel": [
                                 {
@@ -1689,7 +1908,10 @@
                                 "value": "Ediacaran"
                             },
                             "hasBeginning": {
-                                "inMYA": 635,
+                                "inMYA": {
+                                    "type": "xsd:integer",
+                                    "value": 635
+                                },
                                 "note": "uncertain"
                             },
                             "hasEnd": {
@@ -1703,10 +1925,19 @@
                                 }
                             },
                             "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
-                            "order": 158,
+                            "order": {
+                                "type": "xsd:integer",
+                                "value": 158
+                            },
                             "counts": {
-                                "directNarrowers": 0,
-                                "indirectNarrowers": 0
+                                "directNarrowers": {
+                                    "type": "xsd:integer",
+                                    "value": 0
+                                },
+                                "indirectNarrowers": {
+                                    "type": "xsd:integer",
+                                    "value": 0
+                                }
                             },
                             "color": "#FED96A",
                             "height": 96.20000000000005,
@@ -1718,7 +1949,10 @@
                             "id": "ischart:Tonian",
                             "type": "skos:Concept",
                             "rank": "http://resource.geosciml.org/ontology/timescale/rank/Period",
-                            "ratifiedGSSA": true,
+                            "ratifiedGSSA": {
+                                "type": "xsd:boolean",
+                                "value": true
+                            },
                             "isDefinedBy": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
                             "altLabel": [
                                 {
@@ -1813,20 +2047,35 @@
                                 "value": "Tonian"
                             },
                             "hasBeginning": {
-                                "inMYA": 1000
+                                "inMYA": {
+                                    "type": "xsd:integer",
+                                    "value": 1000
+                                }
                             },
                             "hasEnd": {
-                                "inMYA": 720,
+                                "inMYA": {
+                                    "type": "xsd:integer",
+                                    "value": 720
+                                },
                                 "note": "uncertain"
                             },
                             "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
-                            "order": 161,
+                            "order": {
+                                "type": "xsd:integer",
+                                "value": 161
+                            },
                             "counts": {
-                                "directNarrowers": 0,
-                                "indirectNarrowers": 0
+                                "directNarrowers": {
+                                    "type": "xsd:integer",
+                                    "value": 0
+                                },
+                                "indirectNarrowers": {
+                                    "type": "xsd:integer",
+                                    "value": 0
+                                }
                             },
                             "color": "#FEBF4E",
-                            "height": 280,
+                            "height": 280.0,
                             "remainderHeigt": 4.8656968372970555,
                             "irregularHeight": 6.8656968372970555,
                             "rawPercent": 6.666666666666667
@@ -1838,7 +2087,10 @@
                         "value": "Neoproterozoic"
                     },
                     "hasBeginning": {
-                        "inMYA": 1000
+                        "inMYA": {
+                            "type": "xsd:integer",
+                            "value": 1000
+                        }
                     },
                     "hasEnd": {
                         "inMYA": {
@@ -1851,10 +2103,19 @@
                         }
                     },
                     "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
-                    "order": 160,
+                    "order": {
+                        "type": "xsd:integer",
+                        "value": 160
+                    },
                     "counts": {
-                        "directNarrowers": 3,
-                        "indirectNarrowers": 3
+                        "directNarrowers": {
+                            "type": "xsd:integer",
+                            "value": 3
+                        },
+                        "indirectNarrowers": {
+                            "type": "xsd:integer",
+                            "value": 3
+                        }
                     },
                     "color": "#FEB342"
                 },
@@ -1862,7 +2123,10 @@
                     "id": "ischart:Paleoproterozoic",
                     "type": "skos:Concept",
                     "rank": "http://resource.geosciml.org/ontology/timescale/rank/Era",
-                    "ratifiedGSSA": true,
+                    "ratifiedGSSA": {
+                        "type": "xsd:boolean",
+                        "value": true
+                    },
                     "isDefinedBy": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
                     "altLabel": [
                         {
@@ -1964,7 +2228,10 @@
                             "id": "ischart:Orosirian",
                             "type": "skos:Concept",
                             "rank": "http://resource.geosciml.org/ontology/timescale/rank/Period",
-                            "ratifiedGSSA": true,
+                            "ratifiedGSSA": {
+                                "type": "xsd:boolean",
+                                "value": true
+                            },
                             "isDefinedBy": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
                             "altLabel": [
                                 {
@@ -2059,19 +2326,34 @@
                                 "value": "Orosirian"
                             },
                             "hasBeginning": {
-                                "inMYA": 2050
+                                "inMYA": {
+                                    "type": "xsd:integer",
+                                    "value": 2050
+                                }
                             },
                             "hasEnd": {
-                                "inMYA": 1800
+                                "inMYA": {
+                                    "type": "xsd:integer",
+                                    "value": 1800
+                                }
                             },
                             "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
-                            "order": 167,
+                            "order": {
+                                "type": "xsd:integer",
+                                "value": 167
+                            },
                             "counts": {
-                                "directNarrowers": 0,
-                                "indirectNarrowers": 0
+                                "directNarrowers": {
+                                    "type": "xsd:integer",
+                                    "value": 0
+                                },
+                                "indirectNarrowers": {
+                                    "type": "xsd:integer",
+                                    "value": 0
+                                }
                             },
                             "color": "#F76898",
-                            "height": 250,
+                            "height": 250.0,
                             "remainderHeigt": 4.344372176158085,
                             "irregularHeight": 6.344372176158085,
                             "rawPercent": 6.666666666666667
@@ -2080,7 +2362,10 @@
                             "id": "ischart:Rhyacian",
                             "type": "skos:Concept",
                             "rank": "http://resource.geosciml.org/ontology/timescale/rank/Period",
-                            "ratifiedGSSA": true,
+                            "ratifiedGSSA": {
+                                "type": "xsd:boolean",
+                                "value": true
+                            },
                             "isDefinedBy": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
                             "altLabel": [
                                 {
@@ -2175,19 +2460,34 @@
                                 "value": "Rhyacian"
                             },
                             "hasBeginning": {
-                                "inMYA": 2300
+                                "inMYA": {
+                                    "type": "xsd:integer",
+                                    "value": 2300
+                                }
                             },
                             "hasEnd": {
-                                "inMYA": 2050
+                                "inMYA": {
+                                    "type": "xsd:integer",
+                                    "value": 2050
+                                }
                             },
                             "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
-                            "order": 168,
+                            "order": {
+                                "type": "xsd:integer",
+                                "value": 168
+                            },
                             "counts": {
-                                "directNarrowers": 0,
-                                "indirectNarrowers": 0
+                                "directNarrowers": {
+                                    "type": "xsd:integer",
+                                    "value": 0
+                                },
+                                "indirectNarrowers": {
+                                    "type": "xsd:integer",
+                                    "value": 0
+                                }
                             },
                             "color": "#F75B89",
-                            "height": 250,
+                            "height": 250.0,
                             "remainderHeigt": 4.344372176158085,
                             "irregularHeight": 6.344372176158085,
                             "rawPercent": 6.666666666666667
@@ -2196,7 +2496,10 @@
                             "id": "ischart:Siderian",
                             "type": "skos:Concept",
                             "rank": "http://resource.geosciml.org/ontology/timescale/rank/Period",
-                            "ratifiedGSSA": true,
+                            "ratifiedGSSA": {
+                                "type": "xsd:boolean",
+                                "value": true
+                            },
                             "isDefinedBy": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
                             "altLabel": [
                                 {
@@ -2291,19 +2594,34 @@
                                 "value": "Siderian"
                             },
                             "hasBeginning": {
-                                "inMYA": 2500
+                                "inMYA": {
+                                    "type": "xsd:integer",
+                                    "value": 2500
+                                }
                             },
                             "hasEnd": {
-                                "inMYA": 2300
+                                "inMYA": {
+                                    "type": "xsd:integer",
+                                    "value": 2300
+                                }
                             },
                             "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
-                            "order": 171,
+                            "order": {
+                                "type": "xsd:integer",
+                                "value": 171
+                            },
                             "counts": {
-                                "directNarrowers": 0,
-                                "indirectNarrowers": 0
+                                "directNarrowers": {
+                                    "type": "xsd:integer",
+                                    "value": 0
+                                },
+                                "indirectNarrowers": {
+                                    "type": "xsd:integer",
+                                    "value": 0
+                                }
                             },
                             "color": "#F74F7C",
-                            "height": 200,
+                            "height": 200.0,
                             "remainderHeigt": 3.4754977409264685,
                             "irregularHeight": 5.4754977409264685,
                             "rawPercent": 6.666666666666667
@@ -2312,7 +2630,10 @@
                             "id": "ischart:Statherian",
                             "type": "skos:Concept",
                             "rank": "http://resource.geosciml.org/ontology/timescale/rank/Period",
-                            "ratifiedGSSA": true,
+                            "ratifiedGSSA": {
+                                "type": "xsd:boolean",
+                                "value": true
+                            },
                             "isDefinedBy": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
                             "altLabel": [
                                 {
@@ -2407,19 +2728,34 @@
                                 "value": "Statherian"
                             },
                             "hasBeginning": {
-                                "inMYA": 1800
+                                "inMYA": {
+                                    "type": "xsd:integer",
+                                    "value": 1800
+                                }
                             },
                             "hasEnd": {
-                                "inMYA": 1600
+                                "inMYA": {
+                                    "type": "xsd:integer",
+                                    "value": 1600
+                                }
                             },
                             "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
-                            "order": 166,
+                            "order": {
+                                "type": "xsd:integer",
+                                "value": 166
+                            },
                             "counts": {
-                                "directNarrowers": 0,
-                                "indirectNarrowers": 0
+                                "directNarrowers": {
+                                    "type": "xsd:integer",
+                                    "value": 0
+                                },
+                                "indirectNarrowers": {
+                                    "type": "xsd:integer",
+                                    "value": 0
+                                }
                             },
                             "color": "#F875A7",
-                            "height": 200,
+                            "height": 200.0,
                             "remainderHeigt": 3.4754977409264685,
                             "irregularHeight": 5.4754977409264685,
                             "rawPercent": 6.666666666666667
@@ -2431,16 +2767,31 @@
                         "value": "Paleoproterozoic"
                     },
                     "hasBeginning": {
-                        "inMYA": 2500
+                        "inMYA": {
+                            "type": "xsd:integer",
+                            "value": 2500
+                        }
                     },
                     "hasEnd": {
-                        "inMYA": 1600
+                        "inMYA": {
+                            "type": "xsd:integer",
+                            "value": 1600
+                        }
                     },
                     "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
-                    "order": 169,
+                    "order": {
+                        "type": "xsd:integer",
+                        "value": 169
+                    },
                     "counts": {
-                        "directNarrowers": 4,
-                        "indirectNarrowers": 4
+                        "directNarrowers": {
+                            "type": "xsd:integer",
+                            "value": 4
+                        },
+                        "indirectNarrowers": {
+                            "type": "xsd:integer",
+                            "value": 4
+                        }
                     },
                     "color": "#F74370"
                 }
@@ -2451,7 +2802,10 @@
                 "value": "Proterozoic"
             },
             "hasBeginning": {
-                "inMYA": 2500
+                "inMYA": {
+                    "type": "xsd:integer",
+                    "value": 2500
+                }
             },
             "hasEnd": {
                 "inMYA": {
@@ -2464,10 +2818,19 @@
                 }
             },
             "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
-            "order": 170,
+            "order": {
+                "type": "xsd:integer",
+                "value": 170
+            },
             "counts": {
-                "directNarrowers": 3,
-                "indirectNarrowers": 13
+                "directNarrowers": {
+                    "type": "xsd:integer",
+                    "value": 3
+                },
+                "indirectNarrowers": {
+                    "type": "xsd:integer",
+                    "value": 13
+                }
             },
             "color": "#F73563"
         }
@@ -2478,7 +2841,10 @@
         "value": "Precambrian"
     },
     "hasBeginning": {
-        "inMYA": 4567
+        "inMYA": {
+            "type": "xsd:integer",
+            "value": 4567
+        }
     },
     "hasEnd": {
         "inMYA": {
@@ -2491,10 +2857,19 @@
         }
     },
     "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
-    "order": 178,
+    "order": {
+        "type": "xsd:integer",
+        "value": 178
+    },
     "counts": {
-        "directNarrowers": 3,
-        "indirectNarrowers": 20
+        "directNarrowers": {
+            "type": "xsd:integer",
+            "value": 3
+        },
+        "indirectNarrowers": {
+            "type": "xsd:integer",
+            "value": 20
+        }
     },
     "color": "#F74370"
 }
