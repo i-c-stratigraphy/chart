@@ -433,16 +433,16 @@ ischart:Anisian
         "anis"@sv ,
         "安尼期"@zh ;
     skos:broader ischart:MiddleTriassic ;
-    skos:definition "A time period from 247.2 to 242 million years ago" ;
+    skos:definition "A time period from 246.7 to 241.464 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "t3"^^ischart:ccgmShortCode ;
     skos:prefLabel "Anisian"@en ;
     time:hasBeginning [
-            ischart:inMYA 247.2
+            ischart:inMYA 246.7
         ] ;
     time:hasEnd [
-            ischart:inMYA 242 ;
-            skos:note "uncertain"
+            ischart:inMYA 241.464 ;
+            sdo:marginOfError 0.28
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 71 ;
@@ -561,7 +561,7 @@ ischart:Artinskian
         "artinsk"@sv ,
         "亚丁斯克期"@zh ;
     skos:broader ischart:Cisuralian ;
-    skos:definition "A time period from 290.1 to 283.5 million years ago" ;
+    skos:definition "A time period from 290.1 to 283.3 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "p3"^^ischart:ccgmShortCode ;
     skos:prefLabel "Artinskian"@en ;
@@ -570,8 +570,8 @@ ischart:Artinskian
             sdo:marginOfError 0.26
         ] ;
     time:hasEnd [
-            ischart:inMYA 283.5 ;
-            sdo:marginOfError 0.6
+            ischart:inMYA 283.3 ;
+            sdo:marginOfError 0.4
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 87 ;
@@ -605,7 +605,7 @@ ischart:Asselian
         "assel"@sv ,
         "阿瑟尔期"@zh ;
     skos:broader ischart:Cisuralian ;
-    skos:definition "A time period from 298.9 to 293.51 million years ago" ;
+    skos:definition "A time period from 298.9 to 293.52 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "p1"^^ischart:ccgmShortCode ;
     skos:prefLabel "Asselian"@en ;
@@ -614,7 +614,7 @@ ischart:Asselian
             sdo:marginOfError 0.15
         ] ;
     time:hasEnd [
-            ischart:inMYA 293.51 ;
+            ischart:inMYA 293.52 ;
             sdo:marginOfError 0.17
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
@@ -777,12 +777,12 @@ ischart:Bashkirian
         "bashkir"@sv ,
         "巴什基尔期"@zh ;
     skos:broader ischart:LowerPennsylvanian ;
-    skos:definition "A time period from 323.2 to 315.2 million years ago" ;
+    skos:definition "A time period from 323.4 to 315.2 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "c4"^^ischart:ccgmShortCode ;
     skos:prefLabel "Bashkirian"@en ;
     time:hasBeginning [
-            ischart:inMYA 323.2 ;
+            ischart:inMYA 323.4 ;
             sdo:marginOfError 0.4
         ] ;
     time:hasEnd [
@@ -1336,7 +1336,7 @@ ischart:Carnian
         "carn"@sv ,
         "卡尼期"@zh ;
     skos:broader ischart:UpperTriassic ;
-    skos:definition "A time period from 237 to 227 million years ago" ;
+    skos:definition "A time period from 237 to 227.3 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "t5"^^ischart:ccgmShortCode ;
     skos:prefLabel "Carnian"@en ;
@@ -1345,7 +1345,7 @@ ischart:Carnian
             skos:note "uncertain"
         ] ;
     time:hasEnd [
-            ischart:inMYA 227 ;
+            ischart:inMYA 227.3 ;
             skos:note "uncertain"
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
@@ -2011,7 +2011,7 @@ ischart:Famennian
         "famenn"@sv ,
         "法门期"@zh ;
     skos:broader ischart:UpperDevonian ;
-    skos:definition "A time period from 372.2 to 358.9 million years ago" ;
+    skos:definition "A time period from 372.2 to 538.86 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "d7"^^ischart:ccgmShortCode ;
     skos:prefLabel "Famennian"@en ;
@@ -2020,8 +2020,8 @@ ischart:Famennian
             sdo:marginOfError 1.6
         ] ;
     time:hasEnd [
-            ischart:inMYA 358.9 ;
-            sdo:marginOfError 0.4
+            ischart:inMYA 538.86 ;
+            sdo:marginOfError 0.19
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 108 ;
@@ -2640,7 +2640,7 @@ ischart:Induan
         "indu"@sv ,
         "印度期"@zh ;
     skos:broader ischart:LowerTriassic ;
-    skos:definition "A time period from 251.902 to 251.2 million years ago" ;
+    skos:definition "A time period from 251.902 to 249.9 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "t1"^^ischart:ccgmShortCode ;
     skos:prefLabel "Induan"@en ;
@@ -2649,7 +2649,7 @@ ischart:Induan
             sdo:marginOfError 0.024
         ] ;
     time:hasEnd [
-            ischart:inMYA 251.2
+            ischart:inMYA 249.9
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 74 ;
@@ -2837,17 +2837,17 @@ ischart:Kungurian
         "kungur"@sv ,
         "孔古尔期"@zh ;
     skos:broader ischart:Cisuralian ;
-    skos:definition "A time period from 283.5 to 273.01 million years ago" ;
+    skos:definition "A time period from 283.3 to 274.4 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "p4"^^ischart:ccgmShortCode ;
     skos:prefLabel "Kungurian"@en ;
     time:hasBeginning [
-            ischart:inMYA 283.5 ;
-            sdo:marginOfError 0.6
+            ischart:inMYA 283.3 ;
+            sdo:marginOfError 0.4
         ] ;
     time:hasEnd [
-            ischart:inMYA 273.01 ;
-            sdo:marginOfError 0.14
+            ischart:inMYA 274.4 ;
+            sdo:marginOfError 0.4
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 86 ;
@@ -2881,13 +2881,13 @@ ischart:Ladinian
         "ladin"@sv ,
         "拉迪尼亚期"@zh ;
     skos:broader ischart:MiddleTriassic ;
-    skos:definition "A time period from 242 to 237 million years ago" ;
+    skos:definition "A time period from 241.464 to 237 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "t4"^^ischart:ccgmShortCode ;
     skos:prefLabel "Ladinian"@en ;
     time:hasBeginning [
-            ischart:inMYA 242 ;
-            skos:note "uncertain"
+            ischart:inMYA 241.464 ;
+            sdo:marginOfError 0.28
         ] ;
     time:hasEnd [
             ischart:inMYA 237 ;
@@ -3333,16 +3333,16 @@ ischart:Norian
         "nor"@sv ,
         "诺利克期"@zh ;
     skos:broader ischart:UpperTriassic ;
-    skos:definition "A time period from 227 to 208.5 million years ago" ;
+    skos:definition "A time period from 227.3 to 205.7 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "t6"^^ischart:ccgmShortCode ;
     skos:prefLabel "Norian"@en ;
     time:hasBeginning [
-            ischart:inMYA 227 ;
+            ischart:inMYA 227.3 ;
             skos:note "uncertain"
         ] ;
     time:hasEnd [
-            ischart:inMYA 208.5 ;
+            ischart:inMYA 205.7 ;
             skos:note "uncertain"
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
@@ -3397,15 +3397,15 @@ ischart:Olenekian
         "olenek"@sv ,
         "奥伦尼克期"@zh ;
     skos:broader ischart:LowerTriassic ;
-    skos:definition "A time period from 247.2 to 251.2 million years ago" ;
+    skos:definition "A time period from 246.7 to 249.9 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "t2"^^ischart:ccgmShortCode ;
     skos:prefLabel "Olenekian"@en ;
     time:hasBeginning [
-            ischart:inMYA 251.2
+            ischart:inMYA 249.9
         ] ;
     time:hasEnd [
-            ischart:inMYA 247.2
+            ischart:inMYA 246.7
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 73 ;
@@ -3783,12 +3783,12 @@ ischart:Rhaetian
         "rät"@sv ,
         "瑞替期"@zh ;
     skos:broader ischart:UpperTriassic ;
-    skos:definition "A time period from 208.5 to 201.4 million years ago" ;
+    skos:definition "A time period from 205.7 to 201.4 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "t7"^^ischart:ccgmShortCode ;
     skos:prefLabel "Rhaetian"@en ;
     time:hasBeginning [
-            ischart:inMYA 208.5 ;
+            ischart:inMYA 205.7 ;
             skos:note "uncertain"
         ] ;
     time:hasEnd [
@@ -3913,13 +3913,13 @@ ischart:Roadian
         "road"@sv ,
         "罗德期"@zh ;
     skos:broader ischart:Guadalupian ;
-    skos:definition "A time period from 273.01 to 266.9 million years ago" ;
+    skos:definition "A time period from 274.4 to 266.9 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "p5"^^ischart:ccgmShortCode ;
     skos:prefLabel "Roadian"@en ;
     time:hasBeginning [
-            ischart:inMYA 273.01 ;
-            sdo:marginOfError 0.14
+            ischart:inMYA 274.4 ;
+            sdo:marginOfError 0.4
         ] ;
     time:hasEnd [
             ischart:inMYA 266.9 ;
@@ -3999,12 +3999,12 @@ ischart:Sakmarian
         "sakmar"@sv ,
         "萨克马尔期"@zh ;
     skos:broader ischart:Cisuralian ;
-    skos:definition "A time period from 293.51 to 290.1 million years ago" ;
+    skos:definition "A time period from 293.52 to 290.1 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "p2"^^ischart:ccgmShortCode ;
     skos:prefLabel "Sakmarian"@en ;
     time:hasBeginning [
-            ischart:inMYA 293.51 ;
+            ischart:inMYA 293.52 ;
             sdo:marginOfError 0.17
         ] ;
     time:hasEnd [
@@ -4172,16 +4172,16 @@ ischart:Serpukhovian
         "serpukhov"@sv ,
         "谢尔普霍夫期"@zh ;
     skos:broader ischart:UpperMississippian ;
-    skos:definition "A time period from 330.9 to 323.2 million years ago" ;
+    skos:definition "A time period from 330.3 to 323.4 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "c3"^^ischart:ccgmShortCode ;
     skos:prefLabel "Serpukhovian"@en ;
     time:hasBeginning [
-            ischart:inMYA 330.9 ;
-            sdo:marginOfError 0.2
+            ischart:inMYA 330.3 ;
+            sdo:marginOfError 0.4
         ] ;
     time:hasEnd [
-            ischart:inMYA 323.2 ;
+            ischart:inMYA 323.4 ;
             sdo:marginOfError 0.4
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
@@ -4557,7 +4557,7 @@ ischart:Tithonian
         "tithon"@sv ,
         "提通期"@zh ;
     skos:broader ischart:UpperJurassic ;
-    skos:definition "A time period from 149.2 to 145 million years ago" ;
+    skos:definition "A time period from 149.2 to 143.1 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "j7"^^ischart:ccgmShortCode ;
     skos:prefLabel "Tithonian"@en ;
@@ -4566,8 +4566,8 @@ ischart:Tithonian
             sdo:marginOfError 0.7
         ] ;
     time:hasEnd [
-            ischart:inMYA 145 ;
-            skos:note "uncertain"
+            ischart:inMYA 143.1 ;
+            sdo:marginOfError 0.6
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 51 ;
@@ -4730,13 +4730,13 @@ ischart:Tournaisian
         "tournas"@sv ,
         "杜内期"@zh ;
     skos:broader ischart:LowerMississippian ;
-    skos:definition "A time period from 358.9 to 346.7 million years ago" ;
+    skos:definition "A time period from 538.86 to 346.7 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "c1"^^ischart:ccgmShortCode ;
     skos:prefLabel "Tournaisian"@en ;
     time:hasBeginning [
-            ischart:inMYA 358.9 ;
-            sdo:marginOfError 0.4
+            ischart:inMYA 538.86 ;
+            sdo:marginOfError 0.19
         ] ;
     time:hasEnd [
             ischart:inMYA 346.7 ;
@@ -4943,7 +4943,7 @@ ischart:Visean
         "vis"@sv ,
         "韦宪期"@zh ;
     skos:broader ischart:MiddleMississippian ;
-    skos:definition "A time period from 346.7 to 330.9 million years ago" ;
+    skos:definition "A time period from 346.7 to 330.3 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "c2"^^ischart:ccgmShortCode ;
     skos:prefLabel "Visean"@en ;
@@ -4952,8 +4952,8 @@ ischart:Visean
             sdo:marginOfError 0.4
         ] ;
     time:hasEnd [
-            ischart:inMYA 330.9 ;
-            sdo:marginOfError 0.2
+            ischart:inMYA 330.3 ;
+            sdo:marginOfError 0.4
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 103 ;
@@ -5164,14 +5164,14 @@ ischart:LowerMississippian
         "前期ミシシッピアン紀"@ja ,
         "早密西西比世"@zh ;
     skos:broader ischart:Mississippian ;
-    skos:definition "A time period from 358.9 to 346.7 million years ago" ;
+    skos:definition "A time period from 538.86 to 346.7 million years ago" ;
     skos:inScheme cs: ;
     skos:narrower ischart:Tournaisian ;
     skos:notation "C1c1"^^ischart:ccgmShortCode ;
     skos:prefLabel "Early Mississippian"@en ;
     time:hasBeginning [
-            ischart:inMYA 358.9 ;
-            sdo:marginOfError 0.4
+            ischart:inMYA 538.86 ;
+            sdo:marginOfError 0.19
         ] ;
     time:hasEnd [
             ischart:inMYA 346.7 ;
@@ -5191,13 +5191,13 @@ ischart:LowerPennsylvanian
         "前期ペンシルバニア紀"@ja ,
         "早宾夕法尼亚世"@zh ;
     skos:broader ischart:Pennsylvanian ;
-    skos:definition "A time period from 323.2 to 315.2 million years ago" ;
+    skos:definition "A time period from 323.4 to 315.2 million years ago" ;
     skos:inScheme cs: ;
     skos:narrower ischart:Bashkirian ;
     skos:notation "C2c4"^^ischart:ccgmShortCode ;
     skos:prefLabel "Early Pennsylvanian"@en ;
     time:hasBeginning [
-            ischart:inMYA 323.2 ;
+            ischart:inMYA 323.4 ;
             sdo:marginOfError 0.4
         ] ;
     time:hasEnd [
@@ -5218,7 +5218,7 @@ ischart:MiddleMississippian
         "中期ミシシッピアン紀"@ja ,
         "中密西西比世"@zh ;
     skos:broader ischart:Mississippian ;
-    skos:definition "A time period from 346.7 to 330.9 million years ago" ;
+    skos:definition "A time period from 346.7 to 330.3 million years ago" ;
     skos:inScheme cs: ;
     skos:narrower ischart:Visean ;
     skos:notation "C1c2"^^ischart:ccgmShortCode ;
@@ -5228,8 +5228,8 @@ ischart:MiddleMississippian
             sdo:marginOfError 0.4
         ] ;
     time:hasEnd [
-            ischart:inMYA 330.9 ;
-            sdo:marginOfError 0.2
+            ischart:inMYA 330.3 ;
+            sdo:marginOfError 0.4
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 102 ;
@@ -5316,17 +5316,17 @@ ischart:UpperMississippian
         "後期ミシシッピアン紀"@ja ,
         "晚密西西比世"@zh ;
     skos:broader ischart:Mississippian ;
-    skos:definition "A time period from 330.9 to 323.2 million years ago" ;
+    skos:definition "A time period from 330.3 to 323.4 million years ago" ;
     skos:inScheme cs: ;
     skos:narrower ischart:Serpukhovian ;
     skos:notation "C1c3"^^ischart:ccgmShortCode ;
     skos:prefLabel "Late Mississippian"@en ;
     time:hasBeginning [
-            ischart:inMYA 330.9 ;
-            sdo:marginOfError 0.2
+            ischart:inMYA 330.3 ;
+            sdo:marginOfError 0.4
         ] ;
     time:hasEnd [
-            ischart:inMYA 323.2 ;
+            ischart:inMYA 323.4 ;
             sdo:marginOfError 0.4
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
@@ -5407,7 +5407,7 @@ ischart:Carboniferous
         "karbon"@sv ,
         "石炭纪"@zh ;
     skos:broader ischart:Paleozoic ;
-    skos:definition "A time period from 358.9 to 298.9 million years ago" ;
+    skos:definition "A time period from 538.86 to 298.9 million years ago" ;
     skos:inScheme cs: ;
     skos:narrower
         ischart:Mississippian ,
@@ -5415,8 +5415,8 @@ ischart:Carboniferous
     skos:notation "C"^^ischart:ccgmShortCode ;
     skos:prefLabel "Carboniferous"@en ;
     time:hasBeginning [
-            ischart:inMYA 358.9 ;
-            sdo:marginOfError 0.4
+            ischart:inMYA 538.86 ;
+            sdo:marginOfError 0.19
         ] ;
     time:hasEnd [
             ischart:inMYA 298.9 ;
@@ -5593,7 +5593,7 @@ ischart:LowerTriassic
         "äldre trias"@sv ,
         "早三叠世"@zh ;
     skos:broader ischart:Triassic ;
-    skos:definition "A time period from 251.902 to 247.2 million years ago" ;
+    skos:definition "A time period from 251.902 to 246.7 million years ago" ;
     skos:inScheme cs: ;
     skos:narrower
         ischart:Induan ,
@@ -5605,7 +5605,7 @@ ischart:LowerTriassic
             sdo:marginOfError 0.024
         ] ;
     time:hasEnd [
-            ischart:inMYA 247.2
+            ischart:inMYA 246.7
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 75 ;
@@ -5779,7 +5779,7 @@ ischart:MiddleTriassic
         "mellersta trias"@sv ,
         "中三叠世"@zh ;
     skos:broader ischart:Triassic ;
-    skos:definition "A time period from 247.2 to 237 million years ago" ;
+    skos:definition "A time period from 246.7 to 237 million years ago" ;
     skos:inScheme cs: ;
     skos:narrower
         ischart:Anisian ,
@@ -5787,7 +5787,7 @@ ischart:MiddleTriassic
     skos:notation "T2"^^ischart:ccgmShortCode ;
     skos:prefLabel "Middle Triassic"@en ;
     time:hasBeginning [
-            ischart:inMYA 247.2
+            ischart:inMYA 246.7
         ] ;
     time:hasEnd [
             ischart:inMYA 237 ;
@@ -6048,7 +6048,7 @@ ischart:UpperDevonian
         "yngre devon"@sv ,
         "晚泥盆世"@zh ;
     skos:broader ischart:Devonian ;
-    skos:definition "A time period from 382.7 to 358.9 million years ago" ;
+    skos:definition "A time period from 382.7 to 538.86 million years ago" ;
     skos:inScheme cs: ;
     skos:narrower
         ischart:Famennian ,
@@ -6060,8 +6060,8 @@ ischart:UpperDevonian
             sdo:marginOfError 1.6
         ] ;
     time:hasEnd [
-            ischart:inMYA 358.9 ;
-            sdo:marginOfError 0.4
+            ischart:inMYA 538.86 ;
+            sdo:marginOfError 0.19
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 110 ;
@@ -6232,7 +6232,7 @@ ischart:Devonian
         "devon"@sv ,
         "泥盆纪"@zh ;
     skos:broader ischart:Paleozoic ;
-    skos:definition "A time period from 419.2 to 358.9 million years ago" ;
+    skos:definition "A time period from 419.2 to 538.86 million years ago" ;
     skos:inScheme cs: ;
     skos:narrower
         ischart:LowerDevonian ,
@@ -6245,8 +6245,8 @@ ischart:Devonian
             sdo:marginOfError 3.2
         ] ;
     time:hasEnd [
-            ischart:inMYA 358.9 ;
-            sdo:marginOfError 0.4
+            ischart:inMYA 538.86 ;
+            sdo:marginOfError 0.19
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 116 ;
@@ -6328,7 +6328,7 @@ ischart:Guadalupian
         "guadalup"@sv ,
         "瓜德鲁普世"@zh ;
     skos:broader ischart:Permian ;
-    skos:definition "A time period from 273.01 to 259.51 million years ago" ;
+    skos:definition "A time period from 274.4 to 259.51 million years ago" ;
     skos:inScheme cs: ;
     skos:narrower
         ischart:Capitanian ,
@@ -6337,8 +6337,8 @@ ischart:Guadalupian
     skos:notation "P2"^^ischart:ccgmShortCode ;
     skos:prefLabel "Guadalupian"@en ;
     time:hasBeginning [
-            ischart:inMYA 273.01 ;
-            sdo:marginOfError 0.14
+            ischart:inMYA 274.4 ;
+            sdo:marginOfError 0.4
         ] ;
     time:hasEnd [
             ischart:inMYA 259.51 ;
@@ -6686,7 +6686,7 @@ ischart:Mississippian
         "mississippi"@sv ,
         "密西西比亚纪"@zh ;
     skos:broader ischart:Carboniferous ;
-    skos:definition "A time period from 358.9 to 323.2 million years ago" ;
+    skos:definition "A time period from 538.86 to 323.4 million years ago" ;
     skos:inScheme cs: ;
     skos:narrower
         ischart:LowerMississippian ,
@@ -6695,11 +6695,11 @@ ischart:Mississippian
     skos:notation "C1"^^ischart:ccgmShortCode ;
     skos:prefLabel "Mississippian"@en ;
     time:hasBeginning [
-            ischart:inMYA 358.9 ;
-            sdo:marginOfError 0.4
+            ischart:inMYA 538.86 ;
+            sdo:marginOfError 0.19
         ] ;
     time:hasEnd [
-            ischart:inMYA 323.2 ;
+            ischart:inMYA 323.4 ;
             sdo:marginOfError 0.4
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
@@ -6926,7 +6926,7 @@ ischart:Pennsylvanian
         "pennsylvan"@sv ,
         "宾夕法尼亚亚纪"@zh ;
     skos:broader ischart:Carboniferous ;
-    skos:definition "A time period from 323.2 to 298.9 million years ago" ;
+    skos:definition "A time period from 323.4 to 298.9 million years ago" ;
     skos:inScheme cs: ;
     skos:narrower
         ischart:LowerPennsylvanian ,
@@ -6935,7 +6935,7 @@ ischart:Pennsylvanian
     skos:notation "C2"^^ischart:ccgmShortCode ;
     skos:prefLabel "Pennsylvanian"@en ;
     time:hasBeginning [
-            ischart:inMYA 323.2 ;
+            ischart:inMYA 323.4 ;
             sdo:marginOfError 0.4
         ] ;
     time:hasEnd [
@@ -7204,7 +7204,7 @@ ischart:UpperJurassic
         "yngre jura"@sv ,
         "晚侏罗世"@zh ;
     skos:broader ischart:Jurassic ;
-    skos:definition "A time period from 161.5 to 145 million years ago" ;
+    skos:definition "A time period from 161.5 to 143.1 million years ago" ;
     skos:inScheme cs: ;
     skos:narrower
         ischart:Kimmeridgian ,
@@ -7217,8 +7217,8 @@ ischart:UpperJurassic
             sdo:marginOfError 1.0
         ] ;
     time:hasEnd [
-            ischart:inMYA 145 ;
-            skos:note "uncertain"
+            ischart:inMYA 143.1 ;
+            sdo:marginOfError 0.6
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 54 ;
@@ -7439,7 +7439,7 @@ ischart:Cisuralian
         "cisural"@sv ,
         "乌拉尔世"@zh ;
     skos:broader ischart:Permian ;
-    skos:definition "A time period from 298.9 to 273.01 million years ago" ;
+    skos:definition "A time period from 298.9 to 274.4 million years ago" ;
     skos:inScheme cs: ;
     skos:narrower
         ischart:Artinskian ,
@@ -7453,8 +7453,8 @@ ischart:Cisuralian
             sdo:marginOfError 0.15
         ] ;
     time:hasEnd [
-            ischart:inMYA 273.01 ;
-            sdo:marginOfError 0.14
+            ischart:inMYA 274.4 ;
+            sdo:marginOfError 0.4
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 90 ;
