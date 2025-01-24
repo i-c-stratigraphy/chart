@@ -35,6 +35,10 @@
       "@id": "example:indirectNarrowers",
       "@type": "xsd:integer"
     },
+    "order": {
+      "@id":  "sh:order",
+      "@type": "xsd:integer"
+    },
     "conformsTo": {
       "@id": "dcterms:conformsTo",
       "@type": "@id"
@@ -89,7 +93,6 @@
       "@id": "sdo:url",
       "@type": "xsd:anyURI"
     },
-    "order": "sh:order",
     "altLabel": "skos:altLabel",
     "broader": {
       "@id": "skos:broader",
