@@ -33,6 +33,7 @@ jobs:
           do
             echo $i 
             output="chart-$i.pdf"
+
             echo "creating $output"
             #generate each language version
             echo "https://stratigraphy.org/chart-data/?scale=print&language=$i"
