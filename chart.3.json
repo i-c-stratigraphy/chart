@@ -291,7 +291,7 @@
                     "broader": [
                         "ischart:Paleozoic"
                     ],
-                    "definition": "A time period from 538.8 to 485.4 million years ago",
+                    "definition": "A time period from 538.8 to 486.85 million years ago",
                     "inScheme": "http://resource.geosciml.org/classifier/ics/ischart",
                     "narrower": [
                         {
@@ -384,7 +384,7 @@
                             "broader": [
                                 "ischart:Cambrian"
                             ],
-                            "definition": "A time period from 521 to 509 million years ago",
+                            "definition": "A time period from 521.0 to 506.5 million years ago",
                             "inScheme": "http://resource.geosciml.org/classifier/ics/ischart",
                             "narrower": [
                                 {
@@ -477,7 +477,7 @@
                                     "broader": [
                                         "ischart:CambrianSeries2"
                                     ],
-                                    "definition": "A time period from 521 to 514 million years ago",
+                                    "definition": "A time period from 521.0 to 514.5 million years ago",
                                     "inScheme": "http://resource.geosciml.org/classifier/ics/ischart",
                                     "notation": "ep2",
                                     "prefLabel": {
@@ -486,15 +486,15 @@
                                     },
                                     "hasBeginning": {
                                         "inMYA": {
-                                            "type": "xsd:integer",
-                                            "value": 521
+                                            "type": "xsd:decimal",
+                                            "value": "521.0"
                                         },
                                         "note": "uncertain"
                                     },
                                     "hasEnd": {
                                         "inMYA": {
-                                            "type": "xsd:integer",
-                                            "value": 514
+                                            "type": "xsd:decimal",
+                                            "value": "514.5"
                                         },
                                         "note": "uncertain"
                                     },
@@ -514,9 +514,9 @@
                                         }
                                     },
                                     "color": "#A6C583",
-                                    "height": 7.0,
-                                    "remainderHeigt": 1.3703099510603591,
-                                    "irregularHeight": 3.370309951060359,
+                                    "height": 6.5,
+                                    "remainderHeigt": -3899.9999999961574,
+                                    "irregularHeight": -3897.9999999961574,
                                     "rawPercent": 3.125
                                 },
                                 {
@@ -609,7 +609,7 @@
                                     "broader": [
                                         "ischart:CambrianSeries2"
                                     ],
-                                    "definition": "A time period from 514 to 509 million years ago",
+                                    "definition": "A time period from 514.5 to 506.5 million years ago",
                                     "inScheme": "http://resource.geosciml.org/classifier/ics/ischart",
                                     "notation": "ep4",
                                     "prefLabel": {
@@ -618,15 +618,15 @@
                                     },
                                     "hasBeginning": {
                                         "inMYA": {
-                                            "type": "xsd:integer",
-                                            "value": 514
+                                            "type": "xsd:decimal",
+                                            "value": "514.5"
                                         },
                                         "note": "uncertain"
                                     },
                                     "hasEnd": {
                                         "inMYA": {
-                                            "type": "xsd:integer",
-                                            "value": 509
+                                            "type": "xsd:decimal",
+                                            "value": "506.5"
                                         },
                                         "note": "uncertain"
                                     },
@@ -646,9 +646,9 @@
                                         }
                                     },
                                     "color": "#B3CA8E",
-                                    "height": 5.0,
-                                    "remainderHeigt": 0.9787928221859707,
-                                    "irregularHeight": 2.9787928221859707,
+                                    "height": 8.0,
+                                    "remainderHeigt": -4799.999999995271,
+                                    "irregularHeight": -4797.999999995271,
                                     "rawPercent": 3.125
                                 }
                             ],
@@ -659,15 +659,15 @@
                             },
                             "hasBeginning": {
                                 "inMYA": {
-                                    "type": "xsd:integer",
-                                    "value": 521
+                                    "type": "xsd:decimal",
+                                    "value": "521.0"
                                 },
                                 "note": "uncertain"
                             },
                             "hasEnd": {
                                 "inMYA": {
-                                    "type": "xsd:integer",
-                                    "value": 509
+                                    "type": "xsd:decimal",
+                                    "value": "506.5"
                                 },
                                 "note": "uncertain"
                             },
@@ -782,7 +782,7 @@
                             "broader": [
                                 "ischart:Cambrian"
                             ],
-                            "definition": "A time period from 497 to 485.4 million years ago",
+                            "definition": "A time period from 497.0 to 486.85 million years ago",
                             "inScheme": "http://resource.geosciml.org/classifier/ics/ischart",
                             "narrower": [
                                 {
@@ -875,7 +875,7 @@
                                     "broader": [
                                         "ischart:Furongian"
                                     ],
-                                    "definition": "A time period from 489.5 to 485.4 million years ago",
+                                    "definition": "A time period from 491.0 to 486.85 million years ago",
                                     "inScheme": "http://resource.geosciml.org/classifier/ics/ischart",
                                     "notation": "ep10",
                                     "prefLabel": {
@@ -885,18 +885,18 @@
                                     "hasBeginning": {
                                         "inMYA": {
                                             "type": "xsd:decimal",
-                                            "value": "489.5"
+                                            "value": "491.0"
                                         },
                                         "note": "uncertain"
                                     },
                                     "hasEnd": {
                                         "inMYA": {
                                             "type": "xsd:decimal",
-                                            "value": "485.4"
+                                            "value": "486.85"
                                         },
                                         "marginOfError": {
                                             "type": "xsd:decimal",
-                                            "value": "1.9"
+                                            "value": "1.5"
                                         }
                                     },
                                     "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
@@ -915,9 +915,9 @@
                                         }
                                     },
                                     "color": "#E6F5C9",
-                                    "height": 4.100000000000023,
-                                    "remainderHeigt": 0.8026101141925005,
-                                    "irregularHeight": 2.8026101141925004,
+                                    "height": 4.149999999999977,
+                                    "remainderHeigt": -2489.9999999975325,
+                                    "irregularHeight": -2487.9999999975325,
                                     "rawPercent": 3.125
                                 },
                                 {
@@ -936,7 +936,7 @@
                                     "broader": [
                                         "ischart:Furongian"
                                     ],
-                                    "definition": "A time period from 494 to 489.5 million years ago",
+                                    "definition": "A time period from 494.2 to 491.0 million years ago",
                                     "inScheme": "http://resource.geosciml.org/classifier/ics/ischart",
                                     "notation": "ep9",
                                     "prefLabel": {
@@ -945,15 +945,15 @@
                                     },
                                     "hasBeginning": {
                                         "inMYA": {
-                                            "type": "xsd:integer",
-                                            "value": 494
+                                            "type": "xsd:decimal",
+                                            "value": "494.2"
                                         },
                                         "note": "uncertain"
                                     },
                                     "hasEnd": {
                                         "inMYA": {
                                             "type": "xsd:decimal",
-                                            "value": "489.5"
+                                            "value": "491.0"
                                         },
                                         "note": "uncertain"
                                     },
@@ -973,9 +973,9 @@
                                         }
                                     },
                                     "color": "#D9F0BB",
-                                    "height": 4.5,
-                                    "remainderHeigt": 0.8809135399673736,
-                                    "irregularHeight": 2.8809135399673735,
+                                    "height": 3.1999999999999886,
+                                    "remainderHeigt": -1919.9999999981014,
+                                    "irregularHeight": -1917.9999999981014,
                                     "rawPercent": 3.125
                                 },
                                 {
@@ -1072,7 +1072,7 @@
                                     "broader": [
                                         "ischart:Furongian"
                                     ],
-                                    "definition": "A time period from 497 to 494 million years ago",
+                                    "definition": "A time period from 497.0 to 494.2 million years ago",
                                     "inScheme": "http://resource.geosciml.org/classifier/ics/ischart",
                                     "notation": "ep8",
                                     "prefLabel": {
@@ -1081,15 +1081,15 @@
                                     },
                                     "hasBeginning": {
                                         "inMYA": {
-                                            "type": "xsd:integer",
-                                            "value": 497
+                                            "type": "xsd:decimal",
+                                            "value": "497.0"
                                         },
                                         "note": "uncertain"
                                     },
                                     "hasEnd": {
                                         "inMYA": {
-                                            "type": "xsd:integer",
-                                            "value": 494
+                                            "type": "xsd:decimal",
+                                            "value": "494.2"
                                         },
                                         "note": "uncertain"
                                     },
@@ -1109,9 +1109,9 @@
                                         }
                                     },
                                     "color": "#CCEBAE",
-                                    "height": 3.0,
-                                    "remainderHeigt": 0.5872756933115825,
-                                    "irregularHeight": 2.5872756933115824,
+                                    "height": 2.8000000000000114,
+                                    "remainderHeigt": -1679.9999999983515,
+                                    "irregularHeight": -1677.9999999983515,
                                     "rawPercent": 3.125
                                 }
                             ],
@@ -1122,19 +1122,19 @@
                             },
                             "hasBeginning": {
                                 "inMYA": {
-                                    "type": "xsd:integer",
-                                    "value": 497
+                                    "type": "xsd:decimal",
+                                    "value": "497.0"
                                 },
                                 "note": "uncertain"
                             },
                             "hasEnd": {
                                 "inMYA": {
                                     "type": "xsd:decimal",
-                                    "value": "485.4"
+                                    "value": "486.85"
                                 },
                                 "marginOfError": {
                                     "type": "xsd:decimal",
-                                    "value": "1.9"
+                                    "value": "1.5"
                                 }
                             },
                             "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
@@ -1166,7 +1166,7 @@
                             "broader": [
                                 "ischart:Cambrian"
                             ],
-                            "definition": "A time period from 509 to 497 million years ago",
+                            "definition": "A time period from 506.5 to 497.0 million years ago",
                             "inScheme": "http://resource.geosciml.org/classifier/ics/ischart",
                             "narrower": [
                                 {
@@ -1301,8 +1301,8 @@
                                     },
                                     "color": "#BFD99D",
                                     "height": 4.0,
-                                    "remainderHeigt": 0.7830342577487766,
-                                    "irregularHeight": 2.7830342577487768,
+                                    "remainderHeigt": -2399.9999999976353,
+                                    "irregularHeight": -2397.9999999976353,
                                     "rawPercent": 3.125
                                 },
                                 {
@@ -1399,7 +1399,7 @@
                                     "broader": [
                                         "ischart:Miaolingian"
                                     ],
-                                    "definition": "A time period from 500.5 to 497 million years ago",
+                                    "definition": "A time period from 500.5 to 497.0 million years ago",
                                     "inScheme": "http://resource.geosciml.org/classifier/ics/ischart",
                                     "notation": "ep7",
                                     "prefLabel": {
@@ -1415,8 +1415,8 @@
                                     },
                                     "hasEnd": {
                                         "inMYA": {
-                                            "type": "xsd:integer",
-                                            "value": 497
+                                            "type": "xsd:decimal",
+                                            "value": "497.0"
                                         },
                                         "note": "uncertain"
                                     },
@@ -1437,8 +1437,8 @@
                                     },
                                     "color": "#CCDFAA",
                                     "height": 3.5,
-                                    "remainderHeigt": 0.6851549755301796,
-                                    "irregularHeight": 2.6851549755301796,
+                                    "remainderHeigt": -2099.999999997931,
+                                    "irregularHeight": -2097.999999997931,
                                     "rawPercent": 3.125
                                 },
                                 {
@@ -1453,7 +1453,7 @@
                                     "broader": [
                                         "ischart:Miaolingian"
                                     ],
-                                    "definition": "A time period from 509 to 504.5 million years ago",
+                                    "definition": "A time period from 506.5 to 504.5 million years ago",
                                     "inScheme": "http://resource.geosciml.org/classifier/ics/ischart",
                                     "notation": "ep5",
                                     "prefLabel": {
@@ -1462,8 +1462,8 @@
                                     },
                                     "hasBeginning": {
                                         "inMYA": {
-                                            "type": "xsd:integer",
-                                            "value": 509
+                                            "type": "xsd:decimal",
+                                            "value": "506.5"
                                         },
                                         "note": "uncertain"
                                     },
@@ -1490,9 +1490,9 @@
                                         }
                                     },
                                     "color": "#B3D492",
-                                    "height": 4.5,
-                                    "remainderHeigt": 0.8809135399673736,
-                                    "irregularHeight": 2.8809135399673735,
+                                    "height": 2.0,
+                                    "remainderHeigt": -1199.9999999988177,
+                                    "irregularHeight": -1197.9999999988177,
                                     "rawPercent": 3.125
                                 }
                             ],
@@ -1503,15 +1503,15 @@
                             },
                             "hasBeginning": {
                                 "inMYA": {
-                                    "type": "xsd:integer",
-                                    "value": 509
+                                    "type": "xsd:decimal",
+                                    "value": "506.5"
                                 },
                                 "note": "uncertain"
                             },
                             "hasEnd": {
                                 "inMYA": {
-                                    "type": "xsd:integer",
-                                    "value": 497
+                                    "type": "xsd:decimal",
+                                    "value": "497.0"
                                 },
                                 "note": "uncertain"
                             },
@@ -1626,7 +1626,7 @@
                             "broader": [
                                 "ischart:Cambrian"
                             ],
-                            "definition": "A time period from 538.8 to 521 million years ago",
+                            "definition": "A time period from 538.8 to 521.0 million years ago",
                             "inScheme": "http://resource.geosciml.org/classifier/ics/ischart",
                             "narrower": [
                                 {
@@ -1719,7 +1719,7 @@
                                     "broader": [
                                         "ischart:Terreneuvian"
                                     ],
-                                    "definition": "A time period from 521 to 509 million years ago",
+                                    "definition": "A time period from 529.0 to 521.0 million years ago",
                                     "inScheme": "http://resource.geosciml.org/classifier/ics/ischart",
                                     "notation": "ep3",
                                     "prefLabel": {
@@ -1728,15 +1728,15 @@
                                     },
                                     "hasBeginning": {
                                         "inMYA": {
-                                            "type": "xsd:integer",
-                                            "value": 521
+                                            "type": "xsd:decimal",
+                                            "value": "529.0"
                                         },
                                         "note": "uncertain"
                                     },
                                     "hasEnd": {
                                         "inMYA": {
-                                            "type": "xsd:integer",
-                                            "value": 509
+                                            "type": "xsd:decimal",
+                                            "value": "521.0"
                                         },
                                         "note": "uncertain"
                                     },
@@ -1756,9 +1756,9 @@
                                         }
                                     },
                                     "color": "#A6BA80",
-                                    "height": 12.0,
-                                    "remainderHeigt": 2.34910277324633,
-                                    "irregularHeight": 4.349102773246329,
+                                    "height": 8.0,
+                                    "remainderHeigt": -4799.999999995271,
+                                    "irregularHeight": -4797.999999995271,
                                     "rawPercent": 3.125
                                 },
                                 {
@@ -1855,7 +1855,7 @@
                                     "broader": [
                                         "ischart:Terreneuvian"
                                     ],
-                                    "definition": "A time period from 538.8 to 529 million years ago",
+                                    "definition": "A time period from 538.8 to 529.0 million years ago",
                                     "inScheme": "http://resource.geosciml.org/classifier/ics/ischart",
                                     "notation": "ep1",
                                     "prefLabel": {
@@ -1869,13 +1869,13 @@
                                         },
                                         "marginOfError": {
                                             "type": "xsd:decimal",
-                                            "value": "0.2"
+                                            "value": "0.6"
                                         }
                                     },
                                     "hasEnd": {
                                         "inMYA": {
-                                            "type": "xsd:integer",
-                                            "value": 529
+                                            "type": "xsd:decimal",
+                                            "value": "529.0"
                                         },
                                         "note": "uncertain"
                                     },
@@ -1896,8 +1896,8 @@
                                     },
                                     "color": "#99B575",
                                     "height": 9.799999999999955,
-                                    "remainderHeigt": 1.9184339314844938,
-                                    "irregularHeight": 3.918433931484494,
+                                    "remainderHeigt": -5879.999999994179,
+                                    "irregularHeight": -5877.999999994179,
                                     "rawPercent": 3.125
                                 }
                             ],
@@ -1913,13 +1913,13 @@
                                 },
                                 "marginOfError": {
                                     "type": "xsd:decimal",
-                                    "value": "0.2"
+                                    "value": "0.6"
                                 }
                             },
                             "hasEnd": {
                                 "inMYA": {
-                                    "type": "xsd:integer",
-                                    "value": 521
+                                    "type": "xsd:decimal",
+                                    "value": "521.0"
                                 },
                                 "note": "uncertain"
                             },
@@ -1953,17 +1953,17 @@
                         },
                         "marginOfError": {
                             "type": "xsd:decimal",
-                            "value": "0.2"
+                            "value": "0.6"
                         }
                     },
                     "hasEnd": {
                         "inMYA": {
                             "type": "xsd:decimal",
-                            "value": "485.4"
+                            "value": "486.85"
                         },
                         "marginOfError": {
                             "type": "xsd:decimal",
-                            "value": "1.9"
+                            "value": "1.5"
                         }
                     },
                     "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
@@ -2077,7 +2077,7 @@
                     "broader": [
                         "ischart:Paleozoic"
                     ],
-                    "definition": "A time period from 419.2 to 358.9 million years ago",
+                    "definition": "A time period from 419.62 to 358.86 million years ago",
                     "inScheme": "http://resource.geosciml.org/classifier/ics/ischart",
                     "narrower": [
                         {
@@ -2174,7 +2174,7 @@
                             "broader": [
                                 "ischart:Devonian"
                             ],
-                            "definition": "A time period from 419.2 to 393.3 million years ago",
+                            "definition": "A time period from 419.62 to 393.47 million years ago",
                             "inScheme": "http://resource.geosciml.org/classifier/ics/ischart",
                             "narrower": [
                                 {
@@ -2271,7 +2271,7 @@
                                     "broader": [
                                         "ischart:LowerDevonian"
                                     ],
-                                    "definition": "A time period from 407.6 to 393.3 million years ago",
+                                    "definition": "A time period from 410.62 to 393.47 million years ago",
                                     "inScheme": "http://resource.geosciml.org/classifier/ics/ischart",
                                     "notation": "d3",
                                     "prefLabel": {
@@ -2281,21 +2281,21 @@
                                     "hasBeginning": {
                                         "inMYA": {
                                             "type": "xsd:decimal",
-                                            "value": "407.6"
+                                            "value": "410.62"
                                         },
                                         "marginOfError": {
                                             "type": "xsd:decimal",
-                                            "value": "2.6"
+                                            "value": "1.95"
                                         }
                                     },
                                     "hasEnd": {
                                         "inMYA": {
                                             "type": "xsd:decimal",
-                                            "value": "393.3"
+                                            "value": "393.47"
                                         },
                                         "marginOfError": {
                                             "type": "xsd:decimal",
-                                            "value": "1.2"
+                                            "value": "0.99"
                                         }
                                     },
                                     "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
@@ -2314,9 +2314,9 @@
                                         }
                                     },
                                     "color": "#E5D075",
-                                    "height": 14.300000000000011,
-                                    "remainderHeigt": 2.7993474714518785,
-                                    "irregularHeight": 4.7993474714518785,
+                                    "height": 17.149999999999977,
+                                    "remainderHeigt": -10289.999999989846,
+                                    "irregularHeight": -10287.999999989846,
                                     "rawPercent": 3.125
                                 },
                                 {
@@ -2413,7 +2413,7 @@
                                     "broader": [
                                         "ischart:LowerDevonian"
                                     ],
-                                    "definition": "A time period from 419.2 to 410.8 million years ago",
+                                    "definition": "A time period from 419.62 to 413.02 million years ago",
                                     "inScheme": "http://resource.geosciml.org/classifier/ics/ischart",
                                     "notation": "d1",
                                     "prefLabel": {
@@ -2423,21 +2423,21 @@
                                     "hasBeginning": {
                                         "inMYA": {
                                             "type": "xsd:decimal",
-                                            "value": "419.2"
+                                            "value": "419.62"
                                         },
                                         "marginOfError": {
                                             "type": "xsd:decimal",
-                                            "value": "3.2"
+                                            "value": "1.36"
                                         }
                                     },
                                     "hasEnd": {
                                         "inMYA": {
                                             "type": "xsd:decimal",
-                                            "value": "410.8"
+                                            "value": "413.02"
                                         },
                                         "marginOfError": {
                                             "type": "xsd:decimal",
-                                            "value": "2.8"
+                                            "value": "1.91"
                                         }
                                     },
                                     "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
@@ -2456,9 +2456,9 @@
                                         }
                                     },
                                     "color": "#E5B75A",
-                                    "height": 8.399999999999977,
-                                    "remainderHeigt": 1.6443719412724265,
-                                    "irregularHeight": 3.6443719412724267,
+                                    "height": 6.600000000000023,
+                                    "remainderHeigt": -3959.999999996112,
+                                    "irregularHeight": -3957.999999996112,
                                     "rawPercent": 3.125
                                 },
                                 {
@@ -2555,7 +2555,7 @@
                                     "broader": [
                                         "ischart:LowerDevonian"
                                     ],
-                                    "definition": "A time period from 410.8 to 407.6 million years ago",
+                                    "definition": "A time period from 413.02 to 410.62 million years ago",
                                     "inScheme": "http://resource.geosciml.org/classifier/ics/ischart",
                                     "notation": "d2",
                                     "prefLabel": {
@@ -2565,21 +2565,21 @@
                                     "hasBeginning": {
                                         "inMYA": {
                                             "type": "xsd:decimal",
-                                            "value": "410.8"
+                                            "value": "413.02"
                                         },
                                         "marginOfError": {
                                             "type": "xsd:decimal",
-                                            "value": "2.8"
+                                            "value": "1.91"
                                         }
                                     },
                                     "hasEnd": {
                                         "inMYA": {
                                             "type": "xsd:decimal",
-                                            "value": "407.6"
+                                            "value": "410.62"
                                         },
                                         "marginOfError": {
                                             "type": "xsd:decimal",
-                                            "value": "2.6"
+                                            "value": "1.95"
                                         }
                                     },
                                     "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
@@ -2598,9 +2598,9 @@
                                         }
                                     },
                                     "color": "#E5C468",
-                                    "height": 3.1999999999999886,
-                                    "remainderHeigt": 0.626427406199019,
-                                    "irregularHeight": 2.626427406199019,
+                                    "height": 2.3999999999999773,
+                                    "remainderHeigt": -1439.9999999985675,
+                                    "irregularHeight": -1437.9999999985675,
                                     "rawPercent": 3.125
                                 }
                             ],
@@ -2612,21 +2612,21 @@
                             "hasBeginning": {
                                 "inMYA": {
                                     "type": "xsd:decimal",
-                                    "value": "419.2"
+                                    "value": "419.62"
                                 },
                                 "marginOfError": {
                                     "type": "xsd:decimal",
-                                    "value": "3.2"
+                                    "value": "1.36"
                                 }
                             },
                             "hasEnd": {
                                 "inMYA": {
                                     "type": "xsd:decimal",
-                                    "value": "393.3"
+                                    "value": "393.47"
                                 },
                                 "marginOfError": {
                                     "type": "xsd:decimal",
-                                    "value": "1.2"
+                                    "value": "0.99"
                                 }
                             },
                             "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
@@ -2740,7 +2740,7 @@
                             "broader": [
                                 "ischart:Devonian"
                             ],
-                            "definition": "A time period from 393.3 to 382.7 million years ago",
+                            "definition": "A time period from 393.47 to 382.31 million years ago",
                             "inScheme": "http://resource.geosciml.org/classifier/ics/ischart",
                             "narrower": [
                                 {
@@ -2837,7 +2837,7 @@
                                     "broader": [
                                         "ischart:MiddleDevonian"
                                     ],
-                                    "definition": "A time period from 393.3 to 387.7 million years ago",
+                                    "definition": "A time period from 393.47 to 387.95 million years ago",
                                     "inScheme": "http://resource.geosciml.org/classifier/ics/ischart",
                                     "notation": "d4",
                                     "prefLabel": {
@@ -2847,21 +2847,21 @@
                                     "hasBeginning": {
                                         "inMYA": {
                                             "type": "xsd:decimal",
-                                            "value": "393.3"
+                                            "value": "393.47"
                                         },
                                         "marginOfError": {
                                             "type": "xsd:decimal",
-                                            "value": "1.2"
+                                            "value": "0.99"
                                         }
                                     },
                                     "hasEnd": {
                                         "inMYA": {
                                             "type": "xsd:decimal",
-                                            "value": "387.7"
+                                            "value": "387.95"
                                         },
                                         "marginOfError": {
                                             "type": "xsd:decimal",
-                                            "value": "0.8"
+                                            "value": "1.04"
                                         }
                                     },
                                     "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
@@ -2880,9 +2880,9 @@
                                         }
                                     },
                                     "color": "#F1D576",
-                                    "height": 5.600000000000023,
-                                    "remainderHeigt": 1.0962479608482916,
-                                    "irregularHeight": 3.0962479608482916,
+                                    "height": 5.520000000000039,
+                                    "remainderHeigt": -3311.99999999676,
+                                    "irregularHeight": -3309.99999999676,
                                     "rawPercent": 3.125
                                 },
                                 {
@@ -2979,7 +2979,7 @@
                                     "broader": [
                                         "ischart:MiddleDevonian"
                                     ],
-                                    "definition": "A time period from 387.7 to 382.7 million years ago",
+                                    "definition": "A time period from 387.95 to 382.31 million years ago",
                                     "inScheme": "http://resource.geosciml.org/classifier/ics/ischart",
                                     "notation": "d5",
                                     "prefLabel": {
@@ -2989,17 +2989,17 @@
                                     "hasBeginning": {
                                         "inMYA": {
                                             "type": "xsd:decimal",
-                                            "value": "387.7"
+                                            "value": "387.95"
                                         },
                                         "marginOfError": {
                                             "type": "xsd:decimal",
-                                            "value": "0.8"
+                                            "value": "1.04"
                                         }
                                     },
                                     "hasEnd": {
                                         "inMYA": {
                                             "type": "xsd:decimal",
-                                            "value": "382.7"
+                                            "value": "382.31"
                                         },
                                         "marginOfError": {
                                             "type": "xsd:decimal",
@@ -3022,9 +3022,9 @@
                                         }
                                     },
                                     "color": "#F1E185",
-                                    "height": 5.0,
-                                    "remainderHeigt": 0.9787928221859707,
-                                    "irregularHeight": 2.9787928221859707,
+                                    "height": 5.639999999999986,
+                                    "remainderHeigt": -3383.9999999966576,
+                                    "irregularHeight": -3381.9999999966576,
                                     "rawPercent": 3.125
                                 }
                             ],
@@ -3036,17 +3036,17 @@
                             "hasBeginning": {
                                 "inMYA": {
                                     "type": "xsd:decimal",
-                                    "value": "393.3"
+                                    "value": "393.47"
                                 },
                                 "marginOfError": {
                                     "type": "xsd:decimal",
-                                    "value": "1.2"
+                                    "value": "0.99"
                                 }
                             },
                             "hasEnd": {
                                 "inMYA": {
                                     "type": "xsd:decimal",
-                                    "value": "382.7"
+                                    "value": "382.31"
                                 },
                                 "marginOfError": {
                                     "type": "xsd:decimal",
@@ -3148,7 +3148,7 @@
                             "broader": [
                                 "ischart:Devonian"
                             ],
-                            "definition": "A time period from 382.7 to 358.9 million years ago",
+                            "definition": "A time period from 382.31 to 358.86 million years ago",
                             "inScheme": "http://resource.geosciml.org/classifier/ics/ischart",
                             "narrower": [
                                 {
@@ -3245,7 +3245,7 @@
                                     "broader": [
                                         "ischart:UpperDevonian"
                                     ],
-                                    "definition": "A time period from 372.2 to 358.9 million years ago",
+                                    "definition": "A time period from 372.15 to 538.86 million years ago",
                                     "inScheme": "http://resource.geosciml.org/classifier/ics/ischart",
                                     "notation": "d7",
                                     "prefLabel": {
@@ -3255,21 +3255,21 @@
                                     "hasBeginning": {
                                         "inMYA": {
                                             "type": "xsd:decimal",
-                                            "value": "372.2"
+                                            "value": "372.15"
                                         },
                                         "marginOfError": {
                                             "type": "xsd:decimal",
-                                            "value": "1.6"
+                                            "value": "0.46"
                                         }
                                     },
                                     "hasEnd": {
                                         "inMYA": {
                                             "type": "xsd:decimal",
-                                            "value": "358.9"
+                                            "value": "538.86"
                                         },
                                         "marginOfError": {
                                             "type": "xsd:decimal",
-                                            "value": "0.4"
+                                            "value": "0.19"
                                         }
                                     },
                                     "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
@@ -3288,9 +3288,9 @@
                                         }
                                     },
                                     "color": "#F2EDB3",
-                                    "height": 13.300000000000011,
-                                    "remainderHeigt": 2.6035889070146845,
-                                    "irregularHeight": 4.603588907014684,
+                                    "height": -166.71000000000004,
+                                    "remainderHeigt": 100025.99999990147,
+                                    "irregularHeight": 100027.99999990147,
                                     "rawPercent": 3.125
                                 },
                                 {
@@ -3387,7 +3387,7 @@
                                     "broader": [
                                         "ischart:UpperDevonian"
                                     ],
-                                    "definition": "A time period from 382.7 to 372.2 million years ago",
+                                    "definition": "A time period from 382.31 to 372.15 million years ago",
                                     "inScheme": "http://resource.geosciml.org/classifier/ics/ischart",
                                     "notation": "d6",
                                     "prefLabel": {
@@ -3397,7 +3397,7 @@
                                     "hasBeginning": {
                                         "inMYA": {
                                             "type": "xsd:decimal",
-                                            "value": "382.7"
+                                            "value": "382.31"
                                         },
                                         "marginOfError": {
                                             "type": "xsd:decimal",
@@ -3407,11 +3407,11 @@
                                     "hasEnd": {
                                         "inMYA": {
                                             "type": "xsd:decimal",
-                                            "value": "372.2"
+                                            "value": "372.15"
                                         },
                                         "marginOfError": {
                                             "type": "xsd:decimal",
-                                            "value": "1.6"
+                                            "value": "0.46"
                                         }
                                     },
                                     "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
@@ -3430,9 +3430,9 @@
                                         }
                                     },
                                     "color": "#F2EDAD",
-                                    "height": 10.5,
-                                    "remainderHeigt": 2.0554649265905387,
-                                    "irregularHeight": 4.055464926590538,
+                                    "height": 10.160000000000025,
+                                    "remainderHeigt": -6095.999999994008,
+                                    "irregularHeight": -6093.999999994008,
                                     "rawPercent": 3.125
                                 }
                             ],
@@ -3444,7 +3444,7 @@
                             "hasBeginning": {
                                 "inMYA": {
                                     "type": "xsd:decimal",
-                                    "value": "382.7"
+                                    "value": "382.31"
                                 },
                                 "marginOfError": {
                                     "type": "xsd:decimal",
@@ -3454,11 +3454,11 @@
                             "hasEnd": {
                                 "inMYA": {
                                     "type": "xsd:decimal",
-                                    "value": "358.9"
+                                    "value": "358.86"
                                 },
                                 "marginOfError": {
                                     "type": "xsd:decimal",
-                                    "value": "0.4"
+                                    "value": "0.19"
                                 }
                             },
                             "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
@@ -3487,21 +3487,21 @@
                     "hasBeginning": {
                         "inMYA": {
                             "type": "xsd:decimal",
-                            "value": "419.2"
+                            "value": "419.62"
                         },
                         "marginOfError": {
                             "type": "xsd:decimal",
-                            "value": "3.2"
+                            "value": "1.36"
                         }
                     },
                     "hasEnd": {
                         "inMYA": {
                             "type": "xsd:decimal",
-                            "value": "358.9"
+                            "value": "358.86"
                         },
                         "marginOfError": {
                             "type": "xsd:decimal",
-                            "value": "0.4"
+                            "value": "0.19"
                         }
                     },
                     "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
@@ -3615,7 +3615,7 @@
                     "broader": [
                         "ischart:Paleozoic"
                     ],
-                    "definition": "A time period from 485.4 to 443.8 million years ago",
+                    "definition": "A time period from 486.85 to 443.1 million years ago",
                     "inScheme": "http://resource.geosciml.org/classifier/ics/ischart",
                     "narrower": [
                         {
@@ -3712,7 +3712,7 @@
                             "broader": [
                                 "ischart:Ordovician"
                             ],
-                            "definition": "A time period from 485.4 to 470.0 million years ago",
+                            "definition": "A time period from 486.85 to 471.3 million years ago",
                             "inScheme": "http://resource.geosciml.org/classifier/ics/ischart",
                             "narrower": [
                                 {
@@ -3805,7 +3805,7 @@
                                     "broader": [
                                         "ischart:LowerOrdovician"
                                     ],
-                                    "definition": "A time period from 477.7 to 470.0 million years ago",
+                                    "definition": "A time period from 477.1 to 471.3 million years ago",
                                     "inScheme": "http://resource.geosciml.org/classifier/ics/ischart",
                                     "notation": "o2",
                                     "prefLabel": {
@@ -3815,17 +3815,17 @@
                                     "hasBeginning": {
                                         "inMYA": {
                                             "type": "xsd:decimal",
-                                            "value": "477.7"
+                                            "value": "477.1"
                                         },
                                         "marginOfError": {
                                             "type": "xsd:decimal",
-                                            "value": "1.4"
+                                            "value": "1.2"
                                         }
                                     },
                                     "hasEnd": {
                                         "inMYA": {
                                             "type": "xsd:decimal",
-                                            "value": "470.0"
+                                            "value": "471.3"
                                         },
                                         "marginOfError": {
                                             "type": "xsd:decimal",
@@ -3848,9 +3848,9 @@
                                         }
                                     },
                                     "color": "#41B087",
-                                    "height": 7.699999999999989,
-                                    "remainderHeigt": 1.5073409461663927,
-                                    "irregularHeight": 3.5073409461663925,
+                                    "height": 5.800000000000011,
+                                    "remainderHeigt": -3479.999999996578,
+                                    "irregularHeight": -3477.999999996578,
                                     "rawPercent": 3.125
                                 },
                                 {
@@ -3947,7 +3947,7 @@
                                     "broader": [
                                         "ischart:LowerOrdovician"
                                     ],
-                                    "definition": "A time period from 485.4 to 477.7 million years ago",
+                                    "definition": "A time period from 486.85 to 477.1 million years ago",
                                     "inScheme": "http://resource.geosciml.org/classifier/ics/ischart",
                                     "notation": "o1",
                                     "prefLabel": {
@@ -3957,21 +3957,21 @@
                                     "hasBeginning": {
                                         "inMYA": {
                                             "type": "xsd:decimal",
-                                            "value": "485.4"
+                                            "value": "486.85"
                                         },
                                         "marginOfError": {
                                             "type": "xsd:decimal",
-                                            "value": "1.9"
+                                            "value": "1.5"
                                         }
                                     },
                                     "hasEnd": {
                                         "inMYA": {
                                             "type": "xsd:decimal",
-                                            "value": "477.7"
+                                            "value": "477.1"
                                         },
                                         "marginOfError": {
                                             "type": "xsd:decimal",
-                                            "value": "1.4"
+                                            "value": "1.2"
                                         }
                                     },
                                     "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
@@ -3990,9 +3990,9 @@
                                         }
                                     },
                                     "color": "#33A97E",
-                                    "height": 7.699999999999989,
-                                    "remainderHeigt": 1.5073409461663927,
-                                    "irregularHeight": 3.5073409461663925,
+                                    "height": 9.75,
+                                    "remainderHeigt": -5849.9999999942365,
+                                    "irregularHeight": -5847.9999999942365,
                                     "rawPercent": 3.125
                                 }
                             ],
@@ -4004,17 +4004,17 @@
                             "hasBeginning": {
                                 "inMYA": {
                                     "type": "xsd:decimal",
-                                    "value": "485.4"
+                                    "value": "486.85"
                                 },
                                 "marginOfError": {
                                     "type": "xsd:decimal",
-                                    "value": "1.9"
+                                    "value": "1.5"
                                 }
                             },
                             "hasEnd": {
                                 "inMYA": {
                                     "type": "xsd:decimal",
-                                    "value": "470.0"
+                                    "value": "471.3"
                                 },
                                 "marginOfError": {
                                     "type": "xsd:decimal",
@@ -4132,7 +4132,7 @@
                             "broader": [
                                 "ischart:Ordovician"
                             ],
-                            "definition": "A time period from 470.0 to 458.4 million years ago",
+                            "definition": "A time period from 471.3 to 458.2 million years ago",
                             "inScheme": "http://resource.geosciml.org/classifier/ics/ischart",
                             "narrower": [
                                 {
@@ -4229,7 +4229,7 @@
                                     "broader": [
                                         "ischart:MiddleOrdovician"
                                     ],
-                                    "definition": "A time period from 470.0 to 467.3 million years ago",
+                                    "definition": "A time period from 471.3 to 469.4 million years ago",
                                     "inScheme": "http://resource.geosciml.org/classifier/ics/ischart",
                                     "notation": "o3",
                                     "prefLabel": {
@@ -4239,7 +4239,7 @@
                                     "hasBeginning": {
                                         "inMYA": {
                                             "type": "xsd:decimal",
-                                            "value": "470.0"
+                                            "value": "471.3"
                                         },
                                         "marginOfError": {
                                             "type": "xsd:decimal",
@@ -4249,11 +4249,11 @@
                                     "hasEnd": {
                                         "inMYA": {
                                             "type": "xsd:decimal",
-                                            "value": "467.3"
+                                            "value": "469.4"
                                         },
                                         "marginOfError": {
                                             "type": "xsd:decimal",
-                                            "value": "1.1"
+                                            "value": "0.9"
                                         }
                                     },
                                     "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
@@ -4272,9 +4272,9 @@
                                         }
                                     },
                                     "color": "#66C092",
-                                    "height": 2.6999999999999886,
-                                    "remainderHeigt": 0.528548123980422,
-                                    "irregularHeight": 2.528548123980422,
+                                    "height": 1.900000000000034,
+                                    "remainderHeigt": -1139.9999999988972,
+                                    "irregularHeight": -1137.9999999988972,
                                     "rawPercent": 3.125
                                 },
                                 {
@@ -4371,7 +4371,7 @@
                                     "broader": [
                                         "ischart:MiddleOrdovician"
                                     ],
-                                    "definition": "A time period from 467.3 to 458.4 million years ago",
+                                    "definition": "A time period from 469.4 to 458.2 million years ago",
                                     "inScheme": "http://resource.geosciml.org/classifier/ics/ischart",
                                     "notation": "o4",
                                     "prefLabel": {
@@ -4381,21 +4381,21 @@
                                     "hasBeginning": {
                                         "inMYA": {
                                             "type": "xsd:decimal",
-                                            "value": "467.3"
+                                            "value": "469.4"
                                         },
                                         "marginOfError": {
                                             "type": "xsd:decimal",
-                                            "value": "1.1"
+                                            "value": "0.9"
                                         }
                                     },
                                     "hasEnd": {
                                         "inMYA": {
                                             "type": "xsd:decimal",
-                                            "value": "458.4"
+                                            "value": "458.2"
                                         },
                                         "marginOfError": {
                                             "type": "xsd:decimal",
-                                            "value": "0.9"
+                                            "value": "0.7"
                                         }
                                     },
                                     "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
@@ -4414,9 +4414,9 @@
                                         }
                                     },
                                     "color": "#74C69C",
-                                    "height": 8.900000000000034,
-                                    "remainderHeigt": 1.7422512234910348,
-                                    "irregularHeight": 3.742251223491035,
+                                    "height": 11.199999999999989,
+                                    "remainderHeigt": -6719.9999999933725,
+                                    "irregularHeight": -6717.9999999933725,
                                     "rawPercent": 3.125
                                 }
                             ],
@@ -4428,7 +4428,7 @@
                             "hasBeginning": {
                                 "inMYA": {
                                     "type": "xsd:decimal",
-                                    "value": "470.0"
+                                    "value": "471.3"
                                 },
                                 "marginOfError": {
                                     "type": "xsd:decimal",
@@ -4438,11 +4438,11 @@
                             "hasEnd": {
                                 "inMYA": {
                                     "type": "xsd:decimal",
-                                    "value": "458.4"
+                                    "value": "458.2"
                                 },
                                 "marginOfError": {
                                     "type": "xsd:decimal",
-                                    "value": "0.9"
+                                    "value": "0.7"
                                 }
                             },
                             "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
@@ -4540,7 +4540,7 @@
                             "broader": [
                                 "ischart:Ordovician"
                             ],
-                            "definition": "A time period from 458.4 to 443.8 million years ago",
+                            "definition": "A time period from 458.2 to 443.1 million years ago",
                             "inScheme": "http://resource.geosciml.org/classifier/ics/ischart",
                             "narrower": [
                                 {
@@ -4637,7 +4637,7 @@
                                     "broader": [
                                         "ischart:UpperOrdovician"
                                     ],
-                                    "definition": "A time period from 445.2 to 443.8 million years ago",
+                                    "definition": "A time period from 445.2 to 443.1 million years ago",
                                     "inScheme": "http://resource.geosciml.org/classifier/ics/ischart",
                                     "notation": "o7",
                                     "prefLabel": {
@@ -4651,17 +4651,17 @@
                                         },
                                         "marginOfError": {
                                             "type": "xsd:decimal",
-                                            "value": "1.4"
+                                            "value": "0.9"
                                         }
                                     },
                                     "hasEnd": {
                                         "inMYA": {
                                             "type": "xsd:decimal",
-                                            "value": "443.8"
+                                            "value": "443.1"
                                         },
                                         "marginOfError": {
                                             "type": "xsd:decimal",
-                                            "value": "1.5"
+                                            "value": "1.0"
                                         }
                                     },
                                     "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
@@ -4680,9 +4680,9 @@
                                         }
                                     },
                                     "color": "#A6DBAB",
-                                    "height": 1.3999999999999773,
-                                    "remainderHeigt": 0.27406199021206734,
-                                    "irregularHeight": 2.2740619902120676,
+                                    "height": 2.099999999999966,
+                                    "remainderHeigt": -1259.999999998738,
+                                    "irregularHeight": -1257.999999998738,
                                     "rawPercent": 3.125
                                 },
                                 {
@@ -4779,7 +4779,7 @@
                                     "broader": [
                                         "ischart:UpperOrdovician"
                                     ],
-                                    "definition": "A time period from 453.0 to 445.2 million years ago",
+                                    "definition": "A time period from 452.8 to 445.2 million years ago",
                                     "inScheme": "http://resource.geosciml.org/classifier/ics/ischart",
                                     "notation": "o6",
                                     "prefLabel": {
@@ -4789,7 +4789,7 @@
                                     "hasBeginning": {
                                         "inMYA": {
                                             "type": "xsd:decimal",
-                                            "value": "453.0"
+                                            "value": "452.8"
                                         },
                                         "marginOfError": {
                                             "type": "xsd:decimal",
@@ -4803,7 +4803,7 @@
                                         },
                                         "marginOfError": {
                                             "type": "xsd:decimal",
-                                            "value": "1.4"
+                                            "value": "0.9"
                                         }
                                     },
                                     "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
@@ -4822,9 +4822,9 @@
                                         }
                                     },
                                     "color": "#99D69F",
-                                    "height": 7.800000000000011,
-                                    "remainderHeigt": 1.5269168026101165,
-                                    "irregularHeight": 3.5269168026101165,
+                                    "height": 7.600000000000023,
+                                    "remainderHeigt": -4559.999999995521,
+                                    "irregularHeight": -4557.999999995521,
                                     "rawPercent": 3.125
                                 },
                                 {
@@ -4921,7 +4921,7 @@
                                     "broader": [
                                         "ischart:UpperOrdovician"
                                     ],
-                                    "definition": "A time period from 458.4 to 453.0 million years ago",
+                                    "definition": "A time period from 458.2 to 452.8 million years ago",
                                     "inScheme": "http://resource.geosciml.org/classifier/ics/ischart",
                                     "notation": "o5",
                                     "prefLabel": {
@@ -4931,17 +4931,17 @@
                                     "hasBeginning": {
                                         "inMYA": {
                                             "type": "xsd:decimal",
-                                            "value": "458.4"
+                                            "value": "458.2"
                                         },
                                         "marginOfError": {
                                             "type": "xsd:decimal",
-                                            "value": "0.9"
+                                            "value": "0.7"
                                         }
                                     },
                                     "hasEnd": {
                                         "inMYA": {
                                             "type": "xsd:decimal",
-                                            "value": "453.0"
+                                            "value": "452.8"
                                         },
                                         "marginOfError": {
                                             "type": "xsd:decimal",
@@ -4965,8 +4965,8 @@
                                     },
                                     "color": "#8CD094",
                                     "height": 5.399999999999977,
-                                    "remainderHeigt": 1.057096247960844,
-                                    "irregularHeight": 3.057096247960844,
+                                    "remainderHeigt": -3239.999999996794,
+                                    "irregularHeight": -3237.999999996794,
                                     "rawPercent": 3.125
                                 }
                             ],
@@ -4978,21 +4978,21 @@
                             "hasBeginning": {
                                 "inMYA": {
                                     "type": "xsd:decimal",
-                                    "value": "458.4"
+                                    "value": "458.2"
                                 },
                                 "marginOfError": {
                                     "type": "xsd:decimal",
-                                    "value": "0.9"
+                                    "value": "0.7"
                                 }
                             },
                             "hasEnd": {
                                 "inMYA": {
                                     "type": "xsd:decimal",
-                                    "value": "443.8"
+                                    "value": "443.1"
                                 },
                                 "marginOfError": {
                                     "type": "xsd:decimal",
-                                    "value": "1.5"
+                                    "value": "1.0"
                                 }
                             },
                             "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
@@ -5021,21 +5021,21 @@
                     "hasBeginning": {
                         "inMYA": {
                             "type": "xsd:decimal",
-                            "value": "485.4"
+                            "value": "486.85"
                         },
                         "marginOfError": {
                             "type": "xsd:decimal",
-                            "value": "1.9"
+                            "value": "1.5"
                         }
                     },
                     "hasEnd": {
                         "inMYA": {
                             "type": "xsd:decimal",
-                            "value": "443.8"
+                            "value": "443.1"
                         },
                         "marginOfError": {
                             "type": "xsd:decimal",
-                            "value": "1.5"
+                            "value": "1.0"
                         }
                     },
                     "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
@@ -5149,7 +5149,7 @@
                     "broader": [
                         "ischart:Paleozoic"
                     ],
-                    "definition": "A time period from 443.8 to 419.2 million years ago",
+                    "definition": "A time period from 443.1 to 419.62 million years ago",
                     "inScheme": "http://resource.geosciml.org/classifier/ics/ischart",
                     "narrower": [
                         {
@@ -5246,7 +5246,7 @@
                             "broader": [
                                 "ischart:Silurian"
                             ],
-                            "definition": "A time period from 443.8 to 433.4 million years ago",
+                            "definition": "A time period from 443.1 to 432.9 million years ago",
                             "inScheme": "http://resource.geosciml.org/classifier/ics/ischart",
                             "narrower": [
                                 {
@@ -5343,7 +5343,7 @@
                                     "broader": [
                                         "ischart:Llandovery"
                                     ],
-                                    "definition": "A time period from 440.8 to 438.5 million years ago",
+                                    "definition": "A time period from 440.5 to 438.6 million years ago",
                                     "inScheme": "http://resource.geosciml.org/classifier/ics/ischart",
                                     "notation": "s2",
                                     "prefLabel": {
@@ -5353,21 +5353,21 @@
                                     "hasBeginning": {
                                         "inMYA": {
                                             "type": "xsd:decimal",
-                                            "value": "440.8"
+                                            "value": "440.5"
                                         },
                                         "marginOfError": {
                                             "type": "xsd:decimal",
-                                            "value": "1.2"
+                                            "value": "1.0"
                                         }
                                     },
                                     "hasEnd": {
                                         "inMYA": {
                                             "type": "xsd:decimal",
-                                            "value": "438.5"
+                                            "value": "438.6"
                                         },
                                         "marginOfError": {
                                             "type": "xsd:decimal",
-                                            "value": "1.1"
+                                            "value": "1.0"
                                         }
                                     },
                                     "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
@@ -5386,9 +5386,9 @@
                                         }
                                     },
                                     "color": "#B3E1C2",
-                                    "height": 2.3000000000000114,
-                                    "remainderHeigt": 0.45024469820554874,
-                                    "irregularHeight": 2.4502446982055486,
+                                    "height": 1.8999999999999773,
+                                    "remainderHeigt": -1139.9999999988631,
+                                    "irregularHeight": -1137.9999999988631,
                                     "rawPercent": 3.125
                                 },
                                 {
@@ -5485,7 +5485,7 @@
                                     "broader": [
                                         "ischart:Llandovery"
                                     ],
-                                    "definition": "A time period from 443.8 to 440.8 million years ago",
+                                    "definition": "A time period from 443.1 to 440.5 million years ago",
                                     "inScheme": "http://resource.geosciml.org/classifier/ics/ischart",
                                     "notation": "s1",
                                     "prefLabel": {
@@ -5495,21 +5495,21 @@
                                     "hasBeginning": {
                                         "inMYA": {
                                             "type": "xsd:decimal",
-                                            "value": "443.8"
+                                            "value": "443.1"
                                         },
                                         "marginOfError": {
                                             "type": "xsd:decimal",
-                                            "value": "1.5"
+                                            "value": "1.0"
                                         }
                                     },
                                     "hasEnd": {
                                         "inMYA": {
                                             "type": "xsd:decimal",
-                                            "value": "440.8"
+                                            "value": "440.5"
                                         },
                                         "marginOfError": {
                                             "type": "xsd:decimal",
-                                            "value": "1.2"
+                                            "value": "1.0"
                                         }
                                     },
                                     "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
@@ -5528,9 +5528,9 @@
                                         }
                                     },
                                     "color": "#A6DCB5",
-                                    "height": 3.0,
-                                    "remainderHeigt": 0.5872756933115825,
-                                    "irregularHeight": 2.5872756933115824,
+                                    "height": 2.6000000000000227,
+                                    "remainderHeigt": -1559.9999999984766,
+                                    "irregularHeight": -1557.9999999984766,
                                     "rawPercent": 3.125
                                 },
                                 {
@@ -5627,7 +5627,7 @@
                                     "broader": [
                                         "ischart:Llandovery"
                                     ],
-                                    "definition": "A time period from 438.5 to 433.4 million years ago",
+                                    "definition": "A time period from 438.6 to 432.9 million years ago",
                                     "inScheme": "http://resource.geosciml.org/classifier/ics/ischart",
                                     "notation": "s3",
                                     "prefLabel": {
@@ -5637,21 +5637,21 @@
                                     "hasBeginning": {
                                         "inMYA": {
                                             "type": "xsd:decimal",
-                                            "value": "438.5"
+                                            "value": "438.6"
                                         },
                                         "marginOfError": {
                                             "type": "xsd:decimal",
-                                            "value": "1.1"
+                                            "value": "1.0"
                                         }
                                     },
                                     "hasEnd": {
                                         "inMYA": {
                                             "type": "xsd:decimal",
-                                            "value": "433.4"
+                                            "value": "432.9"
                                         },
                                         "marginOfError": {
                                             "type": "xsd:decimal",
-                                            "value": "0.8"
+                                            "value": "1.2"
                                         }
                                     },
                                     "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
@@ -5670,9 +5670,9 @@
                                         }
                                     },
                                     "color": "#BFE6CF",
-                                    "height": 5.100000000000023,
-                                    "remainderHeigt": 0.9983686786296946,
-                                    "irregularHeight": 2.998368678629695,
+                                    "height": 5.7000000000000455,
+                                    "remainderHeigt": -3419.9999999966576,
+                                    "irregularHeight": -3417.9999999966576,
                                     "rawPercent": 3.125
                                 }
                             ],
@@ -5684,21 +5684,21 @@
                             "hasBeginning": {
                                 "inMYA": {
                                     "type": "xsd:decimal",
-                                    "value": "443.8"
+                                    "value": "443.1"
                                 },
                                 "marginOfError": {
                                     "type": "xsd:decimal",
-                                    "value": "1.5"
+                                    "value": "1.0"
                                 }
                             },
                             "hasEnd": {
                                 "inMYA": {
                                     "type": "xsd:decimal",
-                                    "value": "433.4"
+                                    "value": "432.9"
                                 },
                                 "marginOfError": {
                                     "type": "xsd:decimal",
-                                    "value": "0.8"
+                                    "value": "1.2"
                                 }
                             },
                             "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
@@ -5812,7 +5812,7 @@
                             "broader": [
                                 "ischart:Silurian"
                             ],
-                            "definition": "A time period from 427.4 to 419.2 million years ago",
+                            "definition": "A time period from 426.7 to 419.62 million years ago",
                             "inScheme": "http://resource.geosciml.org/classifier/ics/ischart",
                             "narrower": [
                                 {
@@ -5909,7 +5909,7 @@
                                     "broader": [
                                         "ischart:Ludlow"
                                     ],
-                                    "definition": "A time period from 427.4 to 425.6 million years ago",
+                                    "definition": "A time period from 426.7 to 425.0 million years ago",
                                     "inScheme": "http://resource.geosciml.org/classifier/ics/ischart",
                                     "notation": "s6",
                                     "prefLabel": {
@@ -5919,21 +5919,21 @@
                                     "hasBeginning": {
                                         "inMYA": {
                                             "type": "xsd:decimal",
-                                            "value": "427.4"
+                                            "value": "426.7"
                                         },
                                         "marginOfError": {
                                             "type": "xsd:decimal",
-                                            "value": "0.5"
+                                            "value": "1.5"
                                         }
                                     },
                                     "hasEnd": {
                                         "inMYA": {
                                             "type": "xsd:decimal",
-                                            "value": "425.6"
+                                            "value": "425.0"
                                         },
                                         "marginOfError": {
                                             "type": "xsd:decimal",
-                                            "value": "0.9"
+                                            "value": "1.5"
                                         }
                                     },
                                     "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
@@ -5952,9 +5952,9 @@
                                         }
                                     },
                                     "color": "#CCECDD",
-                                    "height": 1.7999999999999545,
-                                    "remainderHeigt": 0.3523654159869406,
-                                    "irregularHeight": 2.3523654159869407,
+                                    "height": 1.6999999999999886,
+                                    "remainderHeigt": -1019.9999999989882,
+                                    "irregularHeight": -1017.9999999989882,
                                     "rawPercent": 3.125
                                 },
                                 {
@@ -6051,7 +6051,7 @@
                                     "broader": [
                                         "ischart:Ludlow"
                                     ],
-                                    "definition": "A time period from 425.6 to 423.0 million years ago",
+                                    "definition": "A time period from 425.0 to 422.7 million years ago",
                                     "inScheme": "http://resource.geosciml.org/classifier/ics/ischart",
                                     "notation": "s7",
                                     "prefLabel": {
@@ -6061,21 +6061,21 @@
                                     "hasBeginning": {
                                         "inMYA": {
                                             "type": "xsd:decimal",
-                                            "value": "425.6"
+                                            "value": "425.0"
                                         },
                                         "marginOfError": {
                                             "type": "xsd:decimal",
-                                            "value": "0.9"
+                                            "value": "1.5"
                                         }
                                     },
                                     "hasEnd": {
                                         "inMYA": {
                                             "type": "xsd:decimal",
-                                            "value": "423.0"
+                                            "value": "422.7"
                                         },
                                         "marginOfError": {
                                             "type": "xsd:decimal",
-                                            "value": "2.3"
+                                            "value": "1.6"
                                         }
                                     },
                                     "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
@@ -6094,9 +6094,9 @@
                                         }
                                     },
                                     "color": "#D9F0DF",
-                                    "height": 2.6000000000000227,
-                                    "remainderHeigt": 0.5089722675367092,
-                                    "irregularHeight": 2.508972267536709,
+                                    "height": 2.3000000000000114,
+                                    "remainderHeigt": -1379.9999999986471,
+                                    "irregularHeight": -1377.9999999986471,
                                     "rawPercent": 3.125
                                 }
                             ],
@@ -6108,21 +6108,21 @@
                             "hasBeginning": {
                                 "inMYA": {
                                     "type": "xsd:decimal",
-                                    "value": "427.4"
+                                    "value": "426.7"
                                 },
                                 "marginOfError": {
                                     "type": "xsd:decimal",
-                                    "value": "0.5"
+                                    "value": "1.5"
                                 }
                             },
                             "hasEnd": {
                                 "inMYA": {
                                     "type": "xsd:decimal",
-                                    "value": "419.2"
+                                    "value": "419.62"
                                 },
                                 "marginOfError": {
                                     "type": "xsd:decimal",
-                                    "value": "3.2"
+                                    "value": "1.36"
                                 }
                             },
                             "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
@@ -6239,7 +6239,7 @@
                             "broader": [
                                 "ischart:Silurian"
                             ],
-                            "definition": "A time period from 423.0 to 419.2 million years ago",
+                            "definition": "A time period from 422.7 to 419.62 million years ago",
                             "inScheme": "http://resource.geosciml.org/classifier/ics/ischart",
                             "notation": "S4",
                             "prefLabel": {
@@ -6249,21 +6249,21 @@
                             "hasBeginning": {
                                 "inMYA": {
                                     "type": "xsd:decimal",
-                                    "value": "423.0"
+                                    "value": "422.7"
                                 },
                                 "marginOfError": {
                                     "type": "xsd:decimal",
-                                    "value": "2.3"
+                                    "value": "1.6"
                                 }
                             },
                             "hasEnd": {
                                 "inMYA": {
                                     "type": "xsd:decimal",
-                                    "value": "419.2"
+                                    "value": "419.62"
                                 },
                                 "marginOfError": {
                                     "type": "xsd:decimal",
-                                    "value": "3.2"
+                                    "value": "1.36"
                                 }
                             },
                             "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
@@ -6282,9 +6282,9 @@
                                 }
                             },
                             "color": "#E6F5E1",
-                            "height": 3.8000000000000114,
-                            "remainderHeigt": 0.74388254486134,
-                            "irregularHeight": 2.74388254486134,
+                            "height": 3.079999999999984,
+                            "remainderHeigt": -1847.9999999981696,
+                            "irregularHeight": -1845.9999999981696,
                             "rawPercent": 3.125
                         },
                         {
@@ -6381,7 +6381,7 @@
                             "broader": [
                                 "ischart:Silurian"
                             ],
-                            "definition": "A time period from 433.4 to 427.4 million years ago",
+                            "definition": "A time period from 432.9 to 426.7 million years ago",
                             "inScheme": "http://resource.geosciml.org/classifier/ics/ischart",
                             "narrower": [
                                 {
@@ -6478,7 +6478,7 @@
                                     "broader": [
                                         "ischart:Wenlock"
                                     ],
-                                    "definition": "A time period from 430.5 to 427.4 million years ago",
+                                    "definition": "A time period from 430.6 to 426.7 million years ago",
                                     "inScheme": "http://resource.geosciml.org/classifier/ics/ischart",
                                     "notation": "s5",
                                     "prefLabel": {
@@ -6488,21 +6488,21 @@
                                     "hasBeginning": {
                                         "inMYA": {
                                             "type": "xsd:decimal",
-                                            "value": "430.5"
+                                            "value": "430.6"
                                         },
                                         "marginOfError": {
                                             "type": "xsd:decimal",
-                                            "value": "0.7"
+                                            "value": "1.3"
                                         }
                                     },
                                     "hasEnd": {
                                         "inMYA": {
                                             "type": "xsd:decimal",
-                                            "value": "427.4"
+                                            "value": "426.7"
                                         },
                                         "marginOfError": {
                                             "type": "xsd:decimal",
-                                            "value": "0.5"
+                                            "value": "1.5"
                                         }
                                     },
                                     "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
@@ -6521,9 +6521,9 @@
                                         }
                                     },
                                     "color": "#CCEBD1",
-                                    "height": 3.1000000000000227,
-                                    "remainderHeigt": 0.6068515497553064,
-                                    "irregularHeight": 2.6068515497553064,
+                                    "height": 3.900000000000034,
+                                    "remainderHeigt": -2339.999999997715,
+                                    "irregularHeight": -2337.999999997715,
                                     "rawPercent": 3.125
                                 },
                                 {
@@ -6620,7 +6620,7 @@
                                     "broader": [
                                         "ischart:Wenlock"
                                     ],
-                                    "definition": "A time period from 433.4 to 430.5 million years ago",
+                                    "definition": "A time period from 432.9 to 430.6 million years ago",
                                     "inScheme": "http://resource.geosciml.org/classifier/ics/ischart",
                                     "notation": "s4",
                                     "prefLabel": {
@@ -6630,21 +6630,21 @@
                                     "hasBeginning": {
                                         "inMYA": {
                                             "type": "xsd:decimal",
-                                            "value": "433.4"
+                                            "value": "432.9"
                                         },
                                         "marginOfError": {
                                             "type": "xsd:decimal",
-                                            "value": "0.8"
+                                            "value": "1.2"
                                         }
                                     },
                                     "hasEnd": {
                                         "inMYA": {
                                             "type": "xsd:decimal",
-                                            "value": "430.5"
+                                            "value": "430.6"
                                         },
                                         "marginOfError": {
                                             "type": "xsd:decimal",
-                                            "value": "0.7"
+                                            "value": "1.3"
                                         }
                                     },
                                     "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
@@ -6663,9 +6663,9 @@
                                         }
                                     },
                                     "color": "#BFE6C3",
-                                    "height": 2.8999999999999773,
-                                    "remainderHeigt": 0.5676998368678585,
-                                    "irregularHeight": 2.5676998368678587,
+                                    "height": 2.2999999999999545,
+                                    "remainderHeigt": -1379.999999998613,
+                                    "irregularHeight": -1377.999999998613,
                                     "rawPercent": 3.125
                                 }
                             ],
@@ -6677,21 +6677,21 @@
                             "hasBeginning": {
                                 "inMYA": {
                                     "type": "xsd:decimal",
-                                    "value": "433.4"
+                                    "value": "432.9"
                                 },
                                 "marginOfError": {
                                     "type": "xsd:decimal",
-                                    "value": "0.8"
+                                    "value": "1.2"
                                 }
                             },
                             "hasEnd": {
                                 "inMYA": {
                                     "type": "xsd:decimal",
-                                    "value": "427.4"
+                                    "value": "426.7"
                                 },
                                 "marginOfError": {
                                     "type": "xsd:decimal",
-                                    "value": "0.5"
+                                    "value": "1.5"
                                 }
                             },
                             "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
@@ -6720,21 +6720,21 @@
                     "hasBeginning": {
                         "inMYA": {
                             "type": "xsd:decimal",
-                            "value": "443.8"
+                            "value": "443.1"
                         },
                         "marginOfError": {
                             "type": "xsd:decimal",
-                            "value": "1.5"
+                            "value": "1.0"
                         }
                     },
                     "hasEnd": {
                         "inMYA": {
                             "type": "xsd:decimal",
-                            "value": "419.2"
+                            "value": "419.62"
                         },
                         "marginOfError": {
                             "type": "xsd:decimal",
-                            "value": "3.2"
+                            "value": "1.36"
                         }
                     },
                     "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
@@ -6767,7 +6767,7 @@
                 },
                 "marginOfError": {
                     "type": "xsd:decimal",
-                    "value": "0.2"
+                    "value": "0.6"
                 }
             },
             "hasEnd": {
@@ -6810,7 +6810,7 @@
         },
         "marginOfError": {
             "type": "xsd:decimal",
-            "value": "0.2"
+            "value": "0.6"
         }
     },
     "hasEnd": {

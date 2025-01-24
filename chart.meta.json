@@ -12,12 +12,20 @@
                 "value": "Comissió Internacional d’Estratigrafia"
             },
             {
-                "language": "zh",
-                "value": "国 际 地 层 委 员 会"
-            },
-            {
                 "language": "cz",
                 "value": "Mezinárodní stratigrafická komise"
+            },
+            {
+                "language": "de",
+                "value": "Internationale Stratigraphische Kommission"
+            },
+            {
+                "language": "es",
+                "value": "Comisión Internacional de Estratigrafía"
+            },
+            {
+                "language": "eu",
+                "value": "Estratigrafiako Nazioarteko Batzordea"
             },
             {
                 "language": "fi",
@@ -26,10 +34,6 @@
             {
                 "language": "fr",
                 "value": "Commission Internationale de Stratigraphie"
-            },
-            {
-                "language": "de",
-                "value": "Internationale Stratigraphische Kommission"
             },
             {
                 "language": "hu",
@@ -48,6 +52,10 @@
                 "value": "국 제 층 서 위 원 회"
             },
             {
+                "language": "lt",
+                "value": "Tarptautinė stratigrafijos komisija"
+            },
+            {
                 "language": "nl",
                 "value": "Internationale Commissie voor Stratigrafie"
             },
@@ -60,28 +68,20 @@
                 "value": "Comissão Internacional de Estratigrafia"
             },
             {
-                "language": "sk",
-                "value": "Medzinárodná stratigrafická komisia"
+                "language": "ru",
+                "value": "Международная комиссия по стратиграфии"
             },
             {
-                "language": "es",
-                "value": "Comisión Internacional de Estratigrafía"
+                "language": "sk",
+                "value": "Medzinárodná stratigrafická komisia"
             },
             {
                 "language": "tr",
                 "value": "Uluslararası Stratigrafi Komisyonu"
             },
             {
-                "language": "ru",
-                "value": "Международная комиссия по стратиграфии"
-            },
-            {
-                "language": "eu",
-                "value": "Estratigrafiako Nazioarteko Batzordea"
-            },
-            {
-                "language": "lt",
-                "value": "Tarptautinė stratigrafijos komisija"
+                "language": "zh",
+                "value": "国 际 地 层 委 员 会"
             }
         ],
         "name": "International Commission on Stratigraphy",
@@ -180,10 +180,6 @@
     },
     "scopeNote": [
         {
-            "language": "en",
-            "value": "Units of all ranks are in the process of being defined by Global Boundary Stratotype Section and Points (GSSP) for their lower boundaries, including those of the Archean and Proterozoic, long defined by Global Standard Stratigraphic Ages (GSSA). Italic fonts indicate informal units and placeholders for unnamed units. Versioned charts and detailed information on ratified GSSPs are available at the website http://www.stratigraphy.org. The URL to this chart is found below.\n\nNumerical ages are subject to revision and do not define units in the Phanerozoic and the Ediacaran; only GSSPs do. For boundaries in the Phanerozoic without ratified GSSPs or without constrained numerical ages, an approximate numerical age (~) is provided.\n\nRatified Subseries/Subepochs are abbreviated as U/L (Upper/Late), M (Middle) and L/E (Lower/Early). Numerical ages for all systems except Quaternary, upper Paleogene, Cretaceous, Jurassic, Triassic, Permian, Cambrian and Precambrian are taken from ‘A Geologic Time Scale 2012’ by Gradstein et al. (2012), those for the Quaternary, upper Paleogene, Cretaceous, Jurassic, Triassic, Permian, Cambrian and Precambrian were provided by the relevant ICS subcommissions.\n\nColouring follows the Commission for the Geological Map of the World <www.ccgm.org>.\n\nChart drafted by K.M. Cohen, D.A.T. Harper, P.L. Gibbard, N. Car\n\n(c) International Commission on Stratigraphy, September 2024.\n\nTo cite: Cohen, K.M., Finney, S.C., Gibbard, P.L. & Fan, J.-X. (2013; updated), _The ICS International Chronostratigraphic Chart_. Episodes 36: 199-204"
-        },
-        {
             "language": "ca",
             "value": "Els límits inferiors de les unitats de tots els rangs es troben actualment en procés de ser definits com a Estratotips Globals de Límit (GSSP - Global Boundary Stratotype Section and Point), incloses les de l'Arqueà i el Proterozoic que, per convenció, havien estat definits cronomètricament segons edats numèriques absolutes (GSSA-Global Standard Stratigraphic Ages). Hom pot trobar la taula original i la informació detallada sobre els GSSP ratificats a http://www.stratigraphy.org.\n\nLes edats numèriques (Ma) estan subjectes a revisió i no defineixen unitats en el Fanerozoic ni en I’Ediacarià. Això només ho fan els GSSP. Pel que fa als límits d'aquelles unitats del Fanerozoic que encara no tenen un GSSP ratificat, o dels quals no es disposa d'una edat numèrica acotada, la taula dona una edat numèrica aproximada (~).\n\nLes Subsèries/Subèpoques ratificades s’abrevien com S/T (Superior/Tardà), M (Mitjà) i I/P (Inferior/Primerenc). Les edats numèriques de tots els sistemes, excepte el Quaternari, el Paleogen superior, el Cretaci, el Juràssic, el Triàsic, el Permià i el Precambrià provenen de “A Geologic Time Scale 2012” de Gradstein et al. (2012). Les del Quaternari, Paleogen superior, Cretaci, Juràssic, Triàsic, Permià, Cambrià i Precambrià són aportacions originals de les subcomissions respectives de la ICS (Int. Commission on Stratigraphy).\n\nTaula dissenyada per K.M. Cohen, D.A.T. Harper, P.L. Gibbard, N. Car\n\n(c) Comissió Internacional d’Estratigrafia (IUGS), Setembre 2024.\n\nCitacio: Cohen, K.M., Finney, S.C., Gibbard, P.L., y Fan, J.-X. (2013; actualilzat) The ICS Intemational Chronostratigraphic Chart. Episodes 36: 199-204.\n\nTraducció al català per iniciativa de Juan Carlos Gutiérrez-Marco (CSIC)."
         },
@@ -194,6 +190,10 @@
         {
             "language": "de",
             "value": "Globale stratigraphische Einheiten werden mit ihrer Basis definiert an Globalen Stratotyp Profilen und Punkten (GSSP, Global Stratotyp Section and Point). Dagegen sind Einheiten ≥ 1000 Ma definiert mit Globalen Stratigraphischen Standardaltern (GSSA). Mehr Informationen dazu unter: http://www.stratigraphy.org. Bis 09/2023 ratifizierte Grenzen sind mit einem Goldenen Nagel markiert.\n\nDie numerischen Alter stammen aus der Global Time Scale 2012 (GTS 2012, Gradstein et al. 2012), die Alter für das untere Pleistozän, das Chattium, die untere Kreide, die Jura, die Trias, das Perm und das Kryogenium von den zuständigen ICS-Subkommissionen. Das Zeichen ~ steht vor relativ unsicheren Altern.\n\nFarben: Commission for the Geological Map of the World (CGMW, http://www.ccgm.org).\n\nZitierweize: Cohen, K.M., Finney, S.C., Gibbard, P.L. & Fan, J.-X. (2013;aktualisiert) The ICS International Chronostratigraphic Chart. Episodes 36:199-204. URL: http://www.stratigraphy.org/ICSchart/ChronostratChart2022-02.pdf\n\nVersion in Deutsch: Deutsche Stratigraphische Kommission (DSK, M. Menning) Österreichische Stratigraphische Kommission (ASC, W. Piller)"
+        },
+        {
+            "language": "en",
+            "value": "Units of all ranks are in the process of being defined by Global Boundary Stratotype Section and Points (GSSP) for their lower boundaries, including those of the Archean and Proterozoic, long defined by Global Standard Stratigraphic Ages (GSSA). Italic fonts indicate informal units and placeholders for unnamed units. Versioned charts and detailed information on ratified GSSPs are available at the website http://www.stratigraphy.org. The URL to this chart is found below.\n\nNumerical ages are subject to revision and do not define units in the Phanerozoic and the Ediacaran; only GSSPs do. For boundaries in the Phanerozoic without ratified GSSPs or without constrained numerical ages, an approximate numerical age (~) is provided.\n\nRatified Subseries/Subepochs are abbreviated as U/L (Upper/Late), M (Middle) and L/E (Lower/Early). Numerical ages for all systems except Quaternary, upper Paleogene, Cretaceous, Jurassic, Triassic, Permian, Cambrian and Precambrian are taken from ‘A Geologic Time Scale 2012’ by Gradstein et al. (2012), those for the Quaternary, upper Paleogene, Cretaceous, Jurassic, Triassic, Permian, Cambrian and Precambrian were provided by the relevant ICS subcommissions.\n\nColouring follows the Commission for the Geological Map of the World <www.ccgm.org>.\n\nChart drafted by K.M. Cohen, D.A.T. Harper, P.L. Gibbard, N. Car\n\n(c) International Commission on Stratigraphy, September 2024.\n\nTo cite: Cohen, K.M., Finney, S.C., Gibbard, P.L. & Fan, J.-X. (2013; updated), _The ICS International Chronostratigraphic Chart_. Episodes 36: 199-204"
         },
         {
             "language": "es",
