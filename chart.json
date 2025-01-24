@@ -11,13 +11,12 @@
         "skos": "http://www.w3.org/2004/02/skos/core#",
         "time": "http://www.w3.org/2006/time#",
         "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "example": "https://example.com/",
         "id": "@id",
         "type": "@type",
         "value": "@value",
         "language": "@language",
         "counts": "https://example.com/counts",
-        "directNarrowers": "https://example.com/directNarrowers",
-        "indirectNarrowers": "https://example.com/indirectNarrowers",
         "note": "skos:note",
         "versionInfo": "owl:versionInfo",
         "skosVersionInfo": "skos:versionInfo",
@@ -28,6 +27,12 @@
         "scopeNote": "skos:scopeNote",
         "historyNote": "skos:historyNote",
         "alternateName": "sdo:alternateName",
+        "directNarrowers": {
+            "@id": "example:directNarrowers"
+        },
+        "indirectNarrowers": {
+            "@id": "example:indirectNarrowers"
+        },
         "conformsTo": {
             "@id": "dcterms:conformsTo",
             "@type": "@id"
