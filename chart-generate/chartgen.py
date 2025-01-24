@@ -46,7 +46,7 @@ def get_sub_info(node,root,  g: Graph):
                 'broader': broader 
             }
     
-def get_hierachy(framed, g):
+def get_hierarchy(framed, g):
     root = {}
     topConcepts = [tl for tl in framed["hasTopConcept"] ]
     for tc in topConcepts:
@@ -157,8 +157,8 @@ def main():
     s2=get_irregular_heights(split_chart(framed["hasTopConcept"][0],['ischart:Jurassic','ischart:Triassic','ischart:Permian','ischart:Carboniferous']))
     s3=get_irregular_heights(split_chart(framed["hasTopConcept"][0],['ischart:Devonian','ischart:Silurian','ischart:Ordovician','ischart:Cambrian']))
     s4 =get_irregular_heights(framed["hasTopConcept"][1])
-    with open('./out/chart.hierachy.json', 'w',encoding = 'utf8') as out:
-        out.write(json.dumps(get_hierachy(framed, g),ensure_ascii=False,indent=4).encode('utf8').decode())
+    with open('./out/chart.hierarchy.json', 'w',encoding = 'utf8') as out:
+        out.write(json.dumps(get_hierarchy(framed, g),ensure_ascii=False,indent=4).encode('utf8').decode())
 
     with open('./out/chart.1.json', 'w',encoding = 'utf8') as out:
         out.write(json.dumps(s1,ensure_ascii=False,indent=4).encode('utf8').decode())
