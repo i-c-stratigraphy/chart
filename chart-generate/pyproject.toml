@@ -10,6 +10,7 @@ package-mode = false
 python = "^3.12"
 rdflib = "^7.0.0"
 PyLD = "^2.0.4"
+kurra = "^1.1.0"
 
 
 [tool.poetry.group.dev.dependencies]

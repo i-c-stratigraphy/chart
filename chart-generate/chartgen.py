@@ -117,7 +117,7 @@ def get_irregular_heights(subGraph):
         lookup[key]["irregularHeight"] = EQPROVISION + lookup[key]["remainderHeigt"]
         lookup[key]["rawPercent"] = 100 / len(children)
 
-        # @toto update hierachy not list
+        # @toto update hierarchy not list
     return subGraph
 
 
