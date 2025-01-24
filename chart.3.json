@@ -504,14 +504,8 @@
                                         "value": 153
                                     },
                                     "counts": {
-                                        "directNarrowers": {
-                                            "type": "xsd:integer",
-                                            "value": 0
-                                        },
-                                        "indirectNarrowers": {
-                                            "type": "xsd:integer",
-                                            "value": 0
-                                        }
+                                        "directNarrowers": 0,
+                                        "indirectNarrowers": 0
                                     },
                                     "color": "#A6C583",
                                     "height": 6.5,
@@ -636,14 +630,8 @@
                                         "value": 150
                                     },
                                     "counts": {
-                                        "directNarrowers": {
-                                            "type": "xsd:integer",
-                                            "value": 0
-                                        },
-                                        "indirectNarrowers": {
-                                            "type": "xsd:integer",
-                                            "value": 0
-                                        }
+                                        "directNarrowers": 0,
+                                        "indirectNarrowers": 0
                                     },
                                     "color": "#B3CA8E",
                                     "height": 8.0,
@@ -677,14 +665,8 @@
                                 "value": 151
                             },
                             "counts": {
-                                "directNarrowers": {
-                                    "type": "xsd:integer",
-                                    "value": 2
-                                },
-                                "indirectNarrowers": {
-                                    "type": "xsd:integer",
-                                    "value": 2
-                                }
+                                "directNarrowers": 2,
+                                "indirectNarrowers": 2
                             },
                             "color": "#99C078"
                         },
@@ -905,14 +887,8 @@
                                         "value": 142
                                     },
                                     "counts": {
-                                        "directNarrowers": {
-                                            "type": "xsd:integer",
-                                            "value": 0
-                                        },
-                                        "indirectNarrowers": {
-                                            "type": "xsd:integer",
-                                            "value": 0
-                                        }
+                                        "directNarrowers": 0,
+                                        "indirectNarrowers": 0
                                     },
                                     "color": "#E6F5C9",
                                     "height": 4.149999999999977,
@@ -963,14 +939,8 @@
                                         "value": 143
                                     },
                                     "counts": {
-                                        "directNarrowers": {
-                                            "type": "xsd:integer",
-                                            "value": 0
-                                        },
-                                        "indirectNarrowers": {
-                                            "type": "xsd:integer",
-                                            "value": 0
-                                        }
+                                        "directNarrowers": 0,
+                                        "indirectNarrowers": 0
                                     },
                                     "color": "#D9F0BB",
                                     "height": 3.1999999999999886,
@@ -1099,14 +1069,8 @@
                                         "value": 145
                                     },
                                     "counts": {
-                                        "directNarrowers": {
-                                            "type": "xsd:integer",
-                                            "value": 0
-                                        },
-                                        "indirectNarrowers": {
-                                            "type": "xsd:integer",
-                                            "value": 0
-                                        }
+                                        "directNarrowers": 0,
+                                        "indirectNarrowers": 0
                                     },
                                     "color": "#CCEBAE",
                                     "height": 2.8000000000000114,
@@ -1143,14 +1107,8 @@
                                 "value": 144
                             },
                             "counts": {
-                                "directNarrowers": {
-                                    "type": "xsd:integer",
-                                    "value": 3
-                                },
-                                "indirectNarrowers": {
-                                    "type": "xsd:integer",
-                                    "value": 3
-                                }
+                                "directNarrowers": 3,
+                                "indirectNarrowers": 3
                             },
                             "color": "#B3E095"
                         },
@@ -1290,14 +1248,8 @@
                                         "value": 147
                                     },
                                     "counts": {
-                                        "directNarrowers": {
-                                            "type": "xsd:integer",
-                                            "value": 0
-                                        },
-                                        "indirectNarrowers": {
-                                            "type": "xsd:integer",
-                                            "value": 0
-                                        }
+                                        "directNarrowers": 0,
+                                        "indirectNarrowers": 0
                                     },
                                     "color": "#BFD99D",
                                     "height": 4.0,
@@ -1426,14 +1378,8 @@
                                         "value": 146
                                     },
                                     "counts": {
-                                        "directNarrowers": {
-                                            "type": "xsd:integer",
-                                            "value": 0
-                                        },
-                                        "indirectNarrowers": {
-                                            "type": "xsd:integer",
-                                            "value": 0
-                                        }
+                                        "directNarrowers": 0,
+                                        "indirectNarrowers": 0
                                     },
                                     "color": "#CCDFAA",
                                     "height": 3.5,
@@ -1480,14 +1426,8 @@
                                         "value": 149
                                     },
                                     "counts": {
-                                        "directNarrowers": {
-                                            "type": "xsd:integer",
-                                            "value": 0
-                                        },
-                                        "indirectNarrowers": {
-                                            "type": "xsd:integer",
-                                            "value": 0
-                                        }
+                                        "directNarrowers": 0,
+                                        "indirectNarrowers": 0
                                     },
                                     "color": "#B3D492",
                                     "height": 2.0,
@@ -1521,14 +1461,8 @@
                                 "value": 148
                             },
                             "counts": {
-                                "directNarrowers": {
-                                    "type": "xsd:integer",
-                                    "value": 3
-                                },
-                                "indirectNarrowers": {
-                                    "type": "xsd:integer",
-                                    "value": 3
-                                }
+                                "directNarrowers": 3,
+                                "indirectNarrowers": 3
                             },
                             "color": "#A6CF86"
                         },
@@ -1746,14 +1680,8 @@
                                         "value": 152
                                     },
                                     "counts": {
-                                        "directNarrowers": {
-                                            "type": "xsd:integer",
-                                            "value": 0
-                                        },
-                                        "indirectNarrowers": {
-                                            "type": "xsd:integer",
-                                            "value": 0
-                                        }
+                                        "directNarrowers": 0,
+                                        "indirectNarrowers": 0
                                     },
                                     "color": "#A6BA80",
                                     "height": 8.0,
@@ -1885,14 +1813,8 @@
                                         "value": 155
                                     },
                                     "counts": {
-                                        "directNarrowers": {
-                                            "type": "xsd:integer",
-                                            "value": 0
-                                        },
-                                        "indirectNarrowers": {
-                                            "type": "xsd:integer",
-                                            "value": 0
-                                        }
+                                        "directNarrowers": 0,
+                                        "indirectNarrowers": 0
                                     },
                                     "color": "#99B575",
                                     "height": 9.799999999999955,
@@ -1929,14 +1851,8 @@
                                 "value": 157
                             },
                             "counts": {
-                                "directNarrowers": {
-                                    "type": "xsd:integer",
-                                    "value": 2
-                                },
-                                "indirectNarrowers": {
-                                    "type": "xsd:integer",
-                                    "value": 2
-                                }
+                                "directNarrowers": 2,
+                                "indirectNarrowers": 2
                             },
                             "color": "#8CB06C"
                         }
@@ -1972,14 +1888,8 @@
                         "value": 154
                     },
                     "counts": {
-                        "directNarrowers": {
-                            "type": "xsd:integer",
-                            "value": 4
-                        },
-                        "indirectNarrowers": {
-                            "type": "xsd:integer",
-                            "value": 14
-                        }
+                        "directNarrowers": 4,
+                        "indirectNarrowers": 14
                     },
                     "color": "#7FA056"
                 },
@@ -2304,14 +2214,8 @@
                                         "value": 114
                                     },
                                     "counts": {
-                                        "directNarrowers": {
-                                            "type": "xsd:integer",
-                                            "value": 0
-                                        },
-                                        "indirectNarrowers": {
-                                            "type": "xsd:integer",
-                                            "value": 0
-                                        }
+                                        "directNarrowers": 0,
+                                        "indirectNarrowers": 0
                                     },
                                     "color": "#E5D075",
                                     "height": 17.149999999999977,
@@ -2446,14 +2350,8 @@
                                         "value": 117
                                     },
                                     "counts": {
-                                        "directNarrowers": {
-                                            "type": "xsd:integer",
-                                            "value": 0
-                                        },
-                                        "indirectNarrowers": {
-                                            "type": "xsd:integer",
-                                            "value": 0
-                                        }
+                                        "directNarrowers": 0,
+                                        "indirectNarrowers": 0
                                     },
                                     "color": "#E5B75A",
                                     "height": 6.600000000000023,
@@ -2588,14 +2486,8 @@
                                         "value": 115
                                     },
                                     "counts": {
-                                        "directNarrowers": {
-                                            "type": "xsd:integer",
-                                            "value": 0
-                                        },
-                                        "indirectNarrowers": {
-                                            "type": "xsd:integer",
-                                            "value": 0
-                                        }
+                                        "directNarrowers": 0,
+                                        "indirectNarrowers": 0
                                     },
                                     "color": "#E5C468",
                                     "height": 2.3999999999999773,
@@ -2635,14 +2527,8 @@
                                 "value": 118
                             },
                             "counts": {
-                                "directNarrowers": {
-                                    "type": "xsd:integer",
-                                    "value": 3
-                                },
-                                "indirectNarrowers": {
-                                    "type": "xsd:integer",
-                                    "value": 3
-                                }
+                                "directNarrowers": 3,
+                                "indirectNarrowers": 3
                             },
                             "color": "#E5AC4D"
                         },
@@ -2870,14 +2756,8 @@
                                         "value": 112
                                     },
                                     "counts": {
-                                        "directNarrowers": {
-                                            "type": "xsd:integer",
-                                            "value": 0
-                                        },
-                                        "indirectNarrowers": {
-                                            "type": "xsd:integer",
-                                            "value": 0
-                                        }
+                                        "directNarrowers": 0,
+                                        "indirectNarrowers": 0
                                     },
                                     "color": "#F1D576",
                                     "height": 5.520000000000039,
@@ -3012,14 +2892,8 @@
                                         "value": 111
                                     },
                                     "counts": {
-                                        "directNarrowers": {
-                                            "type": "xsd:integer",
-                                            "value": 0
-                                        },
-                                        "indirectNarrowers": {
-                                            "type": "xsd:integer",
-                                            "value": 0
-                                        }
+                                        "directNarrowers": 0,
+                                        "indirectNarrowers": 0
                                     },
                                     "color": "#F1E185",
                                     "height": 5.639999999999986,
@@ -3059,14 +2933,8 @@
                                 "value": 113
                             },
                             "counts": {
-                                "directNarrowers": {
-                                    "type": "xsd:integer",
-                                    "value": 2
-                                },
-                                "indirectNarrowers": {
-                                    "type": "xsd:integer",
-                                    "value": 2
-                                }
+                                "directNarrowers": 2,
+                                "indirectNarrowers": 2
                             },
                             "color": "#F1C868"
                         },
@@ -3278,14 +3146,8 @@
                                         "value": 108
                                     },
                                     "counts": {
-                                        "directNarrowers": {
-                                            "type": "xsd:integer",
-                                            "value": 0
-                                        },
-                                        "indirectNarrowers": {
-                                            "type": "xsd:integer",
-                                            "value": 0
-                                        }
+                                        "directNarrowers": 0,
+                                        "indirectNarrowers": 0
                                     },
                                     "color": "#F2EDB3",
                                     "height": 13.289999999999964,
@@ -3420,14 +3282,8 @@
                                         "value": 109
                                     },
                                     "counts": {
-                                        "directNarrowers": {
-                                            "type": "xsd:integer",
-                                            "value": 0
-                                        },
-                                        "indirectNarrowers": {
-                                            "type": "xsd:integer",
-                                            "value": 0
-                                        }
+                                        "directNarrowers": 0,
+                                        "indirectNarrowers": 0
                                     },
                                     "color": "#F2EDAD",
                                     "height": 10.160000000000025,
@@ -3467,14 +3323,8 @@
                                 "value": 110
                             },
                             "counts": {
-                                "directNarrowers": {
-                                    "type": "xsd:integer",
-                                    "value": 2
-                                },
-                                "indirectNarrowers": {
-                                    "type": "xsd:integer",
-                                    "value": 2
-                                }
+                                "directNarrowers": 2,
+                                "indirectNarrowers": 2
                             },
                             "color": "#F1E19D"
                         }
@@ -3510,14 +3360,8 @@
                         "value": 116
                     },
                     "counts": {
-                        "directNarrowers": {
-                            "type": "xsd:integer",
-                            "value": 3
-                        },
-                        "indirectNarrowers": {
-                            "type": "xsd:integer",
-                            "value": 10
-                        }
+                        "directNarrowers": 3,
+                        "indirectNarrowers": 10
                     },
                     "color": "#CB8C37"
                 },
@@ -3838,14 +3682,8 @@
                                         "value": 138
                                     },
                                     "counts": {
-                                        "directNarrowers": {
-                                            "type": "xsd:integer",
-                                            "value": 0
-                                        },
-                                        "indirectNarrowers": {
-                                            "type": "xsd:integer",
-                                            "value": 0
-                                        }
+                                        "directNarrowers": 0,
+                                        "indirectNarrowers": 0
                                     },
                                     "color": "#41B087",
                                     "height": 5.800000000000011,
@@ -3980,14 +3818,8 @@
                                         "value": 141
                                     },
                                     "counts": {
-                                        "directNarrowers": {
-                                            "type": "xsd:integer",
-                                            "value": 0
-                                        },
-                                        "indirectNarrowers": {
-                                            "type": "xsd:integer",
-                                            "value": 0
-                                        }
+                                        "directNarrowers": 0,
+                                        "indirectNarrowers": 0
                                     },
                                     "color": "#33A97E",
                                     "height": 9.75,
@@ -4027,14 +3859,8 @@
                                 "value": 139
                             },
                             "counts": {
-                                "directNarrowers": {
-                                    "type": "xsd:integer",
-                                    "value": 2
-                                },
-                                "indirectNarrowers": {
-                                    "type": "xsd:integer",
-                                    "value": 2
-                                }
+                                "directNarrowers": 2,
+                                "indirectNarrowers": 2
                             },
                             "color": "#1A9D6F"
                         },
@@ -4262,14 +4088,8 @@
                                         "value": 136
                                     },
                                     "counts": {
-                                        "directNarrowers": {
-                                            "type": "xsd:integer",
-                                            "value": 0
-                                        },
-                                        "indirectNarrowers": {
-                                            "type": "xsd:integer",
-                                            "value": 0
-                                        }
+                                        "directNarrowers": 0,
+                                        "indirectNarrowers": 0
                                     },
                                     "color": "#66C092",
                                     "height": 1.900000000000034,
@@ -4404,14 +4224,8 @@
                                         "value": 135
                                     },
                                     "counts": {
-                                        "directNarrowers": {
-                                            "type": "xsd:integer",
-                                            "value": 0
-                                        },
-                                        "indirectNarrowers": {
-                                            "type": "xsd:integer",
-                                            "value": 0
-                                        }
+                                        "directNarrowers": 0,
+                                        "indirectNarrowers": 0
                                     },
                                     "color": "#74C69C",
                                     "height": 11.199999999999989,
@@ -4451,14 +4265,8 @@
                                 "value": 137
                             },
                             "counts": {
-                                "directNarrowers": {
-                                    "type": "xsd:integer",
-                                    "value": 2
-                                },
-                                "indirectNarrowers": {
-                                    "type": "xsd:integer",
-                                    "value": 2
-                                }
+                                "directNarrowers": 2,
+                                "indirectNarrowers": 2
                             },
                             "color": "#4DB47E"
                         },
@@ -4670,14 +4478,8 @@
                                         "value": 131
                                     },
                                     "counts": {
-                                        "directNarrowers": {
-                                            "type": "xsd:integer",
-                                            "value": 0
-                                        },
-                                        "indirectNarrowers": {
-                                            "type": "xsd:integer",
-                                            "value": 0
-                                        }
+                                        "directNarrowers": 0,
+                                        "indirectNarrowers": 0
                                     },
                                     "color": "#A6DBAB",
                                     "height": 2.099999999999966,
@@ -4812,14 +4614,8 @@
                                         "value": 132
                                     },
                                     "counts": {
-                                        "directNarrowers": {
-                                            "type": "xsd:integer",
-                                            "value": 0
-                                        },
-                                        "indirectNarrowers": {
-                                            "type": "xsd:integer",
-                                            "value": 0
-                                        }
+                                        "directNarrowers": 0,
+                                        "indirectNarrowers": 0
                                     },
                                     "color": "#99D69F",
                                     "height": 7.600000000000023,
@@ -4954,14 +4750,8 @@
                                         "value": 133
                                     },
                                     "counts": {
-                                        "directNarrowers": {
-                                            "type": "xsd:integer",
-                                            "value": 0
-                                        },
-                                        "indirectNarrowers": {
-                                            "type": "xsd:integer",
-                                            "value": 0
-                                        }
+                                        "directNarrowers": 0,
+                                        "indirectNarrowers": 0
                                     },
                                     "color": "#8CD094",
                                     "height": 5.399999999999977,
@@ -5001,14 +4791,8 @@
                                 "value": 134
                             },
                             "counts": {
-                                "directNarrowers": {
-                                    "type": "xsd:integer",
-                                    "value": 3
-                                },
-                                "indirectNarrowers": {
-                                    "type": "xsd:integer",
-                                    "value": 3
-                                }
+                                "directNarrowers": 3,
+                                "indirectNarrowers": 3
                             },
                             "color": "#7FCA93"
                         }
@@ -5044,14 +4828,8 @@
                         "value": 140
                     },
                     "counts": {
-                        "directNarrowers": {
-                            "type": "xsd:integer",
-                            "value": 3
-                        },
-                        "indirectNarrowers": {
-                            "type": "xsd:integer",
-                            "value": 10
-                        }
+                        "directNarrowers": 3,
+                        "indirectNarrowers": 10
                     },
                     "color": "#009270"
                 },
@@ -5376,14 +5154,8 @@
                                         "value": 127
                                     },
                                     "counts": {
-                                        "directNarrowers": {
-                                            "type": "xsd:integer",
-                                            "value": 0
-                                        },
-                                        "indirectNarrowers": {
-                                            "type": "xsd:integer",
-                                            "value": 0
-                                        }
+                                        "directNarrowers": 0,
+                                        "indirectNarrowers": 0
                                     },
                                     "color": "#B3E1C2",
                                     "height": 1.8999999999999773,
@@ -5518,14 +5290,8 @@
                                         "value": 129
                                     },
                                     "counts": {
-                                        "directNarrowers": {
-                                            "type": "xsd:integer",
-                                            "value": 0
-                                        },
-                                        "indirectNarrowers": {
-                                            "type": "xsd:integer",
-                                            "value": 0
-                                        }
+                                        "directNarrowers": 0,
+                                        "indirectNarrowers": 0
                                     },
                                     "color": "#A6DCB5",
                                     "height": 2.6000000000000227,
@@ -5660,14 +5426,8 @@
                                         "value": 126
                                     },
                                     "counts": {
-                                        "directNarrowers": {
-                                            "type": "xsd:integer",
-                                            "value": 0
-                                        },
-                                        "indirectNarrowers": {
-                                            "type": "xsd:integer",
-                                            "value": 0
-                                        }
+                                        "directNarrowers": 0,
+                                        "indirectNarrowers": 0
                                     },
                                     "color": "#BFE6CF",
                                     "height": 5.7000000000000455,
@@ -5707,14 +5467,8 @@
                                 "value": 128
                             },
                             "counts": {
-                                "directNarrowers": {
-                                    "type": "xsd:integer",
-                                    "value": 3
-                                },
-                                "indirectNarrowers": {
-                                    "type": "xsd:integer",
-                                    "value": 3
-                                }
+                                "directNarrowers": 3,
+                                "indirectNarrowers": 3
                             },
                             "color": "#99D7B3"
                         },
@@ -5942,14 +5696,8 @@
                                         "value": 121
                                     },
                                     "counts": {
-                                        "directNarrowers": {
-                                            "type": "xsd:integer",
-                                            "value": 0
-                                        },
-                                        "indirectNarrowers": {
-                                            "type": "xsd:integer",
-                                            "value": 0
-                                        }
+                                        "directNarrowers": 0,
+                                        "indirectNarrowers": 0
                                     },
                                     "color": "#CCECDD",
                                     "height": 1.6999999999999886,
@@ -6084,14 +5832,8 @@
                                         "value": 120
                                     },
                                     "counts": {
-                                        "directNarrowers": {
-                                            "type": "xsd:integer",
-                                            "value": 0
-                                        },
-                                        "indirectNarrowers": {
-                                            "type": "xsd:integer",
-                                            "value": 0
-                                        }
+                                        "directNarrowers": 0,
+                                        "indirectNarrowers": 0
                                     },
                                     "color": "#D9F0DF",
                                     "height": 2.3000000000000114,
@@ -6131,14 +5873,8 @@
                                 "value": 122
                             },
                             "counts": {
-                                "directNarrowers": {
-                                    "type": "xsd:integer",
-                                    "value": 2
-                                },
-                                "indirectNarrowers": {
-                                    "type": "xsd:integer",
-                                    "value": 2
-                                }
+                                "directNarrowers": 2,
+                                "indirectNarrowers": 2
                             },
                             "color": "#BFE6CF"
                         },
@@ -6272,14 +6008,8 @@
                                 "value": 119
                             },
                             "counts": {
-                                "directNarrowers": {
-                                    "type": "xsd:integer",
-                                    "value": 0
-                                },
-                                "indirectNarrowers": {
-                                    "type": "xsd:integer",
-                                    "value": 0
-                                }
+                                "directNarrowers": 0,
+                                "indirectNarrowers": 0
                             },
                             "color": "#E6F5E1",
                             "height": 3.079999999999984,
@@ -6511,14 +6241,8 @@
                                         "value": 123
                                     },
                                     "counts": {
-                                        "directNarrowers": {
-                                            "type": "xsd:integer",
-                                            "value": 0
-                                        },
-                                        "indirectNarrowers": {
-                                            "type": "xsd:integer",
-                                            "value": 0
-                                        }
+                                        "directNarrowers": 0,
+                                        "indirectNarrowers": 0
                                     },
                                     "color": "#CCEBD1",
                                     "height": 3.900000000000034,
@@ -6653,14 +6377,8 @@
                                         "value": 124
                                     },
                                     "counts": {
-                                        "directNarrowers": {
-                                            "type": "xsd:integer",
-                                            "value": 0
-                                        },
-                                        "indirectNarrowers": {
-                                            "type": "xsd:integer",
-                                            "value": 0
-                                        }
+                                        "directNarrowers": 0,
+                                        "indirectNarrowers": 0
                                     },
                                     "color": "#BFE6C3",
                                     "height": 2.2999999999999545,
@@ -6700,14 +6418,8 @@
                                 "value": 125
                             },
                             "counts": {
-                                "directNarrowers": {
-                                    "type": "xsd:integer",
-                                    "value": 2
-                                },
-                                "indirectNarrowers": {
-                                    "type": "xsd:integer",
-                                    "value": 2
-                                }
+                                "directNarrowers": 2,
+                                "indirectNarrowers": 2
                             },
                             "color": "#B3E1C2"
                         }
@@ -6743,14 +6455,8 @@
                         "value": 130
                     },
                     "counts": {
-                        "directNarrowers": {
-                            "type": "xsd:integer",
-                            "value": 4
-                        },
-                        "indirectNarrowers": {
-                            "type": "xsd:integer",
-                            "value": 11
-                        }
+                        "directNarrowers": 4,
+                        "indirectNarrowers": 11
                     },
                     "color": "#B3E1B6"
                 }
@@ -6786,14 +6492,8 @@
                 "value": 77
             },
             "counts": {
-                "directNarrowers": {
-                    "type": "xsd:integer",
-                    "value": 6
-                },
-                "indirectNarrowers": {
-                    "type": "xsd:integer",
-                    "value": 78
-                }
+                "directNarrowers": 6,
+                "indirectNarrowers": 78
             },
             "color": "#99C08D"
         }
@@ -6825,14 +6525,8 @@
         "value": 156
     },
     "counts": {
-        "directNarrowers": {
-            "type": "xsd:integer",
-            "value": 3
-        },
-        "indirectNarrowers": {
-            "type": "xsd:integer",
-            "value": 156
-        }
+        "directNarrowers": 3,
+        "indirectNarrowers": 156
     },
     "color": "#9AD9DD"
 }

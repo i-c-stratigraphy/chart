@@ -28,10 +28,12 @@
         "historyNote": "skos:historyNote",
         "alternateName": "sdo:alternateName",
         "directNarrowers": {
-            "@id": "example:directNarrowers"
+            "@id": "example:directNarrowers",
+            "@type": "xsd:integer"
         },
         "indirectNarrowers": {
-            "@id": "example:indirectNarrowers"
+            "@id": "example:indirectNarrowers",
+            "@type": "xsd:integer"
         },
         "conformsTo": {
             "@id": "dcterms:conformsTo",
@@ -804,14 +806,8 @@
                                                 "value": 19
                                             },
                                             "counts": {
-                                                "directNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                },
-                                                "indirectNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                }
+                                                "directNarrowers": 0,
+                                                "indirectNarrowers": 0
                                             },
                                             "color": "#FFFF33"
                                         },
@@ -930,14 +926,8 @@
                                                 "value": 18
                                             },
                                             "counts": {
-                                                "directNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                },
-                                                "indirectNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                }
+                                                "directNarrowers": 0,
+                                                "indirectNarrowers": 0
                                             },
                                             "color": "#FFFF41"
                                         },
@@ -1060,14 +1050,8 @@
                                                 "value": 17
                                             },
                                             "counts": {
-                                                "directNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                },
-                                                "indirectNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                }
+                                                "directNarrowers": 0,
+                                                "indirectNarrowers": 0
                                             },
                                             "color": "#FFFF4D"
                                         },
@@ -1190,14 +1174,8 @@
                                                 "value": 14
                                             },
                                             "counts": {
-                                                "directNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                },
-                                                "indirectNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                }
+                                                "directNarrowers": 0,
+                                                "indirectNarrowers": 0
                                             },
                                             "color": "#FFFF73"
                                         },
@@ -1320,14 +1298,8 @@
                                                 "value": 16
                                             },
                                             "counts": {
-                                                "directNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                },
-                                                "indirectNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                }
+                                                "directNarrowers": 0,
+                                                "indirectNarrowers": 0
                                             },
                                             "color": "#FFFF59"
                                         },
@@ -1450,14 +1422,8 @@
                                                 "value": 15
                                             },
                                             "counts": {
-                                                "directNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                },
-                                                "indirectNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                }
+                                                "directNarrowers": 0,
+                                                "indirectNarrowers": 0
                                             },
                                             "color": "#FFFF66"
                                         }
@@ -1485,14 +1451,8 @@
                                         "value": 20
                                     },
                                     "counts": {
-                                        "directNarrowers": {
-                                            "type": "xsd:integer",
-                                            "value": 6
-                                        },
-                                        "indirectNarrowers": {
-                                            "type": "xsd:integer",
-                                            "value": 6
-                                        }
+                                        "directNarrowers": 6,
+                                        "indirectNarrowers": 6
                                     },
                                     "color": "#FFFF00"
                                 },
@@ -1712,14 +1672,8 @@
                                                 "value": 11
                                             },
                                             "counts": {
-                                                "directNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                },
-                                                "indirectNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                }
+                                                "directNarrowers": 0,
+                                                "indirectNarrowers": 0
                                             },
                                             "color": "#FFFFBF"
                                         },
@@ -1842,14 +1796,8 @@
                                                 "value": 13
                                             },
                                             "counts": {
-                                                "directNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                },
-                                                "indirectNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                }
+                                                "directNarrowers": 0,
+                                                "indirectNarrowers": 0
                                             },
                                             "color": "#FFFFB3"
                                         }
@@ -1877,14 +1825,8 @@
                                         "value": 12
                                     },
                                     "counts": {
-                                        "directNarrowers": {
-                                            "type": "xsd:integer",
-                                            "value": 2
-                                        },
-                                        "indirectNarrowers": {
-                                            "type": "xsd:integer",
-                                            "value": 2
-                                        }
+                                        "directNarrowers": 2,
+                                        "indirectNarrowers": 2
                                     },
                                     "color": "#FFFF99"
                                 }
@@ -1912,14 +1854,8 @@
                                 "value": 21
                             },
                             "counts": {
-                                "directNarrowers": {
-                                    "type": "xsd:integer",
-                                    "value": 2
-                                },
-                                "indirectNarrowers": {
-                                    "type": "xsd:integer",
-                                    "value": 10
-                                }
+                                "directNarrowers": 2,
+                                "indirectNarrowers": 10
                             },
                             "color": "#FFE619"
                         },
@@ -2240,14 +2176,8 @@
                                                 "value": 26
                                             },
                                             "counts": {
-                                                "directNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                },
-                                                "indirectNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                }
+                                                "directNarrowers": 0,
+                                                "indirectNarrowers": 0
                                             },
                                             "color": "#FDC091"
                                         },
@@ -2370,14 +2300,8 @@
                                                 "value": 27
                                             },
                                             "counts": {
-                                                "directNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                },
-                                                "indirectNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                }
+                                                "directNarrowers": 0,
+                                                "indirectNarrowers": 0
                                             },
                                             "color": "#FDB482"
                                         },
@@ -2500,14 +2424,8 @@
                                                 "value": 25
                                             },
                                             "counts": {
-                                                "directNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                },
-                                                "indirectNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                }
+                                                "directNarrowers": 0,
+                                                "indirectNarrowers": 0
                                             },
                                             "color": "#FDCDA1"
                                         },
@@ -2630,14 +2548,8 @@
                                                 "value": 29
                                             },
                                             "counts": {
-                                                "directNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                },
-                                                "indirectNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                }
+                                                "directNarrowers": 0,
+                                                "indirectNarrowers": 0
                                             },
                                             "color": "#FCA773"
                                         }
@@ -2665,14 +2577,8 @@
                                         "value": 28
                                     },
                                     "counts": {
-                                        "directNarrowers": {
-                                            "type": "xsd:integer",
-                                            "value": 4
-                                        },
-                                        "indirectNarrowers": {
-                                            "type": "xsd:integer",
-                                            "value": 4
-                                        }
+                                        "directNarrowers": 4,
+                                        "indirectNarrowers": 4
                                     },
                                     "color": "#FDB46C"
                                 },
@@ -2892,14 +2798,8 @@
                                                 "value": 22
                                             },
                                             "counts": {
-                                                "directNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                },
-                                                "indirectNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                }
+                                                "directNarrowers": 0,
+                                                "indirectNarrowers": 0
                                             },
                                             "color": "#FEE6AA"
                                         },
@@ -3022,14 +2922,8 @@
                                                 "value": 24
                                             },
                                             "counts": {
-                                                "directNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                },
-                                                "indirectNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                }
+                                                "directNarrowers": 0,
+                                                "indirectNarrowers": 0
                                             },
                                             "color": "#FED99A"
                                         }
@@ -3057,14 +2951,8 @@
                                         "value": 23
                                     },
                                     "counts": {
-                                        "directNarrowers": {
-                                            "type": "xsd:integer",
-                                            "value": 2
-                                        },
-                                        "indirectNarrowers": {
-                                            "type": "xsd:integer",
-                                            "value": 2
-                                        }
+                                        "directNarrowers": 2,
+                                        "indirectNarrowers": 2
                                     },
                                     "color": "#FEC07A"
                                 },
@@ -3292,14 +3180,8 @@
                                                 "value": 33
                                             },
                                             "counts": {
-                                                "directNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                },
-                                                "indirectNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                }
+                                                "directNarrowers": 0,
+                                                "indirectNarrowers": 0
                                             },
                                             "color": "#FDB462"
                                         },
@@ -3422,14 +3304,8 @@
                                                 "value": 31
                                             },
                                             "counts": {
-                                                "directNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                },
-                                                "indirectNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                }
+                                                "directNarrowers": 0,
+                                                "indirectNarrowers": 0
                                             },
                                             "color": "#FEBF65"
                                         },
@@ -3552,14 +3428,8 @@
                                                 "value": 30
                                             },
                                             "counts": {
-                                                "directNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                },
-                                                "indirectNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                }
+                                                "directNarrowers": 0,
+                                                "indirectNarrowers": 0
                                             },
                                             "color": "#FDBF6F"
                                         }
@@ -3587,14 +3457,8 @@
                                         "value": 34
                                     },
                                     "counts": {
-                                        "directNarrowers": {
-                                            "type": "xsd:integer",
-                                            "value": 3
-                                        },
-                                        "indirectNarrowers": {
-                                            "type": "xsd:integer",
-                                            "value": 3
-                                        }
+                                        "directNarrowers": 3,
+                                        "indirectNarrowers": 3
                                     },
                                     "color": "#FDA75F"
                                 }
@@ -3622,14 +3486,8 @@
                                 "value": 35
                             },
                             "counts": {
-                                "directNarrowers": {
-                                    "type": "xsd:integer",
-                                    "value": 3
-                                },
-                                "indirectNarrowers": {
-                                    "type": "xsd:integer",
-                                    "value": 12
-                                }
+                                "directNarrowers": 3,
+                                "indirectNarrowers": 12
                             },
                             "color": "#FD9A52"
                         },
@@ -3864,14 +3722,8 @@
                                                 "value": 3
                                             },
                                             "counts": {
-                                                "directNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                },
-                                                "indirectNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                }
+                                                "directNarrowers": 0,
+                                                "indirectNarrowers": 0
                                             },
                                             "color": "#FEECDB"
                                         },
@@ -3912,14 +3764,8 @@
                                                 "value": 1
                                             },
                                             "counts": {
-                                                "directNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                },
-                                                "indirectNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                }
+                                                "directNarrowers": 0,
+                                                "indirectNarrowers": 0
                                             },
                                             "color": "#FDEDEC"
                                         },
@@ -3960,14 +3806,8 @@
                                                 "value": 2
                                             },
                                             "counts": {
-                                                "directNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                },
-                                                "indirectNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                }
+                                                "directNarrowers": 0,
+                                                "indirectNarrowers": 0
                                             },
                                             "color": "#FDECE4"
                                         }
@@ -3995,14 +3835,8 @@
                                         "value": 4
                                     },
                                     "counts": {
-                                        "directNarrowers": {
-                                            "type": "xsd:integer",
-                                            "value": 3
-                                        },
-                                        "indirectNarrowers": {
-                                            "type": "xsd:integer",
-                                            "value": 3
-                                        }
+                                        "directNarrowers": 3,
+                                        "indirectNarrowers": 3
                                     },
                                     "color": "#FEEBD2"
                                 },
@@ -4222,14 +4056,8 @@
                                                 "value": 7
                                             },
                                             "counts": {
-                                                "directNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                },
-                                                "indirectNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                }
+                                                "directNarrowers": 0,
+                                                "indirectNarrowers": 0
                                             },
                                             "color": "#FFF2BA"
                                         },
@@ -4270,14 +4098,8 @@
                                                 "value": 6
                                             },
                                             "counts": {
-                                                "directNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                },
-                                                "indirectNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                }
+                                                "directNarrowers": 0,
+                                                "indirectNarrowers": 0
                                             },
                                             "color": "#FFF2C7"
                                         },
@@ -4396,14 +4218,8 @@
                                                 "value": 8
                                             },
                                             "counts": {
-                                                "directNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                },
-                                                "indirectNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                }
+                                                "directNarrowers": 0,
+                                                "indirectNarrowers": 0
                                             },
                                             "color": "#FFEDB3"
                                         },
@@ -4506,14 +4322,8 @@
                                                 "value": 5
                                             },
                                             "counts": {
-                                                "directNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                },
-                                                "indirectNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                }
+                                                "directNarrowers": 0,
+                                                "indirectNarrowers": 0
                                             },
                                             "color": "#FFF2D3"
                                         }
@@ -4541,14 +4351,8 @@
                                         "value": 9
                                     },
                                     "counts": {
-                                        "directNarrowers": {
-                                            "type": "xsd:integer",
-                                            "value": 4
-                                        },
-                                        "indirectNarrowers": {
-                                            "type": "xsd:integer",
-                                            "value": 4
-                                        }
+                                        "directNarrowers": 4,
+                                        "indirectNarrowers": 4
                                     },
                                     "color": "#FFEFAF"
                                 }
@@ -4576,14 +4380,8 @@
                                 "value": 10
                             },
                             "counts": {
-                                "directNarrowers": {
-                                    "type": "xsd:integer",
-                                    "value": 2
-                                },
-                                "indirectNarrowers": {
-                                    "type": "xsd:integer",
-                                    "value": 9
-                                }
+                                "directNarrowers": 2,
+                                "indirectNarrowers": 9
                             },
                             "color": "#F9F97F"
                         }
@@ -4611,14 +4409,8 @@
                         "value": 32
                     },
                     "counts": {
-                        "directNarrowers": {
-                            "type": "xsd:integer",
-                            "value": 3
-                        },
-                        "indirectNarrowers": {
-                            "type": "xsd:integer",
-                            "value": 34
-                        }
+                        "directNarrowers": 3,
+                        "indirectNarrowers": 34
                     },
                     "color": "#F2F91D"
                 },
@@ -5024,14 +4816,8 @@
                                                 "value": 43
                                             },
                                             "counts": {
-                                                "directNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                },
-                                                "indirectNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                }
+                                                "directNarrowers": 0,
+                                                "indirectNarrowers": 0
                                             },
                                             "color": "#CCEA97"
                                         },
@@ -5158,14 +4944,8 @@
                                                 "value": 44
                                             },
                                             "counts": {
-                                                "directNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                },
-                                                "indirectNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                }
+                                                "directNarrowers": 0,
+                                                "indirectNarrowers": 0
                                             },
                                             "color": "#BFE48A"
                                         },
@@ -5292,14 +5072,8 @@
                                                 "value": 45
                                             },
                                             "counts": {
-                                                "directNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                },
-                                                "indirectNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                }
+                                                "directNarrowers": 0,
+                                                "indirectNarrowers": 0
                                             },
                                             "color": "#B3DF7F"
                                         },
@@ -5426,14 +5200,8 @@
                                                 "value": 48
                                             },
                                             "counts": {
-                                                "directNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                },
-                                                "indirectNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                }
+                                                "directNarrowers": 0,
+                                                "indirectNarrowers": 0
                                             },
                                             "color": "#8CCD60"
                                         },
@@ -5560,14 +5328,8 @@
                                                 "value": 46
                                             },
                                             "counts": {
-                                                "directNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                },
-                                                "indirectNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                }
+                                                "directNarrowers": 0,
+                                                "indirectNarrowers": 0
                                             },
                                             "color": "#A6D975"
                                         },
@@ -5698,14 +5460,8 @@
                                                 "value": 47
                                             },
                                             "counts": {
-                                                "directNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                },
-                                                "indirectNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                }
+                                                "directNarrowers": 0,
+                                                "indirectNarrowers": 0
                                             },
                                             "color": "#99D36A"
                                         }
@@ -5741,14 +5497,8 @@
                                         "value": 50
                                     },
                                     "counts": {
-                                        "directNarrowers": {
-                                            "type": "xsd:integer",
-                                            "value": 6
-                                        },
-                                        "indirectNarrowers": {
-                                            "type": "xsd:integer",
-                                            "value": 6
-                                        }
+                                        "directNarrowers": 6,
+                                        "indirectNarrowers": 6
                                     },
                                     "color": "#8CCD57"
                                 },
@@ -5960,14 +5710,8 @@
                                                 "value": 37
                                             },
                                             "counts": {
-                                                "directNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                },
-                                                "indirectNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                }
+                                                "directNarrowers": 0,
+                                                "indirectNarrowers": 0
                                             },
                                             "color": "#E6F47F"
                                         },
@@ -6098,14 +5842,8 @@
                                                 "value": 41
                                             },
                                             "counts": {
-                                                "directNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                },
-                                                "indirectNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                }
+                                                "directNarrowers": 0,
+                                                "indirectNarrowers": 0
                                             },
                                             "color": "#B3DE53"
                                         },
@@ -6236,14 +5974,8 @@
                                                 "value": 39
                                             },
                                             "counts": {
-                                                "directNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                },
-                                                "indirectNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                }
+                                                "directNarrowers": 0,
+                                                "indirectNarrowers": 0
                                             },
                                             "color": "#CCE968"
                                         },
@@ -6370,14 +6102,8 @@
                                                 "value": 36
                                             },
                                             "counts": {
-                                                "directNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                },
-                                                "indirectNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                }
+                                                "directNarrowers": 0,
+                                                "indirectNarrowers": 0
                                             },
                                             "color": "#F2FA8C"
                                         },
@@ -6508,14 +6234,8 @@
                                                 "value": 38
                                             },
                                             "counts": {
-                                                "directNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                },
-                                                "indirectNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                }
+                                                "directNarrowers": 0,
+                                                "indirectNarrowers": 0
                                             },
                                             "color": "#D9EF74"
                                         },
@@ -6646,14 +6366,8 @@
                                                 "value": 40
                                             },
                                             "counts": {
-                                                "directNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                },
-                                                "indirectNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                }
+                                                "directNarrowers": 0,
+                                                "indirectNarrowers": 0
                                             },
                                             "color": "#BFE35D"
                                         }
@@ -6685,14 +6399,8 @@
                                         "value": 42
                                     },
                                     "counts": {
-                                        "directNarrowers": {
-                                            "type": "xsd:integer",
-                                            "value": 6
-                                        },
-                                        "indirectNarrowers": {
-                                            "type": "xsd:integer",
-                                            "value": 6
-                                        }
+                                        "directNarrowers": 6,
+                                        "indirectNarrowers": 6
                                     },
                                     "color": "#A6D84A"
                                 }
@@ -6724,14 +6432,8 @@
                                 "value": 49
                             },
                             "counts": {
-                                "directNarrowers": {
-                                    "type": "xsd:integer",
-                                    "value": 2
-                                },
-                                "indirectNarrowers": {
-                                    "type": "xsd:integer",
-                                    "value": 14
-                                }
+                                "directNarrowers": 2,
+                                "indirectNarrowers": 14
                             },
                             "color": "#7FC64E"
                         },
@@ -7056,14 +6758,8 @@
                                                 "value": 63
                                             },
                                             "counts": {
-                                                "directNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                },
-                                                "indirectNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                }
+                                                "directNarrowers": 0,
+                                                "indirectNarrowers": 0
                                             },
                                             "color": "#4EB3D3"
                                         },
@@ -7194,14 +6890,8 @@
                                                 "value": 61
                                             },
                                             "counts": {
-                                                "directNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                },
-                                                "indirectNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                }
+                                                "directNarrowers": 0,
+                                                "indirectNarrowers": 0
                                             },
                                             "color": "#80C5DD"
                                         },
@@ -7332,14 +7022,8 @@
                                                 "value": 62
                                             },
                                             "counts": {
-                                                "directNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                },
-                                                "indirectNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                }
+                                                "directNarrowers": 0,
+                                                "indirectNarrowers": 0
                                             },
                                             "color": "#67BCD8"
                                         },
@@ -7470,14 +7154,8 @@
                                                 "value": 60
                                             },
                                             "counts": {
-                                                "directNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                },
-                                                "indirectNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                }
+                                                "directNarrowers": 0,
+                                                "indirectNarrowers": 0
                                             },
                                             "color": "#99CEE3"
                                         }
@@ -7513,14 +7191,8 @@
                                         "value": 65
                                     },
                                     "counts": {
-                                        "directNarrowers": {
-                                            "type": "xsd:integer",
-                                            "value": 4
-                                        },
-                                        "indirectNarrowers": {
-                                            "type": "xsd:integer",
-                                            "value": 4
-                                        }
+                                        "directNarrowers": 4,
+                                        "indirectNarrowers": 4
                                     },
                                     "color": "#42AED0"
                                 },
@@ -7748,14 +7420,8 @@
                                                 "value": 58
                                             },
                                             "counts": {
-                                                "directNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                },
-                                                "indirectNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                }
+                                                "directNarrowers": 0,
+                                                "indirectNarrowers": 0
                                             },
                                             "color": "#9AD9DD"
                                         },
@@ -7886,14 +7552,8 @@
                                                 "value": 57
                                             },
                                             "counts": {
-                                                "directNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                },
-                                                "indirectNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                }
+                                                "directNarrowers": 0,
+                                                "indirectNarrowers": 0
                                             },
                                             "color": "#A6DDE0"
                                         },
@@ -8024,14 +7684,8 @@
                                                 "value": 56
                                             },
                                             "counts": {
-                                                "directNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                },
-                                                "indirectNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                }
+                                                "directNarrowers": 0,
+                                                "indirectNarrowers": 0
                                             },
                                             "color": "#B3E2E3"
                                         },
@@ -8158,14 +7812,8 @@
                                                 "value": 55
                                             },
                                             "counts": {
-                                                "directNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                },
-                                                "indirectNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                }
+                                                "directNarrowers": 0,
+                                                "indirectNarrowers": 0
                                             },
                                             "color": "#BFE7E5"
                                         }
@@ -8201,14 +7849,8 @@
                                         "value": 59
                                     },
                                     "counts": {
-                                        "directNarrowers": {
-                                            "type": "xsd:integer",
-                                            "value": 4
-                                        },
-                                        "indirectNarrowers": {
-                                            "type": "xsd:integer",
-                                            "value": 4
-                                        }
+                                        "directNarrowers": 4,
+                                        "indirectNarrowers": 4
                                     },
                                     "color": "#80CFD8"
                                 },
@@ -8416,14 +8058,8 @@
                                                 "value": 52
                                             },
                                             "counts": {
-                                                "directNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                },
-                                                "indirectNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                }
+                                                "directNarrowers": 0,
+                                                "indirectNarrowers": 0
                                             },
                                             "color": "#CCECF4"
                                         },
@@ -8550,14 +8186,8 @@
                                                 "value": 53
                                             },
                                             "counts": {
-                                                "directNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                },
-                                                "indirectNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                }
+                                                "directNarrowers": 0,
+                                                "indirectNarrowers": 0
                                             },
                                             "color": "#BFE7F1"
                                         },
@@ -8684,14 +8314,8 @@
                                                 "value": 51
                                             },
                                             "counts": {
-                                                "directNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                },
-                                                "indirectNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                }
+                                                "directNarrowers": 0,
+                                                "indirectNarrowers": 0
                                             },
                                             "color": "#D9F1F7"
                                         }
@@ -8727,14 +8351,8 @@
                                         "value": 54
                                     },
                                     "counts": {
-                                        "directNarrowers": {
-                                            "type": "xsd:integer",
-                                            "value": 3
-                                        },
-                                        "indirectNarrowers": {
-                                            "type": "xsd:integer",
-                                            "value": 3
-                                        }
+                                        "directNarrowers": 3,
+                                        "indirectNarrowers": 3
                                     },
                                     "color": "#B3E3EE"
                                 }
@@ -8770,14 +8388,8 @@
                                 "value": 64
                             },
                             "counts": {
-                                "directNarrowers": {
-                                    "type": "xsd:integer",
-                                    "value": 3
-                                },
-                                "indirectNarrowers": {
-                                    "type": "xsd:integer",
-                                    "value": 14
-                                }
+                                "directNarrowers": 3,
+                                "indirectNarrowers": 14
                             },
                             "color": "#34B2C9"
                         },
@@ -9098,14 +8710,8 @@
                                                 "value": 74
                                             },
                                             "counts": {
-                                                "directNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                },
-                                                "indirectNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                }
+                                                "directNarrowers": 0,
+                                                "indirectNarrowers": 0
                                             },
                                             "color": "#A4469F"
                                         },
@@ -9224,14 +8830,8 @@
                                                 "value": 73
                                             },
                                             "counts": {
-                                                "directNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                },
-                                                "indirectNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                }
+                                                "directNarrowers": 0,
+                                                "indirectNarrowers": 0
                                             },
                                             "color": "#B051A5"
                                         }
@@ -9263,14 +8863,8 @@
                                         "value": 75
                                     },
                                     "counts": {
-                                        "directNarrowers": {
-                                            "type": "xsd:integer",
-                                            "value": 2
-                                        },
-                                        "indirectNarrowers": {
-                                            "type": "xsd:integer",
-                                            "value": 2
-                                        }
+                                        "directNarrowers": 2,
+                                        "indirectNarrowers": 2
                                     },
                                     "color": "#983999"
                                 },
@@ -9486,14 +9080,8 @@
                                                 "value": 71
                                             },
                                             "counts": {
-                                                "directNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                },
-                                                "indirectNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                }
+                                                "directNarrowers": 0,
+                                                "indirectNarrowers": 0
                                             },
                                             "color": "#BC75B7"
                                         },
@@ -9621,14 +9209,8 @@
                                                 "value": 70
                                             },
                                             "counts": {
-                                                "directNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                },
-                                                "indirectNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                }
+                                                "directNarrowers": 0,
+                                                "indirectNarrowers": 0
                                             },
                                             "color": "#C983BF"
                                         }
@@ -9657,14 +9239,8 @@
                                         "value": 72
                                     },
                                     "counts": {
-                                        "directNarrowers": {
-                                            "type": "xsd:integer",
-                                            "value": 2
-                                        },
-                                        "indirectNarrowers": {
-                                            "type": "xsd:integer",
-                                            "value": 2
-                                        }
+                                        "directNarrowers": 2,
+                                        "indirectNarrowers": 2
                                     },
                                     "color": "#B168B1"
                                 },
@@ -9870,14 +9446,8 @@
                                                 "value": 68
                                             },
                                             "counts": {
-                                                "directNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                },
-                                                "indirectNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                }
+                                                "directNarrowers": 0,
+                                                "indirectNarrowers": 0
                                             },
                                             "color": "#C99BCB"
                                         },
@@ -9998,14 +9568,8 @@
                                                 "value": 67
                                             },
                                             "counts": {
-                                                "directNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                },
-                                                "indirectNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                }
+                                                "directNarrowers": 0,
+                                                "indirectNarrowers": 0
                                             },
                                             "color": "#D6AAD3"
                                         },
@@ -10129,14 +9693,8 @@
                                                 "value": 66
                                             },
                                             "counts": {
-                                                "directNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                },
-                                                "indirectNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                }
+                                                "directNarrowers": 0,
+                                                "indirectNarrowers": 0
                                             },
                                             "color": "#E3B9DB"
                                         }
@@ -10169,14 +9727,8 @@
                                         "value": 69
                                     },
                                     "counts": {
-                                        "directNarrowers": {
-                                            "type": "xsd:integer",
-                                            "value": 3
-                                        },
-                                        "indirectNarrowers": {
-                                            "type": "xsd:integer",
-                                            "value": 3
-                                        }
+                                        "directNarrowers": 3,
+                                        "indirectNarrowers": 3
                                     },
                                     "color": "#BD8CC3"
                                 }
@@ -10212,14 +9764,8 @@
                                 "value": 78
                             },
                             "counts": {
-                                "directNarrowers": {
-                                    "type": "xsd:integer",
-                                    "value": 3
-                                },
-                                "indirectNarrowers": {
-                                    "type": "xsd:integer",
-                                    "value": 10
-                                }
+                                "directNarrowers": 3,
+                                "indirectNarrowers": 10
                             },
                             "color": "#812B92"
                         }
@@ -10251,14 +9797,8 @@
                         "value": 76
                     },
                     "counts": {
-                        "directNarrowers": {
-                            "type": "xsd:integer",
-                            "value": 3
-                        },
-                        "indirectNarrowers": {
-                            "type": "xsd:integer",
-                            "value": 41
-                        }
+                        "directNarrowers": 3,
+                        "indirectNarrowers": 41
                     },
                     "color": "#67C5CA"
                 },
@@ -10674,14 +10214,8 @@
                                                 "value": 153
                                             },
                                             "counts": {
-                                                "directNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                },
-                                                "indirectNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                }
+                                                "directNarrowers": 0,
+                                                "indirectNarrowers": 0
                                             },
                                             "color": "#A6C583"
                                         },
@@ -10802,14 +10336,8 @@
                                                 "value": 150
                                             },
                                             "counts": {
-                                                "directNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                },
-                                                "indirectNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                }
+                                                "directNarrowers": 0,
+                                                "indirectNarrowers": 0
                                             },
                                             "color": "#B3CA8E"
                                         }
@@ -10839,14 +10367,8 @@
                                         "value": 151
                                     },
                                     "counts": {
-                                        "directNarrowers": {
-                                            "type": "xsd:integer",
-                                            "value": 2
-                                        },
-                                        "indirectNarrowers": {
-                                            "type": "xsd:integer",
-                                            "value": 2
-                                        }
+                                        "directNarrowers": 2,
+                                        "indirectNarrowers": 2
                                     },
                                     "color": "#99C078"
                                 },
@@ -11067,14 +10589,8 @@
                                                 "value": 142
                                             },
                                             "counts": {
-                                                "directNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                },
-                                                "indirectNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                }
+                                                "directNarrowers": 0,
+                                                "indirectNarrowers": 0
                                             },
                                             "color": "#E6F5C9"
                                         },
@@ -11121,14 +10637,8 @@
                                                 "value": 143
                                             },
                                             "counts": {
-                                                "directNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                },
-                                                "indirectNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                }
+                                                "directNarrowers": 0,
+                                                "indirectNarrowers": 0
                                             },
                                             "color": "#D9F0BB"
                                         },
@@ -11253,14 +10763,8 @@
                                                 "value": 145
                                             },
                                             "counts": {
-                                                "directNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                },
-                                                "indirectNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                }
+                                                "directNarrowers": 0,
+                                                "indirectNarrowers": 0
                                             },
                                             "color": "#CCEBAE"
                                         }
@@ -11293,14 +10797,8 @@
                                         "value": 144
                                     },
                                     "counts": {
-                                        "directNarrowers": {
-                                            "type": "xsd:integer",
-                                            "value": 3
-                                        },
-                                        "indirectNarrowers": {
-                                            "type": "xsd:integer",
-                                            "value": 3
-                                        }
+                                        "directNarrowers": 3,
+                                        "indirectNarrowers": 3
                                     },
                                     "color": "#B3E095"
                                 },
@@ -11440,14 +10938,8 @@
                                                 "value": 147
                                             },
                                             "counts": {
-                                                "directNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                },
-                                                "indirectNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                }
+                                                "directNarrowers": 0,
+                                                "indirectNarrowers": 0
                                             },
                                             "color": "#BFD99D"
                                         },
@@ -11572,14 +11064,8 @@
                                                 "value": 146
                                             },
                                             "counts": {
-                                                "directNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                },
-                                                "indirectNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                }
+                                                "directNarrowers": 0,
+                                                "indirectNarrowers": 0
                                             },
                                             "color": "#CCDFAA"
                                         },
@@ -11622,14 +11108,8 @@
                                                 "value": 149
                                             },
                                             "counts": {
-                                                "directNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                },
-                                                "indirectNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                }
+                                                "directNarrowers": 0,
+                                                "indirectNarrowers": 0
                                             },
                                             "color": "#B3D492"
                                         }
@@ -11659,14 +11139,8 @@
                                         "value": 148
                                     },
                                     "counts": {
-                                        "directNarrowers": {
-                                            "type": "xsd:integer",
-                                            "value": 3
-                                        },
-                                        "indirectNarrowers": {
-                                            "type": "xsd:integer",
-                                            "value": 3
-                                        }
+                                        "directNarrowers": 3,
+                                        "indirectNarrowers": 3
                                     },
                                     "color": "#A6CF86"
                                 },
@@ -11884,14 +11358,8 @@
                                                 "value": 152
                                             },
                                             "counts": {
-                                                "directNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                },
-                                                "indirectNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                }
+                                                "directNarrowers": 0,
+                                                "indirectNarrowers": 0
                                             },
                                             "color": "#A6BA80"
                                         },
@@ -12019,14 +11487,8 @@
                                                 "value": 155
                                             },
                                             "counts": {
-                                                "directNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                },
-                                                "indirectNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                }
+                                                "directNarrowers": 0,
+                                                "indirectNarrowers": 0
                                             },
                                             "color": "#99B575"
                                         }
@@ -12059,14 +11521,8 @@
                                         "value": 157
                                     },
                                     "counts": {
-                                        "directNarrowers": {
-                                            "type": "xsd:integer",
-                                            "value": 2
-                                        },
-                                        "indirectNarrowers": {
-                                            "type": "xsd:integer",
-                                            "value": 2
-                                        }
+                                        "directNarrowers": 2,
+                                        "indirectNarrowers": 2
                                     },
                                     "color": "#8CB06C"
                                 }
@@ -12102,14 +11558,8 @@
                                 "value": 154
                             },
                             "counts": {
-                                "directNarrowers": {
-                                    "type": "xsd:integer",
-                                    "value": 4
-                                },
-                                "indirectNarrowers": {
-                                    "type": "xsd:integer",
-                                    "value": 14
-                                }
+                                "directNarrowers": 4,
+                                "indirectNarrowers": 14
                             },
                             "color": "#7FA056"
                         },
@@ -12459,14 +11909,8 @@
                                                         "value": 107
                                                     },
                                                     "counts": {
-                                                        "directNarrowers": {
-                                                            "type": "xsd:integer",
-                                                            "value": 0
-                                                        },
-                                                        "indirectNarrowers": {
-                                                            "type": "xsd:integer",
-                                                            "value": 0
-                                                        }
+                                                        "directNarrowers": 0,
+                                                        "indirectNarrowers": 0
                                                     },
                                                     "color": "#8CB06C"
                                                 }
@@ -12502,14 +11946,8 @@
                                                 "value": 105
                                             },
                                             "counts": {
-                                                "directNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 1
-                                                },
-                                                "indirectNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 1
-                                                }
+                                                "directNarrowers": 1,
+                                                "indirectNarrowers": 1
                                             },
                                             "color": "#80AB6C"
                                         },
@@ -12665,14 +12103,8 @@
                                                         "value": 103
                                                     },
                                                     "counts": {
-                                                        "directNarrowers": {
-                                                            "type": "xsd:integer",
-                                                            "value": 0
-                                                        },
-                                                        "indirectNarrowers": {
-                                                            "type": "xsd:integer",
-                                                            "value": 0
-                                                        }
+                                                        "directNarrowers": 0,
+                                                        "indirectNarrowers": 0
                                                     },
                                                     "color": "#A6B96C"
                                                 }
@@ -12708,14 +12140,8 @@
                                                 "value": 102
                                             },
                                             "counts": {
-                                                "directNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 1
-                                                },
-                                                "indirectNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 1
-                                                }
+                                                "directNarrowers": 1,
+                                                "indirectNarrowers": 1
                                             },
                                             "color": "#99B46C"
                                         },
@@ -12863,14 +12289,8 @@
                                                         "value": 100
                                                     },
                                                     "counts": {
-                                                        "directNarrowers": {
-                                                            "type": "xsd:integer",
-                                                            "value": 0
-                                                        },
-                                                        "indirectNarrowers": {
-                                                            "type": "xsd:integer",
-                                                            "value": 0
-                                                        }
+                                                        "directNarrowers": 0,
+                                                        "indirectNarrowers": 0
                                                     },
                                                     "color": "#BFC26B"
                                                 }
@@ -12906,14 +12326,8 @@
                                                 "value": 101
                                             },
                                             "counts": {
-                                                "directNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 1
-                                                },
-                                                "indirectNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 1
-                                                }
+                                                "directNarrowers": 1,
+                                                "indirectNarrowers": 1
                                             },
                                             "color": "#B3BE6C"
                                         }
@@ -12949,14 +12363,8 @@
                                         "value": 106
                                     },
                                     "counts": {
-                                        "directNarrowers": {
-                                            "type": "xsd:integer",
-                                            "value": 3
-                                        },
-                                        "indirectNarrowers": {
-                                            "type": "xsd:integer",
-                                            "value": 6
-                                        }
+                                        "directNarrowers": 3,
+                                        "indirectNarrowers": 6
                                     },
                                     "color": "#678F66"
                                 },
@@ -13209,14 +12617,8 @@
                                                         "value": 97
                                                     },
                                                     "counts": {
-                                                        "directNarrowers": {
-                                                            "type": "xsd:integer",
-                                                            "value": 0
-                                                        },
-                                                        "indirectNarrowers": {
-                                                            "type": "xsd:integer",
-                                                            "value": 0
-                                                        }
+                                                        "directNarrowers": 0,
+                                                        "indirectNarrowers": 0
                                                     },
                                                     "color": "#99C2B5"
                                                 }
@@ -13252,14 +12654,8 @@
                                                 "value": 98
                                             },
                                             "counts": {
-                                                "directNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 1
-                                                },
-                                                "indirectNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 1
-                                                }
+                                                "directNarrowers": 1,
+                                                "indirectNarrowers": 1
                                             },
                                             "color": "#8CBEB4"
                                         },
@@ -13407,14 +12803,8 @@
                                                         "value": 96
                                                     },
                                                     "counts": {
-                                                        "directNarrowers": {
-                                                            "type": "xsd:integer",
-                                                            "value": 0
-                                                        },
-                                                        "indirectNarrowers": {
-                                                            "type": "xsd:integer",
-                                                            "value": 0
-                                                        }
+                                                        "directNarrowers": 0,
+                                                        "indirectNarrowers": 0
                                                     },
                                                     "color": "#B3CBB9"
                                                 }
@@ -13450,14 +12840,8 @@
                                                 "value": 95
                                             },
                                             "counts": {
-                                                "directNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 1
-                                                },
-                                                "indirectNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 1
-                                                }
+                                                "directNarrowers": 1,
+                                                "indirectNarrowers": 1
                                             },
                                             "color": "#A6C7B7"
                                         },
@@ -13661,14 +13045,8 @@
                                                         "value": 92
                                                     },
                                                     "counts": {
-                                                        "directNarrowers": {
-                                                            "type": "xsd:integer",
-                                                            "value": 0
-                                                        },
-                                                        "indirectNarrowers": {
-                                                            "type": "xsd:integer",
-                                                            "value": 0
-                                                        }
+                                                        "directNarrowers": 0,
+                                                        "indirectNarrowers": 0
                                                     },
                                                     "color": "#CCD4C7"
                                                 },
@@ -13795,14 +13173,8 @@
                                                         "value": 93
                                                     },
                                                     "counts": {
-                                                        "directNarrowers": {
-                                                            "type": "xsd:integer",
-                                                            "value": 0
-                                                        },
-                                                        "indirectNarrowers": {
-                                                            "type": "xsd:integer",
-                                                            "value": 0
-                                                        }
+                                                        "directNarrowers": 0,
+                                                        "indirectNarrowers": 0
                                                     },
                                                     "color": "#BFD0C5"
                                                 }
@@ -13838,14 +13210,8 @@
                                                 "value": 94
                                             },
                                             "counts": {
-                                                "directNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 2
-                                                },
-                                                "indirectNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 2
-                                                }
+                                                "directNarrowers": 2,
+                                                "indirectNarrowers": 2
                                             },
                                             "color": "#BFD0BA"
                                         }
@@ -13881,14 +13247,8 @@
                                         "value": 99
                                     },
                                     "counts": {
-                                        "directNarrowers": {
-                                            "type": "xsd:integer",
-                                            "value": 3
-                                        },
-                                        "indirectNarrowers": {
-                                            "type": "xsd:integer",
-                                            "value": 7
-                                        }
+                                        "directNarrowers": 3,
+                                        "indirectNarrowers": 7
                                     },
                                     "color": "#7EBCC6"
                                 }
@@ -13924,14 +13284,8 @@
                                 "value": 104
                             },
                             "counts": {
-                                "directNarrowers": {
-                                    "type": "xsd:integer",
-                                    "value": 2
-                                },
-                                "indirectNarrowers": {
-                                    "type": "xsd:integer",
-                                    "value": 15
-                                }
+                                "directNarrowers": 2,
+                                "indirectNarrowers": 15
                             },
                             "color": "#67A599"
                         },
@@ -14256,14 +13610,8 @@
                                                 "value": 114
                                             },
                                             "counts": {
-                                                "directNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                },
-                                                "indirectNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                }
+                                                "directNarrowers": 0,
+                                                "indirectNarrowers": 0
                                             },
                                             "color": "#E5D075"
                                         },
@@ -14394,14 +13742,8 @@
                                                 "value": 117
                                             },
                                             "counts": {
-                                                "directNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                },
-                                                "indirectNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                }
+                                                "directNarrowers": 0,
+                                                "indirectNarrowers": 0
                                             },
                                             "color": "#E5B75A"
                                         },
@@ -14532,14 +13874,8 @@
                                                 "value": 115
                                             },
                                             "counts": {
-                                                "directNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                },
-                                                "indirectNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                }
+                                                "directNarrowers": 0,
+                                                "indirectNarrowers": 0
                                             },
                                             "color": "#E5C468"
                                         }
@@ -14575,14 +13911,8 @@
                                         "value": 118
                                     },
                                     "counts": {
-                                        "directNarrowers": {
-                                            "type": "xsd:integer",
-                                            "value": 3
-                                        },
-                                        "indirectNarrowers": {
-                                            "type": "xsd:integer",
-                                            "value": 3
-                                        }
+                                        "directNarrowers": 3,
+                                        "indirectNarrowers": 3
                                     },
                                     "color": "#E5AC4D"
                                 },
@@ -14810,14 +14140,8 @@
                                                 "value": 112
                                             },
                                             "counts": {
-                                                "directNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                },
-                                                "indirectNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                }
+                                                "directNarrowers": 0,
+                                                "indirectNarrowers": 0
                                             },
                                             "color": "#F1D576"
                                         },
@@ -14948,14 +14272,8 @@
                                                 "value": 111
                                             },
                                             "counts": {
-                                                "directNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                },
-                                                "indirectNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                }
+                                                "directNarrowers": 0,
+                                                "indirectNarrowers": 0
                                             },
                                             "color": "#F1E185"
                                         }
@@ -14991,14 +14309,8 @@
                                         "value": 113
                                     },
                                     "counts": {
-                                        "directNarrowers": {
-                                            "type": "xsd:integer",
-                                            "value": 2
-                                        },
-                                        "indirectNarrowers": {
-                                            "type": "xsd:integer",
-                                            "value": 2
-                                        }
+                                        "directNarrowers": 2,
+                                        "indirectNarrowers": 2
                                     },
                                     "color": "#F1C868"
                                 },
@@ -15210,14 +14522,8 @@
                                                 "value": 108
                                             },
                                             "counts": {
-                                                "directNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                },
-                                                "indirectNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                }
+                                                "directNarrowers": 0,
+                                                "indirectNarrowers": 0
                                             },
                                             "color": "#F2EDB3"
                                         },
@@ -15348,14 +14654,8 @@
                                                 "value": 109
                                             },
                                             "counts": {
-                                                "directNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                },
-                                                "indirectNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                }
+                                                "directNarrowers": 0,
+                                                "indirectNarrowers": 0
                                             },
                                             "color": "#F2EDAD"
                                         }
@@ -15391,14 +14691,8 @@
                                         "value": 110
                                     },
                                     "counts": {
-                                        "directNarrowers": {
-                                            "type": "xsd:integer",
-                                            "value": 2
-                                        },
-                                        "indirectNarrowers": {
-                                            "type": "xsd:integer",
-                                            "value": 2
-                                        }
+                                        "directNarrowers": 2,
+                                        "indirectNarrowers": 2
                                     },
                                     "color": "#F1E19D"
                                 }
@@ -15434,14 +14728,8 @@
                                 "value": 116
                             },
                             "counts": {
-                                "directNarrowers": {
-                                    "type": "xsd:integer",
-                                    "value": 3
-                                },
-                                "indirectNarrowers": {
-                                    "type": "xsd:integer",
-                                    "value": 10
-                                }
+                                "directNarrowers": 3,
+                                "indirectNarrowers": 10
                             },
                             "color": "#CB8C37"
                         },
@@ -15762,14 +15050,8 @@
                                                 "value": 138
                                             },
                                             "counts": {
-                                                "directNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                },
-                                                "indirectNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                }
+                                                "directNarrowers": 0,
+                                                "indirectNarrowers": 0
                                             },
                                             "color": "#41B087"
                                         },
@@ -15900,14 +15182,8 @@
                                                 "value": 141
                                             },
                                             "counts": {
-                                                "directNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                },
-                                                "indirectNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                }
+                                                "directNarrowers": 0,
+                                                "indirectNarrowers": 0
                                             },
                                             "color": "#33A97E"
                                         }
@@ -15943,14 +15219,8 @@
                                         "value": 139
                                     },
                                     "counts": {
-                                        "directNarrowers": {
-                                            "type": "xsd:integer",
-                                            "value": 2
-                                        },
-                                        "indirectNarrowers": {
-                                            "type": "xsd:integer",
-                                            "value": 2
-                                        }
+                                        "directNarrowers": 2,
+                                        "indirectNarrowers": 2
                                     },
                                     "color": "#1A9D6F"
                                 },
@@ -16178,14 +15448,8 @@
                                                 "value": 136
                                             },
                                             "counts": {
-                                                "directNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                },
-                                                "indirectNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                }
+                                                "directNarrowers": 0,
+                                                "indirectNarrowers": 0
                                             },
                                             "color": "#66C092"
                                         },
@@ -16316,14 +15580,8 @@
                                                 "value": 135
                                             },
                                             "counts": {
-                                                "directNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                },
-                                                "indirectNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                }
+                                                "directNarrowers": 0,
+                                                "indirectNarrowers": 0
                                             },
                                             "color": "#74C69C"
                                         }
@@ -16359,14 +15617,8 @@
                                         "value": 137
                                     },
                                     "counts": {
-                                        "directNarrowers": {
-                                            "type": "xsd:integer",
-                                            "value": 2
-                                        },
-                                        "indirectNarrowers": {
-                                            "type": "xsd:integer",
-                                            "value": 2
-                                        }
+                                        "directNarrowers": 2,
+                                        "indirectNarrowers": 2
                                     },
                                     "color": "#4DB47E"
                                 },
@@ -16578,14 +15830,8 @@
                                                 "value": 131
                                             },
                                             "counts": {
-                                                "directNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                },
-                                                "indirectNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                }
+                                                "directNarrowers": 0,
+                                                "indirectNarrowers": 0
                                             },
                                             "color": "#A6DBAB"
                                         },
@@ -16716,14 +15962,8 @@
                                                 "value": 132
                                             },
                                             "counts": {
-                                                "directNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                },
-                                                "indirectNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                }
+                                                "directNarrowers": 0,
+                                                "indirectNarrowers": 0
                                             },
                                             "color": "#99D69F"
                                         },
@@ -16854,14 +16094,8 @@
                                                 "value": 133
                                             },
                                             "counts": {
-                                                "directNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                },
-                                                "indirectNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                }
+                                                "directNarrowers": 0,
+                                                "indirectNarrowers": 0
                                             },
                                             "color": "#8CD094"
                                         }
@@ -16897,14 +16131,8 @@
                                         "value": 134
                                     },
                                     "counts": {
-                                        "directNarrowers": {
-                                            "type": "xsd:integer",
-                                            "value": 3
-                                        },
-                                        "indirectNarrowers": {
-                                            "type": "xsd:integer",
-                                            "value": 3
-                                        }
+                                        "directNarrowers": 3,
+                                        "indirectNarrowers": 3
                                     },
                                     "color": "#7FCA93"
                                 }
@@ -16940,14 +16168,8 @@
                                 "value": 140
                             },
                             "counts": {
-                                "directNarrowers": {
-                                    "type": "xsd:integer",
-                                    "value": 3
-                                },
-                                "indirectNarrowers": {
-                                    "type": "xsd:integer",
-                                    "value": 10
-                                }
+                                "directNarrowers": 3,
+                                "indirectNarrowers": 10
                             },
                             "color": "#009270"
                         },
@@ -17272,14 +16494,8 @@
                                                 "value": 87
                                             },
                                             "counts": {
-                                                "directNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                },
-                                                "indirectNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                }
+                                                "directNarrowers": 0,
+                                                "indirectNarrowers": 0
                                             },
                                             "color": "#E37B68"
                                         },
@@ -17410,14 +16626,8 @@
                                                 "value": 89
                                             },
                                             "counts": {
-                                                "directNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                },
-                                                "indirectNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                }
+                                                "directNarrowers": 0,
+                                                "indirectNarrowers": 0
                                             },
                                             "color": "#E36350"
                                         },
@@ -17544,14 +16754,8 @@
                                                 "value": 86
                                             },
                                             "counts": {
-                                                "directNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                },
-                                                "indirectNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                }
+                                                "directNarrowers": 0,
+                                                "indirectNarrowers": 0
                                             },
                                             "color": "#E38776"
                                         },
@@ -17682,14 +16886,8 @@
                                                 "value": 88
                                             },
                                             "counts": {
-                                                "directNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                },
-                                                "indirectNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                }
+                                                "directNarrowers": 0,
+                                                "indirectNarrowers": 0
                                             },
                                             "color": "#E36F5C"
                                         }
@@ -17725,14 +16923,8 @@
                                         "value": 90
                                     },
                                     "counts": {
-                                        "directNarrowers": {
-                                            "type": "xsd:integer",
-                                            "value": 4
-                                        },
-                                        "indirectNarrowers": {
-                                            "type": "xsd:integer",
-                                            "value": 4
-                                        }
+                                        "directNarrowers": 4,
+                                        "indirectNarrowers": 4
                                     },
                                     "color": "#EF5845"
                                 },
@@ -17960,14 +17152,8 @@
                                                 "value": 82
                                             },
                                             "counts": {
-                                                "directNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                },
-                                                "indirectNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                }
+                                                "directNarrowers": 0,
+                                                "indirectNarrowers": 0
                                             },
                                             "color": "#FB9A85"
                                         },
@@ -18098,14 +17284,8 @@
                                                 "value": 85
                                             },
                                             "counts": {
-                                                "directNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                },
-                                                "indirectNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                }
+                                                "directNarrowers": 0,
+                                                "indirectNarrowers": 0
                                             },
                                             "color": "#FB8069"
                                         },
@@ -18236,14 +17416,8 @@
                                                 "value": 83
                                             },
                                             "counts": {
-                                                "directNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                },
-                                                "indirectNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                }
+                                                "directNarrowers": 0,
+                                                "indirectNarrowers": 0
                                             },
                                             "color": "#FB8D76"
                                         }
@@ -18279,14 +17453,8 @@
                                         "value": 84
                                     },
                                     "counts": {
-                                        "directNarrowers": {
-                                            "type": "xsd:integer",
-                                            "value": 3
-                                        },
-                                        "indirectNarrowers": {
-                                            "type": "xsd:integer",
-                                            "value": 3
-                                        }
+                                        "directNarrowers": 3,
+                                        "indirectNarrowers": 3
                                     },
                                     "color": "#FB745C"
                                 },
@@ -18514,14 +17682,8 @@
                                                 "value": 79
                                             },
                                             "counts": {
-                                                "directNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                },
-                                                "indirectNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                }
+                                                "directNarrowers": 0,
+                                                "indirectNarrowers": 0
                                             },
                                             "color": "#FCC0B2"
                                         },
@@ -18652,14 +17814,8 @@
                                                 "value": 81
                                             },
                                             "counts": {
-                                                "directNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                },
-                                                "indirectNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                }
+                                                "directNarrowers": 0,
+                                                "indirectNarrowers": 0
                                             },
                                             "color": "#FCB4A2"
                                         }
@@ -18695,14 +17851,8 @@
                                         "value": 80
                                     },
                                     "counts": {
-                                        "directNarrowers": {
-                                            "type": "xsd:integer",
-                                            "value": 2
-                                        },
-                                        "indirectNarrowers": {
-                                            "type": "xsd:integer",
-                                            "value": 2
-                                        }
+                                        "directNarrowers": 2,
+                                        "indirectNarrowers": 2
                                     },
                                     "color": "#FBA794"
                                 }
@@ -18738,14 +17888,8 @@
                                 "value": 91
                             },
                             "counts": {
-                                "directNarrowers": {
-                                    "type": "xsd:integer",
-                                    "value": 3
-                                },
-                                "indirectNarrowers": {
-                                    "type": "xsd:integer",
-                                    "value": 12
-                                }
+                                "directNarrowers": 3,
+                                "indirectNarrowers": 12
                             },
                             "color": "#F04028"
                         },
@@ -19070,14 +18214,8 @@
                                                 "value": 127
                                             },
                                             "counts": {
-                                                "directNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                },
-                                                "indirectNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                }
+                                                "directNarrowers": 0,
+                                                "indirectNarrowers": 0
                                             },
                                             "color": "#B3E1C2"
                                         },
@@ -19208,14 +18346,8 @@
                                                 "value": 129
                                             },
                                             "counts": {
-                                                "directNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                },
-                                                "indirectNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                }
+                                                "directNarrowers": 0,
+                                                "indirectNarrowers": 0
                                             },
                                             "color": "#A6DCB5"
                                         },
@@ -19346,14 +18478,8 @@
                                                 "value": 126
                                             },
                                             "counts": {
-                                                "directNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                },
-                                                "indirectNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                }
+                                                "directNarrowers": 0,
+                                                "indirectNarrowers": 0
                                             },
                                             "color": "#BFE6CF"
                                         }
@@ -19389,14 +18515,8 @@
                                         "value": 128
                                     },
                                     "counts": {
-                                        "directNarrowers": {
-                                            "type": "xsd:integer",
-                                            "value": 3
-                                        },
-                                        "indirectNarrowers": {
-                                            "type": "xsd:integer",
-                                            "value": 3
-                                        }
+                                        "directNarrowers": 3,
+                                        "indirectNarrowers": 3
                                     },
                                     "color": "#99D7B3"
                                 },
@@ -19624,14 +18744,8 @@
                                                 "value": 121
                                             },
                                             "counts": {
-                                                "directNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                },
-                                                "indirectNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                }
+                                                "directNarrowers": 0,
+                                                "indirectNarrowers": 0
                                             },
                                             "color": "#CCECDD"
                                         },
@@ -19762,14 +18876,8 @@
                                                 "value": 120
                                             },
                                             "counts": {
-                                                "directNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                },
-                                                "indirectNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                }
+                                                "directNarrowers": 0,
+                                                "indirectNarrowers": 0
                                             },
                                             "color": "#D9F0DF"
                                         }
@@ -19805,14 +18913,8 @@
                                         "value": 122
                                     },
                                     "counts": {
-                                        "directNarrowers": {
-                                            "type": "xsd:integer",
-                                            "value": 2
-                                        },
-                                        "indirectNarrowers": {
-                                            "type": "xsd:integer",
-                                            "value": 2
-                                        }
+                                        "directNarrowers": 2,
+                                        "indirectNarrowers": 2
                                     },
                                     "color": "#BFE6CF"
                                 },
@@ -19946,14 +19048,8 @@
                                         "value": 119
                                     },
                                     "counts": {
-                                        "directNarrowers": {
-                                            "type": "xsd:integer",
-                                            "value": 0
-                                        },
-                                        "indirectNarrowers": {
-                                            "type": "xsd:integer",
-                                            "value": 0
-                                        }
+                                        "directNarrowers": 0,
+                                        "indirectNarrowers": 0
                                     },
                                     "color": "#E6F5E1"
                                 },
@@ -20181,14 +19277,8 @@
                                                 "value": 123
                                             },
                                             "counts": {
-                                                "directNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                },
-                                                "indirectNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                }
+                                                "directNarrowers": 0,
+                                                "indirectNarrowers": 0
                                             },
                                             "color": "#CCEBD1"
                                         },
@@ -20319,14 +19409,8 @@
                                                 "value": 124
                                             },
                                             "counts": {
-                                                "directNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                },
-                                                "indirectNarrowers": {
-                                                    "type": "xsd:integer",
-                                                    "value": 0
-                                                }
+                                                "directNarrowers": 0,
+                                                "indirectNarrowers": 0
                                             },
                                             "color": "#BFE6C3"
                                         }
@@ -20362,14 +19446,8 @@
                                         "value": 125
                                     },
                                     "counts": {
-                                        "directNarrowers": {
-                                            "type": "xsd:integer",
-                                            "value": 2
-                                        },
-                                        "indirectNarrowers": {
-                                            "type": "xsd:integer",
-                                            "value": 2
-                                        }
+                                        "directNarrowers": 2,
+                                        "indirectNarrowers": 2
                                     },
                                     "color": "#B3E1C2"
                                 }
@@ -20405,14 +19483,8 @@
                                 "value": 130
                             },
                             "counts": {
-                                "directNarrowers": {
-                                    "type": "xsd:integer",
-                                    "value": 4
-                                },
-                                "indirectNarrowers": {
-                                    "type": "xsd:integer",
-                                    "value": 11
-                                }
+                                "directNarrowers": 4,
+                                "indirectNarrowers": 11
                             },
                             "color": "#B3E1B6"
                         }
@@ -20448,14 +19520,8 @@
                         "value": 77
                     },
                     "counts": {
-                        "directNarrowers": {
-                            "type": "xsd:integer",
-                            "value": 6
-                        },
-                        "indirectNarrowers": {
-                            "type": "xsd:integer",
-                            "value": 78
-                        }
+                        "directNarrowers": 6,
+                        "indirectNarrowers": 78
                     },
                     "color": "#99C08D"
                 }
@@ -20487,14 +19553,8 @@
                 "value": 156
             },
             "counts": {
-                "directNarrowers": {
-                    "type": "xsd:integer",
-                    "value": 3
-                },
-                "indirectNarrowers": {
-                    "type": "xsd:integer",
-                    "value": 156
-                }
+                "directNarrowers": 3,
+                "indirectNarrowers": 156
             },
             "color": "#9AD9DD"
         },
@@ -20828,14 +19888,8 @@
                                 "value": 176
                             },
                             "counts": {
-                                "directNarrowers": {
-                                    "type": "xsd:integer",
-                                    "value": 0
-                                },
-                                "indirectNarrowers": {
-                                    "type": "xsd:integer",
-                                    "value": 0
-                                }
+                                "directNarrowers": 0,
+                                "indirectNarrowers": 0
                             },
                             "color": "#DA037F",
                             "height": 431.0,
@@ -20970,14 +20024,8 @@
                                 "value": 173
                             },
                             "counts": {
-                                "directNarrowers": {
-                                    "type": "xsd:integer",
-                                    "value": 0
-                                },
-                                "indirectNarrowers": {
-                                    "type": "xsd:integer",
-                                    "value": 0
-                                }
+                                "directNarrowers": 0,
+                                "indirectNarrowers": 0
                             },
                             "color": "#F768A9",
                             "height": 400.0,
@@ -21112,14 +20160,8 @@
                                 "value": 172
                             },
                             "counts": {
-                                "directNarrowers": {
-                                    "type": "xsd:integer",
-                                    "value": 0
-                                },
-                                "indirectNarrowers": {
-                                    "type": "xsd:integer",
-                                    "value": 0
-                                }
+                                "directNarrowers": 0,
+                                "indirectNarrowers": 0
                             },
                             "color": "#F99BC1",
                             "height": 300.0,
@@ -21254,14 +20296,8 @@
                                 "value": 174
                             },
                             "counts": {
-                                "directNarrowers": {
-                                    "type": "xsd:integer",
-                                    "value": 0
-                                },
-                                "indirectNarrowers": {
-                                    "type": "xsd:integer",
-                                    "value": 0
-                                }
+                                "directNarrowers": 0,
+                                "indirectNarrowers": 0
                             },
                             "color": "#F4449F",
                             "height": 400.0,
@@ -21297,14 +20333,8 @@
                         "value": 175
                     },
                     "counts": {
-                        "directNarrowers": {
-                            "type": "xsd:integer",
-                            "value": 4
-                        },
-                        "indirectNarrowers": {
-                            "type": "xsd:integer",
-                            "value": 4
-                        }
+                        "directNarrowers": 4,
+                        "indirectNarrowers": 4
                     },
                     "color": "#F0047F"
                 },
@@ -21427,14 +20457,8 @@
                         "value": 177
                     },
                     "counts": {
-                        "directNarrowers": {
-                            "type": "xsd:integer",
-                            "value": 0
-                        },
-                        "indirectNarrowers": {
-                            "type": "xsd:integer",
-                            "value": 0
-                        }
+                        "directNarrowers": 0,
+                        "indirectNarrowers": 0
                     },
                     "color": "#AE027E",
                     "height": 536.0,
@@ -21755,14 +20779,8 @@
                                         "value": 164
                                     },
                                     "counts": {
-                                        "directNarrowers": {
-                                            "type": "xsd:integer",
-                                            "value": 0
-                                        },
-                                        "indirectNarrowers": {
-                                            "type": "xsd:integer",
-                                            "value": 0
-                                        }
+                                        "directNarrowers": 0,
+                                        "indirectNarrowers": 0
                                     },
                                     "color": "#FDC07A",
                                     "height": 200.0,
@@ -21889,14 +20907,8 @@
                                         "value": 163
                                     },
                                     "counts": {
-                                        "directNarrowers": {
-                                            "type": "xsd:integer",
-                                            "value": 0
-                                        },
-                                        "indirectNarrowers": {
-                                            "type": "xsd:integer",
-                                            "value": 0
-                                        }
+                                        "directNarrowers": 0,
+                                        "indirectNarrowers": 0
                                     },
                                     "color": "#FDCC8A",
                                     "height": 200.0,
@@ -22023,14 +21035,8 @@
                                         "value": 162
                                     },
                                     "counts": {
-                                        "directNarrowers": {
-                                            "type": "xsd:integer",
-                                            "value": 0
-                                        },
-                                        "indirectNarrowers": {
-                                            "type": "xsd:integer",
-                                            "value": 0
-                                        }
+                                        "directNarrowers": 0,
+                                        "indirectNarrowers": 0
                                     },
                                     "color": "#FED99A",
                                     "height": 200.0,
@@ -22062,14 +21068,8 @@
                                 "value": 165
                             },
                             "counts": {
-                                "directNarrowers": {
-                                    "type": "xsd:integer",
-                                    "value": 3
-                                },
-                                "indirectNarrowers": {
-                                    "type": "xsd:integer",
-                                    "value": 3
-                                }
+                                "directNarrowers": 3,
+                                "indirectNarrowers": 3
                             },
                             "color": "#FDB462"
                         },
@@ -22291,14 +21291,8 @@
                                         "value": 159
                                     },
                                     "counts": {
-                                        "directNarrowers": {
-                                            "type": "xsd:integer",
-                                            "value": 0
-                                        },
-                                        "indirectNarrowers": {
-                                            "type": "xsd:integer",
-                                            "value": 0
-                                        }
+                                        "directNarrowers": 0,
+                                        "indirectNarrowers": 0
                                     },
                                     "color": "#FECC5C",
                                     "height": 85.0,
@@ -22430,14 +21424,8 @@
                                         "value": 158
                                     },
                                     "counts": {
-                                        "directNarrowers": {
-                                            "type": "xsd:integer",
-                                            "value": 0
-                                        },
-                                        "indirectNarrowers": {
-                                            "type": "xsd:integer",
-                                            "value": 0
-                                        }
+                                        "directNarrowers": 0,
+                                        "indirectNarrowers": 0
                                     },
                                     "color": "#FED96A",
                                     "height": 96.20000000000005,
@@ -22565,14 +21553,8 @@
                                         "value": 161
                                     },
                                     "counts": {
-                                        "directNarrowers": {
-                                            "type": "xsd:integer",
-                                            "value": 0
-                                        },
-                                        "indirectNarrowers": {
-                                            "type": "xsd:integer",
-                                            "value": 0
-                                        }
+                                        "directNarrowers": 0,
+                                        "indirectNarrowers": 0
                                     },
                                     "color": "#FEBF4E",
                                     "height": 280.0,
@@ -22608,14 +21590,8 @@
                                 "value": 160
                             },
                             "counts": {
-                                "directNarrowers": {
-                                    "type": "xsd:integer",
-                                    "value": 3
-                                },
-                                "indirectNarrowers": {
-                                    "type": "xsd:integer",
-                                    "value": 3
-                                }
+                                "directNarrowers": 3,
+                                "indirectNarrowers": 3
                             },
                             "color": "#FEB342"
                         },
@@ -22843,14 +21819,8 @@
                                         "value": 167
                                     },
                                     "counts": {
-                                        "directNarrowers": {
-                                            "type": "xsd:integer",
-                                            "value": 0
-                                        },
-                                        "indirectNarrowers": {
-                                            "type": "xsd:integer",
-                                            "value": 0
-                                        }
+                                        "directNarrowers": 0,
+                                        "indirectNarrowers": 0
                                     },
                                     "color": "#F76898",
                                     "height": 250.0,
@@ -22977,14 +21947,8 @@
                                         "value": 168
                                     },
                                     "counts": {
-                                        "directNarrowers": {
-                                            "type": "xsd:integer",
-                                            "value": 0
-                                        },
-                                        "indirectNarrowers": {
-                                            "type": "xsd:integer",
-                                            "value": 0
-                                        }
+                                        "directNarrowers": 0,
+                                        "indirectNarrowers": 0
                                     },
                                     "color": "#F75B89",
                                     "height": 250.0,
@@ -23111,14 +22075,8 @@
                                         "value": 171
                                     },
                                     "counts": {
-                                        "directNarrowers": {
-                                            "type": "xsd:integer",
-                                            "value": 0
-                                        },
-                                        "indirectNarrowers": {
-                                            "type": "xsd:integer",
-                                            "value": 0
-                                        }
+                                        "directNarrowers": 0,
+                                        "indirectNarrowers": 0
                                     },
                                     "color": "#F74F7C",
                                     "height": 200.0,
@@ -23245,14 +22203,8 @@
                                         "value": 166
                                     },
                                     "counts": {
-                                        "directNarrowers": {
-                                            "type": "xsd:integer",
-                                            "value": 0
-                                        },
-                                        "indirectNarrowers": {
-                                            "type": "xsd:integer",
-                                            "value": 0
-                                        }
+                                        "directNarrowers": 0,
+                                        "indirectNarrowers": 0
                                     },
                                     "color": "#F875A7",
                                     "height": 200.0,
@@ -23284,14 +22236,8 @@
                                 "value": 169
                             },
                             "counts": {
-                                "directNarrowers": {
-                                    "type": "xsd:integer",
-                                    "value": 4
-                                },
-                                "indirectNarrowers": {
-                                    "type": "xsd:integer",
-                                    "value": 4
-                                }
+                                "directNarrowers": 4,
+                                "indirectNarrowers": 4
                             },
                             "color": "#F74370"
                         }
@@ -23323,14 +22269,8 @@
                         "value": 170
                     },
                     "counts": {
-                        "directNarrowers": {
-                            "type": "xsd:integer",
-                            "value": 3
-                        },
-                        "indirectNarrowers": {
-                            "type": "xsd:integer",
-                            "value": 13
-                        }
+                        "directNarrowers": 3,
+                        "indirectNarrowers": 13
                     },
                     "color": "#F73563"
                 }
@@ -23362,14 +22302,8 @@
                 "value": 178
             },
             "counts": {
-                "directNarrowers": {
-                    "type": "xsd:integer",
-                    "value": 3
-                },
-                "indirectNarrowers": {
-                    "type": "xsd:integer",
-                    "value": 20
-                }
+                "directNarrowers": 3,
+                "indirectNarrowers": 20
             },
             "color": "#F74370"
         }
