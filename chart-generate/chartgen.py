@@ -176,6 +176,8 @@ def main():
         )
 
     doc = json.loads(g.serialize(format="json-ld"))
+    with open("./out/rawld.json", "w", encoding="utf8") as out:
+        out.write(json.dumps(doc, ensure_ascii=False, indent=4).encode("utf8").decode())
     framed = jsonld.frame(doc, frame)
 
     s1 = get_irregular_heights(
