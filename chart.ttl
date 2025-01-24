@@ -2091,7 +2091,7 @@ ischart:Famennian
         "famenn"@sv ,
         "法门期"@zh ;
     skos:broader ischart:UpperDevonian ;
-    skos:definition "A time period from 372.15 to 538.86 million years ago" ;
+    skos:definition "A time period from 372.15 to 358.86 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "d7"^^ischart:ccgmShortCode ;
     skos:prefLabel "Famennian"@en ;
@@ -2102,7 +2102,7 @@ ischart:Famennian
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 538.86 ;
+            ischart:inMYA 358.86 ;
             sdo:marginOfError 0.19 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
