@@ -15172,7 +15172,7 @@
                                             "broader": [
                                                 "ischart:UpperDevonian"
                                             ],
-                                            "definition": "A time period from 372.15 to 538.86 million years ago",
+                                            "definition": "A time period from 372.15 to 358.86 million years ago",
                                             "inScheme": "http://resource.geosciml.org/classifier/ics/ischart",
                                             "notation": "d7",
                                             "prefLabel": {
@@ -15192,7 +15192,7 @@
                                             "hasEnd": {
                                                 "inMYA": {
                                                     "type": "xsd:decimal",
-                                                    "value": "538.86"
+                                                    "value": "358.86"
                                                 },
                                                 "marginOfError": {
                                                     "type": "xsd:decimal",
