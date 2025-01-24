@@ -64,7 +64,7 @@ onMounted(async () => {
         getSubChart(2, 1),
         getSubChart(3, 2),
         getSubChart(4, 3),
-        getSubChart("hierachy", 4),
+        getSubChart("hierarchy", 4),
         // getSubChart("meta", 5),
     ]).then(all => {
         clearTimeout(timeout)
@@ -77,7 +77,7 @@ onMounted(async () => {
         infoTarget.value = target.value ? dataLookup.value[target.value] : null
         ready.value = true
     }).catch((e) => {
-        error.value = { message: `An error occured grabbing chart data ${e}` }
+        error.value = { message: `An error occurred grabbing chart data ${e}` }
     })
     //"https://api.github.com/repos/i-c-stratigraphy/chart-data/tags"
     const v = await (await fetch("https://data.jsdelivr.com/v1/packages/gh/i-c-stratigraphy/chart-data")).json()
@@ -177,7 +177,7 @@ const commissionTitle = computed(() => {
             <div class="lightbox" v-if="showInfo && infoTarget && dataLookup" @click.self="target = ''">
                 <div class="content">
                     <InfoBox :node="infoTarget" :key="infoTarget.id" :lang="selectedLang" @view="handleView"
-                        :hierachy="data[4]" @close="target = ''" />
+                        :hierarchy="data[4]" @close="target = ''" />
                 </div>
             </div>
         </teleport>

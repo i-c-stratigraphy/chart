@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import { type Hierachy, getLangVarientFromHierachy } from '~/utils/util';
+import { type Hierarchy, getLangVarientFromHierarchy } from '~/utils/util';
 const props = defineProps<{
     node: chartNode,
     lang: string,
-    hierachy:Hierachy
+    hierarchy:Hierarchy
 }>()
 const emit = defineEmits<{
     (e: 'view', node: string): void
@@ -37,26 +37,26 @@ const NodeId = props.node["id"]
         <div class="details">
             <table class="table-details">
 
-                <tr v-if="props.hierachy[NodeId].broader">
+                <tr v-if="props.hierarchy[NodeId].broader">
                     <th>Within</th>
                    
                     <!-- <td @click="emit('view', props.node.broader[0])">{{ props.node.broader[0].replace('ischart:','') }}</td> -->
                     <td>
-                        <ul v-if= props.hierachy[NodeId].broader class="linked-periods">
+                        <ul v-if= props.hierarchy[NodeId].broader class="linked-periods">
 
-                            <li  @click="emit('view', props.hierachy[NodeId].broader?.id!)">
-                                {{ getLangVarientFromHierachy(props.hierachy[NodeId].broader!, props.lang) }}
+                            <li  @click="emit('view', props.hierarchy[NodeId].broader?.id!)">
+                                {{ getLangVarientFromHierarchy(props.hierarchy[NodeId].broader!, props.lang) }}
                             </li>
                         </ul>
                     </td>
 
                 </tr>
-                <tr v-if="props.hierachy[NodeId].narrower">
+                <tr v-if="props.hierarchy[NodeId].narrower">
                     <th>Contains</th>
                     <td>
-                        <ul class="linked-periods" v-if="props.hierachy[NodeId].narrower">
-                            <li v-for="n in props.hierachy[NodeId].narrower" :key="n.id" @click="emit('view', n.id)" >
-                                {{ getLangVarientFromHierachy(n, props.lang)  }}
+                        <ul class="linked-periods" v-if="props.hierarchy[NodeId].narrower">
+                            <li v-for="n in props.hierarchy[NodeId].narrower" :key="n.id" @click="emit('view', n.id)" >
+                                {{ getLangVarientFromHierarchy(n, props.lang)  }}
                             </li>
                         </ul>
                     </td>

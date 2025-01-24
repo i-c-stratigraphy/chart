@@ -99,18 +99,18 @@ type LangLabel = {
     value: string
     language: string
 }
-type HierachyItem = {
+type HierarchyItem = {
     id: string
     prefLabel: LangLabel
     altLabel: LangLabel[] | null
 }
 
-type HierachyRecord = {
-    narrower: HierachyItem[] | null
-    broader: HierachyItem | null
+type HierarchyRecord = {
+    narrower: HierarchyItem[] | null
+    broader: HierarchyItem | null
 }
 
-export type Hierachy = Record<string, HierachyRecord>
+export type Hierarchy = Record<string, HierarchyRecord>
 
 export function getTimeMarker(beginning: timeMarker, end: timeMarker): string {
     // end.inMYA
@@ -181,7 +181,7 @@ export function getNameLangVariant<t extends sdoname>(meta: t, lang: string) {
     return meta.name
 }
 
-export function getLangVarientFromHierachy(node: HierachyItem, lang: string): string {
+export function getLangVarientFromHierarchy(node: HierarchyItem, lang: string): string {
     if (node.altLabel) {
         const alt = node.altLabel.filter(x => x.language === lang)
         if (alt.length == 1) {
