@@ -221,7 +221,7 @@ def main():
         )
     )
     s4 = get_irregular_heights(framed["hasTopConcept"][1])
-    with open("./out/chart.hierachy.json", "w", encoding="utf8") as out:
+    with open("./out/chart.hierarchy.json", "w", encoding="utf8") as out:
         out.write(
             json.dumps(get_hierarchy(framed, g), ensure_ascii=False, indent=4)
             .encode("utf8")
