@@ -122,17 +122,8 @@ def get_irregular_heights(subGraph):
 
 
 def main():
-    data = ""
-    frameRaw = ""
-
-    with open("../chart.ttl", "r") as chart:
-        data = chart.read()
-    with open("./frame.json", "r") as f:
-        frameRaw = f.read()
-
-    g = Graph()
-    frame = json.loads(frameRaw)
-    g.parse(data=data)
+    g = Graph().parse("../chart.ttl")
+    frame = json.load(open("frame.json"))
 
     for x in g.subjects(RDF.type, SKOS.Concept):
         coll = g.query(
@@ -161,7 +152,7 @@ def main():
                     }}  
                 }}
             }}
-        """
+            """
         )
 
         res = coll.bindings[0]
