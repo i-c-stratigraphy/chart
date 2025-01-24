@@ -28,10 +28,12 @@
     "historyNote": "skos:historyNote",
     "alternateName": "sdo:alternateName",
     "directNarrowers": {
-      "@id": "example:directNarrowers"
+      "@id": "example:directNarrowers",
+      "@type": "xsd:integer"
     },
     "indirectNarrowers": {
-      "@id": "example:indirectNarrowers"
+      "@id": "example:indirectNarrowers",
+      "@type": "xsd:integer"
     },
     "conformsTo": {
       "@id": "dcterms:conformsTo",
