@@ -323,10 +323,7 @@
                         }
                     },
                     "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
-                    "order": {
-                        "type": "xsd:integer",
-                        "value": 176
-                    },
+                    "order": 176,
                     "counts": {
                         "directNarrowers": 0,
                         "indirectNarrowers": 0
@@ -459,10 +456,7 @@
                         }
                     },
                     "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
-                    "order": {
-                        "type": "xsd:integer",
-                        "value": 173
-                    },
+                    "order": 173,
                     "counts": {
                         "directNarrowers": 0,
                         "indirectNarrowers": 0
@@ -595,10 +589,7 @@
                         }
                     },
                     "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
-                    "order": {
-                        "type": "xsd:integer",
-                        "value": 172
-                    },
+                    "order": 172,
                     "counts": {
                         "directNarrowers": 0,
                         "indirectNarrowers": 0
@@ -731,10 +722,7 @@
                         }
                     },
                     "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
-                    "order": {
-                        "type": "xsd:integer",
-                        "value": 174
-                    },
+                    "order": 174,
                     "counts": {
                         "directNarrowers": 0,
                         "indirectNarrowers": 0
@@ -768,10 +756,7 @@
                 }
             },
             "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
-            "order": {
-                "type": "xsd:integer",
-                "value": 175
-            },
+            "order": 175,
             "counts": {
                 "directNarrowers": 4,
                 "indirectNarrowers": 4
@@ -892,10 +877,7 @@
                 }
             },
             "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
-            "order": {
-                "type": "xsd:integer",
-                "value": 177
-            },
+            "order": 177,
             "counts": {
                 "directNarrowers": 0,
                 "indirectNarrowers": 0
@@ -1214,10 +1196,7 @@
                                 }
                             },
                             "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
-                            "order": {
-                                "type": "xsd:integer",
-                                "value": 164
-                            },
+                            "order": 164,
                             "counts": {
                                 "directNarrowers": 0,
                                 "indirectNarrowers": 0
@@ -1342,10 +1321,7 @@
                                 }
                             },
                             "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
-                            "order": {
-                                "type": "xsd:integer",
-                                "value": 163
-                            },
+                            "order": 163,
                             "counts": {
                                 "directNarrowers": 0,
                                 "indirectNarrowers": 0
@@ -1470,10 +1446,7 @@
                                 }
                             },
                             "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
-                            "order": {
-                                "type": "xsd:integer",
-                                "value": 162
-                            },
+                            "order": 162,
                             "counts": {
                                 "directNarrowers": 0,
                                 "indirectNarrowers": 0
@@ -1503,10 +1476,7 @@
                         }
                     },
                     "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
-                    "order": {
-                        "type": "xsd:integer",
-                        "value": 165
-                    },
+                    "order": 165,
                     "counts": {
                         "directNarrowers": 3,
                         "indirectNarrowers": 3
@@ -1726,10 +1696,7 @@
                                 "note": "uncertain"
                             },
                             "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
-                            "order": {
-                                "type": "xsd:integer",
-                                "value": 159
-                            },
+                            "order": 159,
                             "counts": {
                                 "directNarrowers": 0,
                                 "indirectNarrowers": 0
@@ -1859,10 +1826,7 @@
                                 }
                             },
                             "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
-                            "order": {
-                                "type": "xsd:integer",
-                                "value": 158
-                            },
+                            "order": 158,
                             "counts": {
                                 "directNarrowers": 0,
                                 "indirectNarrowers": 0
@@ -1988,10 +1952,7 @@
                                 "note": "uncertain"
                             },
                             "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
-                            "order": {
-                                "type": "xsd:integer",
-                                "value": 161
-                            },
+                            "order": 161,
                             "counts": {
                                 "directNarrowers": 0,
                                 "indirectNarrowers": 0
@@ -2025,10 +1986,7 @@
                         }
                     },
                     "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
-                    "order": {
-                        "type": "xsd:integer",
-                        "value": 160
-                    },
+                    "order": 160,
                     "counts": {
                         "directNarrowers": 3,
                         "indirectNarrowers": 3
@@ -2254,10 +2212,7 @@
                                 }
                             },
                             "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
-                            "order": {
-                                "type": "xsd:integer",
-                                "value": 167
-                            },
+                            "order": 167,
                             "counts": {
                                 "directNarrowers": 0,
                                 "indirectNarrowers": 0
@@ -2382,10 +2337,7 @@
                                 }
                             },
                             "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
-                            "order": {
-                                "type": "xsd:integer",
-                                "value": 168
-                            },
+                            "order": 168,
                             "counts": {
                                 "directNarrowers": 0,
                                 "indirectNarrowers": 0
@@ -2510,10 +2462,7 @@
                                 }
                             },
                             "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
-                            "order": {
-                                "type": "xsd:integer",
-                                "value": 171
-                            },
+                            "order": 171,
                             "counts": {
                                 "directNarrowers": 0,
                                 "indirectNarrowers": 0
@@ -2638,10 +2587,7 @@
                                 }
                             },
                             "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
-                            "order": {
-                                "type": "xsd:integer",
-                                "value": 166
-                            },
+                            "order": 166,
                             "counts": {
                                 "directNarrowers": 0,
                                 "indirectNarrowers": 0
@@ -2671,10 +2617,7 @@
                         }
                     },
                     "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
-                    "order": {
-                        "type": "xsd:integer",
-                        "value": 169
-                    },
+                    "order": 169,
                     "counts": {
                         "directNarrowers": 4,
                         "indirectNarrowers": 4
@@ -2704,10 +2647,7 @@
                 }
             },
             "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
-            "order": {
-                "type": "xsd:integer",
-                "value": 170
-            },
+            "order": 170,
             "counts": {
                 "directNarrowers": 3,
                 "indirectNarrowers": 13
@@ -2737,10 +2677,7 @@
         }
     },
     "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
-    "order": {
-        "type": "xsd:integer",
-        "value": 178
-    },
+    "order": 178,
     "counts": {
         "directNarrowers": 3,
         "indirectNarrowers": 20
