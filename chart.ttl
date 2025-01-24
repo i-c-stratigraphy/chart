@@ -8334,7 +8334,7 @@ cs:
     dcterms:conformsTo <https://w3id.org/profile/vocpub/4.6> ;
     dcterms:created "2024-11-26"^^xsd:date ;
     dcterms:creator <https://linked.data.gov.au/org/ics> ;
-    dcterms:modified "2024-11-22"^^xsd:date ;
+    dcterms:modified "2024-11-24"^^xsd:date ;
     dcterms:publisher <https://linked.data.gov.au/org/ics> ;
     owl:versionIRI ischart:2024-12 ;
     owl:versionInfo "2024-12" ;
