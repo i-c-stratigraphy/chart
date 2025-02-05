@@ -482,7 +482,7 @@
                                     "notation": "ep2",
                                     "prefLabel": {
                                         "language": "en",
-                                        "value": "Cambrian-Stage 3"
+                                        "value": "Stage 3"
                                     },
                                     "hasBeginning": {
                                         "inMYA": {
@@ -605,7 +605,7 @@
                                     "notation": "ep4",
                                     "prefLabel": {
                                         "language": "en",
-                                        "value": "Cambrian-Stage 4"
+                                        "value": "Stage 4"
                                     },
                                     "hasBeginning": {
                                         "inMYA": {
@@ -637,7 +637,7 @@
                             "notation": "Ep2",
                             "prefLabel": {
                                 "language": "en",
-                                "value": "Cambrian Series 2"
+                                "value": "Series 2"
                             },
                             "hasBeginning": {
                                 "inMYA": {
@@ -853,7 +853,7 @@
                                     "notation": "ep10",
                                     "prefLabel": {
                                         "language": "en",
-                                        "value": "Cambrian-Stage 10"
+                                        "value": "Stage 10"
                                     },
                                     "hasBeginning": {
                                         "inMYA": {
@@ -1625,7 +1625,7 @@
                                     "notation": "ep3",
                                     "prefLabel": {
                                         "language": "en",
-                                        "value": "Cambrian-Stage 2"
+                                        "value": "Stage 2"
                                     },
                                     "hasBeginning": {
                                         "inMYA": {

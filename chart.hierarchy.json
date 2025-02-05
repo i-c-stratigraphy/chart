@@ -5193,7 +5193,7 @@
                 "id": "ischart:UpperPleistocene",
                 "prefLabel": {
                     "language": "en",
-                    "value": "Late Pleistocene"
+                    "value": "Late"
                 },
                 "altLabel": [
                     {
@@ -6005,7 +6005,7 @@
         "broader": {
             "id": "ischart:LowerCretaceous",
             "prefLabel": {
-                "value": "Early Cretaceous",
+                "value": "Early",
                 "language": "en"
             },
             "altLabel": [
@@ -6089,7 +6089,7 @@
         "broader": {
             "id": "ischart:LowerCretaceous",
             "prefLabel": {
-                "value": "Early Cretaceous",
+                "value": "Early",
                 "language": "en"
             },
             "altLabel": [
@@ -6173,7 +6173,7 @@
         "broader": {
             "id": "ischart:LowerCretaceous",
             "prefLabel": {
-                "value": "Early Cretaceous",
+                "value": "Early",
                 "language": "en"
             },
             "altLabel": [
@@ -6257,7 +6257,7 @@
         "broader": {
             "id": "ischart:LowerCretaceous",
             "prefLabel": {
-                "value": "Early Cretaceous",
+                "value": "Early",
                 "language": "en"
             },
             "altLabel": [
@@ -6341,7 +6341,7 @@
         "broader": {
             "id": "ischart:LowerCretaceous",
             "prefLabel": {
-                "value": "Early Cretaceous",
+                "value": "Early",
                 "language": "en"
             },
             "altLabel": [
@@ -6425,7 +6425,7 @@
         "broader": {
             "id": "ischart:LowerCretaceous",
             "prefLabel": {
-                "value": "Early Cretaceous",
+                "value": "Early",
                 "language": "en"
             },
             "altLabel": [
@@ -7136,7 +7136,7 @@
         "broader": {
             "id": "ischart:UpperCretaceous",
             "prefLabel": {
-                "value": "Late Cretaceous",
+                "value": "Late",
                 "language": "en"
             },
             "altLabel": [
@@ -7212,7 +7212,7 @@
         "broader": {
             "id": "ischart:UpperCretaceous",
             "prefLabel": {
-                "value": "Late Cretaceous",
+                "value": "Late",
                 "language": "en"
             },
             "altLabel": [
@@ -7288,7 +7288,7 @@
         "broader": {
             "id": "ischart:UpperCretaceous",
             "prefLabel": {
-                "value": "Late Cretaceous",
+                "value": "Late",
                 "language": "en"
             },
             "altLabel": [
@@ -7364,7 +7364,7 @@
         "broader": {
             "id": "ischart:UpperCretaceous",
             "prefLabel": {
-                "value": "Late Cretaceous",
+                "value": "Late",
                 "language": "en"
             },
             "altLabel": [
@@ -7440,7 +7440,7 @@
         "broader": {
             "id": "ischart:UpperCretaceous",
             "prefLabel": {
-                "value": "Late Cretaceous",
+                "value": "Late",
                 "language": "en"
             },
             "altLabel": [
@@ -7516,7 +7516,7 @@
         "broader": {
             "id": "ischart:UpperCretaceous",
             "prefLabel": {
-                "value": "Late Cretaceous",
+                "value": "Late",
                 "language": "en"
             },
             "altLabel": [
@@ -8220,7 +8220,7 @@
                 "id": "ischart:LowerCretaceous",
                 "prefLabel": {
                     "language": "en",
-                    "value": "Early Cretaceous"
+                    "value": "Early"
                 },
                 "altLabel": [
                     {
@@ -8301,7 +8301,7 @@
                 "id": "ischart:UpperCretaceous",
                 "prefLabel": {
                     "language": "en",
-                    "value": "Late Cretaceous"
+                    "value": "Late"
                 },
                 "altLabel": [
                     {
@@ -13234,7 +13234,7 @@
         "broader": {
             "id": "ischart:CambrianSeries2",
             "prefLabel": {
-                "value": "Cambrian Series 2",
+                "value": "Series 2",
                 "language": "en"
             },
             "altLabel": [
@@ -13326,7 +13326,7 @@
         "broader": {
             "id": "ischart:CambrianSeries2",
             "prefLabel": {
-                "value": "Cambrian Series 2",
+                "value": "Series 2",
                 "language": "en"
             },
             "altLabel": [
@@ -13419,7 +13419,7 @@
                 "id": "ischart:CambrianStage3",
                 "prefLabel": {
                     "language": "en",
-                    "value": "Cambrian-Stage 3"
+                    "value": "Stage 3"
                 },
                 "altLabel": [
                     {
@@ -13508,7 +13508,7 @@
                 "id": "ischart:CambrianStage4",
                 "prefLabel": {
                     "language": "en",
-                    "value": "Cambrian-Stage 4"
+                    "value": "Stage 4"
                 },
                 "altLabel": [
                     {
@@ -13966,7 +13966,7 @@
                 "id": "ischart:CambrianStage10",
                 "prefLabel": {
                     "language": "en",
-                    "value": "Cambrian-Stage 10"
+                    "value": "Stage 10"
                 },
                 "altLabel": [
                     {
@@ -14744,7 +14744,7 @@
                 "id": "ischart:CambrianStage2",
                 "prefLabel": {
                     "language": "en",
-                    "value": "Cambrian-Stage 2"
+                    "value": "Stage 2"
                 },
                 "altLabel": [
                     {
@@ -15015,7 +15015,7 @@
                 "id": "ischart:CambrianSeries2",
                 "prefLabel": {
                     "language": "en",
-                    "value": "Cambrian Series 2"
+                    "value": "Series 2"
                 },
                 "altLabel": [
                     {

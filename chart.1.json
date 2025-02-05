@@ -4005,7 +4005,7 @@
                                     "notation": "q4",
                                     "prefLabel": {
                                         "language": "en",
-                                        "value": "Late Pleistocene"
+                                        "value": "Late"
                                     },
                                     "hasBeginning": {
                                         "inMYA": {
@@ -5170,7 +5170,7 @@
                             "notation": "K1",
                             "prefLabel": {
                                 "language": "en",
-                                "value": "Early Cretaceous"
+                                "value": "Early"
                             },
                             "hasBeginning": {
                                 "inMYA": {
@@ -6079,7 +6079,7 @@
                             "notation": "K2",
                             "prefLabel": {
                                 "language": "en",
-                                "value": "Late Cretaceous"
+                                "value": "Late"
                             },
                             "hasBeginning": {
                                 "inMYA": {
