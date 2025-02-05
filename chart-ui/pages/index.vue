@@ -3,7 +3,7 @@
     <DynamicChart />
     <div class="widther no-print">
         <footer>
-            © 2013-2023 International Commission on Stratigraphy, all rights reserved
+            © 2013-2025 International Commission on Stratigraphy, all rights reserved
         </footer>
     </div>
 </template>
