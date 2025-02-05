@@ -20,7 +20,7 @@ const meta = ref(undefined)
 const showInfo = computed(() => target.value !== "")
 
 function getMeta() {
-    const apiUrl = useCDN ? 'https://cdn.jsdelivr.net/gh/i-c-stratigraphy/chart-data@gh-pages' : 'https://stratigraphy.org/chart-data/'
+    const apiUrl = useCDN ? 'https://cdn.jsdelivr.net/gh/i-c-stratigraphy/chart-data@gh-pages' : 'https://stratigraphy.org/chart-data'
 
     return fetch(`${apiUrl}/chart.meta.json?cachebreaker=${Math.random()}`).then(r => {
         if (!r.ok || (r.status > 300)) {
