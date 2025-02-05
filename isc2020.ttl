@@ -1481,7 +1481,7 @@ isc:BaseChattianTime
 .
 isc:BaseChibanianSP
   a gts:StratigraphicPoint ;
-  gts:boundaryLevel "GSSP is 1 m below base Brunhes Chron in type section; base Brunhes Chron at 773 ka provided the numeric age in prior chart versions" ;
+  gts:boundaryLevel "GSSP is 1 m below base Brunhes Chron in type section; base Brunhes Chron at 773 ka provided the numerical age (MA) in prior chart versions" ;
   gts:correlationEvent "Byk-E tephra; 1.1 m below directional midpoint of Brunhes–Matuyama magnetic reversal (base of Chron 1n)" ;
   gts:ratifiedGSSP true ;
   gts:representsBoundary isc:BaseMiddlePleistocene ;
@@ -2147,7 +2147,7 @@ isc:BaseHauterivianSP
 .
 isc:BaseHauterivianTime
   a time:TimePosition ;
-  skos:changeNote "2020/01 - Cretaceous: numeric age Base Hauterivian Stage changed to 132.6 Ma (was 132.9) - by request of CSC (Maria Rose Petrizio), in consultation with Hauterivian GSSP working group, awaiting GTS-2020 book publication, and based on data by Aguirre et al (2015) and Martinez et al. (2015) 132 Ma +-1 Ma. " ;
+  skos:changeNote "2020/01 - Cretaceous: numerical age (MA) Base Hauterivian Stage changed to 132.6 Ma (was 132.9) - by request of CSC (Maria Rose Petrizio), in consultation with Hauterivian GSSP working group, awaiting GTS-2020 book publication, and based on data by Aguirre et al (2015) and Martinez et al. (2015) 132 Ma +-1 Ma. " ;
   time:hasTRS <http://resource.geosciml.org/classifier/cgi/geologicage/ma> ;
   time:numericPosition 132.6 ;
 .
@@ -2724,7 +2724,7 @@ isc:BaseLatePleistocene
 isc:BaseLatePleistoceneTime
   a time:TimePosition ;
   dct:replaces isc:BaseUpperPleistoceneTime ;
-  skos:changeNote """2020/01 -         - Quaternary: numeric age Base Late Pleistocene (Subseries / unnamed Stage) changed to 129 ka (was 126 ka) - by request of SQS (Martin Head), anticipating renewed GSSP-candidate locality search. The age sought is near the mid-point of Termination II in the marine isotope stratigraphy. 
+  skos:changeNote """2020/01 -         - Quaternary: numerical age (MA) Base Late Pleistocene (Subseries / unnamed Stage) changed to 129 ka (was 126 ka) - by request of SQS (Martin Head), anticipating renewed GSSP-candidate locality search. The age sought is near the mid-point of Termination II in the marine isotope stratigraphy.
 """ ;
   time:hasTRS <http://resource.geosciml.org/classifier/cgi/geologicage/bp> ;
   time:numericPosition "129000"^^xsd:decimal ;
@@ -2732,7 +2732,7 @@ isc:BaseLatePleistoceneTime
 isc:BaseLatePleistoceneTimeMA
   a time:TimePosition ;
   dct:replaces isc:BaseUpperPleistoceneTime ;
-  skos:changeNote """2020/01 -         - Quaternary: numeric age Base Late Pleistocene (Subseries / unnamed Stage) changed to 129 ka (was 126 ka) - by request of SQS (Martin Head), anticipating renewed GSSP-candidate locality search. The age sought is near the mid-point of Termination II in the marine isotope stratigraphy. 
+  skos:changeNote """2020/01 -         - Quaternary: numerical age (MA) Base Late Pleistocene (Subseries / unnamed Stage) changed to 129 ka (was 126 ka) - by request of SQS (Martin Head), anticipating renewed GSSP-candidate locality search. The age sought is near the mid-point of Termination II in the marine isotope stratigraphy.
 """ ;
   time:hasTRS <http://resource.geosciml.org/classifier/cgi/geologicage/ma> ;
   time:numericPosition 0.129 ;
@@ -3417,7 +3417,7 @@ isc:BaseMiddlePleistocene
 .
 isc:BaseMiddlePleistoceneTime
   a time:TimePosition ;
-  skos:changeNote "2020/01 - Quaternary: numeric age Base Chibanian Stage changed to 774 ka (in accordance with GSSP documentation; GSSP is 1 m below base Brunhes Chron in type section; base Brunhes " ;
+  skos:changeNote "2020/01 - Quaternary: numerical age (MA) Base Chibanian Stage changed to 774 ka (in accordance with GSSP documentation; GSSP is 1 m below base Brunhes Chron in type section; base Brunhes " ;
   time:hasTRS <http://resource.geosciml.org/classifier/cgi/geologicage/ma> ;
   time:numericPosition 0.774 ;
 .
@@ -14559,7 +14559,7 @@ classified rank-based collections using XKOS;
 cleaned out legacy Base* instances that did not have links;
 renamed *[GS]SP individuals to *SP;
 removed all boundaries as TopConcepts, leaving on PreCambrian and Phanerozoic as TopConcepts"""@en ;
-  skos:changeNote "2017/02 - Paleogene: Base of Chattian: The numeric age is updated to that at the ratified GSSP (27.82 Ma; Nanno et al. exp. 2017; by request of Simonetti Monechi)"@en ;
+  skos:changeNote "2017/02 - Paleogene: Base of Chattian: The numerical age (MA) is updated to that at the ratified GSSP (27.82 Ma; Nanno et al. exp. 2017; by request of Simonetti Monechi)"@en ;
   skos:changeNote "2018-09-27 fixed some broken namespaces and prefixes, mostly related to SPARQL - some kind of search/replace error"@en ;
   skos:changeNote """2019-05-01 - Updated to 2018-08 version; 
 removed StratigraphicPoints, Ranks, TimePositions collections; 
