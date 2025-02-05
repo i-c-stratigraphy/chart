@@ -2823,7 +2823,7 @@
                                         },
                                         "marginOfError": {
                                             "type": "xsd:decimal",
-                                            "value": "1.6"
+                                            "value": "1.36"
                                         }
                                     },
                                     "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
@@ -2861,7 +2861,7 @@
                                 },
                                 "marginOfError": {
                                     "type": "xsd:decimal",
-                                    "value": "1.6"
+                                    "value": "1.36"
                                 }
                             },
                             "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
@@ -3194,7 +3194,7 @@
                                         },
                                         "marginOfError": {
                                             "type": "xsd:decimal",
-                                            "value": "1.6"
+                                            "value": "1.36"
                                         }
                                     },
                                     "hasEnd": {
@@ -3232,7 +3232,7 @@
                                 },
                                 "marginOfError": {
                                     "type": "xsd:decimal",
-                                    "value": "1.6"
+                                    "value": "1.36"
                                 }
                             },
                             "hasEnd": {

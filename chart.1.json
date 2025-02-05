@@ -1364,7 +1364,7 @@
                                     "hasBeginning": {
                                         "inMYA": {
                                             "type": "xsd:decimal",
-                                            "value": "3.60"
+                                            "value": "3.600"
                                         }
                                     },
                                     "hasEnd": {
@@ -1979,7 +1979,7 @@
                                     "broader": [
                                         "ischart:Eocene"
                                     ],
-                                    "definition": "A time period from 47.07 to 41.03 million years ago",
+                                    "definition": "A time period from 48.07 to 41.03 million years ago",
                                     "inScheme": "http://resource.geosciml.org/classifier/ics/ischart",
                                     "notation": "e5",
                                     "prefLabel": {
@@ -1989,7 +1989,7 @@
                                     "hasBeginning": {
                                         "inMYA": {
                                             "type": "xsd:decimal",
-                                            "value": "47.07"
+                                            "value": "48.07"
                                         }
                                     },
                                     "hasEnd": {
@@ -2005,9 +2005,9 @@
                                         "indirectNarrowers": 0
                                     },
                                     "color": "#FDB482",
-                                    "height": 6.039999999999999,
-                                    "remainderHeigt": 1.1819134810259273,
-                                    "irregularHeight": 3.1819134810259273,
+                                    "height": 7.039999999999999,
+                                    "remainderHeigt": 1.3775945209308822,
+                                    "irregularHeight": 3.377594520930882,
                                     "rawPercent": 2.7777777777777777
                                 },
                                 {
@@ -2229,7 +2229,7 @@
                                     "broader": [
                                         "ischart:Eocene"
                                     ],
-                                    "definition": "A time period from 56.00 to 47.07 million years ago",
+                                    "definition": "A time period from 56.00 to 48.07 million years ago",
                                     "inScheme": "http://resource.geosciml.org/classifier/ics/ischart",
                                     "notation": "e4",
                                     "prefLabel": {
@@ -2245,7 +2245,7 @@
                                     "hasEnd": {
                                         "inMYA": {
                                             "type": "xsd:decimal",
-                                            "value": "47.07"
+                                            "value": "48.07"
                                         }
                                     },
                                     "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
@@ -2255,9 +2255,9 @@
                                         "indirectNarrowers": 0
                                     },
                                     "color": "#FCA773",
-                                    "height": 8.93,
-                                    "remainderHeigt": 1.747431686351247,
-                                    "irregularHeight": 3.7474316863512467,
+                                    "height": 7.93,
+                                    "remainderHeigt": 1.5517506464462922,
+                                    "irregularHeight": 3.5517506464462922,
                                     "rawPercent": 2.7777777777777777
                                 }
                             ],
@@ -4478,7 +4478,7 @@
                                     "broader": [
                                         "ischart:LowerCretaceous"
                                     ],
-                                    "definition": "A time period from 113.0 to 100.5 million years ago",
+                                    "definition": "A time period from 113.2 to 100.5 million years ago",
                                     "inScheme": "http://resource.geosciml.org/classifier/ics/ischart",
                                     "notation": "b6",
                                     "prefLabel": {
@@ -4488,7 +4488,7 @@
                                     "hasBeginning": {
                                         "inMYA": {
                                             "type": "xsd:decimal",
-                                            "value": "113.0"
+                                            "value": "113.2"
                                         },
                                         "marginOfError": {
                                             "type": "xsd:decimal",
@@ -4512,9 +4512,9 @@
                                         "indirectNarrowers": 0
                                     },
                                     "color": "#CCEA97",
-                                    "height": 12.5,
-                                    "remainderHeigt": 2.446012998811936,
-                                    "irregularHeight": 4.446012998811936,
+                                    "height": 12.700000000000003,
+                                    "remainderHeigt": 2.4851492067929275,
+                                    "irregularHeight": 4.4851492067929275,
                                     "rawPercent": 2.7777777777777777
                                 },
                                 {
@@ -4607,7 +4607,7 @@
                                     "broader": [
                                         "ischart:LowerCretaceous"
                                     ],
-                                    "definition": "A time period from 121.4 to 113.0 million years ago",
+                                    "definition": "A time period from 121.4 to 113.2 million years ago",
                                     "inScheme": "http://resource.geosciml.org/classifier/ics/ischart",
                                     "notation": "b5",
                                     "prefLabel": {
@@ -4627,7 +4627,7 @@
                                     "hasEnd": {
                                         "inMYA": {
                                             "type": "xsd:decimal",
-                                            "value": "113.0"
+                                            "value": "113.2"
                                         },
                                         "marginOfError": {
                                             "type": "xsd:decimal",
@@ -4641,9 +4641,9 @@
                                         "indirectNarrowers": 0
                                     },
                                     "color": "#BFE48A",
-                                    "height": 8.400000000000006,
-                                    "remainderHeigt": 1.643720735201622,
-                                    "irregularHeight": 3.6437207352016223,
+                                    "height": 8.200000000000003,
+                                    "remainderHeigt": 1.6045845272206307,
+                                    "irregularHeight": 3.6045845272206307,
                                     "rawPercent": 2.7777777777777777
                                 },
                                 {

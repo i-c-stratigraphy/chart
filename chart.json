@@ -1639,7 +1639,7 @@
                                             "hasBeginning": {
                                                 "inMYA": {
                                                     "type": "xsd:decimal",
-                                                    "value": "3.60"
+                                                    "value": "3.600"
                                                 }
                                             },
                                             "hasEnd": {
@@ -2242,7 +2242,7 @@
                                             "broader": [
                                                 "ischart:Eocene"
                                             ],
-                                            "definition": "A time period from 47.07 to 41.03 million years ago",
+                                            "definition": "A time period from 48.07 to 41.03 million years ago",
                                             "inScheme": "http://resource.geosciml.org/classifier/ics/ischart",
                                             "notation": "e5",
                                             "prefLabel": {
@@ -2252,7 +2252,7 @@
                                             "hasBeginning": {
                                                 "inMYA": {
                                                     "type": "xsd:decimal",
-                                                    "value": "47.07"
+                                                    "value": "48.07"
                                                 }
                                             },
                                             "hasEnd": {
@@ -2484,7 +2484,7 @@
                                             "broader": [
                                                 "ischart:Eocene"
                                             ],
-                                            "definition": "A time period from 56.00 to 47.07 million years ago",
+                                            "definition": "A time period from 56.00 to 48.07 million years ago",
                                             "inScheme": "http://resource.geosciml.org/classifier/ics/ischart",
                                             "notation": "e4",
                                             "prefLabel": {
@@ -2500,7 +2500,7 @@
                                             "hasEnd": {
                                                 "inMYA": {
                                                     "type": "xsd:decimal",
-                                                    "value": "47.07"
+                                                    "value": "48.07"
                                                 }
                                             },
                                             "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
@@ -4681,7 +4681,7 @@
                                             "broader": [
                                                 "ischart:LowerCretaceous"
                                             ],
-                                            "definition": "A time period from 113.0 to 100.5 million years ago",
+                                            "definition": "A time period from 113.2 to 100.5 million years ago",
                                             "inScheme": "http://resource.geosciml.org/classifier/ics/ischart",
                                             "notation": "b6",
                                             "prefLabel": {
@@ -4691,7 +4691,7 @@
                                             "hasBeginning": {
                                                 "inMYA": {
                                                     "type": "xsd:decimal",
-                                                    "value": "113.0"
+                                                    "value": "113.2"
                                                 },
                                                 "marginOfError": {
                                                     "type": "xsd:decimal",
@@ -4806,7 +4806,7 @@
                                             "broader": [
                                                 "ischart:LowerCretaceous"
                                             ],
-                                            "definition": "A time period from 121.4 to 113.0 million years ago",
+                                            "definition": "A time period from 121.4 to 113.2 million years ago",
                                             "inScheme": "http://resource.geosciml.org/classifier/ics/ischart",
                                             "notation": "b5",
                                             "prefLabel": {
@@ -4826,7 +4826,7 @@
                                             "hasEnd": {
                                                 "inMYA": {
                                                     "type": "xsd:decimal",
-                                                    "value": "113.0"
+                                                    "value": "113.2"
                                                 },
                                                 "marginOfError": {
                                                     "type": "xsd:decimal",
@@ -13927,7 +13927,7 @@
                                                 },
                                                 "marginOfError": {
                                                     "type": "xsd:decimal",
-                                                    "value": "1.6"
+                                                    "value": "1.36"
                                                 }
                                             },
                                             "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
@@ -13961,7 +13961,7 @@
                                         },
                                         "marginOfError": {
                                             "type": "xsd:decimal",
-                                            "value": "1.6"
+                                            "value": "1.36"
                                         }
                                     },
                                     "wasDerivedFrom": "http://resource.geosciml.org/vocabulary/timescale/gts2020",
@@ -14290,7 +14290,7 @@
                                                 },
                                                 "marginOfError": {
                                                     "type": "xsd:decimal",
-                                                    "value": "1.6"
+                                                    "value": "1.36"
                                                 }
                                             },
                                             "hasEnd": {
@@ -14324,7 +14324,7 @@
                                         },
                                         "marginOfError": {
                                             "type": "xsd:decimal",
-                                            "value": "1.6"
+                                            "value": "1.36"
                                         }
                                     },
                                     "hasEnd": {
