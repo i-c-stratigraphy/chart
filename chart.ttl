@@ -1114,7 +1114,7 @@ ischart:CambrianStage10
     skos:definition "A time period from 491.0 to 486.85 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "ep10"^^ischart:ccgmShortCode ;
-    skos:prefLabel "Cambrian-Stage 10"@en ;
+    skos:prefLabel "Stage 10"@en ;
     time:hasBeginning
         [
             ischart:inMYA 491.0 ;
@@ -1159,7 +1159,7 @@ ischart:CambrianStage2
     skos:definition "A time period from 529.0 to 521.0 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "ep3"^^ischart:ccgmShortCode ;
-    skos:prefLabel "Cambrian-Stage 2"@en ;
+    skos:prefLabel "Stage 2"@en ;
     time:hasBeginning
         [
             ischart:inMYA 529.0 ;
@@ -1204,7 +1204,7 @@ ischart:CambrianStage3
     skos:definition "A time period from 521.0 to 514.5 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "ep2"^^ischart:ccgmShortCode ;
-    skos:prefLabel "Cambrian-Stage 3"@en ;
+    skos:prefLabel "Stage 3"@en ;
     time:hasBeginning
         [
             ischart:inMYA 521.0 ;
@@ -1249,7 +1249,7 @@ ischart:CambrianStage4
     skos:definition "A time period from 514.5 to 506.5 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "ep4"^^ischart:ccgmShortCode ;
-    skos:prefLabel "Cambrian-Stage 4"@en ;
+    skos:prefLabel "Stage 4"@en ;
     time:hasBeginning
         [
             ischart:inMYA 514.5 ;
@@ -5076,7 +5076,7 @@ ischart:UpperPleistocene
     skos:definition "A time period from 0.129 to 0.0117 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "q4"^^ischart:ccgmShortCode ;
-    skos:prefLabel "Late Pleistocene"@en ;
+    skos:prefLabel "Late"@en ;
     time:hasBeginning
         [
             ischart:inMYA 0.129 ;
@@ -5636,7 +5636,7 @@ ischart:CambrianSeries2
         ischart:CambrianStage3 ,
         ischart:CambrianStage4 ;
     skos:notation "Ep2"^^ischart:ccgmShortCode ;
-    skos:prefLabel "Cambrian Series 2"@en ;
+    skos:prefLabel "Series 2"@en ;
     time:hasBeginning
         [
             ischart:inMYA 521.0 ;
@@ -8159,7 +8159,7 @@ ischart:LowerCretaceous
         ischart:Hauterivian ,
         ischart:Valanginian ;
     skos:notation "K1"^^ischart:ccgmShortCode ;
-    skos:prefLabel "Early Cretaceous"@en ;
+    skos:prefLabel "Early"@en ;
     time:hasBeginning
         [
             ischart:inMYA 143.1 ;
@@ -8314,7 +8314,7 @@ ischart:UpperCretaceous
         ischart:Santonian ,
         ischart:Turonian ;
     skos:notation "K2"^^ischart:ccgmShortCode ;
-    skos:prefLabel "Late Cretaceous"@en ;
+    skos:prefLabel "Late"@en ;
     time:hasBeginning
         [
             ischart:inMYA 100.5 ;
