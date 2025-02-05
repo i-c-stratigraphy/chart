@@ -394,13 +394,13 @@ ischart:Albian
         "alban"@sv ,
         "阿尔布期"@zh ;
     skos:broader ischart:LowerCretaceous ;
-    skos:definition "A time period from 113.0 to 100.5 million years ago" ;
+    skos:definition "A time period from 113.2 to 100.5 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "b6"^^ischart:ccgmShortCode ;
     skos:prefLabel "Albian"@en ;
     time:hasBeginning
         [
-            ischart:inMYA 113.0 ;
+            ischart:inMYA 113.2 ;
             sdo:marginOfError 0.3 ;
         ] ;
     time:hasEnd
@@ -483,7 +483,7 @@ ischart:Aptian
         "apt"@sv ,
         "阿普弟期"@zh ;
     skos:broader ischart:LowerCretaceous ;
-    skos:definition "A time period from 121.4 to 113.0 million years ago" ;
+    skos:definition "A time period from 121.4 to 113.2 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "b5"^^ischart:ccgmShortCode ;
     skos:prefLabel "Aptian"@en ;
@@ -494,7 +494,7 @@ ischart:Aptian
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 113.0 ;
+            ischart:inMYA 113.2 ;
             sdo:marginOfError 0.3 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
@@ -2235,7 +2235,7 @@ ischart:Frasnian
     time:hasBeginning
         [
             ischart:inMYA 382.31 ;
-            sdo:marginOfError 1.6 ;
+            sdo:marginOfError 1.36 ;
         ] ;
     time:hasEnd
         [
@@ -2329,7 +2329,7 @@ ischart:Givetian
     time:hasEnd
         [
             ischart:inMYA 382.31 ;
-            sdo:marginOfError 1.6 ;
+            sdo:marginOfError 1.36 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 111 ;
@@ -3185,13 +3185,13 @@ ischart:Lutetian
         "lutet"@sv ,
         "卢台特期"@zh ;
     skos:broader ischart:Eocene ;
-    skos:definition "A time period from 47.07 to 41.03 million years ago" ;
+    skos:definition "A time period from 48.07 to 41.03 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "e5"^^ischart:ccgmShortCode ;
     skos:prefLabel "Lutetian"@en ;
     time:hasBeginning
         [
-            ischart:inMYA 47.07 ;
+            ischart:inMYA 48.07 ;
         ] ;
     time:hasEnd
         [
@@ -3776,7 +3776,7 @@ ischart:Piacenzian
     skos:prefLabel "Piacenzian"@en ;
     time:hasBeginning
         [
-            ischart:inMYA 3.60 ;
+            ischart:inMYA 3.600 ;
         ] ;
     time:hasEnd
         [
@@ -5326,7 +5326,7 @@ ischart:Ypresian
         "ypres"@sv ,
         "伊普雷斯期"@zh ;
     skos:broader ischart:Eocene ;
-    skos:definition "A time period from 56.00 to 47.07 million years ago" ;
+    skos:definition "A time period from 56.00 to 48.07 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "e4"^^ischart:ccgmShortCode ;
     skos:prefLabel "Ypresian"@en ;
@@ -5336,7 +5336,7 @@ ischart:Ypresian
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 47.07 ;
+            ischart:inMYA 48.07 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 29 ;
@@ -5985,7 +5985,7 @@ ischart:MiddleDevonian
     time:hasEnd
         [
             ischart:inMYA 382.31 ;
-            sdo:marginOfError 1.6 ;
+            sdo:marginOfError 1.36 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 113 ;
@@ -6358,7 +6358,7 @@ ischart:UpperDevonian
     time:hasBeginning
         [
             ischart:inMYA 382.31 ;
-            sdo:marginOfError 1.6 ;
+            sdo:marginOfError 1.36 ;
         ] ;
     time:hasEnd
         [
