@@ -8400,19 +8400,15 @@ Farben: Commission for the Geological Map of the World (CGMW, http://www.ccgm.or
 Zitierweize: Cohen, K.M., Finney, S.C., Gibbard, P.L. & Fan, J.-X. (2013;aktualisiert) The ICS International Chronostratigraphic Chart. Episodes 36:199-204. URL: http://www.stratigraphy.org/ICSchart/ChronostratChart2022-02.pdf
 
 Version in Deutsch: Deutsche Stratigraphische Kommission (DSK, M. Menning) Österreichische Stratigraphische Kommission (ASC, W. Piller)"""@de ,
-        """Units of all ranks are in the process of being defined by Global Boundary Stratotype Section and Points (GSSP) for their lower boundaries, including those of the Archean and Proterozoic, long defined by Global Standard Stratigraphic Ages (GSSA). Italic fonts indicate informal units and placeholders for unnamed units. Versioned charts and detailed information on ratified GSSPs are available at the website http://www.stratigraphy.org. The URL to this chart is found below.
+        """Units of all ranks are in the process of being defined by Global Boundary Stratotype Section and Points (GSSP) for their lower boundaries, including those of the Archean and Proterozoic, long defined by Global Standard Stratigraphic Ages (GSSA). Ratified Subseries/Subepochs are abbreviated as U/L (Upper/Late), M (Middle) and L/E (Lower/Early). Italic fonts indicate informal units and placeholders for unnamed units. Previous versions and detailed information on ratified GSSPs are available at the website http://www.stratigraphy.org. The URL to this chart is provided below.
 
-Numerical ages are subject to revision and do not define units in the Phanerozoic and the Ediacaran; only GSSPs do. For boundaries in the Phanerozoic without ratified GSSPs or without constrained numerical ages, an approximate numerical age (~) is provided.
+Numerical ages are subject to ongoing revision and do not define units in the Phanerozoic and the Ediacaran; only GSSPs do. For boundaries in the Phanerozoic without ratified GSSPs or without constrained numerical ages, an approximate numerical age (~) is provided.
 
-Ratified Subseries/Subepochs are abbreviated as U/L (Upper/Late), M (Middle) and L/E (Lower/Early). Numerical ages for all systems except Quaternary, upper Paleogene, Cretaceous, Jurassic, Triassic, Permian, Cambrian and Precambrian are taken from ‘A Geologic Time Scale 2012’ by Gradstein et al. (2012), those for the Quaternary, upper Paleogene, Cretaceous, Jurassic, Triassic, Permian, Cambrian and Precambrian were provided by the relevant ICS subcommissions.
+Most numerical ages are taken from ‘A Geologic Time Scale 2020’ by Gradstein et al. (2020), but some ages differ as provided by the relevant ICS subcommissions, with advice from the Timescale Calibration subcommission. These are approved by the ICS executive as the current consensus.
 
-Colouring follows the Commission for the Geological Map of the World <www.ccgm.org>.
+Chart drafted and maintained online by officers K.M. Cohen and N. Car. The chart is a product of collective work by all ICS members past and present.
 
-Chart drafted by K.M. Cohen, D.A.T. Harper, P.L. Gibbard, N. Car
-
-(c) International Commission on Stratigraphy, September 2024.
-
-To cite: Cohen, K.M., Finney, S.C., Gibbard, P.L. & Fan, J.-X. (2013; updated), _The ICS International Chronostratigraphic Chart_. Episodes 36: 199-204"""@en ,
+(c) International Commission on Stratigraphy, December 2024"""@en ,
         """odas las unidades de esta Tabla, cualquiera que sea su rango, se definen por el Estratotipo Global de Límite (GSSP - Global Boundary Stratotype Section and Point) referido siempre a su límite inferior. Este proceso se halla todavía inacabado e incluirá las unidades del Arcaico y Proterozoico, cuyas divisiones se convinieron inicialmente mediante edades absolutas (GSSA - Global Standard Stratigraphic Ages). La posición de los GSSP oficiales se indica en la tabla mediante el símbolo del “Clavo Dorado” (Golden Spike), que los materializa en el terreno. El original de la tabla en distintos idiomas y formatos, junto con los detalles de los estratotipos globales de límite (criterio de definición de cada uno, localización geográfica y geológica, correlación, etc.), están disponibles en la web www.stratigraphy.org.
 
 Las edades absolutas, expresadas en millones de años (Ma), son sólo orientativas, pues tanto el Ediacárico como las unidades del Fanerozoico se definen formalmente por sus correspondientes GSSP, en vez de por edades numéricas. No obstante, para aquellas divisiones que no cuentan aún con un estratotipo global o con edades bien establecidas, se indican las dataciones aproximadas (~ Ma) de sus límites. Las edades numéricas han sido tomadas de Gradstein et al. (A Geologic Time Scale 2012), con excepción de las correspondientes al Cuaternario, Paleógeno superior, Cretácico, Jurásico, Triásico, Pérmico, Cámbrico y Precámbrico, que fueron aportadas por las subcomisiones respectivas de la ICS-IUGS.
