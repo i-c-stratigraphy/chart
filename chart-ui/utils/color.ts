@@ -27,6 +27,6 @@ export function hexToRgb(hex:string): RGBColor{
 
 export function contrastColor(color:RGBColor): "white"|"black"{
     const luma = ((0.299 * color.r) + (0.587 * color.g) + (0.114 * color.b)) / 255;
-    return luma>0.4? 'black':'white'
+    return luma>0.65? 'black':'white'
 }
 

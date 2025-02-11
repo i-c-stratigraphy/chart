@@ -43,7 +43,7 @@ const emit = defineEmits<{
                 <ChartGridPrecambrianCell :lang="props.lang" :node="props.node" :parent-rank="''"
                     :scaling="props.scaling" @view="x => emit('view', x)" />
             </div>
-            <div class="chart-notes" v-if="props.meta">
+            <div class="chart-notes" v-if="props.meta" :lang="props.lang">
                 <p v-for="line in getScopedNote(props.meta, props.lang).value.split('\n')">
                     {{ line }}
                 </p>
@@ -52,6 +52,7 @@ const emit = defineEmits<{
     </div>
 </template>
 <style scoped>
+
 .grid-5 {
     margin-top: 4rem;
     --_thin-col: 2rem;
@@ -120,4 +121,9 @@ div.header:not(.v-text) {
     /* font-size:0.8em; */
     /* line-height: 1em; */
 }
+.chart-notes:lang(zh),
+.chart-notes:lang(ja) {
+    font-size: 1.2rem;
+}
+
 </style>
