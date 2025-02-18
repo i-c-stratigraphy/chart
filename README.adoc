@@ -2,7 +2,7 @@
 
 This repository contains the authoritative data of the Chronostratigraphic Chart produced by the International Commission on Stratigraphy, distributed online at https://stratigraphy.org/chart.
 
-This data is in the form of a https://en.wikipedia.org/wiki/Knowledge_graph[Knowledge Graph] formlated according to https://en.wikipedia.org/wiki/Semantic_Web[Semantic Web] principles, which means it's serialized in https://en.wikipedia.org/wiki/Resource_Description_Framework[RDF] and, after loading, can be queried using the https://en.wikipedia.org/wiki/SPARQL[SPARQL query language].
+This data is in the form of a https://en.wikipedia.org/wiki/Knowledge_graph[Knowledge Graph] formulated according to https://en.wikipedia.org/wiki/Semantic_Web[Semantic Web] principles, which means it's serialized in https://en.wikipedia.org/wiki/Resource_Description_Framework[RDF] and, after loading, can be queried using the https://en.wikipedia.org/wiki/SPARQL[SPARQL query language].
 
 The Chart is formulated as a https://www.w3.org/TR/skos-primer/[SKOS Vocabulary] with many additional properties relevant to timescales and geology.
 
