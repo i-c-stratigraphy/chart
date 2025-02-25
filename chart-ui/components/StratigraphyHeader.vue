@@ -52,7 +52,7 @@ onUnmounted(() => {
         </nav>
         <div class="page-info">
 
-            <h1>?international Chronostratigraphic Chart</h1>
+            <h1>International Chronostratigraphic Chart</h1>
             <p>
                 This page contains the latest version of the International Chronostratigraphic Chart (v2024-12) which visually presents the time periods and hierarchy of stratigraphic names of Earth's geological history. It is available in multiple languages.</p>
             <p>
