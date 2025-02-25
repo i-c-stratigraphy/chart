@@ -242,8 +242,8 @@ ischart:Periods
 ischart:RGBHex
     a owl:Datatype ;
     rdfs:label "CMYK colour notation" ;
-    rdfs:comment """An 8-bit per channel, hexidecimal representation of RGB colours.
-
+    rdfs:comment """An 8-bit per channel, hexidecimal representation of RGB colours.\r
+\r
 This datatype uses a microformat of "#{R}{G}{B}" with hexidecimal value for {R}, {G} & {B} between 00 and FF."""@en ;
 .
 
@@ -306,15 +306,13 @@ ischart:Aalenian
     skos:inScheme cs: ;
     skos:notation "j1"^^ischart:ccgmShortCode ;
     skos:prefLabel "Aalenian"@en ;
-    time:hasBeginning
-        [
+    time:hasBeginning [
             ischart:inMYA 174.7 ;
-            sdo:marginOfError 0.8 ;
+            sdo:marginOfError 0.8
         ] ;
-    time:hasEnd
-        [
+    time:hasEnd [
             ischart:inMYA 170.9 ;
-            sdo:marginOfError 0.8 ;
+            sdo:marginOfError 0.8
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 58 ;
@@ -348,19 +346,17 @@ ischart:Aeronian
         "aeron"@sv ,
         "埃隆期"@zh ;
     skos:broader ischart:Llandovery ;
-    skos:definition "A time period from 440.5 to 438.6 million years ago" ;
+    skos:definition "A time period from 440.8 to 438.5 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "s2"^^ischart:ccgmShortCode ;
     skos:prefLabel "Aeronian"@en ;
-    time:hasBeginning
-        [
-            ischart:inMYA 440.5 ;
-            sdo:marginOfError 1.0 ;
+    time:hasBeginning [
+            ischart:inMYA 440.8 ;
+            sdo:marginOfError 1.2
         ] ;
-    time:hasEnd
-        [
-            ischart:inMYA 438.6 ;
-            sdo:marginOfError 1.0 ;
+    time:hasEnd [
+            ischart:inMYA 438.5 ;
+            sdo:marginOfError 1.1
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 127 ;
@@ -394,19 +390,16 @@ ischart:Albian
         "alban"@sv ,
         "阿尔布期"@zh ;
     skos:broader ischart:LowerCretaceous ;
-    skos:definition "A time period from 113.2 to 100.5 million years ago" ;
+    skos:definition "A time period from 113.0 to 100.5 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "b6"^^ischart:ccgmShortCode ;
     skos:prefLabel "Albian"@en ;
-    time:hasBeginning
-        [
-            ischart:inMYA 113.2 ;
-            sdo:marginOfError 0.3 ;
+    time:hasBeginning [
+            ischart:inMYA 113.0 ;
+            skos:note "uncertain"
         ] ;
-    time:hasEnd
-        [
-            ischart:inMYA 100.5 ;
-            sdo:marginOfError 0.1 ;
+    time:hasEnd [
+            ischart:inMYA 100.5
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 43 ;
@@ -439,18 +432,16 @@ ischart:Anisian
         "anis"@sv ,
         "安尼期"@zh ;
     skos:broader ischart:MiddleTriassic ;
-    skos:definition "A time period from 246.7 to 241.464 million years ago" ;
+    skos:definition "A time period from 247.2 to 242 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "t3"^^ischart:ccgmShortCode ;
     skos:prefLabel "Anisian"@en ;
-    time:hasBeginning
-        [
-            ischart:inMYA 246.7 ;
+    time:hasBeginning [
+            ischart:inMYA 247.2
         ] ;
-    time:hasEnd
-        [
-            ischart:inMYA 241.464 ;
-            sdo:marginOfError 0.28 ;
+    time:hasEnd [
+            ischart:inMYA 242 ;
+            skos:note "uncertain"
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 71 ;
@@ -483,19 +474,17 @@ ischart:Aptian
         "apt"@sv ,
         "阿普弟期"@zh ;
     skos:broader ischart:LowerCretaceous ;
-    skos:definition "A time period from 121.4 to 113.2 million years ago" ;
+    skos:definition "A time period from 121.4 to 113.0 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "b5"^^ischart:ccgmShortCode ;
     skos:prefLabel "Aptian"@en ;
-    time:hasBeginning
-        [
+    time:hasBeginning [
             ischart:inMYA 121.4 ;
-            sdo:marginOfError 0.6 ;
+            skos:note "uncertain"
         ] ;
-    time:hasEnd
-        [
-            ischart:inMYA 113.2 ;
-            sdo:marginOfError 0.3 ;
+    time:hasEnd [
+            ischart:inMYA 113.0 ;
+            skos:note "uncertain"
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 44 ;
@@ -529,17 +518,15 @@ ischart:Aquitanian
         "aquitan"@sv ,
         "阿启坦期"@zh ;
     skos:broader ischart:Miocene ;
-    skos:definition "A time period from 23.03 to 20.45 million years ago" ;
+    skos:definition "A time period from 23.03 to 20.44 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "n1"^^ischart:ccgmShortCode ;
     skos:prefLabel "Aquitanian"@en ;
-    time:hasBeginning
-        [
-            ischart:inMYA 23.03 ;
+    time:hasBeginning [
+            ischart:inMYA 23.03
         ] ;
-    time:hasEnd
-        [
-            ischart:inMYA 20.45 ;
+    time:hasEnd [
+            ischart:inMYA 20.44
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 19 ;
@@ -573,19 +560,17 @@ ischart:Artinskian
         "artinsk"@sv ,
         "亚丁斯克期"@zh ;
     skos:broader ischart:Cisuralian ;
-    skos:definition "A time period from 290.1 to 283.3 million years ago" ;
+    skos:definition "A time period from 290.1 to 283.5 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "p3"^^ischart:ccgmShortCode ;
     skos:prefLabel "Artinskian"@en ;
-    time:hasBeginning
-        [
+    time:hasBeginning [
             ischart:inMYA 290.1 ;
-            sdo:marginOfError 0.26 ;
+            sdo:marginOfError 0.26
         ] ;
-    time:hasEnd
-        [
-            ischart:inMYA 283.3 ;
-            sdo:marginOfError 0.4 ;
+    time:hasEnd [
+            ischart:inMYA 283.5 ;
+            sdo:marginOfError 0.6
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 87 ;
@@ -619,19 +604,17 @@ ischart:Asselian
         "assel"@sv ,
         "阿瑟尔期"@zh ;
     skos:broader ischart:Cisuralian ;
-    skos:definition "A time period from 298.9 to 293.52 million years ago" ;
+    skos:definition "A time period from 298.9 to 293.51 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "p1"^^ischart:ccgmShortCode ;
     skos:prefLabel "Asselian"@en ;
-    time:hasBeginning
-        [
+    time:hasBeginning [
             ischart:inMYA 298.9 ;
-            sdo:marginOfError 0.15 ;
+            sdo:marginOfError 0.15
         ] ;
-    time:hasEnd
-        [
-            ischart:inMYA 293.52 ;
-            sdo:marginOfError 0.17 ;
+    time:hasEnd [
+            ischart:inMYA 293.51 ;
+            sdo:marginOfError 0.17
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 89 ;
@@ -669,15 +652,13 @@ ischart:Bajocian
     skos:inScheme cs: ;
     skos:notation "j2"^^ischart:ccgmShortCode ;
     skos:prefLabel "Bajocian"@en ;
-    time:hasBeginning
-        [
+    time:hasBeginning [
             ischart:inMYA 170.9 ;
-            sdo:marginOfError 0.8 ;
+            sdo:marginOfError 0.8
         ] ;
-    time:hasEnd
-        [
+    time:hasEnd [
             ischart:inMYA 168.2 ;
-            sdo:marginOfError 1.2 ;
+            sdo:marginOfError 1.2
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 57 ;
@@ -715,14 +696,12 @@ ischart:Barremian
     skos:inScheme cs: ;
     skos:notation "b4"^^ischart:ccgmShortCode ;
     skos:prefLabel "Barremian"@en ;
-    time:hasBeginning
-        [
-            ischart:inMYA 125.77 ;
+    time:hasBeginning [
+            ischart:inMYA 125.77
         ] ;
-    time:hasEnd
-        [
+    time:hasEnd [
             ischart:inMYA 121.4 ;
-            sdo:marginOfError 0.6 ;
+            skos:note "uncertain"
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 45 ;
@@ -755,17 +734,15 @@ ischart:Bartonian
         "barton"@sv ,
         "巴尔顿期"@zh ;
     skos:broader ischart:Eocene ;
-    skos:definition "A time period from 41.03 to 37.71 million years ago" ;
+    skos:definition "A time period from 41.2 to 37.71 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "e6"^^ischart:ccgmShortCode ;
     skos:prefLabel "Bartonian"@en ;
-    time:hasBeginning
-        [
-            ischart:inMYA 41.03 ;
+    time:hasBeginning [
+            ischart:inMYA 41.2
         ] ;
-    time:hasEnd
-        [
-            ischart:inMYA 37.71 ;
+    time:hasEnd [
+            ischart:inMYA 37.71
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 26 ;
@@ -799,19 +776,17 @@ ischart:Bashkirian
         "bashkir"@sv ,
         "巴什基尔期"@zh ;
     skos:broader ischart:LowerPennsylvanian ;
-    skos:definition "A time period from 323.4 to 315.2 million years ago" ;
+    skos:definition "A time period from 323.2 to 315.2 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "c4"^^ischart:ccgmShortCode ;
     skos:prefLabel "Bashkirian"@en ;
-    time:hasBeginning
-        [
-            ischart:inMYA 323.4 ;
-            sdo:marginOfError 0.4 ;
+    time:hasBeginning [
+            ischart:inMYA 323.2 ;
+            sdo:marginOfError 0.4
         ] ;
-    time:hasEnd
-        [
+    time:hasEnd [
             ischart:inMYA 315.2 ;
-            sdo:marginOfError 0.2 ;
+            sdo:marginOfError 0.2
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 97 ;
@@ -849,15 +824,13 @@ ischart:Bathonian
     skos:inScheme cs: ;
     skos:notation "j3"^^ischart:ccgmShortCode ;
     skos:prefLabel "Bathonian"@en ;
-    time:hasBeginning
-        [
+    time:hasBeginning [
             ischart:inMYA 168.2 ;
-            sdo:marginOfError 1.2 ;
+            sdo:marginOfError 1.2
         ] ;
-    time:hasEnd
-        [
+    time:hasEnd [
             ischart:inMYA 165.3 ;
-            sdo:marginOfError 1.1 ;
+            sdo:marginOfError 1.1
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 56 ;
@@ -890,19 +863,17 @@ ischart:Berriasian
         "berrias"@sv ,
         "贝利亚斯期"@zh ;
     skos:broader ischart:LowerCretaceous ;
-    skos:definition "A time period from 143.1 to 137.05 million years ago" ;
+    skos:definition "A time period from 145.0 to 139.8 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "b1"^^ischart:ccgmShortCode ;
     skos:prefLabel "Berriasian"@en ;
-    time:hasBeginning
-        [
-            ischart:inMYA 143.1 ;
-            sdo:marginOfError 0.6 ;
+    time:hasBeginning [
+            ischart:inMYA 145.0 ;
+            skos:note "uncertain"
         ] ;
-    time:hasEnd
-        [
-            ischart:inMYA 137.05 ;
-            sdo:marginOfError 0.2 ;
+    time:hasEnd [
+            ischart:inMYA 139.8 ;
+            skos:note "uncertain"
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 48 ;
@@ -935,17 +906,15 @@ ischart:Burdigalian
         "burdigal"@sv ,
         "布迪加尔期"@zh ;
     skos:broader ischart:Miocene ;
-    skos:definition "A time period from 20.45 to 15.98 million years ago" ;
+    skos:definition "A time period from 20.44 to 15.98 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "n2"^^ischart:ccgmShortCode ;
     skos:prefLabel "Burdigalian"@en ;
-    time:hasBeginning
-        [
-            ischart:inMYA 20.45 ;
+    time:hasBeginning [
+            ischart:inMYA 20.44
         ] ;
-    time:hasEnd
-        [
-            ischart:inMYA 15.98 ;
+    time:hasEnd [
+            ischart:inMYA 15.98
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 18 ;
@@ -979,17 +948,15 @@ ischart:Calabrian
         "calabr"@sv ,
         "卡拉布里亚期"@zh ;
     skos:broader ischart:Pleistocene ;
-    skos:definition "A time period from 1.80 to 0.774 million years ago" ;
+    skos:definition "A time period from 1.8 to 0.774 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "q2"^^ischart:ccgmShortCode ;
     skos:prefLabel "Calabrian"@en ;
-    time:hasBeginning
-        [
-            ischart:inMYA 1.80 ;
+    time:hasBeginning [
+            ischart:inMYA 1.8
         ] ;
-    time:hasEnd
-        [
-            ischart:inMYA 0.774 ;
+    time:hasEnd [
+            ischart:inMYA 0.774
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 7 ;
@@ -1026,15 +993,13 @@ ischart:Callovian
     skos:inScheme cs: ;
     skos:notation "j4"^^ischart:ccgmShortCode ;
     skos:prefLabel "Callovian"@en ;
-    time:hasBeginning
-        [
+    time:hasBeginning [
             ischart:inMYA 165.3 ;
-            sdo:marginOfError 1.1 ;
+            sdo:marginOfError 1.1
         ] ;
-    time:hasEnd
-        [
+    time:hasEnd [
             ischart:inMYA 161.5 ;
-            sdo:marginOfError 1.0 ;
+            sdo:marginOfError 1.0
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 55 ;
@@ -1072,13 +1037,11 @@ ischart:Calymmian
     skos:inScheme cs: ;
     skos:notation "MP1"^^ischart:ccgmShortCode ;
     skos:prefLabel "Calymmian"@en ;
-    time:hasBeginning
-        [
-            ischart:inMYA 1600 ;
+    time:hasBeginning [
+            ischart:inMYA 1600
         ] ;
-    time:hasEnd
-        [
-            ischart:inMYA 1400 ;
+    time:hasEnd [
+            ischart:inMYA 1400
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 164 ;
@@ -1111,19 +1074,17 @@ ischart:CambrianStage10
         "kambrium etage 10"@sv ,
         "第十期"@zh ;
     skos:broader ischart:Furongian ;
-    skos:definition "A time period from 491.0 to 486.85 million years ago" ;
+    skos:definition "A time period from 489.5 to 485.4 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "ep10"^^ischart:ccgmShortCode ;
-    skos:prefLabel "Stage 10"@en ;
-    time:hasBeginning
-        [
-            ischart:inMYA 491.0 ;
-            skos:note "uncertain" ;
+    skos:prefLabel "Cambrian-Stage 10"@en ;
+    time:hasBeginning [
+            ischart:inMYA 489.5 ;
+            skos:note "uncertain"
         ] ;
-    time:hasEnd
-        [
-            ischart:inMYA 486.85 ;
-            sdo:marginOfError 1.5 ;
+    time:hasEnd [
+            ischart:inMYA 485.4 ;
+            sdo:marginOfError 1.9
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 142 ;
@@ -1156,19 +1117,17 @@ ischart:CambrianStage2
         "kambrium etage 1"@sv ,
         "第二期"@zh ;
     skos:broader ischart:Terreneuvian ;
-    skos:definition "A time period from 529.0 to 521.0 million years ago" ;
+    skos:definition "A time period from 521 to 509 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "ep3"^^ischart:ccgmShortCode ;
-    skos:prefLabel "Stage 2"@en ;
-    time:hasBeginning
-        [
-            ischart:inMYA 529.0 ;
-            skos:note "uncertain" ;
+    skos:prefLabel "Cambrian-Stage 2"@en ;
+    time:hasBeginning [
+            ischart:inMYA 521 ;
+            skos:note "uncertain"
         ] ;
-    time:hasEnd
-        [
-            ischart:inMYA 521.0 ;
-            skos:note "uncertain" ;
+    time:hasEnd [
+            ischart:inMYA 509 ;
+            skos:note "uncertain"
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 152 ;
@@ -1201,19 +1160,17 @@ ischart:CambrianStage3
         "kambrium etage 3"@sv ,
         "第三期"@zh ;
     skos:broader ischart:CambrianSeries2 ;
-    skos:definition "A time period from 521.0 to 514.5 million years ago" ;
+    skos:definition "A time period from 521 to 514 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "ep2"^^ischart:ccgmShortCode ;
-    skos:prefLabel "Stage 3"@en ;
-    time:hasBeginning
-        [
-            ischart:inMYA 521.0 ;
-            skos:note "uncertain" ;
+    skos:prefLabel "Cambrian-Stage 3"@en ;
+    time:hasBeginning [
+            ischart:inMYA 521 ;
+            skos:note "uncertain"
         ] ;
-    time:hasEnd
-        [
-            ischart:inMYA 514.5 ;
-            skos:note "uncertain" ;
+    time:hasEnd [
+            ischart:inMYA 514 ;
+            skos:note "uncertain"
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 153 ;
@@ -1246,19 +1203,17 @@ ischart:CambrianStage4
         "kambrium etage 4"@sv ,
         "第四期"@zh ;
     skos:broader ischart:CambrianSeries2 ;
-    skos:definition "A time period from 514.5 to 506.5 million years ago" ;
+    skos:definition "A time period from 514 to 509 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "ep4"^^ischart:ccgmShortCode ;
-    skos:prefLabel "Stage 4"@en ;
-    time:hasBeginning
-        [
-            ischart:inMYA 514.5 ;
-            skos:note "uncertain" ;
+    skos:prefLabel "Cambrian-Stage 4"@en ;
+    time:hasBeginning [
+            ischart:inMYA 514 ;
+            skos:note "uncertain"
         ] ;
-    time:hasEnd
-        [
-            ischart:inMYA 506.5 ;
-            skos:note "uncertain" ;
+    time:hasEnd [
+            ischart:inMYA 509 ;
+            skos:note "uncertain"
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 150 ;
@@ -1292,19 +1247,17 @@ ischart:Campanian
         "campan"@sv ,
         "坎佩尼期"@zh ;
     skos:broader ischart:UpperCretaceous ;
-    skos:definition "A time period from 83.6 to 72.2 million years ago" ;
+    skos:definition "A time period from 83.6 to 72.1 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "k5"^^ischart:ccgmShortCode ;
     skos:prefLabel "Campanian"@en ;
-    time:hasBeginning
-        [
+    time:hasBeginning [
             ischart:inMYA 83.6 ;
-            sdo:marginOfError 0.2 ;
+            sdo:marginOfError 0.2
         ] ;
-    time:hasEnd
-        [
-            ischart:inMYA 72.2 ;
-            sdo:marginOfError 0.2 ;
+    time:hasEnd [
+            ischart:inMYA 72.1 ;
+            sdo:marginOfError 0.2
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 37 ;
@@ -1342,15 +1295,13 @@ ischart:Capitanian
     skos:inScheme cs: ;
     skos:notation "p7"^^ischart:ccgmShortCode ;
     skos:prefLabel "Capitanian"@en ;
-    time:hasBeginning
-        [
+    time:hasBeginning [
             ischart:inMYA 264.28 ;
-            sdo:marginOfError 0.16 ;
+            sdo:marginOfError 0.16
         ] ;
-    time:hasEnd
-        [
+    time:hasEnd [
             ischart:inMYA 259.51 ;
-            sdo:marginOfError 0.21 ;
+            sdo:marginOfError 0.21
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 82 ;
@@ -1384,19 +1335,17 @@ ischart:Carnian
         "carn"@sv ,
         "卡尼期"@zh ;
     skos:broader ischart:UpperTriassic ;
-    skos:definition "A time period from 237 to 227.3 million years ago" ;
+    skos:definition "A time period from 237 to 227 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "t5"^^ischart:ccgmShortCode ;
     skos:prefLabel "Carnian"@en ;
-    time:hasBeginning
-        [
+    time:hasBeginning [
             ischart:inMYA 237 ;
-            skos:note "uncertain" ;
+            skos:note "uncertain"
         ] ;
-    time:hasEnd
-        [
-            ischart:inMYA 227.3 ;
-            skos:note "uncertain" ;
+    time:hasEnd [
+            ischart:inMYA 227 ;
+            skos:note "uncertain"
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 68 ;
@@ -1434,15 +1383,11 @@ ischart:Cenomanian
     skos:inScheme cs: ;
     skos:notation "k1"^^ischart:ccgmShortCode ;
     skos:prefLabel "Cenomanian"@en ;
-    time:hasBeginning
-        [
-            ischart:inMYA 100.5 ;
-            sdo:marginOfError 0.1 ;
+    time:hasBeginning [
+            ischart:inMYA 100.5
         ] ;
-    time:hasEnd
-        [
-            ischart:inMYA 93.9 ;
-            sdo:marginOfError 0.2 ;
+    time:hasEnd [
+            ischart:inMYA 93.9
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 41 ;
@@ -1480,15 +1425,13 @@ ischart:Changhsingian
     skos:inScheme cs: ;
     skos:notation "p9"^^ischart:ccgmShortCode ;
     skos:prefLabel "Changhsingian"@en ;
-    time:hasBeginning
-        [
+    time:hasBeginning [
             ischart:inMYA 254.14 ;
-            sdo:marginOfError 0.07 ;
+            sdo:marginOfError 0.07
         ] ;
-    time:hasEnd
-        [
+    time:hasEnd [
             ischart:inMYA 251.902 ;
-            sdo:marginOfError 0.024 ;
+            sdo:marginOfError 0.024
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 79 ;
@@ -1522,17 +1465,15 @@ ischart:Chattian
         "chatt"@sv ,
         "恰特期"@zh ;
     skos:broader ischart:Oligocene ;
-    skos:definition "A time period from 27.30 to 23.04 million years ago" ;
+    skos:definition "A time period from 27.82 to 23.03 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "e9"^^ischart:ccgmShortCode ;
     skos:prefLabel "Chattian"@en ;
-    time:hasBeginning
-        [
-            ischart:inMYA 27.30 ;
+    time:hasBeginning [
+            ischart:inMYA 27.82
         ] ;
-    time:hasEnd
-        [
-            ischart:inMYA 23.04 ;
+    time:hasEnd [
+            ischart:inMYA 23.03
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 22 ;
@@ -1549,13 +1490,11 @@ ischart:Chibanian
     skos:inScheme cs: ;
     skos:notation "q3"^^ischart:ccgmShortCode ;
     skos:prefLabel "Chibanian"@en ;
-    time:hasBeginning
-        [
-            ischart:inMYA 0.774 ;
+    time:hasBeginning [
+            ischart:inMYA 0.774
         ] ;
-    time:hasEnd
-        [
-            ischart:inMYA 0.129 ;
+    time:hasEnd [
+            ischart:inMYA 0.129
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 6 ;
@@ -1589,19 +1528,17 @@ ischart:Coniacian
         "coniac"@sv ,
         "科尼亚克期"@zh ;
     skos:broader ischart:UpperCretaceous ;
-    skos:definition "A time period from 89.8 to 85.7 million years ago" ;
+    skos:definition "A time period from 89.8 to 86.3 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "k3"^^ischart:ccgmShortCode ;
     skos:prefLabel "Coniacian"@en ;
-    time:hasBeginning
-        [
+    time:hasBeginning [
             ischart:inMYA 89.8 ;
-            sdo:marginOfError 0.3 ;
+            sdo:marginOfError 0.3
         ] ;
-    time:hasEnd
-        [
-            ischart:inMYA 85.7 ;
-            sdo:marginOfError 0.2 ;
+    time:hasEnd [
+            ischart:inMYA 86.3 ;
+            sdo:marginOfError 0.5
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 39 ;
@@ -1638,15 +1575,13 @@ ischart:Cryogenian
     skos:inScheme cs: ;
     skos:notation "NP2"^^ischart:ccgmShortCode ;
     skos:prefLabel "Cryogenian"@en ;
-    time:hasBeginning
-        [
+    time:hasBeginning [
             ischart:inMYA 720 ;
-            skos:note "uncertain" ;
+            skos:note "uncertain"
         ] ;
-    time:hasEnd
-        [
+    time:hasEnd [
             ischart:inMYA 635 ;
-            skos:note "uncertain" ;
+            skos:note "uncertain"
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 159 ;
@@ -1680,17 +1615,15 @@ ischart:Danian
         "dan"@sv ,
         "丹麦期"@zh ;
     skos:broader ischart:Paleocene ;
-    skos:definition "A time period from 66.00 to 61.66 million years ago" ;
+    skos:definition "A time period from 66.0 to 61.6 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "e1"^^ischart:ccgmShortCode ;
     skos:prefLabel "Danian"@en ;
-    time:hasBeginning
-        [
-            ischart:inMYA 66.00 ;
+    time:hasBeginning [
+            ischart:inMYA 66.0
         ] ;
-    time:hasEnd
-        [
-            ischart:inMYA 61.66 ;
+    time:hasEnd [
+            ischart:inMYA 61.6
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 33 ;
@@ -1724,19 +1657,17 @@ ischart:Dapingian
         "daping"@sv ,
         "大坪期"@zh ;
     skos:broader ischart:MiddleOrdovician ;
-    skos:definition "A time period from 471.3 to 469.4 million years ago" ;
+    skos:definition "A time period from 470.0 to 467.3 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "o3"^^ischart:ccgmShortCode ;
     skos:prefLabel "Dapingian"@en ;
-    time:hasBeginning
-        [
-            ischart:inMYA 471.3 ;
-            sdo:marginOfError 1.4 ;
+    time:hasBeginning [
+            ischart:inMYA 470.0 ;
+            sdo:marginOfError 1.4
         ] ;
-    time:hasEnd
-        [
-            ischart:inMYA 469.4 ;
-            sdo:marginOfError 0.9 ;
+    time:hasEnd [
+            ischart:inMYA 467.3 ;
+            sdo:marginOfError 1.1
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 136 ;
@@ -1770,19 +1701,17 @@ ischart:Darriwilian
         "darriwil"@sv ,
         "达瑞威尔期"@zh ;
     skos:broader ischart:MiddleOrdovician ;
-    skos:definition "A time period from 469.4 to 458.2 million years ago" ;
+    skos:definition "A time period from 467.3 to 458.4 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "o4"^^ischart:ccgmShortCode ;
     skos:prefLabel "Darriwilian"@en ;
-    time:hasBeginning
-        [
-            ischart:inMYA 469.4 ;
-            sdo:marginOfError 0.9 ;
+    time:hasBeginning [
+            ischart:inMYA 467.3 ;
+            sdo:marginOfError 1.1
         ] ;
-    time:hasEnd
-        [
-            ischart:inMYA 458.2 ;
-            sdo:marginOfError 0.7 ;
+    time:hasEnd [
+            ischart:inMYA 458.4 ;
+            sdo:marginOfError 0.9
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 135 ;
@@ -1820,15 +1749,13 @@ ischart:Drumian
     skos:inScheme cs: ;
     skos:notation "ep6"^^ischart:ccgmShortCode ;
     skos:prefLabel "Drumian"@en ;
-    time:hasBeginning
-        [
+    time:hasBeginning [
             ischart:inMYA 504.5 ;
-            skos:note "uncertain" ;
+            skos:note "uncertain"
         ] ;
-    time:hasEnd
-        [
+    time:hasEnd [
             ischart:inMYA 500.5 ;
-            skos:note "uncertain" ;
+            skos:note "uncertain"
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 147 ;
@@ -1866,13 +1793,11 @@ ischart:Ectasian
     skos:inScheme cs: ;
     skos:notation "MP2"^^ischart:ccgmShortCode ;
     skos:prefLabel "Ectasian"@en ;
-    time:hasBeginning
-        [
-            ischart:inMYA 1400 ;
+    time:hasBeginning [
+            ischart:inMYA 1400
         ] ;
-    time:hasEnd
-        [
-            ischart:inMYA 1200 ;
+    time:hasEnd [
+            ischart:inMYA 1200
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 163 ;
@@ -1910,15 +1835,13 @@ ischart:Ediacaran
     skos:inScheme cs: ;
     skos:notation "NP3"^^ischart:ccgmShortCode ;
     skos:prefLabel "Ediacaran"@en ;
-    time:hasBeginning
-        [
+    time:hasBeginning [
             ischart:inMYA 635 ;
-            skos:note "uncertain" ;
+            skos:note "uncertain"
         ] ;
-    time:hasEnd
-        [
+    time:hasEnd [
             ischart:inMYA 538.8 ;
-            sdo:marginOfError 0.6 ;
+            sdo:marginOfError 0.2
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 158 ;
@@ -1952,19 +1875,17 @@ ischart:Eifelian
         "eifel"@sv ,
         "艾菲尔期"@zh ;
     skos:broader ischart:MiddleDevonian ;
-    skos:definition "A time period from 393.47 to 387.95 million years ago" ;
+    skos:definition "A time period from 393.3 to 387.7 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "d4"^^ischart:ccgmShortCode ;
     skos:prefLabel "Eifelian"@en ;
-    time:hasBeginning
-        [
-            ischart:inMYA 393.47 ;
-            sdo:marginOfError 0.99 ;
+    time:hasBeginning [
+            ischart:inMYA 393.3 ;
+            sdo:marginOfError 1.2
         ] ;
-    time:hasEnd
-        [
-            ischart:inMYA 387.95 ;
-            sdo:marginOfError 1.04 ;
+    time:hasEnd [
+            ischart:inMYA 387.7 ;
+            sdo:marginOfError 0.8
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 112 ;
@@ -1998,19 +1919,17 @@ ischart:Emsian
         "ems"@sv ,
         "艾姆斯期"@zh ;
     skos:broader ischart:LowerDevonian ;
-    skos:definition "A time period from 410.62 to 393.47 million years ago" ;
+    skos:definition "A time period from 407.6 to 393.3 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "d3"^^ischart:ccgmShortCode ;
     skos:prefLabel "Emsian"@en ;
-    time:hasBeginning
-        [
-            ischart:inMYA 410.62 ;
-            sdo:marginOfError 1.95 ;
+    time:hasBeginning [
+            ischart:inMYA 407.6 ;
+            sdo:marginOfError 2.6
         ] ;
-    time:hasEnd
-        [
-            ischart:inMYA 393.47 ;
-            sdo:marginOfError 0.99 ;
+    time:hasEnd [
+            ischart:inMYA 393.3 ;
+            sdo:marginOfError 1.2
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 114 ;
@@ -2050,14 +1969,12 @@ ischart:Eoarchean
     skos:inScheme cs: ;
     skos:notation "EA"^^ischart:ccgmShortCode ;
     skos:prefLabel "Eoarchean"@en ;
-    time:hasBeginning
-        [
+    time:hasBeginning [
             ischart:inMYA 4031 ;
-            sdo:marginOfError 3 ;
+            sdo:marginOfError 3
         ] ;
-    time:hasEnd
-        [
-            ischart:inMYA 3600 ;
+    time:hasEnd [
+            ischart:inMYA 3600
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 176 ;
@@ -2091,19 +2008,17 @@ ischart:Famennian
         "famenn"@sv ,
         "法门期"@zh ;
     skos:broader ischart:UpperDevonian ;
-    skos:definition "A time period from 372.15 to 358.86 million years ago" ;
+    skos:definition "A time period from 372.2 to 358.9 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "d7"^^ischart:ccgmShortCode ;
     skos:prefLabel "Famennian"@en ;
-    time:hasBeginning
-        [
-            ischart:inMYA 372.15 ;
-            sdo:marginOfError 0.46 ;
+    time:hasBeginning [
+            ischart:inMYA 372.2 ;
+            sdo:marginOfError 1.6
         ] ;
-    time:hasEnd
-        [
-            ischart:inMYA 358.86 ;
-            sdo:marginOfError 0.19 ;
+    time:hasEnd [
+            ischart:inMYA 358.9 ;
+            sdo:marginOfError 0.4
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 108 ;
@@ -2136,19 +2051,17 @@ ischart:Floian
         "flo"@sv ,
         "弗洛期"@zh ;
     skos:broader ischart:LowerOrdovician ;
-    skos:definition "A time period from 477.1 to 471.3 million years ago" ;
+    skos:definition "A time period from 477.7 to 470.0 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "o2"^^ischart:ccgmShortCode ;
     skos:prefLabel "Floian"@en ;
-    time:hasBeginning
-        [
-            ischart:inMYA 477.1 ;
-            sdo:marginOfError 1.2 ;
+    time:hasBeginning [
+            ischart:inMYA 477.7 ;
+            sdo:marginOfError 1.4
         ] ;
-    time:hasEnd
-        [
-            ischart:inMYA 471.3 ;
-            sdo:marginOfError 1.4 ;
+    time:hasEnd [
+            ischart:inMYA 470.0 ;
+            sdo:marginOfError 1.4
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 138 ;
@@ -2182,19 +2095,17 @@ ischart:Fortunian
         "fortun"@sv ,
         "好运期"@zh ;
     skos:broader ischart:Terreneuvian ;
-    skos:definition "A time period from 538.8 to 529.0 million years ago" ;
+    skos:definition "A time period from 538.8 to 529 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "ep1"^^ischart:ccgmShortCode ;
     skos:prefLabel "Fortunian"@en ;
-    time:hasBeginning
-        [
+    time:hasBeginning [
             ischart:inMYA 538.8 ;
-            sdo:marginOfError 0.6 ;
+            sdo:marginOfError 0.2
         ] ;
-    time:hasEnd
-        [
-            ischart:inMYA 529.0 ;
-            skos:note "uncertain" ;
+    time:hasEnd [
+            ischart:inMYA 529 ;
+            skos:note "uncertain"
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 155 ;
@@ -2228,19 +2139,17 @@ ischart:Frasnian
         "frasn"@sv ,
         "弗拉斯期"@zh ;
     skos:broader ischart:UpperDevonian ;
-    skos:definition "A time period from 382.31 to 372.15 million years ago" ;
+    skos:definition "A time period from 382.7 to 372.2 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "d6"^^ischart:ccgmShortCode ;
     skos:prefLabel "Frasnian"@en ;
-    time:hasBeginning
-        [
-            ischart:inMYA 382.31 ;
-            sdo:marginOfError 1.36 ;
+    time:hasBeginning [
+            ischart:inMYA 382.7 ;
+            sdo:marginOfError 1.6
         ] ;
-    time:hasEnd
-        [
-            ischart:inMYA 372.15 ;
-            sdo:marginOfError 0.46 ;
+    time:hasEnd [
+            ischart:inMYA 372.2 ;
+            sdo:marginOfError 1.6
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 109 ;
@@ -2273,17 +2182,15 @@ ischart:Gelasian
         "gelas"@sv ,
         "格拉斯期"@zh ;
     skos:broader ischart:Pleistocene ;
-    skos:definition "A time period from 2.58 to 1.80 million years ago" ;
+    skos:definition "A time period from 2.58 to 1.8 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "q1"^^ischart:ccgmShortCode ;
     skos:prefLabel "Gelasian"@en ;
-    time:hasBeginning
-        [
-            ischart:inMYA 2.58 ;
+    time:hasBeginning [
+            ischart:inMYA 2.58
         ] ;
-    time:hasEnd
-        [
-            ischart:inMYA 1.80 ;
+    time:hasEnd [
+            ischart:inMYA 1.8
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 8 ;
@@ -2317,19 +2224,17 @@ ischart:Givetian
         "givet"@sv ,
         "吉维特期"@zh ;
     skos:broader ischart:MiddleDevonian ;
-    skos:definition "A time period from 387.95 to 382.31 million years ago" ;
+    skos:definition "A time period from 387.7 to 382.7 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "d5"^^ischart:ccgmShortCode ;
     skos:prefLabel "Givetian"@en ;
-    time:hasBeginning
-        [
-            ischart:inMYA 387.95 ;
-            sdo:marginOfError 1.04 ;
+    time:hasBeginning [
+            ischart:inMYA 387.7 ;
+            sdo:marginOfError 0.8
         ] ;
-    time:hasEnd
-        [
-            ischart:inMYA 382.31 ;
-            sdo:marginOfError 1.36 ;
+    time:hasEnd [
+            ischart:inMYA 382.7 ;
+            sdo:marginOfError 1.6
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 111 ;
@@ -2363,19 +2268,17 @@ ischart:Gorstian
         "gorst"@sv ,
         "格斯特期"@zh ;
     skos:broader ischart:Ludlow ;
-    skos:definition "A time period from 426.7 to 425.0 million years ago" ;
+    skos:definition "A time period from 427.4 to 425.6 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "s6"^^ischart:ccgmShortCode ;
     skos:prefLabel "Gorstian"@en ;
-    time:hasBeginning
-        [
-            ischart:inMYA 426.7 ;
-            sdo:marginOfError 1.5 ;
+    time:hasBeginning [
+            ischart:inMYA 427.4 ;
+            sdo:marginOfError 0.5
         ] ;
-    time:hasEnd
-        [
-            ischart:inMYA 425.0 ;
-            sdo:marginOfError 1.5 ;
+    time:hasEnd [
+            ischart:inMYA 425.6 ;
+            sdo:marginOfError 0.9
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 121 ;
@@ -2392,13 +2295,11 @@ ischart:Greenlandian
     skos:inScheme cs: ;
     skos:notation "q5"^^ischart:ccgmShortCode ;
     skos:prefLabel "Greenlandian"@en ;
-    time:hasBeginning
-        [
-            ischart:inMYA 0.0117 ;
+    time:hasBeginning [
+            ischart:inMYA 0.0117
         ] ;
-    time:hasEnd
-        [
-            ischart:inMYA 0.0082 ;
+    time:hasEnd [
+            ischart:inMYA 0.0082
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 3 ;
@@ -2432,19 +2333,17 @@ ischart:Guzhangian
         "guzhang"@sv ,
         "古丈期"@zh ;
     skos:broader ischart:Miaolingian ;
-    skos:definition "A time period from 500.5 to 497.0 million years ago" ;
+    skos:definition "A time period from 500.5 to 497 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "ep7"^^ischart:ccgmShortCode ;
     skos:prefLabel "Guzhangian"@en ;
-    time:hasBeginning
-        [
+    time:hasBeginning [
             ischart:inMYA 500.5 ;
-            skos:note "uncertain" ;
+            skos:note "uncertain"
         ] ;
-    time:hasEnd
-        [
-            ischart:inMYA 497.0 ;
-            skos:note "uncertain" ;
+    time:hasEnd [
+            ischart:inMYA 497 ;
+            skos:note "uncertain"
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 146 ;
@@ -2481,15 +2380,13 @@ ischart:Gzhelian
     skos:inScheme cs: ;
     skos:notation "c7"^^ischart:ccgmShortCode ;
     skos:prefLabel "Gzhelian"@en ;
-    time:hasBeginning
-        [
+    time:hasBeginning [
             ischart:inMYA 303.7 ;
-            sdo:marginOfError 0.1 ;
+            sdo:marginOfError 0.1
         ] ;
-    time:hasEnd
-        [
+    time:hasEnd [
             ischart:inMYA 298.9 ;
-            sdo:marginOfError 0.15 ;
+            sdo:marginOfError 0.15
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 92 ;
@@ -2526,14 +2423,12 @@ ischart:Hadean
     skos:inScheme cs: ;
     skos:notation "HA"^^ischart:ccgmShortCode ;
     skos:prefLabel "Hadean"@en ;
-    time:hasBeginning
-        [
-            ischart:inMYA 4567 ;
+    time:hasBeginning [
+            ischart:inMYA 4567
         ] ;
-    time:hasEnd
-        [
+    time:hasEnd [
             ischart:inMYA 4031 ;
-            sdo:marginOfError 3 ;
+            sdo:marginOfError 3
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 177 ;
@@ -2571,14 +2466,12 @@ ischart:Hauterivian
     skos:inScheme cs: ;
     skos:notation "b3"^^ischart:ccgmShortCode ;
     skos:prefLabel "Hauterivian"@en ;
-    time:hasBeginning
-        [
+    time:hasBeginning [
             ischart:inMYA 132.6 ;
-            sdo:marginOfError 0.6 ;
+            skos:note "uncertain"
         ] ;
-    time:hasEnd
-        [
-            ischart:inMYA 125.77 ;
+    time:hasEnd [
+            ischart:inMYA 125.77
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 46 ;
@@ -2616,15 +2509,13 @@ ischart:Hettangian
     skos:inScheme cs: ;
     skos:notation "I1"^^ischart:ccgmShortCode ;
     skos:prefLabel "Hettangian"@en ;
-    time:hasBeginning
-        [
+    time:hasBeginning [
             ischart:inMYA 201.4 ;
-            sdo:marginOfError 0.2 ;
+            sdo:marginOfError 0.2
         ] ;
-    time:hasEnd
-        [
+    time:hasEnd [
             ischart:inMYA 199.5 ;
-            sdo:marginOfError 0.3 ;
+            sdo:marginOfError 0.3
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 63 ;
@@ -2658,19 +2549,17 @@ ischart:Hirnantian
         "hirnant"@sv ,
         "赫南特期"@zh ;
     skos:broader ischart:UpperOrdovician ;
-    skos:definition "A time period from 445.2 to 443.1 million years ago" ;
+    skos:definition "A time period from 445.2 to 443.8 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "o7"^^ischart:ccgmShortCode ;
     skos:prefLabel "Hirnantian"@en ;
-    time:hasBeginning
-        [
+    time:hasBeginning [
             ischart:inMYA 445.2 ;
-            sdo:marginOfError 0.9 ;
+            sdo:marginOfError 1.4
         ] ;
-    time:hasEnd
-        [
-            ischart:inMYA 443.1 ;
-            sdo:marginOfError 1.0 ;
+    time:hasEnd [
+            ischart:inMYA 443.8 ;
+            sdo:marginOfError 1.5
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 131 ;
@@ -2704,19 +2593,17 @@ ischart:Homerian
         "homer"@sv ,
         "侯默期"@zh ;
     skos:broader ischart:Wenlock ;
-    skos:definition "A time period from 430.6 to 426.7 million years ago" ;
+    skos:definition "A time period from 430.5 to 427.4 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "s5"^^ischart:ccgmShortCode ;
     skos:prefLabel "Homerian"@en ;
-    time:hasBeginning
-        [
-            ischart:inMYA 430.6 ;
-            sdo:marginOfError 1.3 ;
+    time:hasBeginning [
+            ischart:inMYA 430.5 ;
+            sdo:marginOfError 0.7
         ] ;
-    time:hasEnd
-        [
-            ischart:inMYA 426.7 ;
-            sdo:marginOfError 1.5 ;
+    time:hasEnd [
+            ischart:inMYA 427.4 ;
+            sdo:marginOfError 0.5
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 123 ;
@@ -2750,18 +2637,16 @@ ischart:Induan
         "indu"@sv ,
         "印度期"@zh ;
     skos:broader ischart:LowerTriassic ;
-    skos:definition "A time period from 251.902 to 249.9 million years ago" ;
+    skos:definition "A time period from 251.902 to 251.2 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "t1"^^ischart:ccgmShortCode ;
     skos:prefLabel "Induan"@en ;
-    time:hasBeginning
-        [
+    time:hasBeginning [
             ischart:inMYA 251.902 ;
-            sdo:marginOfError 0.024 ;
+            sdo:marginOfError 0.024
         ] ;
-    time:hasEnd
-        [
-            ischart:inMYA 249.9 ;
+    time:hasEnd [
+            ischart:inMYA 251.2
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 74 ;
@@ -2775,19 +2660,17 @@ ischart:Jiangshanian
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel "江山期"@zh ;
     skos:broader ischart:Furongian ;
-    skos:definition "A time period from 494.2 to 491.0 million years ago" ;
+    skos:definition "A time period from 494 to 489.5 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "ep9"^^ischart:ccgmShortCode ;
     skos:prefLabel "Jiangshanian"@en ;
-    time:hasBeginning
-        [
-            ischart:inMYA 494.2 ;
-            skos:note "uncertain" ;
+    time:hasBeginning [
+            ischart:inMYA 494 ;
+            skos:note "uncertain"
         ] ;
-    time:hasEnd
-        [
-            ischart:inMYA 491.0 ;
-            skos:note "uncertain" ;
+    time:hasEnd [
+            ischart:inMYA 489.5 ;
+            skos:note "uncertain"
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 143 ;
@@ -2824,15 +2707,13 @@ ischart:Kasimovian
     skos:inScheme cs: ;
     skos:notation "c6"^^ischart:ccgmShortCode ;
     skos:prefLabel "Kasimovian"@en ;
-    time:hasBeginning
-        [
+    time:hasBeginning [
             ischart:inMYA 307.0 ;
-            sdo:marginOfError 0.1 ;
+            sdo:marginOfError 0.1
         ] ;
-    time:hasEnd
-        [
+    time:hasEnd [
             ischart:inMYA 303.7 ;
-            sdo:marginOfError 0.1 ;
+            sdo:marginOfError 0.1
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 93 ;
@@ -2866,19 +2747,17 @@ ischart:Katian
         "kat"@sv ,
         "凯迪期"@zh ;
     skos:broader ischart:UpperOrdovician ;
-    skos:definition "A time period from 452.8 to 445.2 million years ago" ;
+    skos:definition "A time period from 453.0 to 445.2 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "o6"^^ischart:ccgmShortCode ;
     skos:prefLabel "Katian"@en ;
-    time:hasBeginning
-        [
-            ischart:inMYA 452.8 ;
-            sdo:marginOfError 0.7 ;
+    time:hasBeginning [
+            ischart:inMYA 453.0 ;
+            sdo:marginOfError 0.7
         ] ;
-    time:hasEnd
-        [
+    time:hasEnd [
             ischart:inMYA 445.2 ;
-            sdo:marginOfError 0.9 ;
+            sdo:marginOfError 1.4
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 132 ;
@@ -2916,15 +2795,13 @@ ischart:Kimmeridgian
     skos:inScheme cs: ;
     skos:notation "j6"^^ischart:ccgmShortCode ;
     skos:prefLabel "Kimmeridgian"@en ;
-    time:hasBeginning
-        [
+    time:hasBeginning [
             ischart:inMYA 154.8 ;
-            sdo:marginOfError 0.8 ;
+            sdo:marginOfError 0.8
         ] ;
-    time:hasEnd
-        [
+    time:hasEnd [
             ischart:inMYA 149.2 ;
-            sdo:marginOfError 0.7 ;
+            sdo:marginOfError 0.7
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 52 ;
@@ -2957,19 +2834,17 @@ ischart:Kungurian
         "kungur"@sv ,
         "孔古尔期"@zh ;
     skos:broader ischart:Cisuralian ;
-    skos:definition "A time period from 283.3 to 274.4 million years ago" ;
+    skos:definition "A time period from 283.5 to 273.01 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "p4"^^ischart:ccgmShortCode ;
     skos:prefLabel "Kungurian"@en ;
-    time:hasBeginning
-        [
-            ischart:inMYA 283.3 ;
-            sdo:marginOfError 0.4 ;
+    time:hasBeginning [
+            ischart:inMYA 283.5 ;
+            sdo:marginOfError 0.6
         ] ;
-    time:hasEnd
-        [
-            ischart:inMYA 274.4 ;
-            sdo:marginOfError 0.4 ;
+    time:hasEnd [
+            ischart:inMYA 273.01 ;
+            sdo:marginOfError 0.14
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 86 ;
@@ -3003,19 +2878,17 @@ ischart:Ladinian
         "ladin"@sv ,
         "拉迪尼亚期"@zh ;
     skos:broader ischart:MiddleTriassic ;
-    skos:definition "A time period from 241.464 to 237 million years ago" ;
+    skos:definition "A time period from 242 to 237 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "t4"^^ischart:ccgmShortCode ;
     skos:prefLabel "Ladinian"@en ;
-    time:hasBeginning
-        [
-            ischart:inMYA 241.464 ;
-            sdo:marginOfError 0.28 ;
+    time:hasBeginning [
+            ischart:inMYA 242 ;
+            skos:note "uncertain"
         ] ;
-    time:hasEnd
-        [
+    time:hasEnd [
             ischart:inMYA 237 ;
-            skos:note "uncertain" ;
+            skos:note "uncertain"
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 70 ;
@@ -3053,13 +2926,11 @@ ischart:Langhian
     skos:inScheme cs: ;
     skos:notation "n3"^^ischart:ccgmShortCode ;
     skos:prefLabel "Langhian"@en ;
-    time:hasBeginning
-        [
-            ischart:inMYA 15.98 ;
+    time:hasBeginning [
+            ischart:inMYA 15.98
         ] ;
-    time:hasEnd
-        [
-            ischart:inMYA 13.82 ;
+    time:hasEnd [
+            ischart:inMYA 13.82
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 17 ;
@@ -3093,19 +2964,17 @@ ischart:Lochkovian
         "lochkov"@sv ,
         "洛赫科夫期"@zh ;
     skos:broader ischart:LowerDevonian ;
-    skos:definition "A time period from 419.62 to 413.02 million years ago" ;
+    skos:definition "A time period from 419.2 to 410.8 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "d1"^^ischart:ccgmShortCode ;
     skos:prefLabel "Lochkovian"@en ;
-    time:hasBeginning
-        [
-            ischart:inMYA 419.62 ;
-            sdo:marginOfError 1.36 ;
+    time:hasBeginning [
+            ischart:inMYA 419.2 ;
+            sdo:marginOfError 3.2
         ] ;
-    time:hasEnd
-        [
-            ischart:inMYA 413.02 ;
-            sdo:marginOfError 1.91 ;
+    time:hasEnd [
+            ischart:inMYA 410.8 ;
+            sdo:marginOfError 2.8
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 117 ;
@@ -3139,19 +3008,17 @@ ischart:Ludfordian
         "ludford"@sv ,
         "卢德福德期"@zh ;
     skos:broader ischart:Ludlow ;
-    skos:definition "A time period from 425.0 to 422.7 million years ago" ;
+    skos:definition "A time period from 425.6 to 423.0 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "s7"^^ischart:ccgmShortCode ;
     skos:prefLabel "Ludfordian"@en ;
-    time:hasBeginning
-        [
-            ischart:inMYA 425.0 ;
-            sdo:marginOfError 1.5 ;
+    time:hasBeginning [
+            ischart:inMYA 425.6 ;
+            sdo:marginOfError 0.9
         ] ;
-    time:hasEnd
-        [
-            ischart:inMYA 422.7 ;
-            sdo:marginOfError 1.6 ;
+    time:hasEnd [
+            ischart:inMYA 423.0 ;
+            sdo:marginOfError 2.3
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 120 ;
@@ -3185,17 +3052,15 @@ ischart:Lutetian
         "lutet"@sv ,
         "卢台特期"@zh ;
     skos:broader ischart:Eocene ;
-    skos:definition "A time period from 48.07 to 41.03 million years ago" ;
+    skos:definition "A time period from 47.8 to 41.2 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "e5"^^ischart:ccgmShortCode ;
     skos:prefLabel "Lutetian"@en ;
-    time:hasBeginning
-        [
-            ischart:inMYA 48.07 ;
+    time:hasBeginning [
+            ischart:inMYA 47.8
         ] ;
-    time:hasEnd
-        [
-            ischart:inMYA 41.03 ;
+    time:hasEnd [
+            ischart:inMYA 41.2
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 27 ;
@@ -3229,18 +3094,16 @@ ischart:Maastrichtian
         "maastricht"@sv ,
         "马斯特里赫特期"@zh ;
     skos:broader ischart:UpperCretaceous ;
-    skos:definition "A time period from 72.2 to 66.00 million years ago" ;
+    skos:definition "A time period from 72.1 to 66.0 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "k6"^^ischart:ccgmShortCode ;
     skos:prefLabel "Maastrichtian"@en ;
-    time:hasBeginning
-        [
-            ischart:inMYA 72.2 ;
-            sdo:marginOfError 0.2 ;
+    time:hasBeginning [
+            ischart:inMYA 72.1 ;
+            sdo:marginOfError 0.2
         ] ;
-    time:hasEnd
-        [
-            ischart:inMYA 66.00 ;
+    time:hasEnd [
+            ischart:inMYA 66.0
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 36 ;
@@ -3257,13 +3120,11 @@ ischart:Meghalayan
     skos:inScheme cs: ;
     skos:notation "q7"^^ischart:ccgmShortCode ;
     skos:prefLabel "Meghalayan"@en ;
-    time:hasBeginning
-        [
-            ischart:inMYA 0.0042 ;
+    time:hasBeginning [
+            ischart:inMYA 0.0042
         ] ;
-    time:hasEnd
-        [
-            ischart:inMYA 0 ;
+    time:hasEnd [
+            ischart:inMYA 0
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 1 ;
@@ -3303,13 +3164,11 @@ ischart:Mesoarchean
     skos:inScheme cs: ;
     skos:notation "MA"^^ischart:ccgmShortCode ;
     skos:prefLabel "Mesoarchean"@en ;
-    time:hasBeginning
-        [
-            ischart:inMYA 3200 ;
+    time:hasBeginning [
+            ischart:inMYA 3200
         ] ;
-    time:hasEnd
-        [
-            ischart:inMYA 2800 ;
+    time:hasEnd [
+            ischart:inMYA 2800
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 173 ;
@@ -3347,13 +3206,11 @@ ischart:Messinian
     skos:inScheme cs: ;
     skos:notation "n6"^^ischart:ccgmShortCode ;
     skos:prefLabel "Messinian"@en ;
-    time:hasBeginning
-        [
-            ischart:inMYA 7.246 ;
+    time:hasBeginning [
+            ischart:inMYA 7.246
         ] ;
-    time:hasEnd
-        [
-            ischart:inMYA 5.333 ;
+    time:hasEnd [
+            ischart:inMYA 5.333
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 14 ;
@@ -3390,15 +3247,13 @@ ischart:Moscovian
     skos:inScheme cs: ;
     skos:notation "c5"^^ischart:ccgmShortCode ;
     skos:prefLabel "Moscovian"@en ;
-    time:hasBeginning
-        [
+    time:hasBeginning [
             ischart:inMYA 315.2 ;
-            sdo:marginOfError 0.2 ;
+            sdo:marginOfError 0.2
         ] ;
-    time:hasEnd
-        [
+    time:hasEnd [
             ischart:inMYA 307.0 ;
-            sdo:marginOfError 0.1 ;
+            sdo:marginOfError 0.1
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 96 ;
@@ -3438,13 +3293,11 @@ ischart:Neoarchean
     skos:inScheme cs: ;
     skos:notation "NA"^^ischart:ccgmShortCode ;
     skos:prefLabel "Neoarchean"@en ;
-    time:hasBeginning
-        [
-            ischart:inMYA 2800 ;
+    time:hasBeginning [
+            ischart:inMYA 2800
         ] ;
-    time:hasEnd
-        [
-            ischart:inMYA 2500 ;
+    time:hasEnd [
+            ischart:inMYA 2500
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 172 ;
@@ -3477,19 +3330,17 @@ ischart:Norian
         "nor"@sv ,
         "诺利克期"@zh ;
     skos:broader ischart:UpperTriassic ;
-    skos:definition "A time period from 227.3 to 205.7 million years ago" ;
+    skos:definition "A time period from 227 to 208.5 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "t6"^^ischart:ccgmShortCode ;
     skos:prefLabel "Norian"@en ;
-    time:hasBeginning
-        [
-            ischart:inMYA 227.3 ;
-            skos:note "uncertain" ;
+    time:hasBeginning [
+            ischart:inMYA 227 ;
+            skos:note "uncertain"
         ] ;
-    time:hasEnd
-        [
-            ischart:inMYA 205.7 ;
-            skos:note "uncertain" ;
+    time:hasEnd [
+            ischart:inMYA 208.5 ;
+            skos:note "uncertain"
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 67 ;
@@ -3506,13 +3357,11 @@ ischart:Northgrippian
     skos:inScheme cs: ;
     skos:notation "q6"^^ischart:ccgmShortCode ;
     skos:prefLabel "Northgrippian"@en ;
-    time:hasBeginning
-        [
-            ischart:inMYA 0.0082 ;
+    time:hasBeginning [
+            ischart:inMYA 0.0082
         ] ;
-    time:hasEnd
-        [
-            ischart:inMYA 0.0042 ;
+    time:hasEnd [
+            ischart:inMYA 0.0042
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 2 ;
@@ -3545,17 +3394,15 @@ ischart:Olenekian
         "olenek"@sv ,
         "奥伦尼克期"@zh ;
     skos:broader ischart:LowerTriassic ;
-    skos:definition "A time period from 246.7 to 249.9 million years ago" ;
+    skos:definition "A time period from 247.2 to 251.2 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "t2"^^ischart:ccgmShortCode ;
     skos:prefLabel "Olenekian"@en ;
-    time:hasBeginning
-        [
-            ischart:inMYA 249.9 ;
+    time:hasBeginning [
+            ischart:inMYA 251.2
         ] ;
-    time:hasEnd
-        [
-            ischart:inMYA 246.7 ;
+    time:hasEnd [
+            ischart:inMYA 247.2
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 73 ;
@@ -3593,13 +3440,11 @@ ischart:Orosirian
     skos:inScheme cs: ;
     skos:notation "PP3"^^ischart:ccgmShortCode ;
     skos:prefLabel "Orosirian"@en ;
-    time:hasBeginning
-        [
-            ischart:inMYA 2050 ;
+    time:hasBeginning [
+            ischart:inMYA 2050
         ] ;
-    time:hasEnd
-        [
-            ischart:inMYA 1800 ;
+    time:hasEnd [
+            ischart:inMYA 1800
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 167 ;
@@ -3636,15 +3481,13 @@ ischart:Oxfordian
     skos:inScheme cs: ;
     skos:notation "j5"^^ischart:ccgmShortCode ;
     skos:prefLabel "Oxfordian"@en ;
-    time:hasBeginning
-        [
+    time:hasBeginning [
             ischart:inMYA 161.5 ;
-            sdo:marginOfError 1.0 ;
+            sdo:marginOfError 1.0
         ] ;
-    time:hasEnd
-        [
+    time:hasEnd [
             ischart:inMYA 154.8 ;
-            sdo:marginOfError 0.8 ;
+            sdo:marginOfError 0.8
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 53 ;
@@ -3678,19 +3521,17 @@ ischart:Paibian
         "paib"@sv ,
         "排碧期"@zh ;
     skos:broader ischart:Furongian ;
-    skos:definition "A time period from 497.0 to 494.2 million years ago" ;
+    skos:definition "A time period from 497 to 494 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "ep8"^^ischart:ccgmShortCode ;
     skos:prefLabel "Paibian"@en ;
-    time:hasBeginning
-        [
-            ischart:inMYA 497.0 ;
-            skos:note "uncertain" ;
+    time:hasBeginning [
+            ischart:inMYA 497 ;
+            skos:note "uncertain"
         ] ;
-    time:hasEnd
-        [
-            ischart:inMYA 494.2 ;
-            skos:note "uncertain" ;
+    time:hasEnd [
+            ischart:inMYA 494 ;
+            skos:note "uncertain"
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 145 ;
@@ -3730,13 +3571,11 @@ ischart:Paleoarchean
     skos:inScheme cs: ;
     skos:notation "PA"^^ischart:ccgmShortCode ;
     skos:prefLabel "Paleoarchean"@en ;
-    time:hasBeginning
-        [
-            ischart:inMYA 3600 ;
+    time:hasBeginning [
+            ischart:inMYA 3600
         ] ;
-    time:hasEnd
-        [
-            ischart:inMYA 3200 ;
+    time:hasEnd [
+            ischart:inMYA 3200
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 174 ;
@@ -3774,13 +3613,11 @@ ischart:Piacenzian
     skos:inScheme cs: ;
     skos:notation "n8"^^ischart:ccgmShortCode ;
     skos:prefLabel "Piacenzian"@en ;
-    time:hasBeginning
-        [
-            ischart:inMYA 3.600 ;
+    time:hasBeginning [
+            ischart:inMYA 3.6
         ] ;
-    time:hasEnd
-        [
-            ischart:inMYA 2.58 ;
+    time:hasEnd [
+            ischart:inMYA 2.58
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 11 ;
@@ -3818,15 +3655,13 @@ ischart:Pliensbachian
     skos:inScheme cs: ;
     skos:notation "I3"^^ischart:ccgmShortCode ;
     skos:prefLabel "Pliensbachian"@en ;
-    time:hasBeginning
-        [
+    time:hasBeginning [
             ischart:inMYA 192.9 ;
-            sdo:marginOfError 0.3 ;
+            sdo:marginOfError 0.3
         ] ;
-    time:hasEnd
-        [
+    time:hasEnd [
             ischart:inMYA 184.2 ;
-            sdo:marginOfError 0.3 ;
+            sdo:marginOfError 0.3
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 61 ;
@@ -3860,19 +3695,17 @@ ischart:Pragian
         "prag"@sv ,
         "布拉格期"@zh ;
     skos:broader ischart:LowerDevonian ;
-    skos:definition "A time period from 413.02 to 410.62 million years ago" ;
+    skos:definition "A time period from 410.8 to 407.6 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "d2"^^ischart:ccgmShortCode ;
     skos:prefLabel "Pragian"@en ;
-    time:hasBeginning
-        [
-            ischart:inMYA 413.02 ;
-            sdo:marginOfError 1.91 ;
+    time:hasBeginning [
+            ischart:inMYA 410.8 ;
+            sdo:marginOfError 2.8
         ] ;
-    time:hasEnd
-        [
-            ischart:inMYA 410.62 ;
-            sdo:marginOfError 1.95 ;
+    time:hasEnd [
+            ischart:inMYA 407.6 ;
+            sdo:marginOfError 2.6
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 115 ;
@@ -3910,13 +3743,11 @@ ischart:Priabonian
     skos:inScheme cs: ;
     skos:notation "e7"^^ischart:ccgmShortCode ;
     skos:prefLabel "Priabonian"@en ;
-    time:hasBeginning
-        [
-            ischart:inMYA 37.71 ;
+    time:hasBeginning [
+            ischart:inMYA 37.71
         ] ;
-    time:hasEnd
-        [
-            ischart:inMYA 33.9 ;
+    time:hasEnd [
+            ischart:inMYA 33.9
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 25 ;
@@ -3949,19 +3780,17 @@ ischart:Rhaetian
         "rät"@sv ,
         "瑞替期"@zh ;
     skos:broader ischart:UpperTriassic ;
-    skos:definition "A time period from 205.7 to 201.4 million years ago" ;
+    skos:definition "A time period from 208.5 to 201.4 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "t7"^^ischart:ccgmShortCode ;
     skos:prefLabel "Rhaetian"@en ;
-    time:hasBeginning
-        [
-            ischart:inMYA 205.7 ;
-            skos:note "uncertain" ;
+    time:hasBeginning [
+            ischart:inMYA 208.5 ;
+            skos:note "uncertain"
         ] ;
-    time:hasEnd
-        [
+    time:hasEnd [
             ischart:inMYA 201.4 ;
-            sdo:marginOfError 0.2 ;
+            sdo:marginOfError 0.2
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 66 ;
@@ -3995,19 +3824,17 @@ ischart:Rhuddanian
         "rhuddan"@sv ,
         "鲁丹期"@zh ;
     skos:broader ischart:Llandovery ;
-    skos:definition "A time period from 443.1 to 440.5 million years ago" ;
+    skos:definition "A time period from 443.8 to 440.8 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "s1"^^ischart:ccgmShortCode ;
     skos:prefLabel "Rhuddanian"@en ;
-    time:hasBeginning
-        [
-            ischart:inMYA 443.1 ;
-            sdo:marginOfError 1.0 ;
+    time:hasBeginning [
+            ischart:inMYA 443.8 ;
+            sdo:marginOfError 1.5
         ] ;
-    time:hasEnd
-        [
-            ischart:inMYA 440.5 ;
-            sdo:marginOfError 1.0 ;
+    time:hasEnd [
+            ischart:inMYA 440.8 ;
+            sdo:marginOfError 1.2
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 129 ;
@@ -4045,13 +3872,11 @@ ischart:Rhyacian
     skos:inScheme cs: ;
     skos:notation "PP2"^^ischart:ccgmShortCode ;
     skos:prefLabel "Rhyacian"@en ;
-    time:hasBeginning
-        [
-            ischart:inMYA 2300 ;
+    time:hasBeginning [
+            ischart:inMYA 2300
         ] ;
-    time:hasEnd
-        [
-            ischart:inMYA 2050 ;
+    time:hasEnd [
+            ischart:inMYA 2050
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 168 ;
@@ -4085,19 +3910,17 @@ ischart:Roadian
         "road"@sv ,
         "罗德期"@zh ;
     skos:broader ischart:Guadalupian ;
-    skos:definition "A time period from 274.4 to 266.9 million years ago" ;
+    skos:definition "A time period from 273.01 to 266.9 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "p5"^^ischart:ccgmShortCode ;
     skos:prefLabel "Roadian"@en ;
-    time:hasBeginning
-        [
-            ischart:inMYA 274.4 ;
-            sdo:marginOfError 0.4 ;
+    time:hasBeginning [
+            ischart:inMYA 273.01 ;
+            sdo:marginOfError 0.14
         ] ;
-    time:hasEnd
-        [
+    time:hasEnd [
             ischart:inMYA 266.9 ;
-            sdo:marginOfError 0.4 ;
+            sdo:marginOfError 0.4
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 85 ;
@@ -4131,17 +3954,15 @@ ischart:Rupelian
         "rupel"@sv ,
         "鲁珀利期"@zh ;
     skos:broader ischart:Oligocene ;
-    skos:definition "A time period from 33.9 to 27.30 million years ago" ;
+    skos:definition "A time period from 33.9 to 27.82 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "e8"^^ischart:ccgmShortCode ;
     skos:prefLabel "Rupelian"@en ;
-    time:hasBeginning
-        [
-            ischart:inMYA 33.9 ;
+    time:hasBeginning [
+            ischart:inMYA 33.9
         ] ;
-    time:hasEnd
-        [
-            ischart:inMYA 27.30 ;
+    time:hasEnd [
+            ischart:inMYA 27.82
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 24 ;
@@ -4175,19 +3996,17 @@ ischart:Sakmarian
         "sakmar"@sv ,
         "萨克马尔期"@zh ;
     skos:broader ischart:Cisuralian ;
-    skos:definition "A time period from 293.52 to 290.1 million years ago" ;
+    skos:definition "A time period from 293.51 to 290.1 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "p2"^^ischart:ccgmShortCode ;
     skos:prefLabel "Sakmarian"@en ;
-    time:hasBeginning
-        [
-            ischart:inMYA 293.52 ;
-            sdo:marginOfError 0.17 ;
+    time:hasBeginning [
+            ischart:inMYA 293.51 ;
+            sdo:marginOfError 0.17
         ] ;
-    time:hasEnd
-        [
+    time:hasEnd [
             ischart:inMYA 290.1 ;
-            sdo:marginOfError 0.26 ;
+            sdo:marginOfError 0.26
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 88 ;
@@ -4221,19 +4040,17 @@ ischart:Sandbian
         "sandby"@sv ,
         "桑比期"@zh ;
     skos:broader ischart:UpperOrdovician ;
-    skos:definition "A time period from 458.2 to 452.8 million years ago" ;
+    skos:definition "A time period from 458.4 to 453.0 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "o5"^^ischart:ccgmShortCode ;
     skos:prefLabel "Sandbian"@en ;
-    time:hasBeginning
-        [
-            ischart:inMYA 458.2 ;
-            sdo:marginOfError 0.7 ;
+    time:hasBeginning [
+            ischart:inMYA 458.4 ;
+            sdo:marginOfError 0.9
         ] ;
-    time:hasEnd
-        [
-            ischart:inMYA 452.8 ;
-            sdo:marginOfError 0.7 ;
+    time:hasEnd [
+            ischart:inMYA 453.0 ;
+            sdo:marginOfError 0.7
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 133 ;
@@ -4267,19 +4084,17 @@ ischart:Santonian
         "santon"@sv ,
         "桑托期"@zh ;
     skos:broader ischart:UpperCretaceous ;
-    skos:definition "A time period from 85.7 to 83.6 million years ago" ;
+    skos:definition "A time period from 86.3 to 83.6 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "k4"^^ischart:ccgmShortCode ;
     skos:prefLabel "Santonian"@en ;
-    time:hasBeginning
-        [
-            ischart:inMYA 85.7 ;
-            sdo:marginOfError 0.2 ;
+    time:hasBeginning [
+            ischart:inMYA 86.3 ;
+            sdo:marginOfError 0.5
         ] ;
-    time:hasEnd
-        [
+    time:hasEnd [
             ischart:inMYA 83.6 ;
-            sdo:marginOfError 0.2 ;
+            sdo:marginOfError 0.2
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 38 ;
@@ -4313,17 +4128,15 @@ ischart:Selandian
         "seland"@sv ,
         "塞兰特期"@zh ;
     skos:broader ischart:Paleocene ;
-    skos:definition "A time period from 61.66 to 59.24 million years ago" ;
+    skos:definition "A time period from 61.6 to 59.2 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "e2"^^ischart:ccgmShortCode ;
     skos:prefLabel "Selandian"@en ;
-    time:hasBeginning
-        [
-            ischart:inMYA 61.66 ;
+    time:hasBeginning [
+            ischart:inMYA 61.6
         ] ;
-    time:hasEnd
-        [
-            ischart:inMYA 59.24 ;
+    time:hasEnd [
+            ischart:inMYA 59.2
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 31 ;
@@ -4356,19 +4169,17 @@ ischart:Serpukhovian
         "serpukhov"@sv ,
         "谢尔普霍夫期"@zh ;
     skos:broader ischart:UpperMississippian ;
-    skos:definition "A time period from 330.3 to 323.4 million years ago" ;
+    skos:definition "A time period from 330.9 to 323.2 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "c3"^^ischart:ccgmShortCode ;
     skos:prefLabel "Serpukhovian"@en ;
-    time:hasBeginning
-        [
-            ischart:inMYA 330.3 ;
-            sdo:marginOfError 0.4 ;
+    time:hasBeginning [
+            ischart:inMYA 330.9 ;
+            sdo:marginOfError 0.2
         ] ;
-    time:hasEnd
-        [
-            ischart:inMYA 323.4 ;
-            sdo:marginOfError 0.4 ;
+    time:hasEnd [
+            ischart:inMYA 323.2 ;
+            sdo:marginOfError 0.4
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 100 ;
@@ -4406,13 +4217,11 @@ ischart:Serravallian
     skos:inScheme cs: ;
     skos:notation "n4"^^ischart:ccgmShortCode ;
     skos:prefLabel "Serravallian"@en ;
-    time:hasBeginning
-        [
-            ischart:inMYA 13.82 ;
+    time:hasBeginning [
+            ischart:inMYA 13.82
         ] ;
-    time:hasEnd
-        [
-            ischart:inMYA 11.63 ;
+    time:hasEnd [
+            ischart:inMYA 11.63
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 16 ;
@@ -4446,19 +4255,17 @@ ischart:Sheinwoodian
         "sheinwood"@sv ,
         "申伍德期"@zh ;
     skos:broader ischart:Wenlock ;
-    skos:definition "A time period from 432.9 to 430.6 million years ago" ;
+    skos:definition "A time period from 433.4 to 430.5 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "s4"^^ischart:ccgmShortCode ;
     skos:prefLabel "Sheinwoodian"@en ;
-    time:hasBeginning
-        [
-            ischart:inMYA 432.9 ;
-            sdo:marginOfError 1.2 ;
+    time:hasBeginning [
+            ischart:inMYA 433.4 ;
+            sdo:marginOfError 0.8
         ] ;
-    time:hasEnd
-        [
-            ischart:inMYA 430.6 ;
-            sdo:marginOfError 1.3 ;
+    time:hasEnd [
+            ischart:inMYA 430.5 ;
+            sdo:marginOfError 0.7
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 124 ;
@@ -4496,13 +4303,11 @@ ischart:Siderian
     skos:inScheme cs: ;
     skos:notation "PP1"^^ischart:ccgmShortCode ;
     skos:prefLabel "Siderian"@en ;
-    time:hasBeginning
-        [
-            ischart:inMYA 2500 ;
+    time:hasBeginning [
+            ischart:inMYA 2500
         ] ;
-    time:hasEnd
-        [
-            ischart:inMYA 2300 ;
+    time:hasEnd [
+            ischart:inMYA 2300
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 171 ;
@@ -4540,15 +4345,13 @@ ischart:Sinemurian
     skos:inScheme cs: ;
     skos:notation "I2"^^ischart:ccgmShortCode ;
     skos:prefLabel "Sinemurian"@en ;
-    time:hasBeginning
-        [
+    time:hasBeginning [
             ischart:inMYA 199.5 ;
-            sdo:marginOfError 0.3 ;
+            sdo:marginOfError 0.3
         ] ;
-    time:hasEnd
-        [
+    time:hasEnd [
             ischart:inMYA 192.9 ;
-            sdo:marginOfError 0.3 ;
+            sdo:marginOfError 0.3
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 62 ;
@@ -4586,13 +4389,11 @@ ischart:Statherian
     skos:inScheme cs: ;
     skos:notation "PP4"^^ischart:ccgmShortCode ;
     skos:prefLabel "Statherian"@en ;
-    time:hasBeginning
-        [
-            ischart:inMYA 1800 ;
+    time:hasBeginning [
+            ischart:inMYA 1800
         ] ;
-    time:hasEnd
-        [
-            ischart:inMYA 1600 ;
+    time:hasEnd [
+            ischart:inMYA 1600
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 166 ;
@@ -4630,13 +4431,11 @@ ischart:Stenian
     skos:inScheme cs: ;
     skos:notation "MP3"^^ischart:ccgmShortCode ;
     skos:prefLabel "Stenian"@en ;
-    time:hasBeginning
-        [
-            ischart:inMYA 1200 ;
+    time:hasBeginning [
+            ischart:inMYA 1200
         ] ;
-    time:hasEnd
-        [
-            ischart:inMYA 1000 ;
+    time:hasEnd [
+            ischart:inMYA 1000
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 162 ;
@@ -4670,19 +4469,17 @@ ischart:Telychian
         "telych"@sv ,
         "特列奇期"@zh ;
     skos:broader ischart:Llandovery ;
-    skos:definition "A time period from 438.6 to 432.9 million years ago" ;
+    skos:definition "A time period from 438.5 to 433.4 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "s3"^^ischart:ccgmShortCode ;
     skos:prefLabel "Telychian"@en ;
-    time:hasBeginning
-        [
-            ischart:inMYA 438.6 ;
-            sdo:marginOfError 1.0 ;
+    time:hasBeginning [
+            ischart:inMYA 438.5 ;
+            sdo:marginOfError 1.1
         ] ;
-    time:hasEnd
-        [
-            ischart:inMYA 432.9 ;
-            sdo:marginOfError 1.2 ;
+    time:hasEnd [
+            ischart:inMYA 433.4 ;
+            sdo:marginOfError 0.8
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 126 ;
@@ -4716,17 +4513,15 @@ ischart:Thanetian
         "thanet"@sv ,
         "塔内提期"@zh ;
     skos:broader ischart:Paleocene ;
-    skos:definition "A time period from 59.24 to 56.00 million years ago" ;
+    skos:definition "A time period from 59.2 to 56.0 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "e3"^^ischart:ccgmShortCode ;
     skos:prefLabel "Thanetian"@en ;
-    time:hasBeginning
-        [
-            ischart:inMYA 59.24 ;
+    time:hasBeginning [
+            ischart:inMYA 59.2
         ] ;
-    time:hasEnd
-        [
-            ischart:inMYA 56.00 ;
+    time:hasEnd [
+            ischart:inMYA 56.0
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 30 ;
@@ -4759,19 +4554,17 @@ ischart:Tithonian
         "tithon"@sv ,
         "提通期"@zh ;
     skos:broader ischart:UpperJurassic ;
-    skos:definition "A time period from 149.2 to 143.1 million years ago" ;
+    skos:definition "A time period from 149.2 to 145 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "j7"^^ischart:ccgmShortCode ;
     skos:prefLabel "Tithonian"@en ;
-    time:hasBeginning
-        [
+    time:hasBeginning [
             ischart:inMYA 149.2 ;
-            sdo:marginOfError 0.7 ;
+            sdo:marginOfError 0.7
         ] ;
-    time:hasEnd
-        [
-            ischart:inMYA 143.1 ;
-            sdo:marginOfError 0.6 ;
+    time:hasEnd [
+            ischart:inMYA 145 ;
+            skos:note "uncertain"
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 51 ;
@@ -4809,15 +4602,13 @@ ischart:Toarcian
     skos:inScheme cs: ;
     skos:notation "I4"^^ischart:ccgmShortCode ;
     skos:prefLabel "Toarcian"@en ;
-    time:hasBeginning
-        [
+    time:hasBeginning [
             ischart:inMYA 184.2 ;
-            sdo:marginOfError 0.3 ;
+            sdo:marginOfError 0.3
         ] ;
-    time:hasEnd
-        [
+    time:hasEnd [
             ischart:inMYA 174.7 ;
-            sdo:marginOfError 0.8 ;
+            sdo:marginOfError 0.8
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 60 ;
@@ -4855,14 +4646,12 @@ ischart:Tonian
     skos:inScheme cs: ;
     skos:notation "NP1"^^ischart:ccgmShortCode ;
     skos:prefLabel "Tonian"@en ;
-    time:hasBeginning
-        [
-            ischart:inMYA 1000 ;
+    time:hasBeginning [
+            ischart:inMYA 1000
         ] ;
-    time:hasEnd
-        [
+    time:hasEnd [
             ischart:inMYA 720 ;
-            skos:note "uncertain" ;
+            skos:note "uncertain"
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 161 ;
@@ -4900,13 +4689,11 @@ ischart:Tortonian
     skos:inScheme cs: ;
     skos:notation "n5"^^ischart:ccgmShortCode ;
     skos:prefLabel "Tortonian"@en ;
-    time:hasBeginning
-        [
-            ischart:inMYA 11.63 ;
+    time:hasBeginning [
+            ischart:inMYA 11.63
         ] ;
-    time:hasEnd
-        [
-            ischart:inMYA 7.246 ;
+    time:hasEnd [
+            ischart:inMYA 7.246
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 15 ;
@@ -4940,19 +4727,17 @@ ischart:Tournaisian
         "tournas"@sv ,
         "杜内期"@zh ;
     skos:broader ischart:LowerMississippian ;
-    skos:definition "A time period from 358.86 to 346.7 million years ago" ;
+    skos:definition "A time period from 358.9 to 346.7 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "c1"^^ischart:ccgmShortCode ;
     skos:prefLabel "Tournaisian"@en ;
-    time:hasBeginning
-        [
-            ischart:inMYA 358.86 ;
-            sdo:marginOfError 0.19 ;
+    time:hasBeginning [
+            ischart:inMYA 358.9 ;
+            sdo:marginOfError 0.4
         ] ;
-    time:hasEnd
-        [
+    time:hasEnd [
             ischart:inMYA 346.7 ;
-            sdo:marginOfError 0.4 ;
+            sdo:marginOfError 0.4
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 107 ;
@@ -4986,19 +4771,17 @@ ischart:Tremadocian
         "tremadoc"@sv ,
         "特马豆克期"@zh ;
     skos:broader ischart:LowerOrdovician ;
-    skos:definition "A time period from 486.85 to 477.1 million years ago" ;
+    skos:definition "A time period from 485.4 to 477.7 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "o1"^^ischart:ccgmShortCode ;
     skos:prefLabel "Tremadocian"@en ;
-    time:hasBeginning
-        [
-            ischart:inMYA 486.85 ;
-            sdo:marginOfError 1.5 ;
+    time:hasBeginning [
+            ischart:inMYA 485.4 ;
+            sdo:marginOfError 1.9
         ] ;
-    time:hasEnd
-        [
-            ischart:inMYA 477.1 ;
-            sdo:marginOfError 1.2 ;
+    time:hasEnd [
+            ischart:inMYA 477.7 ;
+            sdo:marginOfError 1.4
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 141 ;
@@ -5036,15 +4819,12 @@ ischart:Turonian
     skos:inScheme cs: ;
     skos:notation "k2"^^ischart:ccgmShortCode ;
     skos:prefLabel "Turonian"@en ;
-    time:hasBeginning
-        [
-            ischart:inMYA 93.9 ;
-            sdo:marginOfError 0.2 ;
+    time:hasBeginning [
+            ischart:inMYA 93.9
         ] ;
-    time:hasEnd
-        [
+    time:hasEnd [
             ischart:inMYA 89.8 ;
-            sdo:marginOfError 0.3 ;
+            sdo:marginOfError 0.3
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 40 ;
@@ -5076,14 +4856,12 @@ ischart:UpperPleistocene
     skos:definition "A time period from 0.129 to 0.0117 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "q4"^^ischart:ccgmShortCode ;
-    skos:prefLabel "Late"@en ;
-    time:hasBeginning
-        [
-            ischart:inMYA 0.129 ;
+    skos:prefLabel "Late Pleistocene"@en ;
+    time:hasBeginning [
+            ischart:inMYA 0.129
         ] ;
-    time:hasEnd
-        [
-            ischart:inMYA 0.0117 ;
+    time:hasEnd [
+            ischart:inMYA 0.0117
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 5 ;
@@ -5093,7 +4871,6 @@ ischart:UpperPleistocene
 ischart:Valanginian
     a skos:Concept ;
     gts:rank rank:Age ;
-    gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Валанжин"@bg ,
@@ -5117,19 +4894,17 @@ ischart:Valanginian
         "valangin"@sv ,
         "凡兰吟期"@zh ;
     skos:broader ischart:LowerCretaceous ;
-    skos:definition "A time period from 132.6 to 137.05 million years ago" ;
+    skos:definition "A time period from 132.6 to 139.8 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "b2"^^ischart:ccgmShortCode ;
     skos:prefLabel "Valanginian"@en ;
-    time:hasBeginning
-        [
-            ischart:inMYA 137.05 ;
-            sdo:marginOfError 0.2 ;
+    time:hasBeginning [
+            ischart:inMYA 139.8 ;
+            skos:note "uncertain"
         ] ;
-    time:hasEnd
-        [
+    time:hasEnd [
             ischart:inMYA 132.6 ;
-            sdo:marginOfError 0.6 ;
+            skos:note "uncertain"
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 47 ;
@@ -5163,19 +4938,17 @@ ischart:Visean
         "vis"@sv ,
         "韦宪期"@zh ;
     skos:broader ischart:MiddleMississippian ;
-    skos:definition "A time period from 346.7 to 330.3 million years ago" ;
+    skos:definition "A time period from 346.7 to 330.9 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "c2"^^ischart:ccgmShortCode ;
     skos:prefLabel "Visean"@en ;
-    time:hasBeginning
-        [
+    time:hasBeginning [
             ischart:inMYA 346.7 ;
-            sdo:marginOfError 0.4 ;
+            sdo:marginOfError 0.4
         ] ;
-    time:hasEnd
-        [
-            ischart:inMYA 330.3 ;
-            sdo:marginOfError 0.4 ;
+    time:hasEnd [
+            ischart:inMYA 330.9 ;
+            sdo:marginOfError 0.2
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 103 ;
@@ -5213,15 +4986,13 @@ ischart:Wordian
     skos:inScheme cs: ;
     skos:notation "p6"^^ischart:ccgmShortCode ;
     skos:prefLabel "Wordian"@en ;
-    time:hasBeginning
-        [
+    time:hasBeginning [
             ischart:inMYA 266.9 ;
-            sdo:marginOfError 0.4 ;
+            sdo:marginOfError 0.4
         ] ;
-    time:hasEnd
-        [
+    time:hasEnd [
             ischart:inMYA 264.28 ;
-            sdo:marginOfError 0.16 ;
+            sdo:marginOfError 0.16
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 83 ;
@@ -5259,15 +5030,13 @@ ischart:Wuchiapingian
     skos:inScheme cs: ;
     skos:notation "p8"^^ischart:ccgmShortCode ;
     skos:prefLabel "Wuchiapingian"@en ;
-    time:hasBeginning
-        [
+    time:hasBeginning [
             ischart:inMYA 259.51 ;
-            sdo:marginOfError 0.21 ;
+            sdo:marginOfError 0.21
         ] ;
-    time:hasEnd
-        [
+    time:hasEnd [
             ischart:inMYA 254.14 ;
-            sdo:marginOfError 0.07 ;
+            sdo:marginOfError 0.07
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 81 ;
@@ -5280,19 +5049,17 @@ ischart:Wuliuan
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Miaolingian ;
-    skos:definition "A time period from 506.5 to 504.5 million years ago" ;
+    skos:definition "A time period from 509 to 504.5 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "ep5"^^ischart:ccgmShortCode ;
     skos:prefLabel "Wuliuan"@en ;
-    time:hasBeginning
-        [
-            ischart:inMYA 506.5 ;
-            skos:note "uncertain" ;
+    time:hasBeginning [
+            ischart:inMYA 509 ;
+            skos:note "uncertain"
         ] ;
-    time:hasEnd
-        [
+    time:hasEnd [
             ischart:inMYA 504.5 ;
-            skos:note "uncertain" ;
+            skos:note "uncertain"
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 149 ;
@@ -5326,17 +5093,15 @@ ischart:Ypresian
         "ypres"@sv ,
         "伊普雷斯期"@zh ;
     skos:broader ischart:Eocene ;
-    skos:definition "A time period from 56.00 to 48.07 million years ago" ;
+    skos:definition "A time period from 56.0 to 47.8 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "e4"^^ischart:ccgmShortCode ;
     skos:prefLabel "Ypresian"@en ;
-    time:hasBeginning
-        [
-            ischart:inMYA 56.00 ;
+    time:hasBeginning [
+            ischart:inMYA 56.0
         ] ;
-    time:hasEnd
-        [
-            ischart:inMYA 48.07 ;
+    time:hasEnd [
+            ischart:inMYA 47.8
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 29 ;
@@ -5370,17 +5135,15 @@ ischart:Zanclean
         "zancl"@sv ,
         "赞克勒期"@zh ;
     skos:broader ischart:Pliocene ;
-    skos:definition "A time period from 5.333 to 3.60 million years ago" ;
+    skos:definition "A time period from 5.333 to 3.6 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "n7"^^ischart:ccgmShortCode ;
     skos:prefLabel "Zanclean"@en ;
-    time:hasBeginning
-        [
-            ischart:inMYA 5.333 ;
+    time:hasBeginning [
+            ischart:inMYA 5.333
         ] ;
-    time:hasEnd
-        [
-            ischart:inMYA 3.60 ;
+    time:hasEnd [
+            ischart:inMYA 3.6
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 13 ;
@@ -5396,20 +5159,18 @@ ischart:LowerMississippian
         "前期ミシシッピアン紀"@ja ,
         "早密西西比世"@zh ;
     skos:broader ischart:Mississippian ;
-    skos:definition "A time period from 358.86 to 346.7 million years ago" ;
+    skos:definition "A time period from 358.9 to 346.7 million years ago" ;
     skos:inScheme cs: ;
     skos:narrower ischart:Tournaisian ;
     skos:notation "C1c1"^^ischart:ccgmShortCode ;
     skos:prefLabel "Early Mississippian"@en ;
-    time:hasBeginning
-        [
-            ischart:inMYA 358.86 ;
-            sdo:marginOfError 0.19 ;
+    time:hasBeginning [
+            ischart:inMYA 358.9 ;
+            sdo:marginOfError 0.4
         ] ;
-    time:hasEnd
-        [
+    time:hasEnd [
             ischart:inMYA 346.7 ;
-            sdo:marginOfError 0.4 ;
+            sdo:marginOfError 0.4
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 105 ;
@@ -5425,20 +5186,18 @@ ischart:LowerPennsylvanian
         "前期ペンシルバニア紀"@ja ,
         "早宾夕法尼亚世"@zh ;
     skos:broader ischart:Pennsylvanian ;
-    skos:definition "A time period from 323.4 to 315.2 million years ago" ;
+    skos:definition "A time period from 323.2 to 315.2 million years ago" ;
     skos:inScheme cs: ;
     skos:narrower ischart:Bashkirian ;
     skos:notation "C2c4"^^ischart:ccgmShortCode ;
     skos:prefLabel "Early Pennsylvanian"@en ;
-    time:hasBeginning
-        [
-            ischart:inMYA 323.4 ;
-            sdo:marginOfError 0.4 ;
+    time:hasBeginning [
+            ischart:inMYA 323.2 ;
+            sdo:marginOfError 0.4
         ] ;
-    time:hasEnd
-        [
+    time:hasEnd [
             ischart:inMYA 315.2 ;
-            sdo:marginOfError 0.2 ;
+            sdo:marginOfError 0.2
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 98 ;
@@ -5454,20 +5213,18 @@ ischart:MiddleMississippian
         "中期ミシシッピアン紀"@ja ,
         "中密西西比世"@zh ;
     skos:broader ischart:Mississippian ;
-    skos:definition "A time period from 346.7 to 330.3 million years ago" ;
+    skos:definition "A time period from 346.7 to 330.9 million years ago" ;
     skos:inScheme cs: ;
     skos:narrower ischart:Visean ;
     skos:notation "C1c2"^^ischart:ccgmShortCode ;
     skos:prefLabel "Middle Mississippian"@en ;
-    time:hasBeginning
-        [
+    time:hasBeginning [
             ischart:inMYA 346.7 ;
-            sdo:marginOfError 0.4 ;
+            sdo:marginOfError 0.4
         ] ;
-    time:hasEnd
-        [
-            ischart:inMYA 330.3 ;
-            sdo:marginOfError 0.4 ;
+    time:hasEnd [
+            ischart:inMYA 330.9 ;
+            sdo:marginOfError 0.2
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 102 ;
@@ -5487,15 +5244,13 @@ ischart:MiddlePennsylvanian
     skos:narrower ischart:Moscovian ;
     skos:notation "C2c5"^^ischart:ccgmShortCode ;
     skos:prefLabel "Middle Pennsylvanian"@en ;
-    time:hasBeginning
-        [
+    time:hasBeginning [
             ischart:inMYA 315.2 ;
-            sdo:marginOfError 0.2 ;
+            sdo:marginOfError 0.2
         ] ;
-    time:hasEnd
-        [
+    time:hasEnd [
             ischart:inMYA 307.0 ;
-            sdo:marginOfError 0.1 ;
+            sdo:marginOfError 0.1
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 95 ;
@@ -5531,19 +5286,17 @@ ischart:Pridoli
         "pridoli"@sv ,
         "普里多利世"@zh ;
     skos:broader ischart:Silurian ;
-    skos:definition "A time period from 422.7 to 419.62 million years ago" ;
+    skos:definition "A time period from 423.0 to 419.2 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "S4"^^ischart:ccgmShortCode ;
     skos:prefLabel "Pridoli"@en ;
-    time:hasBeginning
-        [
-            ischart:inMYA 422.7 ;
-            sdo:marginOfError 1.6 ;
+    time:hasBeginning [
+            ischart:inMYA 423.0 ;
+            sdo:marginOfError 2.3
         ] ;
-    time:hasEnd
-        [
-            ischart:inMYA 419.62 ;
-            sdo:marginOfError 1.36 ;
+    time:hasEnd [
+            ischart:inMYA 419.2 ;
+            sdo:marginOfError 3.2
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 119 ;
@@ -5558,20 +5311,18 @@ ischart:UpperMississippian
         "後期ミシシッピアン紀"@ja ,
         "晚密西西比世"@zh ;
     skos:broader ischart:Mississippian ;
-    skos:definition "A time period from 330.3 to 323.4 million years ago" ;
+    skos:definition "A time period from 330.9 to 323.2 million years ago" ;
     skos:inScheme cs: ;
     skos:narrower ischart:Serpukhovian ;
     skos:notation "C1c3"^^ischart:ccgmShortCode ;
     skos:prefLabel "Late Mississippian"@en ;
-    time:hasBeginning
-        [
-            ischart:inMYA 330.3 ;
-            sdo:marginOfError 0.4 ;
+    time:hasBeginning [
+            ischart:inMYA 330.9 ;
+            sdo:marginOfError 0.2
         ] ;
-    time:hasEnd
-        [
-            ischart:inMYA 323.4 ;
-            sdo:marginOfError 0.4 ;
+    time:hasEnd [
+            ischart:inMYA 323.2 ;
+            sdo:marginOfError 0.4
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 101 ;
@@ -5580,26 +5331,6 @@ ischart:UpperMississippian
 
 <https://linked.data.gov.au/org/ics>
     a sdo:Organization ;
-    sdo:alternateName
-        "Comissió Internacional d’Estratigrafia"@ca ,
-        "Mezinárodní stratigrafická komise"@cz ,
-        "Internationale Stratigraphische Kommission"@de ,
-        "Comisión Internacional de Estratigrafía"@es ,
-        "Estratigrafiako Nazioarteko Batzordea"@eu ,
-        "Kansainvälinen stratigrafian komitea"@fi ,
-        "Commission Internationale de Stratigraphie"@fr ,
-        "Nemzetközi Rétegtani Bizottság"@hu ,
-        "Commissione Internazionale di Stratigrafia"@it ,
-        "国際層序委員会"@jp ,
-        "국 제 층 서 위 원 회"@ko ,
-        "Tarptautinė stratigrafijos komisija"@lt ,
-        "Internationale Commissie voor Stratigrafie"@nl ,
-        "Den internasjonale stratigrafiske kommisjon"@no ,
-        "Comissão Internacional de Estratigrafia"@pt ,
-        "Международная комиссия по стратиграфии"@ru ,
-        "Medzinárodná stratigrafická komisia"@sk ,
-        "Uluslararası Stratigrafi Komisyonu"@tr ,
-        "国 际 地 层 委 员 会"@zh ;
     sdo:name "International Commission on Stratigraphy" ;
     sdo:url "https://stratigraphy.org"^^xsd:anyURI ;
 .
@@ -5630,22 +5361,20 @@ ischart:CambrianSeries2
         "kambrium serie 2"@sv ,
         "第二世"@zh ;
     skos:broader ischart:Cambrian ;
-    skos:definition "A time period from 521.0 to 506.5 million years ago" ;
+    skos:definition "A time period from 521 to 509 million years ago" ;
     skos:inScheme cs: ;
     skos:narrower
         ischart:CambrianStage3 ,
         ischart:CambrianStage4 ;
     skos:notation "Ep2"^^ischart:ccgmShortCode ;
-    skos:prefLabel "Series 2"@en ;
-    time:hasBeginning
-        [
-            ischart:inMYA 521.0 ;
-            skos:note "uncertain" ;
+    skos:prefLabel "Cambrian Series 2"@en ;
+    time:hasBeginning [
+            ischart:inMYA 521 ;
+            skos:note "uncertain"
         ] ;
-    time:hasEnd
-        [
-            ischart:inMYA 506.5 ;
-            skos:note "uncertain" ;
+    time:hasEnd [
+            ischart:inMYA 509 ;
+            skos:note "uncertain"
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 151 ;
@@ -5679,22 +5408,20 @@ ischart:Carboniferous
         "karbon"@sv ,
         "石炭纪"@zh ;
     skos:broader ischart:Paleozoic ;
-    skos:definition "A time period from 358.86 to 298.9 million years ago" ;
+    skos:definition "A time period from 358.9 to 298.9 million years ago" ;
     skos:inScheme cs: ;
     skos:narrower
         ischart:Mississippian ,
         ischart:Pennsylvanian ;
     skos:notation "C"^^ischart:ccgmShortCode ;
     skos:prefLabel "Carboniferous"@en ;
-    time:hasBeginning
-        [
-            ischart:inMYA 358.86 ;
-            sdo:marginOfError 0.19 ;
+    time:hasBeginning [
+            ischart:inMYA 358.9 ;
+            sdo:marginOfError 0.4
         ] ;
-    time:hasEnd
-        [
+    time:hasEnd [
             ischart:inMYA 298.9 ;
-            sdo:marginOfError 0.15 ;
+            sdo:marginOfError 0.15
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 104 ;
@@ -5727,21 +5454,19 @@ ischart:Cretaceous
         "krita"@sv ,
         "白垩纪"@zh ;
     skos:broader ischart:Mesozoic ;
-    skos:definition "A time period from 143.1 to 66.00 million years ago" ;
+    skos:definition "A time period from 145.0 to 66.0 million years ago" ;
     skos:inScheme cs: ;
     skos:narrower
         ischart:LowerCretaceous ,
         ischart:UpperCretaceous ;
     skos:notation "K"^^ischart:ccgmShortCode ;
     skos:prefLabel "Cretaceous"@en ;
-    time:hasBeginning
-        [
-            ischart:inMYA 143.1 ;
-            sdo:marginOfError 0.6 ;
+    time:hasBeginning [
+            ischart:inMYA 145.0 ;
+            skos:note "uncertain"
         ] ;
-    time:hasEnd
-        [
-            ischart:inMYA 66.00 ;
+    time:hasEnd [
+            ischart:inMYA 66.0
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 49 ;
@@ -5782,15 +5507,13 @@ ischart:Lopingian
         ischart:Wuchiapingian ;
     skos:notation "P3"^^ischart:ccgmShortCode ;
     skos:prefLabel "Lopingian"@en ;
-    time:hasBeginning
-        [
+    time:hasBeginning [
             ischart:inMYA 259.51 ;
-            sdo:marginOfError 0.21 ;
+            sdo:marginOfError 0.21
         ] ;
-    time:hasEnd
-        [
+    time:hasEnd [
             ischart:inMYA 251.902 ;
-            sdo:marginOfError 0.024 ;
+            sdo:marginOfError 0.024
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 80 ;
@@ -5824,22 +5547,20 @@ ischart:LowerOrdovician
         "äldre ordovicium"@sv ,
         "早奥陶世"@zh ;
     skos:broader ischart:Ordovician ;
-    skos:definition "A time period from 486.85 to 471.3 million years ago" ;
+    skos:definition "A time period from 485.4 to 470.0 million years ago" ;
     skos:inScheme cs: ;
     skos:narrower
         ischart:Floian ,
         ischart:Tremadocian ;
     skos:notation "O1"^^ischart:ccgmShortCode ;
     skos:prefLabel "Early Ordovician"@en ;
-    time:hasBeginning
-        [
-            ischart:inMYA 486.85 ;
-            sdo:marginOfError 1.5 ;
+    time:hasBeginning [
+            ischart:inMYA 485.4 ;
+            sdo:marginOfError 1.9
         ] ;
-    time:hasEnd
-        [
-            ischart:inMYA 471.3 ;
-            sdo:marginOfError 1.4 ;
+    time:hasEnd [
+            ischart:inMYA 470.0 ;
+            sdo:marginOfError 1.4
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 139 ;
@@ -5873,21 +5594,19 @@ ischart:LowerTriassic
         "äldre trias"@sv ,
         "早三叠世"@zh ;
     skos:broader ischart:Triassic ;
-    skos:definition "A time period from 251.902 to 246.7 million years ago" ;
+    skos:definition "A time period from 251.902 to 247.2 million years ago" ;
     skos:inScheme cs: ;
     skos:narrower
         ischart:Induan ,
         ischart:Olenekian ;
     skos:notation "T1"^^ischart:ccgmShortCode ;
     skos:prefLabel "Early Triassic"@en ;
-    time:hasBeginning
-        [
+    time:hasBeginning [
             ischart:inMYA 251.902 ;
-            sdo:marginOfError 0.024 ;
+            sdo:marginOfError 0.024
         ] ;
-    time:hasEnd
-        [
-            ischart:inMYA 246.7 ;
+    time:hasEnd [
+            ischart:inMYA 247.2
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 75 ;
@@ -5921,22 +5640,20 @@ ischart:Ludlow
         "ludlow"@sv ,
         "卢德洛世"@zh ;
     skos:broader ischart:Silurian ;
-    skos:definition "A time period from 426.7 to 419.62 million years ago" ;
+    skos:definition "A time period from 427.4 to 419.2 million years ago" ;
     skos:inScheme cs: ;
     skos:narrower
         ischart:Gorstian ,
         ischart:Ludfordian ;
     skos:notation "S3"^^ischart:ccgmShortCode ;
     skos:prefLabel "Ludlow"@en ;
-    time:hasBeginning
-        [
-            ischart:inMYA 426.7 ;
-            sdo:marginOfError 1.5 ;
+    time:hasBeginning [
+            ischart:inMYA 427.4 ;
+            sdo:marginOfError 0.5
         ] ;
-    time:hasEnd
-        [
-            ischart:inMYA 419.62 ;
-            sdo:marginOfError 1.36 ;
+    time:hasEnd [
+            ischart:inMYA 419.2 ;
+            sdo:marginOfError 3.2
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 122 ;
@@ -5970,22 +5687,20 @@ ischart:MiddleDevonian
         "mellersta devon"@sv ,
         "中泥盆世"@zh ;
     skos:broader ischart:Devonian ;
-    skos:definition "A time period from 393.47 to 382.31 million years ago" ;
+    skos:definition "A time period from 393.3 to 382.7 million years ago" ;
     skos:inScheme cs: ;
     skos:narrower
         ischart:Eifelian ,
         ischart:Givetian ;
     skos:notation "D2"^^ischart:ccgmShortCode ;
     skos:prefLabel "Middle Devonian"@en ;
-    time:hasBeginning
-        [
-            ischart:inMYA 393.47 ;
-            sdo:marginOfError 0.99 ;
+    time:hasBeginning [
+            ischart:inMYA 393.3 ;
+            sdo:marginOfError 1.2
         ] ;
-    time:hasEnd
-        [
-            ischart:inMYA 382.31 ;
-            sdo:marginOfError 1.36 ;
+    time:hasEnd [
+            ischart:inMYA 382.7 ;
+            sdo:marginOfError 1.6
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 113 ;
@@ -6019,22 +5734,20 @@ ischart:MiddleOrdovician
         "mellersta ordovicium"@sv ,
         "中奥陶世"@zh ;
     skos:broader ischart:Ordovician ;
-    skos:definition "A time period from 471.3 to 458.2 million years ago" ;
+    skos:definition "A time period from 470.0 to 458.4 million years ago" ;
     skos:inScheme cs: ;
     skos:narrower
         ischart:Dapingian ,
         ischart:Darriwilian ;
     skos:notation "O2"^^ischart:ccgmShortCode ;
     skos:prefLabel "Middle Ordovician"@en ;
-    time:hasBeginning
-        [
-            ischart:inMYA 471.3 ;
-            sdo:marginOfError 1.4 ;
+    time:hasBeginning [
+            ischart:inMYA 470.0 ;
+            sdo:marginOfError 1.4
         ] ;
-    time:hasEnd
-        [
-            ischart:inMYA 458.2 ;
-            sdo:marginOfError 0.7 ;
+    time:hasEnd [
+            ischart:inMYA 458.4 ;
+            sdo:marginOfError 0.9
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 137 ;
@@ -6067,21 +5780,19 @@ ischart:MiddleTriassic
         "mellersta trias"@sv ,
         "中三叠世"@zh ;
     skos:broader ischart:Triassic ;
-    skos:definition "A time period from 246.7 to 237 million years ago" ;
+    skos:definition "A time period from 247.2 to 237 million years ago" ;
     skos:inScheme cs: ;
     skos:narrower
         ischart:Anisian ,
         ischart:Ladinian ;
     skos:notation "T2"^^ischart:ccgmShortCode ;
     skos:prefLabel "Middle Triassic"@en ;
-    time:hasBeginning
-        [
-            ischart:inMYA 246.7 ;
+    time:hasBeginning [
+            ischart:inMYA 247.2
         ] ;
-    time:hasEnd
-        [
+    time:hasEnd [
             ischart:inMYA 237 ;
-            skos:note "uncertain" ;
+            skos:note "uncertain"
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 72 ;
@@ -6115,20 +5826,18 @@ ischart:Neogene
         "neogen"@sv ,
         "晚第三纪"@zh ;
     skos:broader ischart:Cenozoic ;
-    skos:definition "A time period from 23.04 to 2.58 million years ago" ;
+    skos:definition "A time period from 23.03 to 2.58 million years ago" ;
     skos:inScheme cs: ;
     skos:narrower
         ischart:Miocene ,
         ischart:Pliocene ;
     skos:notation "N"^^ischart:ccgmShortCode ;
     skos:prefLabel "Neogene"@en ;
-    time:hasBeginning
-        [
-            ischart:inMYA 23.04 ;
+    time:hasBeginning [
+            ischart:inMYA 23.03
         ] ;
-    time:hasEnd
-        [
-            ischart:inMYA 2.58 ;
+    time:hasEnd [
+            ischart:inMYA 2.58
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 21 ;
@@ -6162,20 +5871,18 @@ ischart:Oligocene
         "oligocen"@sv ,
         "渐新世"@zh ;
     skos:broader ischart:Paleogene ;
-    skos:definition "A time period from 33.9 to 23.04 million years ago" ;
+    skos:definition "A time period from 33.9 to 23.03 million years ago" ;
     skos:inScheme cs: ;
     skos:narrower
         ischart:Chattian ,
         ischart:Rupelian ;
     skos:notation "E3"^^ischart:ccgmShortCode ;
     skos:prefLabel "Oligocene"@en ;
-    time:hasBeginning
-        [
-            ischart:inMYA 33.9 ;
+    time:hasBeginning [
+            ischart:inMYA 33.9
         ] ;
-    time:hasEnd
-        [
-            ischart:inMYA 23.04 ;
+    time:hasEnd [
+            ischart:inMYA 23.03
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 23 ;
@@ -6216,13 +5923,11 @@ ischart:Pliocene
         ischart:Zanclean ;
     skos:notation "N2"^^ischart:ccgmShortCode ;
     skos:prefLabel "Pliocene"@en ;
-    time:hasBeginning
-        [
-            ischart:inMYA 5.333 ;
+    time:hasBeginning [
+            ischart:inMYA 5.333
         ] ;
-    time:hasEnd
-        [
-            ischart:inMYA 2.58 ;
+    time:hasEnd [
+            ischart:inMYA 2.58
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 12 ;
@@ -6263,13 +5968,11 @@ ischart:Quaternary
         ischart:Pleistocene ;
     skos:notation "Q"^^ischart:ccgmShortCode ;
     skos:prefLabel "Quaternary"@en ;
-    time:hasBeginning
-        [
-            ischart:inMYA 2.58 ;
+    time:hasBeginning [
+            ischart:inMYA 2.58
         ] ;
-    time:hasEnd
-        [
-            ischart:inMYA 0 ;
+    time:hasEnd [
+            ischart:inMYA 0
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 10 ;
@@ -6303,22 +6006,20 @@ ischart:Terreneuvian
         "terreneuv"@sv ,
         "纽芬兰世"@zh ;
     skos:broader ischart:Cambrian ;
-    skos:definition "A time period from 538.8 to 521.0 million years ago" ;
+    skos:definition "A time period from 538.8 to 521 million years ago" ;
     skos:inScheme cs: ;
     skos:narrower
         ischart:CambrianStage2 ,
         ischart:Fortunian ;
     skos:notation "Ep1"^^ischart:ccgmShortCode ;
     skos:prefLabel "Terreneuvian"@en ;
-    time:hasBeginning
-        [
+    time:hasBeginning [
             ischart:inMYA 538.8 ;
-            sdo:marginOfError 0.6 ;
+            sdo:marginOfError 0.2
         ] ;
-    time:hasEnd
-        [
-            ischart:inMYA 521.0 ;
-            skos:note "uncertain" ;
+    time:hasEnd [
+            ischart:inMYA 521 ;
+            skos:note "uncertain"
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 157 ;
@@ -6348,22 +6049,20 @@ ischart:UpperDevonian
         "yngre devon"@sv ,
         "晚泥盆世"@zh ;
     skos:broader ischart:Devonian ;
-    skos:definition "A time period from 382.31 to 358.86 million years ago" ;
+    skos:definition "A time period from 382.7 to 358.9 million years ago" ;
     skos:inScheme cs: ;
     skos:narrower
         ischart:Famennian ,
         ischart:Frasnian ;
     skos:notation "D3"^^ischart:ccgmShortCode ;
     skos:prefLabel "Late Devonian"@en ;
-    time:hasBeginning
-        [
-            ischart:inMYA 382.31 ;
-            sdo:marginOfError 1.36 ;
+    time:hasBeginning [
+            ischart:inMYA 382.7 ;
+            sdo:marginOfError 1.6
         ] ;
-    time:hasEnd
-        [
-            ischart:inMYA 358.86 ;
-            sdo:marginOfError 0.19 ;
+    time:hasEnd [
+            ischart:inMYA 358.9 ;
+            sdo:marginOfError 0.4
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 110 ;
@@ -6399,15 +6098,13 @@ ischart:UpperPennsylvanian
         ischart:Kasimovian ;
     skos:notation "C2c6c7"^^ischart:ccgmShortCode ;
     skos:prefLabel "Late Pennsylvanian"@en ;
-    time:hasBeginning
-        [
+    time:hasBeginning [
             ischart:inMYA 307.0 ;
-            sdo:marginOfError 0.1 ;
+            sdo:marginOfError 0.1
         ] ;
-    time:hasEnd
-        [
+    time:hasEnd [
             ischart:inMYA 298.9 ;
-            sdo:marginOfError 0.15 ;
+            sdo:marginOfError 0.15
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 94 ;
@@ -6441,22 +6138,20 @@ ischart:Wenlock
         "wenlock"@sv ,
         "温洛克世"@zh ;
     skos:broader ischart:Silurian ;
-    skos:definition "A time period from 432.9 to 426.7 million years ago" ;
+    skos:definition "A time period from 433.4 to 427.4 million years ago" ;
     skos:inScheme cs: ;
     skos:narrower
         ischart:Homerian ,
         ischart:Sheinwoodian ;
     skos:notation "S2"^^ischart:ccgmShortCode ;
     skos:prefLabel "Wenlock"@en ;
-    time:hasBeginning
-        [
-            ischart:inMYA 432.9 ;
-            sdo:marginOfError 1.2 ;
+    time:hasBeginning [
+            ischart:inMYA 433.4 ;
+            sdo:marginOfError 0.8
         ] ;
-    time:hasEnd
-        [
-            ischart:inMYA 426.7 ;
-            sdo:marginOfError 1.5 ;
+    time:hasEnd [
+            ischart:inMYA 427.4 ;
+            sdo:marginOfError 0.5
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 125 ;
@@ -6492,7 +6187,7 @@ ischart:Cenozoic
         "kenozoikum"@sv ,
         "新生代"@zh ;
     skos:broader ischart:Phanerozoic ;
-    skos:definition "A time period from 66.00 million years ago to the present" ;
+    skos:definition "A time period from 66.0 million years ago to the present" ;
     skos:inScheme cs: ;
     skos:narrower
         ischart:Neogene ,
@@ -6500,13 +6195,11 @@ ischart:Cenozoic
         ischart:Quaternary ;
     skos:notation "CZ"^^ischart:ccgmShortCode ;
     skos:prefLabel "Cenozoic"@en ;
-    time:hasBeginning
-        [
-            ischart:inMYA 66.00 ;
+    time:hasBeginning [
+            ischart:inMYA 66.0
         ] ;
-    time:hasEnd
-        [
-            ischart:inMYA 0 ;
+    time:hasEnd [
+            ischart:inMYA 0
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 32 ;
@@ -6540,7 +6233,7 @@ ischart:Devonian
         "devon"@sv ,
         "泥盆纪"@zh ;
     skos:broader ischart:Paleozoic ;
-    skos:definition "A time period from 419.62 to 358.86 million years ago" ;
+    skos:definition "A time period from 419.2 to 358.9 million years ago" ;
     skos:inScheme cs: ;
     skos:narrower
         ischart:LowerDevonian ,
@@ -6548,15 +6241,13 @@ ischart:Devonian
         ischart:UpperDevonian ;
     skos:notation "D"^^ischart:ccgmShortCode ;
     skos:prefLabel "Devonian"@en ;
-    time:hasBeginning
-        [
-            ischart:inMYA 419.62 ;
-            sdo:marginOfError 1.36 ;
+    time:hasBeginning [
+            ischart:inMYA 419.2 ;
+            sdo:marginOfError 3.2
         ] ;
-    time:hasEnd
-        [
-            ischart:inMYA 358.86 ;
-            sdo:marginOfError 0.19 ;
+    time:hasEnd [
+            ischart:inMYA 358.9 ;
+            sdo:marginOfError 0.4
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 116 ;
@@ -6590,7 +6281,7 @@ ischart:Furongian
         "furong"@sv ,
         "芙蓉世"@zh ;
     skos:broader ischart:Cambrian ;
-    skos:definition "A time period from 497.0 to 486.85 million years ago" ;
+    skos:definition "A time period from 497 to 485.4 million years ago" ;
     skos:inScheme cs: ;
     skos:narrower
         ischart:CambrianStage10 ,
@@ -6598,15 +6289,13 @@ ischart:Furongian
         ischart:Paibian ;
     skos:notation "Ep4"^^ischart:ccgmShortCode ;
     skos:prefLabel "Furongian"@en ;
-    time:hasBeginning
-        [
-            ischart:inMYA 497.0 ;
-            skos:note "uncertain" ;
+    time:hasBeginning [
+            ischart:inMYA 497 ;
+            skos:note "uncertain"
         ] ;
-    time:hasEnd
-        [
-            ischart:inMYA 486.85 ;
-            sdo:marginOfError 1.5 ;
+    time:hasEnd [
+            ischart:inMYA 485.4 ;
+            sdo:marginOfError 1.9
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 144 ;
@@ -6640,7 +6329,7 @@ ischart:Guadalupian
         "guadalup"@sv ,
         "瓜德鲁普世"@zh ;
     skos:broader ischart:Permian ;
-    skos:definition "A time period from 274.4 to 259.51 million years ago" ;
+    skos:definition "A time period from 273.01 to 259.51 million years ago" ;
     skos:inScheme cs: ;
     skos:narrower
         ischart:Capitanian ,
@@ -6648,15 +6337,13 @@ ischart:Guadalupian
         ischart:Wordian ;
     skos:notation "P2"^^ischart:ccgmShortCode ;
     skos:prefLabel "Guadalupian"@en ;
-    time:hasBeginning
-        [
-            ischart:inMYA 274.4 ;
-            sdo:marginOfError 0.4 ;
+    time:hasBeginning [
+            ischart:inMYA 273.01 ;
+            sdo:marginOfError 0.14
         ] ;
-    time:hasEnd
-        [
+    time:hasEnd [
             ischart:inMYA 259.51 ;
-            sdo:marginOfError 0.21 ;
+            sdo:marginOfError 0.21
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 84 ;
@@ -6698,13 +6385,11 @@ ischart:Holocene
         ischart:Northgrippian ;
     skos:notation "Q2"^^ischart:ccgmShortCode ;
     skos:prefLabel "Holocene"@en ;
-    time:hasBeginning
-        [
-            ischart:inMYA 0.0117 ;
+    time:hasBeginning [
+            ischart:inMYA 0.0117
         ] ;
-    time:hasEnd
-        [
-            ischart:inMYA 0 ;
+    time:hasEnd [
+            ischart:inMYA 0
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 4 ;
@@ -6738,7 +6423,7 @@ ischart:Jurassic
         "jura"@sv ,
         "侏罗纪"@zh ;
     skos:broader ischart:Mesozoic ;
-    skos:definition "A time period from 201.4 to 143.1 million years ago" ;
+    skos:definition "A time period from 201.4 to 145.0 million years ago" ;
     skos:inScheme cs: ;
     skos:narrower
         ischart:LowerJurassic ,
@@ -6746,15 +6431,13 @@ ischart:Jurassic
         ischart:UpperJurassic ;
     skos:notation "J"^^ischart:ccgmShortCode ;
     skos:prefLabel "Jurassic"@en ;
-    time:hasBeginning
-        [
+    time:hasBeginning [
             ischart:inMYA 201.4 ;
-            sdo:marginOfError 0.2 ;
+            sdo:marginOfError 0.2
         ] ;
-    time:hasEnd
-        [
-            ischart:inMYA 143.1 ;
-            sdo:marginOfError 0.6 ;
+    time:hasEnd [
+            ischart:inMYA 145.0 ;
+            skos:note "uncertain"
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 64 ;
@@ -6788,7 +6471,7 @@ ischart:Llandovery
         "llandovery"@sv ,
         "兰多维列世"@zh ;
     skos:broader ischart:Silurian ;
-    skos:definition "A time period from 443.1 to 432.9 million years ago" ;
+    skos:definition "A time period from 443.8 to 433.4 million years ago" ;
     skos:inScheme cs: ;
     skos:narrower
         ischart:Aeronian ,
@@ -6796,15 +6479,13 @@ ischart:Llandovery
         ischart:Telychian ;
     skos:notation "S1"^^ischart:ccgmShortCode ;
     skos:prefLabel "Llandovery"@en ;
-    time:hasBeginning
-        [
-            ischart:inMYA 443.1 ;
-            sdo:marginOfError 1.0 ;
+    time:hasBeginning [
+            ischart:inMYA 443.8 ;
+            sdo:marginOfError 1.5
         ] ;
-    time:hasEnd
-        [
-            ischart:inMYA 432.9 ;
-            sdo:marginOfError 1.2 ;
+    time:hasEnd [
+            ischart:inMYA 433.4 ;
+            sdo:marginOfError 0.8
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 128 ;
@@ -6838,7 +6519,7 @@ ischart:LowerDevonian
         "äldre devon"@sv ,
         "早泥盆世"@zh ;
     skos:broader ischart:Devonian ;
-    skos:definition "A time period from 419.62 to 393.47 million years ago" ;
+    skos:definition "A time period from 419.2 to 393.3 million years ago" ;
     skos:inScheme cs: ;
     skos:narrower
         ischart:Emsian ,
@@ -6846,15 +6527,13 @@ ischart:LowerDevonian
         ischart:Pragian ;
     skos:notation "D1"^^ischart:ccgmShortCode ;
     skos:prefLabel "Early Devonian"@en ;
-    time:hasBeginning
-        [
-            ischart:inMYA 419.62 ;
-            sdo:marginOfError 1.36 ;
+    time:hasBeginning [
+            ischart:inMYA 419.2 ;
+            sdo:marginOfError 3.2
         ] ;
-    time:hasEnd
-        [
-            ischart:inMYA 393.47 ;
-            sdo:marginOfError 0.99 ;
+    time:hasEnd [
+            ischart:inMYA 393.3 ;
+            sdo:marginOfError 1.2
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 118 ;
@@ -6896,13 +6575,11 @@ ischart:Mesoproterozoic
         ischart:Stenian ;
     skos:notation "MP"^^ischart:ccgmShortCode ;
     skos:prefLabel "Mesoproterozoic"@en ;
-    time:hasBeginning
-        [
-            ischart:inMYA 1600 ;
+    time:hasBeginning [
+            ischart:inMYA 1600
         ] ;
-    time:hasEnd
-        [
-            ischart:inMYA 1000 ;
+    time:hasEnd [
+            ischart:inMYA 1000
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 165 ;
@@ -6936,7 +6613,7 @@ ischart:Mesozoic
         "mesozoikum"@sv ,
         "中生代"@zh ;
     skos:broader ischart:Phanerozoic ;
-    skos:definition "A time period from 251.902 to 66.00 million years ago" ;
+    skos:definition "A time period from 251.902 to 66.0 million years ago" ;
     skos:inScheme cs: ;
     skos:narrower
         ischart:Cretaceous ,
@@ -6944,14 +6621,12 @@ ischart:Mesozoic
         ischart:Triassic ;
     skos:notation "MZ"^^ischart:ccgmShortCode ;
     skos:prefLabel "Mesozoic"@en ;
-    time:hasBeginning
-        [
+    time:hasBeginning [
             ischart:inMYA 251.902 ;
-            sdo:marginOfError 0.024 ;
+            sdo:marginOfError 0.024
         ] ;
-    time:hasEnd
-        [
-            ischart:inMYA 66.00 ;
+    time:hasEnd [
+            ischart:inMYA 66.0
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 76 ;
@@ -6964,7 +6639,7 @@ ischart:Miaolingian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Cambrian ;
-    skos:definition "A time period from 506.5 to 497.0 million years ago" ;
+    skos:definition "A time period from 509 to 497 million years ago" ;
     skos:inScheme cs: ;
     skos:narrower
         ischart:Drumian ,
@@ -6972,15 +6647,13 @@ ischart:Miaolingian
         ischart:Wuliuan ;
     skos:notation "Ep3"^^ischart:ccgmShortCode ;
     skos:prefLabel "Miaolingian"@en ;
-    time:hasBeginning
-        [
-            ischart:inMYA 506.5 ;
-            skos:note "uncertain" ;
+    time:hasBeginning [
+            ischart:inMYA 509 ;
+            skos:note "uncertain"
         ] ;
-    time:hasEnd
-        [
-            ischart:inMYA 497.0 ;
-            skos:note "uncertain" ;
+    time:hasEnd [
+            ischart:inMYA 497 ;
+            skos:note "uncertain"
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 148 ;
@@ -7014,7 +6687,7 @@ ischart:Mississippian
         "mississippi"@sv ,
         "密西西比亚纪"@zh ;
     skos:broader ischart:Carboniferous ;
-    skos:definition "A time period from 358.86 to 323.4 million years ago" ;
+    skos:definition "A time period from 358.9 to 323.2 million years ago" ;
     skos:inScheme cs: ;
     skos:narrower
         ischart:LowerMississippian ,
@@ -7022,15 +6695,13 @@ ischart:Mississippian
         ischart:UpperMississippian ;
     skos:notation "C1"^^ischart:ccgmShortCode ;
     skos:prefLabel "Mississippian"@en ;
-    time:hasBeginning
-        [
-            ischart:inMYA 358.86 ;
-            sdo:marginOfError 0.19 ;
+    time:hasBeginning [
+            ischart:inMYA 358.9 ;
+            sdo:marginOfError 0.4
         ] ;
-    time:hasEnd
-        [
-            ischart:inMYA 323.4 ;
-            sdo:marginOfError 0.4 ;
+    time:hasEnd [
+            ischart:inMYA 323.2 ;
+            sdo:marginOfError 0.4
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 106 ;
@@ -7073,14 +6744,12 @@ ischart:Neoproterozoic
         ischart:Tonian ;
     skos:notation "NP"^^ischart:ccgmShortCode ;
     skos:prefLabel "Neoproterozoic"@en ;
-    time:hasBeginning
-        [
-            ischart:inMYA 1000 ;
+    time:hasBeginning [
+            ischart:inMYA 1000
         ] ;
-    time:hasEnd
-        [
+    time:hasEnd [
             ischart:inMYA 538.8 ;
-            sdo:marginOfError 0.6 ;
+            sdo:marginOfError 0.2
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 160 ;
@@ -7114,7 +6783,7 @@ ischart:Ordovician
         "ordovicium"@sv ,
         "奥陶纪"@zh ;
     skos:broader ischart:Paleozoic ;
-    skos:definition "A time period from 486.85 to 443.1 million years ago" ;
+    skos:definition "A time period from 485.4 to 443.8 million years ago" ;
     skos:inScheme cs: ;
     skos:narrower
         ischart:LowerOrdovician ,
@@ -7122,15 +6791,13 @@ ischart:Ordovician
         ischart:UpperOrdovician ;
     skos:notation "O"^^ischart:ccgmShortCode ;
     skos:prefLabel "Ordovician"@en ;
-    time:hasBeginning
-        [
-            ischart:inMYA 486.85 ;
-            sdo:marginOfError 1.5 ;
+    time:hasBeginning [
+            ischart:inMYA 485.4 ;
+            sdo:marginOfError 1.9
         ] ;
-    time:hasEnd
-        [
-            ischart:inMYA 443.1 ;
-            sdo:marginOfError 1.0 ;
+    time:hasEnd [
+            ischart:inMYA 443.8 ;
+            sdo:marginOfError 1.5
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 140 ;
@@ -7166,7 +6833,7 @@ ischart:Paleocene
         "paleocen"@sv ,
         "古新世"@zh ;
     skos:broader ischart:Paleogene ;
-    skos:definition "A time period from 66.00 to 56.00 million years ago" ;
+    skos:definition "A time period from 66.0 to 56.0 million years ago" ;
     skos:inScheme cs: ;
     skos:narrower
         ischart:Danian ,
@@ -7174,13 +6841,11 @@ ischart:Paleocene
         ischart:Thanetian ;
     skos:notation "E1"^^ischart:ccgmShortCode ;
     skos:prefLabel "Paleocene"@en ;
-    time:hasBeginning
-        [
-            ischart:inMYA 66.00 ;
+    time:hasBeginning [
+            ischart:inMYA 66.0
         ] ;
-    time:hasEnd
-        [
-            ischart:inMYA 56.00 ;
+    time:hasEnd [
+            ischart:inMYA 56.0
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 34 ;
@@ -7216,7 +6881,7 @@ ischart:Paleogene
         "paleogen"@sv ,
         "早第三纪"@zh ;
     skos:broader ischart:Cenozoic ;
-    skos:definition "A time period from 66.00 to 23.04 million years ago" ;
+    skos:definition "A time period from 66.0 to 23.03 million years ago" ;
     skos:inScheme cs: ;
     skos:narrower
         ischart:Eocene ,
@@ -7224,13 +6889,11 @@ ischart:Paleogene
         ischart:Paleocene ;
     skos:notation "E"^^ischart:ccgmShortCode ;
     skos:prefLabel "Paleogene"@en ;
-    time:hasBeginning
-        [
-            ischart:inMYA 66.00 ;
+    time:hasBeginning [
+            ischart:inMYA 66.0
         ] ;
-    time:hasEnd
-        [
-            ischart:inMYA 23.04 ;
+    time:hasEnd [
+            ischart:inMYA 23.03
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 35 ;
@@ -7264,7 +6927,7 @@ ischart:Pennsylvanian
         "pennsylvan"@sv ,
         "宾夕法尼亚亚纪"@zh ;
     skos:broader ischart:Carboniferous ;
-    skos:definition "A time period from 323.4 to 298.9 million years ago" ;
+    skos:definition "A time period from 323.2 to 298.9 million years ago" ;
     skos:inScheme cs: ;
     skos:narrower
         ischart:LowerPennsylvanian ,
@@ -7272,15 +6935,13 @@ ischart:Pennsylvanian
         ischart:UpperPennsylvanian ;
     skos:notation "C2"^^ischart:ccgmShortCode ;
     skos:prefLabel "Pennsylvanian"@en ;
-    time:hasBeginning
-        [
-            ischart:inMYA 323.4 ;
-            sdo:marginOfError 0.4 ;
+    time:hasBeginning [
+            ischart:inMYA 323.2 ;
+            sdo:marginOfError 0.4
         ] ;
-    time:hasEnd
-        [
+    time:hasEnd [
             ischart:inMYA 298.9 ;
-            sdo:marginOfError 0.15 ;
+            sdo:marginOfError 0.15
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 99 ;
@@ -7322,15 +6983,13 @@ ischart:Permian
         ischart:Lopingian ;
     skos:notation "P"^^ischart:ccgmShortCode ;
     skos:prefLabel "Permian"@en ;
-    time:hasBeginning
-        [
+    time:hasBeginning [
             ischart:inMYA 298.9 ;
-            sdo:marginOfError 0.15 ;
+            sdo:marginOfError 0.15
         ] ;
-    time:hasEnd
-        [
+    time:hasEnd [
             ischart:inMYA 251.902 ;
-            sdo:marginOfError 0.024 ;
+            sdo:marginOfError 0.024
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 91 ;
@@ -7371,14 +7030,12 @@ ischart:Phanerozoic
         ischart:Paleozoic ;
     skos:notation "PH"^^ischart:ccgmShortCode ;
     skos:prefLabel "Phanerozoic"@en ;
-    time:hasBeginning
-        [
+    time:hasBeginning [
             ischart:inMYA 538.8 ;
-            sdo:marginOfError 0.6 ;
+            sdo:marginOfError 0.2
         ] ;
-    time:hasEnd
-        [
-            ischart:inMYA 0 ;
+    time:hasEnd [
+            ischart:inMYA 0
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 156 ;
@@ -7419,14 +7076,12 @@ ischart:Precambrian
         ischart:Proterozoic ;
     skos:notation "PE"^^ischart:ccgmShortCode ;
     skos:prefLabel "Precambrian"@en ;
-    time:hasBeginning
-        [
-            ischart:inMYA 4567 ;
+    time:hasBeginning [
+            ischart:inMYA 4567
         ] ;
-    time:hasEnd
-        [
+    time:hasEnd [
             ischart:inMYA 538.8 ;
-            sdo:marginOfError 0.6 ;
+            sdo:marginOfError 0.2
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 178 ;
@@ -7468,14 +7123,12 @@ ischart:Proterozoic
         ischart:Paleoproterozoic ;
     skos:notation "PR"^^ischart:ccgmShortCode ;
     skos:prefLabel "Proterozoic"@en ;
-    time:hasBeginning
-        [
-            ischart:inMYA 2500 ;
+    time:hasBeginning [
+            ischart:inMYA 2500
         ] ;
-    time:hasEnd
-        [
+    time:hasEnd [
             ischart:inMYA 538.8 ;
-            sdo:marginOfError 0.6 ;
+            sdo:marginOfError 0.2
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 170 ;
@@ -7517,15 +7170,13 @@ ischart:Triassic
         ischart:UpperTriassic ;
     skos:notation "T"^^ischart:ccgmShortCode ;
     skos:prefLabel "Triassic"@en ;
-    time:hasBeginning
-        [
+    time:hasBeginning [
             ischart:inMYA 251.902 ;
-            sdo:marginOfError 0.024 ;
+            sdo:marginOfError 0.024
         ] ;
-    time:hasEnd
-        [
+    time:hasEnd [
             ischart:inMYA 201.4 ;
-            sdo:marginOfError 0.2 ;
+            sdo:marginOfError 0.2
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 78 ;
@@ -7554,7 +7205,7 @@ ischart:UpperJurassic
         "yngre jura"@sv ,
         "晚侏罗世"@zh ;
     skos:broader ischart:Jurassic ;
-    skos:definition "A time period from 161.5 to 143.1 million years ago" ;
+    skos:definition "A time period from 161.5 to 145 million years ago" ;
     skos:inScheme cs: ;
     skos:narrower
         ischart:Kimmeridgian ,
@@ -7562,15 +7213,13 @@ ischart:UpperJurassic
         ischart:Tithonian ;
     skos:notation "J3"^^ischart:ccgmShortCode ;
     skos:prefLabel "Late Jurassic"@en ;
-    time:hasBeginning
-        [
+    time:hasBeginning [
             ischart:inMYA 161.5 ;
-            sdo:marginOfError 1.0 ;
+            sdo:marginOfError 1.0
         ] ;
-    time:hasEnd
-        [
-            ischart:inMYA 143.1 ;
-            sdo:marginOfError 0.6 ;
+    time:hasEnd [
+            ischart:inMYA 145 ;
+            skos:note "uncertain"
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 54 ;
@@ -7600,7 +7249,7 @@ ischart:UpperOrdovician
         "yngre ordovicium"@sv ,
         "晚奥陶世"@zh ;
     skos:broader ischart:Ordovician ;
-    skos:definition "A time period from 458.2 to 443.1 million years ago" ;
+    skos:definition "A time period from 458.4 to 443.8 million years ago" ;
     skos:inScheme cs: ;
     skos:narrower
         ischart:Hirnantian ,
@@ -7608,15 +7257,13 @@ ischart:UpperOrdovician
         ischart:Sandbian ;
     skos:notation "O3"^^ischart:ccgmShortCode ;
     skos:prefLabel "Late Ordovician"@en ;
-    time:hasBeginning
-        [
-            ischart:inMYA 458.2 ;
-            sdo:marginOfError 0.7 ;
+    time:hasBeginning [
+            ischart:inMYA 458.4 ;
+            sdo:marginOfError 0.9
         ] ;
-    time:hasEnd
-        [
-            ischart:inMYA 443.1 ;
-            sdo:marginOfError 1.0 ;
+    time:hasEnd [
+            ischart:inMYA 443.8 ;
+            sdo:marginOfError 1.5
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 134 ;
@@ -7654,15 +7301,13 @@ ischart:UpperTriassic
         ischart:Rhaetian ;
     skos:notation "T3"^^ischart:ccgmShortCode ;
     skos:prefLabel "Late Triassic"@en ;
-    time:hasBeginning
-        [
+    time:hasBeginning [
             ischart:inMYA 237 ;
-            skos:note "uncertain" ;
+            skos:note "uncertain"
         ] ;
-    time:hasEnd
-        [
+    time:hasEnd [
             ischart:inMYA 201.4 ;
-            sdo:marginOfError 0.2 ;
+            sdo:marginOfError 0.2
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 69 ;
@@ -7707,14 +7352,12 @@ ischart:Archean
         ischart:Paleoarchean ;
     skos:notation "AR"^^ischart:ccgmShortCode ;
     skos:prefLabel "Archean"@en ;
-    time:hasBeginning
-        [
+    time:hasBeginning [
             ischart:inMYA 4031 ;
-            sdo:marginOfError 3 ;
+            sdo:marginOfError 3
         ] ;
-    time:hasEnd
-        [
-            ischart:inMYA 2500 ;
+    time:hasEnd [
+            ischart:inMYA 2500
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 175 ;
@@ -7748,7 +7391,7 @@ ischart:Cambrian
         "kambrium"@sv ,
         "寒武纪"@zh ;
     skos:broader ischart:Paleozoic ;
-    skos:definition "A time period from 538.8 to 486.85 million years ago" ;
+    skos:definition "A time period from 538.8 to 485.4 million years ago" ;
     skos:inScheme cs: ;
     skos:narrower
         ischart:CambrianSeries2 ,
@@ -7757,15 +7400,13 @@ ischart:Cambrian
         ischart:Terreneuvian ;
     skos:notation "Ep"^^ischart:ccgmShortCode ;
     skos:prefLabel "Cambrian"@en ;
-    time:hasBeginning
-        [
+    time:hasBeginning [
             ischart:inMYA 538.8 ;
-            sdo:marginOfError 0.6 ;
+            sdo:marginOfError 0.2
         ] ;
-    time:hasEnd
-        [
-            ischart:inMYA 486.85 ;
-            sdo:marginOfError 1.5 ;
+    time:hasEnd [
+            ischart:inMYA 485.4 ;
+            sdo:marginOfError 1.9
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 154 ;
@@ -7799,7 +7440,7 @@ ischart:Cisuralian
         "cisural"@sv ,
         "乌拉尔世"@zh ;
     skos:broader ischart:Permian ;
-    skos:definition "A time period from 298.9 to 274.4 million years ago" ;
+    skos:definition "A time period from 298.9 to 273.01 million years ago" ;
     skos:inScheme cs: ;
     skos:narrower
         ischart:Artinskian ,
@@ -7808,15 +7449,13 @@ ischart:Cisuralian
         ischart:Sakmarian ;
     skos:notation "P1"^^ischart:ccgmShortCode ;
     skos:prefLabel "Cisuralian"@en ;
-    time:hasBeginning
-        [
+    time:hasBeginning [
             ischart:inMYA 298.9 ;
-            sdo:marginOfError 0.15 ;
+            sdo:marginOfError 0.15
         ] ;
-    time:hasEnd
-        [
-            ischart:inMYA 274.4 ;
-            sdo:marginOfError 0.4 ;
+    time:hasEnd [
+            ischart:inMYA 273.01 ;
+            sdo:marginOfError 0.14
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 90 ;
@@ -7850,7 +7489,7 @@ ischart:Eocene
         "eocen"@sv ,
         "始新世"@zh ;
     skos:broader ischart:Paleogene ;
-    skos:definition "A time period from 56.00 to 33.9 million years ago" ;
+    skos:definition "A time period from 56.0 to 33.9 million years ago" ;
     skos:inScheme cs: ;
     skos:narrower
         ischart:Bartonian ,
@@ -7859,13 +7498,11 @@ ischart:Eocene
         ischart:Ypresian ;
     skos:notation "E2"^^ischart:ccgmShortCode ;
     skos:prefLabel "Eocene"@en ;
-    time:hasBeginning
-        [
-            ischart:inMYA 56.00 ;
+    time:hasBeginning [
+            ischart:inMYA 56.0
         ] ;
-    time:hasEnd
-        [
-            ischart:inMYA 33.9 ;
+    time:hasEnd [
+            ischart:inMYA 33.9
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 28 ;
@@ -7908,15 +7545,13 @@ ischart:LowerJurassic
         ischart:Toarcian ;
     skos:notation "J1"^^ischart:ccgmShortCode ;
     skos:prefLabel "Early Jurassic"@en ;
-    time:hasBeginning
-        [
+    time:hasBeginning [
             ischart:inMYA 201.4 ;
-            sdo:marginOfError 0.2 ;
+            sdo:marginOfError 0.2
         ] ;
-    time:hasEnd
-        [
+    time:hasEnd [
             ischart:inMYA 174.7 ;
-            sdo:marginOfError 0.8 ;
+            sdo:marginOfError 0.8
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 65 ;
@@ -7959,15 +7594,13 @@ ischart:MiddleJurassic
         ischart:Callovian ;
     skos:notation "J2"^^ischart:ccgmShortCode ;
     skos:prefLabel "Middle Jurassic"@en ;
-    time:hasBeginning
-        [
+    time:hasBeginning [
             ischart:inMYA 174.7 ;
-            sdo:marginOfError 0.8 ;
+            sdo:marginOfError 0.8
         ] ;
-    time:hasEnd
-        [
+    time:hasEnd [
             ischart:inMYA 161.5 ;
-            sdo:marginOfError 1.0 ;
+            sdo:marginOfError 1.0
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 59 ;
@@ -8012,13 +7645,11 @@ ischart:Paleoproterozoic
         ischart:Statherian ;
     skos:notation "PP"^^ischart:ccgmShortCode ;
     skos:prefLabel "Paleoproterozoic"@en ;
-    time:hasBeginning
-        [
-            ischart:inMYA 2500 ;
+    time:hasBeginning [
+            ischart:inMYA 2500
         ] ;
-    time:hasEnd
-        [
-            ischart:inMYA 1600 ;
+    time:hasEnd [
+            ischart:inMYA 1600
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 169 ;
@@ -8061,13 +7692,11 @@ ischart:Pleistocene
         ischart:UpperPleistocene ;
     skos:notation "Q1"^^ischart:ccgmShortCode ;
     skos:prefLabel "Pleistocene"@en ;
-    time:hasBeginning
-        [
-            ischart:inMYA 2.58 ;
+    time:hasBeginning [
+            ischart:inMYA 2.58
         ] ;
-    time:hasEnd
-        [
-            ischart:inMYA 0.0117 ;
+    time:hasEnd [
+            ischart:inMYA 0.0117
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 9 ;
@@ -8101,7 +7730,7 @@ ischart:Silurian
         "silur"@sv ,
         "志留纪"@zh ;
     skos:broader ischart:Paleozoic ;
-    skos:definition "A time period from 443.1 to 419.62 million years ago" ;
+    skos:definition "A time period from 443.8 to 419.2 million years ago" ;
     skos:inScheme cs: ;
     skos:narrower
         ischart:Llandovery ,
@@ -8110,15 +7739,13 @@ ischart:Silurian
         ischart:Wenlock ;
     skos:notation "S"^^ischart:ccgmShortCode ;
     skos:prefLabel "Silurian"@en ;
-    time:hasBeginning
-        [
-            ischart:inMYA 443.1 ;
-            sdo:marginOfError 1.0 ;
+    time:hasBeginning [
+            ischart:inMYA 443.8 ;
+            sdo:marginOfError 1.5
         ] ;
-    time:hasEnd
-        [
-            ischart:inMYA 419.62 ;
-            sdo:marginOfError 1.36 ;
+    time:hasEnd [
+            ischart:inMYA 419.2 ;
+            sdo:marginOfError 3.2
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 130 ;
@@ -8149,7 +7776,7 @@ ischart:LowerCretaceous
         "äldre krita"@sv ,
         "早白垩世"@zh ;
     skos:broader ischart:Cretaceous ;
-    skos:definition "A time period from 143.1 to 100.5 million years ago" ;
+    skos:definition "A time period from 145.0 to 100.5 million years ago" ;
     skos:inScheme cs: ;
     skos:narrower
         ischart:Albian ,
@@ -8159,16 +7786,13 @@ ischart:LowerCretaceous
         ischart:Hauterivian ,
         ischart:Valanginian ;
     skos:notation "K1"^^ischart:ccgmShortCode ;
-    skos:prefLabel "Early"@en ;
-    time:hasBeginning
-        [
-            ischart:inMYA 143.1 ;
-            sdo:marginOfError 0.6 ;
+    skos:prefLabel "Early Cretaceous"@en ;
+    time:hasBeginning [
+            ischart:inMYA 145.0 ;
+            skos:note "uncertain"
         ] ;
-    time:hasEnd
-        [
-            ischart:inMYA 100.5 ;
-            sdo:marginOfError 0.1 ;
+    time:hasEnd [
+            ischart:inMYA 100.5
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 50 ;
@@ -8202,7 +7826,7 @@ ischart:Miocene
         "miocen"@sv ,
         "中新世"@zh ;
     skos:broader ischart:Neogene ;
-    skos:definition "A time period from 23.04 to 5.333 million years ago" ;
+    skos:definition "A time period from 23.03 to 5.333 million years ago" ;
     skos:inScheme cs: ;
     skos:narrower
         ischart:Aquitanian ,
@@ -8213,13 +7837,11 @@ ischart:Miocene
         ischart:Tortonian ;
     skos:notation "N1"^^ischart:ccgmShortCode ;
     skos:prefLabel "Miocene"@en ;
-    time:hasBeginning
-        [
-            ischart:inMYA 23.04 ;
+    time:hasBeginning [
+            ischart:inMYA 23.03
         ] ;
-    time:hasEnd
-        [
-            ischart:inMYA 5.333 ;
+    time:hasEnd [
+            ischart:inMYA 5.333
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 20 ;
@@ -8266,15 +7888,13 @@ ischart:Paleozoic
         ischart:Silurian ;
     skos:notation "PZ"^^ischart:ccgmShortCode ;
     skos:prefLabel "Paleozoic"@en ;
-    time:hasBeginning
-        [
+    time:hasBeginning [
             ischart:inMYA 538.8 ;
-            sdo:marginOfError 0.6 ;
+            sdo:marginOfError 0.2
         ] ;
-    time:hasEnd
-        [
+    time:hasEnd [
             ischart:inMYA 251.902 ;
-            sdo:marginOfError 0.024 ;
+            sdo:marginOfError 0.024
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 77 ;
@@ -8304,7 +7924,7 @@ ischart:UpperCretaceous
         "yngre krita"@sv ,
         "晚白垩世"@zh ;
     skos:broader ischart:Cretaceous ;
-    skos:definition "A time period from 100.5 to 66.00 million years ago" ;
+    skos:definition "A time period from 100.5 to 66.0 million years ago" ;
     skos:inScheme cs: ;
     skos:narrower
         ischart:Campanian ,
@@ -8314,15 +7934,12 @@ ischart:UpperCretaceous
         ischart:Santonian ,
         ischart:Turonian ;
     skos:notation "K2"^^ischart:ccgmShortCode ;
-    skos:prefLabel "Late"@en ;
-    time:hasBeginning
-        [
-            ischart:inMYA 100.5 ;
-            sdo:marginOfError 0.1 ;
+    skos:prefLabel "Late Cretaceous"@en ;
+    time:hasBeginning [
+            ischart:inMYA 100.5
         ] ;
-    time:hasEnd
-        [
-            ischart:inMYA 66.00 ;
+    time:hasEnd [
+            ischart:inMYA 66.0
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 42 ;
@@ -8332,12 +7949,12 @@ ischart:UpperCretaceous
 cs:
     a skos:ConceptScheme ;
     dcterms:conformsTo <https://w3id.org/profile/vocpub/4.6> ;
-    dcterms:created "2024-11-26"^^xsd:date ;
+    dcterms:created "2023-11-05"^^xsd:date ;
     dcterms:creator <https://linked.data.gov.au/org/ics> ;
-    dcterms:modified "2024-11-24"^^xsd:date ;
+    dcterms:modified "2024-11-22"^^xsd:date ;
     dcterms:publisher <https://linked.data.gov.au/org/ics> ;
-    owl:versionIRI ischart:2024-12 ;
-    owl:versionInfo "2024-12" ;
+    owl:versionIRI ischart:2023-09 ;
+    owl:versionInfo "2023-09" ;
     skos:altLabel
         "TAULA CRONOESTRATIGRÀFICA INTERNACIONAL"@ca ,
         "MEZINÁRODNÍ CHRONOSTRATIGRAFICKÁ TABULKA"@cs ,
@@ -8362,10 +7979,29 @@ cs:
     skos:hasTopConcept
         ischart:Phanerozoic ,
         ischart:Precambrian ;
-    skos:historyNote "This vocabulary uses IRIs originally created for the Geologic Timescale (2020) data (see http://resource.geosciml.org/vocabulary/timescale/)" ;
+    skos:historyNote "This vocabulary uses IRIs created for the Geologic Timescale (2020) data (see http://resource.geosciml.org/vocabulary/timescale/) with dates updated from the 2023-09 Chart (see https://stratigraphy.org/chart)" ;
     skos:prefLabel "International Chronostratigraphic Chart"@en ;
+    prov:wasDerivedFrom ts:gts2020 ;
+    sdo:citation "https://stratigraphy.org/chart"^^xsd:anyURI ;
+    sdo:copyrightHolder <https://linked.data.gov.au/org/ics> ;
+    sdo:copyrightNotice "(c) International Commission on Stratigraphy, 2023"@en ;
+    sdo:license <https://creativecommons.org/licenses/by/4.0/> ;
     skos:scopeNote
-        """Els límits inferiors de les unitats de tots els rangs es troben actualment en procés de ser definits com a Estratotips Globals de Límit (GSSP - Global Boundary Stratotype Section and Point), incloses les de l'Arqueà i el Proterozoic que, per convenció, havien estat definits cronomètricament segons edats numèriques absolutes (GSSA-Global Standard Stratigraphic Ages). Hom pot trobar la taula original i la informació detallada sobre els GSSP ratificats a http://www.stratigraphy.org.
+        """Units of all ranks are in the process of being defined by Global Boundary Stratotype Section and Points (GSSP) for their lower boundaries, including those of the Archean and Proterozoic, long defined by Global Standard Stratigraphic Ages (GSSA). Italic fonts indicate informal units and placeholders for unnamed units. Versioned charts and detailed information on ratified GSSPs are available at the website http://www.stratigraphy.org. The URL to this chart is found below.
+
+Numerical ages are subject to revision and do not define units in the Phanerozoic and the Ediacaran; only GSSPs do. For boundaries in the Phanerozoic without ratified GSSPs or without constrained numerical ages, an approximate numerical age (~) is provided.
+
+Ratified Subseries/Subepochs are abbreviated as U/L (Upper/Late), M (Middle) and L/E (Lower/Early). Numerical ages for all systems except Quaternary, upper Paleogene, Cretaceous, Jurassic, Triassic, Permian, Cambrian and Precambrian are taken from ‘A Geologic Time Scale 2012’ by Gradstein et al. (2012), those for the Quaternary, upper Paleogene, Cretaceous, Jurassic, Triassic, Permian, Cambrian and Precambrian were provided by the relevant ICS subcommissions.
+
+Colouring follows the Commission for the Geological Map of the World <www.ccgm.org>.
+
+Chart drafted by K.M. Cohen, D.A.T. Harper, P.L. Gibbard, N. Car
+
+(c) International Commission on Stratigraphy, September 2023.
+
+To cite: Cohen, K.M., Finney, S.C., Gibbard, P.L. & Fan, J.-X. (2013; updated), _The ICS International Chronostratigraphic Chart_. Episodes 36: 199-204"""@en ,
+
+    """Els límits inferiors de les unitats de tots els rangs es troben actualment en procés de ser definits com a Estratotips Globals de Límit (GSSP - Global Boundary Stratotype Section and Point), incloses les de l'Arqueà i el Proterozoic que, per convenció, havien estat definits cronomètricament segons edats numèriques absolutes (GSSA-Global Standard Stratigraphic Ages). Hom pot trobar la taula original i la informació detallada sobre els GSSP ratificats a http://www.stratigraphy.org.
 
 Les edats numèriques (Ma) estan subjectes a revisió i no defineixen unitats en el Fanerozoic ni en I’Ediacarià. Això només ho fan els GSSP. Pel que fa als límits d'aquelles unitats del Fanerozoic que encara no tenen un GSSP ratificat, o dels quals no es disposa d'una edat numèrica acotada, la taula dona una edat numèrica aproximada (~).
 
@@ -8373,12 +8009,13 @@ Les Subsèries/Subèpoques ratificades s’abrevien com S/T (Superior/Tardà), M
 
 Taula dissenyada per K.M. Cohen, D.A.T. Harper, P.L. Gibbard, N. Car
 
-(c) Comissió Internacional d’Estratigrafia (IUGS), Setembre 2024.
+(c) Comissió Internacional d’Estratigrafia (IUGS), Setembre 2023.
 
 Citacio: Cohen, K.M., Finney, S.C., Gibbard, P.L., y Fan, J.-X. (2013; actualilzat) The ICS Intemational Chronostratigraphic Chart. Episodes 36: 199-204.
 
 Traducció al català per iniciativa de Juan Carlos Gutiérrez-Marco (CSIC)."""@ca ,
-        """Postupně se pracuje na tom, aby všechny jednotky byly definovány svými spodními hranicemi na globálních stratotypech (GSSP - Global Boundary Stratotype Section and Point). To platí i pro jednotky archaika a proterozoika, dosud definované globálním standardním stratigrafickým stářím (GSSA - Global Standard Stratigraphic Age). Neformální jednotky a jednotky doposud nepojmenované jsou psány kurzívou. Další verze tabulky a detailní informace o ratifikovaných GSSP jsou dostupné na webu http://www.stratigraphy.org. URL této tabulky je uveden níže.
+
+    """Postupně se pracuje na tom, aby všechny jednotky byly definovány svými spodními hranicemi na globálních stratotypech (GSSP - Global Boundary Stratotype Section and Point). To platí i pro jednotky archaika a proterozoika, dosud definované globálním standardním stratigrafickým stářím (GSSA - Global Standard Stratigraphic Age). Neformální jednotky a jednotky doposud nepojmenované jsou psány kurzívou. Další verze tabulky a detailní informace o ratifikovaných GSSP jsou dostupné na webu http://www.stratigraphy.org. URL této tabulky je uveden níže.
 
 Absolutní stáří jsou průběžně revidována a nedefinují jednotky ve fanerozoiku a ediakaru, kde jsou rozhodující pouze GSSP. Pro absolutního stáří hranic fanerozoických jednotek bez ratifikovaného GSSP nebo bez přesného absolutního datování je použit symbol (~).
 
@@ -8391,7 +8028,8 @@ Návrh originální tabulky v angličtině: K.M. Cohen, D.A.T. Harper, P.L. Gibb
 (c) Mezinárodní stratigrafická komise, září 2023
 
 Způsob citace původní tabulky: Cohen, K.M., Finney, S.C., Gibbard, P.L. & Fan, J.-X. (2013; updated) The ICS International Chronostratigraphic Chart. Episodes 36:199-204"""@cs ,
-        """Globale stratigraphische Einheiten werden mit ihrer Basis definiert an Globalen Stratotyp Profilen und Punkten (GSSP, Global Stratotyp Section and Point). Dagegen sind Einheiten ≥ 1000 Ma definiert mit Globalen Stratigraphischen Standardaltern (GSSA). Mehr Informationen dazu unter: http://www.stratigraphy.org. Bis 09/2023 ratifizierte Grenzen sind mit einem Goldenen Nagel markiert.
+
+    """Globale stratigraphische Einheiten werden mit ihrer Basis definiert an Globalen Stratotyp Profilen und Punkten (GSSP, Global Stratotyp Section and Point). Dagegen sind Einheiten ≥ 1000 Ma definiert mit Globalen Stratigraphischen Standardaltern (GSSA). Mehr Informationen dazu unter: http://www.stratigraphy.org. Bis 09/2023 ratifizierte Grenzen sind mit einem Goldenen Nagel markiert.
 
 Die numerischen Alter stammen aus der Global Time Scale 2012 (GTS 2012, Gradstein et al. 2012), die Alter für das untere Pleistozän, das Chattium, die untere Kreide, die Jura, die Trias, das Perm und das Kryogenium von den zuständigen ICS-Subkommissionen. Das Zeichen ~ steht vor relativ unsicheren Altern.
 
@@ -8400,27 +8038,18 @@ Farben: Commission for the Geological Map of the World (CGMW, http://www.ccgm.or
 Zitierweize: Cohen, K.M., Finney, S.C., Gibbard, P.L. & Fan, J.-X. (2013;aktualisiert) The ICS International Chronostratigraphic Chart. Episodes 36:199-204. URL: http://www.stratigraphy.org/ICSchart/ChronostratChart2022-02.pdf
 
 Version in Deutsch: Deutsche Stratigraphische Kommission (DSK, M. Menning) Österreichische Stratigraphische Kommission (ASC, W. Piller)"""@de ,
-        """Units of all ranks are in the process of being defined by Global Boundary Stratotype Section and Points (GSSP) for their lower boundaries, including those of the Archean and Proterozoic, long defined by Global Standard Stratigraphic Ages (GSSA). Ratified Subseries/Subepochs are abbreviated as U/L (Upper/Late), M (Middle) and L/E (Lower/Early). Italic fonts indicate informal units and placeholders for unnamed units. Previous versions and detailed information on ratified GSSPs are available at the website http://www.stratigraphy.org. The URL to this chart is provided below.
 
-Numerical ages are subject to ongoing revision and do not define units in the Phanerozoic and the Ediacaran; only GSSPs do. For boundaries in the Phanerozoic without ratified GSSPs or without constrained numerical ages, an approximate numerical age (~) is provided.
-
-Most numerical ages are taken from ‘A Geologic Time Scale 2020’ by Gradstein et al. (2020), but some ages differ as provided by the relevant ICS subcommissions, with advice from the Timescale Calibration subcommission. These are approved by the ICS executive as the current consensus.
-
-Chart drafted and maintained online by officers K.M. Cohen and N. Car. The chart is a product of collective work by all ICS members past and present.
-
-(c) International Commission on Stratigraphy, December 2024.
-
-URL: https://stratigraphy.org/chart"""@en ,
-        """odas las unidades de esta Tabla, cualquiera que sea su rango, se definen por el Estratotipo Global de Límite (GSSP - Global Boundary Stratotype Section and Point) referido siempre a su límite inferior. Este proceso se halla todavía inacabado e incluirá las unidades del Arcaico y Proterozoico, cuyas divisiones se convinieron inicialmente mediante edades absolutas (GSSA - Global Standard Stratigraphic Ages). La posición de los GSSP oficiales se indica en la tabla mediante el símbolo del “Clavo Dorado” (Golden Spike), que los materializa en el terreno. El original de la tabla en distintos idiomas y formatos, junto con los detalles de los estratotipos globales de límite (criterio de definición de cada uno, localización geográfica y geológica, correlación, etc.), están disponibles en la web www.stratigraphy.org.
+    """odas las unidades de esta Tabla, cualquiera que sea su rango, se definen por el Estratotipo Global de Límite (GSSP - Global Boundary Stratotype Section and Point) referido siempre a su límite inferior. Este proceso se halla todavía inacabado e incluirá las unidades del Arcaico y Proterozoico, cuyas divisiones se convinieron inicialmente mediante edades absolutas (GSSA - Global Standard Stratigraphic Ages). La posición de los GSSP oficiales se indica en la tabla mediante el símbolo del “Clavo Dorado” (Golden Spike), que los materializa en el terreno. El original de la tabla en distintos idiomas y formatos, junto con los detalles de los estratotipos globales de límite (criterio de definición de cada uno, localización geográfica y geológica, correlación, etc.), están disponibles en la web www.stratigraphy.org.
 
 Las edades absolutas, expresadas en millones de años (Ma), son sólo orientativas, pues tanto el Ediacárico como las unidades del Fanerozoico se definen formalmente por sus correspondientes GSSP, en vez de por edades numéricas. No obstante, para aquellas divisiones que no cuentan aún con un estratotipo global o con edades bien establecidas, se indican las dataciones aproximadas (~ Ma) de sus límites. Las edades numéricas han sido tomadas de Gradstein et al. (A Geologic Time Scale 2012), con excepción de las correspondientes al Cuaternario, Paleógeno superior, Cretácico, Jurásico, Triásico, Pérmico, Cámbrico y Precámbrico, que fueron aportadas por las subcomisiones respectivas de la ICS-IUGS.
 
 Tabla diseñada por K.M. Cohen, D.A.T. Harper, P.L. Gibbard y N. Car
 
-(c) International Commission on Stratigraphy (IUGS), Septiembre 2024.
+(c) International Commission on Stratigraphy (IUGS), Septiembre 2023
 
 Citar como: Cohen, K.M., Finney, S.C., Gibbard, P.L. & Fan, J.-X. (2013; actualizada). The ICS International Chronostratigraphic Chart. Episodes 36: 199-204"""@es ,
-        """Kategoria guztietako unitateak definitzeko prozesuan daude beren beheko mugen muga-estratotipo globaleko ebaki eta puntuen bidez (GSSP-Global Boundary Stratotype Section and Point); baita Arkearrekoak eta Proterozoikokoak ere, denbora luzean adin estratigrafiko estandar globalez (GSSA-Global Standard Startigraphic Ages) definituak izan direnak. Taulak eta onetsitako GSSPen informazio xehea ondorengo web orrian eskuragarri daude: http://www.stratigraphy.org. Taula honen URLa behean adierazita dago.
+
+    """Kategoria guztietako unitateak definitzeko prozesuan daude beren beheko mugen muga-estratotipo globaleko ebaki eta puntuen bidez (GSSP-Global Boundary Stratotype Section and Point); baita Arkearrekoak eta Proterozoikokoak ere, denbora luzean adin estratigrafiko estandar globalez (GSSA-Global Standard Startigraphic Ages) definituak izan direnak. Taulak eta onetsitako GSSPen informazio xehea ondorengo web orrian eskuragarri daude: http://www.stratigraphy.org. Taula honen URLa behean adierazita dago.
 
 Adin numerikoak berrikusi egin daitezke eta ez dute unitaterik definitzen Fanerozoikoan eta Ediacararrean; soilik GSSPek definitzen dituzte unitateak. GSSPrik onetsita edo adin numeriko mugaturik ez duten mugentzako gutxi gorabeharko adin numeriko bat (~) eman da.
 
@@ -8428,10 +8057,11 @@ Sistema guztien adin numerikoak, Behe Pleistozeno, Permiar, Triasiko, Kretazeo e
 
 Taula hau K.M. Cohen, S.C. Finney eta P.L. Gibbard-ek diseinatu dute
 
-(c) International Commission on Stratigraphy (IUGS), 2024 eko urtarrila.
+(c) International Commission on Stratigraphy (IUGS), 2015eko urtarrila
 
 Aipamena egiteko: Cohen, K.M., Finney, S.C., Gibbard, P.L. eta Fan, J.-X. (2013; eguneratua) The ICS International Chronostratigraphic Chart. Episodes 36: 199-204"""@eu ,
-        """Kaikkien stratigrafisten tasojen yksiköille määritetään alarajoja Global Boundary Stratotype Section and Points (GSSP) -periaatteen mukaisesti. Tämä koskee myös arkeeisten ja proterotsooisten yksiköiden rajoja, jotka on aikaisemmin määritetty Global Standard Stratigraphic Ages (GSSA) -periaatteen mukaan. Epäviralliset yksiköt on kirjoitettu kursiivilla. Aiemmat versiot ja yksityiskohtaiset tiedot ratifioitujen globaalien stratotyyppileikkausten alakontaktien maantieteellisistä sijainneista (GSSP-kohteista) on saatavana verkkosivustolla http://www.stratigraphy.org. Kaavion verkkosivun URL-osoite on annettu alla.
+
+    """Kaikkien stratigrafisten tasojen yksiköille määritetään alarajoja Global Boundary Stratotype Section and Points (GSSP) -periaatteen mukaisesti. Tämä koskee myös arkeeisten ja proterotsooisten yksiköiden rajoja, jotka on aikaisemmin määritetty Global Standard Stratigraphic Ages (GSSA) -periaatteen mukaan. Epäviralliset yksiköt on kirjoitettu kursiivilla. Aiemmat versiot ja yksityiskohtaiset tiedot ratifioitujen globaalien stratotyyppileikkausten alakontaktien maantieteellisistä sijainneista (GSSP-kohteista) on saatavana verkkosivustolla http://www.stratigraphy.org. Kaavion verkkosivun URL-osoite on annettu alla.
 
 Numeeriset iät saattavat muuttua eikä niillä määritetä fanerotsooisia eikä ediakaran yksiköitä; ne rajautuvat yksinomaan globaalien stratotyyppileikkausten alakontaktien (GSSP:t) perusteella. Fanerotsooisille yksikkörajoille annetaan ikäarvio (~), mikäli rajoilla ei ole ratifioitua GSSP:tä tai vahvistettua numeerista ikää.
 
@@ -8441,10 +8071,11 @@ Väritys noudattaa Maailman geologisen karttakomission Geological Map of World (
 
 Taulun ovat laatineet K.M. Cohen, D.A.T. Harper, P.L. Gibbard, N. Car
 
-(c) International Commission on Stratigraphy, Syyskuu 2024.
+(c) International Commission on Stratigraphy, Syyskuu 2022
 
 Viittausohje: Cohen, K.M., Finney, S.C., Gibbard, P.L. & Fan, J.-X. (2013; updated) The ICS International Chronostratigraphic Chart. Episodes 36: 199-204."""@fi ,
-        """La définition de la limite inférieure de chaque unité formelle par un point précis dans la coupe d’un stratotype de limite global (GSSP-Global Boundary Stratotype Section and Points) est encore en cours, y compris celle des unités de l’Archéen et du Protérozoïque, auparavant définie par des âges absolus (GSSA-Global Standard Stratigraphic Ages). Les noms en italique indiquent des unités informelles et l’espace pour des unités à nommer. Les chartes et des informations plus détaillées sur les GSSP sont disponibles sur le site web de l’International Commission on Stratigraphy (ICS) www.stratigraphy.org.
+
+    """La définition de la limite inférieure de chaque unité formelle par un point précis dans la coupe d’un stratotype de limite global (GSSP-Global Boundary Stratotype Section and Points) est encore en cours, y compris celle des unités de l’Archéen et du Protérozoïque, auparavant définie par des âges absolus (GSSA-Global Standard Stratigraphic Ages). Les noms en italique indiquent des unités informelles et l’espace pour des unités à nommer. Les chartes et des informations plus détaillées sur les GSSP sont disponibles sur le site web de l’International Commission on Stratigraphy (ICS) www.stratigraphy.org.
 
 Les âges numériques sont sujets à révision et ne définissent pas les unités du Phanérozoïque et de l’Édicarien; seuls les GSSP le font. Pour les limites du Phanérozoïque qui n’ont pas de GSSP ratifiés ou des âges numériques calibrés, un âge numérique approximatif (~) est indiqué. Les sous-séries/-sous-époques ratifiées sont abbrégées par S (Supérieur), M (Moyen) et I (Inférieur). Les âges numériques de tous les systèmes à l’exception du Précambrien, Cambrien, Permien, Trias, Jurassique, Crétacé, Paléogène supérieur et Quaternaire sont tirés du livre A Geologic Time Scale 2012 par Gradstein et al. (2012); ceux Précambrien, Cambrien, Permien, Trias, Jurassique, Crétacé, Paléogène supérieur et Quaternaire ont été définis par les subcommissions de l’ICS.
 
@@ -8452,10 +8083,11 @@ Les couleurs suivent les recommendations de la Commission de la Carte Géologiqu
 
 Chart faite par K.M. Cohen, D.A.T. Harper, P.L. Gibbard, N. Car
 
-(c) Commission Internationale de Stratigraphie, Septembre 2024.
+(c) Commission Internationale de Stratigraphie, Septembre 2023
 
 Citation: Cohen, K.M., Finney, S.C., Gibbard, P..L. & Fan, J.X. (2013; updated) The ICS International Chronostratigraphic Chart. Episodes 36:199-204"""@fr ,
-        """Bármely rendű egység alsó határának kijelölése globális határsztratotípus-szelvény és pont (GSSP) alapján történik, beleértve az archaikum és proterozoikum egységeit is, bár ezeket sokáig globális standard rétegtani korok (GSSA) útján definiálták. Az informális, valamint a még elnevezésre váró egységeket dőlt betű jelzi. A táblázat különböző verziói és a ratifikált GSSP-kre vonatkozó részletes információk a http://www.stratigraphy.org honlapról érhetők el. E táblázat webcímét lásd alább.
+
+    """Bármely rendű egység alsó határának kijelölése globális határsztratotípus-szelvény és pont (GSSP) alapján történik, beleértve az archaikum és proterozoikum egységeit is, bár ezeket sokáig globális standard rétegtani korok (GSSA) útján definiálták. Az informális, valamint a még elnevezésre váró egységeket dőlt betű jelzi. A táblázat különböző verziói és a ratifikált GSSP-kre vonatkozó részletes információk a http://www.stratigraphy.org honlapról érhetők el. E táblázat webcímét lásd alább.
 
 A számszerű korok új kormeghatározási eredmények alapján változhatnak, de a fanerozoikum egységeinek és az ediacarainak a definíciójában nincs szerepük. A ratifikált GSSP-vel vagy megbízhatóan meghatározott számszerű korral nem rendelkező fanerozoikumi egységeknél közelítő számszerű kor (~) szerepel.
 
@@ -8465,44 +8097,48 @@ A színek a Földtani Világtérkép Bizottság (CGMW) rendszerét követik. ( w
 
 A táblázat kidolgozói: K.M. Cohen, D.A.T. Harper, P.L. Gibbard, N. Car
 
-(c) Nemzetközi Rétegtani Bizottság (ICS), 2024. szeptember
+(c) Nemzetközi Rétegtani Bizottság (ICS), 2023. szeptember
 
 Javasolt idézés: Cohen, K.M., Finney, S.C., Gibbard, P.L. & Fan, J.-X. (2013; frissítve) The ICS International Chronostratigraphic Chart. Episodes 36: 199-204."""@hu ,
-        """Le unità stratigrafiche del Fanerozoico e dell'Ediacarano, sono state o sono in procinto di essere definite da GSSP (Global Boundary Stratotype Section and Points) tramite il loro limite inferiore. Le unità con età ≥ 1000 Ma, ovvero quelle dell'Archeano e del Proterozoico, sono al momento definite da GSSA (Global Stratigraphic Standard Ages). I nomi in corsivo identificano le unità informali, mentre le unità non ancora definite sono indicate con il nome generico del proprio rango. Schemi aggiornati e informazioni dettagliate sui GSSP ratificati sono disponibili sul sito web http://www.stratigraphy.org. Le datazioni numeriche sono oggetto di revisione e, a differenza dei GSSP, non definiscono unità nel Fanerozoico e nell’Ediacarano. Per le unità del Fanerozoico non definite da GSSP o senza un’età precisa, viene indicata un’età numerica approssimata (~). Le età numeriche per tutti i sistemi eccetto che per il Quaternario, il Paleogene superiore, il Cretacico, il Triassico, il Permiano, il Cambriano e il Precambriano sono prese da “A Geologic Time Scale 2012” di Gradstein et al. (2012), quelle per il Quaternario, il Paleogene superiore, il Cretacico, il Giurassico, il Triassico, il Permiano, il Cambriano e il Precambriano sono state fornite dalle relative sottocommissioni della ICS.
+
+    """Le unità stratigrafiche del Fanerozoico e dell'Ediacarano, sono state o sono in procinto di essere definite da GSSP (Global Boundary Stratotype Section and Points) tramite il loro limite inferiore. Le unità con età ≥ 1000 Ma, ovvero quelle dell'Archeano e del Proterozoico, sono al momento definite da GSSA (Global Stratigraphic Standard Ages). I nomi in corsivo identificano le unità informali, mentre le unità non ancora definite sono indicate con il nome generico del proprio rango. Schemi aggiornati e informazioni dettagliate sui GSSP ratificati sono disponibili sul sito web http://www.stratigraphy.org. Le datazioni numeriche sono oggetto di revisione e, a differenza dei GSSP, non definiscono unità nel Fanerozoico e nell’Ediacarano. Per le unità del Fanerozoico non definite da GSSP o senza un’età precisa, viene indicata un’età numerica approssimata (~). Le età numeriche per tutti i sistemi eccetto che per il Quaternario, il Paleogene superiore, il Cretacico, il Triassico, il Permiano, il Cambriano e il Precambriano sono prese da “A Geologic Time Scale 2012” di Gradstein et al. (2012), quelle per il Quaternario, il Paleogene superiore, il Cretacico, il Giurassico, il Triassico, il Permiano, il Cambriano e il Precambriano sono state fornite dalle relative sottocommissioni della ICS.
 
 I colori seguono le indicazioni della Commission for the Geological Map of the World (www.ccgm.org)
 
 Carta redatta da K.M. Cohen, D.A.T. Harper, P.L. Gibbard, N. Car
 
-(c) International Commission on Stratigraphy, settembre 2024.
+(c) International Commission on Stratigraphy, settembre 2023
 
 Da citare: Cohen, K.M., Finney, S.C., Gibbard, P.L. & Fan, J.-X. (2013; aggiornato)
 The ICS International Chronostratigraphic Chart. Episodes 36: 199-204
 
 Traduzione a cura della Commissione Italiana di Stratigrafia"""@it ,
-        """すべての階層の層序区分単位に対して，その下限をGSSPs（国際境界模式層断面とポイント）によって定義する作業が進行中である．これは，長らくGSSA（国際標準層序年代）によって定義されてきた太古（累）界および原生（累）界の下限に対しても同様である．GSSPsに関する図および詳細な情報は，ウェブサイト http://www.stratigraphy.org に掲載されている．
+
+    """すべての階層の層序区分単位に対して，その下限をGSSPs（国際境界模式層断面とポイント）によって定義する作業が進行中である．これは，長らくGSSA（国際標準層序年代）によって定義されてきた太古（累）界および原生（累）界の下限に対しても同様である．GSSPsに関する図および詳細な情報は，ウェブサイト http://www.stratigraphy.org に掲載されている．
 
 本表に掲載されている年代値は見直されることがあるが，それは顕生（累）界およびエディアカラン系の層序区分単位の定義の変更を伴うものではない．そのような定義の変更は，GSSPsによってのみ可能である．GSSPsにより定義されていない境界や確定した年代値がない顕生（累）界の層序区分単位境界に対しては，おおよその年代値を「~」を付して示した．
 
 第四系，上部古第三系，白亜系，三畳系，ペルム系，カンブリア系，先カンブリア（累）界を除く全ての界の年代値は，Gradstein et al.（2012） の‘The Geologic Time Scale 2012’による．第四系，上部古第三系，白亜系，三畳系，ペルム系，カンブリア系，先カンブリア（累）界の年代値に関しては，当該問題を扱う国際層序委員会の小委員会による．
 
-この日本語版ISC Chart（2024年6月版）は，IUGS（国際地質科学 連合）の許諾を得て，日本地質学会が作成した．表の色は，国際地質図委員会（Commission for the Geological Map of the World (www.cgmw.org）の 推奨に従う
+この日本語版ISC Chart（2023年6月版）は，IUGS（国際地質科学 連合）の許諾を得て，日本地質学会が作成した．表の色は，国際地質図委員会（Commission for the Geological Map of the World (www.cgmw.org）の 推奨に従う
 
 図案 (オリジナル): K.M. Cohen, D.A.T. Harper, P.L. Gibbard, N. Car
 
-(c) 国際層序委員会，2024年12月
+(c) 国際層序委員会，2023年9月
 
 引用: Cohen, K.M., Finney, S.C., Gibbard, P.L. & Fan, J.-X. (2013; updated) The ICS International Chronostratigraphic Chart. Episodes 36: 199-204."""@ja ,
-        """오 랫 동 안 국 제 표 준 층 서 연 령 ( G S S A ) 으 로 지 정 된 시 생 누 대 와 원생누대의 하부경계를 포함하여, 모든 지질시대의 하부경계에 대한 국제표준층서구역(GSSP)을 지정하고 있는 중이다. 이탤릭체는 비공식적인 지질시대나 이름이 붙여지지 않은 지질시대를 나타낸다. 이 표 의 모 든 버 전 과 승 인 된 G S S P 에 대 한 자 세 한 정 보 는 http://www.stratigraphy.org에서 찾아볼 수 있다. 이 표의 URL은 아래에 적어 놓았다.
+
+    """오 랫 동 안 국 제 표 준 층 서 연 령 ( G S S A ) 으 로 지 정 된 시 생 누 대 와 원생누대의 하부경계를 포함하여, 모든 지질시대의 하부경계에 대한 국제표준층서구역(GSSP)을 지정하고 있는 중이다. 이탤릭체는 비공식적인 지질시대나 이름이 붙여지지 않은 지질시대를 나타낸다. 이 표 의 모 든 버 전 과 승 인 된 G S S P 에 대 한 자 세 한 정 보 는 http://www.stratigraphy.org에서 찾아볼 수 있다. 이 표의 URL은 아래에 적어 놓았다.
 
 수 치 연 령 은 수 정 될 수 있 으 며 , 현 생 누 대 의 지 질 시 대 와 에디아카리기는 수치연령이 아니라 GSSP에 의해서만 정의된다. GSSP가 승인되지 않았거나 범위가 제한된 수치연령이 주어지지 않은 현생누대 지질시대의 경계에는 수치연령의 근사값(~)을 적어 놓았다. 승인된 아세/아통은 후기, 중기, 전기로 표기하였다. 제4기, 상부 고진기, 백악기, 트라이아스기, 쥐라기, 페름기, 캄브리아기 그리고 선 캄 브 리 아 시 대 의 수 치 연 령 은 국 제 층 서 위 원 회 의 해 당 지질시대위원회에서 제공하였으며, 이를 제외한 모든 지질시대 경계의 수치연령은 ‘Gradstein et al. (2012)의 ‘A Geologic Time Scale 2012’로 부터 인용하였다.
 
 표의 색채는 세계지질도위원회 (www.ccgm.org) 를 따랐다.
 
-표의 초안은 2024년 06월 (c) 국제층서위원회의 K.M. Cohen, D.A.T. Harper, P.L. Gibbard, N. Car가 만들었다.
+표의 초안은 2023년 06월 (c) 국제층서위원회의 K.M. Cohen, D.A.T. Harper, P.L. Gibbard, N. Car가 만들었다.
 
 인용: Cohen, K.M., Finney, S.C., Gibbard, P.L. & Fan, J.-X. (2013; updated) The ICS International Chronostratigraphic Chart. Episodes 36: 199-204."""@ko ,
-        """Visų rangų padaliniai yra apibrėžti Globalinio stratotipo pjūvio apatinės ribos tašku (GSPT), o archejaus ir proterozojaus padaliniai nusakomi Globalinio stratigrafinio amžiaus standartu (GSAS). Patvirtintu GSPT lentelėje detali informacija yra tikra tinklalapyje http://www.stratigraphy.org
+
+    """Visų rangų padaliniai yra apibrėžti Globalinio stratotipo pjūvio apatinės ribos tašku (GSPT), o archejaus ir proterozojaus padaliniai nusakomi Globalinio stratigrafinio amžiaus standartu (GSAS). Patvirtintu GSPT lentelėje detali informacija yra tikra tinklalapyje http://www.stratigraphy.org
 
 Fanerozojaus ir ediakaro GSPT padalinių amžiaus skaičiai yra neapibrėžti ir gali būti tikslinami toms fanerozojaus riboms, kurioms nėra GSPT patvirtinimo arba jos negalutinės, skaičiai rodo apytikrį amžių (~), yra sąlyginiai.
 
@@ -8510,10 +8146,11 @@ Visų sistemų amžius, išskyrus apatinį pleistoceną, permą, triasą, kreid�
 
 Lentelė sudaryta: K.M. Cohen, S.C. Finney, P.L. Gibbard
 
-(c) Tarptautinė stratigrafijos komisija, 2024 sausis.
+(c) Tarptautinė stratigrafijos komisija, 2015 sausis.
 
 Cituoti: Cohen, K.M., Finney, S.C., Gibbard, P.L., ir Fan, J.-X. (2013; papildyta) The ICS International Chronostratigraphic Chart. Episodes 36: 199-204."""@lt ,
-        """De ondergrens van eenheden van verschillende rang, wordt momenteel stapsgewijs gedefinieerd op basis van Global Boundary Stratotype Section and Points (GSSPs), ook die in het Archeïcum en het Proterozoïcum welke vooralsnog als Global Standard Stratigraphic Age (GSSA) vastgesteld zijn. Tabellen en nadere informatie over geratificeerde GSSPs zijn te vinden op www.stratigraphy.org. De URL van deze tabel is hieronder gegeven.
+
+    """De ondergrens van eenheden van verschillende rang, wordt momenteel stapsgewijs gedefinieerd op basis van Global Boundary Stratotype Section and Points (GSSPs), ook die in het Archeïcum en het Proterozoïcum welke vooralsnog als Global Standard Stratigraphic Age (GSSA) vastgesteld zijn. Tabellen en nadere informatie over geratificeerde GSSPs zijn te vinden op www.stratigraphy.org. De URL van deze tabel is hieronder gegeven.
 
 Van eenheden met hun door een GSSP gedefinieerde ondergrens, wordt de veronderstelde ouderdom in Ma van tijd tot tijd herzien (naar nieuw inzicht bijgesteld). Voor Fanerozoïsche eenheden waarvoor nog geen GSSP en/of numerieke ouderdom is vastgesteld, is een ouderdom bij benadering gegeven (~).
 
@@ -8523,11 +8160,12 @@ De kleuren volgen deze van de Commissie voor de Geologische Kaart van de Wereld 
 
 Tabel opgesteld door K.M. Cohen, D.A.T. Harper, P.L. Gibbard & N. Car
 
-(c) International Commission on Stratigraphy, September 2024.
+(c) International Commission on Stratigraphy, September 2023
 
 Citeren: Cohen, K.M., Finney, S.C., Gibbard, P.L. & Fan, J.-X. (2013; updated). The ICS International Chronostratigraphic Chart. Episodes 36: 199-204.
 """@nl ,
-        """Det pågår nå en prosess der de nedre grensene for alle enhetene i tabellen defineres med Global Boundary Stratotype Section and Points (GSSP). Dette gjelder også for grensene i arkeikum og proterozoikum som lenge har vært definert med Global Standard Stratigraphical Ages (GSSA). Tabeller og detaljert informasjon om ratifiserte GSSP er tilgjengelig på websiden www.stratigraphy.org. Denne tabellens URL finnes nedenfor.
+
+    """Det pågår nå en prosess der de nedre grensene for alle enhetene i tabellen defineres med Global Boundary Stratotype Section and Points (GSSP). Dette gjelder også for grensene i arkeikum og proterozoikum som lenge har vært definert med Global Standard Stratigraphical Ages (GSSA). Tabeller og detaljert informasjon om ratifiserte GSSP er tilgjengelig på websiden www.stratigraphy.org. Denne tabellens URL finnes nedenfor.
 
 Numeriske aldre underkastes revisjon og definerer ikke enheter i fanerozoikum og ediacara; kun ratifiserte GSSP gjelder. For grenser i fanerozoikum uten ratifisert GSSP eller kalibrerte numeriske aldere, er bare tilnærmete aldre (~) oppgitt.
 
@@ -8537,17 +8175,19 @@ Fargeskalaen følger retningslinjene til The Commission for the Geological Map o
 
 Tabellen er tegnet av K.M. Cohen, D.A.T. Harper, P.L. Gibbard & J.-X. Fan
 
-(c) International Commission on Stratigraphy, Septemebr 2024.
+(c) International Commission on Stratigraphy, Septemebr 2023
 
 Referanse: Cohen, K.M., Finney, S.C., Gibbard, P.L. & Fan, J.-X. (2013; updated). The ICS International Chronostratigraphic Chart. Episodes 36: 199-204."""@no ,
-        """A definição do Estratotipo Global de Limite (GSSP - Global Boundary Stratotype Section and Point) para a base dos diversos andares, séries, sistemas e eratemas, é um processo ainda incompleto. O mesmo ocorre A Tabela original e os detalhes sobre os GSSP (critério de definição de cada um, localização geográfica e geológica, correlação, etc.), atualizam-se regularmente na web page: http://www.stratigraphy.org.
+
+    """A definição do Estratotipo Global de Limite (GSSP - Global Boundary Stratotype Section and Point) para a base dos diversos andares, séries, sistemas e eratemas, é um processo ainda incompleto. O mesmo ocorre A Tabela original e os detalhes sobre os GSSP (critério de definição de cada um, localização geográfica e geológica, correlação, etc.), atualizam-se regularmente na web page: http://www.stratigraphy.org.
 
 As Subséries e Subépocas ratificadas estão abreviadas como S (Superior), M (Médio) e I (Inferior). A datação absoluta em milhões de anos (Ma) para a base do Ediacárico e das restantes unidades do Fanerozoico é apenas orientadora, em especial para os limites sem GSSP formal (~Ma). Estes valores poderão ser revistos no futuro ou serem recalibrados geocronometricamente. Os valores indicados são provenientes de Gradstein et al. (A Geologic Time Scale 2012), excetuando as datações do Quaternário, Paleogénico Superior, Cretácico, Jurássico, Triássico, Pérmico, Câmbrico e Precâmbrico, fornecidas pelas subcomissões respetivas da ICS-IUGS.
 
-Tabela desenhada por K.M. Cohen, D.A.T. Harper, P.L. Gibbard e N. Car Setembro de 2024 © International Commission on Stratigraphy (IUGS)
+Tabela desenhada por K.M. Cohen, D.A.T. Harper, P.L. Gibbard e N. Car Setembro de 2023 © International Commission on Stratigraphy (IUGS)
 
 Citar: Cohen, K.M., Finney, S.C., Gibbard, P.L. & Fan, J.-X. (2013; atualizada) The ICS International chronostratigraphic Chart. Episodes 36: 199-204."""@pt ,
-        """Нижние границы всех подразделений, определяемые Точкой глобального стратотипа границ (ТГСГ) постоянно уточняются, в том числе подразделения архея и протерозоя, давно определяемые геохронологическими данными (ГССВ /GSSA).
+
+    """Нижние границы всех подразделений, определяемые Точкой глобального стратотипа границ (ТГСГ) постоянно уточняются, в том числе подразделения архея и протерозоя, давно определяемые геохронологическими данными (ГССВ /GSSA).
 
 Шкалы и подробная информация о ратифицированных GSSP доступна на сайте: http://www.stratigraphy.org. URL-адрес данной шкалы приводится ниже.
 
@@ -8559,10 +8199,11 @@ Citar: Cohen, K.M., Finney, S.C., Gibbard, P.L. & Fan, J.-X. (2013; atualizada) 
 
 Шкала представлена K.M. Cohen, D.A.T. Harper, P.L. Gibbard
 
-(с) Международная комиссия по стратиграфии, февраль 2024 г.
+(с) Международная комиссия по стратиграфии, февраль 2017 г.
 
 Цитировать: Cohen, K.M., Finney, S.C., Gibbard, P.L. & Fan, J.-X. (2013; с дополнениями) The ICS International Chronostratigraphic Chart. Episodes 36: 199-204."""@ru ,
-        """Spodné hranice všetkých rádov sú definované na základe stratotypových profilov a bodov globálnych hraníc (GSSP) vrátane archaických a peroterozoických, ktoré sú definované na základe globálnych štandardných Numerické veky sú predmetom revízie a na rozdiel od GSSP nedefinujú jednotky fanerozoika a ediakaru. Pre hranice fanerozoických stupňov bez ratifikovaných GSSP alebo bez definovaného numerického veku, je použitý približný numerický vek (~).
+
+    """Spodné hranice všetkých rádov sú definované na základe stratotypových profilov a bodov globálnych hraníc (GSSP) vrátane archaických a peroterozoických, ktoré sú definované na základe globálnych štandardných Numerické veky sú predmetom revízie a na rozdiel od GSSP nedefinujú jednotky fanerozoika a ediakaru. Pre hranice fanerozoických stupňov bez ratifikovaných GSSP alebo bez definovaného numerického veku, je použitý približný numerický vek (~).
 
 Ratifikované pododdelenia/podepochy sú skrátene označené v./m. (vrchný/mladší), str. (stredný) a sp./st. (spodný/starší). Numerické veky pri všetkých útvaroch okrem kvartéru, vrchného paleogénu, kriedy, triasu, permu a predkambria sú prevzaté z práce Gradstein et al. (2012)A Geologic Time Scale 2012. Kvartérne, vrchnopaleogénne, kriedové, jurský, triasové, permské a predkambrické veky poskytli príslušné subkomisie ICS.
 
@@ -8570,10 +8211,11 @@ Farby podľa Komisie pre geologickú mapu sveta (www.ccgm.org)
 
 Anglickú tabuľku nakreslili K.M. Cohen, D.A.T. Harper, P.L. Gibbard a N. Car
 
-(c) Medzinárodná stratigrafická komisia, septembra 2024.
+(c) Medzinárodná stratigrafická komisia, septembra 2023
 
 Citovať ako: Cohen, K.M., Finney, S.C., Gibbard, P.L. & Fan, J.-X. (2013; updated) The ICS International Chronostratigraphic Chart. Episodes 36"""@sk ,
-        """Bütün kademelerin birimlerinin alt sınırları Küresel Stratotip Kesit ve Noktaların Sınırları (GSSP) kapsamında tanımlanmıştır ve buna Küresel Standart Stratigrafik Yaşlar (GSSA) tarafından uzun zamandır tanımlanan Arkeen ile Proterozoyik de dâhildir. Çizelgeler ve tasdikli GSSP’ler hakkında daha detaylı bilgiler http://www.stratigraphy.org sayfasından temin edilebilir. Bu çizelgenin URL’si aşağıda verilmiştir.
+
+    """Bütün kademelerin birimlerinin alt sınırları Küresel Stratotip Kesit ve Noktaların Sınırları (GSSP) kapsamında tanımlanmıştır ve buna Küresel Standart Stratigrafik Yaşlar (GSSA) tarafından uzun zamandır tanımlanan Arkeen ile Proterozoyik de dâhildir. Çizelgeler ve tasdikli GSSP’ler hakkında daha detaylı bilgiler http://www.stratigraphy.org sayfasından temin edilebilir. Bu çizelgenin URL’si aşağıda verilmiştir.
 
 Sayısal yaş değerleri gözden geçirilmeye açıktır ve Fanerozoyik ile Ediyakaran içindeki birimlerin sınırlanmasını sağlamaz; sadece GSSP ile elde edilmiştir. Tasdikli GSSP’den veya sınırlandırılmış sayısal yaş değerlerinden yoksun Fanerozoyikteki sınırlar için, yaklaşık sayısal değer (~) verilmiştir.
 
@@ -8583,10 +8225,11 @@ Renklendirme kodları için Dünya Jeoloji Haritası Komisyonu (http://www.ccgm.
 
 Çizelge tasarımı: K.M. Cohen, D.A.T. Harper, P.L. Gibbard
 
-(c) International Commission on Stratigraphy, Eylül 2024.
+(c) International Commission on Stratigraphy, Eylül 2023
 
 Kaynak gösterimi: Cohen, K.M., Finney, S.C., Gibbard, P.L. & Fan, J.-X. (2013; updated) The ICS International Chronostratigraphic Chart. Episodes 36: 199-204."""@tr ,
-        """所有全球年代地层单位均由其底界的全球界线层型剖面和点位（GSSP）界定，包括长期由全球标准地层年龄（GSSA）界定的太古宇和元古宇各单位。斜体代表非正式名称或尚未命名单位的临时名称。图件及已批准GSSP的详情参见国际地层委员会官网。本图件的网址见右下角。
+
+    """所有全球年代地层单位均由其底界的全球界线层型剖面和点位（GSSP）界定，包括长期由全球标准地层年龄（GSSA）界定的太古宇和元古宇各单位。斜体代表非正式名称或尚未命名单位的临时名称。图件及已批准GSSP的详情参见国际地层委员会官网。本图件的网址见右下角。
 
 年龄值仍在不断修订；显生宇和埃迪卡拉系的单位不能由 年龄界定，而只能由GSSP界定。显生宇中没有确定GSSP或精 确年龄值的单位，则标注了近似年龄值（～）。
 
@@ -8596,21 +8239,11 @@ Kaynak gösterimi: Cohen, K.M., Finney, S.C., Gibbard, P.L. & Fan, J.-X. (2013; 
 
 本图件由K.M. Cohen、D.A.T. Harper、P.L. Gibbard和N. Car绘制
 
-(c)国际地层委员会，2024年12月（英文版)
+(c)国际地层委员会，2023年09月（英文版)
 
-(c)国际地层委员会，2024年12月（中文版)
+(c)国际地层委员会，2023年09月（中文版)
 
 引用：Cohen, K.M., Finney, S.C., Gibbard, P.L. & Fan, J.-X. (2013; updated) The ICS International Chronostratigraphic Chart. Episodes 36: 199-204.
 """@zh ;
-    skos:versionInfo """2024-12: Updated Chart to include:
-
-* ratification of the Valanginian GSSP
-* numeric age of Valanginian updated to 137.05 +/- 0.2
-
-2023-09: updated form of the Geologic Timescale (2020) (see http://resource.geosciml.org/vocabulary/timescale/) to match the 2023-09 Chart, as released at https://stratigraphy.org/chart in late 2023.""" ;
-    prov:wasDerivedFrom ts:gts2020 ;
-    sdo:citation "https://stratigraphy.org/chart"^^xsd:anyURI ;
-    sdo:copyrightHolder <https://linked.data.gov.au/org/ics> ;
-    sdo:copyrightNotice "(c) International Commission on Stratigraphy, 2024"@en ;
-    sdo:license <https://creativecommons.org/licenses/by/4.0/> ;
 .
+

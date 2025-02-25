@@ -300,10 +300,7 @@ export function getScopedNote(meta: chartMeta, lang: string) {
 }
 
 const colNames = {
-    'Super-Eon': {
-        stratigraphic: "Super Eonothem",
-        timescale: "Super Eon",
-    },
+    'Super-Eon':{},
     Eon: {
         stratigraphic: "Eonothem",
         timescale: "Eon",
@@ -326,6 +323,9 @@ const colNames = {
     },
 }
 export function getColLabel(col: keyof typeof colNames,mode: "stratigraphic" | "timescale" | "both"):string {
+    if (col === 'Super-Eon'){
+        return ""
+    }
     switch (mode) {
         case "stratigraphic":
             return colNames[col].stratigraphic

@@ -8,6 +8,9 @@ export default defineNuxtConfig({
   app: {
     baseURL: '/chart-data/',
       head: {
+        meta:[
+{charset: "utf-8"}
+        ],
         link: [
           { rel: 'icon', type: 'image/vnd.microsoft.icon', href: 'images/logo-ics.ico' },
           { rel: 'shortcut icon', type: 'image/vnd.microsoft.icon', href: 'images/logo-ics.ico' }

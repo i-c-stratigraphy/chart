@@ -1,0 +1,46 @@
+name: generate-pdfs
+on:
+  push:
+    branches: 
+      - "main"
+  pull_request:
+    branches: 
+      - "main"
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: browser-actions/setup-chrome@v1
+        id: setup-chrome
+      - run: |
+          echo ${{ steps.setup-chrome.outputs.chrome-path }}
+          ${{ steps.setup-chrome.outputs.chrome-path }} --version
+      # Runs a set of commands using the runners shell
+      - name: Run a multi-line script
+        run: |
+          echo "starting"
+          langs=$(curl https://stratigraphy.org/chart-data/chart.json | jq -r '.hasTopConcept | .. | .language?|select( . != null )'|sort -u)
+          date=$(date '+%y.%m')
+          version=$date # $(git describe --tags --abbrev=0 )
+          echo $langs 
+          echo $date 
+          echo $version
+          #get official version first
+          ${{ steps.setup-chrome.outputs.chrome-path }} --user-data-dir=./chrome-temp-profile --headless --no-sandbox --disable-gpu --print-to-pdf=$output --no-pdf-header-footer --virtual-time-budget=5000 "https://stratigraphy.org/chart-data/?scale=print"
+          for i in $langs
+          do
+            echo $i 
+            output="chart-$i-$version.pdf"
+            echo "creating $output"
+            #generate each language version
+            echo "https://stratigraphy.org/chart-data/?scale=print&language=$i"
+            ${{ steps.setup-chrome.outputs.chrome-path }} --user-data-dir=./chrome-temp-profile --headless --no-sandbox --disable-gpu --print-to-pdf=$output --no-pdf-header-footer --virtual-time-budget=5000 "https://stratigraphy.org/chart-data/?scale=print&language=$i"
+            ls
+          done
+      - name: Upload a Build Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: chart pdf 
+          path:  "*.pdf"
