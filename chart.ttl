@@ -8410,7 +8410,9 @@ Chart drafted and maintained online by officers K.M. Cohen and N. Car. The chart
 
 (c) International Commission on Stratigraphy, December 2024.
 
-URL: https://stratigraphy.org/chart"""@en ,
+Reference: _The ICS international chronostratigraphic chart this decade_. Episodes 2025; <https://doi.org/10.18814/epiiugs/2025/025001>
+
+URL: <https://stratigraphy.org/chart>"""@en ,
         """odas las unidades de esta Tabla, cualquiera que sea su rango, se definen por el Estratotipo Global de Límite (GSSP - Global Boundary Stratotype Section and Point) referido siempre a su límite inferior. Este proceso se halla todavía inacabado e incluirá las unidades del Arcaico y Proterozoico, cuyas divisiones se convinieron inicialmente mediante edades absolutas (GSSA - Global Standard Stratigraphic Ages). La posición de los GSSP oficiales se indica en la tabla mediante el símbolo del “Clavo Dorado” (Golden Spike), que los materializa en el terreno. El original de la tabla en distintos idiomas y formatos, junto con los detalles de los estratotipos globales de límite (criterio de definición de cada uno, localización geográfica y geológica, correlación, etc.), están disponibles en la web www.stratigraphy.org.
 
 Las edades absolutas, expresadas en millones de años (Ma), son sólo orientativas, pues tanto el Ediacárico como las unidades del Fanerozoico se definen formalmente por sus correspondientes GSSP, en vez de por edades numéricas. No obstante, para aquellas divisiones que no cuentan aún con un estratotipo global o con edades bien establecidas, se indican las dataciones aproximadas (~ Ma) de sus límites. Las edades numéricas han sido tomadas de Gradstein et al. (A Geologic Time Scale 2012), con excepción de las correspondientes al Cuaternario, Paleógeno superior, Cretácico, Jurásico, Triásico, Pérmico, Cámbrico y Precámbrico, que fueron aportadas por las subcomisiones respectivas de la ICS-IUGS.
