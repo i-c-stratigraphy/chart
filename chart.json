@@ -1639,7 +1639,7 @@
                                             "hasBeginning": {
                                                 "inMYA": {
                                                     "type": "xsd:decimal",
-                                                    "value": "3.600"
+                                                    "value": "3.60"
                                                 }
                                             },
                                             "hasEnd": {
