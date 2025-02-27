@@ -3776,7 +3776,7 @@ ischart:Piacenzian
     skos:prefLabel "Piacenzian"@en ;
     time:hasBeginning
         [
-            ischart:inMYA 3.600 ;
+            ischart:inMYA 3.60 ;
         ] ;
     time:hasEnd
         [
