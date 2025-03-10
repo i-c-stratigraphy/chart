@@ -113,6 +113,7 @@ const handleClick = () => {
     cursor: pointer;
     min-height: 1rem;
      /* min-height: 1.25rem; */
+     font-size: 10px;
 }
 @container (max-height: 2rem) {
     p.label {
@@ -125,6 +126,7 @@ p {
     padding: 0;
     margin: 0;
     word-break:normal;
+   
 }
 
 .text-cell {
@@ -142,8 +144,8 @@ p {
     display: inline-block;
     transform-origin: 0 0;
     transform: rotate(-90deg) translateX(-100%);
-    height:100px; 
-    width:500px;
+    /* height:100px; 
+    width:500px; */
     text-align: end;
 }
 

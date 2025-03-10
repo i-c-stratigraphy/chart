@@ -102,8 +102,8 @@ p {
     transform-origin: 0 0;
     transform: rotate(-90deg) translateX(-100%);
     /* outline:lime 10px solid; */
-    height:100px; 
-    width:500px;
+    /* height:100px; 
+    width:500px; */
     text-align: end;
 }
 .gss-icon{
