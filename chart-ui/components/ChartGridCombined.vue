@@ -118,12 +118,12 @@ div.header:not(.v-text) {
 }
 .chart-notes{
     text-align: left;
-    font-size:0.9em;
+    font-size:0.8em;
     /* line-height: 1em; */
 }
 .chart-notes:lang(zh),
 .chart-notes:lang(ja) {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 
 </style>
