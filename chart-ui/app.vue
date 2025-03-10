@@ -19,9 +19,9 @@
     .only-print{
       display: unset !important;
     }
-    p{
+    /* p{
       font-size:0.6em;
-    }
+    } */
     .grid-7, .precambrian-grid{
         margin-top:2rem !important;
     }
