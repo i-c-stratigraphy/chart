@@ -26,7 +26,7 @@ const emit = defineEmits<{
                 <span class="header">{{getColLabel('Age',props.label)}}</span>
                 <span class="gssp-text v-text">GSSP</span>
             </div>
-            <div class="header center age-text">Numeric Age</div>
+            <div class="header center age-text">numerical Age (Ma)</div>
             <ChartGridCell :lang="props.lang" :node="props.node" :parent-rank="''" :scaling="props.scaling"
                 @view="n => emit('view', n)" />
         </div>
@@ -39,7 +39,7 @@ const emit = defineEmits<{
                     <span class="header">{{getColLabel('Period',props.label)}}</span>
                     <span class="v-text gssp-text ">GSSP<br/> GSSA</span>
                 </div>
-                <div class="header center age-text">Numeric Age</div>
+                <div class="header center age-text">numerical Age (Ma)</div>
                 <ChartGridPrecambrianCell :lang="props.lang" :node="props.node" :parent-rank="''"
                     :scaling="props.scaling" @view="x => emit('view', x)" />
             </div>
