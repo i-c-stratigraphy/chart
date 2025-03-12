@@ -3776,7 +3776,7 @@ ischart:Piacenzian
     skos:prefLabel "Piacenzian"@en ;
     time:hasBeginning
         [
-            ischart:inMYA 3.60 ;
+            ischart:inMYA 3.600 ;
         ] ;
     time:hasEnd
         [
@@ -8409,6 +8409,7 @@ Most numerical ages are taken from ‘A Geologic Time Scale 2020’ by Gradstein
 Chart drafted and maintained online by officers K.M. Cohen and N. Car. The chart is a product of collective work by all ICS members past and present.
 
 (c) International Commission on Stratigraphy, December 2024.
+
 
 Reference: The ICS international chronostratigraphic chart this decade. Episodes 2025; https://doi.org/10.18814/epiiugs/2025/025001
 
