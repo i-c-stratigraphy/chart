@@ -31,6 +31,11 @@
         margin-top:2rem !important;
     }
 }
+.chart-notes{
+      font-size:0.8em;
+      line-height: 0.8em;
+      margin-block: 0.8em;
+    }
 @page {
   size: A3 landscape;
   margin:0px;
