@@ -1,0 +1,1 @@
+*{box-sizing:border-box}.only-print{display:none!important}@media print{.no-print{display:none;visibility:hidden}.only-print{display:unset!important}p{font-size:.6em}.chart-notes{font-size:.9em;line-height:.9em;margin-block:.9em}.grid-7,.precambrian-grid{margin-top:2rem!important}}.chart-notes{font-size:.8em;line-height:.8em;margin-block:.8em}@page{size:A3 landscape;margin:0}
