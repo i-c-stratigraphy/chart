@@ -25,6 +25,7 @@
     .chart-notes{
       font-size:0.8em;
       line-height: 0.8em;
+      margin-block: 6px;
     }
     .grid-7, .precambrian-grid{
         margin-top:2rem !important;
