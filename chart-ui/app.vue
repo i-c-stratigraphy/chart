@@ -19,9 +19,13 @@
     .only-print{
       display: unset !important;
     }
-    /* p{
+    p{
       font-size:0.6em;
-    } */
+    }
+    .chart-notes{
+      font-size:0.8em;
+      line-height: 0.8em;
+    }
     .grid-7, .precambrian-grid{
         margin-top:2rem !important;
     }
