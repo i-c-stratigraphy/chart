@@ -94,6 +94,7 @@ const emit = defineEmits<{
 }
 .age-text{
     transform: rotate(0);
+    text-wrap: wrap;
 }
 div.header:not(.v-text) {
     padding-left: 5px;
