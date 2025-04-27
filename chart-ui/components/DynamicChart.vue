@@ -189,7 +189,7 @@ const commissionTitle = computed(() => {
             </div>
             <div class="cell" style="--_col-span: 1; --_row-span:2"><img src="/logo-ics-3D-dark.png" /></div>
             <div class="cell" style="--_col-span: 1; --_row-span:1">
-                <h2>{{  meta ? meta.creator?.url :"www.stratigraphy.org"}}</h2>
+                <h2>www.stratigraphy.org</h2>
             </div>
             <div class="cell" style="--_col-span: 1; --_row-span:1">
                 <h2>{{ commissionTitle }}</h2>
