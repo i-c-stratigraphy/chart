@@ -3,15 +3,17 @@ from rdflib.namespace import RDF, RDFS, SKOS
 from pathlib import Path
 
 
-g = Graph().parse(Path(__file__).parent.parent / "chart-xlabels.ttl")
+g = Graph().parse(Path(__file__).parent.parent / "chart.ttl")
 print(len(g))
 
 q = """
     PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
     
-    SELECT ?x ?pl
+    SELECT ?x ?al
     WHERE {
-        ?x skos:prefLabel ?pl .
+        ?x skos:altLabel ?al .
+        
+        FILTER (lang(?al) = "nl")
     }
     ORDER BY ?pl
     """
