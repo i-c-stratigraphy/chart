@@ -1,0 +1,14 @@
+    PREFIX skosxl: <ttp://www.w3.org/2008/05/skos-xl#>
+    PREFIX schema: <https://schema.org/>
+
+    SELECT ?c ?lf
+    WHERE {
+        ?c skosxl:prefLabel [
+            a skosxl:Label ;
+                schema:inLanguage "en" ;
+                schema:keywords "timescale" , "longform" ;
+                skosxl:literalForm ?lf ;
+            ] ;
+        .
+    }
+    ORDER BY ?c
