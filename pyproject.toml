@@ -1,8 +1,8 @@
 [tool.poetry]
-name = "chart-generate"
+name = "chart-operations"
 version = "0.1.0"
 description = ""
-authors = ["Jae Bogg <26292620+JaeTLDR@users.noreply.github.com>"]
+authors = ["Jae Bogg <26292620+JaeTLDR@users.noreply.github.com>", "Nicholas Car <nick@kurrawong.ai>"]
 readme = "README.md"
 package-mode = false
 
@@ -11,6 +11,8 @@ python = "^3.12"
 rdflib = "^7.0.0"
 PyLD = "^2.0.4"
 kurra = "^1.1.0"
+pandas = "^2.2.3"
+openpyxl = "^3.1.5"
 
 
 [tool.poetry.group.dev.dependencies]

@@ -1,0 +1,1856 @@
+@prefix schema: <https://schema.org/> .
+@prefix skosxl: <ttp://www.w3.org/2008/05/skos-xl#> .
+
+<http://resource.geosciml.org/classifier/ics/ischart> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "shortform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "INTERNATIONALE CHRONOSTRATIGRAFISCHE TABEL" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/Aalenian> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "shortform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Aalenien" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/Aeronian> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "shortform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Aeronien" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/Ages> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "shortform",
+                "timescale" ;
+            skosxl:literalForm "Tijd" ],
+        [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "shortform",
+                "stratigraphic" ;
+            skosxl:literalForm "Etage" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/Albian> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "shortform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Albien" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/Anisian> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "shortform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Anisien" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/Aptian> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "shortform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Aptien" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/Aquitanian> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "shortform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Aquitanien" ],
+        [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "regcorrel" ;
+            skosxl:literalForm "Vierland" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/Archean> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "shortform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Archaïcum" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/Artinskian> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "shortform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Artinskien" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/Asselian> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "shortform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Asselien" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/Bajocian> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "shortform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Bajocien" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/Barremian> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "shortform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Barremien" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/Bartonian> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "shortform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Bartonien" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/Bashkirian> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "shortform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Bashkirien" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/Bathonian> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "shortform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Barthonien" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/Berriasian> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "shortform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Berrasien" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/Burdigalian> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "shortform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Burdigalien" ],
+        [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "regcorrel" ;
+            skosxl:literalForm "Hemmoor" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/Calabrian> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "shortform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Calabrien" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/Callovian> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "shortform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Callovien" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/Calymmian> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "shortform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Calymmien" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/Cambrian> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "shortform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Cambrium" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/CambrianSeries2> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "timescale" ;
+            skosxl:literalForm "Cambrium Tijdvak 2" ],
+        [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "shortform",
+                "timescale" ;
+            skosxl:literalForm "Tijdvak 2" ],
+        [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "stratigraphic" ;
+            skosxl:literalForm "Cambrium Serie 2" ],
+        [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "shortform",
+                "stratigraphic" ;
+            skosxl:literalForm "Serie 2" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/CambrianStage10> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Cambrium Etage 10" ],
+        [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "shortform",
+                "timescale" ;
+            skosxl:literalForm "Tijd 10" ],
+        [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "shortform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Etage 10" ],
+        [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "timescale" ;
+            skosxl:literalForm "Cambrium Tijd 10" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/CambrianStage2> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "timescale" ;
+            skosxl:literalForm "Cambrium Tijd 2" ],
+        [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Cambrium Etage 2" ],
+        [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "shortform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Etage 2" ],
+        [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "shortform",
+                "timescale" ;
+            skosxl:literalForm "Tijd 2" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/CambrianStage3> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "shortform",
+                "timescale" ;
+            skosxl:literalForm "Tijd 3" ],
+        [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Cambrium Etage 3" ],
+        [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "timescale" ;
+            skosxl:literalForm "Cambrium Tijd 3" ],
+        [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "shortform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Etage 3" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/CambrianStage4> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Cambrium Etage 4" ],
+        [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "shortform",
+                "timescale" ;
+            skosxl:literalForm "Tijd 4" ],
+        [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "timescale" ;
+            skosxl:literalForm "Cambrium Tijd 4" ],
+        [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "shortform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Etage 4" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/Campanian> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "shortform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Campanien" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/Capitanian> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "shortform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Capitanien" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/Carboniferous> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "shortform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Carboon" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/Carnian> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "shortform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Carnien" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/Cenomanian> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "shortform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Cenomanien" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/Cenozoic> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "shortform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Kenozoïcum" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/Changhsingian> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "shortform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Changhsingien" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/Chattian> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "shortform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Chattien" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/Chibanian> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "shortform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Chibaien" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/Cisuralian> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "shortform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Cisuralien" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/Coniacian> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "shortform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Conacien" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/Cretaceous> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "shortform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Krijt" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/Cryogenian> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "shortform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Cryogenien" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/Danian> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "shortform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Danien" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/Dapingian> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "shortform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Dapingien" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/Darriwilian> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "shortform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Darriwilien" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/Devonian> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "shortform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Devoon" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/Drumian> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "shortform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Drumien" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/Ectasian> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "shortform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Ectasien" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/Ediacaran> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "shortform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Ediacaran" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/Eifelian> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "shortform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Eifelien" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/Emsian> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "shortform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Emsien" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/Eoarchean> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "shortform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Eo-archeïcum" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/Eocene> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "shortform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Eoceen" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/Eons> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "shortform",
+                "stratigraphic" ;
+            skosxl:literalForm "Eonotheem" ],
+        [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "shortform",
+                "timescale" ;
+            skosxl:literalForm "Eon" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/Epochs> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "shortform",
+                "stratigraphic" ;
+            skosxl:literalForm "Serie" ],
+        [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "shortform",
+                "timescale" ;
+            skosxl:literalForm "Tijdvak" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/Eras> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "shortform",
+                "stratigraphic" ;
+            skosxl:literalForm "Eratheem" ],
+        [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "shortform",
+                "timescale" ;
+            skosxl:literalForm "Era" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/Famennian> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "shortform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Famennien" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/Floian> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "shortform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Floien" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/Fortunian> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "shortform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Fortunien" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/Frasnian> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "shortform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Frasnien" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/Furongian> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "shortform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Furongien" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/Gelasian> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "regcorrel" ;
+            skosxl:literalForm "Pretiglien + Tiglien" ],
+        [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "shortform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Gelasien" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/Givetian> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "shortform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Givetien" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/Gorstian> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "shortform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Gorstien" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/Greenlandian> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "shortform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Greenlandien" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/Guadalupian> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "shortform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Guadalupien" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/Guzhangian> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "shortform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Guzhangien" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/Gzhelian> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "shortform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Gzhelien" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/Hadean> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "shortform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Hadeïcum" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/Hauterivian> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "shortform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Hauterivien" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/Hettangian> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "shortform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Hettangien" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/Hirnantian> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "shortform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Hirnantien" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/Holocene> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "shortform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Holoceen" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/Homerian> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "shortform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Homerien" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/Induan> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "shortform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Induien" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/Jiangshanian> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "shortform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Jiangshanien" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/Jurassic> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "shortform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Jura" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/Kasimovian> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "shortform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Kasimovien" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/Katian> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "shortform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Katien" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/Kimmeridgian> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "shortform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Kimmeridgien" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/Kungurian> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "shortform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Kungurien" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/Ladinian> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "shortform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Ladinien" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/Langhian> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "regcorrel" ;
+            skosxl:literalForm "Reinbek" ],
+        [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "shortform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Langhien" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/Llandovery> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "shortform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Llandovery" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/Lochkovian> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "shortform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Lochkovien" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/Lopingian> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "shortform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Lopingien" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/LowerCretaceous> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "timescale" ;
+            skosxl:literalForm "Vroeg Krijt" ],
+        [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "stratigraphic" ;
+            skosxl:literalForm "Onder Krijt" ],
+        [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "shortform",
+                "stratigraphic" ;
+            skosxl:literalForm "Onder" ],
+        [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "shortform",
+                "timescale" ;
+            skosxl:literalForm "Vroeg" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/LowerDevonian> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "stratigraphic" ;
+            skosxl:literalForm "Onder Devoon" ],
+        [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "timescale" ;
+            skosxl:literalForm "Vroeg Devoon" ],
+        [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "shortform",
+                "timescale" ;
+            skosxl:literalForm "Vroeg" ],
+        [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "shortform",
+                "stratigraphic" ;
+            skosxl:literalForm "Onder" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/LowerJurassic> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "shortform",
+                "stratigraphic" ;
+            skosxl:literalForm "Onder" ],
+        [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "timescale" ;
+            skosxl:literalForm "Vroeg Jura" ],
+        [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "shortform",
+                "timescale" ;
+            skosxl:literalForm "Vroeg" ],
+        [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "stratigraphic" ;
+            skosxl:literalForm "Onder Jura" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/LowerMississippian> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "shortform",
+                "timescale" ;
+            skosxl:literalForm "Vroeg" ],
+        [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "shortform",
+                "stratigraphic" ;
+            skosxl:literalForm "Onder" ],
+        [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "stratigraphic" ;
+            skosxl:literalForm "Onder Mississipien" ],
+        [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "timescale" ;
+            skosxl:literalForm "Vroeg Mississipien" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/LowerOrdovician> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "stratigraphic" ;
+            skosxl:literalForm "Onder Ordovicium" ],
+        [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "shortform",
+                "timescale" ;
+            skosxl:literalForm "Vroeg" ],
+        [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "shortform",
+                "stratigraphic" ;
+            skosxl:literalForm "Onder" ],
+        [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "timescale" ;
+            skosxl:literalForm "Vroeg Ordovicium" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/LowerPennsylvanian> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "shortform",
+                "stratigraphic" ;
+            skosxl:literalForm "Onder" ],
+        [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "shortform",
+                "timescale" ;
+            skosxl:literalForm "Vroeg" ],
+        [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "timescale" ;
+            skosxl:literalForm "Vroeg Pennsylvanien" ],
+        [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "stratigraphic" ;
+            skosxl:literalForm "Onder Pennsylvanien" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/LowerTriassic> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "stratigraphic" ;
+            skosxl:literalForm "Onder Trias" ],
+        [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "shortform",
+                "stratigraphic" ;
+            skosxl:literalForm "Onder" ],
+        [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "shortform",
+                "timescale" ;
+            skosxl:literalForm "Vroeg" ],
+        [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "timescale" ;
+            skosxl:literalForm "Vroeg Trias" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/Ludfordian> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "shortform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Ludfordien" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/Ludlow> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "shortform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Ludlow" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/Lutetian> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "shortform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Lutetien" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/Maastrichtian> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "shortform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Maastrichtien" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/Meghalayan> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "shortform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Meghalayen" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/Mesoarchean> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "shortform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Meso-archeïcum" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/Mesoproterozoic> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "shortform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Mesoproterozoïcum" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/Mesozoic> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "shortform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Mesozoïcum" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/Messinian> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "shortform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Susterien" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/Miaolingian> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "shortform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Miaolingien" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/MiddleDevonian> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "shortform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Midden" ],
+        [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Midden Devoon" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/MiddleJurassic> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "shortform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Midden" ],
+        [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Midden Jura" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/MiddleMississippian> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Midden Mississippien" ],
+        [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "shortform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Midden" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/MiddleOrdovician> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Midden Ordovicium" ],
+        [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "shortform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Midden" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/MiddlePennsylvanian> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "shortform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Midden" ],
+        [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Midden Pennsylvanien" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/MiddleTriassic> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Midden Trias" ],
+        [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "shortform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Midden" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/Miocene> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "shortform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Mioceen" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/Mississippian> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "shortform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Mississippien" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/Moscovian> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "shortform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Moscovien" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/Neoarchean> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "shortform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Neo-archeïcum" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/Neogene> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "shortform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Neogeen" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/Neoproterozoic> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "shortform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Neoproterozoïcum" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/Norian> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "shortform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Norien" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/Northgrippian> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "shortform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Northgrippien" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/Olenekian> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "shortform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Olenekien" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/Oligocene> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "shortform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Oliogoceen" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/Ordovician> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "shortform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Ordovicium" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/Orosirian> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "shortform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Orosirien" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/Oxfordian> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "shortform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Oxfordien" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/Paibian> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "shortform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Paibien" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/Paleoarchean> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "shortform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Paleo-archeïcum" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/Paleocene> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "shortform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Paleoceen" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/Paleogene> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "shortform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Paleogeen" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/Paleoproterozoic> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "shortform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Paleoproterozoïcum" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/Paleozoic> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "shortform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Paleozoïcum" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/Pennsylvanian> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "shortform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Pennsylvanien" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/Periods> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "shortform",
+                "stratigraphic" ;
+            skosxl:literalForm "Systeem" ],
+        [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "shortform",
+                "timescale" ;
+            skosxl:literalForm "Periode" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/Permian> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "shortform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Perm" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/Phanerozoic> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "shortform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Fanerozoïcum" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/Piacenzian> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "regcorrel" ;
+            skosxl:literalForm "Reuverien" ],
+        [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "shortform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Piacenzien" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/Pleistocene> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "shortform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Pleistoceen" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/Pliensbachian> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "shortform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Pliensbachien" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/Pliocene> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "shortform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Plioceen" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/Pragian> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "shortform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Pragien" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/Precambrian> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "shortform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Precambrium" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/Priabonian> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "shortform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Priabonien" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/Pridoli> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "shortform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Pridoli" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/Proterozoic> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "shortform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Proterozoïcum" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/Quaternary> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "shortform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Kwartair" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/Rhaetian> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "shortform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Rhaetien" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/Rhuddanian> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "shortform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Rhuddanien" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/Rhyacian> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "shortform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Rhyacien" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/Roadian> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "shortform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Roadien" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/Rupelian> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "shortform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Rupelien" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/Sakmarian> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "shortform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Sakmarien" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/Sandbian> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "shortform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Sandbien" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/Santonian> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "shortform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Santonien" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/Selandian> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "shortform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Selandien" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/Serpukhovian> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "shortform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Serpukhovien" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/Serravallian> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "shortform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Serravallien" ],
+        [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "regcorrel" ;
+            skosxl:literalForm "Langeveld" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/Sheinwoodian> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "shortform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Sheinwoodien" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/Siderian> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "shortform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Siderien" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/Silurian> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "shortform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Siluur" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/Sinemurian> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "shortform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Sinemurien" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/Statherian> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "shortform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Statherien" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/Stenian> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "shortform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Stenien" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/SubPeriod> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "shortform",
+                "timescale" ;
+            skosxl:literalForm "Subperiode" ],
+        [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "shortform",
+                "stratigraphic" ;
+            skosxl:literalForm "Subsysteem" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/SuperEons> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "shortform",
+                "timescale" ;
+            skosxl:literalForm "Supereon" ],
+        [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "shortform",
+                "stratigraphic" ;
+            skosxl:literalForm "Supereonotheem" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/Telychian> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "shortform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Telychien" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/Terreneuvian> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "shortform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Terreneuvien" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/Thanetian> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "shortform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Thanetien" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/Tithonian> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "shortform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Tithonien" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/Toarcian> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "shortform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Toarcien" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/Tonian> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "shortform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Tonien" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/Tortonian> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "shortform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Tortonien" ],
+        [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "regcorrel" ;
+            skosxl:literalForm "Linne" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/Tournaisian> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "shortform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Tournaisien" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/Tremadocian> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "shortform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Tremadocien" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/Triassic> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "shortform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Trias" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/Turonian> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "shortform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Turonien" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/UpperCretaceous> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "shortform",
+                "stratigraphic" ;
+            skosxl:literalForm "Boven" ],
+        [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "stratigraphic" ;
+            skosxl:literalForm "Boven Krijt" ],
+        [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "shortform",
+                "timescale" ;
+            skosxl:literalForm "Laat" ],
+        [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "timescale" ;
+            skosxl:literalForm "Laat Krijt" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/UpperDevonian> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "shortform",
+                "stratigraphic" ;
+            skosxl:literalForm "Boven" ],
+        [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "stratigraphic" ;
+            skosxl:literalForm "Boven Devoon" ],
+        [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "shortform",
+                "timescale" ;
+            skosxl:literalForm "Laat" ],
+        [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "timescale" ;
+            skosxl:literalForm "Laat Devoon" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/UpperJurassic> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "shortform",
+                "stratigraphic" ;
+            skosxl:literalForm "Boven" ],
+        [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "shortform",
+                "timescale" ;
+            skosxl:literalForm "Laat" ],
+        [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "timescale" ;
+            skosxl:literalForm "Laat Jura" ],
+        [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "stratigraphic" ;
+            skosxl:literalForm "Boven Jura" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/UpperMississippian> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "timescale" ;
+            skosxl:literalForm "Laat Mississippien" ],
+        [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "shortform",
+                "timescale" ;
+            skosxl:literalForm "Laat" ],
+        [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "shortform",
+                "stratigraphic" ;
+            skosxl:literalForm "Boven" ],
+        [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "stratigraphic" ;
+            skosxl:literalForm "Boven Mississippien" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/UpperOrdovician> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "shortform",
+                "timescale" ;
+            skosxl:literalForm "Laat" ],
+        [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "stratigraphic" ;
+            skosxl:literalForm "Boven Ordovicium" ],
+        [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "timescale" ;
+            skosxl:literalForm "Laat Ordovicium" ],
+        [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "shortform",
+                "stratigraphic" ;
+            skosxl:literalForm "Boven" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/UpperPennsylvanian> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "shortform",
+                "timescale" ;
+            skosxl:literalForm "Laat Pennsylvanien" ],
+        [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "shortform",
+                "stratigraphic" ;
+            skosxl:literalForm "Laat" ],
+        [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "stratigraphic" ;
+            skosxl:literalForm "Boven Pennsylvanien" ],
+        [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "timescale" ;
+            skosxl:literalForm "Laat Pennsylvanien" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/UpperPleistocene> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "shortform",
+                "stratigraphic" ;
+            skosxl:literalForm "Boven" ],
+        [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "timescale" ;
+            skosxl:literalForm "Laat Pleistoceen" ],
+        [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "stratigraphic" ;
+            skosxl:literalForm "Boven Pleistoceen" ],
+        [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "shortform",
+                "timescale" ;
+            skosxl:literalForm "Laat" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/UpperTriassic> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "shortform",
+                "stratigraphic" ;
+            skosxl:literalForm "Boven" ],
+        [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "shortform",
+                "timescale" ;
+            skosxl:literalForm "Laat" ],
+        [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "stratigraphic" ;
+            skosxl:literalForm "Boven Trias" ],
+        [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "timescale" ;
+            skosxl:literalForm "Boven" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/Valanginian> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "shortform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Vanlangien" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/Visean> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "shortform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Viséen" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/Wenlock> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "shortform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Wenlock" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/Wordian> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "shortform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Wordien" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/Wuchiapingian> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "shortform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Wuchiapingien" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/Wuliuan> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "shortform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Wuliuien" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/Ypresian> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "shortform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Ypresien" ] .
+
+<http://resource.geosciml.org/classifier/ics/ischart/Zanclean> skosxl:prefLabel [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "regcorrel" ;
+            skosxl:literalForm "Brunssummien" ],
+        [ a skosxl:Label ;
+            schema:inLanguage "nl" ;
+            schema:keywords "longform",
+                "shortform",
+                "stratigraphic",
+                "timescale" ;
+            skosxl:literalForm "Zancléen" ] .
+
