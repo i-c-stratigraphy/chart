@@ -33,6 +33,9 @@ jobs:
           run: |
             pwd
             poetry run python ./chartgen.py
+        
+        - name: Publish xlsx.ttl
+          run: cp ../source/xlsx.ttl ./chart-generate/out/xlsx.ttl
   
         - name: Deploy 🚀
           uses: JamesIves/github-pages-deploy-action@v4
