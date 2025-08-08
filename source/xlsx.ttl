@@ -1,4 +1,4 @@
-@prefix ns1: <ttp://www.w3.org/2008/05/skos-xl#> .
+@prefix ns1: <http://www.w3.org/2008/05/skos-xl#> .
 @prefix schema: <https://schema.org/> .
 
 <http://resource.geosciml.org/classifier/ics/ischart> ns1:prefLabel [ a ns1:Label ;
