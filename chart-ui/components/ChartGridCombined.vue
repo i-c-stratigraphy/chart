@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { type chartNode, type scalingFactor, getColLabel } from "@/utils/util"
+import { type chartNode, type scalingFactor } from "@/utils/util"
 
 const props = defineProps<{
     node: chartNode,
@@ -7,7 +7,6 @@ const props = defineProps<{
     scaling: scalingFactor,
     kind: 'default' | 'precambrian',
     meta?: chartMeta,
-    label: "stratigraphic" | "timescale" | "both" 
 }>()
 
 const emit = defineEmits<{
@@ -18,12 +17,12 @@ const emit = defineEmits<{
 <template>
     <div class="grid-wrapper">
         <div class="grid-7" v-if="props.kind == 'default'">
-            <div class="header v-text">{{getColLabel('Eon',props.label)}}</div>
-            <div class="header v-text">{{getColLabel('Era',props.label)}}</div>
-            <div class="header v-text">{{getColLabel('Period',props.label)}}</div>
-            <div class="headerx col-span-2">{{getColLabel('Epoch',props.label)}}</div>
+            <ChartHeader tag="div" class="header v-text" iri="http://resource.geosciml.org/classifier/ics/ischart/Eons" />
+            <ChartHeader tag="div" class="header v-text" iri="http://resource.geosciml.org/classifier/ics/ischart/Eras" />
+            <ChartHeader tag="div" class="header v-text" iri="http://resource.geosciml.org/classifier/ics/ischart/Periods" />
+            <ChartHeader tag="div" class="headerx col-span-2" iri="http://resource.geosciml.org/classifier/ics/ischart/Epochs" />
             <div style="position:relative">
-                <span class="header">{{getColLabel('Age',props.label)}}</span>
+                <ChartHeader tag="span" class="header" iri="http://resource.geosciml.org/classifier/ics/ischart/Ages" />
                 <span class="gssp-text v-text">GSSP</span>
             </div>
             <div class="header center age-text">Numeric Age</div>
@@ -32,11 +31,11 @@ const emit = defineEmits<{
         </div>
         <template v-else>
             <div class="grid-5 precambrian-grid">
-                <div class="header v-text">{{getColLabel('Super-Eon',props.label)}}</div>
-                <div class="header v-text">{{getColLabel('Eon',props.label)}}</div>
-                <div class="headerx">{{getColLabel('Era',props.label)}}</div>
+                <ChartHeader tag="div" class="header v-text" iri="http://resource.geosciml.org/classifier/ics/ischart/SuperEons" />
+                <ChartHeader tag="div" class="header v-text" iri="http://resource.geosciml.org/classifier/ics/ischart/Eons" />
+                <ChartHeader tag="div" class="headerx" iri="http://resource.geosciml.org/classifier/ics/ischart/Eras" />
                 <div  style="position:relative">
-                    <span class="header">{{getColLabel('Period',props.label)}}</span>
+                    <ChartHeader tag="span" class="header" iri="http://resource.geosciml.org/classifier/ics/ischart/Periods" />
                     <span class="v-text gssp-text ">GSSP<br/> GSSA</span>
                 </div>
                 <div class="header center age-text">Numeric Age</div>

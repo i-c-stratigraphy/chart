@@ -1,5 +1,12 @@
 <script setup lang="ts">
+import { computed } from "vue"
+import n3 from "n3"
 import { getLangVariant, sortedNode,getTimeMarker, type scalingFactor, type chartNode } from "@/utils/util"
+import chart from "@/public/chart.json"
+import { useLabelContext } from "@/utils/label"
+
+const { namedNode } = n3.DataFactory
+
 const props = defineProps<{
     node: chartNode,
     lang: string,
@@ -9,6 +16,8 @@ const props = defineProps<{
 const emit = defineEmits<{
     (e: 'view', node: string): void
 }>()
+
+const { getLabel } = useLabelContext()
 
 const ranking: { [key: string]: number } = {
     Age: 6,
@@ -35,7 +44,7 @@ function transformNames(name: string):string {
     if (!useShortNames){
         return name 
     }
-    if (name.startsWith('Late')){
+    if (name.startsWith('Late')){;
         return "Upper"
     }else if (name.startsWith('Middle')){
         return "Middle"
@@ -49,6 +58,16 @@ const handleClick = () => {
     emit("view", props.node.id)
 }
 
+const iri = computed(() => {
+    const [prefix, localName] = props.node.id.split(":");
+    const namespace = chart["@context"][prefix as keyof typeof chart["@context"]];
+    const iri = `${namespace}${localName}`;
+    return namedNode(iri)
+})
+
+const label = computed(() => {
+    return getLabel(iri.value) || transformNames(getLangVariant(props.node, props.lang)) || getLabel(iri.value, "longform", true) || 'Label not found'
+})
 </script>
 <template>
 <!--     
@@ -62,9 +81,8 @@ const handleClick = () => {
         --_fg-color:${contrastColor(hexToRgb(props.node.color))};
         --_width: ${rank == 'Sub-Period' || colStart < 4 ? `3rem` : ``};
         --_height:${!props.node.narrower ? getScaledHeight(props.scaling, props.node.hasEnd, props.node.hasBeginning,props.node.rawPercent, props.node.irregularHeight):''};
-    `" :title=" transformNames(getLangVariant(props.node, props.lang))">
-        <p :class="`label ${rank == 'Sub-Period' || colStart < 4 ? `v-text` : ``}`">{{ transformNames(getLangVariant(props.node, props.lang))
-            }}</p>
+    `" :title="label">
+        <p :class="`label ${rank == 'Sub-Period' || colStart < 4 ? `v-text` : ``}`">{{ label }}</p>
         <template v-if="!props.node.narrower">
             <div class="gss-icon" v-if="props.node.ratifiedGSSA">
                 <GSSAClock />

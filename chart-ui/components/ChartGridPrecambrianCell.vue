@@ -1,5 +1,12 @@
 <script setup lang="ts">
+import { computed } from "vue"
+import n3 from "n3"
 import { getLangVariant ,sortedNode, getScaledHeight, getTimeMarker,type scalingFactor} from "@/utils/util"
+import chart from "@/public/chart.json"
+import { useLabelContext } from "@/utils/label"
+
+const { namedNode } = n3.DataFactory
+
 const props = defineProps<{
     node: chartNode,
     lang: string,
@@ -20,10 +27,22 @@ const rankSplit = (node.rank+'').split("/")
 const rank = rankSplit[rankSplit.length-1]||"Age"
 let colStart = ranking[rank]!
 let epochDelta = 1
+const { getLabel } = useLabelContext()
 
 const handleClick = ()=>{
     emit("view",node.id)
 }
+
+const iri = computed(() => {
+    const [prefix, localName] = props.node.id.split(":");
+    const namespace = chart["@context"][prefix as keyof typeof chart["@context"]];
+    const iri = `${namespace}${localName}`;
+    return namedNode(iri)
+})
+
+const label = computed(() => {
+    return getLabel(iri.value) || getLangVariant(props.node, props.lang)
+})
 </script>
 <template>
     <div class=" cell" 
@@ -35,9 +54,9 @@ const handleClick = ()=>{
     --_row-span:${node.counts.indirectNarrowers};
     --_fg-color:${contrastColor(hexToRgb(node.color)!)};
     --_height:${!node.narrower ? getScaledHeight(props.scaling,node.hasEnd,node.hasBeginning,props.node.rawPercent, props.node.irregularHeight,true):''};
-    `" :title="getLangVariant(node, props.lang)"
+    `" :title="label"
     >
-        <p :class="`label ${(rank === 'Eon' && !node.narrower )|| colStart >=3?``:`v-text`}`">{{ getLangVariant(node, props.lang) }}</p>
+        <p :class="`label ${(rank === 'Eon' && !node.narrower )|| colStart >=3?``:`v-text`}`">{{ label }}</p>
         <template v-if="!node.narrower">
             <div class="gss-icon" v-if="node.ratifiedGSSA">
                 <GSSAClock />
