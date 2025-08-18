@@ -31,3 +31,8 @@ jobs:
           clean-exclude: |
             chart.json
             chart.*.json
+  
+  publish-pdfs:
+    # This job depends on the chart RDF data that is published in the deploy job.
+    needs: deploy
+    uses: ./.github/workflows/Publish-Release.yml
