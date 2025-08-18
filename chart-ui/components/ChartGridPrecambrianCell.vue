@@ -41,7 +41,7 @@ const iri = computed(() => {
 })
 
 const label = computed(() => {
-    return getLabel(iri.value) || getLangVariant(props.node, props.lang)
+    return getLabel(iri.value)
 })
 </script>
 <template>

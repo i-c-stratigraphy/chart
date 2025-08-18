@@ -28,7 +28,7 @@ const iri = computed(() => {
 })
 
 const label = computed(() => {
-    return getLabel(iri.value, "longform") || getLangVariant(props.node, props.lang) || getLabel(iri.value, "longform", true) || 'Label not found'
+    return getLabel(iri.value, "longform")
 })
 </script>
 <template>

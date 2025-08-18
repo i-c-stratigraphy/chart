@@ -25,6 +25,7 @@ const data = ref([]);
 const meta = ref(undefined);
 const showInfo = computed(() => target.value !== "");
 const labelsData = ref("");
+const chartRDFData = ref("");
 const labelTypeOptions = [
   {
     label: "Stratigraphic",
@@ -36,7 +37,7 @@ const labelTypeOptions = [
   },
 ];
 const labelType = ref(labelTypeOptions[0].value);
-createLabelProvider(labelsData, selectedLang, labelType);
+createLabelProvider([chartRDFData, labelsData], selectedLang, labelType);
 
 function getMeta() {
   const apiUrl = useCDN
@@ -93,7 +94,26 @@ function getSubChart(segment, idx) {
       throw err;
     });
 }
-function getLabelsData() {
+function getChartRDFData() {
+  const apiUrl = useCDN
+    ? "https://cdn.jsdelivr.net/gh/i-c-stratigraphy/chart-data@gh-pages"
+    : "https://stratigraphy.org/chart-data";
+
+  return fetch(`${apiUrl}/chart.ttl?cachebreaker=${Math.random()}`)
+    .then((r) => {
+      if (!r.ok || r.status > 300) {
+        throw "error";
+      }
+      return r;
+    })
+    .then((r) => {
+      return r.text();
+    })
+    .then((r) => {
+      chartRDFData.value = r;
+    });
+}
+function getSKOSXLLabelsData() {
   const apiUrl = useCDN
     ? "https://cdn.jsdelivr.net/gh/i-c-stratigraphy/chart-data@gh-pages"
     : "https://stratigraphy.org/chart-data";
@@ -120,7 +140,8 @@ onMounted(async () => {
   }, 20 * 1000);
   await getMeta();
   await Promise.all([
-    getLabelsData(),
+    getChartRDFData(),
+    getSKOSXLLabelsData(),
     getSubChart(1, 0),
     getSubChart(2, 1),
     getSubChart(3, 2),

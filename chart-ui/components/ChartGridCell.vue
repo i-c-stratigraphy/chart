@@ -66,7 +66,7 @@ const iri = computed(() => {
 })
 
 const label = computed(() => {
-    return getLabel(iri.value) || transformNames(getLangVariant(props.node, props.lang)) || getLabel(iri.value, "shortform", true) || 'Label not found'
+    return getLabel(iri.value)
 })
 </script>
 <template>
