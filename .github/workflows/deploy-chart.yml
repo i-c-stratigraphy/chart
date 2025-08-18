@@ -1,9 +1,8 @@
 name: Publish GitHub Pages
 
 on:
-  push:
-    branches:
-      - jae/dynamic-chart
+  release:
+    types: [published]
 
 jobs:
   deploy:
