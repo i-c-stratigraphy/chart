@@ -18,7 +18,12 @@ jobs:
       - name: Build chart ui
         working-directory: ./chart-ui
         run: CI=false pnpm generate
-     
+
+      - name: Copy chart.ttl and xlsx.ttl to build output
+        run: |
+          cp ./chart.ttl ./chart-ui/.output/public/chart.ttl
+          cp ./source/xlsx.ttl ./chart-ui/.output/public/xlsx.ttl
+
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4.6.4
         with:
