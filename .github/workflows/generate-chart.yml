@@ -34,6 +34,9 @@ jobs:
             pwd
             poetry run python ./chartgen.py
         
+        - name: Publish chart.ttl
+          run: cp ../chart.ttl ./out/chart.ttl
+
         - name: Publish xlsx.ttl
           run: cp ../source/xlsx.ttl ./out/xlsx.ttl
   
