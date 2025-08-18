@@ -1,5 +1,10 @@
 <script setup lang="ts">
+import { computed } from 'vue';
+import n3 from 'n3';
 import { type Hierarchy, getLangVarientFromHierarchy } from '~/utils/util';
+import { useLabelContext } from '~/utils/label';
+import chart from "@/public/chart.json"
+
 const props = defineProps<{
     node: chartNode,
     lang: string,
@@ -9,14 +14,22 @@ const emit = defineEmits<{
     (e: 'view', node: string): void
     (e: 'close'): void
 }>()
-const localLang = getLangVariant(props.node, props.lang)
-const prefLabel = props.node.prefLabel.value
-const rankSplit = (props.node.rank + '').split("/")
-const rank = rankSplit[rankSplit.length - 1] || "Age"
-const languageNames = new Intl.DisplayNames(['en'], {
-    type: 'language'
-});
+
+const { getLabel } = useLabelContext()
+const { namedNode } = n3.DataFactory
+
 const NodeId = props.node["id"]
+
+const iri = computed(() => {
+    const [prefix, localName] = props.node.id.split(":");
+    const namespace = chart["@context"][prefix as keyof typeof chart["@context"]];
+    const iri = `${namespace}${localName}`;
+    return namedNode(iri)
+})
+
+const label = computed(() => {
+    return getLabel(iri.value, "longform") || getLangVariant(props.node, props.lang) || getLabel(iri.value, "longform", true) || 'Label not found'
+})
 </script>
 <template>
     <div class="info-box">
@@ -26,7 +39,7 @@ const NodeId = props.node["id"]
             --_fg-color:${contrastColor(hexToRgb(node.color)!)};
     `">
             <!-- <span class="pref-label">{{ prefLabel }}</span> -->
-            <span class="pref-label">{{ localLang }}</span>
+            <span class="pref-label">{{ label }}</span>
             <button @click="emit('close')">Close</button>
             <GSSPGoldenSpike  v-if="props.node.ratifiedGSSP " class="icon"/>
             <GSSAClock  v-if="props.node.ratifiedGSSA " class="icon"/>
