@@ -59,6 +59,10 @@ jobs:
           echo "Final build output contents:"
           ls -la ./chart-ui/.output/public/
 
+      - name: Remove .gitignore files that ignore the chartgen outputs
+        run: |
+          rm -f ./chart-generate/.gitignore
+
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4.6.4
         with:
