@@ -51,6 +51,11 @@ jobs:
           cp ./chart.ttl ./chart-ui/.output/public/chart.ttl
           cp ./source/xlsx.ttl ./chart-ui/.output/public/xlsx.ttl
 
+      - name: Verify final build output
+        run: |
+          echo "Final build output contents:"
+          ls -la ./chart-ui/.output/public/"
+
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4.6.4
         with:
