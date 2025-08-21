@@ -32,7 +32,7 @@ const labelTypeOptions = [
     value: "stratigraphic",
   },
   {
-    label: "Chronographic",
+    label: "Chronologic",
     value: "timescale",
   },
 ];
@@ -321,7 +321,7 @@ const commissionTitle = computed(() => {
             </select>
           </label>
           <label>
-            Chrono. strat. type:
+            Column headings:
             <select v-model="labelType">
               <option v-for="label in labelTypeOptions" :value="label.value">
                 {{ label.label }}
