@@ -55,9 +55,6 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4.6.4
         with:
           folder: chart-ui/.output/public
-          clean-exclude: |
-            chart.json
-            chart.*.json
 
   publish-pdfs:
     # This job depends on the chart RDF data that is published in the deploy job.
