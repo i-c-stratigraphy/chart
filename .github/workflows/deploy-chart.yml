@@ -13,11 +13,31 @@ jobs:
       - name: Setup pnpm & install workspace
         uses: pnpm/action-setup@v3
         with:
-            version: latest
-            run_install: true
+          version: latest
+          run_install: true
       - name: Build chart ui
         working-directory: ./chart-ui
         run: CI=false pnpm generate
+
+      - uses: actions/setup-python@v4
+        with:
+          python-version: "3.12"
+
+      - name: Install Poetry
+        uses: snok/install-poetry@v1
+        with:
+          virtualenvs-create: true
+          virtualenvs-in-project: true
+          virtualenvs-path: ./.venv
+
+      - name: Install Python dependencies
+        run: poetry install --no-root
+
+      - name: run script
+        run: |
+          pushd ./chart-generate
+          poetry run python chartgen.py
+          popd
 
       - name: Copy chart.ttl and xlsx.ttl to build output
         run: |
@@ -31,7 +51,7 @@ jobs:
           clean-exclude: |
             chart.json
             chart.*.json
-  
+
   publish-pdfs:
     # This job depends on the chart RDF data that is published in the deploy job.
     needs: deploy
