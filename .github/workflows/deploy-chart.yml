@@ -37,6 +37,13 @@ jobs:
         run: |
           pushd ./chart-generate
           poetry run python chartgen.py
+          cp ./out/chart.hierarchy.json ./chart-ui/.output/public/chart.hierarchy.json
+          cp ./out/chart.1.json ./chart-ui/.output/public/chart.1.json
+          cp ./out/chart.2.json ./chart-ui/.output/public/chart.2.json
+          cp ./out/chart.3.json ./chart-ui/.output/public/chart.3.json
+          cp ./out/chart.4.json ./chart-ui/.output/public/chart.4.json
+          cp ./out/chart.meta.json ./chart-ui/.output/public/chart.meta.json
+          cp ./out/chart.json ./chart-ui/.output/public/chart.json
           popd
 
       - name: Copy chart.ttl and xlsx.ttl to build output
