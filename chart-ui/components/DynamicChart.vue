@@ -133,7 +133,7 @@ function getSKOSXLLabelsData() {
     });
 }
 const pdfVersion = ref("");
-const downloadVersion = ref("official");
+const downloadVersion = ref("");
 onMounted(async () => {
   const timeout = setTimeout(() => {
     error.value = { message: "Timed out fetching chart data" };
@@ -215,11 +215,14 @@ const handleView = (node) => {
   target.value = node;
   infoTarget.value = dataLookup.value[target.value];
 };
-const downlaodLink = computed(() => {
-  return `https://github.com/i-c-stratigraphy/chart-data/releases/download/v${pdfVersion.value}/chart-${downloadVersion.value}.pdf`;
+const versionInfo = computed(() => {
+  return meta.value.versionInfo;
+});
+const downloadLink = computed(() => {
+  return `https://github.com/i-c-stratigraphy/chart-data/releases/download/v${pdfVersion.value}/ICS_Chart_${versionInfo.value}${downloadVersion.value ? `_${downloadVersion.value}` : ""}.pdf`;
 });
 const downloadPdf = (e) => {
-  const link = downlaodLink.value;
+  const link = downloadLink.value;
   const a = document.createElement("a");
   a.href = link;
   a.download = link.split("/").pop();
@@ -331,7 +334,7 @@ const commissionTitle = computed(() => {
           <label v-if="pdfVersion != ''">
             Download:
             <select v-model="downloadVersion">
-              <option value="official">Main</option>
+              <option value="">Main</option>
               <option v-for="lang in langs" :key="lang" :value="lang">
                 {{ languageNames.of(lang) }} ({{
                   new Intl.DisplayNames([lang], { type: "language" }).of(lang)
