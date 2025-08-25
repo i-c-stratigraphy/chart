@@ -53,7 +53,7 @@ jobs:
           for i in $langs
           do
             echo $i 
-            output="ICS_Chart_${{ steps.chart-version.outputs.version }}-$i.pdf"
+            output="ICS_Chart_${{ steps.chart-version.outputs.version }}_$i.pdf"
             echo "creating $output"
             #generate each language version
             echo "https://stratigraphy.org/chart-data/?scale=print&language=$i"
