@@ -1,17 +1,14 @@
-name: generate-pdfs
+name: Generate PDFs on release
+
 on:
-  push:
-    branches: 
-      - "main"
-  pull_request:
-    branches: 
-      - "main"
-  workflow_dispatch:
+  workflow_call:
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout
+        uses: actions/checkout@v4
       - uses: browser-actions/setup-chrome@v1
         id: setup-chrome
       - run: |
@@ -28,7 +25,6 @@ jobs:
           echo $date 
           echo $version
           #get official version first
-
           ${{ steps.setup-chrome.outputs.chrome-path }} --user-data-dir=./chrome-temp-profile --headless --no-sandbox --disable-gpu --print-to-pdf=chart-official.pdf --no-pdf-header-footer --virtual-time-budget=5000 "https://stratigraphy.org/chart-data/?scale=print"
           for i in $langs
           do
@@ -45,3 +41,9 @@ jobs:
         with:
           name: chart pdf 
           path:  "*.pdf"
+      - name: Release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: | 
+            *.pdf
+ 
