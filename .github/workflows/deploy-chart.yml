@@ -5,7 +5,7 @@ on:
     types: [published]
 
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -51,10 +51,32 @@ jobs:
           cp ./chart.ttl ./chart-ui/.output/public/chart.ttl
           cp ./source/xlsx.ttl ./chart-ui/.output/public/xlsx.ttl
 
-      - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@v4.6.4
+      - name: Verify final build output
+        run: |
+          echo "Final build output contents:"
+          ls -la ./chart-ui/.output/public/
+
+      - name: Upload static files as artifacts
+        id: deployment
+        uses: actions/upload-pages-artifact@v4
         with:
-          folder: chart-ui/.output/public
+          path: chart-ui/.output/public
+
+  deploy:
+    runs-on: ubuntu-latest
+    needs: build
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    # Grant GITHUB_TOKEN the permissions required to make a Pages deployment
+    permissions:
+      pages: write # to deploy to Pages
+      id-token: write # to verify the deployment originates from an appropriate source
+
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
 
   publish-pdfs:
     # This job depends on the chart RDF data that is published in the deploy job.
