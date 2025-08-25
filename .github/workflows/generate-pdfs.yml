@@ -49,7 +49,7 @@ jobs:
           echo $date 
           echo $version
           #get official version first
-          ${{ steps.setup-chrome.outputs.chrome-path }} --user-data-dir=./chrome-temp-profile --headless --no-sandbox --disable-gpu --print-to-pdf=chart-ICS_Chart_${{ steps.chart-version.outputs.version }}.pdf --no-pdf-header-footer --virtual-time-budget=5000 "https://stratigraphy.org/chart-data/?scale=print"
+          ${{ steps.setup-chrome.outputs.chrome-path }} --user-data-dir=./chrome-temp-profile --headless --no-sandbox --disable-gpu --print-to-pdf=ICS_Chart_${{ steps.chart-version.outputs.version }}.pdf --no-pdf-header-footer --virtual-time-budget=5000 "https://stratigraphy.org/chart-data/?scale=print"
           for i in $langs
           do
             echo $i 
