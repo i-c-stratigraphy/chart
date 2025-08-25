@@ -32,7 +32,7 @@ const labelTypeOptions = [
     value: "stratigraphic",
   },
   {
-    label: "Chronologic",
+    label: "Chronometric",
     value: "timescale",
   },
 ];
