@@ -1,11 +1,11 @@
 # This script creates a CSV file in the csv/ folder per language/dialect sheet
-# in the xlabels.xlsx Excel file
+# in the chart-source.xlsx Excel file
 
 from pathlib import Path
 import pandas as pd
 
 
-xls = pd.ExcelFile(Path(__file__).parent / "xlabels.xlsx")
+xls = pd.ExcelFile(Path(__file__).parent / "chart-source.xlsx")
 
 for sheet_name in xls.sheet_names:
     if sheet_name not in ["README", "Purposes", "Template"]:

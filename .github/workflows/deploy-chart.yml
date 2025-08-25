@@ -46,10 +46,11 @@ jobs:
           cp ./out/chart.json ../chart-ui/.output/public/chart.json
           popd
 
-      - name: Copy chart.ttl and xlsx.ttl to build output
+      - name: Copy chart.ttl, xlsx.ttl and chart-source.xlsx to build output
         run: |
           cp ./chart.ttl ./chart-ui/.output/public/chart.ttl
           cp ./source/xlsx.ttl ./chart-ui/.output/public/xlsx.ttl
+          cp ./source/chart-source.xlsx ./chart-ui/.output/public/chart-source.xlsx
 
       - name: Verify final build output
         run: |
