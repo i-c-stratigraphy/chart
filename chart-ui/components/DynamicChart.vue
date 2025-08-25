@@ -332,7 +332,7 @@ const commissionTitle = computed(() => {
             Download:
             <select v-model="downloadVersion">
               <option value="official">Main</option>
-              <option v-for="lang in langs" :keye="lang" :value="lang">
+              <option v-for="lang in langs" :key="lang" :value="lang">
                 {{ languageNames.of(lang) }} ({{
                   new Intl.DisplayNames([lang], { type: "language" }).of(lang)
                 }})
