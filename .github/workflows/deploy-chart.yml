@@ -1,9 +1,6 @@
 name: Publish GitHub Pages
 
 on:
-  push:
-    branches:
-      - edmond/chartgen
   release:
     types: [published]
 
