@@ -3770,7 +3770,7 @@ ischart:Piacenzian
         "piacenz"@sv ,
         "皮亚琴期"@zh ;
     skos:broader ischart:Pliocene ;
-    skos:definition "A time period from 3.60 to 2.58 million years ago" ;
+    skos:definition "A time period from 3.600 to 2.58 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "n8"^^ischart:ccgmShortCode ;
     skos:prefLabel "Piacenzian"@en ;
@@ -5370,7 +5370,7 @@ ischart:Zanclean
         "zancl"@sv ,
         "赞克勒期"@zh ;
     skos:broader ischart:Pliocene ;
-    skos:definition "A time period from 5.333 to 3.60 million years ago" ;
+    skos:definition "A time period from 5.333 to 3.600 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "n7"^^ischart:ccgmShortCode ;
     skos:prefLabel "Zanclean"@en ;
@@ -5380,7 +5380,7 @@ ischart:Zanclean
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 3.60 ;
+            ischart:inMYA 3.600 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 13 ;
