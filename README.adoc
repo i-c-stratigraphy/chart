@@ -33,4 +33,4 @@ A local copy of the license deed is stored in the file LICENSE in this repositor
 
 Please contact the executive of the International Commission on Stratigraphy with all questions via https://stratigraphy.org/executive
 
-You may also log any issues with the data at https://github.com/i-c-stratigraphy/chart-data/issues.
+You may also log any issues with the data at https://github.com/i-c-stratigraphy/chart/issues.
