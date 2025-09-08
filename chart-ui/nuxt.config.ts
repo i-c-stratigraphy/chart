@@ -6,7 +6,7 @@ export default defineNuxtConfig({
     '@vueuse/nuxt',
   ],
   app: {
-    baseURL: '/chart-data/',
+    baseURL: '/chart/',
       head: {
         meta:[
 {charset: "utf-8"}

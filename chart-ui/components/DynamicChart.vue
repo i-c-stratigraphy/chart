@@ -41,8 +41,8 @@ createLabelProvider([chartRDFData, labelsData], selectedLang, labelType);
 
 function getMeta() {
   const apiUrl = useCDN
-    ? "https://cdn.jsdelivr.net/gh/i-c-stratigraphy/chart-data@gh-pages"
-    : "https://stratigraphy.org/chart-data";
+    ? "https://cdn.jsdelivr.net/gh/i-c-stratigraphy/chart@gh-pages"
+    : "https://stratigraphy.org/chart";
 
   return fetch(`${apiUrl}/chart.meta.json?cachebreaker=${Math.random()}`)
     .then((r) => {
@@ -68,8 +68,8 @@ function getMeta() {
 }
 function getSubChart(segment, idx) {
   const apiUrl = useCDN
-    ? "https://cdn.jsdelivr.net/gh/i-c-stratigraphy/chart-data@gh-pages"
-    : "https://stratigraphy.org/chart-data/";
+    ? "https://cdn.jsdelivr.net/gh/i-c-stratigraphy/chart@gh-pages"
+    : "https://stratigraphy.org/chart/";
   const seg = segment !== "" ? `.${segment}` : "";
 
   return fetch(`${apiUrl}/chart${seg}.json?cachebreaker=${Math.random()}`)
@@ -96,8 +96,8 @@ function getSubChart(segment, idx) {
 }
 function getChartRDFData() {
   const apiUrl = useCDN
-    ? "https://cdn.jsdelivr.net/gh/i-c-stratigraphy/chart-data@gh-pages"
-    : "https://stratigraphy.org/chart-data";
+    ? "https://cdn.jsdelivr.net/gh/i-c-stratigraphy/chart@gh-pages"
+    : "https://stratigraphy.org/chart";
 
   return fetch(`${apiUrl}/chart.ttl?cachebreaker=${Math.random()}`)
     .then((r) => {
@@ -115,8 +115,8 @@ function getChartRDFData() {
 }
 function getSKOSXLLabelsData() {
   const apiUrl = useCDN
-    ? "https://cdn.jsdelivr.net/gh/i-c-stratigraphy/chart-data@gh-pages"
-    : "https://stratigraphy.org/chart-data";
+    ? "https://cdn.jsdelivr.net/gh/i-c-stratigraphy/chart@gh-pages"
+    : "https://stratigraphy.org/chart";
 
   return fetch(`${apiUrl}/xlsx.ttl?cachebreaker=${Math.random()}`)
     .then((r) => {
@@ -163,10 +163,10 @@ onMounted(async () => {
     .catch((e) => {
       error.value = { message: `An error occurred grabbing chart data ${e}` };
     });
-  //"https://api.github.com/repos/i-c-stratigraphy/chart-data/tags"
+  //"https://api.github.com/repos/i-c-stratigraphy/chart/tags"
   const v = await (
     await fetch(
-      "https://data.jsdelivr.com/v1/packages/gh/i-c-stratigraphy/chart-data"
+      "https://data.jsdelivr.com/v1/packages/gh/i-c-stratigraphy/chart"
     )
   ).json();
   const regexp = new RegExp(/(\d)*\.(\d)*\.(\d)*/);
@@ -219,7 +219,7 @@ const versionInfo = computed(() => {
   return meta.value.versionInfo;
 });
 const downloadLink = computed(() => {
-  return `https://github.com/i-c-stratigraphy/chart-data/releases/download/v${pdfVersion.value}/ICS_Chart_${versionInfo.value}${downloadVersion.value ? `_${downloadVersion.value}` : ""}.pdf`;
+  return `https://github.com/i-c-stratigraphy/chart/releases/download/v${pdfVersion.value}/ICS_Chart_${versionInfo.value}${downloadVersion.value ? `_${downloadVersion.value}` : ""}.pdf`;
 });
 const downloadPdf = (e) => {
   const link = downloadLink.value;

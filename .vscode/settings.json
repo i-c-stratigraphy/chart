@@ -1,14 +1,10 @@
 {
-    "liveServer.settings.port": 4500,
-    "liveServer.settings.root": "/chart-ui",
-    "liveServer.settings.NoBrowser" : true,
-    "liveServer.settings.ignoreFiles" : [
-            ".vscode/**",
-            "**/*.scss",
-            "**/*.sass"
-    ],
-    "liveServer.settings.mount": [
-        ["/chart-data","/chart-ui/dist"],
-        ["/chart-ui/dist","/chart-data"],
-    ]
+  "liveServer.settings.port": 4500,
+  "liveServer.settings.root": "/chart-ui",
+  "liveServer.settings.NoBrowser": true,
+  "liveServer.settings.ignoreFiles": [".vscode/**", "**/*.scss", "**/*.sass"],
+  "liveServer.settings.mount": [
+    ["/chart", "/chart-ui/dist"],
+    ["/chart-ui/dist", "/chart"]
+  ]
 }
