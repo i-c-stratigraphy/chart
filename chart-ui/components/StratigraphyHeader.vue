@@ -15,9 +15,9 @@ const navLinks = [
     { label: "Executive", href: "/executive" },
     { label: "Subcommissions", href: "/subcommissions" },
     { label: "Supplementary Chart Info", href: "/supplementary" },
-    { label: "GSSPs", href: "gssps" },
-    { label: "Stratigraphic Guide", href: "guide" },
-    { label: "Statutes & Guidelines", href: "/statuses" },
+    { label: "GSSPs", href: "/gssps" },
+    { label: "Stratigraphic Guide", href: "/guide" },
+    { label: "Statutes & Guidelines", href: "/statutes" },
     { label: "Publications", href: "/publications" },
 ]
 const interval = ref()
