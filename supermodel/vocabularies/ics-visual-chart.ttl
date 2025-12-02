@@ -70,6 +70,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:definition "The description text of the Chart" ;
 .
 
+:1.0 schema:name "1.0" .
+
 cs:
     a skos:ConceptScheme ;
     schema:copyrightHolder <https://stratigraphy.org> ;

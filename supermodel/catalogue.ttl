@@ -1,3 +1,6 @@
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX role: <https://linked.data.gov.au/def/supermodel/roles/>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
@@ -17,7 +20,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         <http://resource.geosciml.org/ontology/gssp> ,
         <http://resource.geosciml.org/ontology/timescale/gts> ,
         <http://resource.geosciml.org/ontology/stratigraphy> ,
-        <http://resource.geosciml.org/ontology/visual-chart> ;
+        <http://resource.geosciml.org/ontology/ics-visual-chart> ;
     schema:license <http://purl.org/NET/rdflicense/cc-by4.0> ;
     schema:name "ICS Supermodel Catalogue" ;
     schema:publisher <https://stratigraphy.org> ;
@@ -27,7 +30,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 <http://resource.geosciml.org/vocabulary/timescale/gts2020>
     dcat:qualifiedRelation [
         a dcat:Relationship ;
-        dcterms:relation <https://linked.data.gov.au/def/eia-supermodel> ;
+        dcterms:relation <http://resource.geosciml.org/catalogue/ics-supermodel> ;
         dcat:hadRole role:foreground-dataset ;
     ] ;
 .
@@ -35,7 +38,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 <http://resource.geosciml.org/classifier/ics/ischart>
     dcat:qualifiedRelation [
         a dcat:Relationship ;
-        dcterms:relation <https://linked.data.gov.au/def/eia-supermodel> ;
+        dcterms:relation <http://resource.geosciml.org/catalogue/ics-supermodel> ;
         dcat:hadRole role:foreground-dataset ;
     ] ;
 .
@@ -43,31 +46,31 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 <http://resource.geosciml.org/ontology/gssp>
     dcat:qualifiedRelation [
         a dcat:Relationship ;
-        dcterms:relation <https://linked.data.gov.au/def/eia-supermodel> ;
-        dcat:hadRole role:component-model ;
+        dcterms:relation <http://resource.geosciml.org/catalogue/ics-supermodel> ;
+        dcat:hadRole role:foreground-model ;
     ] ;
 .
 
 <http://resource.geosciml.org/ontology/timescale/gts>
     dcat:qualifiedRelation [
         a dcat:Relationship ;
-        dcterms:relation <https://linked.data.gov.au/def/eia-supermodel> ;
-        dcat:hadRole role:component-model ;
+        dcterms:relation <http://resource.geosciml.org/catalogue/ics-supermodel> ;
+        dcat:hadRole role:foreground-model ;
     ] ;
 .
 
 <http://resource.geosciml.org/ontology/stratigraphy>
     dcat:qualifiedRelation [
         a dcat:Relationship ;
-        dcterms:relation <https://linked.data.gov.au/def/eia-supermodel> ;
-        dcat:hadRole role:component-model ;
+        dcterms:relation <http://resource.geosciml.org/catalogue/ics-supermodel> ;
+        dcat:hadRole role:foreground-model ;
     ] ;
 .
 
-<http://resource.geosciml.org/ontology/visual-chart>
+<http://resource.geosciml.org/ontology/ics-visual-chart>
     dcat:qualifiedRelation [
         a dcat:Relationship ;
-        dcterms:relation <https://linked.data.gov.au/def/eia-supermodel> ;
+        dcterms:relation <http://resource.geosciml.org/catalogue/ics-supermodel> ;
         dcat:hadRole role:vocabulary ;
     ] ;
 .

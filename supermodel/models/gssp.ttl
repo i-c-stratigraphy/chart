@@ -20,6 +20,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy ont: ;
 .
 
+:1.0 schema:name "1.0" .
+
 ont:
     a owl:Ontology ;
     schema:copyrightHolder <https://stratigraphy.org> ;

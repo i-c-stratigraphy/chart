@@ -17515,10 +17515,9 @@ ischart:Phanerozoic
     rdfs:seeAlso
         ischart:2020 ,
         <http://resource.geosciml.org/vocabulary/timescale/gts2020> ,
-        <http://stratigraphy.org/GSSP/index.html> ,
-        <http://www.episodes.co.in/contents/2013/september/p199-204.pdf> ,
         "https://stratigraphy.org/gssps/"^^xsd:anyURI ,
-        <https://stratigraphy.org/icschart/ChronostratChart2020-01.pdf> ;
+        "http://www.episodes.co.in/contents/2013/september/p199-204.pdf"^^xsd:anyURI ,
+        "https://stratigraphy.org/icschart/ChronostratChart2020-01.pdf"^^xsd:anyURI ;
     owl:imports
         <http://resource.geosciml.org/ontology/timescale/gts> ,
         <http://www.opengis.net/ont/geosparql> ,

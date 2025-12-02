@@ -1,0 +1,270 @@
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX prof: <http://www.w3.org/ns/dx/prof/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+<http://purl.org/NET/rdflicense/cc-by4.0>
+    schema:name
+        "Creative Commons CC-BY" ,
+        "Creative Commons - Attribution 4.0 International - CC BY 4.0"@en ;
+    schema:url <http://creativecommons.org/licenses/by/4.0/legalcode> ;
+.
+
+dcterms:conformsTo
+    schema:description "An established standard to which the described resource conforms."@en ;
+    schema:name "Conforms To"@en ;
+.
+
+dcterms:relation
+    schema:description "A related resource."@en ;
+    schema:name "Relation"@en ;
+.
+
+rdfs:isDefinedBy
+    schema:description "The defininition of the subject resource." ;
+    schema:name "is defined by" ;
+.
+
+rdfs:subClassOf
+    schema:description "The subject is a subclass of a class." ;
+    schema:name "subclass of" ;
+.
+
+owl:Class
+    schema:description "The class of OWL classes." ;
+    schema:name "Class" ;
+.
+
+owl:Ontology
+    schema:description "The class of ontologies." ;
+    schema:name "Ontology" ;
+.
+
+owl:versionIRI
+    schema:description "The property that identifies the version IRI of an ontology." ;
+    schema:name "versionIRI" ;
+.
+
+skos:Concept
+    schema:description
+        "An idea or notion; a unit of thought" ,
+        "An idea or notion; a unit of thought"@en ;
+    schema:name
+        "Concept" ,
+        "Concept"@en ;
+.
+
+skos:ConceptScheme
+    schema:description "A set of concepts, optionally including statements about semantic relationships between those concepts"@en ;
+    schema:name "Concept Scheme"@en ;
+.
+
+skos:definition
+    schema:description "A statement or formal explanation of the meaning of a concept"@en ;
+    schema:name "definition"@en ;
+.
+
+skos:hasTopConcept
+    schema:description "Relates, by convention, a concept scheme to a concept which is topmost in the broader/narrower concept hierarchies for that scheme, providing an entry point to these hierarchies"@en ;
+    schema:name "has top concept"@en ;
+.
+
+skos:historyNote
+    schema:description "A note about the past state/use/meaning of a concept"@en ;
+    schema:name "history note"@en ;
+.
+
+skos:inScheme
+    schema:description "Relates a resource (for example a concept) to a concept scheme in which it is included"@en ;
+    schema:name "is in scheme"@en ;
+.
+
+skos:prefLabel
+    schema:description "The preferred lexical label for a resource, in a given language"@en ;
+    schema:name "preferred label"@en ;
+.
+
+skos:topConceptOf
+    schema:description "Relates a concept to the concept scheme that it is a top level concept of"@en ;
+    schema:name "is top concept in scheme"@en ;
+.
+
+dcat:Relationship
+    schema:description "An association class for attaching additional information to a relationship between DCAT Resources."@en ;
+    schema:name "Relationship"@en ;
+.
+
+dcat:hadRole
+    schema:description "The function of an entity or agent with respect to another entity or resource."@en ;
+    schema:name "hadRole"@en ;
+.
+
+dcat:qualifiedRelation
+    schema:description "Link to a description of a relationship with another resource."@en ;
+    schema:name "qualified relation"@en ;
+.
+
+prof:hasArtifact
+    schema:description "The URL of a downloadable file with particulars such as its format and role indicated by the Resource Descriptor"@en ;
+    schema:name "has artifact" ;
+.
+
+prof:hasResource
+    schema:description "A resource which describes the nature of an artifact and the role it plays in relation to the Profile"@en ;
+    schema:name "has resource"@en ;
+.
+
+prof:hasRole
+    schema:description "The function of an artifact described by a Resource Descriptor, such as specification, guidance etc."@en ;
+    schema:name "has role" ;
+.
+
+<https://prez.dev/Manifest>
+    schema:name "Manifest" ;
+.
+
+<https://prez.dev/ManifestResourceRoles/CatalogueData>
+    schema:description "Data for the container, usually a Catalogue, including the identity of it and each item fo content" ;
+    schema:name "Catalogue Data" ;
+.
+
+<https://prez.dev/ManifestResourceRoles/CompleteCatalogueAndResourceLabels>
+    schema:description "All the labels - possibly including names, descriptions & seeAlso links - for the Catalogue and Resource objects" ;
+    schema:name "Complete Catalogue and Resource Labels" ;
+.
+
+<https://prez.dev/ManifestResourceRoles/ResourceData>
+    schema:description "Data for the content of the container" ;
+    schema:name "Resource Data" ;
+.
+
+schema:DataCatalog
+    schema:description "A collection of datasets" ;
+    schema:name "Data catalog" ;
+.
+
+schema:Organization
+    schema:description "An organization such as a school, NGO, corporation, club, etc" ;
+    schema:name "Organization" ;
+.
+
+schema:Person
+    schema:description "A person (alive, dead, undead, or fictional)" ;
+    schema:name "Person" ;
+.
+
+schema:citation
+    schema:description "A citation or reference to another creative work, such as another publication, web page, scholarly article, etc" ;
+    schema:name "citation" ;
+.
+
+schema:codeRepository
+    schema:description "Link to the repository where the un-compiled, human readable code and related code is located (SVN, GitHub, CodePlex)" ;
+    schema:name "code repository" ;
+.
+
+schema:copyrightHolder
+    schema:description "The party holding the legal copyright to the CreativeWork" ;
+    schema:name "copyright holder" ;
+.
+
+schema:copyrightNotice
+    schema:description "Text of a notice appropriate for describing the copyright aspects of this Creative Work, ideally indicating the owner of the copyright for the Work" ;
+    schema:name "copyright notice" ;
+.
+
+schema:creator
+    schema:description "The creator/author of this CreativeWork. This is the same as the Author property for CreativeWork" ;
+    schema:name "creator" ;
+.
+
+schema:dateCreated
+    schema:description "The date on which the CreativeWork was created or the item was added to a DataFeed" ;
+    schema:name "date created" ;
+.
+
+schema:dateIssued
+    schema:description "The date the ticket was issued" ;
+    schema:name "date issued" ;
+.
+
+schema:dateModified
+    schema:description "The date on which the CreativeWork was most recently modified or when the item's entry was modified within a DataFeed" ;
+    schema:name "date modified" ;
+.
+
+schema:description
+    schema:description "A description of the item" ;
+    schema:name "description" ;
+.
+
+schema:email
+    schema:description "Email address" ;
+    schema:name "email" ;
+.
+
+schema:hasPart
+    schema:description
+        "Indicates a Resource that is part of this item" ,
+        "Indicates an item or CreativeWork that is part of this item, or CreativeWork (in some sense)" ;
+    schema:name
+        "has part" ,
+        "member" ;
+.
+
+schema:license
+    schema:description "A license document that applies to this content, typically indicated by URL" ;
+    schema:name "license" ;
+.
+
+schema:name
+    schema:description "The name of the item" ;
+    schema:name "name" ;
+.
+
+schema:publisher
+    schema:description "The publisher of the creative work" ;
+    schema:name "publisher" ;
+.
+
+schema:url
+    schema:description "URL of the item" ;
+    schema:name "url" ;
+.
+
+schema:version
+    schema:description "The version of the CreativeWork embodied by a specified resource" ;
+    schema:name "version" ;
+.
+
+<http://resource.geosciml.org/vocabulary/timescale/gts2020>
+    schema:name
+        "Geological Timescale (2020)"@en ;
+.
+
+<http://creativecommons.org/licenses/by/4.0/legalcode> schema:name "local code" .
+
+<https://linked.data.gov.au/def/vocpub> schema:name "VocPub Profile of SKOS" .
+
+
+<https://linked.data.gov.au/def/supermodel/roles/foreground-dataset>
+    schema:description "Acting as a collection of foreground Data."@en ;
+    schema:name "Foreground Dataset"@en ;
+.
+
+<https://linked.data.gov.au/def/supermodel/roles/vocabulary>
+    schema:description "Acting as a controlled collection of terms, usually with a hierarchy but sometimes just a list, used as Reference Dataset by Datasets."@en ;
+    schema:name "Vocabulary"@en ;
+.
+
+<https://linked.data.gov.au/def/supermodel/roles/foreground-model>
+    schema:description "Acting as a Model for a Dataset of Foreground Data."@en ;
+    schema:name "Foreground Model"@en ;
+.
+
+<http://resource.geosciml.org/classifier/ics/ischart> schema:name "International Chronostratigraphic Chart" .
+
+<http://resource.geosciml.org/ontology/timescale/gts> schema:name "Geological Timescale" .

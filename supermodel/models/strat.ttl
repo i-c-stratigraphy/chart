@@ -132,6 +132,8 @@ The eons take the same name as their corresponding eonothems.""" ;
     schema:description "Relating to the measurement of time" ;
 .
 
+:1.0 schema:name "1.0" .
+
 ont:
     a owl:Ontology ;
     schema:copyrightHolder <https://stratigraphy.org> ;

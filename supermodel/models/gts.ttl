@@ -22,7 +22,9 @@
 <http://resource.geosciml.org/ontology/timescale/gts>
   a voaf:Vocabulary ;
   a owl:Ontology ;
-  schema:contributor <https://orcid.org/0000-0001-6041-5302> ;
+  schema:contributor
+    <https://orcid.org/0000-0001-6041-5302> ,
+    <https://orcid.org/0000-0002-8742-7730> ;
   schema:dateCreated "2011-01-01"^^xsd:date ;
   schema:dateIssued "2026-01-01"^^xsd:date ;
   schema:creator <https://orcid.org/0000-0002-3884-3420> ;
@@ -48,6 +50,9 @@ The permitted nesting relationships between eras of different ranks are axiomati
   schema:publisher <https://stratigraphy.org> ;
   owl:versionIRI gts:2.0 ;
 .
+
+:2.0 schema:name "2.0" .
+
 gts:Age
   a owl:Class ;
   schema:name "Age" ;
