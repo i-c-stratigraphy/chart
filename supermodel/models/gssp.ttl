@@ -1,0 +1,39 @@
+PREFIX : <http://resource.geosciml.org/ontology/gssp/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX ont: <http://resource.geosciml.org/ontology/gssp>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+:gssp
+    a owl:Class ;
+    schema:name "GSSP" ;
+    schema:description "Global Boundary Stratotype Sections and Points" ;
+    rdfs:isDefinedBy ont: ;
+.
+
+:gssa
+    a owl:Class ;
+    schema:name "GSSA" ;
+    schema:description "GSSA" ;
+    rdfs:isDefinedBy ont: ;
+.
+
+ont:
+    a owl:Ontology ;
+    schema:copyrightHolder <https://stratigraphy.org> ;
+    schema:copyrightNotice "(c) 2025 International Commission on Stratigraphy" ;
+    schema:creator <https://orcid.org/0000-0002-8742-7730> ;
+    schema:dateCreated "2025-12-01"^^xsd:date ;
+    schema:dateModified "2025-12-02"^^xsd:date ;
+    schema:dateIssued "2026-01-01"^^xsd:date ;
+    schema:description """An ontology for describing Global Boundary Stratotype Sections and Points and related objects""" ;
+    schema:license <http://purl.org/NET/rdflicense/cc-by4.0> ;
+    schema:name "GSSP Model" ;
+    schema:publisher <https://stratigraphy.org> ;
+    schema:version "1.0" ;
+    owl:versionIRI :1.0 ;
+    skos:historyNote "Created for the Data Chart and GSSPs DB release, late 2025" ;
+    schema:codeRepository "https://github.com/i-c-stratigraphy/chart"^^xsd:anyURI ;
+.

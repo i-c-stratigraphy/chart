@@ -1,0 +1,108 @@
+PREFIX : <http://resource.geosciml.org/ontology/visual-chart/>
+PREFIX cs: <http://resource.geosciml.org/ontology/visual-chart>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+
+:ColumnHeadings
+    a skos:Concept ;
+    skos:prefLabel "Column Headings" ;
+    rdfs:isDefinedBy cs: ;
+    skos:inScheme cs: ;
+    skos:topConceptOf cs: ;
+    skos:definition "The heading style of the Chart elements in a table" ;
+.
+
+:Download
+    a skos:Concept ;
+    skos:prefLabel "Download" ;
+    rdfs:isDefinedBy cs: ;
+    skos:inScheme cs: ;
+    skos:topConceptOf cs: ;
+    skos:definition "Retrieve the Shart over the Internet" ;
+.
+
+:NumericAge
+    a skos:Concept ;
+    skos:prefLabel "Numeric Age" ;
+    rdfs:isDefinedBy cs: ;
+    skos:inScheme cs: ;
+    skos:topConceptOf cs: ;
+    skos:definition "The Age of the Chart element in Millions of Years Ago" ;
+.
+
+:Language
+    a skos:Concept ;
+    skos:prefLabel "Language" ;
+    rdfs:isDefinedBy cs: ;
+    skos:inScheme cs: ;
+    skos:topConceptOf cs: ;
+    skos:definition "The Language of the Chart" ;
+.
+
+:Scaling
+    a skos:Concept ;
+    skos:prefLabel "Scaling" ;
+    rdfs:isDefinedBy cs: ;
+    skos:inScheme cs: ;
+    skos:topConceptOf cs: ;
+    skos:definition "The scaling of timescale elements" ;
+.
+
+:Late
+    a skos:Concept ;
+    skos:prefLabel "Late" ;
+    rdfs:isDefinedBy cs: ;
+    skos:inScheme cs: ;
+    skos:topConceptOf cs: ;
+    skos:definition "The youngest element in a set with the same parent element" ;
+.
+
+:Early
+    a skos:Concept ;
+    skos:prefLabel "Early" ;
+    rdfs:isDefinedBy cs: ;
+    skos:inScheme cs: ;
+    skos:topConceptOf cs: ;
+    skos:definition "The oldest element in a set with the same parent element" ;
+.
+
+:Blurb
+    a skos:Concept ;
+    skos:prefLabel "Blurb" ;
+    rdfs:isDefinedBy cs: ;
+    skos:inScheme cs: ;
+    skos:topConceptOf cs: ;
+    skos:definition "The description text of the Chart" ;
+.
+
+cs:
+    a skos:ConceptScheme ;
+    schema:copyrightHolder <https://stratigraphy.org> ;
+    schema:copyrightNotice "(c) 2025 International Commission on Stratigraphy" ;
+    schema:creator <https://orcid.org/0000-0002-8742-7730> ;
+    schema:dateCreated "2025-12-01"^^xsd:date ;
+    schema:dateModified "2025-12-02"^^xsd:date ;
+    schema:dateIssued "2026-01-01"^^xsd:date ;
+    schema:description """An ontology for describing stratigraphic objects""" ;
+    schema:license <http://purl.org/NET/rdflicense/cc-by4.0> ;
+    skos:prefLabel "Stratigraphy Model"@en ;
+    skos:definition "A vocabulary of visual elements of the Chronostratigraphic Chart at https://stratigraphy.org/chart that don't have labels from other models"@en ;
+    schema:publisher <https://stratigraphy.org> ;
+    schema:version "1.0" ;
+    owl:versionIRI :1.0 ;
+    skos:historyNote "Created for the Data Chart and GSSPs DB release, late 2025" ;
+    schema:codeRepository "https://github.com/i-c-stratigraphy/chart"^^xsd:anyURI ;
+    skos:hasTopConcept
+        :ColumnHeadings ,
+        :Download ,
+        :NumericAge ,
+        :Language ,
+        :Scaling ,
+        :Late ,
+        :Early ,
+        :Blurb ;
+.

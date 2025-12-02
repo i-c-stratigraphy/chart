@@ -1,0 +1,33 @@
+PREFIX schema: <https://schema.org/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://stratigraphy.org>
+    a schema:Organization ;
+    schema:name "International Commission on Stratigraphy" ;
+    schema:url "https://stratigraphy.org"^^xsd:anyURI ;
+.
+
+<https://orcid.org/0000-0002-8742-7730>
+    a schema:Person ;
+    schema:name "Nicholas J. Car" ;
+    schema:email "nick@kurrawong.ai"^^xsd:anyURI ;
+.
+
+
+<https://orcid.org/0000-0002-3884-3420>
+    a schema:Person ;
+    schema:email "dr.shorthair@pm.me"^^xsd:anyURI ;
+    schema:name "Simon J D Cox" ;
+.
+
+<https://orcid.org/0000-0001-6041-5302>
+    a schema:Person ;
+    schema:email "smrTucson@gmail.com"^^xsd:anyURI ;
+    schema:name "Stephen M Richard" ;
+.
+
+<https://linked.data.gov.au/def/csiro>
+    a schema:Organization ;
+    schema:name "CSIRO" ;
+    schema:url "https://csiro.au"^^xsd:anyURI ;
+.

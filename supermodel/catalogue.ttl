@@ -1,0 +1,73 @@
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<http://resource.geosciml.org/catalogue/ics-supermodel>
+    a schema:DataCatalog ;
+    skos:historyNote "Created for the Data Chart and GSSPs DB release, late 2025" ;
+    schema:codeRepository "https://github.com/i-c-stratigraphy/chart"^^xsd:anyURI ;
+    schema:creator <https://orcid.org/0000-0002-8742-7730> ;
+    schema:dateCreated "2025-12-01"^^xsd:date ;
+    schema:dateModified "2025-12-02"^^xsd:date ;
+    schema:dateIssued "2026-01-01"^^xsd:date ;
+    schema:description """The catalogue of all ICS Supermodel elements""" ;
+    schema:hasPart
+        <http://resource.geosciml.org/vocabulary/timescale/gts2020> ,
+        # <http://resource.geosciml.org/classifier/ics/ischart> ,
+        <http://resource.geosciml.org/ontology/gssp> ,
+        <http://resource.geosciml.org/ontology/timescale/gts> ,
+        <http://resource.geosciml.org/ontology/stratigraphy> ,
+        <http://resource.geosciml.org/ontology/visual-chart> ;
+    schema:license <http://purl.org/NET/rdflicense/cc-by4.0> ;
+    schema:name "ICS Supermodel Catalogue" ;
+    schema:publisher <https://stratigraphy.org> ;
+    schema:version "1" ;
+.
+
+<http://resource.geosciml.org/vocabulary/timescale/gts2020>
+    dcat:qualifiedRelation [
+        a dcat:Relationship ;
+        dcterms:relation <https://linked.data.gov.au/def/eia-supermodel> ;
+        dcat:hadRole role:foreground-dataset ;
+    ] ;
+.
+
+<http://resource.geosciml.org/classifier/ics/ischart>
+    dcat:qualifiedRelation [
+        a dcat:Relationship ;
+        dcterms:relation <https://linked.data.gov.au/def/eia-supermodel> ;
+        dcat:hadRole role:foreground-dataset ;
+    ] ;
+.
+
+<http://resource.geosciml.org/ontology/gssp>
+    dcat:qualifiedRelation [
+        a dcat:Relationship ;
+        dcterms:relation <https://linked.data.gov.au/def/eia-supermodel> ;
+        dcat:hadRole role:component-model ;
+    ] ;
+.
+
+<http://resource.geosciml.org/ontology/timescale/gts>
+    dcat:qualifiedRelation [
+        a dcat:Relationship ;
+        dcterms:relation <https://linked.data.gov.au/def/eia-supermodel> ;
+        dcat:hadRole role:component-model ;
+    ] ;
+.
+
+<http://resource.geosciml.org/ontology/stratigraphy>
+    dcat:qualifiedRelation [
+        a dcat:Relationship ;
+        dcterms:relation <https://linked.data.gov.au/def/eia-supermodel> ;
+        dcat:hadRole role:component-model ;
+    ] ;
+.
+
+<http://resource.geosciml.org/ontology/visual-chart>
+    dcat:qualifiedRelation [
+        a dcat:Relationship ;
+        dcterms:relation <https://linked.data.gov.au/def/eia-supermodel> ;
+        dcat:hadRole role:vocabulary ;
+    ] ;
+.

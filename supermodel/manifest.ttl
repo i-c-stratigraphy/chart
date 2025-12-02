@@ -1,0 +1,36 @@
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX mrr: <https://prez.dev/ManifestResourceRoles/>
+PREFIX prez: <https://prez.dev/>
+PREFIX prof: <http://www.w3.org/ns/dx/prof/>
+PREFIX schema: <https://schema.org/>
+
+[]
+    a prez:Manifest ;
+    prof:hasResource
+        [
+            prof:hasArtifact "catalogue.ttl" ;
+            prof:hasRole mrr:CatalogueData ;
+            schema:name "Catalogue Definition" ;
+            # dcterms:conformsTo "validators/bcp.ttl" ;
+        ] ,
+        [
+            prof:hasArtifact
+                # "models/*.ttl" ;
+                "models/gssp.ttl" ,
+                "models/strat.ttl" ;
+            prof:hasRole mrr:ResourceData ;
+            schema:name "Models" ;
+            dcterms:conformsTo "validators/ontpub.ttl" ;
+        ] ,
+        [
+            prof:hasArtifact "vocabularies/*.ttl" ;
+            prof:hasRole mrr:ResourceData ;
+            schema:name "Vocabularies" ;
+            dcterms:conformsTo <https://linked.data.gov.au/def/vocpub> ;
+        ] ,
+        [
+            prof:hasArtifact "background/*.ttl" ;
+            prof:hasRole mrr:CompleteCatalogueAndResourceLabels ;
+            schema:name "Labels Files" ;
+        ] ;
+.

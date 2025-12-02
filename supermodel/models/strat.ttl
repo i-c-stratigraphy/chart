@@ -1,0 +1,137 @@
+PREFIX : <http://resource.geosciml.org/ontology/stratigraphy/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX ont: <http://resource.geosciml.org/ontology/stratigraphy>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+
+:StratigraphicUnit
+    a owl:Class ;
+    schema:name "Stratigraphic Unit" ;
+    rdfs:isDefinedBy ont: ;
+    schema:description """Chronostratigraphic units are bodies of rocks, layered or unlayered, that are defined between specified stratigraphic horizons which represent specified intervals of geologic time.""" ;
+    schema:citation "https://stratigraphy.org/guide/chron"^^xsd:anyURI ;
+.
+
+:Stage
+    a owl:Class ;
+    schema:name "Stage" ;
+    rdfs:isDefinedBy ont: ;
+    schema:description """A stage is the lowest ranking unit in the chronostratigraphic hierarchy that can be recognized on a global scale.
+
+A stage includes all rocks deposited between two chronostratigraphic horizons defined by GSSPs.""" ;
+    schema:citation "https://stratigraphy.org/guide/chron"^^xsd:anyURI ;
+    rdfs:subClassOf :StratigraphicUnit ;
+.
+
+:Series
+    a owl:Class ;
+    schema:name "Series" ;
+    rdfs:isDefinedBy ont: ;
+    schema:description """The series is a chronostratigraphic unit ranking above subseries or stages and below a system. A series consists of several consecutive subseries, or (when subseries are not used) of several consecutive stages.
+
+    The geochronologic equivalent of a series is an epoch.""" ;
+    schema:citation "https://stratigraphy.org/guide/chron"^^xsd:anyURI ;
+    rdfs:subClassOf :StratigraphicUnit ;
+.
+
+:Subseries
+    a owl:Class ;
+    schema:name "Subseries" ;
+    rdfs:isDefinedBy ont: ;
+    schema:description """A subseries is a chronostratigraphic unit ranking immediately above stages and below a series. It consists of one or several consecutive stages.
+
+The geochronologic equivalent of a subseries is a subepoch.""" ;
+    schema:citation "https://stratigraphy.org/guide/chron"^^xsd:anyURI ;
+    rdfs:subClassOf :StratigraphicUnit ;
+.
+
+:System
+    a owl:Class ;
+    schema:name "System" ;
+    rdfs:isDefinedBy ont: ;
+    schema:description """A system is a unit of major rank in the conventional chronostratigraphic hierarchy, above a series and below an erathem. A system is composed of several consecutive series.
+
+The geochronologic equivalent of a system is a period. As an exception, the rank of subsystem (Mississippian, Pennsylvanian) is used for the Carboniferous System.""" ;
+    schema:citation "https://stratigraphy.org/guide/chron"^^xsd:anyURI ;
+    rdfs:subClassOf :StratigraphicUnit ;
+.
+
+:Erathem
+    a owl:Class ;
+    schema:name "Erathem" ;
+    rdfs:isDefinedBy ont: ;
+    schema:description """An erathem is a chronostratigraphic unit greater than a system consisting of several systems.
+
+The geochronologic equivalent of an erathem is an era.
+
+The names of erathems in the Phanerozoic were chosen to reflect major changes of the history of life on Earth: Paleozoic (old life), Mesozoic (intermediate life), and Cenozoic (recent life). Eras carry the same name as their corresponding erathems.""" ;
+    schema:citation "https://stratigraphy.org/guide/chron"^^xsd:anyURI ;
+    rdfs:subClassOf :StratigraphicUnit ;
+.
+
+:Eonothem
+    a owl:Class ;
+    schema:name "Eonothem" ;
+    rdfs:isDefinedBy ont: ;
+    schema:description """An eonothem is a chronostratigraphic unit greater than an erathem. The geochronologic equivalent is an eon. Three eonothems are generally recognized, from older to younger, the Archean, Proterozoic and Phanerozoic eonothems. The combined first two are usually referred to as the Precambrian.
+
+The eons take the same name as their corresponding eonothems.""" ;
+    schema:citation "https://stratigraphy.org/guide/chron"^^xsd:anyURI ;
+    rdfs:subClassOf :StratigraphicUnit ;
+.
+
+:Upper
+    a owl:Class ;
+    schema:name "Upper" ;
+    rdfs:isDefinedBy ont: ;
+    schema:description """The highest stratigraphic unit in a set with the same parent unit""" ;
+.
+
+:Middle
+    a owl:Class ;
+    schema:name "Middle" ;
+    rdfs:isDefinedBy ont: ;
+    schema:description """The middle stratigraphic unit in a set with the same parent unit""" ;
+.
+
+:Lower
+    a owl:Class ;
+    schema:name "Lower" ;
+    rdfs:isDefinedBy ont: ;
+    schema:description """The bottom-most stratigraphic unit in a set with the same parent unit""" ;
+.
+
+:Stratigraphic
+    a owl:Class ;
+    schema:name "Stratigraphic" ;
+    rdfs:isDefinedBy ont: ;
+    schema:description "The study of rock layers (strata) " ;
+.
+
+:Chronometric
+    a owl:Class ;
+    schema:name "Chronometric" ;
+    rdfs:isDefinedBy ont: ;
+    schema:description "Relating to the measurement of time" ;
+.
+
+ont:
+    a owl:Ontology ;
+    schema:copyrightHolder <https://stratigraphy.org> ;
+    schema:copyrightNotice "(c) 2025 International Commission on Stratigraphy" ;
+    schema:creator <https://orcid.org/0000-0002-8742-7730> ;
+    schema:dateCreated "2025-12-01"^^xsd:date ;
+    schema:dateModified "2025-12-02"^^xsd:date ;
+    schema:dateIssued "2026-01-01"^^xsd:date ;
+    schema:description """An ontology for describing stratigraphic objects""" ;
+    schema:license <http://purl.org/NET/rdflicense/cc-by4.0> ;
+    schema:name "Stratigraphy Model" ;
+    schema:publisher <https://stratigraphy.org> ;
+    schema:version "1.0" ;
+    owl:versionIRI :1.0 ;
+    skos:historyNote "Created for the Data Chart and GSSPs DB release, late 2025, mostly from the Stratigraphic Guide at https://stratigraphy.org/guide/chron" ;
+    schema:codeRepository "https://github.com/i-c-stratigraphy/chart"^^xsd:anyURI ;
+.
