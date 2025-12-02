@@ -104,6 +104,20 @@ The eons take the same name as their corresponding eonothems.""" ;
     schema:description """The bottom-most stratigraphic unit in a set with the same parent unit""" ;
 .
 
+:Late
+    a skos:Concept ;
+    schema:name "Late" ;
+    rdfs:isDefinedBy ont: ;
+    schema:description "The youngest element in a set with the same parent element" ;
+.
+
+:Early
+    a skos:Concept ;
+    schema:name "Early" ;
+    rdfs:isDefinedBy ont: ;
+    schema:description "The oldest element in a set with the same parent element" ;
+.
+
 :Stratigraphic
     a owl:Class ;
     schema:name "Stratigraphic" ;

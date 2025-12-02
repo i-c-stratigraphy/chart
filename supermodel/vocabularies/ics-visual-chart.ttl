@@ -1,11 +1,20 @@
-PREFIX : <http://resource.geosciml.org/ontology/visual-chart/>
-PREFIX cs: <http://resource.geosciml.org/ontology/visual-chart>
+PREFIX : <http://resource.geosciml.org/ontology/ics-visual-chart/>
+PREFIX cs: <http://resource.geosciml.org/ontology/ics-visual-chart>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
+
+:ChartTitle
+    a skos:Concept ;
+    skos:prefLabel "Chart Title" ;
+    rdfs:isDefinedBy cs: ;
+    skos:inScheme cs: ;
+    skos:topConceptOf cs: ;
+    skos:definition "The title of the Chart" ;
+.
 
 :ColumnHeadings
     a skos:Concept ;
@@ -52,24 +61,6 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:definition "The scaling of timescale elements" ;
 .
 
-:Late
-    a skos:Concept ;
-    skos:prefLabel "Late" ;
-    rdfs:isDefinedBy cs: ;
-    skos:inScheme cs: ;
-    skos:topConceptOf cs: ;
-    skos:definition "The youngest element in a set with the same parent element" ;
-.
-
-:Early
-    a skos:Concept ;
-    skos:prefLabel "Early" ;
-    rdfs:isDefinedBy cs: ;
-    skos:inScheme cs: ;
-    skos:topConceptOf cs: ;
-    skos:definition "The oldest element in a set with the same parent element" ;
-.
-
 :Blurb
     a skos:Concept ;
     skos:prefLabel "Blurb" ;
@@ -97,12 +88,11 @@ cs:
     skos:historyNote "Created for the Data Chart and GSSPs DB release, late 2025" ;
     schema:codeRepository "https://github.com/i-c-stratigraphy/chart"^^xsd:anyURI ;
     skos:hasTopConcept
+        :ChartTitle ,
         :ColumnHeadings ,
         :Download ,
         :NumericAge ,
         :Language ,
         :Scaling ,
-        :Late ,
-        :Early ,
         :Blurb ;
 .
