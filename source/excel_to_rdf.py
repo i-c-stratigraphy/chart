@@ -16,12 +16,13 @@ namespaces = {
     "vis":      "http://resource.geosciml.org/ontology/ics-visual-chart/",
 }
 
+# load existing content
 g = Graph().parse(Path(__file__).parent / "chart-multilang.ttl")
 
-xls = pd.ExcelFile(Path(__file__).parent / "chart-source-es-ES.xlsx")
+xls = pd.ExcelFile(Path(__file__).parent / "chart-source-master.xlsx")
 
 for sheet_name in xls.sheet_names:
-    if sheet_name not in ["README", "default"]:
+    if sheet_name not in ["README", "default", "en", "it", "es-ES"]:
         print(f"Sheet: {sheet_name}")
         df = pd.read_excel(xls, sheet_name=sheet_name)
         csv_file_name = f"{sheet_name}.csv"

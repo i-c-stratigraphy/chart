@@ -2,1119 +2,1612 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 
 <http://resource.geosciml.org/classifier/ics/ischart/Aalenian>
     skos:prefLabel
+        "Aalenium"@de ,
         "Aalenian"@en ,
         "Aaleniense"@es-ES ,
-        "Aaleniano"@it ;
+        "Aalenian"@id ,
+        "Aaleniano"@it ,
+        "Alenis"@lt ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Aeronian>
     skos:prefLabel
+        "Aeronium"@de ,
         "Aeronian"@en ,
         "Aeroniense"@es-ES ,
-        "Aeroniano"@it ;
+        "Aeronian"@id ,
+        "Aeroniano"@it ,
+        "Aeronis"@lt ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Albian>
     skos:prefLabel
+        "Albium"@de ,
         "Albian"@en ,
         "Albiense"@es-ES ,
-        "Albiano"@it ;
+        "Albian"@id ,
+        "Albiano"@it ,
+        "Albis"@lt ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Anisian>
     skos:prefLabel
+        "Anisium"@de ,
         "Anisian"@en ,
         "Anisiense"@es-ES ,
-        "Anisico"@it ;
+        "Anisian"@id ,
+        "Anisico"@it ,
+        "Anizis"@lt ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Aptian>
     skos:prefLabel
+        "Aptium"@de ,
         "Aptian"@en ,
         "Aptiense"@es-ES ,
-        "Aptiano"@it ;
+        "Aptian"@id ,
+        "Aptiano"@it ,
+        "Aptis"@lt ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Aquitanian>
     skos:prefLabel
+        "Aquitanium"@de ,
         "Aquitanian"@en ,
         "Aquitaniense"@es-ES ,
-        "Aquitaniano"@it ;
+        "Aquitanian"@id ,
+        "Aquitaniano"@it ,
+        "Akvitanis"@lt ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Archean>
     skos:prefLabel
+        "Archaikum"@de ,
         "Archean"@en ,
         "Arcaico"@es-ES ,
-        "Archeano"@it ;
+        "Archean"@id ,
+        "Archeano"@it ,
+        "Archėjus"@lt ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Artinskian>
     skos:prefLabel
+        "Artinskium"@de ,
         "Artinskian"@en ,
         "Artinskiense"@es-ES ,
-        "Artinskiano"@it ;
+        "Artinskian"@id ,
+        "Artinskiano"@it ,
+        "Artinskis"@lt ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Asselian>
     skos:prefLabel
+        "Asselium"@de ,
         "Asselian"@en ,
         "Asseliense"@es-ES ,
-        "Asseliano"@it ;
+        "Asselian"@id ,
+        "Asseliano"@it ,
+        "Aselis"@lt ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Bajocian>
     skos:prefLabel
+        "Bajocium"@de ,
         "Bajocian"@en ,
         "Bajociense"@es-ES ,
-        "Bajociano"@it ;
+        "Bajocian"@id ,
+        "Bajociano"@it ,
+        "Bajosis"@lt ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Barremian>
     skos:prefLabel
+        "Barremium"@de ,
         "Barremian"@en ,
         "Barremiense"@es-ES ,
-        "Barremiano"@it ;
+        "Barremian"@id ,
+        "Barremiano"@it ,
+        "Baremis"@lt ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Bartonian>
     skos:prefLabel
+        "Bartonium"@de ,
         "Bartonian"@en ,
         "Bartoniense"@es-ES ,
-        "Bartoniano"@it ;
+        "Bartonian"@id ,
+        "Bartoniano"@it ,
+        "Bartonis"@lt ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Bashkirian>
     skos:prefLabel
+        "Bashkirium"@de ,
         "Bashkirian"@en ,
         "Bashkiriense"@es-ES ,
-        "Bashkiriano"@it ;
+        "Bashkirian"@id ,
+        "Bashkiriano"@it ,
+        "Baškiris"@lt ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Bathonian>
     skos:prefLabel
+        "Bathonium"@de ,
         "Bathonian"@en ,
         "Bathoniense"@es-ES ,
-        "Bathoniano"@it ;
+        "Bathonian"@id ,
+        "Bathoniano"@it ,
+        "Batis"@lt ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Berriasian>
     skos:prefLabel
+        "Berriasium"@de ,
         "Berriasian"@en ,
         "Berriasiense"@es-ES ,
-        "Berriasiano"@it ;
+        "Berriasian"@id ,
+        "Berriasiano"@it ,
+        "Beriasis"@lt ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Burdigalian>
     skos:prefLabel
+        "Burdigalium"@de ,
         "Burdigalian"@en ,
         "Burdigaliense"@es-ES ,
-        "Burdigaliano"@it ;
+        "Burdigalian"@id ,
+        "Burdigaliano"@it ,
+        "Burdigalis"@lt ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Calabrian>
     skos:prefLabel
+        "Calabrium"@de ,
         "Calabrian"@en ,
         "Calabriense"@es-ES ,
-        "Calabriano"@it ;
+        "Calabrian"@id ,
+        "Calabriano"@it ,
+        "Kalabris"@lt ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Callovian>
     skos:prefLabel
+        "Callovium"@de ,
         "Callovian"@en ,
         "Calloviense"@es-ES ,
-        "Calloviano"@it ;
+        "Callovian"@id ,
+        "Calloviano"@it ,
+        "Kelovėjis"@lt ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Calymmian>
     skos:prefLabel
+        "Calymmium"@de ,
         "Calymmian"@en ,
         "Calímico"@es-ES ,
-        "Calimmiano"@it ;
+        "Calymmian"@id ,
+        "Calimmiano"@it ,
+        "Kalymas"@lt ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Cambrian>
     skos:prefLabel
+        "Kambrium"@de ,
         "Cambrian"@en ,
         "Cámbrico"@es-ES ,
-        "Cambriano"@it ;
+        "Kambrium"@id ,
+        "Cambriano"@it ,
+        "Kambras"@lt ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Campanian>
     skos:prefLabel
+        "Campanium"@de ,
         "Campanian"@en ,
         "Campaniense"@es-ES ,
-        "Campaniano"@it ;
+        "Campanian"@id ,
+        "Campaniano"@it ,
+        "Kampanis"@lt ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Capitanian>
     skos:prefLabel
+        "Capitanium"@de ,
         "Capitanian"@en ,
         "Capitaniense"@es-ES ,
-        "Capitaniano"@it ;
+        "Capitanian"@id ,
+        "Capitaniano"@it ,
+        "Kapitanis"@lt ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Carboniferous>
     skos:prefLabel
+        "Karbon"@de ,
         "Carboniferous"@en ,
         "Carbonífero"@es-ES ,
-        "Carbonifero"@it ;
+        "Karbon"@id ,
+        "Carbonifero"@it ,
+        "Karbonas"@lt ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Carnian>
     skos:prefLabel
+        "Karnium"@de ,
         "Carnian"@en ,
         "Carniense"@es-ES ,
-        "Carnico"@it ;
+        "Carnian"@id ,
+        "Carnico"@it ,
+        "Karnis"@lt ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Cenomanian>
     skos:prefLabel
+        "Cenomanium"@de ,
         "Cenomanian"@en ,
         "Cenomaniense"@es-ES ,
-        "Cenomaniano"@it ;
+        "Cenomanian"@id ,
+        "Cenomaniano"@it ,
+        "Cenomanis"@lt ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Cenozoic>
     skos:prefLabel
+        "Känozoikum"@de ,
         "Cenozoic"@en ,
         "Cenozoico"@es-ES ,
-        "Cenozoico"@it ;
+        "Kenozoikum"@id ,
+        "Cenozoico"@it ,
+        "Kainozojus"@lt ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Changhsingian>
     skos:prefLabel
+        "Changhsingium"@de ,
         "Changhsingian"@en ,
         "Changhsingiense"@es-ES ,
-        "Changhsingiano"@it ;
+        "Changhsingian"@id ,
+        "Changhsingiano"@it ,
+        "Čiangsingis"@lt ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Chattian>
     skos:prefLabel
+        "Chattium"@de ,
         "Chattian"@en ,
         "Chattiense"@es-ES ,
-        "Cattiano"@it ;
+        "Chattian"@id ,
+        "Cattiano"@it ,
+        "Chatis"@lt ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Chibanian>
     skos:prefLabel
+        "Chibanium"@de ,
         "Chibanian"@en ,
         "Chibaniense"@es-ES ,
-        "Chibaniano"@it ;
+        "Chibanian"@id ,
+        "Chibaniano"@it ,
+        "Čibanis"@lt ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Cisuralian>
     skos:prefLabel
+        "Cisuralium"@de ,
         "Cisuralian"@en ,
         "Cisuraliense"@es-ES ,
-        "Cisuraliano"@it ;
+        "Cisuralian"@id ,
+        "Cisuraliano"@it ,
+        "Cisural"@lt ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Coniacian>
     skos:prefLabel
+        "Coniacium"@de ,
         "Coniacian"@en ,
         "Coniaciense"@es-ES ,
-        "Coniaciano"@it ;
+        "Coniacian"@id ,
+        "Coniaciano"@it ,
+        "Konjakis"@lt ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Cretaceous>
     skos:prefLabel
+        "Kreide"@de ,
         "Cretaceous"@en ,
         "Cretácico"@es-ES ,
-        "Cretacico"@it ;
+        "Kapur"@id ,
+        "Cretacico"@it ,
+        "Kreida"@lt ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Cryogenian>
     skos:prefLabel
+        "Cryogenium"@de ,
         "Cryogenian"@en ,
         "Criogénico"@es-ES ,
-        "Criogeniano"@it ;
+        "Cryogenian"@id ,
+        "Criogeniano"@it ,
+        "Kriogenas"@lt ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Danian>
     skos:prefLabel
+        "Danium"@de ,
         "Danian"@en ,
         "Daniense"@es-ES ,
-        "Daniano"@it ;
+        "Danian"@id ,
+        "Daniano"@it ,
+        "Danis"@lt ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Dapingian>
     skos:prefLabel
+        "Dapingium"@de ,
         "Dapingian"@en ,
         "Dapingiense"@es-ES ,
-        "Dapingiano"@it ;
+        "Dapingian"@id ,
+        "Dapingiano"@it ,
+        "Dapingis"@lt ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Darriwilian>
     skos:prefLabel
+        "Darriwilium"@de ,
         "Darriwilian"@en ,
         "Darriwiliense"@es-ES ,
-        "Darriwiliano"@it ;
+        "Darriwilian"@id ,
+        "Darriwiliano"@it ,
+        "Darvilis"@lt ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Devonian>
     skos:prefLabel
+        "Devon"@de ,
         "Devonian"@en ,
         "Devónico"@es-ES ,
-        "Devoniano"@it ;
+        "Devon"@id ,
+        "Devoniano"@it ,
+        "Devonas"@lt ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Drumian>
     skos:prefLabel
+        "Drumium"@de ,
         "Drumian"@en ,
         "Drumiense"@es-ES ,
-        "Drumiano"@it ;
+        "Drumian"@id ,
+        "Drumiano"@it ,
+        "Drumis"@lt ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Ectasian>
     skos:prefLabel
+        "Ectasium"@de ,
         "Ectasian"@en ,
         "Ectásico"@es-ES ,
-        "Ectasiano"@it ;
+        "Ectasian"@id ,
+        "Ectasiano"@it ,
+        "Ektasas"@lt ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Ediacaran>
     skos:prefLabel
+        "Ediacarium"@de ,
         "Ediacaran"@en ,
         "Ediacárico"@es-ES ,
-        "Ediacarano"@it ;
+        "Ediacaran"@id ,
+        "Ediacarano"@it ,
+        "Ediakaras"@lt ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Eifelian>
     skos:prefLabel
+        "Eifelium"@de ,
         "Eifelian"@en ,
         "Eifeliense"@es-ES ,
-        "Eifeliano"@it ;
+        "Eifelian"@id ,
+        "Eifeliano"@it ,
+        "Eifelis"@lt ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Emsian>
     skos:prefLabel
+        "Emsium"@de ,
         "Emsian"@en ,
         "Emsiense"@es-ES ,
-        "Emsiano"@it ;
+        "Emsian"@id ,
+        "Emsiano"@it ,
+        "Emsis"@lt ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Eoarchean>
     skos:prefLabel
+        "Eoarchaikum"@de ,
         "Eoarchean"@en ,
         "Eo-arcaico"@es-ES ,
-        "Eoarcheano"@it ;
+        "Eoarchean"@id ,
+        "Eoarcheano"@it ,
+        "Eoarchėjus"@lt ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Eocene>
     skos:prefLabel
+        "Eozän"@de ,
         "Eocene"@en ,
         "Eoceno"@es-ES ,
-        "Eocene"@it ;
+        "Eosen"@id ,
+        "Eocene"@it ,
+        "Eocenas"@lt ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Famennian>
     skos:prefLabel
+        "Famennium"@de ,
         "Famennian"@en ,
         "Fameniense"@es-ES ,
-        "Famenniano"@it ;
+        "Famennian"@id ,
+        "Famenniano"@it ,
+        "Famenis"@lt ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Floian>
     skos:prefLabel
+        "Floium"@de ,
         "Floian"@en ,
         "Floiense"@es-ES ,
-        "Floiano"@it ;
+        "Floian"@id ,
+        "Floiano"@it ,
+        "Flois"@lt ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Fortunian>
     skos:prefLabel
+        "Fortunium"@de ,
         "Fortunian"@en ,
         "Fortuniense"@es-ES ,
-        "Fortuniano"@it ;
+        "Fortunian"@id ,
+        "Fortuniano"@it ,
+        "Fortunis"@lt ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Frasnian>
     skos:prefLabel
+        "Frasnium"@de ,
         "Frasnian"@en ,
         "Frasniense"@es-ES ,
-        "Frasniano"@it ;
+        "Frasnian"@id ,
+        "Frasniano"@it ,
+        "Franis"@lt ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Furongian>
     skos:prefLabel
+        "Furongium"@de ,
         "Furongian"@en ,
         "Furongiense"@es-ES ,
-        "Furongiano"@it ;
+        "Furongian"@id ,
+        "Furongiano"@it ,
+        "Furongis"@lt ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Gelasian>
     skos:prefLabel
+        "Gelasium"@de ,
         "Gelasian"@en ,
         "Gelasiense"@es-ES ,
-        "Gelasiano"@it ;
+        "Gelasian"@id ,
+        "Gelasiano"@it ,
+        "Gelazis"@lt ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Givetian>
     skos:prefLabel
+        "Givetium"@de ,
         "Givetian"@en ,
         "Givetiense"@es-ES ,
-        "Givetiano"@it ;
+        "Givetian"@id ,
+        "Givetiano"@it ,
+        "Živetis"@lt ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Gorstian>
     skos:prefLabel
+        "Gorstium"@de ,
         "Gorstian"@en ,
         "Gorstiense"@es-ES ,
-        "Gorstiano"@it ;
+        "Gorstian"@id ,
+        "Gorstiano"@it ,
+        "Gorstis"@lt ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Greenlandian>
     skos:prefLabel
+        "Grönlandium"@de ,
         "Greenlandian"@en ,
         "Groenlandiense"@es-ES ,
-        "Groenlandiano"@it ;
+        "Greenlandian"@id ,
+        "Groenlandiano"@it ,
+        "Grenlandis"@lt ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Guadalupian>
     skos:prefLabel
+        "Guadalupium"@de ,
         "Guadalupian"@en ,
         "Guadalupiense"@es-ES ,
-        "Guadalupiano"@it ;
+        "Guadalupian"@id ,
+        "Guadalupiano"@it ,
+        "Guadalupe"@lt ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Guzhangian>
     skos:prefLabel
+        "Guzhangium"@de ,
         "Guzhangian"@en ,
         "Guzhangiense"@es-ES ,
-        "Guzhangiano"@it ;
+        "Guzhangian"@id ,
+        "Guzhangiano"@it ,
+        "Gužangis"@lt ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Gzhelian>
     skos:prefLabel
+        "Gzhelium"@de ,
         "Gzhelian"@en ,
         "Gzheliense"@es-ES ,
-        "Gzheliano"@it ;
+        "Gzhelian"@id ,
+        "Gzheliano"@it ,
+        "Gželis"@lt ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Hadean>
     skos:prefLabel
+        "Hadaikum"@de ,
         "Hadean"@en ,
         "Hádico"@es-ES ,
-        "Adeano"@it ;
+        "Hadean"@id ,
+        "Adeano"@it ,
+        "Hadas"@lt ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Hauterivian>
     skos:prefLabel
+        "Hauterivium"@de ,
         "Hauterivian"@en ,
         "Hauteriviense"@es-ES ,
-        "Hauteriviano"@it ;
+        "Hauterivian"@id ,
+        "Hauteriviano"@it ,
+        "Hoterivis"@lt ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Hettangian>
     skos:prefLabel
+        "Hettangium"@de ,
         "Hettangian"@en ,
         "Hettangiense"@es-ES ,
-        "Hettangiano"@it ;
+        "Hettangian"@id ,
+        "Hettangiano"@it ,
+        "Hetangis"@lt ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Hirnantian>
     skos:prefLabel
+        "Hirnantium"@de ,
         "Hirnantian"@en ,
         "Hirnantiense"@es-ES ,
-        "Hirnantiano"@it ;
+        "Hirnantian"@id ,
+        "Hirnantiano"@it ,
+        "Hirnantis"@lt ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Holocene>
     skos:prefLabel
+        "Holozän"@de ,
         "Holocene"@en ,
         "Holoceno"@es-ES ,
-        "Olocene"@it ;
+        "Holosen"@id ,
+        "Olocene"@it ,
+        "Holocenas"@lt ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Homerian>
     skos:prefLabel
+        "Homerium"@de ,
         "Homerian"@en ,
         "Homeriense"@es-ES ,
-        "Homeriano"@it ;
+        "Homerian"@id ,
+        "Homeriano"@it ,
+        "Homeris"@lt ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Induan>
     skos:prefLabel
+        "Indusium"@de ,
         "Induan"@en ,
         "Induense"@es-ES ,
-        "Induano"@it ;
+        "Induan"@id ,
+        "Induano"@it ,
+        "Indis"@lt ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Jiangshanian>
     skos:prefLabel
+        "Jiangshanium"@de ,
         "Jiangshanian"@en ,
         "Jiangshaniense"@es-ES ,
-        "Jiangshaniano"@it ;
+        "Jiangshanian"@id ,
+        "Jiangshaniano"@it ,
+        "Jiangšanis"@lt ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Jurassic>
     skos:prefLabel
+        "Jura"@de ,
         "Jurassic"@en ,
         "Jurásico"@es-ES ,
-        "Giurassico"@it ;
+        "Jura"@id ,
+        "Giurassico"@it ,
+        "Mezozojus"@lt ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Kasimovian>
     skos:prefLabel
+        "Kasimovium"@de ,
         "Kasimovian"@en ,
         "Kasimoviense"@es-ES ,
-        "Kasimoviano"@it ;
+        "Kasimovian"@id ,
+        "Kasimoviano"@it ,
+        "Kasimovis"@lt ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Katian>
     skos:prefLabel
+        "Katium"@de ,
         "Katian"@en ,
         "Katiense"@es-ES ,
-        "Katiano"@it ;
+        "Katian"@id ,
+        "Katiano"@it ,
+        "Katis"@lt ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Kimmeridgian>
     skos:prefLabel
+        "Kimmeridgium"@de ,
         "Kimmeridgian"@en ,
         "Kimmeridgiense"@es-ES ,
-        "Kimmeridgiano"@it ;
+        "Kimmeridgian"@id ,
+        "Kimmeridgiano"@it ,
+        "Kimeridis"@lt ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Kungurian>
     skos:prefLabel
+        "Kungurium"@de ,
         "Kungurian"@en ,
         "Kunguriense"@es-ES ,
-        "Kunguriano"@it ;
+        "Kungurian"@id ,
+        "Kunguriano"@it ,
+        "Kunguris"@lt ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Ladinian>
     skos:prefLabel
+        "Ladinium"@de ,
         "Ladinian"@en ,
         "Ladiniense"@es-ES ,
-        "Ladinico"@it ;
+        "Ladinian"@id ,
+        "Ladinico"@it ,
+        "Ladinis"@lt ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Langhian>
     skos:prefLabel
+        "Langhium"@de ,
         "Langhian"@en ,
         "Langhiense"@es-ES ,
-        "Langhiano"@it ;
+        "Langhian"@id ,
+        "Langhiano"@it ,
+        "Langis"@lt ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Llandovery>
     skos:prefLabel
+        "Llandovery"@de ,
         "Llandovery"@en ,
         "Llandovery"@es-ES ,
-        "Llandoveriano"@it ;
+        "Llandovery"@id ,
+        "Llandoveriano"@it ,
+        "Landoveris"@lt ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Lochkovian>
     skos:prefLabel
+        "Lochkovium"@de ,
         "Lochkovian"@en ,
         "Lochkoviense"@es-ES ,
-        "Lochkoviano"@it ;
+        "Lochkovian"@id ,
+        "Lochkoviano"@it ,
+        "Lochkovis"@lt ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Lopingian>
     skos:prefLabel
+        "Lopingium"@de ,
         "Lopingian"@en ,
         "Lopingiense"@es-ES ,
-        "Lopingiano"@it ;
+        "Lopingian"@id ,
+        "Lopingiano"@it ,
+        "Loping"@lt ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Ludfordian>
     skos:prefLabel
+        "Ludfordium"@de ,
         "Ludfordian"@en ,
         "Ludfordiense"@es-ES ,
-        "Ludfordiano"@it ;
+        "Ludfordian"@id ,
+        "Ludfordiano"@it ,
+        "Ludfordis"@lt ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Ludlow>
     skos:prefLabel
+        "Ludlow"@de ,
         "Ludlow"@en ,
         "Ludlow"@es-ES ,
-        "Ludlow"@it ;
+        "Ludlow"@id ,
+        "Ludlow"@it ,
+        "Ludlovis"@lt ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Lutetian>
     skos:prefLabel
+        "Lutetium"@de ,
         "Lutetian"@en ,
         "Luteciense"@es-ES ,
-        "Luteziano"@it ;
+        "Lutetian"@id ,
+        "Luteziano"@it ,
+        "Lutetis"@lt ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Maastrichtian>
     skos:prefLabel
+        "Maastrichtium"@de ,
         "Maastrichtian"@en ,
         "Maastrichtiense"@es-ES ,
-        "Maastrichtiano"@it ;
+        "Maastrichtian"@id ,
+        "Maastrichtiano"@it ,
+        "Mastrichtis"@lt ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Meghalayan>
     skos:prefLabel
+        "Meghalayum"@de ,
         "Meghalayan"@en ,
         "Megalayense"@es-ES ,
-        "Meghalayano"@it ;
+        "Meghalayan"@id ,
+        "Meghalayano"@it ,
+        "Megalajis"@lt ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Mesoarchean>
     skos:prefLabel
+        "Mesoarchaikum"@de ,
         "Mesoarchean"@en ,
         "Meso-arcaico"@es-ES ,
-        "Mesoarcheano"@it ;
+        "Mesoarchean"@id ,
+        "Mesoarcheano"@it ,
+        "Mezoarchėjus"@lt ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Mesoproterozoic>
     skos:prefLabel
+        "Mesoproterozoikum"@de ,
         "Mesoproterozoic"@en ,
         "Meso-proterozoico"@es-ES ,
-        "Mesoproterozoico"@it ;
+        "Mesoproterozoikum"@id ,
+        "Mesoproterozoico"@it ,
+        "Mezoproterozojus"@lt ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Mesozoic>
     skos:prefLabel
+        "Mesozoikum"@de ,
         "Mesozoic"@en ,
         "Mesozoico"@es-ES ,
-        "Mesozoico"@it ;
+        "Mesozoikum"@id ,
+        "Mesozoico"@it ,
+        "Mezozojus"@lt ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Messinian>
     skos:prefLabel
+        "Messinium"@de ,
         "Messinian"@en ,
         "Messiniense"@es-ES ,
-        "Messiniano"@it ;
+        "Messinian"@id ,
+        "Messiniano"@it ,
+        "Mesinis"@lt ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Miaolingian>
     skos:prefLabel
+        "Serie 3"@de ,
         "Miaolingian"@en ,
         "Miaolingiense"@es-ES ,
-        "Miaolingiano"@it ;
+        "Miaolingian"@id ,
+        "Miaolingiano"@it ,
+        "Miaolingis"@lt ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Miocene>
     skos:prefLabel
+        "Miozän"@de ,
         "Miocene"@en ,
         "Mioceno"@es-ES ,
-        "Miocene"@it ;
+        "Miosen"@id ,
+        "Miocene"@it ,
+        "Miocenas"@lt ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Mississippian>
     skos:prefLabel
+        "Mississippium"@de ,
         "Mississippian"@en ,
         "Misisípico"@es-ES ,
-        "Mississippiano"@it ;
+        "Mississippian"@id ,
+        "Mississippiano"@it ,
+        "Misisipas"@lt ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Moscovian>
     skos:prefLabel
+        "Moskovium"@de ,
         "Moscovian"@en ,
         "Moscoviense"@es-ES ,
-        "Moscoviano"@it ;
+        "Moscovian"@id ,
+        "Moscoviano"@it ,
+        "Moskvis"@lt ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Neoarchean>
     skos:prefLabel
+        "Neoarchaikum"@de ,
         "Neoarchean"@en ,
         "Neo-arcaico"@es-ES ,
-        "Neoarcheano"@it ;
+        "Neoarchean"@id ,
+        "Neoarcheano"@it ,
+        "Neoarchėjus"@lt ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Neogene>
     skos:prefLabel
+        "Neogen"@de ,
         "Neogene"@en ,
         "Neógeno"@es-ES ,
-        "Neogene"@it ;
+        "Neogen"@id ,
+        "Neogene"@it ,
+        "Neogenas"@lt ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Neoproterozoic>
     skos:prefLabel
+        "Neoproterozoikum"@de ,
         "Neoproterozoic"@en ,
         "Neo-proterozoico"@es-ES ,
-        "Neoproterozoico"@it ;
+        "Neoproterozoikum"@id ,
+        "Neoproterozoico"@it ,
+        "Neoproterozojus"@lt ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Norian>
     skos:prefLabel
+        "Norium"@de ,
         "Norian"@en ,
         "Noriense"@es-ES ,
-        "Norico"@it ;
+        "Norian"@id ,
+        "Norico"@it ,
+        "Noris"@lt ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Northgrippian>
     skos:prefLabel
+        "Northgrippium"@de ,
         "Northgrippian"@en ,
         "Norgripiense"@es-ES ,
-        "Nordgrippiano"@it ;
+        "Northgrippian"@id ,
+        "Nordgrippiano"@it ,
+        "Nordgripis"@lt ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Olenekian>
     skos:prefLabel
+        "Olenekium"@de ,
         "Olenekian"@en ,
         "Olenekiense"@es-ES ,
-        "Olenekiano"@it ;
+        "Olenekian"@id ,
+        "Olenekiano"@it ,
+        "Olenekis"@lt ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Oligocene>
     skos:prefLabel
+        "Oligozän"@de ,
         "Oligocene"@en ,
         "Oligoceno"@es-ES ,
-        "Oligocene"@it ;
+        "Oligosen"@id ,
+        "Oligocene"@it ,
+        "Oligocenas"@lt ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Ordovician>
     skos:prefLabel
+        "Ordovizium"@de ,
         "Ordovician"@en ,
         "Ordovícico"@es-ES ,
-        "Ordoviciano"@it ;
+        "Ordovisiu"@id ,
+        "Ordoviciano"@it ,
+        "Ordovikas"@lt ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Orosirian>
     skos:prefLabel
+        "Orosirium"@de ,
         "Orosirian"@en ,
         "Orosírico"@es-ES ,
-        "Orosiriano"@it ;
+        "Orosirian"@id ,
+        "Orosiriano"@it ,
+        "Orosiras"@lt ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Oxfordian>
     skos:prefLabel
+        "Oxfordium"@de ,
         "Oxfordian"@en ,
         "Oxfordiense"@es-ES ,
-        "Oxfordiano"@it ;
+        "Oxfordian"@id ,
+        "Oxfordiano"@it ,
+        "Oksfordis"@lt ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Paibian>
     skos:prefLabel
+        "Paibium"@de ,
         "Paibian"@en ,
         "Paibiense"@es-ES ,
-        "Paibiano"@it ;
+        "Paibian"@id ,
+        "Paibiano"@it ,
+        "Paibis"@lt ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Paleoarchean>
     skos:prefLabel
+        "Paläoarchaikum"@de ,
         "Paleoarchean"@en ,
         "Paleo-arcaico"@es-ES ,
-        "Paleoarcheano"@it ;
+        "Paleoarchean"@id ,
+        "Paleoarcheano"@it ,
+        "Paleoarchėjus"@lt ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Paleocene>
     skos:prefLabel
+        "Paläozän"@de ,
         "Paleocene"@en ,
         "Paleoceno"@es-ES ,
-        "Paleocene"@it ;
+        "Paleosen"@id ,
+        "Paleocene"@it ,
+        "Paleocenas"@lt ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Paleogene>
     skos:prefLabel
+        "Paläogen"@de ,
         "Paleogene"@en ,
         "Paleógeno"@es-ES ,
-        "Paleogene"@it ;
+        "Paleogen"@id ,
+        "Paleogene"@it ,
+        "Paleogenas"@lt ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Paleoproterozoic>
     skos:prefLabel
+        "Paläoproterozoikum"@de ,
         "Paleoproterozoic"@en ,
         "Paleo-proterozoico"@es-ES ,
-        "Paleoproterozoico"@it ;
+        "Paleoproterozoikum"@id ,
+        "Paleoproterozoico"@it ,
+        "Paleoproterozojus"@lt ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Paleozoic>
     skos:prefLabel
+        "Paläozoikum"@de ,
         "Paleozoic"@en ,
         "Paleozoico"@es-ES ,
-        "Paleozoico"@it ;
+        "Paleozoikum"@id ,
+        "Paleozoico"@it ,
+        "Paleozojus"@lt ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Pennsylvanian>
     skos:prefLabel
+        "Pennsylvanium"@de ,
         "Pennsylvanian"@en ,
         "Pensilvánico"@es-ES ,
-        "Pennsylvaniano"@it ;
+        "Pennsylvanian"@id ,
+        "Pennsylvaniano"@it ,
+        "Pensilvanas"@lt ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Permian>
     skos:prefLabel
+        "Perm"@de ,
         "Permian"@en ,
         "Pérmico"@es-ES ,
-        "Permiano"@it ;
+        "Perem"@id ,
+        "Permiano"@it ,
+        "Permas"@lt ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Phanerozoic>
     skos:prefLabel
+        "Phanerozoikum"@de ,
         "Phanerozoic"@en ,
         "Fanerozoico"@es-ES ,
-        "Fanerozoico"@it ;
+        "Fanerozoikum"@id ,
+        "Fanerozoico"@it ,
+        "Fanerozojus"@lt ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Piacenzian>
     skos:prefLabel
+        "Piacenzium"@de ,
         "Piacenzian"@en ,
         "Piacenziense"@es-ES ,
-        "Piacenziano"@it ;
+        "Piacenzian"@id ,
+        "Piacenziano"@it ,
+        "Piačenzis"@lt ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Pleistocene>
     skos:prefLabel
+        "Pleistozän"@de ,
         "Pleistocene"@en ,
         "Pleistoceno"@es-ES ,
-        "Pleistocene"@it ;
+        "Pleistosen"@id ,
+        "Pleistocene"@it ,
+        "Pleistocenas"@lt ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Pliensbachian>
     skos:prefLabel
+        "Pliensbachium"@de ,
         "Pliensbachian"@en ,
         "Pliensbachiense"@es-ES ,
-        "Pliensbachiano"@it ;
+        "Pliensbachian"@id ,
+        "Pliensbachiano"@it ,
+        "Plynsbachis"@lt ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Pliocene>
     skos:prefLabel
+        "Pliozän"@de ,
         "Pliocene"@en ,
         "Plioceno"@es-ES ,
-        "Pliocene"@it ;
+        "Pliosen"@id ,
+        "Pliocene"@it ,
+        "Pliocenas"@lt ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Pragian>
     skos:prefLabel
+        "Pragium"@de ,
         "Pragian"@en ,
         "Pragiense"@es-ES ,
-        "Pragiano"@it ;
+        "Pragian"@id ,
+        "Pragiano"@it ,
+        "Pragis"@lt ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Precambrian>
     skos:prefLabel
+        "Präkambrium"@de ,
         "Precambrian"@en ,
         "Precámbrico"@es-ES ,
-        "Precambriano"@it ;
+        "Prekambrium"@id ,
+        "Precambriano"@it ,
+        "Prekambras"@lt ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Priabonian>
     skos:prefLabel
+        "Priabonium"@de ,
         "Priabonian"@en ,
         "Priaboniense"@es-ES ,
-        "Priaboniano"@it ;
+        "Priabonian"@id ,
+        "Priaboniano"@it ,
+        "Priabonis"@lt ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Pridoli>
     skos:prefLabel
+        "Pridoli"@de ,
         "Pridoli"@en ,
         "Prídoli"@es-ES ,
-        "Pridoli"@it ;
+        "Pridoli"@id ,
+        "Pridoli"@it ,
+        "Pržidolis"@lt ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Proterozoic>
     skos:prefLabel
+        "Proterozoikum"@de ,
         "Proterozoic"@en ,
         "Proterozoico"@es-ES ,
-        "Proterozoico"@it ;
+        "Proterozoikum"@id ,
+        "Proterozoico"@it ,
+        "Proterozojus"@lt ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Quaternary>
     skos:prefLabel
+        "Quartär"@de ,
         "Quaternary"@en ,
         "Cuaternario"@es-ES ,
-        "Quaternario"@it ;
+        "Kuarter"@id ,
+        "Quaternario"@it ,
+        "Kvarteras"@lt ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Rhaetian>
     skos:prefLabel
+        "Rhaetium"@de ,
         "Rhaetian"@en ,
         "Rhaetiense"@es-ES ,
-        "Retico"@it ;
+        "Rhaetian"@id ,
+        "Retico"@it ,
+        "Retis"@lt ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Rhuddanian>
     skos:prefLabel
+        "Rhuddanium"@de ,
         "Rhuddanian"@en ,
         "Rhuddaniense"@es-ES ,
-        "Rhuddaniano"@it ;
+        "Rhuddanian"@id ,
+        "Rhuddaniano"@it ,
+        "Rudanis"@lt ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Rhyacian>
     skos:prefLabel
+        "Rhyacium"@de ,
         "Rhyacian"@en ,
         "Riácico"@es-ES ,
-        "Riaciano"@it ;
+        "Rhyacian"@id ,
+        "Riaciano"@it ,
+        "Ryakas"@lt ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Roadian>
     skos:prefLabel
+        "Roadium"@de ,
         "Roadian"@en ,
         "Roadiense"@es-ES ,
-        "Roadiano"@it ;
+        "Roadian"@id ,
+        "Roadiano"@it ,
+        "Roadis"@lt ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Rupelian>
     skos:prefLabel
+        "Rupelium"@de ,
         "Rupelian"@en ,
         "Rupeliense"@es-ES ,
-        "Rupeliano"@it ;
+        "Rupelian"@id ,
+        "Rupeliano"@it ,
+        "Riupelis"@lt ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Sakmarian>
     skos:prefLabel
+        "Sakmarium"@de ,
         "Sakmarian"@en ,
         "Sakmariense"@es-ES ,
-        "Sakmariano"@it ;
+        "Sakmarian"@id ,
+        "Sakmariano"@it ,
+        "Sakmaris"@lt ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Sandbian>
     skos:prefLabel
+        "Sandbium"@de ,
         "Sandbian"@en ,
         "Sandbiense"@es-ES ,
-        "Sandbiano"@it ;
+        "Sandbian"@id ,
+        "Sandbiano"@it ,
+        "Sandbis"@lt ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Santonian>
     skos:prefLabel
+        "Santonium"@de ,
         "Santonian"@en ,
         "Santoniense"@es-ES ,
-        "Santoniano"@it ;
+        "Santonian"@id ,
+        "Santoniano"@it ,
+        "Santonis"@lt ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Selandian>
     skos:prefLabel
+        "Seelandium"@de ,
         "Selandian"@en ,
         "Selandiense"@es-ES ,
-        "Selandiano"@it ;
+        "Selandian"@id ,
+        "Selandiano"@it ,
+        "Zėladis"@lt ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Series2>
     skos:prefLabel
+        "Serie 2"@de ,
         "Series 2"@en ,
         "Serie 2"@es-ES ,
-        "Serie 2"@it ;
+        "Seri 2"@id ,
+        "Serie 2"@it ,
+        "2 skyrius"@lt ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Serpukhovian>
     skos:prefLabel
+        "Serpukhovium"@de ,
         "Serpukhovian"@en ,
         "Serpukhoviense"@es-ES ,
-        "Serpukhoviano"@it ;
+        "Serpukhovian"@id ,
+        "Serpukhoviano"@it ,
+        "Serpuchovis"@lt ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Serravallian>
     skos:prefLabel
+        "Serravallium"@de ,
         "Serravallian"@en ,
         "Serravalliense"@es-ES ,
-        "Serravalliano"@it ;
+        "Serravallian"@id ,
+        "Serravalliano"@it ,
+        "Seravalis"@lt ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Sheinwoodian>
     skos:prefLabel
+        "Sheinwoodium"@de ,
         "Sheinwoodian"@en ,
         "Sheinwoodiense"@es-ES ,
-        "Sheinwoodiano"@it ;
+        "Sheinwoodian"@id ,
+        "Sheinwoodiano"@it ,
+        "Šeinvudis"@lt ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Siderian>
     skos:prefLabel
+        "Siderium"@de ,
         "Siderian"@en ,
         "Sidérico"@es-ES ,
-        "Sideriano"@it ;
+        "Siderian"@id ,
+        "Sideriano"@it ,
+        "Sideras"@lt ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Silurian>
     skos:prefLabel
+        "Silur"@de ,
         "Silurian"@en ,
         "Silúrico"@es-ES ,
-        "Siluriano"@it ;
+        "Silur"@id ,
+        "Siluriano"@it ,
+        "Silūras"@lt ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Sinemurian>
     skos:prefLabel
+        "Sinemurium"@de ,
         "Sinemurian"@en ,
         "Sinemuriense"@es-ES ,
-        "Sinemuriano"@it ;
+        "Sinemurian"@id ,
+        "Sinemuriano"@it ,
+        "Sinemiuris"@lt ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Stage10>
     skos:prefLabel
+        "Stufe 10"@de ,
         "Stage 10"@en ,
         "Piso 10"@es-ES ,
-        "Piano 10"@it ;
+        "Jenjang 10"@id ,
+        "Piano 10"@it ,
+        "10 aukštas"@lt ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Stage2>
     skos:prefLabel
+        "Stufe 2"@de ,
         "Stage 2"@en ,
         "Piso 2"@es-ES ,
-        "Piano 2"@it ;
+        "Jenjang 2"@id ,
+        "Piano 2"@it ,
+        "2 aukštas"@lt ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Stage3>
     skos:prefLabel
+        "Stufe 3"@de ,
         "Stage 3"@en ,
         "Piso 3"@es-ES ,
-        "Piano 3"@it ;
+        "Jenjang 3"@id ,
+        "Piano 3"@it ,
+        "3 aukštas"@lt ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Stage4>
     skos:prefLabel
+        "Stufe 4"@de ,
         "Stage 4"@en ,
         "Piso 4"@es-ES ,
-        "Piano 4"@it ;
+        "Jenjang 4"@id ,
+        "Piano 4"@it ,
+        "4 aukštas"@lt ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Statherian>
     skos:prefLabel
+        "Statherium"@de ,
         "Statherian"@en ,
         "Estatérico"@es-ES ,
-        "Statheriano"@it ;
+        "Statherian"@id ,
+        "Statheriano"@it ,
+        "Stateras"@lt ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Stenian>
     skos:prefLabel
+        "Stenium"@de ,
         "Stenian"@en ,
         "Esténico"@es-ES ,
-        "Steniano"@it ;
+        "Stenian"@id ,
+        "Steniano"@it ,
+        "Stenas"@lt ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Telychian>
     skos:prefLabel
+        "Telychium"@de ,
         "Telychian"@en ,
         "Telychiense"@es-ES ,
-        "Telychiano"@it ;
+        "Telychian"@id ,
+        "Telychiano"@it ,
+        "Telyčis"@lt ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Terreneuvian>
     skos:prefLabel
+        "Terreneuvium"@de ,
         "Terreneuvian"@en ,
         "Terreneuviense"@es-ES ,
-        "Terreneuviano"@it ;
+        "Terreneuvian"@id ,
+        "Terreneuviano"@it ,
+        "Tereneuvis"@lt ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Thanetian>
     skos:prefLabel
+        "Thanetium"@de ,
         "Thanetian"@en ,
         "Thanetiense"@es-ES ,
-        "Thanetiano"@it ;
+        "Thanetian"@id ,
+        "Thanetiano"@it ,
+        "Tanetis"@lt ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Tithonian>
     skos:prefLabel
+        "Tithonium"@de ,
         "Tithonian"@en ,
         "Titoniense"@es-ES ,
-        "Titoniano"@it ;
+        "Tithonian"@id ,
+        "Titoniano"@it ,
+        "Titonis"@lt ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Toarcian>
     skos:prefLabel
+        "Toarcium"@de ,
         "Toarcian"@en ,
         "Toarciense"@es-ES ,
-        "Toarciano"@it ;
+        "Toarcian"@id ,
+        "Toarciano"@it ,
+        "Toaris"@lt ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Tonian>
     skos:prefLabel
+        "Tonium"@de ,
         "Tonian"@en ,
         "Tónico"@es-ES ,
-        "Toniano"@it ;
+        "Tonian"@id ,
+        "Toniano"@it ,
+        "Tonas"@lt ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Tortonian>
     skos:prefLabel
+        "Tortonium"@de ,
         "Tortonian"@en ,
         "Tortoniense"@es-ES ,
-        "Tortoniano"@it ;
+        "Tortonian"@id ,
+        "Tortoniano"@it ,
+        "Tortonis"@lt ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Tournaisian>
     skos:prefLabel
+        "Tournaisium"@de ,
         "Tournaisian"@en ,
         "Tournaisiense"@es-ES ,
-        "Tournaisiano"@it ;
+        "Tournaisian"@id ,
+        "Tournaisiano"@it ,
+        "Turnėjis"@lt ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Tremadocian>
     skos:prefLabel
+        "Tremadocium"@de ,
         "Tremadocian"@en ,
         "Tremadociense"@es-ES ,
-        "Tremadociano"@it ;
+        "Tremadocian"@id ,
+        "Tremadociano"@it ,
+        "Tremadokis"@lt ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Triassic>
     skos:prefLabel
+        "Trias"@de ,
         "Triassic"@en ,
         "Triásico"@es-ES ,
-        "Triassico"@it ;
+        "Trias"@id ,
+        "Triassico"@it ,
+        "Triasas"@lt ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Turonian>
     skos:prefLabel
+        "Turonium"@de ,
         "Turonian"@en ,
         "Turoniense"@es-ES ,
-        "Turoniano"@it ;
+        "Turonian"@id ,
+        "Turoniano"@it ,
+        "Turonis"@lt ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Valanginian>
     skos:prefLabel
+        "Valanginium"@de ,
         "Valanginian"@en ,
         "Valanginiense"@es-ES ,
-        "Valanginiano"@it ;
+        "Valanginian"@id ,
+        "Valanginiano"@it ,
+        "Valendis"@lt ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Visean>
     skos:prefLabel
+        "Viseum"@de ,
         "Visean"@en ,
         "Viseense"@es-ES ,
-        "Viseano"@it ;
+        "Visean"@id ,
+        "Viseano"@it ,
+        "Vizėjis"@lt ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Wenlock>
     skos:prefLabel
+        "Wenlock"@de ,
         "Wenlock"@en ,
         "Wenlock"@es-ES ,
-        "Wenlock"@it ;
+        "Wenlock"@id ,
+        "Wenlock"@it ,
+        "Uenlokis"@lt ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Wordian>
     skos:prefLabel
+        "Wordium"@de ,
         "Wordian"@en ,
         "Wordiense"@es-ES ,
-        "Wordiano"@it ;
+        "Wordian"@id ,
+        "Wordiano"@it ,
+        "Vordis"@lt ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Wuchiapingian>
     skos:prefLabel
+        "Wuchiapingium"@de ,
         "Wuchiapingian"@en ,
         "Wuchiapingiense"@es-ES ,
-        "Wuchiapingiano"@it ;
+        "Wuchiapingian"@id ,
+        "Wuchiapingiano"@it ,
+        "Vučiapingis"@lt ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Wuliuan>
     skos:prefLabel
+        "Stufe 5"@de ,
         "Wuliuan"@en ,
         "Wuliuense"@es-ES ,
-        "Wuliuano"@it ;
+        "Wuliuan"@id ,
+        "Wuliuano"@it ,
+        "Vulujis"@lt ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Ypresian>
     skos:prefLabel
+        "Ypresium"@de ,
         "Ypresian"@en ,
         "Ypresiense"@es-ES ,
-        "Ypresiano"@it ;
+        "Ypresian"@id ,
+        "Ypresiano"@it ,
+        "Ypris"@lt ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Zanclean>
     skos:prefLabel
+        "Zancleum"@de ,
         "Zanclean"@en ,
         "Zancliense"@es-ES ,
-        "Zancleano"@it ;
+        "Zanclean"@id ,
+        "Zancleano"@it ,
+        "Zanklis"@lt ;
 .
 
 <http://resource.geosciml.org/ontology/gssp/GSSA>
     skos:prefLabel
+        "GSSP"@de ,
         "GSSP"@en ,
         "GSSP"@es-ES ,
-        "GSSP"@it ;
+        "GSSP"@id ,
+        "GSSP"@it ,
+        "GSSP"@lt ;
 .
 
 <http://resource.geosciml.org/ontology/gssp/GSSP>
     skos:prefLabel
+        "GSSA"@de ,
         "GSSA"@en ,
         "GSSA"@es-ES ,
-        "GSSA"@it ;
+        "GSSA"@id ,
+        "GSSA"@it ,
+        "GSSA"@lt ;
 .
 
 <http://resource.geosciml.org/ontology/ics-visual-chart/Blurb>
     skos:prefLabel
+        """Einheiten aller hierarchischen Ebenen folgen dem Prinzip der Globalen Grenz-Stratotypprofilen und Punkten (GSSP, Global Boundary Stratotype Section and Points) für die Definition ihrer Untergrenzen, inklusive jener des Archaikum und Proterozoikum, die bisher durch Globale Stratigraphische Standardalter (GSSA) definiert wurden. Ratifizierte Subserien/Subepochen werden duch U/F (Unteres/Frühes), M (Mittel) und O/S (Oberes/Spätes) abgekürzt. Kursive Schrift
+indiziert informelle oder unbenannte Einheiten.
+
+Numerische Alter verändern sich laufend und definieren die Einheiten des Phanerozoikum und des Ediacarium nicht, sondern nur GSSPs. Für nicht ratifizierte Einheiten im Phanerozoikum oder solche ohne numerischen Altern
+wird ein ungefähres (~) Alter angegeben.
+
+Die meisten numerischen Alter stammen aus der Global Time Scale 2020 (Gradstein et al. 2020), jene Alter, die abweichen, folgen der jeweiligen Sukommission der ICS nach Abgleich mit der Subkommission für Kalibrierungder
+Zeitskala. Diese Alter wurden von der ICS Exekutive anerkannt.
+
+Farben: Commission for the Geological Map of the World (CGMW, http://www.ccgm.org).
+
+Zitierweise: Cohen, K.M., Finney, S.C., Gibbard, P.L. & Fan, J.-X. (2013; aktualisiert). The ICS International Chronostratigraphic Chart. Episodes 36: 199-204. www.stratigraphy.org/ICSchart/ChronostratChart2024-12.pdf
+
+Version in Deutsch: Österreichische Kommission fur Stratigraphie (ASC, W. Piller), Deutsche Stratigraphische Kommission (DSK, R.T. Becker)
+
+URL: https://stratigraphy.org/chart"""@de ,
         """Units of all ranks are in the process of being defined by Global Boundary Stratotype Section and Points (GSSP) for their lower boundaries, including those of the Archean and Proterozoic, long defined by Global Standard Stratigraphic Ages (GSSA). Ratified Subseries/Subepochs are abbreviated as U/L (Upper/Late), M (Middle) and L/E (Lower/Early). Italic fonts indicate informal units and placeholders for unnamed units. Previous versions and detailed information on ratified GSSPs are available at the website http://www.stratigraphy.org. The URL to this chart is provided below.
 
 Numerical ages are subject to ongoing revision and do not define units in the Phanerozoic and the Ediacaran; only GSSPs do. For boundaries in the Phanerozoic without ratified GSSPs or without constrained numerical ages, an approximate numerical age (~) is provided.
@@ -1139,6 +1632,22 @@ Obra colectiva de todos los miembros anteriores y actuales de la ICS.
 Citar como: Cohen, K.M., Harper, D., Gibbard, P. & Car, N. (2025). The ICS International Chronostratigraphic Chart this decade. Episodes 48: 105-115.
 
 https://www.stratigraphy.org/ICSchart/ChronostratChart2024-12Spanish.pdf"""@es-ES ,
+        """Satuan untuk setiap kategori sedang didefinisikan berdasarkan Batas Global Penampang Stratotipe dan Titik (GSSP) untuk batas bawah, termasuk untuk Archean dan Proterozoikum, yang selama ini di definisikan oleh Standard Umur Stratigrafi Global (GSSA). Sub Jenjang/Sub Umur yang sah disingkat menjadi A (Atas/Akhir), T (Tengah) dan B (Bawah/Awal). Huruf miring menandakan satuan informal, dan menjadi tempat untuk memberikan unit yang belum dinamai. Versi lama dan informasi detil yang sah dari GSSP tersedia di website https://www.stratigraphy.org. Tautan untuk bagan ini tersedia di bawah.
+
+Angka-angka umur dapat berubah dan tidak mendefinisikan Phanerozoikum dan Ediacaran; hanya GSSP yang mendefinisikan. Batas-batas Phanerozoikum tanpa pengesahan GSSP atau tanpa batasan umur numerik, perkiraan umur numeriknya (~) dicantumkan.
+
+Sebagian besar umur-umur diambil dari ‘Skala Watku Geologi 2020’ oleh Gradstein dkk (2020), tetapi beberapa umur berubah karena disediakan oleh subkomisi ICS yang berhubungan, dengan saran dari subkomisi Kalibrasi Skala Umur. Hal ini telah disetujui oleh pimpinan ICS dengan consensus terakhir.
+
+Pewarnaan mengikuti Komisi untuk Peta Geologi Dunia (https://www.ccgm.org)
+
+Bagan digambar dan diperbaharui secara online oleh pengurus K.M. Cohen dan N. Car. Bagan ini merupakan hasil kerja kolektif oleh para anggota ICS yang lalu dan sekarang. 
+
+© International Commission on Stratigraphy, December 2024
+
+Tulis sebagai referensi: Cohen, K.M., Harper, D., Gibbard, P. & Car, N. (2025).
+The ICS International Chronostratigraphic Chart this decade. Episodes 48:105-115
+
+URL: https://stratigraphy.org/chart"""@id ,
         """Le unità stratigrafiche del Fanerozoico e dell'Ediacarano, sono state o sono in procinto di essere definite da GSSP (Global Boundary Stratotype Section and Points) tramite il loro limite inferiore. Le unità con età ≥ 1000 Ma, ovvero quelle dell'Archeano e del Proterozoico, sono al momento definite da GSSA (Global Stratigraphic Standard Ages). I nomi in corsivo identificano le unità informali, mentre le unità non ancora definite sono indicate con il nome generico del proprio rango. Schemi aggiornati e informazioni dettagliate sui GSSP ratificati sono disponibili sul sito web http://www.stratigraphy.org. Le datazioni numeriche sono oggetto di revisione e, a differenza dei GSSP, non definiscono unità nel Fanerozoico e nell’Ediacarano. Per le unità del Fanerozoico non definite da GSSP o senza un’età precisa, viene indicata un’età numerica approssimata (~). Le età numeriche per tutti i sistemi eccetto che per il Quaternario, il Paleogene superiore, il Cretacico, il Triassico, il Permiano, il Cambriano e il Precambriano sono prese da “A Geologic Time Scale 2012” di Gradstein et al. (2012), quelle per il Quaternario, il Paleogene superiore, il Cretacico, il Giurassico, il Triassico, il Permiano, il Cambriano e il Precambriano sono state fornite dalle relative sottocommissioni della ICS.
 
 I colori seguono le indicazioni della Commission for the Geological Map of the World (www.ccgm.org)
@@ -1149,166 +1658,250 @@ Da citare: Cohen, K.M., Finney, S.C., Gibbard, P.L. & Fan, J.-X. (2013; aggiorna
 
 Traduzione a cura della Commissione Italiana di Stratigrafia
 
-URL: https://stratigraphy.org/chart?language=it"""@it ;
+URL: https://stratigraphy.org/chart?language=it"""@it ,
+        """Visų rangų padaliniai yra apibrėžti Globalinio stratotipo pjūvio apatinės ribos tašku (GSPT), o archėjaus ir proterozojaus padaliniai nusakomi Globalinio stratigrafinio amžiaus standartu (GSAS). Ratifikuotos subserijos/subepochos yra sutrumpintos kaip Ap/An (Apatinis / Ankstyvasis), Vid (Vidurinis) ir Vir/Vėl (Viršutinis / Vėlyvasis). Pasvirieji šriftai nurodo neoficialius padalinius ir laikinus bevardžius vienetus. Ankstesnės versijos ir išsami informacija apie ratifikuotus GSSP yra pateikti svetainėje http://www.stratigraphy.org.
+
+Fanerozojaus ir ediakaro absoliūtus amžiai yra nuolat peržiūrimi ir neapibrėžia padalinių; tik GSPT gali tai nustatyti. Apytikslis absoliutus amžius (~) pateikiamas fanerozojaus padalinių riboms be ratifikuotų GSPT arba be tikslaus amžiaus.
+
+Absoliutaus amžiaus duomenys paimti iš „Geologinės laiko skalės 2020“ ir kt. (2020 m.), tačiau kai kurie amžiai skiriasi, kaip nurodyta ICS kartu su Laiko skalės kalibracijos pakomisių patarimais. ICS vykdomoji valdžia juos patvirtino pagal dabartinį sutarimą.
+
+Spalvos suderintos su Pasauline geologinio kartografavimo komisija (http://www.ccgm.org).
+
+Schema nubraižė ir palaiko internete K.M. Cohen ir N. Car.
+
+Schema yra visų, buvusių ir esamų, ICS narių kolektyvinis darbas.
+
+Cituoti: Cohen, K.M., Finney, S.C., Gibbard, P.L., ir Fan, J.-X. (2013; papildyta) The ICS International Chronostratigraphic Chart. Episodes 36: 199-204.
+
+URL: https://stratigraphy.org/chart"""@lt ;
 .
 
 <http://resource.geosciml.org/ontology/ics-visual-chart/ChartTitle>
     skos:prefLabel
+        "Internationale Chronostratigraphische Tabelle"@de ,
         "International Chronostratigraphic Chart"@en ,
         "Tabla Cronoestratigráfica Internacional"@es-ES ,
-        "Scala Cronostratigrafica Internazionale"@it ;
+        "Bagan Kronostratigrafi Internasional"@id ,
+        "Scala Cronostratigrafica Internazionale"@it ,
+        "Tarptautinė Chronostratigrafijos Skalė"@lt ;
 .
 
 <http://resource.geosciml.org/ontology/ics-visual-chart/ColumnHeadings>
     skos:prefLabel
+        "Spaltenüberschriften"@de ,
         "Column Headings"@en ,
         "Encabezados de columna"@es-ES ,
-        "Intestazioni di colonna"@it ;
+        "Judul Kolom"@id ,
+        "Intestazioni di colonna"@it ,
+        "Stulpelių antraštės"@lt ;
 .
 
 <http://resource.geosciml.org/ontology/ics-visual-chart/Download>
     skos:prefLabel
+        "Herunterladen"@de ,
         "Download"@en ,
         "Descargar"@es-ES ,
-        "Scaricamento"@it ;
+        "Unduh"@id ,
+        "Scaricamento"@it ,
+        "Atsisiųsti"@lt ;
 .
 
 <http://resource.geosciml.org/ontology/ics-visual-chart/Language>
     skos:prefLabel
+        "Sprache"@de ,
         "Language"@en ,
         "Idioma"@es-ES ,
-        "Lingua"@it ;
+        "Bahasa"@id ,
+        "Lingua"@it ,
+        "Kalba"@lt ;
 .
 
 <http://resource.geosciml.org/ontology/ics-visual-chart/NumericAge>
     skos:prefLabel
+        "Numerisches Alter"@de ,
         "Numeric Age"@en ,
         "Edad"@es-ES ,
-        "Età numerica"@it ;
+        "Usia Numerik"@id ,
+        "Età numerica"@it ,
+        "Skaitmeninis amžius"@lt ;
 .
 
 <http://resource.geosciml.org/ontology/ics-visual-chart/Scaling>
     skos:prefLabel
+        "Skalierung"@de ,
         "Scaling"@en ,
         "Escala"@es-ES ,
-        "Scalabilità"@it ;
+        "Penskalaan"@id ,
+        "Scalabilità"@it ,
+        "Mastelio keitimas"@lt ;
 .
 
 <http://resource.geosciml.org/ontology/stratigraphy/Chronometric>
     skos:prefLabel
+        "Chronometrisch"@de ,
         "Chronometric"@en ,
         "Cronométrica"@es-ES ,
-        "Cronometrico"@it ;
+        "Kronometrik"@id ,
+        "Cronometrico"@it ,
+        "Chronometrinis"@lt ;
 .
 
 <http://resource.geosciml.org/ontology/stratigraphy/Early>
     skos:prefLabel
+        "Früh"@de ,
         "Early"@en ,
         "Temprano"@es-ES ,
-        "Presto"@it ;
+        "Lebih awal"@id ,
+        "Presto"@it ,
+        "Ankstyvas"@lt ;
 .
 
 <http://resource.geosciml.org/ontology/stratigraphy/Eonothem>
     skos:prefLabel
+        "Äonothem"@de ,
         "Eonothem"@en ,
         "Eonotema"@es-ES ,
-        "Eonotema"@it ;
+        "Eonothem"@id ,
+        "Eonotema"@it ,
+        "Eonotema"@lt ;
 .
 
 <http://resource.geosciml.org/ontology/stratigraphy/Erathem>
     skos:prefLabel
+        "Ärathem"@de ,
         "Erathem"@en ,
         "Eratema"@es-ES ,
-        "Eratema"@it ;
+        "Erathem"@id ,
+        "Eratema"@it ,
+        "Eratema"@lt ;
 .
 
 <http://resource.geosciml.org/ontology/stratigraphy/Late>
     skos:prefLabel
+        "Spät"@de ,
         "Late"@en ,
         "Tardío"@es-ES ,
-        "Tardi"@it ;
+        "Terlambat"@id ,
+        "Tardi"@it ,
+        "Vėlai"@lt ;
 .
 
 <http://resource.geosciml.org/ontology/stratigraphy/Lower>
     skos:prefLabel
+        "Untere"@de ,
         "Lower"@en ,
         "Inferior"@es-ES ,
-        "Inferiore"@it ;
+        "Lebih rendah"@id ,
+        "Inferiore"@it ,
+        "Žemutinis"@lt ;
 .
 
 <http://resource.geosciml.org/ontology/stratigraphy/Middle>
     skos:prefLabel
+        "Mitte"@de ,
         "Middle"@en ,
         "Medio"@es-ES ,
-        "Medio"@it ;
+        "Tengah"@id ,
+        "Medio"@it ,
+        "Vidurys"@lt ;
 .
 
 <http://resource.geosciml.org/ontology/stratigraphy/Series>
     skos:prefLabel
+        "Serie"@de ,
         "Series"@en ,
         "Serie"@es-ES ,
-        "Serie"@it ;
+        "Kala"@id ,
+        "Serie"@it ,
+        "Skyrius"@lt ;
 .
 
 <http://resource.geosciml.org/ontology/stratigraphy/Stage>
     skos:prefLabel
+        "Stufe"@de ,
         "Stage"@en ,
         "Piso"@es-ES ,
-        "Piano"@it ;
+        "Tahap/Umur"@id ,
+        "Piano"@it ,
+        "Aukštas"@lt ;
 .
 
 <http://resource.geosciml.org/ontology/stratigraphy/Stratigraphic>
     skos:prefLabel
+        "Stratigraphie"@de ,
         "Stratigraphic"@en ,
         "Estratigráfica"@es-ES ,
-        "Stratigrafico"@it ;
+        "Stratigrafi"@id ,
+        "Stratigrafico"@it ,
+        "Stratigrafinis"@lt ;
 .
 
 <http://resource.geosciml.org/ontology/stratigraphy/System>
     skos:prefLabel
+        "System"@de ,
         "System"@en ,
         "Sistema"@es-ES ,
-        "Sistema"@it ;
+        "Zama"@id ,
+        "Sistema"@it ,
+        "Sistema"@lt ;
 .
 
 <http://resource.geosciml.org/ontology/stratigraphy/Upper>
     skos:prefLabel
+        "Obere"@de ,
         "Upper"@en ,
         "Superior"@es-ES ,
-        "Superiore"@it ;
+        "Atas"@id ,
+        "Superiore"@it ,
+        "Viršutinė"@lt ;
 .
 
 <http://resource.geosciml.org/ontology/timescale/gts#Age>
     skos:prefLabel
+        "Alter"@de ,
         "Age"@en ,
         "Edad"@es-ES ,
-        "Età"@it ;
+        "Umur"@id ,
+        "Età"@it ,
+        "Amžius"@lt ;
 .
 
 <http://resource.geosciml.org/ontology/timescale/gts#Eon>
     skos:prefLabel
+        "Äon"@de ,
         "Eon"@en ,
         "Eón"@es-ES ,
-        "Eone"@it ;
+        "Keabadian"@id ,
+        "Eone"@it ,
+        "Eona"@lt ;
 .
 
 <http://resource.geosciml.org/ontology/timescale/gts#Epoch>
     skos:prefLabel
+        "Epoche"@de ,
         "Epoch"@en ,
         "Época"@es-ES ,
-        "Epoca"@it ;
+        "Masa"@id ,
+        "Epoca"@it ,
+        "Epocha"@lt ;
 .
 
 <http://resource.geosciml.org/ontology/timescale/gts#Era>
     skos:prefLabel
+        "Ära"@de ,
         "Era"@en ,
         "Era"@es-ES ,
-        "Era"@it ;
+        "Zaman"@id ,
+        "Era"@it ,
+        "Era"@lt ;
 .
 
 <http://resource.geosciml.org/ontology/timescale/gts#Period>
     skos:prefLabel
+        "Periode"@de ,
         "Period"@en ,
         "Periodo"@es-ES ,
-        "Periodo"@it ;
+        "Periode"@id ,
+        "Periodo"@it ,
+        "Periodas"@lt ;
 .
