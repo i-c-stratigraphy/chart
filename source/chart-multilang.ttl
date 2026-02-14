@@ -1,1597 +1,4659 @@
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <http://resource.geosciml.org/classifier/ics/ischart/Aalenian>
     skos:prefLabel
+        "Aalen"@az ,
+        "Aalenià"@ca ,
+        "aalen"@cs ,
         "Aalenium"@de ,
         "Aalenian"@en ,
-        "Aaleniense"@es-ES ,
+        "Aaleniense"@es ,
+        "Aaleniano"@es-a ,
+        "Aaleniar"@eu ,
+        "Aalen"@fi ,
+        "Aalénien"@fr ,
+        "aaleni"@hu ,
         "Aalenian"@id ,
         "Aaleniano"@it ,
-        "Alenis"@lt ;
+        "アーレニアン"@ja ,
+        "알렌절"@ko ,
+        "Alenis"@lt ,
+        "Aalenien"@nl ,
+        "Aaleniaan"@nl-be ,
+        "Aalen"@no ,
+        "Aaleniano"@pt ,
+        "Aaleniano"@pt-br ,
+        "Ааленский"@ru ,
+        "álen"@sk ,
+        "Aaleniyen"@tr ,
+        "阿林阶"@zh ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Aeronian>
     skos:prefLabel
+        "Aeron"@az ,
+        "Aeronià"@ca ,
+        "aeron"@cs ,
         "Aeronium"@de ,
         "Aeronian"@en ,
-        "Aeroniense"@es-ES ,
+        "Aeroniense"@es ,
+        "Aeroniano"@es-a ,
+        "Aeroniar"@eu ,
+        "Aeron"@fi ,
+        "Aéronien"@fr ,
+        "aeroni"@hu ,
         "Aeronian"@id ,
         "Aeroniano"@it ,
-        "Aeronis"@lt ;
+        "アエロニアン"@ja ,
+        "에어론절"@ko ,
+        "Aeronis"@lt ,
+        "Aeronien"@nl ,
+        "Aeroniaan"@nl-be ,
+        "Aeron"@no ,
+        "Aeroniano"@pt ,
+        "Aeroniano"@pt-br ,
+        "Аэронский"@ru ,
+        "aeron"@sk ,
+        "Aroniyen"@tr ,
+        "埃隆阶"@zh ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Albian>
     skos:prefLabel
+        "Alb"@az ,
+        "Albià"@ca ,
+        "alb"@cs ,
         "Albium"@de ,
         "Albian"@en ,
-        "Albiense"@es-ES ,
+        "Albiense"@es ,
+        "Albiano"@es-a ,
+        "Albiar"@eu ,
+        "Alba"@fi ,
+        "Albien"@fr ,
+        "albai"@hu ,
         "Albian"@id ,
         "Albiano"@it ,
-        "Albis"@lt ;
+        "アルビアン"@ja ,
+        "알바절"@ko ,
+        "Albis"@lt ,
+        "Albien"@nl ,
+        "Albiaan"@nl-be ,
+        "Alba"@no ,
+        "Albiano"@pt ,
+        "Albiano"@pt-br ,
+        "Альбский"@ru ,
+        "alb"@sk ,
+        "Albiyen"@tr ,
+        "阿尔布阶"@zh ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Anisian>
     skos:prefLabel
+        "Aniziy"@az ,
+        "Anisià"@ca ,
+        "anis"@cs ,
         "Anisium"@de ,
         "Anisian"@en ,
-        "Anisiense"@es-ES ,
+        "Anisiense"@es ,
+        "Anisiano"@es-a ,
+        "Albiar"@eu ,
+        "Anis"@fi ,
+        "Anisien"@fr ,
+        "anisusi"@hu ,
         "Anisian"@id ,
         "Anisico"@it ,
-        "Anizis"@lt ;
+        "アニシアン"@ja ,
+        "아니수스절"@ko ,
+        "Anizis"@lt ,
+        "Anisien"@nl ,
+        "Anisiaan"@nl-be ,
+        "Anis"@no ,
+        "Anisiano"@pt ,
+        "Anisiano"@pt-br ,
+        "Анизийский"@ru ,
+        "anis"@sk ,
+        "Aniziyen"@tr ,
+        "安尼阶"@zh ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Aptian>
     skos:prefLabel
+        "Apt"@az ,
+        "Aptià"@ca ,
+        "apt"@cs ,
         "Aptium"@de ,
         "Aptian"@en ,
-        "Aptiense"@es-ES ,
+        "Aptiense"@es ,
+        "Aptiano"@es-a ,
+        "Aptiar"@eu ,
+        "Apt"@fi ,
+        "Aptien"@fr ,
+        "apti"@hu ,
         "Aptian"@id ,
         "Aptiano"@it ,
-        "Aptis"@lt ;
+        "アプチアン"@ja ,
+        "압트절"@ko ,
+        "Aptis"@lt ,
+        "Aptien"@nl ,
+        "Aptiaan"@nl-be ,
+        "Apt"@no ,
+        "Aptiano"@pt ,
+        "Aptiano"@pt-br ,
+        "Аптский"@ru ,
+        "apt"@sk ,
+        "Apsiyen"@tr ,
+        "阿普特阶"@zh ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Aquitanian>
     skos:prefLabel
+        "Akvitan"@az ,
+        "Aquitanià"@ca ,
+        "akvitán"@cs ,
         "Aquitanium"@de ,
         "Aquitanian"@en ,
-        "Aquitaniense"@es-ES ,
+        "Aquitaniense"@es ,
+        "Aquitaniano"@es-a ,
+        "Aquitaniar"@eu ,
+        "Aquitania"@fi ,
+        "Aquitanien"@fr ,
+        "aquitaniai"@hu ,
         "Aquitanian"@id ,
         "Aquitaniano"@it ,
-        "Akvitanis"@lt ;
+        "アキタニアン"@ja ,
+        "아킨텐절"@ko ,
+        "Akvitanis"@lt ,
+        "Aquitanien"@nl ,
+        "Aquitaniaan"@nl-be ,
+        "Aquitain"@no ,
+        "Aquitaniano"@pt ,
+        "Aquitaniano"@pt-br ,
+        "Аквитанский"@ru ,
+        "akvitán"@sk ,
+        "Akitaniyen"@tr ,
+        "阿基坦阶"@zh ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Archean>
     skos:prefLabel
+        "Arxey"@az ,
+        "Arqueà"@ca ,
+        "archaikum"@cs ,
         "Archaikum"@de ,
         "Archean"@en ,
-        "Arcaico"@es-ES ,
+        "Arcaico"@es ,
+        "Hadeano"@es-a ,
+        "Arkear"@eu ,
+        "Arkeeinen"@fi ,
+        "Archéen"@fr ,
+        "archaikum"@hu ,
         "Archean"@id ,
         "Archeano"@it ,
-        "Archėjus"@lt ;
+        "太古（累）界／代（始生（累）界／代）"@ja ,
+        "시 생 누 대"@ko ,
+        "Archėjus"@lt ,
+        "Archeïcum"@nl ,
+        "Archeaan"@nl-be ,
+        "Arkeikum"@no ,
+        "Arqueano"@pt ,
+        "Arqueano"@pt-br ,
+        "Архейская"@ru ,
+        "archaikum"@sk ,
+        "Arkeen"@tr ,
+        " 太 古 宇"@zh ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Artinskian>
     skos:prefLabel
+        "Artin"@az ,
+        "Artinskià"@ca ,
+        "artinsk"@cs ,
         "Artinskium"@de ,
         "Artinskian"@en ,
-        "Artinskiense"@es-ES ,
+        "Artinskiense"@es ,
+        "Artinskiano"@es-a ,
+        "Artinskiar"@eu ,
+        "Artinsk"@fi ,
+        "Artinskien"@fr ,
+        "artyinszki"@hu ,
         "Artinskian"@id ,
         "Artinskiano"@it ,
-        "Artinskis"@lt ;
+        "アーティンスキアン"@ja ,
+        "아르틴스크절"@ko ,
+        "Artinskis"@lt ,
+        "Artinskien"@nl ,
+        "Artinskiaan"@nl-be ,
+        "Artinsk"@no ,
+        "Artinskiano"@pt ,
+        "Artinskiano"@pt-br ,
+        "Артинский"@ru ,
+        "artinsk"@sk ,
+        "Artinskiyen"@tr ,
+        "亚丁斯克阶"@zh ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Asselian>
     skos:prefLabel
+        "Assel"@az ,
+        "Asselià"@ca ,
+        "assel"@cs ,
         "Asselium"@de ,
         "Asselian"@en ,
-        "Asseliense"@es-ES ,
+        "Asseliense"@es ,
+        "Asseliano"@es-a ,
+        "Asseliar"@eu ,
+        "Assel"@fi ,
+        "Assélien"@fr ,
+        "asszeli"@hu ,
         "Asselian"@id ,
         "Asseliano"@it ,
-        "Aselis"@lt ;
+        "アッセリアン"@ja ,
+        "아셀절"@ko ,
+        "Aselis"@lt ,
+        "Asselien"@nl ,
+        "Asseliaan"@nl-be ,
+        "Assel"@no ,
+        "Asseliano"@pt ,
+        "Asseliano"@pt-br ,
+        "Ассельский"@ru ,
+        "artinsk"@sk ,
+        "Asseliyen"@tr ,
+        "阿瑟尔阶"@zh ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Bajocian>
     skos:prefLabel
+        "Bayos"@az ,
+        "Bajocià"@ca ,
+        "bajok"@cs ,
         "Bajocium"@de ,
         "Bajocian"@en ,
-        "Bajociense"@es-ES ,
+        "Bajociense"@es ,
+        "Bajociano"@es-a ,
+        "Bajociar"@eu ,
+        "Bajoc"@fi ,
+        "Bajocien"@fr ,
+        "bajoci"@hu ,
         "Bajocian"@id ,
         "Bajociano"@it ,
-        "Bajosis"@lt ;
+        "バジョシアン"@ja ,
+        "바조카에절"@ko ,
+        "Bajosis"@lt ,
+        "Bajocien"@nl ,
+        "Bajociaan"@nl-be ,
+        "Bajoc"@no ,
+        "Bajociano"@pt ,
+        "Bajociano"@pt-br ,
+        "Байосский"@ru ,
+        "bajok"@sk ,
+        "Bajosiyen"@tr ,
+        "巴柔阶"@zh ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Barremian>
     skos:prefLabel
+        "Barrem"@az ,
+        "Barremià"@ca ,
+        "barrem"@cs ,
         "Barremium"@de ,
         "Barremian"@en ,
-        "Barremiense"@es-ES ,
+        "Barremiense"@es ,
+        "Barremiano"@es-a ,
+        "Barremiar"@eu ,
+        "Barrem"@fi ,
+        "Barrémien"@fr ,
+        "barremi"@hu ,
         "Barremian"@id ,
         "Barremiano"@it ,
-        "Baremis"@lt ;
+        "バレミアン"@ja ,
+        "바렘절"@ko ,
+        "Baremis"@lt ,
+        "Barremien"@nl ,
+        "Barremiaan"@nl-be ,
+        "Barrem"@no ,
+        "Barremiano"@pt ,
+        "Barremiano"@pt-br ,
+        "Барремский"@ru ,
+        "barém"@sk ,
+        "Barremiyen"@tr ,
+        "巴雷姆阶"@zh ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Bartonian>
     skos:prefLabel
+        "Barton"@az ,
+        "Bartonià"@ca ,
+        "barton"@cs ,
         "Bartonium"@de ,
         "Bartonian"@en ,
-        "Bartoniense"@es-ES ,
+        "Bartoniense"@es ,
+        "Bartoniano"@es-a ,
+        "Bartoniar"@eu ,
+        "Barton"@fi ,
+        "Bartonien"@fr ,
+        "bartoni"@hu ,
         "Bartonian"@id ,
         "Bartoniano"@it ,
-        "Bartonis"@lt ;
+        "バートニアン"@ja ,
+        "바턴절"@ko ,
+        "Bartonis"@lt ,
+        "Bartonien"@nl ,
+        "Bartoniaan"@nl-be ,
+        "Barton"@no ,
+        "Bartoniano"@pt ,
+        "Bartoniano"@pt-br ,
+        "Бартонский"@ru ,
+        "bartón"@sk ,
+        "Bartoniyen"@tr ,
+        "巴顿阶"@zh ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Bashkirian>
     skos:prefLabel
+        "Başgir"@az ,
+        "Baixkirià"@ca ,
+        "baškir"@cs ,
         "Bashkirium"@de ,
         "Bashkirian"@en ,
-        "Bashkiriense"@es-ES ,
+        "Bashkiriense"@es ,
+        "Bashkiriano"@es-a ,
+        "Bashkiriar"@eu ,
+        "Bashkir"@fi ,
+        "Bashkirien"@fr ,
+        "baskíri"@hu ,
         "Bashkirian"@id ,
         "Bashkiriano"@it ,
-        "Baškiris"@lt ;
+        "バシキリアン"@ja ,
+        "바시키르절"@ko ,
+        "Baškiris"@lt ,
+        "Bashkirien"@nl ,
+        "Bashkiriaan"@nl-be ,
+        "Basjkir"@no ,
+        "Bashkiriano"@pt ,
+        "Bashkiriano"@pt-br ,
+        "Башкирский"@ru ,
+        "baškir"@sk ,
+        "Başkiriyen"@tr ,
+        "巴什基尔阶"@zh ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Bathonian>
     skos:prefLabel
+        "Bat"@az ,
+        "Bathonià"@ca ,
+        "bathon"@cs ,
         "Bathonium"@de ,
         "Bathonian"@en ,
-        "Bathoniense"@es-ES ,
+        "Bathoniense"@es ,
+        "Bathoniano"@es-a ,
+        "Bathoniar"@eu ,
+        "Bathon"@fi ,
+        "Bathonien"@fr ,
+        "bathi"@hu ,
         "Bathonian"@id ,
         "Bathoniano"@it ,
-        "Batis"@lt ;
+        "バトニアン"@ja ,
+        "바토니움절"@ko ,
+        "Batis"@lt ,
+        "Bathonien"@nl ,
+        "Bathoniaan"@nl-be ,
+        "Bathon"@no ,
+        "Bathoniano"@pt ,
+        "Bathoniano"@pt-br ,
+        "Батский"@ru ,
+        "bat"@sk ,
+        "Batoniyen"@tr ,
+        "巴通阶"@zh ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Berriasian>
     skos:prefLabel
+        "Berrias"@az ,
+        "Berriasià"@ca ,
+        "berrias"@cs ,
         "Berriasium"@de ,
         "Berriasian"@en ,
-        "Berriasiense"@es-ES ,
+        "Berriasiense"@es ,
+        "Berriasiano"@es-a ,
+        "Berriasiar"@eu ,
+        "Berrias"@fi ,
+        "Berriasien"@fr ,
+        "berriasi"@hu ,
         "Berriasian"@id ,
         "Berriasiano"@it ,
-        "Beriasis"@lt ;
+        "ベリアシアン"@ja ,
+        "베리아절"@ko ,
+        "Beriasis"@lt ,
+        "Berriasien"@nl ,
+        "Berriasiaan"@nl-be ,
+        "Berrias"@no ,
+        "Berriasiano"@pt ,
+        "Berriasiano"@pt-br ,
+        "Берриасский"@ru ,
+        "berias"@sk ,
+        "Berriaziyen"@tr ,
+        "贝里阿斯阶"@zh ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Burdigalian>
     skos:prefLabel
+        "Burdiqal"@az ,
+        "Burdigalià"@ca ,
+        "burdigal"@cs ,
         "Burdigalium"@de ,
         "Burdigalian"@en ,
-        "Burdigaliense"@es-ES ,
+        "Burdigaliense"@es ,
+        "Burdigaliano"@es-a ,
+        "Burdigaliar"@eu ,
+        "Burdigala"@fi ,
+        "Burdigalien"@fr ,
+        "burdigaliai"@hu ,
         "Burdigalian"@id ,
         "Burdigaliano"@it ,
-        "Burdigalis"@lt ;
+        "バーディガリアン"@ja ,
+        "부르디갈라절"@ko ,
+        "Burdigalis"@lt ,
+        "Burdigalien"@nl ,
+        "Burdigaliaan"@nl-be ,
+        "Burdigala"@no ,
+        "Burdigaliano"@pt ,
+        "Burdigaliano"@pt-br ,
+        "Бурдигальский"@ru ,
+        "burdigal"@sk ,
+        "Burdigaliyen"@tr ,
+        "波尔多阶"@zh ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Calabrian>
     skos:prefLabel
+        "Kalabriya"@az ,
+        "Calabrià"@ca ,
+        "kalábr"@cs ,
         "Calabrium"@de ,
         "Calabrian"@en ,
-        "Calabriense"@es-ES ,
+        "Calabriense"@es ,
+        "Calabriano"@es-a ,
+        "Calabriar"@eu ,
+        "Calabria"@fi ,
+        "Calabrien"@fr ,
+        "calabriai"@hu ,
         "Calabrian"@id ,
         "Calabriano"@it ,
-        "Kalabris"@lt ;
+        "カラブリアン"@ja ,
+        "칼라브리아절"@ko ,
+        "Kalabris"@lt ,
+        "Calabrien"@nl ,
+        "Calabriaan"@nl-be ,
+        "Calabria"@no ,
+        "Calabriano"@pt ,
+        "Calabriano"@pt-br ,
+        "Калабрийский"@ru ,
+        "kaláber"@sk ,
+        "Kalabriyen"@tr ,
+        "卡拉布里雅阶"@zh ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Callovian>
     skos:prefLabel
+        "Kellovey"@az ,
+        "Cal·lovià"@ca ,
+        "callovian"@cs ,
         "Callovium"@de ,
         "Callovian"@en ,
-        "Calloviense"@es-ES ,
+        "Calloviense"@es ,
+        "Calloviano"@es-a ,
+        "Calloviar"@eu ,
+        "Callov"@fi ,
+        "Callovien"@fr ,
+        "callovi"@hu ,
         "Callovian"@id ,
         "Calloviano"@it ,
-        "Kelovėjis"@lt ;
+        "カロビアン"@ja ,
+        "칼로비움절"@ko ,
+        "Kelovėjis"@lt ,
+        "Callovien"@nl ,
+        "Calloviaan"@nl-be ,
+        "Callov"@no ,
+        "Calloviano"@pt ,
+        "Calloviano"@pt-br ,
+        "Келловейский"@ru ,
+        "kelovej"@sk ,
+        "Kalloviyen"@tr ,
+        "卡洛夫阶"@zh ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Calymmian>
     skos:prefLabel
+        "Kalim"@az ,
+        "Calimmià"@ca ,
+        "calymm"@cs ,
         "Calymmium"@de ,
         "Calymmian"@en ,
-        "Calímico"@es-ES ,
+        "Calímico"@es ,
+        "Calymmiano"@es-a ,
+        "Calymmiar"@eu ,
+        "Kalym"@fi ,
+        "Calymmien"@fr ,
+        "calymmi"@hu ,
         "Calymmian"@id ,
         "Calimmiano"@it ,
-        "Kalymas"@lt ;
+        "カリミアン"@ja ,
+        "칼리마기"@ko ,
+        "Kalymas"@lt ,
+        "Calymmium"@nl ,
+        "Calymmiaan"@nl-be ,
+        "Kalym"@no ,
+        "Calymmiano"@pt ,
+        "Calymmiano"@pt-br ,
+        "Калиммская"@ru ,
+        "kalym"@sk ,
+        "Kalimiyen"@tr ,
+        "盖层系"@zh ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Cambrian>
     skos:prefLabel
+        "Kembri"@az ,
+        "Cambrià"@ca ,
+        "kambrium"@cs ,
         "Kambrium"@de ,
         "Cambrian"@en ,
-        "Cámbrico"@es-ES ,
+        "Cámbrico"@es ,
+        "Cámbrico"@es-a ,
+        "Kanbriar"@eu ,
+        "Kambri"@fi ,
+        "Cambrien"@fr ,
+        "kambrium"@hu ,
         "Kambrium"@id ,
         "Cambriano"@it ,
-        "Kambras"@lt ;
+        "カンブリア系／紀"@ja ,
+        "캄브리아기"@ko ,
+        "Kambras"@lt ,
+        "Cambrium"@nl ,
+        "Cambrium"@nl-be ,
+        "Kambrium"@no ,
+        "Cambriano"@pt ,
+        "Cambriano"@pt-br ,
+        "Кембрийская"@ru ,
+        "kambrium"@sk ,
+        "Kambriyen"@tr ,
+        "寒 武 系"@zh ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Campanian>
     skos:prefLabel
+        "Kampan"@az ,
+        "Campanià"@ca ,
+        "kampán"@cs ,
         "Campanium"@de ,
         "Campanian"@en ,
-        "Campaniense"@es-ES ,
+        "Campaniense"@es ,
+        "Campaniano"@es-a ,
+        "Campaniar"@eu ,
+        "Campania"@fi ,
+        "Campanien"@fr ,
+        "campani"@hu ,
         "Campanian"@id ,
         "Campaniano"@it ,
-        "Kampanis"@lt ;
+        "カンパニアン"@ja ,
+        "캄파이나절"@ko ,
+        "Kampanis"@lt ,
+        "Campanien"@nl ,
+        "Campaniaan"@nl-be ,
+        "Campan"@no ,
+        "Campaniano"@pt ,
+        "Campaniano"@pt-br ,
+        "Кампанский"@ru ,
+        "kampán"@sk ,
+        "Kampaniyen"@tr ,
+        "坎潘阶"@zh ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Capitanian>
     skos:prefLabel
+        "Kapitan"@az ,
+        "Capitanià"@ca ,
+        "capitan"@cs ,
         "Capitanium"@de ,
         "Capitanian"@en ,
-        "Capitaniense"@es-ES ,
+        "Capitaniense"@es ,
+        "Capitaniano"@es-a ,
+        "Capitaniar"@eu ,
+        "Capitan"@fi ,
+        "Capitanien"@fr ,
+        "capitani"@hu ,
         "Capitanian"@id ,
         "Capitaniano"@it ,
-        "Kapitanis"@lt ;
+        "キャピタニアン"@ja ,
+        "캐피탄절"@ko ,
+        "Kapitanis"@lt ,
+        "Capitanien"@nl ,
+        "Capitaniaan"@nl-be ,
+        "Capitan"@no ,
+        "Capitaniano"@pt ,
+        "Capitaniano"@pt-br ,
+        "Кептенский"@ru ,
+        "kapitan"@sk ,
+        "Kapitaniyen"@tr ,
+        "卡匹敦阶"@zh ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Carboniferous>
     skos:prefLabel
+        "Karbon (Daş kömür)"@az ,
+        "Carbonífer"@ca ,
+        "karbon"@cs ,
         "Karbon"@de ,
         "Carboniferous"@en ,
-        "Carbonífero"@es-ES ,
+        "Carbonífero"@es ,
+        "Carbonífero"@es-a ,
+        "Karbonifero"@eu ,
+        "Kivihiili"@fi ,
+        "Carbonifère"@fr ,
+        "karbon"@hu ,
         "Karbon"@id ,
         "Carbonifero"@it ,
-        "Karbonas"@lt ;
+        "石炭系／紀"@ja ,
+        "석탄기"@ko ,
+        "Karbonas"@lt ,
+        "Carboon"@nl ,
+        "Carboon"@nl-be ,
+        "Karbon"@no ,
+        "Carbonifero"@pt ,
+        "Carbonifero"@pt-br ,
+        "Каменноугольная"@ru ,
+        "karbón"@sk ,
+        "Karbonifer"@tr ,
+        "石 炭 系"@zh ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Carnian>
     skos:prefLabel
+        "Karniy"@az ,
+        "Carnià"@ca ,
+        "karn"@cs ,
         "Karnium"@de ,
         "Carnian"@en ,
-        "Carniense"@es-ES ,
+        "Carniense"@es ,
+        "Carniano"@es-a ,
+        "Carniar"@eu ,
+        "Carn"@fi ,
+        "Carnien"@fr ,
+        "karni"@hu ,
         "Carnian"@id ,
         "Carnico"@it ,
-        "Karnis"@lt ;
+        "カーニアン"@ja ,
+        "카닉절"@ko ,
+        "Karnis"@lt ,
+        "Carnien"@nl ,
+        "Carniaan"@nl-be ,
+        "Karn"@no ,
+        "Carniano"@pt ,
+        "Carniano"@pt-br ,
+        "Карнийский"@ru ,
+        "karn"@sk ,
+        "Karniyen"@tr ,
+        "卡尼阶"@zh ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Cenomanian>
     skos:prefLabel
+        "Senoman"@az ,
+        "Cenomanià"@ca ,
+        "cenoman"@cs ,
         "Cenomanium"@de ,
         "Cenomanian"@en ,
-        "Cenomaniense"@es-ES ,
+        "Cenomaniense"@es ,
+        "Cenomaniano"@es-a ,
+        "Cenomaniar"@eu ,
+        "Cenoman"@fi ,
+        "Cénomanien"@fr ,
+        "cenomani"@hu ,
         "Cenomanian"@id ,
         "Cenomaniano"@it ,
-        "Cenomanis"@lt ;
+        "セノマニアン"@ja ,
+        "세노마눔절"@ko ,
+        "Cenomanis"@lt ,
+        "Cenomanien"@nl ,
+        "Cenomaniaan"@nl-be ,
+        "Cenoman"@no ,
+        "Cenomaniano"@pt ,
+        "Cenomaniano"@pt-br ,
+        "Сеноманский"@ru ,
+        "cenoman"@sk ,
+        "Senomaniyen"@tr ,
+        "塞诺曼阶"@zh ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Cenozoic>
     skos:prefLabel
+        "Kaynozoy"@az ,
+        "Cenozoic"@ca ,
+        "kenozoikum"@cs ,
         "Känozoikum"@de ,
         "Cenozoic"@en ,
-        "Cenozoico"@es-ES ,
+        "Cenozoico"@es ,
+        "Cenozoico"@es-a ,
+        "Zenozoiko"@eu ,
+        "Kenotsooinen"@fi ,
+        "Cénozoïque"@fr ,
+        "kainozoikum"@hu ,
         "Kenozoikum"@id ,
         "Cenozoico"@it ,
-        "Kainozojus"@lt ;
+        "新生界／代"@ja ,
+        "생대"@ko ,
+        "Kainozojus"@lt ,
+        "Kenozoïcum"@nl ,
+        "Cenozoïcum"@nl-be ,
+        "Kenozoikum"@no ,
+        "Cenozoico"@pt ,
+        "Cenozoico"@pt-br ,
+        "Кайнозойская"@ru ,
+        "kenozoikum"@sk ,
+        "Senozoyik"@tr ,
+        "新 生界"@zh ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Changhsingian>
     skos:prefLabel
+        "Çanqsin"@az ,
+        "Changxingià"@ca ,
+        "changhsing"@cs ,
         "Changhsingium"@de ,
         "Changhsingian"@en ,
-        "Changhsingiense"@es-ES ,
+        "Changhsingiense"@es ,
+        "Changhsingiano"@es-a ,
+        "Changhsingiar"@eu ,
+        "Changhsing"@fi ,
+        "Changhsingien"@fr ,
+        "changhsingi"@hu ,
         "Changhsingian"@id ,
         "Changhsingiano"@it ,
-        "Čiangsingis"@lt ;
+        "チャンシンジアン"@ja ,
+        "창싱절"@ko ,
+        "Čiangsingis"@lt ,
+        "Changhsingien"@nl ,
+        "Changhsingiaan"@nl-be ,
+        "Changxing"@no ,
+        "Changhsingiano"@pt ,
+        "Changhsingiano"@pt-br ,
+        "Чансинский"@ru ,
+        "čchangsing"@sk ,
+        "Çangsingiyen"@tr ,
+        "长兴阶"@zh ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Chattian>
     skos:prefLabel
+        "Hat"@az ,
+        "Catià"@ca ,
+        "chatt"@cs ,
         "Chattium"@de ,
         "Chattian"@en ,
-        "Chattiense"@es-ES ,
+        "Chattiense"@es ,
+        "Chattiano"@es-a ,
+        "Chattiar"@eu ,
+        "Chatt"@fi ,
+        "Chattien"@fr ,
+        "katti"@hu ,
         "Chattian"@id ,
         "Cattiano"@it ,
-        "Chatis"@lt ;
+        "チャッティアン"@ja ,
+        "카티절"@ko ,
+        "Chatis"@lt ,
+        "Chattien"@nl ,
+        "Chattiaan"@nl-be ,
+        "Chatt"@no ,
+        "Chattiano"@pt ,
+        "Chattiano"@pt-br ,
+        "Хаттский"@ru ,
+        "chat"@sk ,
+        "Şattiyen"@tr ,
+        "夏特阶"@zh ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Chibanian>
     skos:prefLabel
+        "Çiba"@az ,
+        "Chibanià"@ca ,
+        "chiban"@cs ,
         "Chibanium"@de ,
         "Chibanian"@en ,
-        "Chibaniense"@es-ES ,
+        "Chibaniense"@es ,
+        "Chibaniano"@es-a ,
+        "Erdi"@eu ,
+        "Chiba"@fi ,
+        "Chibanien"@fr ,
+        "csibai"@hu ,
         "Chibanian"@id ,
         "Chibaniano"@it ,
-        "Čibanis"@lt ;
+        "チバニアン"@ja ,
+        "지바절"@ko ,
+        "Čibanis"@lt ,
+        "Chibaien"@nl ,
+        "Chibaiaan"@nl-be ,
+        "Chiba"@no ,
+        "Chibaniano"@pt ,
+        "Chibaniano"@pt-br ,
+        "Средний"@ru ,
+        "čiba"@sk ,
+        "Çibaniyen"@tr ,
+        "千叶阶"@zh ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Cisuralian>
     skos:prefLabel
+        "Cisural"@az ,
+        "Cisuralià"@ca ,
+        "cisural"@cs ,
         "Cisuralium"@de ,
         "Cisuralian"@en ,
-        "Cisuraliense"@es-ES ,
+        "Cisuraliense"@es ,
+        "Cisuraliano"@es-a ,
+        "Cisuraliar"@eu ,
+        "Cisural"@fi ,
+        "Cisuralien"@fr ,
+        "ciszuráli"@hu ,
         "Cisuralian"@id ,
         "Cisuraliano"@it ,
-        "Cisural"@lt ;
+        "シスウラリアン"@ja ,
+        "시스우랄세"@ko ,
+        "Cisural"@lt ,
+        "Cisuralien"@nl ,
+        "Cisuraliaan"@nl-be ,
+        "Cisural"@no ,
+        "Cisuraliano"@pt ,
+        "Cisuraliano"@pt-br ,
+        "Приуральский"@ru ,
+        "cisural"@sk ,
+        "Sisuraliyen"@tr ,
+        "乌拉尔统"@zh ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Coniacian>
     skos:prefLabel
+        "Konyak"@az ,
+        "Coniacià"@ca ,
+        "coniak"@cs ,
         "Coniacium"@de ,
         "Coniacian"@en ,
-        "Coniaciense"@es-ES ,
+        "Coniaciense"@es ,
+        "Coniaciano"@es-a ,
+        "Coniaciar"@eu ,
+        "Cognac"@fi ,
+        "Coniacien"@fr ,
+        "coniaci"@hu ,
         "Coniacian"@id ,
         "Coniaciano"@it ,
-        "Konjakis"@lt ;
+        "コニアシアン"@ja ,
+        "코냑절"@ko ,
+        "Konjakis"@lt ,
+        "Coniacien"@nl ,
+        "Coniaciaan"@nl-be ,
+        "Coniac"@no ,
+        "Coniaciano"@pt ,
+        "Coniaciano"@pt-br ,
+        "Коньякский"@ru ,
+        "koňak"@sk ,
+        "Koniasiyen"@tr ,
+        "康尼亚克阶"@zh ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Cretaceous>
     skos:prefLabel
+        "Təbaşir"@az ,
+        "Cretaci"@ca ,
+        "křída"@cs ,
         "Kreide"@de ,
         "Cretaceous"@en ,
-        "Cretácico"@es-ES ,
+        "Cretácico"@es ,
+        "Cretácico"@es-a ,
+        "Kretazeo"@eu ,
+        "Liitu"@fi ,
+        "Crétacé"@fr ,
+        "kréta"@hu ,
         "Kapur"@id ,
         "Cretacico"@it ,
-        "Kreida"@lt ;
+        "白亜系／紀"@ja ,
+        "백악기"@ko ,
+        "Kreida"@lt ,
+        "Krijt"@nl ,
+        "Krijt"@nl-be ,
+        "Kritt"@no ,
+        "Cretáceo"@pt ,
+        "Cretáceo"@pt-br ,
+        "Меловая"@ru ,
+        "krieda"@sk ,
+        "Kretase"@tr ,
+        "白 垩系"@zh ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Cryogenian>
     skos:prefLabel
+        "Kriogen"@az ,
+        "Criogenià"@ca ,
+        "kryogén"@cs ,
         "Cryogenium"@de ,
         "Cryogenian"@en ,
-        "Criogénico"@es-ES ,
+        "Criogénico"@es ,
+        "Criogeniano"@es-a ,
+        "Cryogeniar"@eu ,
+        "Kryogeeni"@fi ,
+        "Cryogénien"@fr ,
+        "kriogéni"@hu ,
         "Cryogenian"@id ,
         "Criogeniano"@it ,
-        "Kriogenas"@lt ;
+        "クライオジェニアン"@ja ,
+        "크리오스진기"@ko ,
+        "Kriogenas"@lt ,
+        "Cryogenium"@nl ,
+        "Cryogeniaan"@nl-be ,
+        "Kryogen"@no ,
+        "Cryogeniano"@pt ,
+        "Cryogeniano"@pt-br ,
+        "Криогенская"@ru ,
+        "kryogén"@sk ,
+        "Kriyojeniyen"@tr ,
+        "成冰系"@zh ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Danian>
     skos:prefLabel
+        "Danimarka"@az ,
+        "Danià"@ca ,
+        "dan"@cs ,
         "Danium"@de ,
         "Danian"@en ,
-        "Daniense"@es-ES ,
+        "Daniense"@es ,
+        "Daniano"@es-a ,
+        "Daniar"@eu ,
+        "Dania"@fi ,
+        "Danien"@fr ,
+        "dániai"@hu ,
         "Danian"@id ,
         "Daniano"@it ,
-        "Danis"@lt ;
+        "ダニアン"@ja ,
+        "다니아절"@ko ,
+        "Danis"@lt ,
+        "Danien"@nl ,
+        "Daniaan"@nl-be ,
+        "Dan"@no ,
+        "Daniano"@pt ,
+        "Daniano"@pt-br ,
+        "Датский"@ru ,
+        "dán"@sk ,
+        "Daniyen"@tr ,
+        "丹麦阶"@zh ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Dapingian>
     skos:prefLabel
+        "Dapinq"@az ,
+        "Dapingià"@ca ,
+        "daping"@cs ,
         "Dapingium"@de ,
         "Dapingian"@en ,
-        "Dapingiense"@es-ES ,
+        "Dapingiense"@es ,
+        "Dapingiano"@es-a ,
+        "Dapingiar"@eu ,
+        "Daping"@fi ,
+        "Dapingien"@fr ,
+        "dapingi"@hu ,
         "Dapingian"@id ,
         "Dapingiano"@it ,
-        "Dapingis"@lt ;
+        "ダーピンジアン"@ja ,
+        "다핑절"@ko ,
+        "Dapingis"@lt ,
+        "Dapingien"@nl ,
+        "Dapingiaan"@nl-be ,
+        "Daping"@no ,
+        "Dapingiano"@pt ,
+        "Dapingiano"@pt-br ,
+        "Дапинский"@ru ,
+        "daping"@sk ,
+        "Dapingiyen"@tr ,
+        "大坪阶"@zh ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Darriwilian>
     skos:prefLabel
+        "Darrivil"@az ,
+        "Darriwilià"@ca ,
+        "darriwil"@cs ,
         "Darriwilium"@de ,
         "Darriwilian"@en ,
-        "Darriwiliense"@es-ES ,
+        "Darriwiliense"@es ,
+        "Darriwiliano"@es-a ,
+        "Darriwiliar"@eu ,
+        "Darriwil"@fi ,
+        "Darriwilien"@fr ,
+        "darriwili"@hu ,
         "Darriwilian"@id ,
         "Darriwiliano"@it ,
-        "Darvilis"@lt ;
+        "ダリウィリアン"@ja ,
+        "다리윌절"@ko ,
+        "Darvilis"@lt ,
+        "Darriwilien"@nl ,
+        "Darriwiliaan"@nl-be ,
+        "Darriwil"@no ,
+        "Darriwiliano"@pt ,
+        "Darriwiliano"@pt-br ,
+        "Дарривильский"@ru ,
+        "dariwil"@sk ,
+        "Darriviliyen"@tr ,
+        "达瑞威尔阶"@zh ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Devonian>
     skos:prefLabel
+        "Devon"@az ,
+        "Devonià"@ca ,
+        "devon"@cs ,
         "Devon"@de ,
         "Devonian"@en ,
-        "Devónico"@es-ES ,
+        "Devónico"@es ,
+        "Devónico"@es-a ,
+        "Devoniar"@eu ,
+        "Devoni"@fi ,
+        "Dévonien"@fr ,
+        "devon"@hu ,
         "Devon"@id ,
         "Devoniano"@it ,
-        "Devonas"@lt ;
+        "デボン系／紀"@ja ,
+        "데본기"@ko ,
+        "Devonas"@lt ,
+        "Devoon"@nl ,
+        "Devoon"@nl-be ,
+        "Devon"@no ,
+        "Devoniano"@pt ,
+        "Devoniano"@pt-br ,
+        "Девонская"@ru ,
+        "devón"@sk ,
+        "Devoniyen"@tr ,
+        "泥 盆 系"@zh ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Drumian>
     skos:prefLabel
+        "Drum"@az ,
+        "Drumià"@ca ,
+        "drum"@cs ,
         "Drumium"@de ,
         "Drumian"@en ,
-        "Drumiense"@es-ES ,
+        "Drumiense"@es ,
+        "Drumiano"@es-a ,
+        "Drumiar"@eu ,
+        "Drum"@fi ,
+        "Drumien"@fr ,
+        "drumi"@hu ,
         "Drumian"@id ,
         "Drumiano"@it ,
-        "Drumis"@lt ;
+        "ドラミアン"@ja ,
+        "드럼절"@ko ,
+        "Drumis"@lt ,
+        "Drumien"@nl ,
+        "Drumiaan"@nl-be ,
+        "Drum"@no ,
+        "Drumiano"@pt ,
+        "Drumiano"@pt-br ,
+        "Друмский"@ru ,
+        "drum"@sk ,
+        "Drumiyen"@tr ,
+        "鼓山阶"@zh ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Ectasian>
     skos:prefLabel
+        "Ektaz"@az ,
+        "Ectasià"@ca ,
+        "ectas"@cs ,
         "Ectasium"@de ,
         "Ectasian"@en ,
-        "Ectásico"@es-ES ,
+        "Ectásico"@es ,
+        "Ectasiano"@es-a ,
+        "Ectasiar"@eu ,
+        "Ectas"@fi ,
+        "Ectasien"@fr ,
+        "ectasi"@hu ,
         "Ectasian"@id ,
         "Ectasiano"@it ,
-        "Ektasas"@lt ;
+        "エクタシアン"@ja ,
+        "엑타시스기"@ko ,
+        "Ektasas"@lt ,
+        "Ectasium"@nl ,
+        "Ectasiaan"@nl-be ,
+        "Ektas"@no ,
+        "Ectasiano"@pt ,
+        "Ectasiano"@pt-br ,
+        "Эктазская"@ru ,
+        "ektas"@sk ,
+        "Ektasiyen"@tr ,
+        "延展系"@zh ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Ediacaran>
     skos:prefLabel
+        "Ediakar"@az ,
+        "Ediacarià"@ca ,
+        "ediakar"@cs ,
         "Ediacarium"@de ,
         "Ediacaran"@en ,
-        "Ediacárico"@es-ES ,
+        "Ediacárico"@es ,
+        "Ediacariano"@es-a ,
+        "Ediacarar"@eu ,
+        "Ediakara"@fi ,
+        "Édiacarien"@fr ,
+        "ediacarai"@hu ,
         "Ediacaran"@id ,
         "Ediacarano"@it ,
-        "Ediakaras"@lt ;
+        "エディアカラン"@ja ,
+        "에디아카라기"@ko ,
+        "Ediakaras"@lt ,
+        "Ediacarium"@nl ,
+        "Ediacaraan"@nl-be ,
+        "Ediacara"@no ,
+        "Ediacariano"@pt ,
+        "Ediacariano"@pt-br ,
+        "Эдиакарская"@ru ,
+        "ediakar"@sk ,
+        "Ediyakaran"@tr ,
+        "埃迪卡拉系"@zh ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Eifelian>
     skos:prefLabel
+        "Eyfel"@az ,
+        "Eifelià"@ca ,
+        "eifel"@cs ,
         "Eifelium"@de ,
         "Eifelian"@en ,
-        "Eifeliense"@es-ES ,
+        "Eifeliense"@es ,
+        "Eifeliano"@es-a ,
+        "Eifeliar"@eu ,
+        "Eifel"@fi ,
+        "Eifélien"@fr ,
+        "eifeli"@hu ,
         "Eifelian"@id ,
         "Eifeliano"@it ,
-        "Eifelis"@lt ;
+        "アイフェリアン"@ja ,
+        "아이펠절"@ko ,
+        "Eifelis"@lt ,
+        "Eifelien"@nl ,
+        "Eifeliaan"@nl-be ,
+        "Eifel"@no ,
+        "Eifeliano"@pt ,
+        "Eifeliano"@pt-br ,
+        "Эйфельский"@ru ,
+        "eifel"@sk ,
+        "Eyfeliyen"@tr ,
+        "艾菲尔阶"@zh ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Emsian>
     skos:prefLabel
+        "Ems"@az ,
+        "Emsià"@ca ,
+        "ems"@cs ,
         "Emsium"@de ,
         "Emsian"@en ,
-        "Emsiense"@es-ES ,
+        "Emsiense"@es ,
+        "Emsiano"@es-a ,
+        "Emsiar"@eu ,
+        "Ems"@fi ,
+        "Emsien"@fr ,
+        "emsi"@hu ,
         "Emsian"@id ,
         "Emsiano"@it ,
-        "Emsis"@lt ;
+        "エムシアン"@ja ,
+        "엠즈절"@ko ,
+        "Emsis"@lt ,
+        "Emsien"@nl ,
+        "Emsiaan"@nl-be ,
+        "Ems"@no ,
+        "Emsiano"@pt ,
+        "Emsiano"@pt-br ,
+        "Эмсский"@ru ,
+        "ems"@sk ,
+        "Emsiyen"@tr ,
+        "埃姆斯阶"@zh ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Eoarchean>
     skos:prefLabel
+        "Eoarxey"@az ,
+        "Eoarqueà"@ca ,
+        "eoarchaikum"@cs ,
         "Eoarchaikum"@de ,
         "Eoarchean"@en ,
-        "Eo-arcaico"@es-ES ,
+        "Eoarcaico"@es ,
+        "Eoarqueano"@es-a ,
+        "Eoarkear"@eu ,
+        "Eoarkeeinen"@fi ,
+        "Éoarchéen"@fr ,
+        "eoarchaikum"@hu ,
         "Eoarchean"@id ,
         "Eoarcheano"@it ,
-        "Eoarchėjus"@lt ;
+        "原太古界／代（原始生界／代）"@ja ,
+        "초시생대"@ko ,
+        "Eoarchėjus"@lt ,
+        "Eoarcheïcum"@nl ,
+        "Eoarcheaan"@nl-be ,
+        "Eoarkeikum"@no ,
+        "Eoarqueano"@pt ,
+        "Eoarqueano"@pt-br ,
+        "Эоархейская"@ru ,
+        "eoarchaikum"@sk ,
+        "Eo arkeen"@tr ,
+        "始太古界"@zh ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Eocene>
     skos:prefLabel
+        "Eosen"@az ,
+        "Eocè"@ca ,
+        "eocén"@cs ,
         "Eozän"@de ,
         "Eocene"@en ,
-        "Eoceno"@es-ES ,
+        "Eoceno"@es ,
+        "Eoceno"@es-a ,
+        "Eozeno"@eu ,
+        "Eoseeni"@fi ,
+        "Éocène"@fr ,
+        "eocén"@hu ,
         "Eosen"@id ,
         "Eocene"@it ,
-        "Eocenas"@lt ;
+        "始新統／世"@ja ,
+        "에오세"@ko ,
+        "Eocenas"@lt ,
+        "Eoceen"@nl ,
+        "Eoceen"@nl-be ,
+        "Eocen"@no ,
+        "Eoceno"@pt ,
+        "Eoceno"@pt-br ,
+        "Эоцен"@ru ,
+        "eocén"@sk ,
+        "Eosen"@tr ,
+        "始新统"@zh ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Famennian>
     skos:prefLabel
+        "Famen"@az ,
+        "Famennià"@ca ,
+        "famen"@cs ,
         "Famennium"@de ,
         "Famennian"@en ,
-        "Fameniense"@es-ES ,
+        "Fameniense"@es ,
+        "Famenniano"@es-a ,
+        "Famenniar"@eu ,
+        "Famen"@fi ,
+        "Famennien"@fr ,
+        "famenni"@hu ,
         "Famennian"@id ,
         "Famenniano"@it ,
-        "Famenis"@lt ;
+        "ファメニアン"@ja ,
+        "파멘절"@ko ,
+        "Famenis"@lt ,
+        "Famennien"@nl ,
+        "Famenniaan"@nl-be ,
+        "Famenn"@no ,
+        "Famenniano"@pt ,
+        "Famenniano"@pt-br ,
+        "Фаменский"@ru ,
+        "famen"@sk ,
+        "Fameniyen"@tr ,
+        "法门阶"@zh ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Floian>
     skos:prefLabel
+        "Flo"@az ,
+        "Floià"@ca ,
+        "floian"@cs ,
         "Floium"@de ,
         "Floian"@en ,
-        "Floiense"@es-ES ,
+        "Floiense"@es ,
+        "Floiano"@es-a ,
+        "Floiar"@eu ,
+        "Flo"@fi ,
+        "Floien"@fr ,
+        "floi"@hu ,
         "Floian"@id ,
         "Floiano"@it ,
-        "Flois"@lt ;
+        "フロイアン"@ja ,
+        "플로절"@ko ,
+        "Flois"@lt ,
+        "Floien"@nl ,
+        "Floiaan"@nl-be ,
+        "Flo"@no ,
+        "Floiano"@pt ,
+        "Floiano"@pt-br ,
+        "Флоский"@ru ,
+        "flo"@sk ,
+        "Floyen"@tr ,
+        "弗洛阶"@zh ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Fortunian>
     skos:prefLabel
+        "Fortun"@az ,
+        "Fortunià"@ca ,
+        "fortun"@cs ,
         "Fortunium"@de ,
         "Fortunian"@en ,
-        "Fortuniense"@es-ES ,
+        "Fortuniense"@es ,
+        "Fortuniano"@es-a ,
+        "Fortuniar"@eu ,
+        "Fortune"@fi ,
+        "Fortunien"@fr ,
+        "fortuni"@hu ,
         "Fortunian"@id ,
         "Fortuniano"@it ,
-        "Fortunis"@lt ;
+        "フォーチュニアン"@ja ,
+        "포츈절"@ko ,
+        "Fortunis"@lt ,
+        "Fortunien"@nl ,
+        "Fortuniaan"@nl-be ,
+        "Fortune"@no ,
+        "Fortuniano"@pt ,
+        "Fortuniano"@pt-br ,
+        "Фортунский"@ru ,
+        "fortun"@sk ,
+        "Fortuniyen"@tr ,
+        "幸运阶"@zh ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Frasnian>
     skos:prefLabel
+        "Frans"@az ,
+        "Frasnià"@ca ,
+        "frasn"@cs ,
         "Frasnium"@de ,
         "Frasnian"@en ,
-        "Frasniense"@es-ES ,
+        "Frasniense"@es ,
+        "Frasniano"@es-a ,
+        "Frasniar"@eu ,
+        "Frasne"@fi ,
+        "Frasnien"@fr ,
+        "frasni"@hu ,
         "Frasnian"@id ,
         "Frasniano"@it ,
-        "Franis"@lt ;
+        "フラニアン"@ja ,
+        "프랜절"@ko ,
+        "Franis"@lt ,
+        "Frasnien"@nl ,
+        "Frasniaan"@nl-be ,
+        "Frasne"@no ,
+        "Frasniano"@pt ,
+        "Frasniano"@pt-br ,
+        "Франский"@ru ,
+        "fran"@sk ,
+        "Frasniyen"@tr ,
+        "弗拉阶"@zh ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Furongian>
     skos:prefLabel
+        "Furonq"@az ,
+        "Furongià"@ca ,
+        "furong"@cs ,
         "Furongium"@de ,
         "Furongian"@en ,
-        "Furongiense"@es-ES ,
+        "Furongiense"@es ,
+        "Furongiano"@es-a ,
+        "Furongiar"@eu ,
+        "Furong"@fi ,
+        "Furongien"@fr ,
+        "furongi"@hu ,
         "Furongian"@id ,
         "Furongiano"@it ,
-        "Furongis"@lt ;
+        "フロンギアン"@ja ,
+        "푸롱세"@ko ,
+        "Furongis"@lt ,
+        "Furongien"@nl ,
+        "Furongiaan"@nl-be ,
+        "Furong"@no ,
+        "Furongiano"@pt ,
+        "Furongiano"@pt-br ,
+        "Фуронгский"@ru ,
+        "furong"@sk ,
+        "Frongiyen"@tr ,
+        "芙蓉统"@zh ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Gelasian>
     skos:prefLabel
+        "Cela"@az ,
+        "Gelasià"@ca ,
+        "gelas"@cs ,
         "Gelasium"@de ,
         "Gelasian"@en ,
-        "Gelasiense"@es-ES ,
+        "Gelasiense"@es ,
+        "Gelasiano"@es-a ,
+        "Gelasiar"@eu ,
+        "Gela"@fi ,
+        "Gélasien"@fr ,
+        "gelai"@hu ,
         "Gelasian"@id ,
         "Gelasiano"@it ,
-        "Gelazis"@lt ;
+        "ジェラシアン"@ja ,
+        "젤라절"@ko ,
+        "Gelazis"@lt ,
+        "Gelasien"@nl ,
+        "Gelasiaan"@nl-be ,
+        "Gela"@no ,
+        "Gelasiano"@pt ,
+        "Gelasiano"@pt-br ,
+        "Гелазский"@ru ,
+        "gelas"@sk ,
+        "Gelasiyen"@tr ,
+        "杰拉阶"@zh ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Givetian>
     skos:prefLabel
+        "Jivet"@az ,
+        "Givetià"@ca ,
+        "givet"@cs ,
         "Givetium"@de ,
         "Givetian"@en ,
-        "Givetiense"@es-ES ,
+        "Givetiense"@es ,
+        "Givetiano"@es-a ,
+        "Givetiar"@eu ,
+        "Givet"@fi ,
+        "Givétien"@fr ,
+        "giveti"@hu ,
         "Givetian"@id ,
         "Givetiano"@it ,
-        "Živetis"@lt ;
+        "ジベティアン"@ja ,
+        "지베절"@ko ,
+        "Živetis"@lt ,
+        "Givetien"@nl ,
+        "Givetiaan"@nl-be ,
+        "Givet"@no ,
+        "Givetiano"@pt ,
+        "Givetiano"@pt-br ,
+        "Живетский"@ru ,
+        "givet"@sk ,
+        "Jivesiyen"@tr ,
+        "吉维特阶"@zh ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Gorstian>
     skos:prefLabel
+        "Qorst"@az ,
+        "Gorstià"@ca ,
+        "gorst"@cs ,
         "Gorstium"@de ,
         "Gorstian"@en ,
-        "Gorstiense"@es-ES ,
+        "Gorstiense"@es ,
+        "Gorstiano"@es-a ,
+        "Gorstiar"@eu ,
+        "Gorsty"@fi ,
+        "Gorstien"@fr ,
+        "gorsti"@hu ,
         "Gorstian"@id ,
         "Gorstiano"@it ,
-        "Gorstis"@lt ;
+        "ゴースティアン"@ja ,
+        "고스티절"@ko ,
+        "Gorstis"@lt ,
+        "Gorstien"@nl ,
+        "Gorstiaan"@nl-be ,
+        "Gorsty"@no ,
+        "Gorstiano"@pt ,
+        "Gorstiano"@pt-br ,
+        "Горстийский"@ru ,
+        "gorst"@sk ,
+        "Gorstiyen"@tr ,
+        "高斯特阶"@zh ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Greenlandian>
     skos:prefLabel
+        "NaN"^^xsd:double ,
+        "Qrenlandiya"@az ,
+        "Grenlandià"@ca ,
+        "greenland"@cs ,
         "Grönlandium"@de ,
         "Greenlandian"@en ,
-        "Groenlandiense"@es-ES ,
+        "Groenlandiense"@es ,
+        "Groenlandiano"@es-a ,
+        "Grönlanti"@fi ,
+        "Greenlandien"@fr ,
+        "grönlandi"@hu ,
         "Greenlandian"@id ,
         "Groenlandiano"@it ,
-        "Grenlandis"@lt ;
+        "グリーンランディアン"@ja ,
+        "그린란드절"@ko ,
+        "Grenlandis"@lt ,
+        "Greenlandien"@nl ,
+        "Greenlandiaan"@nl-be ,
+        "Gronland"@no ,
+        "Greenlandiano"@pt ,
+        "Greenlandiano"@pt-br ,
+        "grón"@sk ,
+        "Grönlandiyen"@tr ,
+        "格陵兰阶"@zh ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Guadalupian>
     skos:prefLabel
+        "Qvadelupa"@az ,
+        "Guadalupià"@ca ,
+        "guadalup"@cs ,
         "Guadalupium"@de ,
         "Guadalupian"@en ,
-        "Guadalupiense"@es-ES ,
+        "Guadalupiense"@es ,
+        "Guadalupiano"@es-a ,
+        "Guadalupiar"@eu ,
+        "Guadalupe"@fi ,
+        "Guadalupien"@fr ,
+        "guadalupi"@hu ,
         "Guadalupian"@id ,
         "Guadalupiano"@it ,
-        "Guadalupe"@lt ;
+        "グアダルピアン"@ja ,
+        "과달루페세"@ko ,
+        "Guadalupe"@lt ,
+        "Guadalupien"@nl ,
+        "Guadalupiaan"@nl-be ,
+        "Guadalup"@no ,
+        "Guadalupiano"@pt ,
+        "Guadalupiano"@pt-br ,
+        "Гваделупский"@ru ,
+        "guadalup"@sk ,
+        "Guadalupiyen"@tr ,
+        "瓜德鲁普统"@zh ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Guzhangian>
     skos:prefLabel
+        "Quzhanq"@az ,
+        "Guzhanguià"@ca ,
+        "guzhang"@cs ,
         "Guzhangium"@de ,
         "Guzhangian"@en ,
-        "Guzhangiense"@es-ES ,
+        "Guzhangiense"@es ,
+        "Guzhangiano"@es-a ,
+        "Guzhangiar"@eu ,
+        "Guzhang"@fi ,
+        "Guzhangien"@fr ,
+        "guzhangi"@hu ,
         "Guzhangian"@id ,
         "Guzhangiano"@it ,
-        "Gužangis"@lt ;
+        "ガズハンジアン"@ja ,
+        "구장절"@ko ,
+        "Gužangis"@lt ,
+        "Guzhangien"@nl ,
+        "Guzhangiaan"@nl-be ,
+        "Guzhang"@no ,
+        "Guzhangiano"@pt ,
+        "Guzhangiano"@pt-br ,
+        "Гужанский"@ru ,
+        "kučang"@sk ,
+        "Guzhangiyen"@tr ,
+        "古丈阶"@zh ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Gzhelian>
     skos:prefLabel
+        "Qjel"@az ,
+        "Gjelià"@ca ,
+        "gžel"@cs ,
         "Gzhelium"@de ,
         "Gzhelian"@en ,
-        "Gzheliense"@es-ES ,
+        "Gzheliense"@es ,
+        "Gzheliano"@es-a ,
+        "Gzheliar"@eu ,
+        "Gzhel"@fi ,
+        "Gzhélien"@fr ,
+        "gzseli"@hu ,
         "Gzhelian"@id ,
         "Gzheliano"@it ,
-        "Gželis"@lt ;
+        "グゼリアン"@ja ,
+        "그젤절"@ko ,
+        "Gželis"@lt ,
+        "Gzhelien"@nl ,
+        "Gzheliaan"@nl-be ,
+        "Gzhel"@no ,
+        "Gzheliano"@pt ,
+        "Gzheliano"@pt-br ,
+        "Гжельский"@ru ,
+        "gžel"@sk ,
+        "Gijeliyen"@tr ,
+        "格舍尔阶"@zh ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Hadean>
     skos:prefLabel
+        "Hade"@az ,
+        "Hadeà"@ca ,
+        "hadaikum"@cs ,
         "Hadaikum"@de ,
         "Hadean"@en ,
-        "Hádico"@es-ES ,
+        "Hádico"@es ,
+        "Hadeano"@es-a ,
+        "Hadear"@eu ,
+        "Haades"@fi ,
+        "Hadéen"@fr ,
+        "hadeikum"@hu ,
         "Hadean"@id ,
         "Adeano"@it ,
-        "Hadas"@lt ;
+        "冥王界／代"@ja ,
+        "명왕누대"@ko ,
+        "Hadas"@lt ,
+        "Hadeïcum"@nl ,
+        "Hadeaan"@nl-be ,
+        "Hadeikum"@no ,
+        "Hadeano"@pt ,
+        "Hadeano"@pt-br ,
+        "Хaдейская"@ru ,
+        "hadean"@sk ,
+        "Hadeen"@tr ,
+        "冥古宇"@zh ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Hauterivian>
     skos:prefLabel
+        "Hoteriv"@az ,
+        "Hauterivià"@ca ,
+        "hauteriv"@cs ,
         "Hauterivium"@de ,
         "Hauterivian"@en ,
-        "Hauteriviense"@es-ES ,
+        "Hauteriviense"@es ,
+        "Hauteriviano"@es-a ,
+        "Hauteriviar"@eu ,
+        "Hauteriv"@fi ,
+        "Hauterivien"@fr ,
+        "hauterivi"@hu ,
         "Hauterivian"@id ,
         "Hauteriviano"@it ,
-        "Hoterivis"@lt ;
+        "オーテリビアン"@ja ,
+        "오트리브절"@ko ,
+        "Hoterivis"@lt ,
+        "Hauterivien"@nl ,
+        "Hauteriviaan"@nl-be ,
+        "Hauteriv"@no ,
+        "Hauteriviano"@pt ,
+        "Hauteriviano"@pt-br ,
+        "Готеривский"@ru ,
+        "hoteriv"@sk ,
+        "Hotriviyen"@tr ,
+        "欧特里夫阶"@zh ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Hettangian>
     skos:prefLabel
+        "Hettanq"@az ,
+        "Hettangià"@ca ,
+        "hettang"@cs ,
         "Hettangium"@de ,
         "Hettangian"@en ,
-        "Hettangiense"@es-ES ,
+        "Hettangiense"@es ,
+        "Hettangiano"@es-a ,
+        "Hettangiar"@eu ,
+        "Hettange"@fi ,
+        "Hettangien"@fr ,
+        "hettangi"@hu ,
         "Hettangian"@id ,
         "Hettangiano"@it ,
-        "Hetangis"@lt ;
+        "ヘッタンジアン"@ja ,
+        "에탕주절"@ko ,
+        "Hetangis"@lt ,
+        "Hettangien"@nl ,
+        "Hettangiaan"@nl-be ,
+        "Hettang"@no ,
+        "Hettangiano"@pt ,
+        "Hettangiano"@pt-br ,
+        "Геттангский"@ru ,
+        "hetanž"@sk ,
+        "Hettanjiyen"@tr ,
+        "赫塘阶"@zh ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Hirnantian>
     skos:prefLabel
+        "Hirnant"@az ,
+        "Hirnantià"@ca ,
+        "hirnant"@cs ,
         "Hirnantium"@de ,
         "Hirnantian"@en ,
-        "Hirnantiense"@es-ES ,
+        "Hirnantiense"@es ,
+        "Hirnantiano"@es-a ,
+        "Hirnantiar"@eu ,
+        "Hirnant"@fi ,
+        "Hirnantien"@fr ,
+        "hirnanti"@hu ,
         "Hirnantian"@id ,
         "Hirnantiano"@it ,
-        "Hirnantis"@lt ;
+        "ヒルナンシアン"@ja ,
+        "허난트절"@ko ,
+        "Hirnantis"@lt ,
+        "Hirnantien"@nl ,
+        "Hirnantiaan"@nl-be ,
+        "Hirnant"@no ,
+        "Hirnantiano"@pt ,
+        "Hirnantiano"@pt-br ,
+        "Хирнантский"@ru ,
+        "hirnant"@sk ,
+        "Hirnansiyen"@tr ,
+        "赫南特阶"@zh ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Holocene>
     skos:prefLabel
+        "Holosen"@az ,
+        "Holocè"@ca ,
+        "holocén"@cs ,
         "Holozän"@de ,
         "Holocene"@en ,
-        "Holoceno"@es-ES ,
+        "Holoceno"@es ,
+        "Holoceno"@es-a ,
+        "Holozeno"@eu ,
+        "Holoseeni"@fi ,
+        "Holocène"@fr ,
+        "holocén"@hu ,
         "Holosen"@id ,
         "Olocene"@it ,
-        "Holocenas"@lt ;
+        "完新統／世"@ja ,
+        "홀로세"@ko ,
+        "Holocenas"@lt ,
+        "Holoceen"@nl ,
+        "Holoceen"@nl-be ,
+        "Holocene"@no ,
+        "Holoceno"@pt ,
+        "Holoceno"@pt-br ,
+        "Голоцен"@ru ,
+        "holocén"@sk ,
+        "Holosen"@tr ,
+        "全新统"@zh ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Homerian>
     skos:prefLabel
+        "Homer"@az ,
+        "Homerià"@ca ,
+        "homer"@cs ,
         "Homerium"@de ,
         "Homerian"@en ,
-        "Homeriense"@es-ES ,
+        "Homeriense"@es ,
+        "Homeriano"@es-a ,
+        "Homeriar"@eu ,
+        "Homer"@fi ,
+        "Homérien"@fr ,
+        "homeri"@hu ,
         "Homerian"@id ,
         "Homeriano"@it ,
-        "Homeris"@lt ;
+        "ホメリアン"@ja ,
+        "호머절"@ko ,
+        "Homeris"@lt ,
+        "Homerien"@nl ,
+        "Homeriaan"@nl-be ,
+        "Homer"@no ,
+        "Homeriano"@pt ,
+        "Homeriano"@pt-br ,
+        "Гомерский"@ru ,
+        "homer"@sk ,
+        "Homeriyen"@tr ,
+        "侯墨阶"@zh ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Induan>
     skos:prefLabel
+        "İnd"@az ,
+        "Indià"@ca ,
+        "ind"@cs ,
         "Indusium"@de ,
         "Induan"@en ,
-        "Induense"@es-ES ,
+        "Induense"@es ,
+        "Induano"@es-a ,
+        "Induar"@eu ,
+        "Indus"@fi ,
+        "Indusien"@fr ,
+        "indusi"@hu ,
         "Induan"@id ,
         "Induano"@it ,
-        "Indis"@lt ;
+        "インドゥアン"@ja ,
+        "인더스절"@ko ,
+        "Indis"@lt ,
+        "Induen"@nl ,
+        "Induaan"@nl-be ,
+        "Indus"@no ,
+        "Induano"@pt ,
+        "Induano"@pt-br ,
+        "Индский"@ru ,
+        "indus"@sk ,
+        "İnduyen"@tr ,
+        "印度阶"@zh ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Jiangshanian>
     skos:prefLabel
+        "Jianqşan"@az ,
+        "Jiangshanià"@ca ,
+        "jiangshan"@cs ,
         "Jiangshanium"@de ,
         "Jiangshanian"@en ,
-        "Jiangshaniense"@es-ES ,
+        "Jiangshaniense"@es ,
+        "Jiangshaniano"@es-a ,
+        "Jiangshaniar"@eu ,
+        "Jiangshan"@fi ,
+        "Jiangshanien"@fr ,
+        "jiangshani"@hu ,
         "Jiangshanian"@id ,
         "Jiangshaniano"@it ,
-        "Jiangšanis"@lt ;
+        "ジャンシャニアン"@ja ,
+        "지앙샨절"@ko ,
+        "Jiangšanis"@lt ,
+        "Jiangshanien"@nl ,
+        "Jiangshaniaan"@nl-be ,
+        "Jiangshan"@no ,
+        "Jiangshaniano"@pt ,
+        "Jiangshaniano"@pt-br ,
+        "Цзяншаньский"@ru ,
+        "tiangšan"@sk ,
+        "Jiyangşaniyen"@tr ,
+        "江山阶"@zh ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Jurassic>
     skos:prefLabel
+        "Yura"@az ,
+        "Juràssic"@ca ,
+        "jura"@cs ,
         "Jura"@de ,
         "Jurassic"@en ,
-        "Jurásico"@es-ES ,
+        "Jurásico"@es ,
+        "Jurásico"@es-a ,
+        "Jurasiko"@eu ,
+        "Jura"@fi ,
+        "Jurassique"@fr ,
+        "jura"@hu ,
         "Jura"@id ,
         "Giurassico"@it ,
-        "Mezozojus"@lt ;
+        "ジュラ系／紀"@ja ,
+        "쥐라기"@ko ,
+        "Mezozojus"@lt ,
+        "Jura"@nl ,
+        "Jura"@nl-be ,
+        "Jura"@no ,
+        "Jurássico"@pt ,
+        "Jurássico"@pt-br ,
+        "Юрская"@ru ,
+        "jura"@sk ,
+        "Jura"@tr ,
+        "侏罗 系"@zh ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Kasimovian>
     skos:prefLabel
+        "Qasımov"@az ,
+        "Kasimovià"@ca ,
+        "kasimov"@cs ,
         "Kasimovium"@de ,
         "Kasimovian"@en ,
-        "Kasimoviense"@es-ES ,
+        "Kasimoviense"@es ,
+        "Kasimoviano"@es-a ,
+        "Kasimoviar"@eu ,
+        "Kasimov"@fi ,
+        "Kasimovien"@fr ,
+        "kaszimovi"@hu ,
         "Kasimovian"@id ,
         "Kasimoviano"@it ,
-        "Kasimovis"@lt ;
+        "カシモビアン"@ja ,
+        "카시모프절"@ko ,
+        "Kasimovis"@lt ,
+        "Kasimovien"@nl ,
+        "Kasimoviaan"@nl-be ,
+        "Kasimov"@no ,
+        "Kasimoviano"@pt ,
+        "Kasimoviano"@pt-br ,
+        "Касимовский"@ru ,
+        "kasimov"@sk ,
+        "Kasımoviyen"@tr ,
+        "卡西莫夫阶"@zh ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Katian>
     skos:prefLabel
+        "Kati"@az ,
+        "Katià"@ca ,
+        "katian"@cs ,
         "Katium"@de ,
         "Katian"@en ,
-        "Katiense"@es-ES ,
+        "Katiense"@es ,
+        "Katiano"@es-a ,
+        "Katiar"@eu ,
+        "Katy"@fi ,
+        "Katien"@fr ,
+        "kati"@hu ,
         "Katian"@id ,
         "Katiano"@it ,
-        "Katis"@lt ;
+        "カティアン"@ja ,
+        "케이티절"@ko ,
+        "Katis"@lt ,
+        "Katien"@nl ,
+        "Katiaan"@nl-be ,
+        "Katy"@no ,
+        "Katiano"@pt ,
+        "Katiano"@pt-br ,
+        "Катийский"@ru ,
+        "kat"@sk ,
+        "Katiyen"@tr ,
+        "凯迪阶"@zh ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Kimmeridgian>
     skos:prefLabel
+        "Kimeric"@az ,
+        "Kimmeridgià"@ca ,
+        "kimmeridge"@cs ,
         "Kimmeridgium"@de ,
         "Kimmeridgian"@en ,
-        "Kimmeridgiense"@es-ES ,
+        "Kimmeridgiense"@es ,
+        "Kimmeridgiano"@es-a ,
+        "Kimmeridgiar"@eu ,
+        "Kimmeridge"@fi ,
+        "Kimméridgien"@fr ,
+        "kimmeridgi"@hu ,
         "Kimmeridgian"@id ,
         "Kimmeridgiano"@it ,
-        "Kimeridis"@lt ;
+        "キンメリッジアン"@ja ,
+        "킴머리지절"@ko ,
+        "Kimeridis"@lt ,
+        "Kimmeridgien"@nl ,
+        "Kimmeridgiaan"@nl-be ,
+        "Kimmeridge"@no ,
+        "Kimmeridgiano"@pt ,
+        "Kimmeridgiano"@pt-br ,
+        "Кимериджский"@ru ,
+        "kimeridž"@sk ,
+        "Kimmericiyen"@tr ,
+        "钦莫利阶"@zh ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Kungurian>
     skos:prefLabel
+        "Kunqur"@az ,
+        "Kungurià"@ca ,
+        "kungur"@cs ,
         "Kungurium"@de ,
         "Kungurian"@en ,
-        "Kunguriense"@es-ES ,
+        "Kunguriense"@es ,
+        "Kunguriano"@es-a ,
+        "Kunguriar"@eu ,
+        "Kungur"@fi ,
+        "Koungourien"@fr ,
+        "kunguri"@hu ,
         "Kungurian"@id ,
         "Kunguriano"@it ,
-        "Kunguris"@lt ;
+        "クングリアン"@ja ,
+        "쿤구르절"@ko ,
+        "Kunguris"@lt ,
+        "Kungurien"@nl ,
+        "Kunguriaan"@nl-be ,
+        "Kungur"@no ,
+        "Kunguriano"@pt ,
+        "Kunguriano"@pt-br ,
+        "Кунгурский"@ru ,
+        "kungur"@sk ,
+        "Kunguriyen"@tr ,
+        "空谷阶"@zh ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Ladinian>
     skos:prefLabel
+        "Ladin"@az ,
+        "Ladinià"@ca ,
+        "ladin"@cs ,
         "Ladinium"@de ,
         "Ladinian"@en ,
-        "Ladiniense"@es-ES ,
+        "Ladiniense"@es ,
+        "Ladiniano"@es-a ,
+        "Ladiniar"@eu ,
+        "Ladin"@fi ,
+        "Ladinien"@fr ,
+        "ladini"@hu ,
         "Ladinian"@id ,
         "Ladinico"@it ,
-        "Ladinis"@lt ;
+        "ラディニアン"@ja ,
+        "라딘절"@ko ,
+        "Ladinis"@lt ,
+        "Ladinien"@nl ,
+        "Ladiniaan"@nl-be ,
+        "Ladin"@no ,
+        "Ladiniano"@pt ,
+        "Ladiniano"@pt-br ,
+        "Ладинский"@ru ,
+        "ladin"@sk ,
+        "Ladiniyen"@tr ,
+        "拉丁阶"@zh ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Langhian>
     skos:prefLabel
+        "Lanqiy"@az ,
+        "Languià"@ca ,
+        "langh"@cs ,
         "Langhium"@de ,
         "Langhian"@en ,
-        "Langhiense"@es-ES ,
+        "Langhiense"@es ,
+        "Langhiano"@es-a ,
+        "Langhiar"@eu ,
+        "Langhe"@fi ,
+        "Langhien"@fr ,
+        "langhei"@hu ,
         "Langhian"@id ,
         "Langhiano"@it ,
-        "Langis"@lt ;
+        "ランギアン"@ja ,
+        "랑게절"@ko ,
+        "Langis"@lt ,
+        "Langhien"@nl ,
+        "Langhiaan"@nl-be ,
+        "Langhe"@no ,
+        "Langhiano"@pt ,
+        "Langhiano"@pt-br ,
+        "Лангийский"@ru ,
+        "lang"@sk ,
+        "Langiyen"@tr ,
+        "兰盖阶"@zh ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Llandovery>
     skos:prefLabel
+        "Landoveriy"@az ,
+        "Llandoverià"@ca ,
+        "llandovery"@cs ,
         "Llandovery"@de ,
         "Llandovery"@en ,
-        "Llandovery"@es-ES ,
+        "Llandovery"@es ,
+        "Llandoveriano"@es-a ,
+        "Llandovery"@eu ,
+        "Llandovery"@fi ,
+        "Llandovery"@fr ,
+        "llandoveryi"@hu ,
         "Llandovery"@id ,
         "Llandoveriano"@it ,
-        "Landoveris"@lt ;
+        "ランドベリ"@ja ,
+        "란도베리세"@ko ,
+        "Landoveris"@lt ,
+        "Llandovery"@nl ,
+        "Llandovery"@nl-be ,
+        "Llandovery"@no ,
+        "Llandovery"@pt ,
+        "Llandovery"@pt-br ,
+        "Лландоверийский"@ru ,
+        "landover"@sk ,
+        "Landoveri"@tr ,
+        "兰多维列统"@zh ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Lochkovian>
     skos:prefLabel
+        "Loxkov"@az ,
+        "Lochkovià"@ca ,
+        "lochkov"@cs ,
         "Lochkovium"@de ,
         "Lochkovian"@en ,
-        "Lochkoviense"@es-ES ,
+        "Lochkoviense"@es ,
+        "Lochkoviano"@es-a ,
+        "Lochkoviar"@eu ,
+        "Lochkov"@fi ,
+        "Lochkovien"@fr ,
+        "lochkovi"@hu ,
         "Lochkovian"@id ,
         "Lochkoviano"@it ,
-        "Lochkovis"@lt ;
+        "ロッコヴィアン"@ja ,
+        "로치코프절"@ko ,
+        "Lochkovis"@lt ,
+        "Lochkovien"@nl ,
+        "Lochkoviaan"@nl-be ,
+        "Lochkov"@no ,
+        "Lochkoviano"@pt ,
+        "Lochkoviano"@pt-br ,
+        "Лохковский"@ru ,
+        "lochkov"@sk ,
+        "Lohkoviyen"@tr ,
+        "洛赫考夫阶"@zh ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Lopingian>
     skos:prefLabel
+        "Lepinq"@az ,
+        "Lopingià"@ca ,
+        "loping"@cs ,
         "Lopingium"@de ,
         "Lopingian"@en ,
-        "Lopingiense"@es-ES ,
+        "Lopingiense"@es ,
+        "Lopingiano"@es-a ,
+        "Lopingiar"@eu ,
+        "Loping"@fi ,
+        "Lopingien"@fr ,
+        "lopingi"@hu ,
         "Lopingian"@id ,
         "Lopingiano"@it ,
-        "Loping"@lt ;
+        "ローピンジアン"@ja ,
+        "러핑세"@ko ,
+        "Loping"@lt ,
+        "Lopingien"@nl ,
+        "Lopingiaan"@nl-be ,
+        "Loping"@no ,
+        "Lopingiano"@pt ,
+        "Lopingiano"@pt-br ,
+        "Лопинский"@ru ,
+        "loping"@sk ,
+        "Lopingiyen"@tr ,
+        "乐平统"@zh ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Ludfordian>
     skos:prefLabel
+        "Ludford"@az ,
+        "Ludfordià"@ca ,
+        "ludford"@cs ,
         "Ludfordium"@de ,
         "Ludfordian"@en ,
-        "Ludfordiense"@es-ES ,
+        "Ludfordiense"@es ,
+        "Ludfordiano"@es-a ,
+        "Ludfordiar"@eu ,
+        "Ludford"@fi ,
+        "Ludfordien"@fr ,
+        "ludfordi"@hu ,
         "Ludfordian"@id ,
         "Ludfordiano"@it ,
-        "Ludfordis"@lt ;
+        "ルドフォーディアン"@ja ,
+        "로드포드절"@ko ,
+        "Ludfordis"@lt ,
+        "Ludfordien"@nl ,
+        "Ludfordiaan"@nl-be ,
+        "Ludford"@no ,
+        "Ludfordiano"@pt ,
+        "Ludfordiano"@pt-br ,
+        "Лудфордский"@ru ,
+        "ludford"@sk ,
+        "Ludfordiyen"@tr ,
+        "卢德福特阶"@zh ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Ludlow>
     skos:prefLabel
+        "Ludlov"@az ,
+        "Ludlowià"@ca ,
+        "ludlow"@cs ,
         "Ludlow"@de ,
         "Ludlow"@en ,
-        "Ludlow"@es-ES ,
+        "Ludlow"@es ,
+        "Ludloviano"@es-a ,
+        "Ludlow"@eu ,
+        "Ludlow"@fi ,
+        "Ludlow"@fr ,
+        "ludlowi"@hu ,
         "Ludlow"@id ,
         "Ludlow"@it ,
-        "Ludlovis"@lt ;
+        "ラドロー"@ja ,
+        "러들로세"@ko ,
+        "Ludlovis"@lt ,
+        "Ludlow"@nl ,
+        "Ludlow"@nl-be ,
+        "Ludlow"@no ,
+        "Ludlow"@pt ,
+        "Ludlow"@pt-br ,
+        "Лудловский"@ru ,
+        "ludlov"@sk ,
+        "Ludlov"@tr ,
+        "罗德洛统"@zh ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Lutetian>
     skos:prefLabel
+        "Lyutet"@az ,
+        "Lutecià"@ca ,
+        "lutet"@cs ,
         "Lutetium"@de ,
         "Lutetian"@en ,
-        "Luteciense"@es-ES ,
+        "Luteciense"@es ,
+        "Lutetiano"@es-a ,
+        "Lutetiar"@eu ,
+        "Lutetia"@fi ,
+        "Lutétien"@fr ,
+        "lutetiai"@hu ,
         "Lutetian"@id ,
         "Luteziano"@it ,
-        "Lutetis"@lt ;
+        "ルテシアン"@ja ,
+        "루테티아절"@ko ,
+        "Lutetis"@lt ,
+        "Lutetien"@nl ,
+        "Lutetiaan"@nl-be ,
+        "Lutetia"@no ,
+        "Lutetiano"@pt ,
+        "Lutetiano"@pt-br ,
+        "Лютетский"@ru ,
+        "lutét"@sk ,
+        "Lütesiyen"@tr ,
+        "卢泰特阶"@zh ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Maastrichtian>
     skos:prefLabel
+        "Maastrixt"@az ,
+        "Maastrichtià"@ca ,
+        "maastricht"@cs ,
         "Maastrichtium"@de ,
         "Maastrichtian"@en ,
-        "Maastrichtiense"@es-ES ,
+        "Maastrichtiense"@es ,
+        "Maastrichtiano"@es-a ,
+        "Maastrichtiar"@eu ,
+        "Maastricht"@fi ,
+        "Maastrichtien"@fr ,
+        "maastrichti"@hu ,
         "Maastrichtian"@id ,
         "Maastrichtiano"@it ,
-        "Mastrichtis"@lt ;
+        "マーストリヒチアン"@ja ,
+        "마스트리히트절"@ko ,
+        "Mastrichtis"@lt ,
+        "Maastrichtien"@nl ,
+        "Maastrichtiaan"@nl-be ,
+        "Maastricht"@no ,
+        "Maastrichtiano"@pt ,
+        "Maastrichtiano"@pt-br ,
+        "Маастрихтский"@ru ,
+        "mástricht"@sk ,
+        "Maastrihtiyen"@tr ,
+        "马斯特里赫特阶"@zh ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Meghalayan>
     skos:prefLabel
+        "NaN"^^xsd:double ,
+        "Meqhalaya"@az ,
+        "Megalaià"@ca ,
+        "meghalayan"@cs ,
         "Meghalayum"@de ,
         "Meghalayan"@en ,
-        "Megalayense"@es-ES ,
+        "Megalayense"@es ,
+        "Megalayiano"@es-a ,
+        "Meghalaya"@fi ,
+        "Meghalayen"@fr ,
+        "meghalayai"@hu ,
         "Meghalayan"@id ,
         "Meghalayano"@it ,
-        "Megalajis"@lt ;
+        "メガラヤン"@ja ,
+        "메갈라야절"@ko ,
+        "Megalajis"@lt ,
+        "Meghalayen"@nl ,
+        "Meghalayaan"@nl-be ,
+        "Megalaya"@no ,
+        "Megalayano"@pt ,
+        "Megalayano"@pt-br ,
+        "megalaj"@sk ,
+        "Meghaliyen"@tr ,
+        "梅加拉亚阶"@zh ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Mesoarchean>
     skos:prefLabel
+        "Mezoarxey"@az ,
+        "Mesoarqueà"@ca ,
+        "mesoarchaikum"@cs ,
         "Mesoarchaikum"@de ,
         "Mesoarchean"@en ,
-        "Meso-arcaico"@es-ES ,
+        "Mesoarcaico"@es ,
+        "Mesoarqueano"@es-a ,
+        "Mesoarkear"@eu ,
+        "Mesoarkeeinen"@fi ,
+        "Mésoarchéen"@fr ,
+        "mezoarchaikum"@hu ,
         "Mesoarchean"@id ,
         "Mesoarcheano"@it ,
-        "Mezoarchėjus"@lt ;
+        "中太古界／代 （中始生界／代）"@ja ,
+        "중시생대"@ko ,
+        "Mezoarchėjus"@lt ,
+        "Mesoarcheïcum"@nl ,
+        "Mesoarcheaan"@nl-be ,
+        "Mesoarkeikum"@no ,
+        "Mesoarqueano"@pt ,
+        "Mesoarqueano"@pt-br ,
+        "Мезоархейская"@ru ,
+        "mezoarchaikum"@sk ,
+        "Meso arkeen"@tr ,
+        "中太古界"@zh ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Mesoproterozoic>
     skos:prefLabel
+        "Mezoproterozoy"@az ,
+        "Mesoproterozoic"@ca ,
+        "mesoproterozoikum"@cs ,
         "Mesoproterozoikum"@de ,
         "Mesoproterozoic"@en ,
-        "Meso-proterozoico"@es-ES ,
+        "Mesoproterozoico"@es ,
+        "Mesoproterozoico"@es-a ,
+        "Mesoproterozoiko"@eu ,
+        "Mesoproterotsooinen"@fi ,
+        "Mésoprotérozoïque"@fr ,
+        "mezoproterozoikum"@hu ,
         "Mesoproterozoikum"@id ,
         "Mesoproterozoico"@it ,
-        "Mezoproterozojus"@lt ;
+        "中原生界／代"@ja ,
+        "중원생대"@ko ,
+        "Mezoproterozojus"@lt ,
+        "Mesoproterozoïcum"@nl ,
+        "Mesoproterozoïcum"@nl-be ,
+        "Mesoproterozoikum"@no ,
+        "Mesoproterozoico"@pt ,
+        "Mesoproterozoico"@pt-br ,
+        "Мезопротерозойская"@ru ,
+        "mezoproterozoikum"@sk ,
+        "Mezo proterozoyik"@tr ,
+        "中元古界"@zh ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Mesozoic>
     skos:prefLabel
+        "Mezozoy"@az ,
+        "Mesozoic"@ca ,
+        "mesozoikum"@cs ,
         "Mesozoikum"@de ,
         "Mesozoic"@en ,
-        "Mesozoico"@es-ES ,
+        "Mesozoico"@es ,
+        "Mesozoico"@es-a ,
+        "Mesozoiko"@eu ,
+        "Mesotsooinen"@fi ,
+        "Mésozoïque"@fr ,
+        "mezozoikum"@hu ,
         "Mesozoikum"@id ,
         "Mesozoico"@it ,
-        "Mezozojus"@lt ;
+        "中生界／代"@ja ,
+        "중생대"@ko ,
+        "Mezozojus"@lt ,
+        "Mesozoïcum"@nl ,
+        "Mesozoïcum"@nl-be ,
+        "Mesozoikum"@no ,
+        "Mesozoico"@pt ,
+        "Mesozoico"@pt-br ,
+        "Мезозойская"@ru ,
+        "mezozoikum"@sk ,
+        "Mezozoyik"@tr ,
+        "中 生 界"@zh ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Messinian>
     skos:prefLabel
+        "Messin"@az ,
+        "Messinià"@ca ,
+        "messin"@cs ,
         "Messinium"@de ,
         "Messinian"@en ,
-        "Messiniense"@es-ES ,
+        "Messiniense"@es ,
+        "Mesiniano"@es-a ,
+        "Messiniar"@eu ,
+        "Messina"@fi ,
+        "Messinien"@fr ,
+        "messinai"@hu ,
         "Messinian"@id ,
         "Messiniano"@it ,
-        "Mesinis"@lt ;
+        "メッシニアン"@ja ,
+        "메시나절"@ko ,
+        "Mesinis"@lt ,
+        "Messinien"@nl ,
+        "Messiniaan"@nl-be ,
+        "Messina"@no ,
+        "Messiniano"@pt ,
+        "Messiniano"@pt-br ,
+        "Мессинский"@ru ,
+        "mesin"@sk ,
+        "Messiniyen"@tr ,
+        "墨西拿阶"@zh ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Miaolingian>
     skos:prefLabel
+        "Miaolinq"@az ,
+        "Miaolingià"@ca ,
+        "miaoling"@cs ,
         "Serie 3"@de ,
         "Miaolingian"@en ,
-        "Miaolingiense"@es-ES ,
+        "Miaolingiense"@es ,
+        "Miaolingiano"@es-a ,
+        "3 Serie"@eu ,
+        "Miaoling"@fi ,
+        "Miaolingien"@fr ,
+        "miaolingi"@hu ,
         "Miaolingian"@id ,
         "Miaolingiano"@it ,
-        "Miaolingis"@lt ;
+        "ミャオリンギアン"@ja ,
+        "미아오링세"@ko ,
+        "Miaolingis"@lt ,
+        "Miaolingien"@nl ,
+        "Miaolingiaan"@nl-be ,
+        "Miaoling"@no ,
+        "Miaolingiano"@pt ,
+        "Miaolingiano"@pt-br ,
+        "Отдел 3"@ru ,
+        "miaoling"@sk ,
+        "Miaolingiyen"@tr ,
+        "苗岭统"@zh ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Miocene>
     skos:prefLabel
+        "Miosen"@az ,
+        "Miocè"@ca ,
+        "miocén"@cs ,
         "Miozän"@de ,
         "Miocene"@en ,
-        "Mioceno"@es-ES ,
+        "Mioceno"@es ,
+        "Mioceno"@es-a ,
+        "Miozeno"@eu ,
+        "Mioseeni"@fi ,
+        "Miocène"@fr ,
+        "miocén"@hu ,
         "Miosen"@id ,
         "Miocene"@it ,
-        "Miocenas"@lt ;
+        "中新統／世"@ja ,
+        "마이오세"@ko ,
+        "Miocenas"@lt ,
+        "Mioceen"@nl ,
+        "Mioceen"@nl-be ,
+        "Miocen"@no ,
+        "Mioceno"@pt ,
+        "Mioceno"@pt-br ,
+        "Миоцен"@ru ,
+        "miocén"@sk ,
+        "Miyosen"@tr ,
+        "中新统"@zh ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Mississippian>
     skos:prefLabel
+        "Missisipi"@az ,
+        "Mississippià"@ca ,
+        "mississipp"@cs ,
         "Mississippium"@de ,
         "Mississippian"@en ,
-        "Misisípico"@es-ES ,
+        "Misisípico"@es ,
+        "Misisipiano"@es-a ,
+        "Mississippiar"@eu ,
+        "Mississippi"@fi ,
+        "Mississippien"@fr ,
+        "mississippi"@hu ,
         "Mississippian"@id ,
         "Mississippiano"@it ,
-        "Misisipas"@lt ;
+        "ミシシッピアン 亜系／亜紀"@ja ,
+        "기 미시시피아기"@ko ,
+        "Misisipas"@lt ,
+        "Mississippien"@nl ,
+        "Mississippiaan"@nl-be ,
+        "Mississippi"@no ,
+        "Mississíppico"@pt ,
+        "Mississíppico"@pt-br ,
+        "Мисиссипская"@ru ,
+        "misisip"@sk ,
+        "Misisipiyen"@tr ,
+        "密 西 西 比 亚 系"@zh ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Moscovian>
     skos:prefLabel
+        "Moskva"@az ,
+        "Moscovià"@ca ,
+        "moskov"@cs ,
         "Moskovium"@de ,
         "Moscovian"@en ,
-        "Moscoviense"@es-ES ,
+        "Moscoviense"@es ,
+        "Moscoviano"@es-a ,
+        "Moscoviar"@eu ,
+        "Moskova"@fi ,
+        "Moscovien"@fr ,
+        "moszkvai"@hu ,
         "Moscovian"@id ,
         "Moscoviano"@it ,
-        "Moskvis"@lt ;
+        "モスコビアン"@ja ,
+        "모스코바절"@ko ,
+        "Moskvis"@lt ,
+        "Moscovien"@nl ,
+        "Moscoviaan"@nl-be ,
+        "Moskva"@no ,
+        "Moscoviano"@pt ,
+        "Moscoviano"@pt-br ,
+        "Московский"@ru ,
+        "moskov"@sk ,
+        "Moskoviyen"@tr ,
+        "莫斯科阶"@zh ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Neoarchean>
     skos:prefLabel
+        "Neoarxey"@az ,
+        "Neoarqueà"@ca ,
+        "neoarchaikum"@cs ,
         "Neoarchaikum"@de ,
         "Neoarchean"@en ,
-        "Neo-arcaico"@es-ES ,
+        "Neoarcaico"@es ,
+        "Neoarqueano"@es-a ,
+        "Neoarkear"@eu ,
+        "Neoarkeeinen"@fi ,
+        "Néoarchéen"@fr ,
+        "neoarchaikum"@hu ,
         "Neoarchean"@id ,
         "Neoarcheano"@it ,
-        "Neoarchėjus"@lt ;
+        "新太古界／代 （新始生界／代）"@ja ,
+        "신시생대"@ko ,
+        "Neoarchėjus"@lt ,
+        "Neoarcheïcum"@nl ,
+        "Neoarcheaan"@nl-be ,
+        "Neoarkeikum"@no ,
+        "Neoarqueano"@pt ,
+        "Neoarqueano"@pt-br ,
+        "Неоархейская"@ru ,
+        "neoarchaikum"@sk ,
+        "Neo arkeen"@tr ,
+        "新太古界"@zh ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Neogene>
     skos:prefLabel
+        "Neogen"@az ,
+        "Neogen"@ca ,
+        "neogén"@cs ,
         "Neogen"@de ,
         "Neogene"@en ,
-        "Neógeno"@es-ES ,
+        "Neógeno"@es ,
+        "Neógeno"@es-a ,
+        "Neogeno"@eu ,
+        "Neogeeni"@fi ,
+        "Néogène"@fr ,
+        "neogén"@hu ,
         "Neogen"@id ,
         "Neogene"@it ,
-        "Neogenas"@lt ;
+        "新第三系／紀"@ja ,
+        "신진기"@ko ,
+        "Neogenas"@lt ,
+        "Neogeen"@nl ,
+        "Neogeen"@nl-be ,
+        "Neogen"@no ,
+        "Neógeno"@pt ,
+        "Neógeno"@pt-br ,
+        "Неогеновая"@ru ,
+        "neogén"@sk ,
+        "Neojen"@tr ,
+        "新 近 系"@zh ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Neoproterozoic>
     skos:prefLabel
+        "Neoproterozoy"@az ,
+        "Neoproterozoic"@ca ,
+        "neoproterozoikum"@cs ,
         "Neoproterozoikum"@de ,
         "Neoproterozoic"@en ,
-        "Neo-proterozoico"@es-ES ,
+        "Neoproterozoico"@es ,
+        "Neoproterozoico"@es-a ,
+        "Neoproterozoiko"@eu ,
+        "Neoproterotsooinen"@fi ,
+        "Néoprotérozoïque"@fr ,
+        "neoproterozoikum"@hu ,
         "Neoproterozoikum"@id ,
         "Neoproterozoico"@it ,
-        "Neoproterozojus"@lt ;
+        "新原生界／代"@ja ,
+        "신원생대"@ko ,
+        "Neoproterozojus"@lt ,
+        "Neoproterozoïcum"@nl ,
+        "Neoproterozoïcum"@nl-be ,
+        "Neoproterozoikum"@no ,
+        "Neoarqueano"@pt ,
+        "Neoarqueano"@pt-br ,
+        "Неопротерозойская"@ru ,
+        "neoproterozoikum"@sk ,
+        "Neo proterozoyik"@tr ,
+        "新元古界"@zh ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Norian>
     skos:prefLabel
+        "Noriy"@az ,
+        "Norià"@ca ,
+        "norik"@cs ,
         "Norium"@de ,
         "Norian"@en ,
-        "Noriense"@es-ES ,
+        "Noriense"@es ,
+        "Noriano"@es-a ,
+        "Noriar"@eu ,
+        "Norium"@fi ,
+        "Norien"@fr ,
+        "nori"@hu ,
         "Norian"@id ,
         "Norico"@it ,
-        "Noris"@lt ;
+        "ノーリアン"@ja ,
+        "노릭절"@ko ,
+        "Noris"@lt ,
+        "Norien"@nl ,
+        "Noriaan"@nl-be ,
+        "Nor"@no ,
+        "Noriano"@pt ,
+        "Noriano"@pt-br ,
+        "Норийский"@ru ,
+        "norik"@sk ,
+        "Noriyen"@tr ,
+        "诺利阶"@zh ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Northgrippian>
     skos:prefLabel
+        "NaN"^^xsd:double ,
+        "Nortqrip"@az ,
+        "Norgripià"@ca ,
+        "northgrip"@cs ,
         "Northgrippium"@de ,
         "Northgrippian"@en ,
-        "Norgripiense"@es-ES ,
+        "Norgripiense"@es ,
+        "Norgripiano"@es-a ,
+        "Northgrip"@fi ,
+        "Northgrippien"@fr ,
+        "northgripi"@hu ,
         "Northgrippian"@id ,
         "Nordgrippiano"@it ,
-        "Nordgripis"@lt ;
+        "ノースグリッピアン"@ja ,
+        "노스그립절"@ko ,
+        "Nordgripis"@lt ,
+        "Northgrippien"@nl ,
+        "Northgrippiaan"@nl-be ,
+        "Northgrip"@no ,
+        "Northgrippiano"@pt ,
+        "Northgrippiano"@pt-br ,
+        "nortgrip"@sk ,
+        "Nortgripiyen"@tr ,
+        "诺斯格瑞比阶"@zh ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Olenekian>
     skos:prefLabel
+        "Olenek"@az ,
+        "Oleniokià"@ca ,
+        "olenek"@cs ,
         "Olenekium"@de ,
         "Olenekian"@en ,
-        "Olenekiense"@es-ES ,
+        "Olenekiense"@es ,
+        "Olenekiano"@es-a ,
+        "Olenekiar"@eu ,
+        "Olenek"@fi ,
+        "Olénékien"@fr ,
+        "olenyoki"@hu ,
         "Olenekian"@id ,
         "Olenekiano"@it ,
-        "Olenekis"@lt ;
+        "オレネキアン"@ja ,
+        "올레네크절"@ko ,
+        "Olenekis"@lt ,
+        "Olenekien"@nl ,
+        "Olenekiaan"@nl-be ,
+        "Olenek"@no ,
+        "Olenekiano"@pt ,
+        "Olenekiano"@pt-br ,
+        "Оленекский"@ru ,
+        "olenek"@sk ,
+        "Olenekiyen"@tr ,
+        "奥伦尼克阶"@zh ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Oligocene>
     skos:prefLabel
+        "Oliqosen"@az ,
+        "Oligocè"@ca ,
+        "oligocén"@cs ,
         "Oligozän"@de ,
         "Oligocene"@en ,
-        "Oligoceno"@es-ES ,
+        "Oligoceno"@es ,
+        "Oligoceno"@es-a ,
+        "Oligozeno"@eu ,
+        "Oligoseeni"@fi ,
+        "Oligocène"@fr ,
+        "oligocén"@hu ,
         "Oligosen"@id ,
         "Oligocene"@it ,
-        "Oligocenas"@lt ;
+        "漸新統／世"@ja ,
+        "올리고세"@ko ,
+        "Oligocenas"@lt ,
+        "Oligoceen"@nl ,
+        "Oligoceen"@nl-be ,
+        "Oligocen"@no ,
+        "Oligoceno"@pt ,
+        "Oligoceno"@pt-br ,
+        "Олигоцен"@ru ,
+        "oligocén"@sk ,
+        "Oligosen"@tr ,
+        "渐新统"@zh ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Ordovician>
     skos:prefLabel
+        "Ordovik"@az ,
+        "Ordovicià"@ca ,
+        "ordovik"@cs ,
         "Ordovizium"@de ,
         "Ordovician"@en ,
-        "Ordovícico"@es-ES ,
+        "Ordovícico"@es ,
+        "Ordovícico"@es-a ,
+        "Ordoviziar"@eu ,
+        "Ordoviikki"@fi ,
+        "Ordovicien"@fr ,
+        "ordovícium"@hu ,
         "Ordovisiu"@id ,
         "Ordoviciano"@it ,
-        "Ordovikas"@lt ;
+        "オルドビス系／紀"@ja ,
+        "오르도비스기"@ko ,
+        "Ordovikas"@lt ,
+        "Ordovicium"@nl ,
+        "Ordovicium"@nl-be ,
+        "Ordovicium"@no ,
+        "Ordoviciano"@pt ,
+        "Ordoviciano"@pt-br ,
+        "Ордовикская"@ru ,
+        "ordovik"@sk ,
+        "Ordovisiyen"@tr ,
+        "奥 陶 系"@zh ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Orosirian>
     skos:prefLabel
+        "Orozir"@az ,
+        "Orosirià"@ca ,
+        "orosir"@cs ,
         "Orosirium"@de ,
         "Orosirian"@en ,
-        "Orosírico"@es-ES ,
+        "Orosírico"@es ,
+        "Orosiriano"@es-a ,
+        "Orosiriar"@eu ,
+        "Orosir"@fi ,
+        "Orosirien"@fr ,
+        "orosiri"@hu ,
         "Orosirian"@id ,
         "Orosiriano"@it ,
-        "Orosiras"@lt ;
+        "オロシリアン"@ja ,
+        "오로세이라기"@ko ,
+        "Orosiras"@lt ,
+        "Orosirium"@nl ,
+        "Orosiriaan"@nl-be ,
+        "Orosir"@no ,
+        "Orosiriano"@pt ,
+        "Orosiriano"@pt-br ,
+        "Орозирская"@ru ,
+        "orosir"@sk ,
+        "Orosiriyen"@tr ,
+        "造山系"@zh ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Oxfordian>
     skos:prefLabel
+        "Oksford"@az ,
+        "Oxfordià"@ca ,
+        "oxford"@cs ,
         "Oxfordium"@de ,
         "Oxfordian"@en ,
-        "Oxfordiense"@es-ES ,
+        "Oxfordiense"@es ,
+        "Oxfordiano"@es-a ,
+        "Oxfordiar"@eu ,
+        "Oxford"@fi ,
+        "Oxfordien"@fr ,
+        "oxfordi"@hu ,
         "Oxfordian"@id ,
         "Oxfordiano"@it ,
-        "Oksfordis"@lt ;
+        "オックスフォーディアン"@ja ,
+        "옥스퍼드절"@ko ,
+        "Oksfordis"@lt ,
+        "Oxfordien"@nl ,
+        "Oxfordiaan"@nl-be ,
+        "Oxford"@no ,
+        "Oxfordiano"@pt ,
+        "Oxfordiano"@pt-br ,
+        "Оксфордский"@ru ,
+        "oxford"@sk ,
+        "Oksfordiyen"@tr ,
+        "牛津阶"@zh ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Paibian>
     skos:prefLabel
+        "Paibi"@az ,
+        "Paibià"@ca ,
+        "paibian"@cs ,
         "Paibium"@de ,
         "Paibian"@en ,
-        "Paibiense"@es-ES ,
+        "Paibiense"@es ,
+        "Paibiano"@es-a ,
+        "Paibiar"@eu ,
+        "Paibi"@fi ,
+        "Paibien"@fr ,
+        "paibi"@hu ,
         "Paibian"@id ,
         "Paibiano"@it ,
-        "Paibis"@lt ;
+        "ペイビアン"@ja ,
+        "파이비절"@ko ,
+        "Paibis"@lt ,
+        "Paibien"@nl ,
+        "Paibiaan"@nl-be ,
+        "Paibi"@no ,
+        "Paibiano"@pt ,
+        "Paibiano"@pt-br ,
+        "Паибский"@ru ,
+        "paib"@sk ,
+        "Payibiyen"@tr ,
+        "排碧阶"@zh ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Paleoarchean>
     skos:prefLabel
+        "Paleoarxey"@az ,
+        "Paleoarqueà"@ca ,
+        "paleoarchaikum"@cs ,
         "Paläoarchaikum"@de ,
         "Paleoarchean"@en ,
-        "Paleo-arcaico"@es-ES ,
+        "Paleoarcaico"@es ,
+        "Paleoarqueano"@es-a ,
+        "Paleoarkear"@eu ,
+        "Paleoarkeeinen"@fi ,
+        "Paléoarchéen"@fr ,
+        "paleoarchaikum"@hu ,
         "Paleoarchean"@id ,
         "Paleoarcheano"@it ,
-        "Paleoarchėjus"@lt ;
+        "古太古界／代 （古始生界／代）"@ja ,
+        "고시생대"@ko ,
+        "Paleoarchėjus"@lt ,
+        "Paleoarcheïcum"@nl ,
+        "Paleoarcheaan"@nl-be ,
+        "Paleoarkeikum"@no ,
+        "Paleoarqueano"@pt ,
+        "Paleoarqueano"@pt-br ,
+        "Палеоархейская"@ru ,
+        "paleoarchaikum"@sk ,
+        "Paleo arkeen"@tr ,
+        "古太古界"@zh ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Paleocene>
     skos:prefLabel
+        "Paleosen"@az ,
+        "Paleocè"@ca ,
+        "paleocén"@cs ,
         "Paläozän"@de ,
         "Paleocene"@en ,
-        "Paleoceno"@es-ES ,
+        "Paleoceno"@es ,
+        "Paleoceno"@es-a ,
+        "Paleozeno"@eu ,
+        "Paleoseeni"@fi ,
+        "Paléocène"@fr ,
+        "paleocén"@hu ,
         "Paleosen"@id ,
         "Paleocene"@it ,
-        "Paleocenas"@lt ;
+        "暁新統／世"@ja ,
+        "팔레오세"@ko ,
+        "Paleocenas"@lt ,
+        "Paleoceen"@nl ,
+        "Paleoceen"@nl-be ,
+        "Paleocen"@no ,
+        "Paleoceno"@pt ,
+        "Paleoceno"@pt-br ,
+        "Палео- цен"@ru ,
+        "paleocén"@sk ,
+        "Paleosen"@tr ,
+        "古新统"@zh ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Paleogene>
     skos:prefLabel
+        "Paleogen"@az ,
+        "Paleogen"@ca ,
+        "paleogén"@cs ,
         "Paläogen"@de ,
         "Paleogene"@en ,
-        "Paleógeno"@es-ES ,
+        "Paleógeno"@es ,
+        "Paleógeno"@es-a ,
+        "Paleogeno"@eu ,
+        "Paleogeeni"@fi ,
+        "Paléogène"@fr ,
+        "paleogén"@hu ,
         "Paleogen"@id ,
         "Paleogene"@it ,
-        "Paleogenas"@lt ;
+        "古第三系／紀"@ja ,
+        "고진기"@ko ,
+        "Paleogenas"@lt ,
+        "Paleogeen"@nl ,
+        "Paleogeen"@nl-be ,
+        "Paleogen"@no ,
+        "Paleógeno"@pt ,
+        "Paleógeno"@pt-br ,
+        "Палеогеновая"@ru ,
+        "paleogén"@sk ,
+        "Paleojen"@tr ,
+        "古 近 系"@zh ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Paleoproterozoic>
     skos:prefLabel
+        "Paleoproterozoy"@az ,
+        "Paleoproterozoic"@ca ,
+        "paleoproterozoikum"@cs ,
         "Paläoproterozoikum"@de ,
         "Paleoproterozoic"@en ,
-        "Paleo-proterozoico"@es-ES ,
+        "Paleoproterozoico"@es ,
+        "Paleoproterozoico"@es-a ,
+        "Paleoproterozoiko"@eu ,
+        "Paleoproterotsooinen"@fi ,
+        "Paléoprotérozoïque"@fr ,
+        "paleoproterozoikum"@hu ,
         "Paleoproterozoikum"@id ,
         "Paleoproterozoico"@it ,
-        "Paleoproterozojus"@lt ;
+        "古原生界／代"@ja ,
+        "고원생대"@ko ,
+        "Paleoproterozojus"@lt ,
+        "Paleoproterozoïcum"@nl ,
+        "Paleoproterozoïcum"@nl-be ,
+        "Paleoproterozoikum"@no ,
+        "Paleoproterozoico"@pt ,
+        "Paleoproterozoico"@pt-br ,
+        "Палеопротерозойская"@ru ,
+        "paleoproterozoikum"@sk ,
+        "Paleo proterozoyik"@tr ,
+        "古元古界"@zh ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Paleozoic>
     skos:prefLabel
+        "Paleozoy"@az ,
+        "Paleozoic"@ca ,
+        "paleozoikum"@cs ,
         "Paläozoikum"@de ,
         "Paleozoic"@en ,
-        "Paleozoico"@es-ES ,
+        "Paleozoico"@es ,
+        "Paleozoico"@es-a ,
+        "Paleozoiko"@eu ,
+        "Paleotsooinen"@fi ,
+        "Paléozoïque"@fr ,
+        "paleozoikum"@hu ,
         "Paleozoikum"@id ,
         "Paleozoico"@it ,
-        "Paleozojus"@lt ;
+        "古生界／代"@ja ,
+        "고생대"@ko ,
+        "Paleozojus"@lt ,
+        "Paleozoïcum"@nl ,
+        "Paleozoïcum"@nl-be ,
+        "Paleozoikum"@no ,
+        "Paleozoico"@pt ,
+        "Paleozoico"@pt-br ,
+        "Палеозойская"@ru ,
+        "paleozoikum"@sk ,
+        "Paleozoyik"@tr ,
+        "古 生 界"@zh ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Pennsylvanian>
     skos:prefLabel
+        "Pensilvaniya"@az ,
+        "Pennsylvanià"@ca ,
+        "pennsylvan"@cs ,
         "Pennsylvanium"@de ,
         "Pennsylvanian"@en ,
-        "Pensilvánico"@es-ES ,
+        "Pensilvánico"@es ,
+        "Pensilvaniano"@es-a ,
+        "Pennsylvaniar"@eu ,
+        "Pennsylvania"@fi ,
+        "Pennsylvanie"@fr ,
+        "pennsylvaniai"@hu ,
         "Pennsylvanian"@id ,
         "Pennsylvaniano"@it ,
-        "Pensilvanas"@lt ;
+        "ペンシルバニアン 亜系／亜紀"@ja ,
+        "펜실베니아아기"@ko ,
+        "Pensilvanas"@lt ,
+        "Pennsylvanien"@nl ,
+        "Pennsylvaniaan"@nl-be ,
+        "Pennsylvania"@no ,
+        "Pennsylvánico"@pt ,
+        "Pennsylvánico"@pt-br ,
+        "Пенсильванская"@ru ,
+        "pensylván"@sk ,
+        "Pensilvaniyen"@tr ,
+        "宾 夕 法 尼 亚 亚 系"@zh ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Permian>
     skos:prefLabel
+        "Perm"@az ,
+        "Permià"@ca ,
+        "perm"@cs ,
         "Perm"@de ,
         "Permian"@en ,
-        "Pérmico"@es-ES ,
+        "Pérmico"@es ,
+        "Pérmico"@es-a ,
+        "Permiar"@eu ,
+        "Permi"@fi ,
+        "Permien"@fr ,
+        "perm"@hu ,
         "Perem"@id ,
         "Permiano"@it ,
-        "Permas"@lt ;
+        "ペルム系／紀"@ja ,
+        "페름기"@ko ,
+        "Permas"@lt ,
+        "Perm"@nl ,
+        "Perm"@nl-be ,
+        "Perm"@no ,
+        "Permiano"@pt ,
+        "Permiano"@pt-br ,
+        "Пермская"@ru ,
+        "perm"@sk ,
+        "Permiyen"@tr ,
+        "二 叠 系"@zh ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Phanerozoic>
     skos:prefLabel
+        "Fanerozoy"@az ,
+        "Fanerozoic"@ca ,
+        "fanerozoikum"@cs ,
         "Phanerozoikum"@de ,
         "Phanerozoic"@en ,
-        "Fanerozoico"@es-ES ,
+        "Fanerozoico"@es ,
+        "Fanerozoico"@es-a ,
+        "Fanerozoiko"@eu ,
+        "Fanerotsooinen"@fi ,
+        "Phanérozoïque"@fr ,
+        "fanerozoikum"@hu ,
         "Fanerozoikum"@id ,
         "Fanerozoico"@it ,
-        "Fanerozojus"@lt ;
+        "顕生（累）界／代"@ja ,
+        "현생누대"@ko ,
+        "Fanerozojus"@lt ,
+        "Fanerozoïcum"@nl ,
+        "Fanerozoïcum"@nl-be ,
+        "Fanerozoikum"@no ,
+        "Fanerozoico"@pt ,
+        "Fanerozoico"@pt-br ,
+        "Фанерозойская"@ru ,
+        "fanerozoikum"@sk ,
+        "Fanerozoyik"@tr ,
+        "显 生 宇"@zh ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Piacenzian>
     skos:prefLabel
+        "Pyaçens"@az ,
+        "Plasencià"@ca ,
+        "piacenz"@cs ,
         "Piacenzium"@de ,
         "Piacenzian"@en ,
-        "Piacenziense"@es-ES ,
+        "Piacenziense"@es ,
+        "Piacenziano"@es-a ,
+        "Piacenziar"@eu ,
+        "Piacenza"@fi ,
+        "Plaisancien"@fr ,
+        "piacenzai"@hu ,
         "Piacenzian"@id ,
         "Piacenziano"@it ,
-        "Piačenzis"@lt ;
+        "ピアセンジアン"@ja ,
+        "피아첸차절"@ko ,
+        "Piačenzis"@lt ,
+        "Piacenzien"@nl ,
+        "Piacenziaan"@nl-be ,
+        "Piacenza"@no ,
+        "Piacenziano"@pt ,
+        "Piacenziano"@pt-br ,
+        "Пьяченцский"@ru ,
+        "piačenz"@sk ,
+        "Piasenziyen"@tr ,
+        "皮亚琴察阶"@zh ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Pleistocene>
     skos:prefLabel
+        "Pleystosen"@az ,
+        "Plistocè"@ca ,
+        "pleistocén"@cs ,
         "Pleistozän"@de ,
         "Pleistocene"@en ,
-        "Pleistoceno"@es-ES ,
+        "Pleistocene"@es ,
+        "Pleistoceno"@es-a ,
+        "Pleistozeno"@eu ,
+        "Pleistoseeni"@fi ,
+        "Pléistocène"@fr ,
+        "pleisztocén"@hu ,
         "Pleistosen"@id ,
         "Pleistocene"@it ,
-        "Pleistocenas"@lt ;
+        "更新統／世"@ja ,
+        "플라이스토세"@ko ,
+        "Pleistocenas"@lt ,
+        "Pleistoceen"@nl ,
+        "Pleistoceen"@nl-be ,
+        "Pleistocen"@no ,
+        "Pleistoceno"@pt ,
+        "Pleistoceno"@pt-br ,
+        "Плейстоцен"@ru ,
+        "pleistocén"@sk ,
+        "Pleyistosen"@tr ,
+        "更新统"@zh ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Pliensbachian>
     skos:prefLabel
+        "Plinsbax"@az ,
+        "Pliensbaquià"@ca ,
+        "pliensbach"@cs ,
         "Pliensbachium"@de ,
         "Pliensbachian"@en ,
-        "Pliensbachiense"@es-ES ,
+        "Pliensbachiense"@es ,
+        "Pliensbachiano"@es-a ,
+        "Pliensbachiar"@eu ,
+        "Pliensbach"@fi ,
+        "Pliensbachien"@fr ,
+        "pliensbachi"@hu ,
         "Pliensbachian"@id ,
         "Pliensbachiano"@it ,
-        "Plynsbachis"@lt ;
+        "プリンスバキアン"@ja ,
+        "플린스바흐절"@ko ,
+        "Plynsbachis"@lt ,
+        "Pliensbachien"@nl ,
+        "Pliensbachiaan"@nl-be ,
+        "Pliensbach"@no ,
+        "Pliensbachiano"@pt ,
+        "Pliensbachiano"@pt-br ,
+        "Плинсбахский"@ru ,
+        "pliensbach"@sk ,
+        "Pliyensbahiyen"@tr ,
+        "普林斯巴阶"@zh ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Pliocene>
     skos:prefLabel
+        "Pliosen"@az ,
+        "Pliocè"@ca ,
+        "pliocén"@cs ,
         "Pliozän"@de ,
         "Pliocene"@en ,
-        "Plioceno"@es-ES ,
+        "Plioceno"@es ,
+        "Plioceno"@es-a ,
+        "Pliozeno"@eu ,
+        "Plioseeni"@fi ,
+        "Pliocène"@fr ,
+        "pliocén"@hu ,
         "Pliosen"@id ,
         "Pliocene"@it ,
-        "Pliocenas"@lt ;
+        "鮮新統／世"@ja ,
+        "플라이오세"@ko ,
+        "Pliocenas"@lt ,
+        "Plioceen"@nl ,
+        "Plioceen"@nl-be ,
+        "Pliocen"@no ,
+        "Plioceno"@pt ,
+        "Plioceno"@pt-br ,
+        "Плиоцен"@ru ,
+        "pliocén"@sk ,
+        "Pliyosen"@tr ,
+        "上新统"@zh ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Pragian>
     skos:prefLabel
+        "Praqa"@az ,
+        "Praguià"@ca ,
+        "prag"@cs ,
         "Pragium"@de ,
         "Pragian"@en ,
-        "Pragiense"@es-ES ,
+        "Pragiense"@es ,
+        "Pragiano"@es-a ,
+        "Pragiar"@eu ,
+        "Praha"@fi ,
+        "Pragien"@fr ,
+        "prágai"@hu ,
         "Pragian"@id ,
         "Pragiano"@it ,
-        "Pragis"@lt ;
+        "プラギアン"@ja ,
+        "프라하절"@ko ,
+        "Pragis"@lt ,
+        "Pragien"@nl ,
+        "Pragiaan"@nl-be ,
+        "Praha"@no ,
+        "Pragiano"@pt ,
+        "Pragiano"@pt-br ,
+        "Пражский"@ru ,
+        "prág"@sk ,
+        "Pragiyen"@tr ,
+        "布拉格阶"@zh ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Precambrian>
     skos:prefLabel
+        "Kembriyəqədər"@az ,
+        "Precambrià"@ca ,
+        "prekambrium"@cs ,
         "Präkambrium"@de ,
         "Precambrian"@en ,
-        "Precámbrico"@es-ES ,
+        "Precámbrico"@es ,
+        "Precámbrico"@es-a ,
+        "Kanbriarraurre"@eu ,
+        "Prekambri"@fi ,
+        "Précambrien"@fr ,
+        "prekambrium"@hu ,
         "Prekambrium"@id ,
         "Precambriano"@it ,
-        "Prekambras"@lt ;
+        "先カンブリア（累）界／時代"@ja ,
+        "선 캄 브 리 아 시 대"@ko ,
+        "Prekambras"@lt ,
+        "Precambrium"@nl ,
+        "Precambrium"@nl-be ,
+        "Prekambrium"@no ,
+        "Pré-Cambriano"@pt ,
+        "Pré-Cambriano"@pt-br ,
+        "Докембрийская"@ru ,
+        "predkambrium"@sk ,
+        "Pre-Kambriyen"@tr ,
+        "前 寒 武 系"@zh ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Priabonian>
     skos:prefLabel
+        "Priabon"@az ,
+        "Priabonià"@ca ,
+        "priabon"@cs ,
         "Priabonium"@de ,
         "Priabonian"@en ,
-        "Priaboniense"@es-ES ,
+        "Priaboniense"@es ,
+        "Priaboniano"@es-a ,
+        "Priaboniar"@eu ,
+        "Priabona"@fi ,
+        "Priabonien"@fr ,
+        "priabonai"@hu ,
         "Priabonian"@id ,
         "Priaboniano"@it ,
-        "Priabonis"@lt ;
+        "プリアボニアン"@ja ,
+        "프리아보나절"@ko ,
+        "Priabonis"@lt ,
+        "Priabonien"@nl ,
+        "Priaboniaan"@nl-be ,
+        "Priabona"@no ,
+        "Priaboniano"@pt ,
+        "Priaboniano"@pt-br ,
+        "Приабонский"@ru ,
+        "priabón"@sk ,
+        "Priaboniyen"@tr ,
+        "普利亚本阶"@zh ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Pridoli>
     skos:prefLabel
+        "Prjidol"@az ,
+        "Pridolià"@ca ,
+        "přídolí"@cs ,
         "Pridoli"@de ,
         "Pridoli"@en ,
-        "Prídoli"@es-ES ,
+        "Prídoli"@es ,
+        "Pridoliano"@es-a ,
+        "Pridoli"@eu ,
+        "Pridoli"@fi ,
+        "Pridoli"@fr ,
+        "pridoli"@hu ,
         "Pridoli"@id ,
         "Pridoli"@it ,
-        "Pržidolis"@lt ;
+        "プリドリ"@ja ,
+        "프리돌리세"@ko ,
+        "Pržidolis"@lt ,
+        "Pridoli"@nl ,
+        "Pridoli"@nl-be ,
+        "Pridoli"@no ,
+        "Pridoli"@pt ,
+        "Pridoli"@pt-br ,
+        "Пржидольский"@ru ,
+        "přídol"@sk ,
+        "Pridoli"@tr ,
+        "普里道利统"@zh ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Proterozoic>
     skos:prefLabel
+        "Proterozoy"@az ,
+        "Proterozoic"@ca ,
+        "proterozoikum"@cs ,
         "Proterozoikum"@de ,
         "Proterozoic"@en ,
-        "Proterozoico"@es-ES ,
+        "Proterozoico"@es ,
+        "Proterozoico"@es-a ,
+        "Proterozoiko"@eu ,
+        "Proterotsooinen"@fi ,
+        "Protéozoïque"@fr ,
+        "proterozoikum"@hu ,
         "Proterozoikum"@id ,
         "Proterozoico"@it ,
-        "Proterozojus"@lt ;
+        "原生（累）界／代"@ja ,
+        "원생누대"@ko ,
+        "Proterozojus"@lt ,
+        "Proterozoïcum"@nl ,
+        "Proterozoïcum"@nl-be ,
+        "Proterozoikum"@no ,
+        "Proterozoico"@pt ,
+        "Proterozoico"@pt-br ,
+        "Протерозойская"@ru ,
+        "proterozoikum"@sk ,
+        "Proterozoyik"@tr ,
+        "元 古 宇"@zh ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Quaternary>
     skos:prefLabel
+        "Dördüncü dövr"@az ,
+        "Quaternari"@ca ,
+        "kvartér"@cs ,
         "Quartär"@de ,
         "Quaternary"@en ,
-        "Cuaternario"@es-ES ,
+        "Cuaternario"@es ,
+        "Cuaternario"@es-a ,
+        "Kuaternario"@eu ,
+        "Kvartääri"@fi ,
+        "Quaternaire"@fr ,
+        "kvarter"@hu ,
         "Kuarter"@id ,
         "Quaternario"@it ,
-        "Kvarteras"@lt ;
+        "第四系／紀"@ja ,
+        "제4기"@ko ,
+        "Kvarteras"@lt ,
+        "Kwartair"@nl ,
+        "Quartair"@nl-be ,
+        "Kvartær"@no ,
+        "Quaternário"@pt ,
+        "Quaternário"@pt-br ,
+        "Четвертичная"@ru ,
+        "kvartér"@sk ,
+        "Kuvaterner"@tr ,
+        "第 四 系"@zh ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Rhaetian>
     skos:prefLabel
+        "Ret"@az ,
+        "Retià"@ca ,
+        "rhét"@cs ,
         "Rhaetium"@de ,
         "Rhaetian"@en ,
-        "Rhaetiense"@es-ES ,
+        "Rhaetiense"@es ,
+        "Rhaetiano"@es-a ,
+        "Rhaetiar"@eu ,
+        "Reetia"@fi ,
+        "Rhétien"@fr ,
+        "rhaeti"@hu ,
         "Rhaetian"@id ,
         "Retico"@it ,
-        "Retis"@lt ;
+        "レーティアン"@ja ,
+        "래티아절"@ko ,
+        "Retis"@lt ,
+        "Rhaetien"@nl ,
+        "Rhaetiaan"@nl-be ,
+        "Ræt"@no ,
+        "Rhaetiano"@pt ,
+        "Rhaetiano"@pt-br ,
+        "Рэтский"@ru ,
+        "rét"@sk ,
+        "Resiyen"@tr ,
+        "瑞替阶"@zh ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Rhuddanian>
     skos:prefLabel
+        "Raddan"@az ,
+        "Rhuddanià"@ca ,
+        "rhuddan"@cs ,
         "Rhuddanium"@de ,
         "Rhuddanian"@en ,
-        "Rhuddaniense"@es-ES ,
+        "Rhuddaniense"@es ,
+        "Rhuddaniano"@es-a ,
+        "Rhuddaniar"@eu ,
+        "Rhuddan"@fi ,
+        "Rhuddanien"@fr ,
+        "rhuddani"@hu ,
         "Rhuddanian"@id ,
         "Rhuddaniano"@it ,
-        "Rudanis"@lt ;
+        "ラッダニアン"@ja ,
+        "루단절"@ko ,
+        "Rudanis"@lt ,
+        "Rhuddanien"@nl ,
+        "Rhuddaniaan"@nl-be ,
+        "Rhuddan"@no ,
+        "Rhuddaniano"@pt ,
+        "Rhuddaniano"@pt-br ,
+        "Рудданский"@ru ,
+        "rudan"@sk ,
+        "Ruddaniyen"@tr ,
+        "鲁丹阶"@zh ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Rhyacian>
     skos:prefLabel
+        "Rias"@az ,
+        "Riacià"@ca ,
+        "rhyak"@cs ,
         "Rhyacium"@de ,
         "Rhyacian"@en ,
-        "Riácico"@es-ES ,
+        "Riácico"@es ,
+        "Rhyaciano"@es-a ,
+        "Rhyaciar"@eu ,
+        "Ryax"@fi ,
+        "Rhyacien"@fr ,
+        "rhyaci"@hu ,
         "Rhyacian"@id ,
         "Riaciano"@it ,
-        "Ryakas"@lt ;
+        "リィアキアン"@ja ,
+        "라이악스기"@ko ,
+        "Ryakas"@lt ,
+        "Rhyacium"@nl ,
+        "Rhyaciaan"@nl-be ,
+        "Ryax"@no ,
+        "Rhyaciano"@pt ,
+        "Rhyaciano"@pt-br ,
+        "Ряская"@ru ,
+        "ryak"@sk ,
+        "Riyasiyen"@tr ,
+        "层侵系"@zh ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Roadian>
     skos:prefLabel
+        "Road"@az ,
+        "Roadià"@ca ,
+        "road"@cs ,
         "Roadium"@de ,
         "Roadian"@en ,
-        "Roadiense"@es-ES ,
+        "Roadiense"@es ,
+        "Roadiano"@es-a ,
+        "Roadiar"@eu ,
+        "Road"@fi ,
+        "Roadien"@fr ,
+        "roadi"@hu ,
         "Roadian"@id ,
         "Roadiano"@it ,
-        "Roadis"@lt ;
+        "ローディアン"@ja ,
+        "로드절"@ko ,
+        "Roadis"@lt ,
+        "Roadien"@nl ,
+        "Roadiaan"@nl-be ,
+        "Road"@no ,
+        "Roadiano"@pt ,
+        "Roadiano"@pt-br ,
+        "Роудский"@ru ,
+        "road"@sk ,
+        "Rodiyen"@tr ,
+        "罗德阶"@zh ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Rupelian>
     skos:prefLabel
+        "Ryupel"@az ,
+        "Rupelià"@ca ,
+        "rupel"@cs ,
         "Rupelium"@de ,
         "Rupelian"@en ,
-        "Rupeliense"@es-ES ,
+        "Rupeliense"@es ,
+        "Rupeliano"@es-a ,
+        "Rupeliar"@eu ,
+        "Rupel"@fi ,
+        "Rupélien"@fr ,
+        "rupeli"@hu ,
         "Rupelian"@id ,
         "Rupeliano"@it ,
-        "Riupelis"@lt ;
+        "ルペリアン"@ja ,
+        "루펠절"@ko ,
+        "Riupelis"@lt ,
+        "Rupelien"@nl ,
+        "Rupeliaan"@nl-be ,
+        "Rupel"@no ,
+        "Rupeliano"@pt ,
+        "Rupeliano"@pt-br ,
+        "Рюпельский"@ru ,
+        "rupel"@sk ,
+        "Rupeliyen"@tr ,
+        "吕珀尔阶"@zh ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Sakmarian>
     skos:prefLabel
+        "Sakmar"@az ,
+        "Sakmarià"@ca ,
+        "sakmar"@cs ,
         "Sakmarium"@de ,
         "Sakmarian"@en ,
-        "Sakmariense"@es-ES ,
+        "Sakmariense"@es ,
+        "Sakmariano"@es-a ,
+        "Sakmariar"@eu ,
+        "Sakmara"@fi ,
+        "Sakmarien"@fr ,
+        "szakmarai"@hu ,
         "Sakmarian"@id ,
         "Sakmariano"@it ,
-        "Sakmaris"@lt ;
+        "サクマーリアン"@ja ,
+        "사크마라절"@ko ,
+        "Sakmaris"@lt ,
+        "Sakmarien"@nl ,
+        "Sakmariaan"@nl-be ,
+        "Sakmara"@no ,
+        "Sakmariano"@pt ,
+        "Sakmariano"@pt-br ,
+        "Сакмарский"@ru ,
+        "sakmar"@sk ,
+        "Sakmariyen"@tr ,
+        "萨克马尔阶"@zh ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Sandbian>
     skos:prefLabel
+        "Sandbi"@az ,
+        "Sandbià"@ca ,
+        "sandbian"@cs ,
         "Sandbium"@de ,
         "Sandbian"@en ,
-        "Sandbiense"@es-ES ,
+        "Sandbiense"@es ,
+        "Sandbiano"@es-a ,
+        "Sandbiar"@eu ,
+        "Sandby"@fi ,
+        "Sandbien"@fr ,
+        "sandbi"@hu ,
         "Sandbian"@id ,
         "Sandbiano"@it ,
-        "Sandbis"@lt ;
+        "サンドビアン"@ja ,
+        "샌드비절"@ko ,
+        "Sandbis"@lt ,
+        "Sandbien"@nl ,
+        "Sandbiaan"@nl-be ,
+        "Sandby"@no ,
+        "Sandbiano"@pt ,
+        "Sandbiano"@pt-br ,
+        "Сандбийский"@ru ,
+        "sandby"@sk ,
+        "Sandbiyen"@tr ,
+        "桑比阶"@zh ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Santonian>
     skos:prefLabel
+        "Santon"@az ,
+        "Santonià"@ca ,
+        "santon"@cs ,
         "Santonium"@de ,
         "Santonian"@en ,
-        "Santoniense"@es-ES ,
+        "Santoniense"@es ,
+        "Santoniano"@es-a ,
+        "Santoniar"@eu ,
+        "Santon"@fi ,
+        "Santonien"@fr ,
+        "santoni"@hu ,
         "Santonian"@id ,
         "Santoniano"@it ,
-        "Santonis"@lt ;
+        "サントニアン"@ja ,
+        "산토눔절"@ko ,
+        "Santonis"@lt ,
+        "Santonien"@nl ,
+        "Santoniaan"@nl-be ,
+        "Santon"@no ,
+        "Santoniano"@pt ,
+        "Santoniano"@pt-br ,
+        "Сантонский"@ru ,
+        "santón"@sk ,
+        "Santoniyen"@tr ,
+        "圣通阶"@zh ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Selandian>
     skos:prefLabel
+        "Zeland"@az ,
+        "Selandià"@ca ,
+        "seland"@cs ,
         "Seelandium"@de ,
         "Selandian"@en ,
-        "Selandiense"@es-ES ,
+        "Selandiense"@es ,
+        "Selandiano"@es-a ,
+        "Selandiar"@eu ,
+        "Sjellanti"@fi ,
+        "Sélandien"@fr ,
+        "selandi"@hu ,
         "Selandian"@id ,
         "Selandiano"@it ,
-        "Zėladis"@lt ;
+        "セランディアン"@ja ,
+        "셀란절"@ko ,
+        "Zėladis"@lt ,
+        "Selandien"@nl ,
+        "Selandiaan"@nl-be ,
+        "Sjælland"@no ,
+        "Selandiano"@pt ,
+        "Selandiano"@pt-br ,
+        "Зеландский"@ru ,
+        "seland"@sk ,
+        "Selandiyen"@tr ,
+        "塞兰特阶"@zh ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Series2>
     skos:prefLabel
+        "Şöbə 2"@az ,
+        "Segona sèrie"@ca ,
+        "oddělení 2"@cs ,
         "Serie 2"@de ,
         "Series 2"@en ,
-        "Serie 2"@es-ES ,
+        "Serie 2"@es ,
+        "Serie 2"@es-a ,
+        "2 Serie"@eu ,
+        "Sarja 2"@fi ,
+        "Séries 2"@fr ,
+        "2. sorozat"@hu ,
         "Seri 2"@id ,
         "Serie 2"@it ,
-        "2 skyrius"@lt ;
+        "シリーズ 2"@ja ,
+        "제2세"@ko ,
+        "2 skyrius"@lt ,
+        "Serie 2"@nl ,
+        "Serie 2"@nl-be ,
+        "Serie 2"@no ,
+        "Série 2"@pt ,
+        "Série 2"@pt-br ,
+        "Отдел 2"@ru ,
+        "séria 2"@sk ,
+        "Seri 2"@tr ,
+        "第二统"@zh ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Serpukhovian>
     skos:prefLabel
+        "Serpuxov"@az ,
+        "Serpukhovià"@ca ,
+        "serpuchov"@cs ,
         "Serpukhovium"@de ,
         "Serpukhovian"@en ,
-        "Serpukhoviense"@es-ES ,
+        "Serpukhoviense"@es ,
+        "Serpukhoviano"@es-a ,
+        "Serpukhoviar"@eu ,
+        "Serpukhov"@fi ,
+        "Serpukhovien"@fr ,
+        "szerpuhovi"@hu ,
         "Serpukhovian"@id ,
         "Serpukhoviano"@it ,
-        "Serpuchovis"@lt ;
+        "サープコビアン"@ja ,
+        "세르푸호프절"@ko ,
+        "Serpuchovis"@lt ,
+        "Serpukhovien"@nl ,
+        "Serpukhoviaan"@nl-be ,
+        "Serpukhov"@no ,
+        "Serpukhoviano"@pt ,
+        "Serpukhoviano"@pt-br ,
+        "Серпуховский"@ru ,
+        "serpuchov"@sk ,
+        "Serpukoviyen"@tr ,
+        "谢尔普霍夫阶"@zh ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Serravallian>
     skos:prefLabel
+        "Serraval"@az ,
+        "Serraval·lià"@ca ,
+        "serravall"@cs ,
         "Serravallium"@de ,
         "Serravallian"@en ,
-        "Serravalliense"@es-ES ,
+        "Serravalliense"@es ,
+        "Serravaliano"@es-a ,
+        "Serravalliar"@eu ,
+        "Serravalle"@fi ,
+        "Serravallien"@fr ,
+        "serravallei"@hu ,
         "Serravallian"@id ,
         "Serravalliano"@it ,
-        "Seravalis"@lt ;
+        "サーラバリアン"@ja ,
+        "세라발레절"@ko ,
+        "Seravalis"@lt ,
+        "Serravallien"@nl ,
+        "Serravalliaan"@nl-be ,
+        "Serravalle"@no ,
+        "Serravalliano"@pt ,
+        "Serravalliano"@pt-br ,
+        "Серравальский"@ru ,
+        "seraval"@sk ,
+        "Serravaliyen"@tr ,
+        "塞拉瓦莱阶"@zh ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Sheinwoodian>
     skos:prefLabel
+        "Şeynvud"@az ,
+        "Sheinwoodià"@ca ,
+        "sheinwood"@cs ,
         "Sheinwoodium"@de ,
         "Sheinwoodian"@en ,
-        "Sheinwoodiense"@es-ES ,
+        "Sheinwoodiense"@es ,
+        "Sheinwoodiano"@es-a ,
+        "Sheinwoodiar"@eu ,
+        "Sheinwood"@fi ,
+        "Sheinwoodien"@fr ,
+        "sheinwoodi"@hu ,
         "Sheinwoodian"@id ,
         "Sheinwoodiano"@it ,
-        "Šeinvudis"@lt ;
+        "シェイウッディアン"@ja ,
+        "셰인우드절"@ko ,
+        "Šeinvudis"@lt ,
+        "Sheinwoodien"@nl ,
+        "Sheinwoodiaan"@nl-be ,
+        "Sheinwood"@no ,
+        "Sheinwoodiano"@pt ,
+        "Sheinwoodiano"@pt-br ,
+        "Шейнвудский"@ru ,
+        "sheinwood"@sk ,
+        "Şenvudiyen"@tr ,
+        "申伍德阶"@zh ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Siderian>
     skos:prefLabel
+        "Sider"@az ,
+        "Siderià"@ca ,
+        "sider"@cs ,
         "Siderium"@de ,
         "Siderian"@en ,
-        "Sidérico"@es-ES ,
+        "Sidérico"@es ,
+        "Sideriano"@es-a ,
+        "Sideriar"@eu ,
+        "Sider"@fi ,
+        "Sidérien"@fr ,
+        "sideri"@hu ,
         "Siderian"@id ,
         "Sideriano"@it ,
-        "Sideras"@lt ;
+        "シデリアン"@ja ,
+        "시데로스기"@ko ,
+        "Sideras"@lt ,
+        "Siderium"@nl ,
+        "Sideriaan"@nl-be ,
+        "Sider"@no ,
+        "Sideriano"@pt ,
+        "Sideriano"@pt-br ,
+        "Сидерская"@ru ,
+        "sidér"@sk ,
+        "Sideriyen"@tr ,
+        "成铁系"@zh ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Silurian>
     skos:prefLabel
+        "Silur"@az ,
+        "Silurià"@ca ,
+        "silur"@cs ,
         "Silur"@de ,
         "Silurian"@en ,
-        "Silúrico"@es-ES ,
+        "Silúrico"@es ,
+        "Silúrico"@es-a ,
+        "Siluriar"@eu ,
+        "Siluuri"@fi ,
+        "Silurien"@fr ,
+        "szilur"@hu ,
         "Silur"@id ,
         "Siluriano"@it ,
-        "Silūras"@lt ;
+        "シルル系／紀"@ja ,
+        "실루리아기"@ko ,
+        "Silūras"@lt ,
+        "Siluur"@nl ,
+        "Siluur"@nl-be ,
+        "Silur"@no ,
+        "Siluriano"@pt ,
+        "Siluriano"@pt-br ,
+        "Силурийская"@ru ,
+        "silúr"@sk ,
+        "Siluriyen"@tr ,
+        "志 留 系"@zh ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Sinemurian>
     skos:prefLabel
+        "Sinemyur"@az ,
+        "Sinemurià"@ca ,
+        "sinemur"@cs ,
         "Sinemurium"@de ,
         "Sinemurian"@en ,
-        "Sinemuriense"@es-ES ,
+        "Sinemuriense"@es ,
+        "Sinemuriano"@es-a ,
+        "Sinemuriar"@eu ,
+        "Sinemur"@fi ,
+        "Sinémurien"@fr ,
+        "sinemuri"@hu ,
         "Sinemurian"@id ,
         "Sinemuriano"@it ,
-        "Sinemiuris"@lt ;
+        "シネムリアン"@ja ,
+        "시네무룸절"@ko ,
+        "Sinemiuris"@lt ,
+        "Sinemurien"@nl ,
+        "Sinemuriaan"@nl-be ,
+        "Sinemur"@no ,
+        "Sinemuriano"@pt ,
+        "Sinemuriano"@pt-br ,
+        "Синемюрский"@ru ,
+        "sinemúr"@sk ,
+        "Sinemuriyen"@tr ,
+        "辛涅缪尔阶"@zh ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Stage10>
     skos:prefLabel
+        "Mərtəbə 10"@az ,
+        "Desè estatge"@ca ,
+        "stupeň 10"@cs ,
         "Stufe 10"@de ,
         "Stage 10"@en ,
-        "Piso 10"@es-ES ,
+        "Piso 10"@es ,
+        "Piso 10"@es-a ,
+        "10 Estai"@eu ,
+        "Vaihe 10"@fi ,
+        "Étage 10"@fr ,
+        "10. emelet"@hu ,
         "Jenjang 10"@id ,
         "Piano 10"@it ,
-        "10 aukštas"@lt ;
+        "ステージ 10"@ja ,
+        "제10절"@ko ,
+        "10 aukštas"@lt ,
+        "Etage 10"@nl ,
+        "Etage 10"@nl-be ,
+        "Etasje 10"@no ,
+        "Andar 10"@pt ,
+        "Andar 10"@pt-br ,
+        "Ярус 10"@ru ,
+        "stupeň 10"@sk ,
+        "Kat 10"@tr ,
+        "第十阶"@zh ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Stage2>
     skos:prefLabel
+        "Mərtəbə 2"@az ,
+        "Segon estatge"@ca ,
+        "stupeň 2"@cs ,
         "Stufe 2"@de ,
         "Stage 2"@en ,
-        "Piso 2"@es-ES ,
+        "Piso 2"@es ,
+        "Piso 2"@es-a ,
+        "2 Estai"@eu ,
+        "Vaihe 2"@fi ,
+        "Étage 2"@fr ,
+        "2. emelet"@hu ,
         "Jenjang 2"@id ,
         "Piano 2"@it ,
-        "2 aukštas"@lt ;
+        "ステージ 2"@ja ,
+        "제2절"@ko ,
+        "2 aukštas"@lt ,
+        "Etage 2"@nl ,
+        "Etage 2"@nl-be ,
+        "Etasje 2"@no ,
+        "Andar 2"@pt ,
+        "Andar 2"@pt-br ,
+        "Ярус 2"@ru ,
+        "stupeň 2"@sk ,
+        "Kat 2"@tr ,
+        "第二阶"@zh ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Stage3>
     skos:prefLabel
+        "Mərtəbə 3"@az ,
+        "Tercer estatge"@ca ,
+        "stupeň 3"@cs ,
         "Stufe 3"@de ,
         "Stage 3"@en ,
-        "Piso 3"@es-ES ,
+        "Piso 3"@es ,
+        "Piso 3"@es-a ,
+        "3 Estai"@eu ,
+        "Vaihe 3"@fi ,
+        "Étage 3"@fr ,
+        "3. emelet"@hu ,
         "Jenjang 3"@id ,
         "Piano 3"@it ,
-        "3 aukštas"@lt ;
+        "ステージ 3"@ja ,
+        "제3절"@ko ,
+        "3 aukštas"@lt ,
+        "Etage 3"@nl ,
+        "Etage 3"@nl-be ,
+        "Etasje 3"@no ,
+        "Andar 3"@pt ,
+        "Andar 3"@pt-br ,
+        "Ярус 3"@ru ,
+        "stupeň 3"@sk ,
+        "Kat 3"@tr ,
+        "第三阶"@zh ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Stage4>
     skos:prefLabel
+        "Mərtəbə 4"@az ,
+        "Quart estatge"@ca ,
+        "stupeň 4"@cs ,
         "Stufe 4"@de ,
         "Stage 4"@en ,
-        "Piso 4"@es-ES ,
+        "Piso 4"@es ,
+        "Piso 4"@es-a ,
+        "4 Estai"@eu ,
+        "Vaihe 4"@fi ,
+        "Étage 4"@fr ,
+        "4. emelet"@hu ,
         "Jenjang 4"@id ,
         "Piano 4"@it ,
-        "4 aukštas"@lt ;
+        "ステージ 4"@ja ,
+        "제4절"@ko ,
+        "4 aukštas"@lt ,
+        "Etage 4"@nl ,
+        "Etage 4"@nl-be ,
+        "Etasje 4"@no ,
+        "Andar 4"@pt ,
+        "Andar 4"@pt-br ,
+        "Ярус 4"@ru ,
+        "stupeň 4"@sk ,
+        "Kat 4"@tr ,
+        "第四阶"@zh ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Statherian>
     skos:prefLabel
+        "Stater"@az ,
+        "Estaterià"@ca ,
+        "stather"@cs ,
         "Statherium"@de ,
         "Statherian"@en ,
-        "Estatérico"@es-ES ,
+        "Estatérico"@es ,
+        "Statheriano"@es-a ,
+        "Statheriar"@eu ,
+        "Stather"@fi ,
+        "Stathérien"@fr ,
+        "statheri"@hu ,
         "Statherian"@id ,
         "Statheriano"@it ,
-        "Stateras"@lt ;
+        "スタテリアン"@ja ,
+        "스타테로스기"@ko ,
+        "Stateras"@lt ,
+        "Statherium"@nl ,
+        "Statheriaan"@nl-be ,
+        "Stather"@no ,
+        "Staheriano"@pt ,
+        "Staheriano"@pt-br ,
+        "Статерская"@ru ,
+        "statér"@sk ,
+        "Stateriyen"@tr ,
+        "固结系"@zh ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Stenian>
     skos:prefLabel
+        "Sten"@az ,
+        "Estenià"@ca ,
+        "sten"@cs ,
         "Stenium"@de ,
         "Stenian"@en ,
-        "Esténico"@es-ES ,
+        "Esténico"@es ,
+        "Steniano"@es-a ,
+        "Steniar"@eu ,
+        "Sten"@fi ,
+        "Sténien"@fr ,
+        "steni"@hu ,
         "Stenian"@id ,
         "Steniano"@it ,
-        "Stenas"@lt ;
+        "ステニアン"@ja ,
+        "스테노스기"@ko ,
+        "Stenas"@lt ,
+        "Stenium"@nl ,
+        "Steniaan"@nl-be ,
+        "Sten"@no ,
+        "Steniano"@pt ,
+        "Steniano"@pt-br ,
+        "Стенская"@ru ,
+        "stén"@sk ,
+        "Steniyen"@tr ,
+        "狭带系"@zh ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Telychian>
     skos:prefLabel
+        "Teliç"@az ,
+        "Telychià"@ca ,
+        "telych"@cs ,
         "Telychium"@de ,
         "Telychian"@en ,
-        "Telychiense"@es-ES ,
+        "Telychiense"@es ,
+        "Telychiano"@es-a ,
+        "Telychiar"@eu ,
+        "Telych"@fi ,
+        "Télychien"@fr ,
+        "telychi"@hu ,
         "Telychian"@id ,
         "Telychiano"@it ,
-        "Telyčis"@lt ;
+        "テリチアン"@ja ,
+        "텔리치절"@ko ,
+        "Telyčis"@lt ,
+        "Telychien"@nl ,
+        "Telychiaan"@nl-be ,
+        "Telych"@no ,
+        "Telychiano"@pt ,
+        "Telychiano"@pt-br ,
+        "Теличский"@ru ,
+        "telych"@sk ,
+        "Telisiyen"@tr ,
+        "特列奇阶"@zh ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Terreneuvian>
     skos:prefLabel
+        "Terrenev"@az ,
+        "Terranovià"@ca ,
+        "terreneuv"@cs ,
         "Terreneuvium"@de ,
         "Terreneuvian"@en ,
-        "Terreneuviense"@es-ES ,
+        "Terreneuviense"@es ,
+        "Terreneuviano"@es-a ,
+        "Terreneuviar"@eu ,
+        "Terreneuve"@fi ,
+        "Terreneuvien"@fr ,
+        "terreneuvi"@hu ,
         "Terreneuvian"@id ,
         "Terreneuviano"@it ,
-        "Tereneuvis"@lt ;
+        "テレニュービアン"@ja ,
+        "테레누브세"@ko ,
+        "Tereneuvis"@lt ,
+        "Terreneuvien"@nl ,
+        "Terreneuviaan"@nl-be ,
+        "Terreneuv"@no ,
+        "Terreneuviano"@pt ,
+        "Terreneuviano"@pt-br ,
+        "Терреновский"@ru ,
+        "ternév"@sk ,
+        "Terrenöviyen"@tr ,
+        "纽芬兰统"@zh ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Thanetian>
     skos:prefLabel
+        "Tanet"@az ,
+        "Thanetià"@ca ,
+        "thanet"@cs ,
         "Thanetium"@de ,
         "Thanetian"@en ,
-        "Thanetiense"@es-ES ,
+        "Thanetiense"@es ,
+        "Thanetiano"@es-a ,
+        "Thanetiar"@eu ,
+        "Thanet"@fi ,
+        "Thanétien"@fr ,
+        "thaneti"@hu ,
         "Thanetian"@id ,
         "Thanetiano"@it ,
-        "Tanetis"@lt ;
+        "サネティアン"@ja ,
+        "타넷절"@ko ,
+        "Tanetis"@lt ,
+        "Thanetien"@nl ,
+        "Thanetiaan"@nl-be ,
+        "Thanet"@no ,
+        "Thanetiano"@pt ,
+        "Thanetiano"@pt-br ,
+        "Танетский"@ru ,
+        "tanet"@sk ,
+        "Tanesiyen"@tr ,
+        "坦尼特阶"@zh ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Tithonian>
     skos:prefLabel
+        "Titon"@az ,
+        "Titonià"@ca ,
+        "tithon"@cs ,
         "Tithonium"@de ,
         "Tithonian"@en ,
-        "Titoniense"@es-ES ,
+        "Titoniense"@es ,
+        "Titoniano"@es-a ,
+        "Tithoniar"@eu ,
+        "Titon"@fi ,
+        "Tithonien"@fr ,
+        "tithoni"@hu ,
         "Tithonian"@id ,
         "Titoniano"@it ,
-        "Titonis"@lt ;
+        "チトニアン"@ja ,
+        "티토누스절"@ko ,
+        "Titonis"@lt ,
+        "Tithonien"@nl ,
+        "Tithoniaan"@nl-be ,
+        "Tithon"@no ,
+        "Tithoniano"@pt ,
+        "Tithoniano"@pt-br ,
+        "Титонский"@ru ,
+        "titón"@sk ,
+        "Titoniyen"@tr ,
+        "提塘阶"@zh ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Toarcian>
     skos:prefLabel
+        "Toar"@az ,
+        "Toarcià"@ca ,
+        "toark"@cs ,
         "Toarcium"@de ,
         "Toarcian"@en ,
-        "Toarciense"@es-ES ,
+        "Toarciense"@es ,
+        "Toarciano"@es-a ,
+        "Toarciar"@eu ,
+        "Toarc"@fi ,
+        "Toarcien"@fr ,
+        "toarci"@hu ,
         "Toarcian"@id ,
         "Toarciano"@it ,
-        "Toaris"@lt ;
+        "トアルシアン"@ja ,
+        "토아르시움절"@ko ,
+        "Toaris"@lt ,
+        "Toarcien"@nl ,
+        "Toarciaan"@nl-be ,
+        "Toarc"@no ,
+        "Toarciano"@pt ,
+        "Toarciano"@pt-br ,
+        "Тоарский"@ru ,
+        "toark"@sk ,
+        "Toarsiyen"@tr ,
+        "托阿尔阶"@zh ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Tonian>
     skos:prefLabel
+        "Toni"@az ,
+        "Tonià"@ca ,
+        "ton"@cs ,
         "Tonium"@de ,
         "Tonian"@en ,
-        "Tónico"@es-ES ,
+        "Tónico"@es ,
+        "Toniano"@es-a ,
+        "Toniar"@eu ,
+        "Ton"@fi ,
+        "Tonien"@fr ,
+        "toni"@hu ,
         "Tonian"@id ,
         "Toniano"@it ,
-        "Tonas"@lt ;
+        "トニアン"@ja ,
+        "토노스기"@ko ,
+        "Tonas"@lt ,
+        "Tonium"@nl ,
+        "Toniaan"@nl-be ,
+        "Ton"@no ,
+        "Toniano"@pt ,
+        "Toniano"@pt-br ,
+        "Тонская"@ru ,
+        "tón"@sk ,
+        "Toniyen"@tr ,
+        "拉伸系"@zh ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Tortonian>
     skos:prefLabel
+        "Torton"@az ,
+        "Tortonià"@ca ,
+        "torton"@cs ,
         "Tortonium"@de ,
         "Tortonian"@en ,
-        "Tortoniense"@es-ES ,
+        "Tortoniense"@es ,
+        "Tortoniano"@es-a ,
+        "Tortoniar"@eu ,
+        "Tortona"@fi ,
+        "Tortonien"@fr ,
+        "tortonai"@hu ,
         "Tortonian"@id ,
         "Tortoniano"@it ,
-        "Tortonis"@lt ;
+        "トートニアン"@ja ,
+        "토르토나절"@ko ,
+        "Tortonis"@lt ,
+        "Tortonien"@nl ,
+        "Tortoniaan"@nl-be ,
+        "Tortona"@no ,
+        "Tortoniano"@pt ,
+        "Tortoniano"@pt-br ,
+        "Тортонский"@ru ,
+        "tortón"@sk ,
+        "Tortoniyen"@tr ,
+        "托尔托纳阶"@zh ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Tournaisian>
     skos:prefLabel
+        "Turne"@az ,
+        "Tournaisià"@ca ,
+        "tournai"@cs ,
         "Tournaisium"@de ,
         "Tournaisian"@en ,
-        "Tournaisiense"@es-ES ,
+        "Tournaisiense"@es ,
+        "Tournaisiano"@es-a ,
+        "Tournaisiar"@eu ,
+        "Tournai"@fi ,
+        "Tournaisien"@fr ,
+        "tournai"@hu ,
         "Tournaisian"@id ,
         "Tournaisiano"@it ,
-        "Turnėjis"@lt ;
+        "トルネーシアン"@ja ,
+        "투르네절"@ko ,
+        "Turnėjis"@lt ,
+        "Tournaisien"@nl ,
+        "Tournaisiaan"@nl-be ,
+        "Tournai"@no ,
+        "Tournaisiano"@pt ,
+        "Tournaisiano"@pt-br ,
+        "Турнейский"@ru ,
+        "turné"@sk ,
+        "Turneziyen"@tr ,
+        "杜内阶"@zh ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Tremadocian>
     skos:prefLabel
+        "Tremadok"@az ,
+        "Tremadocià"@ca ,
+        "tremadok"@cs ,
         "Tremadocium"@de ,
         "Tremadocian"@en ,
-        "Tremadociense"@es-ES ,
+        "Tremadociense"@es ,
+        "Tremadociano"@es-a ,
+        "Tremadociar"@eu ,
+        "Tremadoc"@fi ,
+        "Trémadocien"@fr ,
+        "tremadoci"@hu ,
         "Tremadocian"@id ,
         "Tremadociano"@it ,
-        "Tremadokis"@lt ;
+        "トレマドキアン"@ja ,
+        "트레마독절"@ko ,
+        "Tremadokis"@lt ,
+        "Tremadocien"@nl ,
+        "Tremadociaan"@nl-be ,
+        "Tremadoc"@no ,
+        "Tremadociano"@pt ,
+        "Tremadociano"@pt-br ,
+        "Тремадокский"@ru ,
+        "tremadok"@sk ,
+        "Tremadosiyen"@tr ,
+        "特马豆克阶"@zh ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Triassic>
     skos:prefLabel
+        "Trias"@az ,
+        "Triàsic"@ca ,
+        "trias"@cs ,
         "Trias"@de ,
         "Triassic"@en ,
-        "Triásico"@es-ES ,
+        "Triásico"@es ,
+        "Triásico"@es-a ,
+        "Triasiko"@eu ,
+        "Trias"@fi ,
+        "Trias"@fr ,
+        "triász"@hu ,
         "Trias"@id ,
         "Triassico"@it ,
-        "Triasas"@lt ;
+        "三畳系／紀"@ja ,
+        "트라이아스기"@ko ,
+        "Triasas"@lt ,
+        "Trias"@nl ,
+        "Trias"@nl-be ,
+        "Trias"@no ,
+        "Triássico"@pt ,
+        "Triássico"@pt-br ,
+        "Триасовая"@ru ,
+        "trias"@sk ,
+        "Triyas"@tr ,
+        "三 叠 系"@zh ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Turonian>
     skos:prefLabel
+        "Turon"@az ,
+        "Turonià"@ca ,
+        "turon"@cs ,
         "Turonium"@de ,
         "Turonian"@en ,
-        "Turoniense"@es-ES ,
+        "Turoniense"@es ,
+        "Turoniano"@es-a ,
+        "Turoniar"@eu ,
+        "Turonia"@fi ,
+        "Turonien"@fr ,
+        "turoni"@hu ,
         "Turonian"@id ,
         "Turoniano"@it ,
-        "Turonis"@lt ;
+        "チューロニアン"@ja ,
+        "투로니아절"@ko ,
+        "Turonis"@lt ,
+        "Turonien"@nl ,
+        "Turoniaan"@nl-be ,
+        "Turon"@no ,
+        "Turoniano"@pt ,
+        "Turoniano"@pt-br ,
+        "Туронский"@ru ,
+        "turón"@sk ,
+        "Turoniyen"@tr ,
+        "土伦阶"@zh ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Valanginian>
     skos:prefLabel
+        "Valanjin"@az ,
+        "Valanginià"@ca ,
+        "valangin"@cs ,
         "Valanginium"@de ,
         "Valanginian"@en ,
-        "Valanginiense"@es-ES ,
+        "Valanginiense"@es ,
+        "Valanginiano"@es-a ,
+        "Valanginiar"@eu ,
+        "Valangin"@fi ,
+        "Valanginien"@fr ,
+        "valangini"@hu ,
         "Valanginian"@id ,
         "Valanginiano"@it ,
-        "Valendis"@lt ;
+        "バランジニアン"@ja ,
+        "발랑절"@ko ,
+        "Valendis"@lt ,
+        "Valanginien"@nl ,
+        "Valanginiaan"@nl-be ,
+        "Valangin"@no ,
+        "Valanginiano"@pt ,
+        "Valanginiano"@pt-br ,
+        "Валанжинский"@ru ,
+        "valanžin"@sk ,
+        "Valanjiniyen"@tr ,
+        "瓦兰今阶"@zh ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Visean>
     skos:prefLabel
+        "Vize"@az ,
+        "Viseà"@ca ,
+        "visé"@cs ,
         "Viseum"@de ,
         "Visean"@en ,
-        "Viseense"@es-ES ,
+        "Viseense"@es ,
+        "Viseano"@es-a ,
+        "Visear"@eu ,
+        "Vise"@fi ,
+        "Viséen"@fr ,
+        "viséi"@hu ,
         "Visean"@id ,
         "Viseano"@it ,
-        "Vizėjis"@lt ;
+        "ビゼーアン"@ja ,
+        "비제절"@ko ,
+        "Vizėjis"@lt ,
+        "Viséen"@nl ,
+        "Viseaan"@nl-be ,
+        "Visé"@no ,
+        "Viseano"@pt ,
+        "Viseano"@pt-br ,
+        "Визейский"@ru ,
+        "visé"@sk ,
+        "Vizeyen"@tr ,
+        "维宪阶"@zh ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Wenlock>
     skos:prefLabel
+        "Venlok"@az ,
+        "Wenlockià"@ca ,
+        "wenlock"@cs ,
         "Wenlock"@de ,
         "Wenlock"@en ,
-        "Wenlock"@es-ES ,
+        "Wenlock"@es ,
+        "Wenlockiano"@es-a ,
+        "Wenlock"@eu ,
+        "Wenlock"@fi ,
+        "Wenlock"@fr ,
+        "wenlocki"@hu ,
         "Wenlock"@id ,
         "Wenlock"@it ,
-        "Uenlokis"@lt ;
+        "ウェンロック"@ja ,
+        "웬록세"@ko ,
+        "Uenlokis"@lt ,
+        "Wenlock"@nl ,
+        "Wenlock"@nl-be ,
+        "Wenlock"@no ,
+        "Wenlock"@pt ,
+        "Wenlock"@pt-br ,
+        "Венлокский"@ru ,
+        "venlok"@sk ,
+        "Venlok"@tr ,
+        "温洛克统"@zh ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Wordian>
     skos:prefLabel
+        "Vord"@az ,
+        "Wordià"@ca ,
+        "word"@cs ,
         "Wordium"@de ,
         "Wordian"@en ,
-        "Wordiense"@es-ES ,
+        "Wordiense"@es ,
+        "Wordiano"@es-a ,
+        "Wordiar"@eu ,
+        "Word"@fi ,
+        "Wordien"@fr ,
+        "wordi"@hu ,
         "Wordian"@id ,
         "Wordiano"@it ,
-        "Vordis"@lt ;
+        "ウォーディアン"@ja ,
+        "워드절"@ko ,
+        "Vordis"@lt ,
+        "Wordien"@nl ,
+        "Wordiaan"@nl-be ,
+        "Word"@no ,
+        "Wordiano"@pt ,
+        "Wordiano"@pt-br ,
+        "Вордский"@ru ,
+        "word"@sk ,
+        "Vordiyen"@tr ,
+        "沃德阶"@zh ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Wuchiapingian>
     skos:prefLabel
+        "Vuçiapinq"@az ,
+        "Wuchiapingià"@ca ,
+        "wuchiaping"@cs ,
         "Wuchiapingium"@de ,
         "Wuchiapingian"@en ,
-        "Wuchiapingiense"@es-ES ,
+        "Wuchiapingiense"@es ,
+        "Wuchiapingiano"@es-a ,
+        "Wuchiapingiar"@eu ,
+        "Wuchiaping"@fi ,
+        "Wuchiapingien"@fr ,
+        "wuchiapingi"@hu ,
         "Wuchiapingian"@id ,
         "Wuchiapingiano"@it ,
-        "Vučiapingis"@lt ;
+        "ウーチャーピンジアン"@ja ,
+        "우지아핑절"@ko ,
+        "Vučiapingis"@lt ,
+        "Wuchiapingien"@nl ,
+        "Wuchiapingiaan"@nl-be ,
+        "Wujiaping"@no ,
+        "Wuchiapingiano"@pt ,
+        "Wuchiapingiano"@pt-br ,
+        "Вучапинский"@ru ,
+        "wutiapching"@sk ,
+        "Vuçepingiyen"@tr ,
+        "吴家坪阶"@zh ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Wuliuan>
     skos:prefLabel
+        "Vuliu"@az ,
+        "Wuliuà"@ca ,
+        "wuliuan"@cs ,
         "Stufe 5"@de ,
         "Wuliuan"@en ,
-        "Wuliuense"@es-ES ,
+        "Wuliuense"@es ,
+        "Wuliuano"@es-a ,
+        "5 Estai"@eu ,
+        "Wuliu"@fi ,
+        "Wuliuen"@fr ,
+        "wuliui"@hu ,
         "Wuliuan"@id ,
         "Wuliuano"@it ,
-        "Vulujis"@lt ;
+        "ウリューアン"@ja ,
+        "울리우절"@ko ,
+        "Vulujis"@lt ,
+        "Wuliuien"@nl ,
+        "Wuliuaan"@nl-be ,
+        "Wuliu"@no ,
+        "Wuliuano"@pt ,
+        "Wuliuano"@pt-br ,
+        "Ярус 5"@ru ,
+        "wuliu"@sk ,
+        "Vuliuyan"@tr ,
+        "乌溜阶"@zh ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Ypresian>
     skos:prefLabel
+        "İpr"@az ,
+        "Ipresià"@ca ,
+        "ypres"@cs ,
         "Ypresium"@de ,
         "Ypresian"@en ,
-        "Ypresiense"@es-ES ,
+        "Ypresiense"@es ,
+        "Ypresiano"@es-a ,
+        "Ypresiar"@eu ,
+        "Ypres"@fi ,
+        "Yprésien"@fr ,
+        "ypresi"@hu ,
         "Ypresian"@id ,
         "Ypresiano"@it ,
-        "Ypris"@lt ;
+        "イプレシアン"@ja ,
+        "이퍼르절"@ko ,
+        "Ypris"@lt ,
+        "Ypresien"@nl ,
+        "Ypresiaan"@nl-be ,
+        "Ypres"@no ,
+        "Ypresiano"@pt ,
+        "Ypresiano"@pt-br ,
+        "Ипрский"@ru ,
+        "ypres"@sk ,
+        "İpresiyen"@tr ,
+        "伊普里斯阶"@zh ;
 .
 
 <http://resource.geosciml.org/classifier/ics/ischart/Zanclean>
     skos:prefLabel
+        "Zankl"@az ,
+        "Zanclià"@ca ,
+        "zancl"@cs ,
         "Zancleum"@de ,
         "Zanclean"@en ,
-        "Zancliense"@es-ES ,
+        "Zancliense"@es ,
+        "Zancliano"@es-a ,
+        "Zanclear"@eu ,
+        "Zancle"@fi ,
+        "Zancléen"@fr ,
+        "zanclei"@hu ,
         "Zanclean"@id ,
         "Zancleano"@it ,
-        "Zanklis"@lt ;
+        "ザンクリアン"@ja ,
+        "장클레절"@ko ,
+        "Zanklis"@lt ,
+        "Zancléen"@nl ,
+        "Zancleaan"@nl-be ,
+        "Zancle"@no ,
+        "Zancleano"@pt ,
+        "Zancleano"@pt-br ,
+        "Занклский"@ru ,
+        "zankl"@sk ,
+        "Zankliyen"@tr ,
+        "赞克勒阶"@zh ;
 .
 
 <http://resource.geosciml.org/ontology/gssp/GSSA>
     skos:prefLabel
+        "GSSP"@az ,
+        "GSSP"@ca ,
+        "GSSP"@cs ,
         "GSSP"@de ,
         "GSSP"@en ,
-        "GSSP"@es-ES ,
+        "GSSP"@es ,
+        "GSSP"@es-a ,
+        "GSSP"@eu ,
+        "GSSP"@fi ,
+        "GSSP"@fr ,
+        "GSSP"@hu ,
         "GSSP"@id ,
         "GSSP"@it ,
-        "GSSP"@lt ;
+        "GSSP"@ja ,
+        "GSSP"@ko ,
+        "GSSP"@lt ,
+        "GSSP"@nl ,
+        "GSSP"@nl-be ,
+        "GSSP"@no ,
+        "GSSP"@pt ,
+        "GSSP"@pt-br ,
+        "GSSP"@ru ,
+        "GSSP"@sk ,
+        "GSSP"@tr ,
+        "GSSP"@zh ;
 .
 
 <http://resource.geosciml.org/ontology/gssp/GSSP>
     skos:prefLabel
+        "GSSA"@az ,
+        "GSSA"@ca ,
+        "GSSA"@cs ,
         "GSSA"@de ,
         "GSSA"@en ,
-        "GSSA"@es-ES ,
+        "GSSA"@es ,
+        "GSSA"@es-a ,
+        "GSSA"@eu ,
+        "GSSA"@fi ,
+        "GSSA"@fr ,
+        "GSSA"@hu ,
         "GSSA"@id ,
         "GSSA"@it ,
-        "GSSA"@lt ;
+        "GSSA"@ja ,
+        "GSSA"@ko ,
+        "GSSA"@lt ,
+        "GSSA"@nl ,
+        "GSSA"@nl-be ,
+        "GSSA"@no ,
+        "GSSA"@pt ,
+        "GSSA"@pt-br ,
+        "GSSA"@ru ,
+        "GSSA"@sk ,
+        "GSSA"@tr ,
+        "GSSA"@zh ;
 .
 
 <http://resource.geosciml.org/ontology/ics-visual-chart/Blurb>
     skos:prefLabel
+        """Qlobal Standard Stratiqrafik Yaşlar (Global Standard Stratigraphic Ages – GSSA) tərəfindən əvvəl təyin edilmiş Arxey və Proterozoy eraları daxil olmaqla, Stratotip Kəsilişlərin Qlobal Sərhədləri və Nöqtələri (Global Boundary Stratotype Section and Points – GSSP) tərəfindən təyin edilən bütün geoxronoloji vahidlərinin alt sərhədləri daimi dəqiqləşdirilir. Təsdiq edilmiş Yarımşöbələr / Yarımepoxalar Ü/G (Üst/Gec), O (Orta) və A/E (Alt/Erkən) olaraq qısaldılmışdır. Kursiv şriftlər qeyri-rəsmi vahidləri və adsız vahidlər üçün istifadə olunan müvəqqəti əvəzediciləri işarələyir. Əvvəlki versiyalar və təsdiqlənmiş GSSP-lər haqqında ətraflı məlumat http://www.stratigraphy.org saytında mövcuddur. Şkalanın keçidi aşağıda göstərilib.
+
+Sərhədlərin geoxronoloji yaşları daimi dəqiqləşdirilir və Fanerozoy ilə Ediakaranın bölgü vahidlərini təsdiq etmir, bunu yalnız GSSP edə bilər. Fanerozoyda GSSP tərəfindən təsdiqlənməyən və ya hesablanmış geoxronoloji dəyərləri olmayan sərhədlər üçün təxmini ədəd (~) göstərilir.
+
+Yaş dəyərlərinin əksəriyyəti “A Geologic Time Scale 2020”-dən (Gradstein et al., 2020) götürülüb, lakin bəzi yaş vahidləri münasib altkomissiyaların (Timescale Calibration subcommission, ICS subcommissions) tövsiyəsi ilə fərqlənir. Bu yaş vahidləri BSK (ICS) heyəti tərəfindən cari konsensus kimi təsdiqlənmişdir.
+
+Şkalanın rəngləri Ümumdünya Geoloji Xəritə Komissiyasının (Commission for the Geological Map of the World (www.ccgm.org)) qaydalarına uyğundur.
+
+Şkalanı tərtib edənlər: K.M. Cohen, D.A.T. Harper, P.L. Gibbard, N. Car.
+
+Bu şkala keçmiş və indiki bütün BSK kollektivinin üzvlərinin birgə əməyinin nəticəsidir.
+
+(c) Beynəlxalq Stratiqrafiya Komissiyası (International Commission on Stratigraphy), Dekabr 2024
+
+Keçid: http://www.stratigraphy.org/ICSchart/ChronostratChart2024-12.pdf
+
+İstinad üçün: Cohen, K.M., Finney, S.C., Gibbard, P.L. və Fan, J.-X. (2013; yenilənmiş) ICS Beynəlxalq Xronostratiqrafik Cədvəli. Episodes 36: 199–204."""@az ,
+        """Els límits inferiors de les unitats de tots els rangs es troben actualment en procés de ser definits com a Estratotips Globals de Límit (GSSP - Global Boundary Stratotype Section and Point), incloses les de l'Arqueà i el Proterozoic que, per convenció, havien estat definits cronomètricament segons edats numèriques absolutes (GSSA-Global Standard Stratigraphic Ages). Hom pot trobar la taula original i la informació detallada sobre els GSSP ratificats a http://www.stratigraphy.org.
+
+Les edats numèriques (Ma) estan subjectes a revisió i no defineixen unitats en el Fanerozoic ni en I’Ediacarià. Això només ho fan els GSSP. Pel que fa als límits d'aquelles unitats del Fanerozoic que encara no tenen un GSSP ratificat, o dels quals no es disposa d'una edat numèrica acotada, la taula dona una edat numèrica aproximada (~).
+
+Les Subsèries/Subèpoques ratificades s’abrevien com S/T (Superior/Tardà), M (Mitjà) i I/P (Inferior/Primerenc). Les edats numèriques de tots els sistemes, excepte el Quaternari, el Paleogen superior, el Cretaci, el Juràssic, el Triàsic, el Permià i el Precambrià provenen de “A Geologic Time Scale 2012” de Gradstein et al. (2012). Les del Quaternari, Paleogen superior, Cretaci, Juràssic, Triàsic, Permià, Cambrià i Precambrià són aportacions originals de les subcomissions respectives de la ICS (Int. Commission on Stratigraphy).
+
+Taula dissenyada per K.M. Cohen, D.A.T. Harper, P.L. Gibbard, N. Car © Comissió Internacional d’Estratigrafia (IUGS), Setembre 2023.
+
+Citacio: Cohen, K.M., Finney, S.C., Gibbard, P.L., y Fan, J.-X. (2013; actualilzat) The ICS Intemational Chronostratigraphic Chart. Episodes 36: 199-204.
+
+Traducció al català per iniciativa de Juan Carlos Gutiérrez-Marco (CSIC).
+
+http://www.stratigraphy.org/ICSchart/ChronostratChart2023-09Catalan.pdf """@ca ,
+        """Postupně se pracuje na tom, aby všechny jednotky byly definovány svými spodními hranicemi na globálních stratotypech (GSSP - Global Boundary Stratotype Section and Point). To platí i pro jednotky archaika a proterozoika, dosud definované globálním standardním stratigrafickým stářím (GSSA - Global Standard Stratigraphic Age). Neformální jednotky a jednotky doposud nepojmenované jsou psány kurzívou. Další verze tabulky a detailní informace o ratifikovaných GSSP jsou dostupné na webu http://www.stratigraphy.org. URL této tabulky je uveden níže.
+
+Absolutní stáří jsou průběžně revidována a nedefinují jednotky ve fanerozoiku a ediakaru, kde jsou rozhodující pouze GSSP. Pro absolutního stáří hranic fanerozoických jednotek bez ratifikovaného GSSP nebo bez přesného absolutního datování je použit symbol (~).
+
+Označení schválených pododdělení/podepoch jsou v tabulce zkrácena na sp/sta (spodní/starší), stř (střední) a sv/ml (svrchní/mladší). Absolutní stáří jednotek jsou převzata z Gradstein et al. (2012) ‘A Geologic Time Scale 2012’, s výjimkou kvartéru, svrchního paleogénu, křídy, jurský, triasu, permu a prekambria, pro něž byla data poskytnuta příslušnými ICS subkomisemi.
+
+Barvy jednotek převzaty podle Komise pro geologickou mapu světa (Commission for the Geological Map of the World; www.ccgm.org).
+
+Návrh originální tabulky v angličtině: K.M. Cohen, D.A.T. Harper, P.L. Gibbard, N. Car (c) Mezinárodní stratigrafická komise, září 2023
+
+Způsob citace původní tabulky: Cohen, K.M., Finney, S.C., Gibbard, P.L. & Fan, J.-X. (2013; updated) The ICS International Chronostratigraphic Chart. Episodes 36:199-204
+
+URL: http://www.stratigraphy.org/ICSchart/ChronostratChart2023-09Czech.pdf"""@cs ,
         """Einheiten aller hierarchischen Ebenen folgen dem Prinzip der Globalen Grenz-Stratotypprofilen und Punkten (GSSP, Global Boundary Stratotype Section and Points) für die Definition ihrer Untergrenzen, inklusive jener des Archaikum und Proterozoikum, die bisher durch Globale Stratigraphische Standardalter (GSSA) definiert wurden. Ratifizierte Subserien/Subepochen werden duch U/F (Unteres/Frühes), M (Mittel) und O/S (Oberes/Spätes) abgekürzt. Kursive Schrift
 indiziert informelle oder unbenannte Einheiten.
 
@@ -1607,7 +4669,7 @@ Zitierweise: Cohen, K.M., Finney, S.C., Gibbard, P.L. & Fan, J.-X. (2013; aktual
 
 Version in Deutsch: Österreichische Kommission fur Stratigraphie (ASC, W. Piller), Deutsche Stratigraphische Kommission (DSK, R.T. Becker)
 
-URL: https://stratigraphy.org/chart"""@de ,
+URL: http://www.stratigraphy.org/ICSchart/ChronostratChart2024-12German.pdf"""@de ,
         """Units of all ranks are in the process of being defined by Global Boundary Stratotype Section and Points (GSSP) for their lower boundaries, including those of the Archean and Proterozoic, long defined by Global Standard Stratigraphic Ages (GSSA). Ratified Subseries/Subepochs are abbreviated as U/L (Upper/Late), M (Middle) and L/E (Lower/Early). Italic fonts indicate informal units and placeholders for unnamed units. Previous versions and detailed information on ratified GSSPs are available at the website http://www.stratigraphy.org. The URL to this chart is provided below.
 
 Numerical ages are subject to ongoing revision and do not define units in the Phanerozoic and the Ediacaran; only GSSPs do. For boundaries in the Phanerozoic without ratified GSSPs or without constrained numerical ages, an approximate numerical age (~) is provided.
@@ -1625,13 +4687,76 @@ URL: https://stratigraphy.org/chart"""@en ,
 
 Las edades absolutas, expresadas en millones de años (Ma), son sólo orientativas, pues las unidades del Fanerozoico y el Ediacárico se definen formalmente por sus correspondientes GSSP. No obstante, para aquellas divisiones que no cuentan aún con un estratotipo global o con edades bien establecidas, se indican las dataciones aproximadas (~ Ma) de sus límites. La mayoría de edades numéricas proceden de Gradstein et al. (A Geologic Time Scale 2020), sumando también las proporcionadas por Subcomisiones relevantes con la opinión favorable de la Subcomisión de Calibración de la Escala de Tiempo y el consenso de la ejecutiva de la Comisión Internacional de Estratigrafía.
 
-Tabla diseñada y mantenida online por K.M. Cohen y N. Car (ICS).
-Obra colectiva de todos los miembros anteriores y actuales de la ICS.
-© International Commission on Stratigraphy (IUGS), Diciembre 2024
+Tabla diseñada y mantenida online por K.M. Cohen y N. Car (ICS). Obra colectiva de todos los miembros anteriores y actuales de la ICS. © International Commission on Stratigraphy (IUGS), Diciembre 2024
 
-Citar como: Cohen, K.M., Harper, D., Gibbard, P. & Car, N. (2025). The ICS International Chronostratigraphic Chart this decade. Episodes 48: 105-115.
+Citar como: Cohen, K.M., Harper, D., Gibbard, P. & Car, N. (2025). The ICS International Chronostratigraphic Chart this decade. Episodes 48: 105-115. 
 
-https://www.stratigraphy.org/ICSchart/ChronostratChart2024-12Spanish.pdf"""@es-ES ,
+https://www.stratigraphy.org/ICSchart/ChronostratChart2024-12Spanish.pdf"""@es ,
+        """La definición del Estratotipo Global de Límite (GSSP–Global Boundary Stratotype Section and Point) para la base de las unidades de los diversos rangos no se ha completado. Esto incluye también los estratotipos de límite correspondientes al Arqueano y Proterozoico, cuyas divisiones han estado tradicionalmente basadas en edades absolutas convencionales conocidas como Edades Estratigráficas Estándar Globales (GSSA–Global Standard Stratigraphic Ages). Las Subseries/Subépocas ratificadas se abrevian como S (Superior/Tardío), M (Medio) e I (Inferior/Temprano). Las unidades indicadas en cursiva corresponden a unidades informales y marcadores de posición para intervalos aún no nombrados. Las versiones anteriores de la tabla y la información detallada sobre los GSSP ratificados están disponibles en el sitio web http://www.stratigraphy.org. La URL para esta Tabla se proporciona más adelante.
+
+Las edades numéricas están sujetas a revisión y no definen unidades en el Fanerozoico ni en el Ediacariano; solo los GSSP lo hacen. Para los límites en el Fanerozoico que no tienen un GSSP formal o edades numéricas restringidas, se proporciona una edad numérica aproximada (~).
+
+La mayoría de las edades numéricas provienen de ‘A Geologic Time Scale 2020’ de Gradstein et al. (2020), aunque algunas difieren según lo establecido por las subcomisiones correspondientes de la ICS, con el asesoramiento de la Subcomisión de Calibración de la Escala Temporal. Estas edades han sido aprobadas por el comité ejecutivo de la ICS como el consenso vigente.
+
+Tabla elaborada y mantenida en línea por los responsables K.M. Cohen y N. Car. © International Commission on Stratigraphy (IUGS), diciembre de 2024
+
+Citar como: Cohen, K.M., Finney, S.C., Gibbard, P.L. y Fan, J.-X. (2013; actualizado) The ICS International Chronostratigraphic Chart. Episodes 36: 199-204.
+
+URL: http://www.stratigraphy.org/ICSchart/ChronostratChart2024-12SpanishAmer.pdf"""@es-a ,
+        """Kategoria guztietako unitateak definitzeko prozesuan daude beren beheko mugen muga-estratotipo globaleko ebaki eta puntuen bidez (GSSP-Global Boundary Stratotype Section and Point); baita Arkearrekoak eta
+Proterozoikokoak ere, denbora luzean adin estratigrafiko estandar globalez (GSSA-Global Standard Startigraphic Ages) definituak izan direnak. Taulak eta onetsitako GSSPen informazio xehea ondorengo web orrian eskuragarri daude: http://www.stratigraphy.org. Taula honen URLa behean adierazita dago.
+
+Adin numerikoak berrikusi egin daitezke eta ez dute unitaterik definitzen Fanerozoikoan eta Ediacararrean; soilik GSSPek definitzen dituzte unitateak. GSSPrik onetsita edo adin numeriko mugaturik ez duten mugentzako gutxi gorabeharko adin numeriko bat (~) eman da.
+
+Sistema guztien adin numerikoak, Behe Pleistozeno, Permiar, Triasiko, Kretazeo eta Kanbriarraurrekoak izan ezik, “A Geological Time Scale 2012” (Gradstein et al., 2012) argitalpenetik hartuak dira; Behe Pleistozeno, Permiar, Triasiko eta Kretazeokoak dagozkien ICSko azpibatzordeek emanak dira. 
+
+Taula hau K.M. Cohen, S.C. Finney eta P.L. Gibbard-ek diseinatu dute © International Commission on Stratigraphy (IUGS), 2015eko urtarrila
+
+Aipamena egiteko: Cohen, K.M., Finney, S.C., Gibbard, P.L. eta Fan, J.-X. (2013; eguneratua) The ICS International Chronostratigraphic Chart. Episodes 36: 199-204.
+
+http://www.stratigraphy.org/ICSchart/ChronostratChart2015-01Basque.pdf"""@eu ,
+        """Kaikkien stratigrafisten tasojen yksiköille määritetään alarajoja Global Boundary Stratotype Section and Points (GSSP) -periaatteen mukaisesti. Tämä koskee myös arkeeisten ja proterotsooisten yksiköiden rajoja, jotka on aikaisemmin määritetty Global Standard Stratigraphic Ages (GSSA) -periaatteen mukaan. Epäviralliset yksiköt on
+kirjoitettu kursiivilla. Aiemmat versiot ja yksityiskohtaiset tiedot ratifioitujen globaalien stratotyyppileikkausten alakontaktien maantieteellisistä sijainneista (GSSP-kohteista) on saatavana verkkosivustolla http://www.stratigraphy.org. Kaavion verkkosivun URL-osoite on annettu alla.
+
+Numeeriset iät saattavat muuttua eikä niillä määritetä fanerotsooisia eikä ediakaran yksiköitä; ne rajautuvat yksinomaan globaalien stratotyyppileikkausten alakontaktien (GSSP:t) perusteella. Fanerotsooisille yksikkörajoille annetaan ikäarvio (~), mikäli rajoilla ei ole ratifioitua GSSP:tä tai vahvistettua numeerista ikää.
+
+Ratifioidut sarjojen ja epookkien alajaot on lyhennetty Y/M (ylä-/myöhäis-), K (keski) ja A/V (ala-/varhais-). Kvartääriä, yläpaleogeenia, liitua, triasta, permiä ja prekambria lukuun ottamatta numeeriset iät on esitetty Gradstein et al. (2012) julkaisussa ”A Geologic Time Scale 2012”; kvartäärin, yläpaleogeenin, liidun, jura, triaksen, permin ja prekambrin iät on saatu asianomaisilta ICS:n alakomiteoilta.
+
+Väritys noudattaa Maailman geologisen karttakomission Geological Map of World (http://www.ccgm.org) värejä
+
+Taulun ovat laatineet K.M. Cohen, D.A.T. Harper, P.L. Gibbard, N. Car (c) International Commission on Stratigraphy, Syyskuu 2022
+
+Viittausohje: Cohen, K.M., Finney, S.C., Gibbard, P.L. & Fan, J.-X. (2013; updated) The ICS International Chronostratigraphic Chart. Episodes 36: 199-204.
+
+URL: http://www.stratigraphy.org/ICSchart/ChronostratChart2023-09Finnish.pdf"""@fi ,
+        """La définition de la limite inférieure de chaque unité formelle par un point précis dans la coupe d’un stratotype de limite global (GSSP-Global Boundary Stratotype Section and Points) est encore en cours, y compris celle des unités de l’Archéen et du Protérozoïque, auparavant définie par des âges absolus (GSSA-Global Standard Stratigraphic Ages). Les noms en italique indiquent des unités informelles et l’espace pour des unités à nommer.
+Les chartes et des informations plus détaillées sur les GSSP sont disponibles sur le site web de l’International Commission on Stratigraphy (ICS) www.stratigraphy.org.
+
+Les âges numériques sont sujets à révision et ne définissent pas les unités du Phanérozoïque et de l’Édicarien; seuls les GSSP le font. Pour les limites du Phanérozoïque qui n’ont pas de GSSP ratifiés ou des âges numériques calibrés, un âge numérique approximatif (~) est indiqué. Les sous-séries/-
+sous-époques ratifiées sont abbrégées par S (Supérieur), M (Moyen) et I (Inférieur). Les âges numériques de tous les systèmes à l’exception du Précambrien, Cambrien, Permien, Trias, Jurassique, Crétacé, Paléogène
+supérieur et Quaternaire sont tirés du livre A Geologic Time Scale 2012 par Gradstein et al. (2012); ceux Précambrien, Cambrien, Permien, Trias, Jurassique, Crétacé, Paléogène supérieur et Quaternaire ont été définis par les subcommissions de l’ICS.
+
+Les couleurs suivent les recommendations de la Commission de la Carte Géologique du Monde (www.ccgm.org)
+
+Chart faite par K.M. Cohen, D.A.T. Harper, P.L. Gibbard, N. Car (c) Commission Internationale de Stratigraphie, Septembre 2023
+
+Citation: Cohen, K.M., Finney, S.C., Gibbard, P..L. & Fan, J.X. (2013; updated) The ICS International Chronostratigraphic Chart. Episodes 36:199-204.
+
+URL: http://www.stratigraphy.org/ICSchart/ChronostratChart2023-09French.pdf"""@fr ,
+        """Bármely rendű egység alsó határának kijelölése globális határsztratotípus-szelvény és pont (GSSP) alapján történik, beleértve az archaikum és proterozoikum egységeit is, bár ezeket sokáig globális standard rétegtani korok (GSSA) útján definiálták. Az informális, valamint a még elnevezésre váró egységeket dőlt betű jelzi. A táblázat különböző verziói és a ratifikált GSSP-kre vonatkozó részletes információk a http://www.stratigraphy.org
+honlapról érhetők el. E táblázat webcímét lásd alább.
+
+A számszerű korok új kormeghatározási eredmények alapján változhatnak, de a fanerozoikum egységeinek és az ediacarainak a definíciójában nincs szerepük. A ratifikált GSSP-vel vagy megbízhatóan meghatározott számszerű korral nem rendelkező fanerozoikumi egységeknél közelítő számszerű kor (~) szerepel.
+
+A ratifikált alsorozatok/alkorok rövidítése f/k (felső/késő), k (középső) és a/k (alsó/kora). A számszerű korok forrása Gradstein et al. (2012) „A Geologic Time Scale 2012” c. műve, kivéve a kvarter, felső paleogén, kréta, jura, triász, perm és prekambrium egységeit, melyekhez a Nemzetközi Rétegtani Bizottság illetékes albizottságai szolgáltattak adatot. 
+
+A színek a Földtani Világtérkép Bizottság (CGMW) rendszerét követik. ( www.ccgm.org )
+
+A táblázat kidolgozói: K.M. Cohen, D.A.T. Harper, P.L. Gibbard, N. Car (c) Nemzetközi Rétegtani Bizottság (ICS), 2023. szeptember
+
+Javasolt idézés: Cohen, K.M., Finney, S.C., Gibbard, P.L. & Fan, J.-X. (2013; frissítve) The ICS International Chronostratigraphic Chart. Episodes 36: 199-204.
+
+Webcím: http://www.stratigraphy.org/ICSchart/ChronostratChart2023-09Hungarian.pdf"""@hu ,
         """Satuan untuk setiap kategori sedang didefinisikan berdasarkan Batas Global Penampang Stratotipe dan Titik (GSSP) untuk batas bawah, termasuk untuk Archean dan Proterozoikum, yang selama ini di definisikan oleh Standard Umur Stratigrafi Global (GSSA). Sub Jenjang/Sub Umur yang sah disingkat menjadi A (Atas/Akhir), T (Tengah) dan B (Bawah/Awal). Huruf miring menandakan satuan informal, dan menjadi tempat untuk memberikan unit yang belum dinamai. Versi lama dan informasi detil yang sah dari GSSP tersedia di website https://www.stratigraphy.org. Tautan untuk bagan ini tersedia di bawah.
 
 Angka-angka umur dapat berubah dan tidak mendefinisikan Phanerozoikum dan Ediacaran; hanya GSSP yang mendefinisikan. Batas-batas Phanerozoikum tanpa pengesahan GSSP atau tanpa batasan umur numerik, perkiraan umur numeriknya (~) dicantumkan.
@@ -1647,7 +4772,7 @@ Bagan digambar dan diperbaharui secara online oleh pengurus K.M. Cohen dan N. Ca
 Tulis sebagai referensi: Cohen, K.M., Harper, D., Gibbard, P. & Car, N. (2025).
 The ICS International Chronostratigraphic Chart this decade. Episodes 48:105-115
 
-URL: https://stratigraphy.org/chart"""@id ,
+URL: https://www.stratigraphy.org/ICSchart/ChronostratChart2024-12Indonesian.pdf """@id ,
         """Le unità stratigrafiche del Fanerozoico e dell'Ediacarano, sono state o sono in procinto di essere definite da GSSP (Global Boundary Stratotype Section and Points) tramite il loro limite inferiore. Le unità con età ≥ 1000 Ma, ovvero quelle dell'Archeano e del Proterozoico, sono al momento definite da GSSA (Global Stratigraphic Standard Ages). I nomi in corsivo identificano le unità informali, mentre le unità non ancora definite sono indicate con il nome generico del proprio rango. Schemi aggiornati e informazioni dettagliate sui GSSP ratificati sono disponibili sul sito web http://www.stratigraphy.org. Le datazioni numeriche sono oggetto di revisione e, a differenza dei GSSP, non definiscono unità nel Fanerozoico e nell’Ediacarano. Per le unità del Fanerozoico non definite da GSSP o senza un’età precisa, viene indicata un’età numerica approssimata (~). Le età numeriche per tutti i sistemi eccetto che per il Quaternario, il Paleogene superiore, il Cretacico, il Triassico, il Permiano, il Cambriano e il Precambriano sono prese da “A Geologic Time Scale 2012” di Gradstein et al. (2012), quelle per il Quaternario, il Paleogene superiore, il Cretacico, il Giurassico, il Triassico, il Permiano, il Cambriano e il Precambriano sono state fornite dalle relative sottocommissioni della ICS.
 
 I colori seguono le indicazioni della Commission for the Geological Map of the World (www.ccgm.org)
@@ -1659,6 +4784,38 @@ Da citare: Cohen, K.M., Finney, S.C., Gibbard, P.L. & Fan, J.-X. (2013; aggiorna
 Traduzione a cura della Commissione Italiana di Stratigrafia
 
 URL: https://stratigraphy.org/chart?language=it"""@it ,
+        """すべての階層の層序区分単位に対して，その下限をGSSPs（国際境界模式層断面とポイント）によって定義する作業が進行中である．これは，長らくGSSA（国際標準層序年代）によって定義されてきた太古（累）界および原生（累）界の下限に対しても同様である．GSSPsに関する図および詳細な情報は，ウェブサイト http://www.stratigraphy.org に掲載されている.
+
+本表に掲載されている年代値は見直されることがあるが，それは顕生（累）界およびエディアカラン系の層序区分単位の定義の変更を伴うものではない．そのような定義の変更は，GSSPsによってのみ可能である．GSSPsにより定義されていない境界や確定した年代値がない顕生（累）界の層序区分単位境界に対しては，おおよその年代値を「~」を付して示した．
+
+第四系，上部古第三系，白亜系，三畳系，ペルム系，カンブリア系，先カンブリア（累）界を除く全ての界の年代値は，Gradstein et al.（2012） の ‘The GeologicTime Scale 2012’による．第四系，上部古第三系，白亜系，三畳系，ペルム系，カンブリア系，先カンブリア（累）界の年代値に関しては，当該問題を扱う国際層序委員会の小委員会による．
+
+この日本語版ISC Chart（2023年6月版）は，IUGS（国際地質科学連合）の許諾を得て，日本地質学会が作成した．
+
+表の色は，国際地質図委員会（Commission for the Geological Map of the World (www.cgmw.org）の推奨に従う．
+
+図案 (オリジナル)・オンライン管理: K.M. Cohen, N. Car (c) 国際層序委員会，2024年12月
+
+引用: Cohen, K.M., Finney, S.C., Gibbard, P.L. & Fan, J.-X. (2013; updated) The ICS International Chronostratigraphic Chart. Episodes 36: 199-204.
+
+URL: https://stratigraphy.org/ICSchart/ChronostratChart2024-12Japanese.pdf"""@ja ,
+        """오랫동안 국제표준층서연령(GSSA)으로 지정된 시생누대와 원생누대의하부경계를 포함하여, 모든 지질시대의 하부경계에 대한국제표준층서구역(GSSP)을 지정하고 있는 중이다. 이탤릭체는 비공식적인지질시대나 이름이 붙여지지 않은 지질시대를 나타낸다. 이 표의 모든 버전과승인된 GSSP에 대한 자세한 정보는http://www.stratigraphy.org에서 찾아볼 수있다. 이 표의 URL은 아래에 적어 놓았다.
+
+수치연령은 수정될 수 있으며, 현생누대의 지질시대와 에디아카리기는수치연령이 아니라 GSSP에 의해서만 정의된다. GSSP가 승인되지 않았거나범위가 제한된 수치연령이 주어지지 않은 현생누대 지질시대의 경계에는수치연령의 근사값(~)을 적어 놓았다.
+
+대부분의 수치연령은 ‘Gradstein et al. (2020)의 ‘A Geologic Time Scale 2020’로부터 인용하였으나, 몇 개의 수치연령은 지질연대 보정 위원회의 권고에 따라해당 지질시대위원회에서 제공한 것과 다르게 표기되어있다. 국제층서위원회임원들은 이 수치연령을 현재 합의된 것으로 승인하였다.
+
+이 표의 색채는 세계지질도위원회(www.ccgm.org)를따랐다.
+
+(c) 국제층서위원회, 2024년 12월
+
+국제층서위원회 직원인 K.M. Cohen와 N. Car가 이 표의 초안을 작성하고온라인 상에서 표를 관리하고 있다.
+
+이 표는 현재와 과거 국제층서위원회 모든 구성원들의 집단적인 작업결과물이다.
+
+인용: Cohen, K.M., Finney, S.C., Gibbard, P.L. & Fan, J.-X. (2013; updated) The ICS International Chronostratigraphic Chart. Episodes 36: 199-204.
+
+URL: https://www.stratigraphy.org/ICSchart/ChronostratChart2024-12Korean.pdf"""@ko ,
         """Visų rangų padaliniai yra apibrėžti Globalinio stratotipo pjūvio apatinės ribos tašku (GSPT), o archėjaus ir proterozojaus padaliniai nusakomi Globalinio stratigrafinio amžiaus standartu (GSAS). Ratifikuotos subserijos/subepochos yra sutrumpintos kaip Ap/An (Apatinis / Ankstyvasis), Vid (Vidurinis) ir Vir/Vėl (Viršutinis / Vėlyvasis). Pasvirieji šriftai nurodo neoficialius padalinius ir laikinus bevardžius vienetus. Ankstesnės versijos ir išsami informacija apie ratifikuotus GSSP yra pateikti svetainėje http://www.stratigraphy.org.
 
 Fanerozojaus ir ediakaro absoliūtus amžiai yra nuolat peržiūrimi ir neapibrėžia padalinių; tik GSPT gali tai nustatyti. Apytikslis absoliutus amžius (~) pateikiamas fanerozojaus padalinių riboms be ratifikuotų GSPT arba be tikslaus amžiaus.
@@ -1673,235 +4830,799 @@ Schema yra visų, buvusių ir esamų, ICS narių kolektyvinis darbas.
 
 Cituoti: Cohen, K.M., Finney, S.C., Gibbard, P.L., ir Fan, J.-X. (2013; papildyta) The ICS International Chronostratigraphic Chart. Episodes 36: 199-204.
 
-URL: https://stratigraphy.org/chart"""@lt ;
+URL: http://www.stratigraphy.org/ICSchart/ChronostratChart2024-12Lithuanian.pdf"""@lt ,
+        """De ondergrens van eenheden van verschillende rang, wordt momenteel stapsgewijs gedefinieerd op basis van Global Boundary Stratotype Section and Points (GSSPs), ook die in het Archeïcum en het Proterozoïcum welke
+vooralsnog als Global Standard Stratigraphic Age (GSSA) vastgesteld zijn. Tabellen en nadere informatie over geratificeerde GSSPs zijn te vinden op www.stratigraphy.org. De URL van deze tabel is hieronder gegeven.
+
+Van eenheden met hun door een GSSP gedefinieerde ondergrens, wordt de veronderstelde ouderdom in Ma van tijd tot tijd herzien (naar nieuw inzicht bijgesteld). Voor Fanerozoïsche eenheden waarvoor nog geen GSSP en/of numerieke ouderdom is vastgesteld, is een ouderdom bij benadering gegeven (~).
+
+De ouderdommen in Ma zijn overgenomen uit ‘A Geological Time Scale 2012’ door Gradstein et al. (2012), met uitzondering van die voor het Precambrium, Cambrium, Perm, Trias, Jura, Krijt, boven Paleogeen en Kwartair, die afkomstig zijn van de betreffende ICS subcommissies.
+
+De kleuren volgen deze van de Commissie voor de Geologische Kaart van de Wereld www.ccgm.org
+
+Tabel opgesteld door K.M. Cohen, D.A.T. Harper, P.L. Gibbard & N. Car © International Commission on Stratigraphy, September 2023
+
+Citeren: Cohen, K.M., Finney, S.C., Gibbard, P.L. & Fan, J.-X. (2013; updated). The ICS International Chronostratigraphic Chart. Episodes 36: 199-204.
+
+URL: http://www.stratigraphy.org/ICSchart/ChronostratChart2023-09NLDutch.pdf"""@nl ,
+        """De ondergrens van eenheden van verschillende rang, wordt momenteel stapsgewijs gedefinieerd op basis van Global Boundary Stratotype Section and Points (GSSPs), ook die in het Archeïcum en het Proterozoïcum welke
+vooralsnog als Global Standard Stratigraphic Age (GSSA) vastgesteld zijn. Tabellen en nadere informatie over geratificeerde GSSPs zijn te vinden op www.stratigraphy.org. De URL van deze tabel is hieronder gegeven.
+
+Van eenheden met hun door een GSSP gedefinieerde ondergrens, wordt de veronderstelde ouderdom in Ma van tijd tot tijd herzien (naar nieuw inzicht bijgesteld). Voor Fanerozoïsche eenheden waarvoor nog geen GSSP en/of numerieke ouderdom is vastgesteld, is een ouderdom bij benadering gegeven (~).
+
+De ouderdommen in Ma zijn overgenomen uit ‘A Geological Time Scale 2012’ door Gradstein et al. (2012), met uitzondering van die voor het Precambrium, Cambrium, Perm, Trias, Jura, Krijt, boven Paleogeen en Quartair, die afkomstig zijn van de betreffende ICS subcommissies.
+
+De kleuren volgen deze van de Commissie voor de Geologische Kaart van de Wereld www.ccgm.org
+
+Tabel opgesteld door K.M. Cohen, D.A.T. Harper, P.L. Gibbard & N. Car © International Commission on Stratigraphy, September 2023
+
+Citeren: Cohen, K.M., Finney, S.C., Gibbard, P.L. & Fan, J.-X. (2013; updated). The ICS International Chronostratigraphic Chart. Episodes 36: 199-204.
+
+URL: http://www.stratigraphy.org/ICSchart/ChronostratChart2023-09BEDutch.pdf """@nl-be ,
+        """Det pågår nå en prosess der de nedre grensene for alle enhetene i tabellen defineres med Global Boundary Stratotype Section and Points (GSSP). Dette gjelder også for grensene i arkeikum og proterozoikum som lenge har vært definert med Global Standard Stratigraphical Ages (GSSA). Tabeller og detaljert informasjon om ratifiserte GSSP er tilgjengelig på websiden www.stratigraphy.org. Denne tabellens URL finnes nedenfor.
+
+Numeriske aldre underkastes revisjon og definerer ikke enheter i fanerozoikum og ediacara; kun ratifiserte GSSP gjelder. For grenser i fanerozoikum uten ratifisert GSSP eller kalibrerte numeriske aldere, er bare tilnærmete aldre (~) oppgitt.
+
+Numeriske aldre for alle systemer unntatt prekambrium, perm, trias, jura, kritt, øvre paleogen og kvartær er hentet fra ‘A Geological Time Scale 2012’ av Gradstein et al. (2012), mens de fra prekambrium, perm, trias, jura, kritt,
+øvre paleogen og kvartær er fremskaffet av de relevante underkomiteer i ICS.
+
+Fargeskalaen følger retningslinjene til The Commission for the Geological Map of the World www.ccgm.org
+
+Tabellen er tegnet av K.M. Cohen, D.A.T. Harper, P.L. Gibbard & J.-X. Fan © International Commission on Stratigraphy, Septemebr 2023
+
+Referanse: Cohen, K.M., Finney, S.C., Gibbard, P.L. & Fan, J.-X. (2013; updated). The ICS International Chronostratigraphic Chart. Episodes 36: 199-204.
+
+URL: http://www.stratigraphy.org/ICSchart/ChronostratChart2023-09Norwegian.pdf"""@no ,
+        """A definição do Estratotipo Global de Limite (GSSP - Global Boundary Stratotype Section and Point) para a base dos diversos andares, séries, sistemas e eratemas, é um processo ainda incompleto. O mesmo ocorre com os estratotipos de limite das unidades do Arqueano e Proterozoico, cuja divisão inicial é fundamentada numa convenção de idades absolutas (GSSA - Global Standard Stratigraphic Ages). Os GSSP oficiais estão assinalados com o símbolo do “Prego Dourado” (Golden Spike), que também os materializa no terreno.
+
+A Tabela original e os detalhes sobre os GSSP (critério de definição de cada um, localização geográfica e geológica, correlação, etc.), atualizam-se regularmente na web page: http://www.stratigraphy.org.
+
+A datação absoluta em milhões de anos (Ma) para a base do Ediacárico e das restantes unidades do Fanerozoico é apenas orientadora, em especial para os limites sem GSSP formal (~Ma). Estes valores poderão
+ser revistos no futuro ou serem recalibrados geocronometricamente. Os valores indicados são provenientes de Gradstein et al. (A Geologic Time Scale 2012), excetuando as datações do Pleistoceno, Paleógeno Superior, Cretáceo, Jurássico, Triássico, Permiano e Pré-Cambriano, fornecidas pelas subcomissões respetivas da ICS-IUGS.
+
+Tabela desenhada por K.M. Cohen, D.A.T. Harper, P.L. Gibbard e N. Car Setembro de 2023 © International Commission on Stratigraphy (IUGS)
+
+Citar: Cohen, K.M., Finney, S.C., Gibbard, P.L. & Fan, J.-X. (2013; atualizada) The ICS International chronostratigraphic Chart. Episodes 36: 199-204.
+
+http://www.stratigraphy.org/ICSchart/ChronostratChart2023-09PTPortuguese.pdf"""@pt ,
+        """A definição do Estratotipo Global de Limite (GSSP - Global Boundary Stratotype Section and Point) para a base dos diversos andares, séries, sistemas e eratemas, é um processo ainda incompleto. O mesmo ocorre com os estratotipos de limite das unidades do Arqueano e Proterozoico, cuja divisão inicial é fundamentada numa convenção de idades absolutas (GSSA - Global Standard Stratigraphic Ages). Os GSSP oficiais estão assinalados com o símbolo do “Prego Dourado” (Golden Spike), que também os materializa no terreno.
+
+A Tabela original e os detalhes sobre os GSSP (critério de definição de cada um, localização geográfica e geológica, correlação, etc.), atualizam-se regularmente na web page: http://www.stratigraphy.org.
+
+A datação absoluta em milhões de anos (Ma) para a base do Ediacárico e das restantes unidades do Fanerozoico é apenas orientadora, em especial para os limites sem GSSP formal (~Ma). Estes valores poderão
+ser revistos no futuro ou serem recalibrados geocronometricamente. Os valores indicados são provenientes de Gradstein et al. (A Geologic Time Scale 2012), excetuando as datações do Pleistoceno, Paleógeno Superior, Cretáceo, Jurássico, Triássico, Permiano e Pré-Cambriano, fornecidas pelas subcomissões respetivas da ICS-IUGS.
+
+Tabela desenhada por K.M. Cohen, D.A.T. Harper, P.L. Gibbard e N. Car Setembro de 2023 © International Commission on Stratigraphy (IUGS)
+
+Citar: Cohen, K.M., Finney, S.C., Gibbard, P.L. & Fan, J.-X. (2013; atualizada) The ICS International chronostratigraphic Chart. Episodes 36: 199-204.
+
+http://www.stratigraphy.org/ICSchart/ChronostratChart2023-09BRPortuguese.pdf"""@pt-br ,
+        """Нижние границы всех подразделений, определяемые Точкой глобального стратотипа границ (ТГСГ) постоянно уточняются, в том числе подразделения архея и протерозоя, давно определяемые геохронологическими данными (ГССВ /GSSA).
+
+Шкалы и подробная информация о ратифицированных GSSP доступна на сайте: http://www.stratigraphy.org. URL-адрес данной шкалы приводится ниже.
+
+Геохронологические возрасты границ постоянно уточняются и не определяют поразделения фанерозоя и эдиакария, которые фиксируются только через GSSP. Для границ в фанерозое, которые не имеют ратифицированных GSSP или рассчитанных геохронологических оценок, указано приблизительное значение (~).
+
+Оценки возрастов для всех систем, за исключением раннего плейстоцена, мелового, триасового, пермского периодов и докембрия приведены по «A Geologic Time Scale 2012» (Gradstein et al., 2012);
+а для указанных выше систем представлены соответствующими подкомиссиями ICS.
+
+Цвета шкалы соответствуют требованиям Комиссии по геологической карте Мира (http://ccgm.org/)
+
+Шкала представлена K.M. Cohen, D.A.T. Harper, P.L. Gibbard (с) Международная комиссия по стратиграфии, февраль 2017 г
+
+Цитировать: Cohen, K.M., Finney, S.C., Gibbard, P.L. & Fan, J.-X. (2013; с дополнениями) The ICS International Chronostratigraphic Chart. Episodes 36: 199-204.
+
+URL: http://www.stratigraphy.org/ICSchart/ChronostratChart2017-02Russian.pdf"""@ru ,
+        """Spodné hranice všetkých rádov sú definované na základe stratotypových profilov a bodov globálnych hraníc (GSSP) vrátane archaických a peroterozoických, ktoré sú definované na základe globálnych štandardných
+stratigrafických vekov (GSSA). Názvy písané kurzívou predstavujú neformálne jednotky a miesta pre doteraz nepomenované jednotky. Tabuľky s aktualizovanými verziami a podrobné informácie o ratifikovaných GSSP sú dostupné na webovej stránke http://www.stratigraphy.org URL adresa tejto tabuľky je uvedená dolu.
+
+Numerické veky sú predmetom revízie a na rozdiel od GSSP nedefinujú jednotky fanerozoika a ediakaru. Pre hranice fanerozoických stupňov bez ratifikovaných GSSP alebo bez definovaného numerického veku, je použitý
+približný numerický vek (~).
+
+Ratifikované pododdelenia/podepochy sú skrátene označené v./m. (vrchný/mladší), str. (stredný) a sp./st. (spodný/starší). Numerické veky pri všetkých útvaroch okrem kvartéru, vrchného paleogénu, kriedy, triasu, permu
+a predkambria sú prevzaté z práce Gradstein et al. (2012) A Geologic Time Scale 2012. Kvartérne, vrchnopaleogénne, kriedové, jurský, triasové, permské a predkambrické veky poskytli príslušné subkomisie ICS.
+
+Farby podľa Komisie pre geologickú mapu sveta (www.ccgm.org)
+
+Anglickú tabuľku nakreslili K.M. Cohen, D.A.T. Harper, P.L. Gibbard a N. Car (c) Medzinárodná stratigrafická komisia, septembra 2023
+
+Citovať ako: Cohen, K.M., Finney, S.C., Gibbard, P.L. & Fan, J.-X. (2013; updated) The ICS International Chronostratigraphic Chart. Episodes 36
+
+URL: http://www.stratigraphy.org/ICSchart/ChronostratChart2023-09Slovak.pdf"""@sk ,
+        """Bütün kademelerin birimlerinin alt sınırları Küresel Stratotip Kesit ve Noktaların Sınırları (GSSP) kapsamında tanımlanmıştır ve buna Küresel Standart Stratigrafik Yaşlar (GSSA) tarafından uzun zamandır tanımlanan Arkeen ile Proterozoyik de dâhildir. Çizelgeler ve tasdikli GSSP’ler hakkında daha detaylı bilgiler http://www.stratigraphy.org sayfasından temin edilebilir. Bu çizelgenin URL’si aşağıda verilmiştir.
+
+Sayısal yaş değerleri gözden geçirilmeye açıktır ve Fanerozoyik ile Ediyakaran içindeki birimlerin sınırlanmasını sağlamaz; sadece GSSP ile elde edilmiştir. Tasdikli GSSP’den veya sınırlandırılmış sayısal yaş değerlerinden yoksun Fanerozoyikteki sınırlar için, yaklaşık sayısal değer (~) verilmiştir.
+
+Tasdikli Alt Seri/Devreler Ü/G (Üst/Geç), O (Orta) ve A/E (Alt/Erken) olarak kısaltılmıştır. Kuvaterner, Üst Paleojen, Kretase, Jura, Triyas, Permiyen ve Pre-Kambriyen dışında tüm sistemlerin sayısal yaş değerleri “Jeolojik Zaman
+Tablosu 2012”den alınmıştır (Gradstein vd. 2012); Kuvaterner, Üst Paleojen, Kretase, Jura, Triyas, Permiyen ve Pre-Kambriyen için olan yaşlar, Uluslararası Stratigrafi Komisyonu’nun ilgili alt komisyonları tarafından sağlanmıştır.
+
+Renklendirme kodları için Dünya Jeoloji Haritası Komisyonu (http://www.ccgm.org) temel alınmıştır.
+
+Çizelge tasarımı: K.M. Cohen, D.A.T. Harper, P.L. Gibbard (c) International Commission on Stratigraphy, Eylül 2023
+
+Kaynak gösterimi: Cohen, K.M., Finney, S.C., Gibbard, P.L. & Fan, J.-X. (2013; updated) The ICS International Chronostratigraphic Chart. Episodes 36: 199-204.
+
+URL: http://www.stratigraphy.org/ICSchart/ChronostratChart2023-09Turkish.pdf"""@tr ,
+        """所有全球年代地层单位均由其底界的全球界线层型剖面和 点位（GSSP）界定，包括长期由全球标准地层年龄（GSSA） 界定的太古宇和元古宇各单位。斜体代表非正式名称或尚未命 名单位的临时名称。图件及已批准GSSP的详情参见国际地层 委员会官网。本图件的网址见右下角。
+
+年龄值仍在不断修订；显生宇和埃迪卡拉系的单位不能由 年龄界定，而只能由GSSP界定。显生宇中没有确定GSSP或精 确年龄值的单位，则标注了近似年龄值（～）。
+
+已批准的亚统/亚世简写为上/晚、中、下/早；第四系、古 近系上部、白垩系、侏罗系、三叠系、二叠系、寒武系和前寒 武系的年龄值由各分会提供；其他年龄值引自Gradstein等主 编的《地质年代表2012》一书。
+
+所图中各单位的颜色参照了世界地质图委员会 发布的色谱(http://www.ccgm.org)。
+
+本图件由K.M. Cohen、D.A.T. Harper、 P.L. Gibbard和N. Car绘制
+
+(c)国际地层委员会，2023年09月（英文版）
+
+引用：Cohen, K.M., Finney, S.C., Gibbard, P.L. & Fan, J.-X. (2013; updated) The ICS International Chronostratigraphic Chart. Episodes 36: 199-204.
+
+本图件网址：http://www.stratigraphy.org/ICSchart/ChronostratChart2023-09Chinese.pdf"""@zh ;
 .
 
 <http://resource.geosciml.org/ontology/ics-visual-chart/ChartTitle>
     skos:prefLabel
+        "Beynəlxalq Xronostratiqrafik Şkala"@az ,
+        "Taula Cronoestratigràfica Internacional"@ca ,
+        "Mezinárodní Chronostratigrafická Tabulka"@cs ,
         "Internationale Chronostratigraphische Tabelle"@de ,
         "International Chronostratigraphic Chart"@en ,
-        "Tabla Cronoestratigráfica Internacional"@es-ES ,
+        "Tabla Cronoestratigráfica Internacional"@es ,
+        "Tabla Cronoestratigráfica Internacional"@es-a ,
+        "Nazioarteko Taula Kronoestratigrafikoa"@eu ,
+        "Kansainvälinen Kronostratigrafinen Taulu"@fi ,
+        "Charte Chronostratigraphique Internationale"@fr ,
+        "Nemzetközi Időrétegtani Táblázat"@hu ,
         "Bagan Kronostratigrafi Internasional"@id ,
         "Scala Cronostratigrafica Internazionale"@it ,
-        "Tarptautinė Chronostratigrafijos Skalė"@lt ;
+        "国際年代層序表"@ja ,
+        "국제지질연대층서표"@ko ,
+        "Tarptautinė Chronostratigrafijos Skalė"@lt ,
+        "Internationale Chronostratigrafische Tabel"@nl ,
+        "Internationale Chronostratigrafische Tabel"@nl-be ,
+        "Internasjonal Kronostratigrafisk Tabell"@no ,
+        "Tabela Cronoestratigráfica Internacional"@pt ,
+        "Tabela Cronoestratigráfica Internacional"@pt-br ,
+        "Международная Хроностратиграфическая Шкала"@ru ,
+        "Medzinárodná Chronostratigrafická Tabuľka"@sk ,
+        "Uluslararasi Kronostratigrafik Çizelge"@tr ,
+        "International Chronostratigraphic Chart（国 际 年 代 地 层 表）"@zh ;
 .
 
 <http://resource.geosciml.org/ontology/ics-visual-chart/ColumnHeadings>
     skos:prefLabel
+        "Sütun başlıqları"@az ,
+        "Encapçalaments de columna"@ca ,
+        "Záhlaví sloupců"@cs ,
         "Spaltenüberschriften"@de ,
         "Column Headings"@en ,
-        "Encabezados de columna"@es-ES ,
+        "Encabezados de columna"@es ,
+        "Encabezados de columna"@es-a ,
+        "Zutabe-izenburuak"@eu ,
+        "Sarakeotsikot"@fi ,
+        "En-têtes de colonnes"@fr ,
+        "Oszlopcímek"@hu ,
         "Judul Kolom"@id ,
         "Intestazioni di colonna"@it ,
-        "Stulpelių antraštės"@lt ;
+        "列見出し"@ja ,
+        "열 제목"@ko ,
+        "Stulpelių antraštės"@lt ,
+        "Kolomkoppen"@nl ,
+        "Kolomkoppen"@nl-be ,
+        "Kolonneoverskrifter"@no ,
+        "Títulos das colunas"@pt ,
+        "Títulos das colunas"@pt-br ,
+        "Заголовки столбцов"@ru ,
+        "Nadpisy stĺpcov"@sk ,
+        "Sütun Başlıkları"@tr ,
+        "列标题"@zh ;
 .
 
 <http://resource.geosciml.org/ontology/ics-visual-chart/Download>
     skos:prefLabel
+        "Yükləyin"@az ,
+        "Descarrega"@ca ,
+        "Stáhnout"@cs ,
         "Herunterladen"@de ,
         "Download"@en ,
-        "Descargar"@es-ES ,
+        "Descargar"@es ,
+        "Descargar"@es-a ,
+        "Deskargatu"@eu ,
+        "Lataa"@fi ,
+        "Télécharger"@fr ,
+        "Letöltés"@hu ,
         "Unduh"@id ,
         "Scaricamento"@it ,
-        "Atsisiųsti"@lt ;
+        "ダウンロード"@ja ,
+        "다운로드"@ko ,
+        "Atsisiųsti"@lt ,
+        "Download"@nl ,
+        "Download"@nl-be ,
+        "Last ned"@no ,
+        "Transferir"@pt ,
+        "Download"@pt-br ,
+        "Скачать"@ru ,
+        "Stiahnuť"@sk ,
+        "İndirmek"@tr ,
+        "下载"@zh ;
 .
 
 <http://resource.geosciml.org/ontology/ics-visual-chart/Language>
     skos:prefLabel
+        "Dil"@az ,
+        "Llengua"@ca ,
+        "Jazyk"@cs ,
         "Sprache"@de ,
         "Language"@en ,
-        "Idioma"@es-ES ,
+        "Idioma"@es ,
+        "Idioma"@es-a ,
+        "Hizkuntza"@eu ,
+        "Kieli"@fi ,
+        "Langue"@fr ,
+        "Nyelv"@hu ,
         "Bahasa"@id ,
         "Lingua"@it ,
-        "Kalba"@lt ;
+        "言語"@ja ,
+        "언어"@ko ,
+        "Kalba"@lt ,
+        "Taal"@nl ,
+        "Taal"@nl-be ,
+        "Språk"@no ,
+        "Idioma"@pt ,
+        "Linguagem"@pt-br ,
+        "Язык"@ru ,
+        "Jazyk"@sk ,
+        "Dil"@tr ,
+        "语言"@zh ;
 .
 
 <http://resource.geosciml.org/ontology/ics-visual-chart/NumericAge>
     skos:prefLabel
+        "Rəqəmsal Yaş"@az ,
+        "Edat numèrica"@ca ,
+        "Číselný věk"@cs ,
         "Numerisches Alter"@de ,
         "Numeric Age"@en ,
-        "Edad"@es-ES ,
+        "Edad numérica"@es ,
+        "Edad numérica"@es-a ,
+        "Adin numerikoa"@eu ,
+        "Numeerinen ikä"@fi ,
+        "Âge numérique"@fr ,
+        "Numerikus kor"@hu ,
         "Usia Numerik"@id ,
         "Età numerica"@it ,
-        "Skaitmeninis amžius"@lt ;
+        "数字の年齢"@ja ,
+        "숫자 나이"@ko ,
+        "Skaitmeninis amžius"@lt ,
+        "Numerieke leeftijd"@nl ,
+        "Numerieke leeftijd"@nl-be ,
+        "Numerisk alder"@no ,
+        "Idade Numérica"@pt ,
+        "Idade Numérica"@pt-br ,
+        "Числовой возраст"@ru ,
+        "Číselný vek"@sk ,
+        "Sayısal Yaş"@tr ,
+        "数字年龄"@zh ;
 .
 
 <http://resource.geosciml.org/ontology/ics-visual-chart/Scaling>
     skos:prefLabel
+        "Miqyaslama"@az ,
+        "Escalat"@ca ,
+        "Škálování"@cs ,
         "Skalierung"@de ,
         "Scaling"@en ,
-        "Escala"@es-ES ,
+        "Escalada"@es ,
+        "Escalada"@es-a ,
+        "Eskalatzea"@eu ,
+        "Skaalaus"@fi ,
+        "Mise à l'échelle"@fr ,
+        "Méretezés"@hu ,
         "Penskalaan"@id ,
         "Scalabilità"@it ,
-        "Mastelio keitimas"@lt ;
+        "スケーリング"@ja ,
+        "확장"@ko ,
+        "Mastelio keitimas"@lt ,
+        "Schalen"@nl ,
+        "Schalen"@nl-be ,
+        "Skalering"@no ,
+        "Escala"@pt ,
+        "Escala"@pt-br ,
+        "Масштабирование"@ru ,
+        "Škálovanie"@sk ,
+        "Ölçeklendirme"@tr ,
+        "规模化"@zh ;
 .
 
 <http://resource.geosciml.org/ontology/stratigraphy/Chronometric>
     skos:prefLabel
+        "Xronometrik"@az ,
+        "Cronomètric"@ca ,
+        "Chronometrický"@cs ,
         "Chronometrisch"@de ,
         "Chronometric"@en ,
-        "Cronométrica"@es-ES ,
+        "Cronométrica"@es ,
+        "Cronométrica"@es-a ,
+        "Kronometrikoa"@eu ,
+        "Kronometrinen"@fi ,
+        "Chronométrique"@fr ,
+        "Kronometrikus"@hu ,
         "Kronometrik"@id ,
         "Cronometrico"@it ,
-        "Chronometrinis"@lt ;
+        "クロノメトリック"@ja ,
+        "크로노메트릭"@ko ,
+        "Chronometrinis"@lt ,
+        "Chronometrisch"@nl ,
+        "Chronometrisch"@nl-be ,
+        "Kronometrisk"@no ,
+        "Cronométrica"@pt ,
+        "Cronométrica"@pt-br ,
+        "Хронометрический"@ru ,
+        "Chronometrický"@sk ,
+        "Kronometrik"@tr ,
+        "计时"@zh ;
 .
 
 <http://resource.geosciml.org/ontology/stratigraphy/Early>
     skos:prefLabel
+        "Erkən"@az ,
+        "D'hora"@ca ,
+        "Brzy"@cs ,
         "Früh"@de ,
         "Early"@en ,
-        "Temprano"@es-ES ,
+        "Temprana"@es ,
+        "Temprana"@es-a ,
+        "Goiztiarra"@eu ,
+        "Varhainen"@fi ,
+        "Tôt"@fr ,
+        "Korai"@hu ,
         "Lebih awal"@id ,
         "Presto"@it ,
-        "Ankstyvas"@lt ;
+        "早い"@ja ,
+        "일찍"@ko ,
+        "Ankstyvas"@lt ,
+        "Vroeg"@nl ,
+        "Vroeg"@nl-be ,
+        "Tidlig"@no ,
+        "Cedo"@pt ,
+        "Cedo"@pt-br ,
+        "Рано"@ru ,
+        "Skoro"@sk ,
+        "Erken"@tr ,
+        "早期的"@zh ;
 .
 
 <http://resource.geosciml.org/ontology/stratigraphy/Eonothem>
     skos:prefLabel
+        "Eonotem"@az ,
+        "Eonotema"@ca ,
+        "Eontém"@cs ,
         "Äonothem"@de ,
         "Eonothem"@en ,
-        "Eonotema"@es-ES ,
+        "Eonotema"@es ,
+        "Eonotema"@es-a ,
+        "Eontema"@eu ,
+        "Eonoteemi"@fi ,
+        "Éonothème"@fr ,
+        "eonotéma"@hu ,
         "Eonothem"@id ,
         "Eonotema"@it ,
-        "Eonotema"@lt ;
+        "（累）界"@ja ,
+        "누대"@ko ,
+        "Eonotema"@lt ,
+        "Eonotheem"@nl ,
+        "Eonotheem"@nl-be ,
+        "Eonotem"@no ,
+        "Eonotema"@pt ,
+        "Eonotema"@pt-br ,
+        "Эонотема"@ru ,
+        "Eontem"@sk ,
+        "Eonotem"@tr ,
+        "宇 （宙）"@zh ;
 .
 
 <http://resource.geosciml.org/ontology/stratigraphy/Erathem>
     skos:prefLabel
+        "Eratem"@az ,
+        "Eratema"@ca ,
+        "Eratém"@cs ,
         "Ärathem"@de ,
         "Erathem"@en ,
-        "Eratema"@es-ES ,
+        "Eratema"@es ,
+        "Eratema"@es-a ,
+        "Eratema"@eu ,
+        "Erateemi"@fi ,
+        "Érathème"@fr ,
+        "időtéma"@hu ,
         "Erathem"@id ,
         "Eratema"@it ,
-        "Eratema"@lt ;
+        "界"@ja ,
+        "대"@ko ,
+        "Eratema"@lt ,
+        "Eratheem"@nl ,
+        "Eratheem"@nl-be ,
+        "Eratem"@no ,
+        "Eratema"@pt ,
+        "Eratema"@pt-br ,
+        "Эратема"@ru ,
+        "Eratem"@sk ,
+        "Eratem"@tr ,
+        " 界 （代）"@zh ;
 .
 
 <http://resource.geosciml.org/ontology/stratigraphy/Late>
     skos:prefLabel
+        "Gec"@az ,
+        "Tard"@ca ,
+        "Pozdě"@cs ,
         "Spät"@de ,
         "Late"@en ,
-        "Tardío"@es-ES ,
+        "Tarde"@es ,
+        "Tarde"@es-a ,
+        "Berandu"@eu ,
+        "Myöhään"@fi ,
+        "En retard"@fr ,
+        "Késő"@hu ,
         "Terlambat"@id ,
         "Tardi"@it ,
-        "Vėlai"@lt ;
+        "遅い"@ja ,
+        "늦은"@ko ,
+        "Vėlai"@lt ,
+        "Laat"@nl ,
+        "Laat"@nl-be ,
+        "Sent"@no ,
+        "Tarde"@pt ,
+        "Tarde"@pt-br ,
+        "Поздно"@ru ,
+        "Neskoro"@sk ,
+        "Geç"@tr ,
+        "晚的"@zh ;
 .
 
 <http://resource.geosciml.org/ontology/stratigraphy/Lower>
     skos:prefLabel
+        "Alt"@az ,
+        "Inferior"@ca ,
+        "spodní"@cs ,
         "Untere"@de ,
         "Lower"@en ,
-        "Inferior"@es-ES ,
+        "Inferior"@es ,
+        "Inferior"@es-a ,
+        "Behe"@eu ,
+        "Ala"@fi ,
+        "Inférieur"@fr ,
+        "alsó/kora"@hu ,
         "Lebih rendah"@id ,
         "Inferiore"@it ,
-        "Žemutinis"@lt ;
+        "下部／前期"@ja ,
+        "낮추다"@ko ,
+        "Žemutinis"@lt ,
+        "Onder"@nl ,
+        "Onder"@nl-be ,
+        "Undre"@no ,
+        "Inferior"@pt ,
+        "Inferior"@pt-br ,
+        "Нижний"@ru ,
+        "spodná"@sk ,
+        "Alt"@tr ,
+        "下侏罗统"@zh ;
 .
 
 <http://resource.geosciml.org/ontology/stratigraphy/Middle>
     skos:prefLabel
+        "Orta"@az ,
+        "Mitjà"@ca ,
+        "střední"@cs ,
         "Mitte"@de ,
         "Middle"@en ,
-        "Medio"@es-ES ,
+        "Medio"@es ,
+        "Medio"@es-a ,
+        "Erdi"@eu ,
+        "Keski"@fi ,
+        "Moyen"@fr ,
+        "középső"@hu ,
         "Tengah"@id ,
         "Medio"@it ,
-        "Vidurys"@lt ;
+        "中部／中期"@ja ,
+        "가운데"@ko ,
+        "Vidurys"@lt ,
+        "Midden"@nl ,
+        "Midden"@nl-be ,
+        "Midtre"@no ,
+        "Médio"@pt ,
+        "Médio"@pt-br ,
+        "Средний"@ru ,
+        "stredná"@sk ,
+        "Orta"@tr ,
+        "中侏罗统"@zh ;
 .
 
 <http://resource.geosciml.org/ontology/stratigraphy/Series>
     skos:prefLabel
+        "Şöbə"@az ,
+        "Sèrie"@ca ,
+        "Oddělení"@cs ,
         "Serie"@de ,
         "Series"@en ,
-        "Serie"@es-ES ,
+        "Serie"@es ,
+        "Serie"@es-a ,
+        "Seriea"@eu ,
+        "Sarja"@fi ,
+        "Séries"@fr ,
+        "sorozat"@hu ,
         "Kala"@id ,
         "Serie"@it ,
-        "Skyrius"@lt ;
+        "統"@ja ,
+        "세"@ko ,
+        "Skyrius"@lt ,
+        "Serie"@nl ,
+        "Serie"@nl-be ,
+        "Serie"@no ,
+        "Série"@pt ,
+        "Série"@pt-br ,
+        "Отдел"@ru ,
+        "Oddelenie"@sk ,
+        "Seri"@tr ,
+        "统 （世）"@zh ;
 .
 
 <http://resource.geosciml.org/ontology/stratigraphy/Stage>
     skos:prefLabel
+        "Mərtəbə"@az ,
+        "Estatge"@ca ,
+        "Stupeň"@cs ,
         "Stufe"@de ,
         "Stage"@en ,
-        "Piso"@es-ES ,
+        "Piso"@es ,
+        "Piso"@es-a ,
+        "Estaia"@eu ,
+        "Vaihe"@fi ,
+        "Étage"@fr ,
+        "emelet"@hu ,
         "Tahap/Umur"@id ,
         "Piano"@it ,
-        "Aukštas"@lt ;
+        "階"@ja ,
+        "절/"@ko ,
+        "Aukštas"@lt ,
+        "Etage"@nl ,
+        "Etage"@nl-be ,
+        "Etaje"@no ,
+        "Andar"@pt ,
+        "Andar"@pt-br ,
+        "Ярус"@ru ,
+        "Stupeň"@sk ,
+        "Kat"@tr ,
+        "阶 （期）"@zh ;
 .
 
 <http://resource.geosciml.org/ontology/stratigraphy/Stratigraphic>
     skos:prefLabel
+        "Stratiqrafik"@az ,
+        "Estratigràfic"@ca ,
+        "Stratigrafický"@cs ,
         "Stratigraphie"@de ,
         "Stratigraphic"@en ,
-        "Estratigráfica"@es-ES ,
+        "Estratigráfica"@es ,
+        "Estratigráfica"@es-a ,
+        "Estratigrafikoa"@eu ,
+        "Stratigrafinen"@fi ,
+        "Stratigraphique"@fr ,
+        "Rétegtani"@hu ,
         "Stratigrafi"@id ,
         "Stratigrafico"@it ,
-        "Stratigrafinis"@lt ;
+        "地層"@ja ,
+        "층서학적"@ko ,
+        "Stratigrafinis"@lt ,
+        "Stratigrafisch"@nl ,
+        "Stratigrafisch"@nl-be ,
+        "Stratigrafisk"@no ,
+        "Estratigrafia"@pt ,
+        "Estratigrafia"@pt-br ,
+        "Стратиграфический"@ru ,
+        "Stratigrafický"@sk ,
+        "Stratigrafik"@tr ,
+        "地层学"@zh ;
 .
 
 <http://resource.geosciml.org/ontology/stratigraphy/System>
     skos:prefLabel
+        "Sistem"@az ,
+        "Sistema"@ca ,
+        "Útvar"@cs ,
         "System"@de ,
         "System"@en ,
-        "Sistema"@es-ES ,
+        "Sistema"@es ,
+        "Sistema"@es-a ,
+        "Sistema"@eu ,
+        "Systeemi"@fi ,
+        "Système"@fr ,
+        "rendszer"@hu ,
         "Zama"@id ,
         "Sistema"@it ,
-        "Sistema"@lt ;
+        "系"@ja ,
+        "기"@ko ,
+        "Sistema"@lt ,
+        "Systeem"@nl ,
+        "Systeem"@nl-be ,
+        "System"@no ,
+        "Sistema"@pt ,
+        "Sistema"@pt-br ,
+        "Система"@ru ,
+        "Útvar"@sk ,
+        "Sistem"@tr ,
+        "系 （纪）"@zh ;
 .
 
 <http://resource.geosciml.org/ontology/stratigraphy/Upper>
     skos:prefLabel
+        "Üst"@az ,
+        "Superior"@ca ,
+        "svrchní"@cs ,
         "Obere"@de ,
         "Upper"@en ,
-        "Superior"@es-ES ,
+        "Superior"@es ,
+        "Superior"@es-a ,
+        "Goi"@eu ,
+        "Ylä"@fi ,
+        "Supérieur"@fr ,
+        "felső/késő"@hu ,
         "Atas"@id ,
         "Superiore"@it ,
-        "Viršutinė"@lt ;
+        "上部／後期"@ja ,
+        "높은"@ko ,
+        "Viršutinė"@lt ,
+        "Boven"@nl ,
+        "Boven"@nl-be ,
+        "Øvre"@no ,
+        "Superior"@pt ,
+        "Superior"@pt-br ,
+        "Верхний"@ru ,
+        "vrchná"@sk ,
+        "Üst"@tr ,
+        "上侏罗统"@zh ;
 .
 
 <http://resource.geosciml.org/ontology/timescale/gts#Age>
     skos:prefLabel
+        "Əsr"@az ,
+        "Edat"@ca ,
+        "věk"@cs ,
         "Alter"@de ,
         "Age"@en ,
-        "Edad"@es-ES ,
+        "Edad"@es ,
+        "Edad"@es-a ,
+        "Adina"@eu ,
+        "Aika"@fi ,
+        "Âge"@fr ,
+        "korszak"@hu ,
         "Umur"@id ,
         "Età"@it ,
-        "Amžius"@lt ;
+        "期"@ja ,
+        "조"@ko ,
+        "Amžius"@lt ,
+        "Tijd"@nl ,
+        "Tijd"@nl-be ,
+        "Alder"@no ,
+        "Idade"@pt ,
+        "Idade"@pt-br ,
+        "век"@ru ,
+        "Vek"@sk ,
+        "Çağ"@tr ,
+        "年龄"@zh ;
 .
 
 <http://resource.geosciml.org/ontology/timescale/gts#Eon>
     skos:prefLabel
+        "Eon"@az ,
+        "Eó"@ca ,
+        "eon"@cs ,
         "Äon"@de ,
         "Eon"@en ,
-        "Eón"@es-ES ,
+        "Eón"@es ,
+        "Eón"@es-a ,
+        "Eona"@eu ,
+        "Eoni"@fi ,
+        "Éon"@fr ,
+        "eon"@hu ,
         "Keabadian"@id ,
         "Eone"@it ,
-        "Eona"@lt ;
+        "代"@ja ,
+        "누대층"@ko ,
+        "Eona"@lt ,
+        "Eon"@nl ,
+        "Eon"@nl-be ,
+        "Eon"@no ,
+        "Éon"@pt ,
+        "Éon"@pt-br ,
+        "эон"@ru ,
+        "Eón"@sk ,
+        "Üst Zaman"@tr ,
+        "宇 （宙）"@zh ;
 .
 
 <http://resource.geosciml.org/ontology/timescale/gts#Epoch>
     skos:prefLabel
+        "Epoxa"@az ,
+        "Època"@ca ,
+        "epocha"@cs ,
         "Epoche"@de ,
         "Epoch"@en ,
-        "Época"@es-ES ,
+        "Época"@es ,
+        "Época"@es-a ,
+        "Epoka"@eu ,
+        "Epookki"@fi ,
+        "Époque"@fr ,
+        "kor"@hu ,
         "Masa"@id ,
         "Epoca"@it ,
-        "Epocha"@lt ;
+        "世"@ja ,
+        "통"@ko ,
+        "Epocha"@lt ,
+        "Tijdvak"@nl ,
+        "Tijdvak"@nl-be ,
+        "Epoke"@no ,
+        "Época"@pt ,
+        "Época"@pt-br ,
+        "эпоха"@ru ,
+        "Epocha"@sk ,
+        "Devre"@tr ,
+        "统 （世）"@zh ;
 .
 
 <http://resource.geosciml.org/ontology/timescale/gts#Era>
     skos:prefLabel
+        "Era"@az ,
+        "Era"@ca ,
+        "éra"@cs ,
         "Ära"@de ,
         "Era"@en ,
-        "Era"@es-ES ,
+        "Era"@es ,
+        "Era"@es-a ,
+        "Era"@eu ,
+        "Maailmankausi"@fi ,
+        "Ére"@fr ,
+        "idő"@hu ,
         "Zaman"@id ,
         "Era"@it ,
-        "Era"@lt ;
+        "代"@ja ,
+        "대층"@ko ,
+        "Era"@lt ,
+        "Era"@nl ,
+        "Era"@nl-be ,
+        "Æra"@no ,
+        "Era"@pt ,
+        "Era"@pt-br ,
+        "эра"@ru ,
+        "Éra"@sk ,
+        "Zaman"@tr ,
+        " 界 （代）"@zh ;
 .
 
 <http://resource.geosciml.org/ontology/timescale/gts#Period>
     skos:prefLabel
+        "Dövr"@az ,
+        "Període"@ca ,
+        "perioda"@cs ,
         "Periode"@de ,
         "Period"@en ,
-        "Periodo"@es-ES ,
+        "Periodo"@es ,
+        "Periodo"@es-a ,
+        "Periodoa"@eu ,
+        "Kausi"@fi ,
+        "Période"@fr ,
+        "időszak"@hu ,
         "Periode"@id ,
         "Periodo"@it ,
-        "Periodas"@lt ;
+        "紀"@ja ,
+        "계"@ko ,
+        "Periodas"@lt ,
+        "Periode"@nl ,
+        "Periode"@nl-be ,
+        "Periode"@no ,
+        "Período"@pt ,
+        "Período"@pt-br ,
+        "период"@ru ,
+        "Perióda"@sk ,
+        "Dönem"@tr ,
+        "系 （纪）"@zh ;
 .

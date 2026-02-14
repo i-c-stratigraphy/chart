@@ -17,12 +17,12 @@ namespaces = {
 }
 
 # load existing content
-g = Graph().parse(Path(__file__).parent / "chart-multilang.ttl")
+g = Graph()
 
-xls = pd.ExcelFile(Path(__file__).parent / "chart-source-master.xlsx")
+xls = pd.ExcelFile(Path(__file__).parent / "chart-source-langs.xlsx")
 
 for sheet_name in xls.sheet_names:
-    if sheet_name not in ["README", "default", "en", "it", "es-ES"]:
+    if sheet_name not in ["README", "default"]:
         print(f"Sheet: {sheet_name}")
         df = pd.read_excel(xls, sheet_name=sheet_name)
         csv_file_name = f"{sheet_name}.csv"
@@ -30,8 +30,9 @@ for sheet_name in xls.sheet_names:
         for i, row in df.iterrows():
             parts = row.IRI.split(":")
             iri = URIRef(namespaces[parts[0]] + parts[1])
-            assert iri in g.subjects(), f"IRI {iri} not in graph"
+            #assert iri in g.subjects(), f"IRI {iri} not in graph"
             pl = Literal(row.Language, lang=sheet_name)
             g.add((iri, SKOS.prefLabel, pl))
 
-print(g.serialize(destination="chart-multilang.ttl", format="longturtle"))
+g.serialize(destination="chart-multilang.ttl", format="longturtle")
+print(len(g))
