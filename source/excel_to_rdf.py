@@ -22,7 +22,7 @@ g = Graph()
 xls = pd.ExcelFile(Path(__file__).parent / "chart-source-langs.xlsx")
 
 for sheet_name in xls.sheet_names:
-    if sheet_name not in ["README", "default"]:
+    if sheet_name not in ["README", "default", "languages"]:
         print(f"Sheet: {sheet_name}")
         df = pd.read_excel(xls, sheet_name=sheet_name)
         csv_file_name = f"{sheet_name}.csv"

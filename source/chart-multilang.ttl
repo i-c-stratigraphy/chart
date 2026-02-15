@@ -1,5 +1,4 @@
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
-PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <http://resource.geosciml.org/classifier/ics/ischart/Aalenian>
     skos:prefLabel
@@ -1511,7 +1510,6 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <http://resource.geosciml.org/classifier/ics/ischart/Greenlandian>
     skos:prefLabel
-        "NaN"^^xsd:double ,
         "Qrenlandiya"@az ,
         "Grenlandià"@ca ,
         "greenland"@cs ,
@@ -1519,6 +1517,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Greenlandian"@en ,
         "Groenlandiense"@es ,
         "Groenlandiano"@es-a ,
+        "Greenlandian"@eu ,
         "Grönlanti"@fi ,
         "Greenlandien"@fr ,
         "grönlandi"@hu ,
@@ -1532,6 +1531,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Gronland"@no ,
         "Greenlandiano"@pt ,
         "Greenlandiano"@pt-br ,
+        "Greenlandian"@ru ,
         "grón"@sk ,
         "Grönlandiyen"@tr ,
         "格陵兰阶"@zh ;
@@ -2264,7 +2264,6 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <http://resource.geosciml.org/classifier/ics/ischart/Meghalayan>
     skos:prefLabel
-        "NaN"^^xsd:double ,
         "Meqhalaya"@az ,
         "Megalaià"@ca ,
         "meghalayan"@cs ,
@@ -2272,6 +2271,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Meghalayan"@en ,
         "Megalayense"@es ,
         "Megalayiano"@es-a ,
+        "Meghalayan"@eu ,
         "Meghalaya"@fi ,
         "Meghalayen"@fr ,
         "meghalayai"@hu ,
@@ -2285,6 +2285,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Megalaya"@no ,
         "Megalayano"@pt ,
         "Megalayano"@pt-br ,
+        "Meghalayan"@ru ,
         "megalaj"@sk ,
         "Meghaliyen"@tr ,
         "梅加拉亚阶"@zh ;
@@ -2640,7 +2641,6 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <http://resource.geosciml.org/classifier/ics/ischart/Northgrippian>
     skos:prefLabel
-        "NaN"^^xsd:double ,
         "Nortqrip"@az ,
         "Norgripià"@ca ,
         "northgrip"@cs ,
@@ -2648,6 +2648,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Northgrippian"@en ,
         "Norgripiense"@es ,
         "Norgripiano"@es-a ,
+        "Northgrippian"@eu ,
         "Northgrip"@fi ,
         "Northgrippien"@fr ,
         "northgripi"@hu ,
@@ -2661,6 +2662,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Northgrip"@no ,
         "Northgrippiano"@pt ,
         "Northgrippiano"@pt-br ,
+        "Northgrippian"@ru ,
         "nortgrip"@sk ,
         "Nortgripiyen"@tr ,
         "诺斯格瑞比阶"@zh ;
