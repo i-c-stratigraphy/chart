@@ -1,0 +1,114 @@
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+CONSTRUCT {
+    ?age
+        skos:definition ?en ;
+        skos:definition ?az ;
+        skos:definition ?ca ;
+        skos:definition ?cs ;
+        skos:definition ?de ;
+        skos:definition ?en ;
+        skos:definition ?es ;
+        skos:definition ?es_419 ;
+        skos:definition ?eu ;
+        skos:definition ?fi ;
+        skos:definition ?fr ;
+        skos:definition ?hu ;
+        skos:definition ?id ;
+        skos:definition ?it ;
+        skos:definition ?ja ;
+        skos:definition ?ko ;
+        skos:definition ?lt ;
+        skos:definition ?nl ;
+        skos:definition ?nl_be ;
+        skos:definition ?no ;
+        skos:definition ?pt ;
+        skos:definition ?pt_br ;
+        skos:definition ?ru ;
+        skos:definition ?sk ;
+        skos:definition ?tr ;
+        skos:definition ?zh ;
+    .
+}
+WHERE {
+    ?age
+        a skos:Concept ;
+        time:hasBeginning/ischart:inMYA ?beginning ;
+        time:hasEnd/ischart:inMYA ?end ;
+    .
+    BIND ("A time period from X to Y million years ago" AS ?template_en)
+    BIND (STRLANG(REPLACE(REPLACE(?template_en, "X", STR(?beginning)), "Y", STR(?end)), "en") AS ?en)
+
+
+    BIND ("143,1-dən 100,5 milyon il əvvələ qədər olan bir zaman dövrü" AS ?template_az)
+    BIND (STRLANG(REPLACE(REPLACE(?template_az, "X", STR(?beginning)), "Y", STR(?end)), "az") AS ?az)
+
+    BIND ("Un període de temps de fa entre 143,1 i 100,5 milions d'anys" AS ?template_ca)
+    BIND (STRLANG(REPLACE(REPLACE(?template_ca, "X", STR(?beginning)), "Y", STR(?end)), "ca") AS ?ca)
+
+    BIND ("Časové období před 143,1 až 100,5 miliony let" AS ?template_cs)
+    BIND (STRLANG(REPLACE(REPLACE(?template_cs, "X", STR(?beginning)), "Y", STR(?end)), "cs") AS ?cs)
+
+    BIND ("Ein Zeitraum vor 143,1 bis 100,5 Millionen Jahren" AS ?template_de)
+    BIND (STRLANG(REPLACE(REPLACE(?template_de, "X", STR(?beginning)), "Y", STR(?end)), "de") AS ?de)
+
+    BIND ("Un período de tiempo de hace entre 143,1 y 100,5 millones de años" AS ?template_es)
+    BIND (STRLANG(REPLACE(REPLACE(?template_es, "X", STR(?beginning)), "Y", STR(?end)), "es") AS ?es)
+
+    BIND ("Un período de tiempo de hace entre 143,1 y 100,5 millones de años" AS ?template_es_419)
+    BIND (STRLANG(REPLACE(REPLACE(?template_es_419, "X", STR(?beginning)), "Y", STR(?end)), "es-419") AS ?es_419)
+
+    BIND ("Duela 143,1 eta 100,5 milioi urte arteko denbora-tarte bat" AS ?template_eu)
+    BIND (STRLANG(REPLACE(REPLACE(?template_eu, "X", STR(?beginning)), "Y", STR(?end)), "eu") AS ?eu)
+
+    BIND ("Aikajakso 143,1–100,5 miljoonaa vuotta sitten" AS ?template_fi)
+    BIND (STRLANG(REPLACE(REPLACE(?template_fi, "X", STR(?beginning)), "Y", STR(?end)), "fi") AS ?fi)
+
+    BIND ("Une période comprise entre il y a 143,1 et 100,5 millions d’années" AS ?template_fr)
+    BIND (STRLANG(REPLACE(REPLACE(?template_fr, "X", STR(?beginning)), "Y", STR(?end)), "fr") AS ?fr)
+
+    BIND ("Egy időszak 143,1 és 100,5 millió évvel ezelőtt" AS ?template_hu)
+    BIND (STRLANG(REPLACE(REPLACE(?template_hu, "X", STR(?beginning)), "Y", STR(?end)), "hu") AS ?hu)
+
+    BIND ("Suatu periode waktu dari 143,1 hingga 100,5 juta tahun yang lalu" AS ?template_id)
+    BIND (STRLANG(REPLACE(REPLACE(?template_id, "X", STR(?beginning)), "Y", STR(?end)), "id") AS ?id)
+
+    BIND ("Un periodo di tempo compreso tra 143,1 e 100,5 milioni di anni fa" AS ?template_it)
+    BIND (STRLANG(REPLACE(REPLACE(?template_it, "X", STR(?beginning)), "Y", STR(?end)), "it") AS ?it)
+
+    BIND ("約1億4310万年前から約1億50万年前までの期間" AS ?template_ja)
+    BIND (STRLANG(REPLACE(REPLACE(?template_ja, "X", STR(?beginning)), "Y", STR(?end)), "ja") AS ?ja)
+
+    BIND ("약 1억 4,310만 년 전부터 약 1억 50만 년 전까지의 기간" AS ?template_ko)
+    BIND (STRLANG(REPLACE(REPLACE(?template_ko, "X", STR(?beginning)), "Y", STR(?end)), "ko") AS ?ko)
+
+    BIND ("Laikotarpis nuo prieš 143,1 iki 100,5 milijono metų" AS ?template_lt)
+    BIND (STRLANG(REPLACE(REPLACE(?template_lt, "X", STR(?beginning)), "Y", STR(?end)), "lt") AS ?lt)
+
+    BIND ("Een tijdsperiode van 143,1 tot 100,5 miljoen jaar geleden" AS ?template_nl)
+    BIND (STRLANG(REPLACE(REPLACE(?template_nl, "X", STR(?beginning)), "Y", STR(?end)), "nl") AS ?nl)
+
+    BIND ("Een tijdsperiode van 143,1 tot 100,5 miljoen jaar geleden" AS ?template_nl_be)
+    BIND (STRLANG(REPLACE(REPLACE(?template_nl_be, "X", STR(?beginning)), "Y", STR(?end)), "nl-be") AS ?nl_be)
+
+    BIND ("En tidsperiode fra 143,1 til 100,5 millioner år siden" AS ?template_no)
+    BIND (STRLANG(REPLACE(REPLACE(?template_no, "X", STR(?beginning)), "Y", STR(?end)), "no") AS ?no)
+
+    BIND ("Um período de tempo de 143,1 a 100,5 milhões de anos atrás" AS ?template_pt)
+    BIND (STRLANG(REPLACE(REPLACE(?template_pt, "X", STR(?beginning)), "Y", STR(?end)), "pt") AS ?pt)
+
+    BIND ("Um período de tempo de 143,1 a 100,5 milhões de anos atrás" AS ?template_pt_br)
+    BIND (STRLANG(REPLACE(REPLACE(?template_pt_br, "X", STR(?beginning)), "Y", STR(?end)), "pt-br") AS ?pt_br)
+
+    BIND ("Период времени от 143,1 до 100,5 миллиона лет назад" AS ?template_ru)
+    BIND (STRLANG(REPLACE(REPLACE(?template_ru, "X", STR(?beginning)), "Y", STR(?end)), "ru") AS ?ru)
+
+    BIND ("Časové obdobie spred 143,1 až 100,5 milióna rokov" AS ?template_sk)
+    BIND (STRLANG(REPLACE(REPLACE(?template_sk, "X", STR(?beginning)), "Y", STR(?end)), "sk") AS ?sk)
+
+    BIND ("143,1 ile 100,5 milyon yıl önce arasındaki bir zaman dilimi" AS ?template_tr)
+    BIND (STRLANG(REPLACE(REPLACE(?template_tr, "X", STR(?beginning)), "Y", STR(?end)), "tr") AS ?tr)
+
+    BIND ("距今1.431亿年至1.005亿年前的一段时期" AS ?template_zh)
+    BIND (STRLANG(REPLACE(REPLACE(?template_zh, "X", STR(?beginning)), "Y", STR(?end)), "zh") AS ?zh)
+}
