@@ -5249,7 +5249,7 @@ URL: http://www.stratigraphy.org/ICSchart/ChronostratChart2023-09Turkish.pdf"""@
         "Эратема"@ru ,
         "Eratem"@sk ,
         "Eratem"@tr ,
-        " 界 （代）"@zh ;
+        "界（代）"@zh ;
 .
 
 <http://resource.geosciml.org/ontology/stratigraphy/Late>

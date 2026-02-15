@@ -1,11 +1,13 @@
+# this script calculates the correct label for Upper/Middle/Lower
+
 from rdflib import Graph, URIRef
 from kurra.sparql import query
 
+# options
 CHART_TYPES = [
     "Chronometric",
     "Stratigraphic",
 ]
-
 LANGUAGES = [
     "az" ,
     "ca" ,
@@ -33,10 +35,7 @@ LANGUAGES = [
     "tr" ,
     "zh" ,
 ]
-
-g = Graph().parse("labels-multilang.ttl")
-
-iris = [
+AGES = [
     URIRef("http://resource.geosciml.org/classifier/ics/ischart/CambrianSeries2") ,
     URIRef("http://resource.geosciml.org/classifier/ics/ischart/CambrianStage10") ,
     URIRef("http://resource.geosciml.org/classifier/ics/ischart/CambrianStage2") ,
@@ -65,34 +64,40 @@ iris = [
     URIRef("http://resource.geosciml.org/classifier/ics/ischart/UpperTriassic") ,
 ]
 
+# selection
 CHART_TYPE = "Chronometric"
-LANGUAGE = "es-a"
-age = URIRef("http://resource.geosciml.org/classifier/ics/ischart/LowerMississippian")
+LANGUAGE = "fi"
+AGE = URIRef("http://resource.geosciml.org/classifier/ics/ischart/UpperMississippian")
 
+
+g = Graph().parse("labels-multilang.ttl")
 
 if CHART_TYPES == "Chronometric":
-    if str(age).startswith("Upper"):
-        pass
-    elif str(age).startswith("Middle"):
-        pass
-    else:
-        pass
+    if "Upper" in str(AGE):
+        uml = "Upper"
+    elif "Middle" in str(AGE):
+        uml = "Middle"
+    else:  # Lower
+        uml = "Lower"
+else:  # Stratigraphic
+    if "Upper" in str(AGE):
+        uml = "Late"
+    elif "Middle" in str(AGE):
+        uml = "Middle"
+    else:  # Lower
+        uml = "Early"
 
-    q = """
-        SELECT ?lbl
-        WHERE {
-            <http://resource.geosciml.org/ontology/stratigraphy/Upper>
-                skos:prefLabel ?lbl ;
-            .
+q = """
+    SELECT ?lbl
+    WHERE {
+        <http://resource.geosciml.org/ontology/stratigraphy/{UML}>
+            skos:prefLabel ?lbl ;
+        .
 
-            FILTER (LANG(?lbl) = "{LANG}")
-        """.replace("{LANG}", LANGUAGE)
+        FILTER (LANG(?lbl) = "{LANG}")
+    }
+    """.replace("{UML}", uml).replace("{LANG}", LANGUAGE)
 
-else:
-    if str(age).startswith("Upper"):
-        pass
-    elif str(age).startswith("Upper"):
-        pass
-    else:
-        pass
+v = query(g, q, return_format="python", return_bindings_only=True)
 
+print(v[0]["lbl"])
