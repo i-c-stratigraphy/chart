@@ -1,0 +1,8 @@
+{
+  "name": "chart-pdf-export-tools",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "playwright-core": "^1.52.0"
+  }
+}

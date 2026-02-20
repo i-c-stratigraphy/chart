@@ -17,7 +17,7 @@ body {
 
 @font-face {
     font-family: 'Palatino';
-    src: url('/style/Palatino.eot?#iefix') format('embedded-opentype'), url('/style/Palatino.woff') format('woff'), url('/style/Palatino.ttf') format('truetype'), url('/style/Palatino.svg#Palatino') format('svg');
+    src: url('/style/Palatino.woff') format('woff'), url('/style/Palatino.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -27,7 +27,7 @@ body {
     line-height: 1.5em;
     background-size: 100%;
     background-color: #e0dedf;
-    font-family: arial, helvetica, sans-serif;
+    font-family: 'Palatino', arial, helvetica, sans-serif;
 }
 .widther {
     margin: 0 auto;

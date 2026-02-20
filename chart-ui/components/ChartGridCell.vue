@@ -2,10 +2,7 @@
 import { computed } from "vue"
 import n3 from "n3"
 import { getLangVariant, sortedNode,getTimeMarker, type scalingFactor, type chartNode } from "@/utils/util"
-import chart from "@/public/chart.json"
 import { useLabelContext } from "@/utils/label"
-
-const { namedNode } = n3.DataFactory
 
 const props = defineProps<{
     node: chartNode,
@@ -40,33 +37,13 @@ if (rank === "Epoch" && props.parentRank != "Sub-Period") {
 if (rank === "Epoch" && props.parentRank === "Sub-Period") {
     useShortNames = true
 }
-function transformNames(name: string):string {
-    if (!useShortNames){
-        return name 
-    }
-    if (name.startsWith('Late')){;
-        return "Upper"
-    }else if (name.startsWith('Middle')){
-        return "Middle"
-    }else if (name.startsWith('Early')){
-        return "Lower"
-    }
-    return name
-}
 
 const handleClick = () => {
     emit("view", props.node.id)
 }
 
-const iri = computed(() => {
-    const [prefix, localName] = props.node.id.split(":");
-    const namespace = chart["@context"][prefix as keyof typeof chart["@context"]];
-    const iri = `${namespace}${localName}`;
-    return namedNode(iri)
-})
-
 const label = computed(() => {
-    return getLabel(iri.value)
+    return getLabel(props.node.id)
 })
 </script>
 <template>
@@ -106,8 +83,14 @@ const label = computed(() => {
 <style scoped>
 .label{
     /* margin-top:0.25rem; */
-    font-size: 13px;
-    line-height: 13px;
+    font-size: 0.8rem;
+    line-height: 1;
+}
+@media print {
+    .label {
+        font-size: 0.7rem;
+        padding-top: 0.1rem;
+    }
 }
 .rank-Sub-Period{
     /* outline-color: magenta !important; */
@@ -155,7 +138,7 @@ p {
     justify-content: baseline;
     text-align: center;
     height: 100%;
-    font-size: 13px;
+    font-size: 0.8rem;
 }
 
 .v-text {
