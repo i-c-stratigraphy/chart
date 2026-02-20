@@ -1,0 +1,22 @@
+# https://taskfile.dev
+
+version: '3'
+
+vars:
+  GREETING: Hello, World!
+
+tasks:
+  default:
+    cmds:
+      - echo "{{.GREETING}}"
+    silent: true
+
+  test-actions:
+    desc: Run the deploy-chart GitHub Action pipeline locally using gh act
+    cmds:
+      - gh act release -W .github/workflows/deploy-chart.yml --artifact-server-path /tmp/github-artifacts --artifact-server-port 34568 --action-cache-path /tmp/act-cache
+
+  test-pdfs:
+    desc: Run build + publish-pdfs jobs locally to validate PDF generation
+    cmds:
+      - gh act release -W .github/workflows/deploy-chart.yml -j publish-pdfs --artifact-server-path /tmp/github-artifacts --artifact-server-port 34568 --action-cache-path /tmp/act-cache
