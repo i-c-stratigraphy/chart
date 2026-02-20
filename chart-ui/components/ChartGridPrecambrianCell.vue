@@ -72,8 +72,14 @@ const label = computed(() => {
 <style scoped>
 .label{
     /* margin-top:0.25rem; */
-    font-size: 13px;
-    line-height: 13px;
+    font-size: 0.8rem;
+    line-height: 1;
+}
+@media print {
+    .label {
+        font-size: 0.7rem;
+        padding-top: 0.1rem;
+    }
 }
 .cell{
     outline:black solid 1px;
@@ -104,7 +110,7 @@ p {
     justify-content: baseline;
     text-align: center;
     height:100%;
-    font-size: 13px;
+    font-size: 0.8rem;
 }
 .v-text {
     display: inline-block;

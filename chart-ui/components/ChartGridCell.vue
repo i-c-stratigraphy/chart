@@ -83,8 +83,14 @@ const label = computed(() => {
 <style scoped>
 .label{
     /* margin-top:0.25rem; */
-    font-size: 13px;
-    line-height: 13px;
+    font-size: 0.8rem;
+    line-height: 1;
+}
+@media print {
+    .label {
+        font-size: 0.7rem;
+        padding-top: 0.1rem;
+    }
 }
 .rank-Sub-Period{
     /* outline-color: magenta !important; */
@@ -132,7 +138,7 @@ p {
     justify-content: baseline;
     text-align: center;
     height: 100%;
-    font-size: 13px;
+    font-size: 0.8rem;
 }
 
 .v-text {

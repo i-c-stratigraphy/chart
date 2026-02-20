@@ -336,7 +336,7 @@ const downloadPdf = () => {
 
 body {
   print-color-adjust: exact;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Palatino', Arial, Helvetica, sans-serif;
 }
 </style>
 <style scoped>
@@ -377,6 +377,11 @@ body {
   text-align: center;
   grid-column: span var(--_col-span, 1);
   grid-row: span var(--_row-span, 1);
+}
+@media print {
+  .cell {
+    font-size: 0.9rem;
+  }
 }
 
 .cell img {
