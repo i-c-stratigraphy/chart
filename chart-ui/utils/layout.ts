@@ -66,8 +66,8 @@ export function useLayoutEngine(cf: AnyPointer) {
 
     const children = maxDepth > 0
       ? node.out(namedNode(NS.skos + 'narrower'))
-          .map(child => buildNode(child.term!.value, maxDepth - 1))
-          .sort((a, b) => (a.order || 0) - (b.order || 0))
+        .map(child => buildNode(child.term!.value, maxDepth - 1))
+        .sort((a, b) => (a.order || 0) - (b.order || 0))
       : []
 
     const directNarrowers = children.length
@@ -76,7 +76,17 @@ export function useLayoutEngine(cf: AnyPointer) {
     return {
       id: iri,
       type: 'skos:Concept', // Default
-      rank: node.out(namedNode(NS.gts + 'rank')).term?.value || '',
+      rank: (() => {
+        const ranks = node.out(namedNode(NS.gts + 'rank')).terms.map(t => t.value)
+        if (ranks.includes(NS.rank + 'SuperEon')) return NS.rank + 'SuperEon'
+        if (ranks.includes(NS.rank + 'Eon')) return NS.rank + 'Eon'
+        if (ranks.includes(NS.rank + 'Era')) return NS.rank + 'Era'
+        if (ranks.includes(NS.rank + 'Period')) return NS.rank + 'Period'
+        if (ranks.includes(NS.rank + 'Sub-Period')) return NS.rank + 'Sub-Period'
+        if (ranks.includes(NS.rank + 'Epoch')) return NS.rank + 'Epoch'
+        if (ranks.includes(NS.rank + 'Age')) return NS.rank + 'Age'
+        return ranks[0] || ''
+      })(),
       ratifiedGSSP: getLiteral(node, NS.gts + 'ratifiedGSSP') === 'true',
       ratifiedGSSA: getLiteral(node, NS.gts + 'ratifiedGSSA') === 'true',
       isDefinedBy: getLiteral(node, NS.rdfs + 'isDefinedBy') || '',
@@ -177,7 +187,7 @@ export function useLayoutEngine(cf: AnyPointer) {
       NS.ischart + 'Ordovician',
       NS.ischart + 'Cambrian',
     ])
-    
+
     const s4 = buildNode(precambrian)
     calculateHeights(s4)
 
