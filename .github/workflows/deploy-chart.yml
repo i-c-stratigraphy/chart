@@ -19,12 +19,6 @@ jobs:
         working-directory: ./chart-ui
         run: CI=false pnpm generate
 
-      - name: Copy chart RDF artifacts to build output
-        run: |
-          cp ./source/multilang/chart-nolang.ttl ./chart-ui/.output/public/chart.ttl
-          cp ./source/multilang/prefLabels.ttl ./chart-ui/.output/public/prefLabels.ttl
-          cp ./source/multilang/definitions.ttl ./chart-ui/.output/public/definitions.ttl
-
       - name: Verify final build output
         run: |
           echo "Final build output contents:"

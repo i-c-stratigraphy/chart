@@ -1,8 +1,10 @@
 import { ref, shallowRef } from 'vue'
 import n3 from 'n3'
 import clownface from 'clownface'
-import $rdf from 'rdf-ext'
 import type { AnyPointer } from 'clownface'
+import chartTtl from '../../source/multilang/chart-nolang.ttl?raw'
+import prefLabelsTtl from '../../source/multilang/prefLabels.ttl?raw'
+import definitionsTtl from '../../source/multilang/definitions.ttl?raw'
 
 export function useRDFStore() {
   const store = shallowRef<n3.Store>(new n3.Store())
@@ -14,20 +16,13 @@ export function useRDFStore() {
     loading.value = true
     error.value = null
     const parser = new n3.Parser()
-    const urls = [
-      'chart.ttl',
-      'prefLabels.ttl',
-      'definitions.ttl'
-    ]
 
     try {
-      const quads: n3.Quad[] = []
-      await Promise.all(urls.map(async (url) => {
-        const response = await fetch(`${url}?cachebreaker=${Math.random()}`)
-        if (!response.ok) throw new Error(`Failed to fetch ${url}`)
-        const text = await response.text()
-        quads.push(...parser.parse(text))
-      }))
+      const quads: n3.Quad[] = [
+        ...parser.parse(chartTtl),
+        ...parser.parse(prefLabelsTtl),
+        ...parser.parse(definitionsTtl),
+      ]
 
       const newStore = new n3.Store(quads)
       store.value = newStore
