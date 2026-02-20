@@ -15,6 +15,11 @@ jobs:
         with:
           python-version-file: "pyproject.toml"
 
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
       - name: Install uv
         uses: astral-sh/setup-uv@v6
         with:
@@ -46,6 +51,9 @@ jobs:
           name: chart-ui-build
           path: chart-ui-build
 
+      - name: Install PDF export dependencies
+        run: npm install --prefix .github/scripts --no-fund --no-audit --package-lock=false
+
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
         run: |
@@ -58,26 +66,18 @@ jobs:
           run_pdf_export() {
             local output="$1"
             local url="$2"
-            local chrome_profile
-            chrome_profile="$(mktemp -d)"
 
             log "START export output=${output} url=${url}"
-            log "using chrome profile: ${chrome_profile}"
             rm -f "$output"
 
             set +e
-            timeout --foreground 180s "${{ steps.setup-chrome.outputs.chrome-path }}" \
-              --user-data-dir="${chrome_profile}" \
-              --headless=old \
-              --no-sandbox \
-              --disable-dev-shm-usage \
-              --disable-gpu \
-              --print-to-pdf="$output" \
-              --no-pdf-header-footer \
-              "$url"
+            timeout --foreground 210s node .github/scripts/export-pdf.mjs \
+              --chrome-path "${{ steps.setup-chrome.outputs.chrome-path }}" \
+              --url "$url" \
+              --output "$output" \
+              --timeout-ms 180000
             local status=$?
             set -e
-            rm -rf "${chrome_profile}" || true
 
             if [[ $status -ne 0 ]]; then
               log "ERROR export failed output=${output} status=${status}"

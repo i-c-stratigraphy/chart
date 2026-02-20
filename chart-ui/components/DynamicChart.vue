@@ -36,6 +36,13 @@ const downloadVersion = ref("");
 const layoutEngine = shallowRef(null);
 const pdfVersionError = ref(false);
 
+const setChartReadyState = (state) => {
+  if (typeof document === "undefined") {
+    return;
+  }
+  document.documentElement.dataset.chartReady = state;
+};
+
 const labelTypeOptions = [
   { label: "Stratigraphic", value: "stratigraphic" },
   { label: "Chronometric", value: "timescale" },
@@ -44,6 +51,22 @@ const labelType = ref(labelTypeOptions[0].value);
 
 const { cf, loadStore, error: rdfError } = useRDFStore();
 const { getLabel } = createLabelProvider(cf, selectedLang, labelType);
+
+watch(
+  [ready, error, rdfError],
+  ([isReady, localError, storeError]) => {
+    if (isReady) {
+      setChartReadyState("1");
+      return;
+    }
+    if (localError || storeError) {
+      setChartReadyState("error");
+      return;
+    }
+    setChartReadyState("0");
+  },
+  { immediate: true }
+);
 
 function extractMeta(pointer) {
   const cs = pointer.node(namedNode(NS.cs));
@@ -90,9 +113,11 @@ const chartReleaseVersion = computed(() => {
 });
 
 onMounted(async () => {
+  setChartReadyState("0");
   await loadStore();
   if (!cf.value) {
     error.value = new Error("Failed to load RDF chart data.");
+    setChartReadyState("error");
     return;
   }
 
