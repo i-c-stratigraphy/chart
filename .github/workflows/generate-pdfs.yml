@@ -27,7 +27,7 @@ jobs:
       - name: Get chart version
         id: chart-version
         run: |
-          echo version="$(kurra sparql chart.ttl 'select * where { <http://resource.geosciml.org/classifier/ics/ischart> <http://www.w3.org/2002/07/owl#versionInfo> ?o } limit 1' --response-format json \
+          echo version="$(kurra sparql source/multilang/chart-nolang.ttl 'select * where { <http://resource.geosciml.org/classifier/ics/ischart> <http://www.w3.org/2002/07/owl#versionInfo> ?o } limit 1' --response-format json \
           | python3 -c "import sys, ast, json; print(json.dumps(ast.literal_eval(sys.stdin.read())))" \
           | jq -r '.results.bindings[0].o.value')" >> $GITHUB_OUTPUT
 
@@ -42,7 +42,10 @@ jobs:
       - name: Run a multi-line script
         run: |
           echo "starting"
-          langs=$(curl https://stratigraphy.org/chart/chart.json | jq -r '.hasTopConcept | .. | .language?|select( . != null )'|sort -u)
+          langs=$(kurra sparql source/multilang/prefLabels.ttl 'select distinct ?lang where { ?s <http://www.w3.org/2004/02/skos/core#prefLabel> ?o . bind(lang(?o) as ?lang) filter(?lang != "") } order by ?lang' --response-format json \
+            | python3 -c "import sys, ast, json; print(json.dumps(ast.literal_eval(sys.stdin.read())))" \
+            | jq -r '.results.bindings[].lang' \
+            | sort -u)
           date=$(date '+%y.%m')
           version=$date # $(git describe --tags --abbrev=0 )
           echo $langs 

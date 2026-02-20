@@ -19,38 +19,11 @@ jobs:
         working-directory: ./chart-ui
         run: CI=false pnpm generate
 
-      - uses: actions/setup-python@v4
-        with:
-          python-version: "3.12"
-
-      - name: Install Poetry
-        uses: snok/install-poetry@v1
-        with:
-          virtualenvs-create: true
-          virtualenvs-in-project: true
-          virtualenvs-path: ./.venv
-
-      - name: Install Python dependencies
-        run: poetry install --no-root
-
-      - name: run script
+      - name: Copy chart RDF artifacts to build output
         run: |
-          pushd ./chart-generate
-          poetry run python chartgen.py
-          cp ./out/chart.hierarchy.json ../chart-ui/.output/public/chart.hierarchy.json
-          cp ./out/chart.1.json ../chart-ui/.output/public/chart.1.json
-          cp ./out/chart.2.json ../chart-ui/.output/public/chart.2.json
-          cp ./out/chart.3.json ../chart-ui/.output/public/chart.3.json
-          cp ./out/chart.4.json ../chart-ui/.output/public/chart.4.json
-          cp ./out/chart.meta.json ../chart-ui/.output/public/chart.meta.json
-          cp ./out/chart.json ../chart-ui/.output/public/chart.json
-          popd
-
-      - name: Copy chart.ttl, xlsx.ttl and chart-source.xlsx to build output
-        run: |
-          cp ./chart.ttl ./chart-ui/.output/public/chart.ttl
-          cp ./source/xlsx.ttl ./chart-ui/.output/public/xlsx.ttl
-          cp ./source/chart-source.xlsx ./chart-ui/.output/public/chart-source.xlsx
+          cp ./source/multilang/chart-nolang.ttl ./chart-ui/.output/public/chart.ttl
+          cp ./source/multilang/prefLabels.ttl ./chart-ui/.output/public/prefLabels.ttl
+          cp ./source/multilang/definitions.ttl ./chart-ui/.output/public/definitions.ttl
 
       - name: Verify final build output
         run: |
