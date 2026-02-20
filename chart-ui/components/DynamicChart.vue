@@ -1,264 +1,205 @@
 <script setup>
 import {
-  onlyUnique,
   scaleOptions,
   getScaleOptionLabel,
   getScaleObj,
-  getTitleLangVariant,
 } from "~/utils/util";
 import { useRouteQuery } from "@vueuse/router";
-import { computed } from "vue";
+import { computed, ref, onMounted, watch, shallowRef } from "vue";
 import { createLabelProvider } from "@/utils/label";
-// import type {  chartMeta } from "~/utils/util";
+import { useRDFStore } from "@/utils/rdfStore";
+import { useLayoutEngine } from "@/utils/layout";
+import n3 from "n3";
+
+const { namedNode } = n3.DataFactory;
+
+const NS = {
+  dcterms: "http://purl.org/dc/terms/",
+  owl: "http://www.w3.org/2002/07/owl#",
+  skos: "http://www.w3.org/2004/02/skos/core#",
+  cs: "http://resource.geosciml.org/classifier/ics/ischart",
+  icsVisual: "http://resource.geosciml.org/ontology/ics-visual-chart/",
+};
 
 const target = useRouteQuery("target", "");
 const selectedLang = useRouteQuery("language", "en");
 const selectedScale = useRouteQuery("scale", scaleOptions[0]);
+const showInfo = computed(() => target.value !== "");
 
-const useCDN = false;
-
-const dataLookup = ref({});
 const infoTarget = ref(null);
 const ready = ref(false);
 const error = ref(null);
 const data = ref([]);
 const meta = ref(undefined);
-const showInfo = computed(() => target.value !== "");
-const labelsData = ref("");
-const chartRDFData = ref("");
-const labelTypeOptions = [
-  {
-    label: "Stratigraphic",
-    value: "stratigraphic",
-  },
-  {
-    label: "Chronometric",
-    value: "timescale",
-  },
-];
-const labelType = ref(labelTypeOptions[0].value);
-createLabelProvider([chartRDFData, labelsData], selectedLang, labelType);
-
-function getMeta() {
-  const apiUrl = useCDN
-    ? "https://cdn.jsdelivr.net/gh/i-c-stratigraphy/chart@gh-pages"
-    : "https://stratigraphy.org/chart";
-
-  return fetch(`${apiUrl}/chart.meta.json?cachebreaker=${Math.random()}`)
-    .then((r) => {
-      if (!r.ok || r.status > 300) {
-        throw "error";
-      }
-      return r;
-    })
-    .then((r) => {
-      return r.json();
-    })
-    .then((r) => {
-      meta.value = r;
-    })
-    .catch((err) => {
-      error.value = {
-        ...error.value,
-        files: [...error.value.files, `chart-${segment}`],
-        message: "Error fetching chart files",
-      };
-      throw err;
-    });
-}
-function getSubChart(segment, idx) {
-  const apiUrl = useCDN
-    ? "https://cdn.jsdelivr.net/gh/i-c-stratigraphy/chart@gh-pages"
-    : "https://stratigraphy.org/chart/";
-  const seg = segment !== "" ? `.${segment}` : "";
-
-  return fetch(`${apiUrl}/chart${seg}.json?cachebreaker=${Math.random()}`)
-    .then((r) => {
-      if (!r.ok || r.status > 300) {
-        throw "error";
-      }
-      return r;
-    })
-    .then((r) => {
-      return r.json();
-    })
-    .then((r) => {
-      data.value[idx] = r;
-    })
-    .catch((err) => {
-      error.value = {
-        ...error.value,
-        files: [...error.value.files, `chart-${segment}`],
-        message: "Error fetching chart files",
-      };
-      throw err;
-    });
-}
-function getChartRDFData() {
-  const apiUrl = useCDN
-    ? "https://cdn.jsdelivr.net/gh/i-c-stratigraphy/chart@gh-pages"
-    : "https://stratigraphy.org/chart";
-
-  return fetch(`${apiUrl}/chart.ttl?cachebreaker=${Math.random()}`)
-    .then((r) => {
-      if (!r.ok || r.status > 300) {
-        throw "error";
-      }
-      return r;
-    })
-    .then((r) => {
-      return r.text();
-    })
-    .then((r) => {
-      chartRDFData.value = r;
-    });
-}
-function getSKOSXLLabelsData() {
-  const apiUrl = useCDN
-    ? "https://cdn.jsdelivr.net/gh/i-c-stratigraphy/chart@gh-pages"
-    : "https://stratigraphy.org/chart";
-
-  return fetch(`${apiUrl}/xlsx.ttl?cachebreaker=${Math.random()}`)
-    .then((r) => {
-      if (!r.ok || r.status > 300) {
-        throw "error";
-      }
-      return r;
-    })
-    .then((r) => {
-      return r.text();
-    })
-    .then((r) => {
-      labelsData.value = r;
-    });
-}
 const pdfVersion = ref("");
 const downloadVersion = ref("");
-onMounted(async () => {
-  const timeout = setTimeout(() => {
-    error.value = { message: "Timed out fetching chart data" };
-  }, 20 * 1000);
-  await getMeta();
-  await Promise.all([
-    getChartRDFData(),
-    getSKOSXLLabelsData(),
-    getSubChart(1, 0),
-    getSubChart(2, 1),
-    getSubChart(3, 2),
-    getSubChart(4, 3),
-    getSubChart("hierarchy", 4),
-    // getSubChart("meta", 5),
-  ])
-    .then((all) => {
-      clearTimeout(timeout);
-      data.value.forEach((elem) => {
-        if (elem.scopedNote) {
-          return;
-        }
-        flattenData(elem);
-      });
-      infoTarget.value = target.value ? dataLookup.value[target.value] : null;
-      ready.value = true;
-    })
-    .catch((e) => {
-      error.value = { message: `An error occurred grabbing chart data ${e}` };
-    });
-  //"https://api.github.com/repos/i-c-stratigraphy/chart/tags"
-  const v = await (
-    await fetch(
-      "https://data.jsdelivr.com/v1/packages/gh/i-c-stratigraphy/chart"
-    )
-  ).json();
-  const regexp = new RegExp(/(\d)*\.(\d)*\.(\d)*/);
-  // console.log(v.versions.filter(x=> regexp.test(x.version) )[0].version ?? ''    )
-  pdfVersion.value =
-    v.versions.filter((x) => regexp.test(x.version))[0].version ?? "";
-  console.log(v.versions.filter((x) => regexp.test(x.version)));
-});
+const layoutEngine = shallowRef(null);
+const pdfVersionError = ref(false);
 
-const flattenLangs = (acc, cur) => {
-  if (cur.narrower) {
-    cur.narrower.reduce(flattenLangs, acc);
-  }
-  if (Array.isArray(cur.altLabel)) {
-    acc.push([cur.prefLabel, ...cur.altLabel]);
-  } else {
-    acc.push([cur.prefLabel, cur.altLabel]);
-  }
-  return acc;
-};
+const labelTypeOptions = [
+  { label: "Stratigraphic", value: "stratigraphic" },
+  { label: "Chronometric", value: "timescale" },
+];
+const labelType = ref(labelTypeOptions[0].value);
 
-const langs = computed(() => {
-  if (data.length < 1) {
-    return ["en"];
-  }
-  return data.value
-    .reduce(flattenLangs, [])
-    .flat()
-    .filter((x) => x != undefined)
-    .map((x) => x.language)
-    .filter(onlyUnique);
-});
-function flattenData(node) {
-  if (node.narrower) {
-    node.narrower.forEach((n) => {
-      flattenData(n);
-    });
-  }
-  dataLookup.value[node.id] = JSON.parse(JSON.stringify(node));
+const { cf, loadStore, error: rdfError } = useRDFStore();
+const { getLabel } = createLabelProvider(cf, selectedLang, labelType);
+
+function extractMeta(pointer) {
+  const cs = pointer.node(namedNode(NS.cs));
+  const blurb = pointer.node(namedNode(`${NS.icsVisual}Blurb`));
+  // Keep `scopeNote` key for compatibility with existing rendering helpers.
+  const scopeNote = blurb
+    .out(namedNode(NS.skos + "prefLabel"))
+    .terms.filter((t) => t.termType === "Literal" && t.value !== "")
+    .map((t) => ({
+      language: t.language,
+      value: t.value,
+    }));
+
+  return {
+    id: NS.cs,
+    versionInfo: cs.out(namedNode(NS.owl + "versionInfo")).term?.value || "",
+    prefLabel: {
+      value: cs.out(namedNode(NS.skos + "prefLabel")).term?.value || "",
+    },
+    creator: {
+      url:
+        cs.out(namedNode(NS.dcterms + "creator")).term?.value ||
+        "www.stratigraphy.org",
+    },
+    scopeNote,
+  };
 }
 
-const languageNames = new Intl.DisplayNames(["en"], {
-  type: "language",
+function resolveInfoTarget(iri) {
+  if (!iri || !layoutEngine.value) {
+    return null;
+  }
+  try {
+    // Build directly from RDF so relations are not tied to filtered chart segments.
+    return layoutEngine.value.buildNode(iri, 1);
+  } catch (e) {
+    console.error(`Error resolving chart node ${iri}`, e);
+    return null;
+  }
+}
+
+const chartReleaseVersion = computed(() => {
+  return pdfVersion.value || meta.value?.versionInfo || "";
 });
+
+onMounted(async () => {
+  await loadStore();
+  if (!cf.value) {
+    error.value = new Error("Failed to load RDF chart data.");
+    return;
+  }
+
+  layoutEngine.value = useLayoutEngine(cf.value);
+  data.value = layoutEngine.value.getSegments();
+  meta.value = extractMeta(cf.value);
+  infoTarget.value = resolveInfoTarget(target.value);
+  ready.value = true;
+
+  try {
+    const v = await (
+      await fetch(
+        "https://data.jsdelivr.com/v1/packages/gh/i-c-stratigraphy/chart"
+      )
+    ).json();
+    const regexp = new RegExp(/(\d)*\.(\d)*\.(\d)*/);
+    const version = v.versions.find((x) => regexp.test(x.version));
+    pdfVersion.value = version?.version ?? "";
+  } catch (e) {
+    pdfVersionError.value = true;
+    console.error("Error fetching pdf version", e);
+  }
+});
+
+const langs = computed(() => {
+  if (!cf.value) return ["en"];
+  const languages = cf.value
+    .out(namedNode(NS.skos + "prefLabel"))
+    .terms.map((t) => t.language)
+    .filter((l) => l && l !== "");
+
+  const validLanguages = languages.filter((l) => {
+    try {
+      new Intl.DisplayNames([l], { type: "language" });
+      return true;
+    } catch (e) {
+      return false;
+    }
+  });
+
+  return Array.from(new Set(["en", ...validLanguages])).sort();
+});
+
+const languageNames = computed(() => {
+  try {
+    return new Intl.DisplayNames(["en"], { type: "language" });
+  } catch (e) {
+    return { of: (l) => l };
+  }
+});
+
+const getLocalLangName = (lang) => {
+  try {
+    return new Intl.DisplayNames([lang], { type: "language" }).of(lang) || lang;
+  } catch (e) {
+    const normalizedLang = lang.split("-")[0];
+    try {
+      return (
+        new Intl.DisplayNames(["en"], { type: "language" }).of(normalizedLang) ||
+        lang
+      );
+    } catch (e2) {
+      return lang;
+    }
+  }
+};
+
 const handleView = (node) => {
   target.value = node;
-  infoTarget.value = dataLookup.value[target.value];
 };
-const versionInfo = computed(() => {
-  return meta.value.versionInfo;
+
+const chartTitle = computed(() => {
+  if (!meta.value) return "loading";
+  return getLabel(NS.cs);
 });
-const downloadLink = computed(() => {
-  return `https://github.com/i-c-stratigraphy/chart/releases/download/v${pdfVersion.value}/ICS_Chart_${versionInfo.value}${downloadVersion.value ? `_${downloadVersion.value}` : ""}.pdf`;
+
+const commissionTitle = computed(() => {
+  if (!meta.value) return "loading";
+  // Simplified for now, could resolve from a specific IRI if needed
+  return "International Commission on Stratigraphy";
 });
-const downloadPdf = (e) => {
-  const link = downloadLink.value;
+
+watch(target, (newTarget) => {
+  infoTarget.value = resolveInfoTarget(newTarget);
+});
+
+const downloadPdf = () => {
+  if (!chartReleaseVersion.value || !meta.value?.versionInfo) {
+    return;
+  }
+
+  const versionInfo = meta.value?.versionInfo || "";
+  const link = `https://github.com/i-c-stratigraphy/chart/releases/download/v${chartReleaseVersion.value}/ICS_Chart_${versionInfo}${downloadVersion.value ? `_${downloadVersion.value}` : ""}.pdf`;
   const a = document.createElement("a");
   a.href = link;
-  a.download = link.split("/").pop();
+  a.download = link.split("/").pop() || "chart.pdf";
   document.body.appendChild(a);
   a.click();
   document.body.removeChild(a);
 };
-watch(
-  dataLookup,
-  (newValue) => {
-    infoTarget.value = newValue[target.value];
-  },
-  { deep: true }
-);
-const chartTitle = computed(() => {
-  if (!meta.value) {
-    return "loading";
-  }
-  return getTitleLangVariant(meta.value, selectedLang.value);
-});
-const commissionTitle = computed(() => {
-  if (!meta.value) {
-    return "loading";
-  }
-  if (!meta.value.creator) {
-    return "loading";
-  }
-  return getNameLangVariant(meta.value.creator, selectedLang.value);
-});
 </script>
 <template>
   <div class="dynamic-chart">
     <teleport to="body">
       <div
         class="lightbox"
-        v-if="showInfo && infoTarget && dataLookup"
+        v-if="showInfo && infoTarget"
         @click.self="target = ''"
       >
         <div class="content">
@@ -267,7 +208,6 @@ const commissionTitle = computed(() => {
             :key="infoTarget.id"
             :lang="selectedLang"
             @view="handleView"
-            :hierarchy="data[4]"
             @close="target = ''"
           />
         </div>
@@ -285,7 +225,7 @@ const commissionTitle = computed(() => {
         <img src="/logo-ics-3D-dark.png" />
       </div>
       <div class="cell" style="--_col-span: 1; --_row-span: 1">
-        <h2>{{ meta ? meta.creator?.url : "www.stratigraphy.org" }}</h2>
+        <h2>{{ meta.creator?.url }}</h2>
       </div>
       <div class="cell" style="--_col-span: 1; --_row-span: 1">
         <h2>{{ commissionTitle }}</h2>
@@ -295,11 +235,8 @@ const commissionTitle = computed(() => {
       </div>
     </div>
 
-    <div v-if="error" class="error-banner">
-      {{ error.message }}
-      <ul v-if="error.files">
-        <li v-for="f in error.files">{{ f }}</li>
-      </ul>
+    <div v-if="rdfError || error" class="error-banner">
+      {{ (rdfError || error).message }}
     </div>
     <div v-else>
       <div v-if="!ready">LOADING</div>
@@ -308,17 +245,15 @@ const commissionTitle = computed(() => {
           <label>
             Language:
             <select v-model="selectedLang">
-              <option v-for="lang in langs" :value="lang">
-                {{ languageNames.of(lang) }} ({{
-                  new Intl.DisplayNames([lang], { type: "language" }).of(lang)
-                }})
+              <option v-for="lang in langs" :key="lang" :value="lang">
+                {{ languageNames.of(lang) }} ({{ getLocalLangName(lang) }})
               </option>
             </select>
           </label>
           <label>
             Scaling:
             <select v-model="selectedScale">
-              <option v-for="scale in scaleOptions" :value="scale">
+              <option v-for="scale in scaleOptions" :key="scale" :value="scale">
                 {{ getScaleOptionLabel(scale) }}
               </option>
             </select>
@@ -326,24 +261,29 @@ const commissionTitle = computed(() => {
           <label>
             Column headings:
             <select v-model="labelType">
-              <option v-for="label in labelTypeOptions" :value="label.value">
+              <option
+                v-for="label in labelTypeOptions"
+                :key="label.value"
+                :value="label.value"
+              >
                 {{ label.label }}
               </option>
             </select>
           </label>
-          <label v-if="pdfVersion != ''">
+          <label>
             Download:
             <select v-model="downloadVersion">
               <option value="">Main</option>
               <option v-for="lang in langs" :key="lang" :value="lang">
-                {{ languageNames.of(lang) }} ({{
-                  new Intl.DisplayNames([lang], { type: "language" }).of(lang)
-                }})
+                {{ languageNames.of(lang) }} ({{ getLocalLangName(lang) }})
               </option>
             </select>
             <button @click="downloadPdf">
               Data-generated PDF (test version)
             </button>
+            <small v-if="pdfVersionError && chartReleaseVersion">
+              Using fallback version from chart metadata.
+            </small>
           </label>
         </div>
         <div class="grid-4">
@@ -353,23 +293,17 @@ const commissionTitle = computed(() => {
             :lang="selectedLang"
             :key="num - 1 + selectedLang"
             :scaling="getScaleObj(selectedScale)"
+            :label-type="labelType"
             :kind="num === 4 ? 'precambrian' : 'default'"
             :meta="meta"
             @view="handleView"
           />
-          <!-- <ChartGrid :node="data[0]" :lang="selectedLang" :key="'1' + selectedLang"
-                        :scaling="getScaleObj(selectedScale)" @view="handleView" />
-                    <ChartGrid :node="data[1]" :lang="selectedLang" :key="'2' + selectedLang"
-                        :scaling="getScaleObj(selectedScale)" @view="handleView" />
-                    <ChartGrid :node="data[2]" :lang="selectedLang" :key="'3' + selectedLang"
-                        :scaling="getScaleObj(selectedScale)" @view="handleView" />
-                    <ChartGridPrecambrian :node="data[3]" :lang="selectedLang" :key="'4' + selectedLang"
-                        :scaling="getScaleObj(selectedScale)" @view="handleView" /> -->
         </div>
       </div>
     </div>
   </div>
 </template>
+
 <style>
 * {
   box-sizing: border-box;

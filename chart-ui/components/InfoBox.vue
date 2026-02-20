@@ -1,34 +1,25 @@
 <script setup lang="ts">
 import { computed } from 'vue';
-import n3 from 'n3';
-import { type Hierarchy, getLangVarientFromHierarchy } from '~/utils/util';
+import { type chartNode } from '~/utils/util';
 import { useLabelContext } from '~/utils/label';
-import chart from "@/public/chart.json"
 
 const props = defineProps<{
     node: chartNode,
     lang: string,
-    hierarchy:Hierarchy
 }>()
 const emit = defineEmits<{
     (e: 'view', node: string): void
     (e: 'close'): void
 }>()
 
-const { getLabel } = useLabelContext()
-const { namedNode } = n3.DataFactory
-
-const NodeId = props.node["id"]
-
-const iri = computed(() => {
-    const [prefix, localName] = props.node.id.split(":");
-    const namespace = chart["@context"][prefix as keyof typeof chart["@context"]];
-    const iri = `${namespace}${localName}`;
-    return namedNode(iri)
-})
+const { getLabel, getDefinition } = useLabelContext()
 
 const label = computed(() => {
-    return getLabel(iri.value, "longform")
+    return getLabel(props.node.id)
+})
+
+const definition = computed(() => {
+    return getDefinition(props.node.id) || props.node.definition
 })
 </script>
 <template>
@@ -38,45 +29,37 @@ const label = computed(() => {
            --_bg-color:${node.color};
             --_fg-color:${contrastColor(hexToRgb(node.color)!)};
     `">
-            <!-- <span class="pref-label">{{ prefLabel }}</span> -->
             <span class="pref-label">{{ label }}</span>
             <button @click="emit('close')">Close</button>
             <GSSPGoldenSpike  v-if="props.node.ratifiedGSSP " class="icon"/>
             <GSSAClock  v-if="props.node.ratifiedGSSA " class="icon"/>
         </div>
         <div class="definition">
-            <p>{{ props.node.definition }}</p>
+            <p>{{ definition }}</p>
         </div>
         <div class="details">
             <table class="table-details">
 
-                <tr v-if="props.hierarchy[NodeId].broader">
+                <tr v-if="props.node.broader && props.node.broader.length > 0">
                     <th>Within</th>
-                   
-                    <!-- <td @click="emit('view', props.node.broader[0])">{{ props.node.broader[0].replace('ischart:','') }}</td> -->
                     <td>
-                        <ul v-if= props.hierarchy[NodeId].broader class="linked-periods">
-
-                            <li  @click="emit('view', props.hierarchy[NodeId].broader?.id!)">
-                                {{ getLangVarientFromHierarchy(props.hierarchy[NodeId].broader!, props.lang) }}
+                        <ul class="linked-periods">
+                            <li v-for="b in props.node.broader" :key="b" @click="emit('view', b)">
+                                {{ getLabel(b) }}
                             </li>
                         </ul>
                     </td>
-
                 </tr>
-                <tr v-if="props.hierarchy[NodeId].narrower">
+                <tr v-if="props.node.narrower && props.node.narrower.length > 0">
                     <th>Contains</th>
                     <td>
-                        <ul class="linked-periods" v-if="props.hierarchy[NodeId].narrower">
-                            <li v-for="n in props.hierarchy[NodeId].narrower" :key="n.id" @click="emit('view', n.id)" >
-                                {{ getLangVarientFromHierarchy(n, props.lang)  }}
+                        <ul class="linked-periods">
+                            <li v-for="n in props.node.narrower" :key="n.id" @click="emit('view', n.id)" >
+                                {{ getLabel(n.id) }}
                             </li>
                         </ul>
                     </td>
                 </tr>
-                
-                
-                
             </table>
         </div>
     </div>

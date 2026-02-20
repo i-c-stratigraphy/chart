@@ -1,10 +1,12 @@
 <script setup lang="ts">
 import { type chartNode, type scalingFactor } from "@/utils/util"
+import type { LabelType } from "@/utils/label"
 
 const props = defineProps<{
     node: chartNode,
     lang: string,
     scaling: scalingFactor,
+    labelType: LabelType,
     kind: 'default' | 'precambrian',
     meta?: chartMeta,
 }>()
@@ -17,12 +19,12 @@ const emit = defineEmits<{
 <template>
     <div class="grid-wrapper">
         <div class="grid-7" v-if="props.kind == 'default'">
-            <ChartHeader tag="div" class="header v-text" iri="http://resource.geosciml.org/classifier/ics/ischart/Eons" />
-            <ChartHeader tag="div" class="header v-text" iri="http://resource.geosciml.org/classifier/ics/ischart/Eras" />
-            <ChartHeader tag="div" class="header v-text" iri="http://resource.geosciml.org/classifier/ics/ischart/Periods" />
-            <ChartHeader tag="div" class="headerx col-span-2" iri="http://resource.geosciml.org/classifier/ics/ischart/Epochs" />
+            <ChartHeader tag="div" class="header v-text" iri="http://resource.geosciml.org/classifier/ics/ischart/Eons" :label-type="props.labelType" />
+            <ChartHeader tag="div" class="header v-text" iri="http://resource.geosciml.org/classifier/ics/ischart/Eras" :label-type="props.labelType" />
+            <ChartHeader tag="div" class="header v-text" iri="http://resource.geosciml.org/classifier/ics/ischart/Periods" :label-type="props.labelType" />
+            <ChartHeader tag="div" class="headerx col-span-2" iri="http://resource.geosciml.org/classifier/ics/ischart/Epochs" :label-type="props.labelType" />
             <div style="position:relative">
-                <ChartHeader tag="span" class="header" iri="http://resource.geosciml.org/classifier/ics/ischart/Ages" />
+                <ChartHeader tag="span" class="header" iri="http://resource.geosciml.org/classifier/ics/ischart/Ages" :label-type="props.labelType" />
                 <span class="gssp-text v-text">GSSP</span>
             </div>
             <div class="header center age-text">Numeric Age</div>
@@ -31,11 +33,11 @@ const emit = defineEmits<{
         </div>
         <template v-else>
             <div class="grid-5 precambrian-grid">
-                <ChartHeader tag="div" class="header v-text" iri="http://resource.geosciml.org/classifier/ics/ischart/SuperEons" />
-                <ChartHeader tag="div" class="header v-text" iri="http://resource.geosciml.org/classifier/ics/ischart/Eons" />
-                <ChartHeader tag="div" class="headerx" iri="http://resource.geosciml.org/classifier/ics/ischart/Eras" />
+                <ChartHeader tag="div" class="header v-text" iri="http://resource.geosciml.org/classifier/ics/ischart/SuperEons" :label-type="props.labelType" />
+                <ChartHeader tag="div" class="header v-text" iri="http://resource.geosciml.org/classifier/ics/ischart/Eons" :label-type="props.labelType" />
+                <ChartHeader tag="div" class="headerx" iri="http://resource.geosciml.org/classifier/ics/ischart/Eras" :label-type="props.labelType" />
                 <div  style="position:relative">
-                    <ChartHeader tag="span" class="header" iri="http://resource.geosciml.org/classifier/ics/ischart/Periods" />
+                    <ChartHeader tag="span" class="header" iri="http://resource.geosciml.org/classifier/ics/ischart/Periods" :label-type="props.labelType" />
                     <span class="v-text gssp-text ">GSSP<br/> GSSA</span>
                 </div>
                 <div class="header center age-text">Numeric Age</div>
