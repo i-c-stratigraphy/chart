@@ -37,10 +37,12 @@ type timeMarker = {
         type: string
         value: number
     }
+    inMYALexical?: string
     marginOfError?: number | {
         type: string
         value: number
     }
+    marginOfErrorLexical?: string
     note: string
 }
 
@@ -123,14 +125,16 @@ export function getTimeMarker(beginning: timeMarker, end: timeMarker): string {
     let MarginOfError: string = ""
     if (typeof end.inMYA === 'number') {
         isPresent = end?.inMYA === 0
-        strTime = end?.inMYA.toString()
+        strTime = end.inMYALexical ?? end?.inMYA.toString()
 
     } else {
         isPresent = end?.inMYA.value == 0
-        strTime = end?.inMYA.value.toString()
+        strTime = end.inMYALexical ?? end?.inMYA.value.toString()
         MarginOfError
     }
-    if (end.marginOfError && typeof end.marginOfError == "number") {
+    if (end.marginOfErrorLexical) {
+        MarginOfError = end.marginOfErrorLexical
+    } else if (end.marginOfError && typeof end.marginOfError == "number") {
         MarginOfError = end.marginOfError.toString()
     } else if (end.marginOfError && !(typeof end.marginOfError == "number")) {
         MarginOfError = end.marginOfError.value.toString()
@@ -292,11 +296,16 @@ export function getCachedInfo(target: string) {
 }
 
 export function getScopedNote(meta: chartMeta, lang: string) {
+    if (!meta || !meta.scopeNote) return { value: "" }
     const scopeNote = meta.scopeNote.filter(x => x.language === lang)
-    if (scopeNote.length != 1) {
-        return meta.scopeNote.filter(x => x.language === "en")[0]
+    if (scopeNote.length >= 1) {
+        return scopeNote[0]
     }
-    return scopeNote[0]
+    const enNote = meta.scopeNote.filter(x => x.language === "en")
+    if (enNote.length >= 1) {
+        return enNote[0]
+    }
+    return meta.scopeNote[0] || { value: "" }
 }
 
 const colNames = {

@@ -1,11 +1,8 @@
 <script setup lang="ts">
 import { computed } from "vue"
 import n3 from "n3"
-import { getLangVariant ,sortedNode, getScaledHeight, getTimeMarker,type scalingFactor} from "@/utils/util"
-import chart from "@/public/chart.json"
+import { getLangVariant ,sortedNode, getScaledHeight, getTimeMarker,type scalingFactor, type chartNode} from "@/utils/util"
 import { useLabelContext } from "@/utils/label"
-
-const { namedNode } = n3.DataFactory
 
 const props = defineProps<{
     node: chartNode,
@@ -33,15 +30,8 @@ const handleClick = ()=>{
     emit("view",node.id)
 }
 
-const iri = computed(() => {
-    const [prefix, localName] = props.node.id.split(":");
-    const namespace = chart["@context"][prefix as keyof typeof chart["@context"]];
-    const iri = `${namespace}${localName}`;
-    return namedNode(iri)
-})
-
 const label = computed(() => {
-    return getLabel(iri.value)
+    return getLabel(props.node.id)
 })
 </script>
 <template>
@@ -82,8 +72,14 @@ const label = computed(() => {
 <style scoped>
 .label{
     /* margin-top:0.25rem; */
-    font-size: 13px;
-    line-height: 13px;
+    font-size: 0.8rem;
+    line-height: 1;
+}
+@media print {
+    .label {
+        font-size: 0.7rem;
+        padding-top: 0.1rem;
+    }
 }
 .cell{
     outline:black solid 1px;
@@ -114,7 +110,7 @@ p {
     justify-content: baseline;
     text-align: center;
     height:100%;
-    font-size: 13px;
+    font-size: 0.8rem;
 }
 .v-text {
     display: inline-block;

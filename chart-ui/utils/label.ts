@@ -1,113 +1,134 @@
-import { computed, provide, type Ref, inject } from "vue";
-import type { NamedNode } from "@rdfjs/types";
+import { provide, type Ref, inject } from "vue";
 import n3 from "n3";
-import clownface from "clownface";
-import $rdf from "rdf-ext";
+import type { AnyPointer } from "clownface";
 
-const sdo = $rdf.namespace("https://schema.org/");
-const skos = $rdf.namespace("http://www.w3.org/2004/02/skos/core#");
-const skosxl = $rdf.namespace("http://www.w3.org/2008/05/skos-xl#");
+const NS = {
+  skos: "http://www.w3.org/2004/02/skos/core#",
+  strat: "http://resource.geosciml.org/ontology/stratigraphy/",
+  ischart: "http://resource.geosciml.org/classifier/ics/ischart/",
+};
 
-const { literal } = n3.DataFactory;
+const { namedNode } = n3.DataFactory;
 
 const labelContextKey = Symbol("LabelContext");
-const shortform = literal("shortform");
-const longform = literal("longform");
-const defaultLanguage = literal("default");
+
+export type LabelType = "stratigraphic" | "timescale";
 
 type GetLabelFunction = (
-  iri: NamedNode,
-  formType?: "shortform" | "longform",
-  useDefaultLanguage?: boolean
+  iri: string,
+  type?: LabelType,
+  language?: string
+) => string;
+
+type GetDefinitionFunction = (
+  iri: string,
+  language?: string
 ) => string | undefined;
 
 export function createLabelProvider(
-  data: Ref<string>[],
-  lang: Ref<string>,
-  selectedLabelType: Ref<"stratigraphic" | "timescale">
+  cf: Ref<AnyPointer | null>,
+  currentLang: Ref<string>,
+  currentLabelType: Ref<LabelType>
 ) {
-  const parser = new n3.Parser({ format: "text/turtle" });
-  const langLiteral = computed(() =>
-    lang.value === "en" ? defaultLanguage : literal(lang.value)
-  );
-  const pointer = computed(() => {
-    const quads = [];
-    for (const d of data) {
-      quads.push(...parser.parse(d.value));
-    }
-    const store = new n3.Store(quads);
-    return clownface({ dataset: store });
-  });
+  function getDirectLabel(iri: string, lang: string): string | undefined {
+    if (!cf.value) return undefined;
+    const node = cf.value.node(namedNode(iri));
+    
+    // Try preferred label in target language
+    const pref = node.out(namedNode(NS.skos + "prefLabel"))
+      .terms.find(t => t.termType === "Literal" && t.language === lang)?.value;
+    if (pref) return pref;
 
-  /**
-   * Get a label for a given IRI.
-   *
-   * This functions tries to retrieve a SKOS-XL label in the selected language.
-   * If this fails, it tries to retrieve a normal SKOS literal label in the
-   * selected language. If this also fails, it tries to retrieve the SKOS-XL
-   * label in the default language. If this also fails, it returns 'Label not found'.
-   *
-   * @param iri - The IRI to get a label for
-   * @param formType - SKOS-XL label form (shortform or longform)
-   * @param useDefaultLanguage - Whether to use the default language
-   * @returns The label for the given IRI
-   */
-  function getLabel(
-    iri: NamedNode,
-    formType: "shortform" | "longform" = "shortform",
-    useDefaultLanguage: boolean = false
-  ): string {
-    const resource = pointer.value.node(iri);
+    // Try alt label in target language
+    const alt = node.out(namedNode(NS.skos + "altLabel"))
+      .terms.find(t => t.termType === "Literal" && t.language === lang)?.value;
+    if (alt) return alt;
 
-    let formTypeLiteral = shortform;
-    if (formType === "longform") {
-      formTypeLiteral = longform;
+    // Fallback to English
+    if (lang !== "en") {
+      return getDirectLabel(iri, "en");
     }
 
-    if (!useDefaultLanguage) {
-      const skosxlLabel = resource
-        .out(skosxl.prefLabel)
-        .has(sdo.inLanguage, langLiteral.value)
-        .has(sdo.keywords, formTypeLiteral)
-        .has(sdo.keywords, literal(selectedLabelType.value))
-        .out(skosxl.literalForm);
-
-      if (skosxlLabel.term?.value) {
-        return skosxlLabel.term.value;
-      }
-
-      const skosLiteralLabel = resource
-        .out(lang.value === "en" ? skos.prefLabel : skos.altLabel)
-        .terms.filter(
-          (term) => term.termType === "Literal" && term.language === lang.value
-        );
-
-      if (skosLiteralLabel.length > 0) {
-        return skosLiteralLabel[0].value;
-      }
-    }
-
-    const skosxlDefaultLabel = resource
-      .out(skosxl.prefLabel)
-      .has(sdo.inLanguage, defaultLanguage)
-      .has(sdo.keywords, formTypeLiteral)
-      .has(sdo.keywords, literal(selectedLabelType.value))
-      .out(skosxl.literalForm);
-
-    return skosxlDefaultLabel.term?.value ?? "Label not found";
+    return undefined;
   }
 
+  function getDefinition(iri: string, lang?: string): string | undefined {
+    if (!cf.value) return undefined;
+    const language = lang || currentLang.value;
+    const node = cf.value.node(namedNode(iri));
+    
+    const def = node.out(namedNode(NS.skos + "definition"))
+      .terms.find(t => t.termType === "Literal" && t.language === language)?.value;
+    
+    if (def) return def;
+
+    // Fallback to English
+    if (language !== "en") {
+      return getDefinition(iri, "en");
+    }
+
+    return undefined;
+  }
+
+  function resolveLabel(iri: string, type: LabelType, lang: string): string {
+    const direct = getDirectLabel(iri, lang);
+    if (direct) return direct;
+
+    // Synthesis logic
+    const localName = iri.split("/").pop() || "";
+
+    // Cambrian special cases
+    if (localName.includes("Cambrian")) {
+      const cambrianLabel = getDirectLabel(NS.ischart + "Cambrian", lang) || "Cambrian";
+      const isSeries = localName.includes("Series");
+      const rankLabel = getDirectLabel(NS.strat + (isSeries ? "Series" : "Stage"), lang) || (isSeries ? "Series" : "Stage");
+      const numMatch = localName.match(/\d+/);
+      const num = numMatch ? numMatch[0] : "";
+      return `${cambrianLabel} ${rankLabel} ${num}`.trim();
+    }
+
+    // Upper/Middle/Lower synthesis
+    const agesStages = ["Upper", "Middle", "Lower"];
+    for (const adj of agesStages) {
+      if (localName.startsWith(adj)) {
+        let uml = adj;
+        if (type === "timescale") {
+          if (adj === "Upper") uml = "Late";
+          else if (adj === "Lower") uml = "Early";
+        }
+        
+        const adjLabel = getDirectLabel(NS.strat + uml, lang) || uml;
+        const baseName = localName.substring(adj.length);
+        const baseIri = NS.ischart + baseName;
+        const baseLabel = getDirectLabel(baseIri, lang) || baseName;
+        
+        return `${adjLabel} ${baseLabel}`;
+      }
+    }
+
+    return localName; // Final fallback
+  }
+
+  const getLabel: GetLabelFunction = (iri, type, lang) => {
+    return resolveLabel(iri, type || currentLabelType.value, lang || currentLang.value);
+  };
+
   provide(labelContextKey, {
-    getLabel: getLabel as GetLabelFunction,
+    getLabel,
+    getDefinition,
   });
+
+  return {
+    getLabel,
+    getDefinition,
+  };
 }
 
 export function useLabelContext() {
-  const labelContext = inject<{
+  const context = inject<{
     getLabel: GetLabelFunction;
+    getDefinition: GetDefinitionFunction;
   }>(labelContextKey);
-  if (!labelContext) {
-    throw new Error("Label context not found");
-  }
-  return labelContext;
+  if (!context) throw new Error("Label context not found");
+  return context;
 }

@@ -15,6 +15,11 @@ jobs:
         with:
           python-version-file: "pyproject.toml"
 
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
       - name: Install uv
         uses: astral-sh/setup-uv@v6
         with:
@@ -27,47 +32,115 @@ jobs:
       - name: Get chart version
         id: chart-version
         run: |
-          echo version="$(kurra sparql chart.ttl 'select * where { <http://resource.geosciml.org/classifier/ics/ischart> <http://www.w3.org/2002/07/owl#versionInfo> ?o } limit 1' --response-format json \
+          echo version="$(kurra sparql source/multilang/chart-nolang.ttl 'select * where { <http://resource.geosciml.org/classifier/ics/ischart> <http://www.w3.org/2002/07/owl#versionInfo> ?o } limit 1' --response-format json \
           | python3 -c "import sys, ast, json; print(json.dumps(ast.literal_eval(sys.stdin.read())))" \
-          | jq -r '.results.bindings[0].o.value')" >> $GITHUB_OUTPUT
+          | jq -r '.results.bindings[0].o')" >> $GITHUB_OUTPUT
+
+      - name: Install Chrome dependencies (act only)
+        if: ${{ env.ACT }}
+        run: sudo apt-get update && sudo apt-get install -y libnss3 libnspr4 libatk1.0-0 libatk-bridge2.0-0 libcups2 libdrm2 libxkbcommon0 libxcomposite1 libxdamage1 libxfixes3 libxrandr2 libgbm1 libasound2t64
 
       - uses: browser-actions/setup-chrome@v1
         id: setup-chrome
+        with:
+          chrome-version: stable
 
-      - run: |
-          echo ${{ steps.setup-chrome.outputs.chrome-path }}
-          ${{ steps.setup-chrome.outputs.chrome-path }} --version
+      - name: Download chart-ui build
+        uses: actions/download-artifact@v4
+        with:
+          name: chart-ui-build
+          path: chart-ui-build
+
+      - name: Install PDF export dependencies
+        run: npm install --prefix .github/scripts --no-fund --no-audit --package-lock=false
 
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
         run: |
-          echo "starting"
-          langs=$(curl https://stratigraphy.org/chart/chart.json | jq -r '.hasTopConcept | .. | .language?|select( . != null )'|sort -u)
+          set -Eeuo pipefail
+
+          log() {
+            echo "[$(date -u '+%Y-%m-%dT%H:%M:%SZ')] $*"
+          }
+
+          run_pdf_export() {
+            local output="$1"
+            local url="$2"
+
+            log "START export output=${output} url=${url}"
+            rm -f "$output"
+
+            set +e
+            timeout --foreground 210s node .github/scripts/export-pdf.mjs \
+              --chrome-path "${{ steps.setup-chrome.outputs.chrome-path }}" \
+              --url "$url" \
+              --output "$output" \
+              --timeout-ms 180000
+            local status=$?
+            set -e
+
+            if [[ $status -ne 0 ]]; then
+              log "ERROR export failed output=${output} status=${status}"
+              log "DEBUG running chrome processes:"
+              ps -ef | grep -i '[c]hrom' || true
+              return "$status"
+            fi
+
+            if [[ ! -s "$output" ]]; then
+              log "ERROR export produced missing/empty file output=${output}"
+              ls -la
+              return 1
+            fi
+
+            log "DONE export output=${output}"
+            ls -lh "$output"
+          }
+
+          log "Preparing webroot"
+          mkdir webroot
+          mv chart-ui-build webroot/chart
+          log "Starting local HTTP server on :3000"
+          python3 -m http.server 3000 --directory webroot &
+          server_pid=$!
+          trap 'log "Stopping HTTP server pid=${server_pid}"; kill "${server_pid}" 2>/dev/null || true' EXIT
+          sleep 3
+          log "Chrome path: ${{ steps.setup-chrome.outputs.chrome-path }}"
+          ${{ steps.setup-chrome.outputs.chrome-path }} --version
+          log "Resolving available languages from prefLabels.ttl"
+          langs=$(kurra sparql source/multilang/prefLabels.ttl 'select distinct ?lang where { ?s <http://www.w3.org/2004/02/skos/core#prefLabel> ?o . bind(lang(?o) as ?lang) filter(?lang != "") } order by ?lang' --response-format json \
+            | python3 -c "import sys, ast, json; print(json.dumps(ast.literal_eval(sys.stdin.read())))" \
+            | jq -r '.results.bindings[].lang' \
+            | sort -u)
           date=$(date '+%y.%m')
           version=$date # $(git describe --tags --abbrev=0 )
-          echo $langs 
-          echo $date 
-          echo $version
+          log "langs: $langs"
+          log "date: $date"
+          log "version: $version"
+          log "Starting default language PDF export"
           #get official version first
-          ${{ steps.setup-chrome.outputs.chrome-path }} --user-data-dir=./chrome-temp-profile --headless --no-sandbox --disable-gpu --print-to-pdf=ICS_Chart_${{ steps.chart-version.outputs.version }}.pdf --no-pdf-header-footer --virtual-time-budget=5000 "https://stratigraphy.org/chart/?scale=print"
+          run_pdf_export "ICS_Chart_${{ steps.chart-version.outputs.version }}.pdf" "http://localhost:3000/chart/?scale=print"
+          log "Starting per-language PDF export loop"
           for i in $langs
           do
-            echo $i 
+            log "language: $i"
             output="ICS_Chart_${{ steps.chart-version.outputs.version }}_$i.pdf"
-            echo "creating $output"
+            log "creating $output"
             #generate each language version
-            echo "https://stratigraphy.org/chart/?scale=print&language=$i"
-            ${{ steps.setup-chrome.outputs.chrome-path }} --user-data-dir=./chrome-temp-profile --headless --no-sandbox --disable-gpu --print-to-pdf=$output --no-pdf-header-footer --virtual-time-budget=5000 "https://stratigraphy.org/chart/?scale=print&language=$i"
-            ls
+            url="http://localhost:3000/chart/?scale=print&language=$i"
+            log "url: $url"
+            run_pdf_export "$output" "$url"
+            log "completed language: $i"
           done
+          log "All PDF exports completed"
 
       - name: Upload a Build Artifact
         uses: actions/upload-artifact@v4
         with:
-          name: chart pdf
+          name: chart-pdf
           path: "*.pdf"
 
       - name: Release
+        if: ${{ !env.ACT }}
         uses: softprops/action-gh-release@v2
         with:
           files: |
