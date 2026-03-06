@@ -1,0 +1,8 @@
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+SELECT ?iri (COUNT(?lbl) AS ?count)
+WHERE {
+    ?iri skos:prefLabel ?lbl .
+}
+GROUP BY ?iri
+ORDER BY ?iri

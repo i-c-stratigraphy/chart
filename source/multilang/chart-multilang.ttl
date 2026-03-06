@@ -1,9 +1,100 @@
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX gssp: <http://resource.geosciml.org/ontology/gssp/>
+PREFIX gts: <http://resource.geosciml.org/ontology/timescale/gts#>
+PREFIX ischart: <http://resource.geosciml.org/classifier/ics/ischart/>
+PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX strat: <http://resource.geosciml.org/ontology/stratigraphy/>
+PREFIX vis: <http://resource.geosciml.org/ontology/ics-visual-chart/>
 
-<http://resource.geosciml.org/classifier/ics/ischart/Aalenian>
+dcterms:bibliographicCitation
+    skos:prefLabel
+        "İstinad üçün: Cohen, K.M., Finney, S.C., Gibbard, P.L. və Fan, J.-X. (2013; yenilənmiş) ICS Beynəlxalq Xronostratiqrafik Cədvəli. Episodes 36: 199–204."@az ,
+        "Citacio: Cohen, K.M., Finney, S.C., Gibbard, P.L., y Fan, J.-X. (2013; actualilzat) The ICS Intemational Chronostratigraphic Chart. Episodes 36: 199-204."@ca ,
+        "Způsob citace původní tabulky: Cohen, K.M., Finney, S.C., Gibbard, P.L. & Fan, J.-X. (2013; updated) The ICS International Chronostratigraphic Chart. Episodes 36:199-204"@cs ,
+        "Zitierweise: Cohen, K.M., Finney, S.C., Gibbard, P.L. & Fan, J.-X. (2013; aktualisiert). The ICS International Chronostratigraphic Chart. Episodes 36: 199-204. www.stratigraphy.org/ICSchart/ChronostratChart2024-12.pdf"@de ,
+        "Cohen K, Harper D, Gibbard P, Car N. The ICS international chronostratigraphic chart this decade. Episodes 2025;48:105-115. https://doi.org/10.18814/epiiugs/2025/025001. Modified 2024-12."@en ,
+        "Citar como: Cohen, K.M., Harper, D., Gibbard, P. & Car, N. (2025). The ICS International Chronostratigraphic Chart this decade. Episodes 48: 105-115. "@es ,
+        "Citar como: Cohen, K.M., Finney, S.C., Gibbard, P.L. y Fan, J.-X. (2013; actualizado) The ICS International Chronostratigraphic Chart. Episodes 36: 199-204."@es-a ,
+        "Aipamena egiteko: Cohen, K.M., Finney, S.C., Gibbard, P.L. eta Fan, J.-X. (2013; eguneratua) The ICS International Chronostratigraphic Chart. Episodes 36: 199-204."@eu ,
+        "Viittausohje: Cohen, K.M., Finney, S.C., Gibbard, P.L. & Fan, J.-X. (2013; updated) The ICS International Chronostratigraphic Chart. Episodes 36: 199-204."@fi ,
+        "Citation: Cohen, K.M., Finney, S.C., Gibbard, P..L. & Fan, J.X. (2013; updated) The ICS International Chronostratigraphic Chart. Episodes 36:199-204."@fr ,
+        "Javasolt idézés: Cohen, K.M., Finney, S.C., Gibbard, P.L. & Fan, J.-X. (2013; frissítve) The ICS International Chronostratigraphic Chart. Episodes 36: 199-204."@hu ,
+        "Tulis sebagai referensi: Cohen, K.M., Harper, D., Gibbard, P. & Car, N. (2025). The ICS International Chronostratigraphic Chart this decade. Episodes 48:105-115"@id ,
+        "Da citare: Cohen, K.M., Finney, S.C., Gibbard, P.L. & Fan, J.-X. (2013; aggiornato) The ICS International Chronostratigraphic Chart. Episodes 36: 199-204."@it ,
+        "引用: Cohen, K.M., Finney, S.C., Gibbard, P.L. & Fan, J.-X. (2013; updated) The ICS International Chronostratigraphic Chart. Episodes 36: 199-204."@ja ,
+        "인용: Cohen, K.M., Finney, S.C., Gibbard, P.L. & Fan, J.-X. (2013; updated) The ICS International Chronostratigraphic Chart. Episodes 36: 199-204."@ko ,
+        "Cituoti: Cohen, K.M., Finney, S.C., Gibbard, P.L., ir Fan, J.-X. (2013; papildyta) The ICS International Chronostratigraphic Chart. Episodes 36: 199-204."@lt ,
+        "Citeren: Cohen, K.M., Finney, S.C., Gibbard, P.L. & Fan, J.-X. (2013; updated). The ICS International Chronostratigraphic Chart. Episodes 36: 199-204."@nl ,
+        "Citeren: Cohen, K.M., Finney, S.C., Gibbard, P.L. & Fan, J.-X. (2013; updated). The ICS International Chronostratigraphic Chart. Episodes 36: 199-204."@nl-be ,
+        "Referanse: Cohen, K.M., Finney, S.C., Gibbard, P.L. & Fan, J.-X. (2013; updated). The ICS International Chronostratigraphic Chart. Episodes 36: 199-204."@no ,
+        "Citar: Cohen, K.M., Finney, S.C., Gibbard, P.L. & Fan, J.-X. (2013; atualizada) The ICS International chronostratigraphic Chart. Episodes 36: 199-204."@pt-br ,
+        "Цитировать: Cohen, K.M., Finney, S.C., Gibbard, P.L. & Fan, J.-X. (2013; с дополнениями) The ICS International Chronostratigraphic Chart. Episodes 36: 199-204."@ru ,
+        "Citovať ako: Cohen, K.M., Finney, S.C., Gibbard, P.L. & Fan, J.-X. (2013; updated) The ICS International Chronostratigraphic Chart. Episodes 36"@sk ,
+        "Kaynak gösterimi: Cohen, K.M., Finney, S.C., Gibbard, P.L. & Fan, J.-X. (2013; updated) The ICS International Chronostratigraphic Chart. Episodes 36: 199-204."@tr ,
+        "引用：Cohen, K.M., Finney, S.C., Gibbard, P.L. & Fan, J.-X. (2013; updated) The ICS International Chronostratigraphic Chart. Episodes 36: 199-204."@zh ;
+.
+
+dcterms:contributor
+    skos:prefLabel
+        "Şkalanı tərtib edənlər: K.M. Cohen, D.A.T. Harper, P.L. Gibbard, N. Car."@az ,
+        "Taula dissenyada per K.M. Cohen, D.A.T. Harper, P.L. Gibbard, N. Car"@ca ,
+        "Návrh originální tabulky v angličtině: K.M. Cohen, D.A.T. Harper, P.L. Gibbard, N. Car"@cs ,
+        "Chart generated from data at www.stratigraphy.org, maintained by ICS officers (N. Car, K.M. Cohen) and ICS executive. The chart is product of all ICS members past and present."@en ,
+        "Tabla diseñada y mantenida online por K.M. Cohen y N. Car (ICS). Obra colectiva de todos los miembros anteriores y actuales de la ICS."@es ,
+        "Tabla elaborada y mantenida en línea por los responsables K.M. Cohen y N. Car. "@es-a ,
+        "Taula hau K.M. Cohen, S.C. Finney eta P.L. Gibbard-ek diseinatu dute "@eu ,
+        "Taulun ovat laatineet K.M. Cohen, D.A.T. Harper, P.L. Gibbard, N. Car "@fi ,
+        "Chart faite par K.M. Cohen, D.A.T. Harper, P.L. Gibbard, N. Car © Commission Internationale de Stratigraphie, Septembre 2023"@fr ,
+        "A táblázat kidolgozói: K.M. Cohen, D.A.T. Harper, P.L. Gibbard, N. Car"@hu ,
+        "Bagan digambar dan diperbaharui secara online oleh pengurus K.M. Cohen dan N. Car. Bagan ini merupakan hasil kerja kolektif oleh para anggota ICS yang lalu dan sekarang. "@id ,
+        "Carta redatta da K.M. Cohen, D.A.T. Harper, P.L. Gibbard, N. Car"@it ,
+        "図案 (オリジナル)・オンライン管理: K.M. Cohen, N. Car"@ja ,
+        "국제층서위원회 직원인 K.M. Cohen와 N. Car가 이 표의 초안을 작성하고온라인 상에서 표를 관리하고 있다."@ko ,
+        "Schema nubraižė ir palaiko internete K.M. Cohen ir N. Car. Schema yra visų, buvusių ir esamų, ICS narių kolektyvinis darbas."@lt ,
+        "Tabel opgesteld door K.M. Cohen, D.A.T. Harper, P.L. Gibbard & N. Car"@nl ,
+        "Tabel opgesteld door K.M. Cohen, D.A.T. Harper, P.L. Gibbard & N. Car"@nl-be ,
+        "Tabellen er tegnet av K.M. Cohen, D.A.T. Harper, P.L. Gibbard & J.-X. Fan"@no ,
+        "Tabela desenhada por K.M. Cohen, D.A.T. Harper, P.L. Gibbard e N. Car"@pt ,
+        "Tabela desenhada por K.M. Cohen, D.A.T. Harper, P.L. Gibbard e N. Car"@pt-br ,
+        "Шкала представлена K.M. Cohen, D.A.T. Harper, P.L. Gibbard"@ru ,
+        "Anglickú tabuľku nakreslili K.M. Cohen, D.A.T. Harper, P.L. Gibbard a N. Car"@sk ,
+        "Çizelge tasarımı: K.M. Cohen, D.A.T. Harper, P.L. Gibbard"@tr ,
+        "本图件由K.M. Cohen、D.A.T. Harper、 P.L. Gibbard和N. Car绘制"@zh ;
+.
+
+dcterms:created
+    skos:prefLabel
+        "Beynəlxalq Stratiqrafiya Komissiyası"@az ,
+        "Comissió Internacional de Estratigrafia"@ca ,
+        "Mezinárodní stratigrafická komise"@cs ,
+        "Internationale Kommission für Stratigraphie"@de ,
+        "International Commission on Stratigraphy"@en ,
+        "Comisión Internacional de Estratigrafía"@es ,
+        "Comisión Internacional de Estratigrafía"@es-a ,
+        "Stratigrafia Nazioarteko Batzordea"@eu ,
+        "Kansainvälinen Stratigrafiakomissio"@fi ,
+        "Commission Internationale de Stratigraphie"@fr ,
+        "Nemzetközi Sztratigráfiai Bizottság"@hu ,
+        "Komisi Internasional Stratigrafi"@id ,
+        "Commissione Internazionale di Stratigrafia"@it ,
+        "国際層序委員会"@ja ,
+        "국제 층서 위원회"@ko ,
+        "Tarptautinė stratigrafijos komisija"@lt ,
+        "Internationale Commissie voor Stratigrafie"@nl ,
+        "Internationale Commissie voor Stratigrafie"@nl-be ,
+        "Den internasjonale stratigrafikommisjonen"@no ,
+        "Comissão Internacional de Estratigrafia"@pt ,
+        "Comissão Internacional de Estratigrafia"@pt-br ,
+        "Международная комиссия по стратиграфии"@ru ,
+        "Medzinárodná stratigrafická komisia"@sk ,
+        "Uluslararası Stratigrafi Komisyonu"@tr ,
+        "国际地层学委员会"@zh ;
+.
+
+ischart:Aalenian
     skos:prefLabel
         "Aalen"@az ,
-        "Aalenià"@ca ,
         "aalen"@cs ,
         "Aalenium"@de ,
         "Aalenian"@en ,
@@ -29,7 +120,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "阿林阶"@zh ;
 .
 
-<http://resource.geosciml.org/classifier/ics/ischart/Aeronian>
+ischart:Aeronian
     skos:prefLabel
         "Aeron"@az ,
         "Aeronià"@ca ,
@@ -58,7 +149,36 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "埃隆阶"@zh ;
 .
 
-<http://resource.geosciml.org/classifier/ics/ischart/Albian>
+ischart:Ages
+    skos:prefLabel
+        "Dövrlər"@az ,
+        "Edats"@ca ,
+        "Věky"@cs ,
+        "Zeitalter"@de ,
+        "Ages"@en ,
+        "Edades"@es ,
+        "Edades"@es-a ,
+        "Aroak"@eu ,
+        "Ajat"@fi ,
+        "Âges"@fr ,
+        "Korok"@hu ,
+        "Zaman"@id ,
+        "Età"@it ,
+        "時代"@ja ,
+        "시대"@ko ,
+        "Amžiai"@lt ,
+        "Tijdperken"@nl ,
+        "Tijdperken"@nl-be ,
+        "Tidsaldre"@no ,
+        "Idades"@pt ,
+        "Idades"@pt-br ,
+        "Века"@ru ,
+        "Veky"@sk ,
+        "Çağlar"@tr ,
+        "世代"@zh ;
+.
+
+ischart:Albian
     skos:prefLabel
         "Alb"@az ,
         "Albià"@ca ,
@@ -87,7 +207,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "阿尔布阶"@zh ;
 .
 
-<http://resource.geosciml.org/classifier/ics/ischart/Anisian>
+ischart:Anisian
     skos:prefLabel
         "Aniziy"@az ,
         "Anisià"@ca ,
@@ -116,7 +236,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "安尼阶"@zh ;
 .
 
-<http://resource.geosciml.org/classifier/ics/ischart/Aptian>
+ischart:Aptian
     skos:prefLabel
         "Apt"@az ,
         "Aptià"@ca ,
@@ -145,7 +265,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "阿普特阶"@zh ;
 .
 
-<http://resource.geosciml.org/classifier/ics/ischart/Aquitanian>
+ischart:Aquitanian
     skos:prefLabel
         "Akvitan"@az ,
         "Aquitanià"@ca ,
@@ -174,7 +294,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "阿基坦阶"@zh ;
 .
 
-<http://resource.geosciml.org/classifier/ics/ischart/Archean>
+ischart:Archean
     skos:prefLabel
         "Arxey"@az ,
         "Arqueà"@ca ,
@@ -203,7 +323,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         " 太 古 宇"@zh ;
 .
 
-<http://resource.geosciml.org/classifier/ics/ischart/Artinskian>
+ischart:Artinskian
     skos:prefLabel
         "Artin"@az ,
         "Artinskià"@ca ,
@@ -232,7 +352,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "亚丁斯克阶"@zh ;
 .
 
-<http://resource.geosciml.org/classifier/ics/ischart/Asselian>
+ischart:Asselian
     skos:prefLabel
         "Assel"@az ,
         "Asselià"@ca ,
@@ -261,7 +381,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "阿瑟尔阶"@zh ;
 .
 
-<http://resource.geosciml.org/classifier/ics/ischart/Bajocian>
+ischart:Bajocian
     skos:prefLabel
         "Bayos"@az ,
         "Bajocià"@ca ,
@@ -290,7 +410,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "巴柔阶"@zh ;
 .
 
-<http://resource.geosciml.org/classifier/ics/ischart/Barremian>
+ischart:Barremian
     skos:prefLabel
         "Barrem"@az ,
         "Barremià"@ca ,
@@ -319,7 +439,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "巴雷姆阶"@zh ;
 .
 
-<http://resource.geosciml.org/classifier/ics/ischart/Bartonian>
+ischart:Bartonian
     skos:prefLabel
         "Barton"@az ,
         "Bartonià"@ca ,
@@ -348,7 +468,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "巴顿阶"@zh ;
 .
 
-<http://resource.geosciml.org/classifier/ics/ischart/Bashkirian>
+ischart:Bashkirian
     skos:prefLabel
         "Başgir"@az ,
         "Baixkirià"@ca ,
@@ -377,7 +497,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "巴什基尔阶"@zh ;
 .
 
-<http://resource.geosciml.org/classifier/ics/ischart/Bathonian>
+ischart:Bathonian
     skos:prefLabel
         "Bat"@az ,
         "Bathonià"@ca ,
@@ -406,7 +526,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "巴通阶"@zh ;
 .
 
-<http://resource.geosciml.org/classifier/ics/ischart/Berriasian>
+ischart:Berriasian
     skos:prefLabel
         "Berrias"@az ,
         "Berriasià"@ca ,
@@ -435,7 +555,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "贝里阿斯阶"@zh ;
 .
 
-<http://resource.geosciml.org/classifier/ics/ischart/Burdigalian>
+ischart:Burdigalian
     skos:prefLabel
         "Burdiqal"@az ,
         "Burdigalià"@ca ,
@@ -464,7 +584,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "波尔多阶"@zh ;
 .
 
-<http://resource.geosciml.org/classifier/ics/ischart/Calabrian>
+ischart:Calabrian
     skos:prefLabel
         "Kalabriya"@az ,
         "Calabrià"@ca ,
@@ -493,7 +613,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "卡拉布里雅阶"@zh ;
 .
 
-<http://resource.geosciml.org/classifier/ics/ischart/Callovian>
+ischart:Callovian
     skos:prefLabel
         "Kellovey"@az ,
         "Cal·lovià"@ca ,
@@ -522,7 +642,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "卡洛夫阶"@zh ;
 .
 
-<http://resource.geosciml.org/classifier/ics/ischart/Calymmian>
+ischart:Calymmian
     skos:prefLabel
         "Kalim"@az ,
         "Calimmià"@ca ,
@@ -551,7 +671,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "盖层系"@zh ;
 .
 
-<http://resource.geosciml.org/classifier/ics/ischart/Cambrian>
+ischart:Cambrian
     skos:prefLabel
         "Kembri"@az ,
         "Cambrià"@ca ,
@@ -580,7 +700,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "寒 武 系"@zh ;
 .
 
-<http://resource.geosciml.org/classifier/ics/ischart/Campanian>
+ischart:Campanian
     skos:prefLabel
         "Kampan"@az ,
         "Campanià"@ca ,
@@ -609,7 +729,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "坎潘阶"@zh ;
 .
 
-<http://resource.geosciml.org/classifier/ics/ischart/Capitanian>
+ischart:Capitanian
     skos:prefLabel
         "Kapitan"@az ,
         "Capitanià"@ca ,
@@ -638,7 +758,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "卡匹敦阶"@zh ;
 .
 
-<http://resource.geosciml.org/classifier/ics/ischart/Carboniferous>
+ischart:Carboniferous
     skos:prefLabel
         "Karbon (Daş kömür)"@az ,
         "Carbonífer"@ca ,
@@ -667,7 +787,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "石 炭 系"@zh ;
 .
 
-<http://resource.geosciml.org/classifier/ics/ischart/Carnian>
+ischart:Carnian
     skos:prefLabel
         "Karniy"@az ,
         "Carnià"@ca ,
@@ -696,7 +816,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "卡尼阶"@zh ;
 .
 
-<http://resource.geosciml.org/classifier/ics/ischart/Cenomanian>
+ischart:Cenomanian
     skos:prefLabel
         "Senoman"@az ,
         "Cenomanià"@ca ,
@@ -725,7 +845,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "塞诺曼阶"@zh ;
 .
 
-<http://resource.geosciml.org/classifier/ics/ischart/Cenozoic>
+ischart:Cenozoic
     skos:prefLabel
         "Kaynozoy"@az ,
         "Cenozoic"@ca ,
@@ -754,7 +874,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "新 生界"@zh ;
 .
 
-<http://resource.geosciml.org/classifier/ics/ischart/Changhsingian>
+ischart:Changhsingian
     skos:prefLabel
         "Çanqsin"@az ,
         "Changxingià"@ca ,
@@ -783,7 +903,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "长兴阶"@zh ;
 .
 
-<http://resource.geosciml.org/classifier/ics/ischart/Chattian>
+ischart:Chattian
     skos:prefLabel
         "Hat"@az ,
         "Catià"@ca ,
@@ -812,7 +932,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "夏特阶"@zh ;
 .
 
-<http://resource.geosciml.org/classifier/ics/ischart/Chibanian>
+ischart:Chibanian
     skos:prefLabel
         "Çiba"@az ,
         "Chibanià"@ca ,
@@ -841,7 +961,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "千叶阶"@zh ;
 .
 
-<http://resource.geosciml.org/classifier/ics/ischart/Cisuralian>
+ischart:Cisuralian
     skos:prefLabel
         "Cisural"@az ,
         "Cisuralià"@ca ,
@@ -870,7 +990,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "乌拉尔统"@zh ;
 .
 
-<http://resource.geosciml.org/classifier/ics/ischart/Coniacian>
+ischart:Coniacian
     skos:prefLabel
         "Konyak"@az ,
         "Coniacià"@ca ,
@@ -899,7 +1019,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "康尼亚克阶"@zh ;
 .
 
-<http://resource.geosciml.org/classifier/ics/ischart/Cretaceous>
+ischart:Cretaceous
     skos:prefLabel
         "Təbaşir"@az ,
         "Cretaci"@ca ,
@@ -928,7 +1048,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "白 垩系"@zh ;
 .
 
-<http://resource.geosciml.org/classifier/ics/ischart/Cryogenian>
+ischart:Cryogenian
     skos:prefLabel
         "Kriogen"@az ,
         "Criogenià"@ca ,
@@ -957,7 +1077,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "成冰系"@zh ;
 .
 
-<http://resource.geosciml.org/classifier/ics/ischart/Danian>
+ischart:Danian
     skos:prefLabel
         "Danimarka"@az ,
         "Danià"@ca ,
@@ -986,7 +1106,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "丹麦阶"@zh ;
 .
 
-<http://resource.geosciml.org/classifier/ics/ischart/Dapingian>
+ischart:Dapingian
     skos:prefLabel
         "Dapinq"@az ,
         "Dapingià"@ca ,
@@ -1015,7 +1135,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "大坪阶"@zh ;
 .
 
-<http://resource.geosciml.org/classifier/ics/ischart/Darriwilian>
+ischart:Darriwilian
     skos:prefLabel
         "Darrivil"@az ,
         "Darriwilià"@ca ,
@@ -1044,7 +1164,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "达瑞威尔阶"@zh ;
 .
 
-<http://resource.geosciml.org/classifier/ics/ischart/Devonian>
+ischart:Devonian
     skos:prefLabel
         "Devon"@az ,
         "Devonià"@ca ,
@@ -1073,7 +1193,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "泥 盆 系"@zh ;
 .
 
-<http://resource.geosciml.org/classifier/ics/ischart/Drumian>
+ischart:Drumian
     skos:prefLabel
         "Drum"@az ,
         "Drumià"@ca ,
@@ -1102,7 +1222,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "鼓山阶"@zh ;
 .
 
-<http://resource.geosciml.org/classifier/ics/ischart/Ectasian>
+ischart:Ectasian
     skos:prefLabel
         "Ektaz"@az ,
         "Ectasià"@ca ,
@@ -1131,7 +1251,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "延展系"@zh ;
 .
 
-<http://resource.geosciml.org/classifier/ics/ischart/Ediacaran>
+ischart:Ediacaran
     skos:prefLabel
         "Ediakar"@az ,
         "Ediacarià"@ca ,
@@ -1160,7 +1280,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "埃迪卡拉系"@zh ;
 .
 
-<http://resource.geosciml.org/classifier/ics/ischart/Eifelian>
+ischart:Eifelian
     skos:prefLabel
         "Eyfel"@az ,
         "Eifelià"@ca ,
@@ -1189,7 +1309,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "艾菲尔阶"@zh ;
 .
 
-<http://resource.geosciml.org/classifier/ics/ischart/Emsian>
+ischart:Emsian
     skos:prefLabel
         "Ems"@az ,
         "Emsià"@ca ,
@@ -1218,7 +1338,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "埃姆斯阶"@zh ;
 .
 
-<http://resource.geosciml.org/classifier/ics/ischart/Eoarchean>
+ischart:Eoarchean
     skos:prefLabel
         "Eoarxey"@az ,
         "Eoarqueà"@ca ,
@@ -1247,7 +1367,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "始太古界"@zh ;
 .
 
-<http://resource.geosciml.org/classifier/ics/ischart/Eocene>
+ischart:Eocene
     skos:prefLabel
         "Eosen"@az ,
         "Eocè"@ca ,
@@ -1276,7 +1396,94 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "始新统"@zh ;
 .
 
-<http://resource.geosciml.org/classifier/ics/ischart/Famennian>
+ischart:Eons
+    skos:prefLabel
+        "Eonlar"@az ,
+        "Eons"@ca ,
+        "Eony"@cs ,
+        "Äonen"@de ,
+        "Eons"@en ,
+        "Eones"@es ,
+        "Eones"@es-a ,
+        "Eoiak"@eu ,
+        "Eonit"@fi ,
+        "Éons"@fr ,
+        "Eonok"@hu ,
+        "Eon"@id ,
+        "Eoni"@it ,
+        "累代"@ja ,
+        "누대"@ko ,
+        "Eonai"@lt ,
+        "Eonen"@nl ,
+        "Eonen"@nl-be ,
+        "Eoner"@no ,
+        "Éons"@pt ,
+        "Éons"@pt-br ,
+        "Эоны"@ru ,
+        "Eóny"@sk ,
+        "Eonlar"@tr ,
+        "宙"@zh ;
+.
+
+ischart:Epochs
+    skos:prefLabel
+        "Epoxalar"@az ,
+        "Èpoques"@ca ,
+        "Epochy"@cs ,
+        "Epochen"@de ,
+        "Epochs"@en ,
+        "Épocas"@es ,
+        "Épocas"@es-a ,
+        "Epokak"@eu ,
+        "Epookit"@fi ,
+        "Époques"@fr ,
+        "Epochák"@hu ,
+        "Kala"@id ,
+        "Epoche"@it ,
+        "世"@ja ,
+        "세"@ko ,
+        "Epochos"@lt ,
+        "Epoches"@nl ,
+        "Epoches"@nl-be ,
+        "Epoker"@no ,
+        "Épocas"@pt ,
+        "Épocas"@pt-br ,
+        "Эпохи"@ru ,
+        "Epochy"@sk ,
+        "Epoklar"@tr ,
+        "世"@zh ;
+.
+
+ischart:Eras
+    skos:prefLabel
+        "Eralar"@az ,
+        "Eres"@ca ,
+        "Éry"@cs ,
+        "Ären"@de ,
+        "Eras"@en ,
+        "Eras"@es ,
+        "Eras"@es-a ,
+        "Erak"@eu ,
+        "Erat"@fi ,
+        "Ères"@fr ,
+        "Érák"@hu ,
+        "Era"@id ,
+        "Ere"@it ,
+        "代"@ja ,
+        "대"@ko ,
+        "Eros"@lt ,
+        "Era’s"@nl ,
+        "Era’s"@nl-be ,
+        "Æraer"@no ,
+        "Eras"@pt ,
+        "Eras"@pt-br ,
+        "Эры"@ru ,
+        "Éry"@sk ,
+        "Eralar"@tr ,
+        "代"@zh ;
+.
+
+ischart:Famennian
     skos:prefLabel
         "Famen"@az ,
         "Famennià"@ca ,
@@ -1305,7 +1512,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "法门阶"@zh ;
 .
 
-<http://resource.geosciml.org/classifier/ics/ischart/Floian>
+ischart:Floian
     skos:prefLabel
         "Flo"@az ,
         "Floià"@ca ,
@@ -1334,7 +1541,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "弗洛阶"@zh ;
 .
 
-<http://resource.geosciml.org/classifier/ics/ischart/Fortunian>
+ischart:Fortunian
     skos:prefLabel
         "Fortun"@az ,
         "Fortunià"@ca ,
@@ -1363,7 +1570,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "幸运阶"@zh ;
 .
 
-<http://resource.geosciml.org/classifier/ics/ischart/Frasnian>
+ischart:Frasnian
     skos:prefLabel
         "Frans"@az ,
         "Frasnià"@ca ,
@@ -1392,7 +1599,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "弗拉阶"@zh ;
 .
 
-<http://resource.geosciml.org/classifier/ics/ischart/Furongian>
+ischart:Furongian
     skos:prefLabel
         "Furonq"@az ,
         "Furongià"@ca ,
@@ -1421,7 +1628,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "芙蓉统"@zh ;
 .
 
-<http://resource.geosciml.org/classifier/ics/ischart/Gelasian>
+ischart:Gelasian
     skos:prefLabel
         "Cela"@az ,
         "Gelasià"@ca ,
@@ -1450,7 +1657,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "杰拉阶"@zh ;
 .
 
-<http://resource.geosciml.org/classifier/ics/ischart/Givetian>
+ischart:Givetian
     skos:prefLabel
         "Jivet"@az ,
         "Givetià"@ca ,
@@ -1479,7 +1686,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "吉维特阶"@zh ;
 .
 
-<http://resource.geosciml.org/classifier/ics/ischart/Gorstian>
+ischart:Gorstian
     skos:prefLabel
         "Qorst"@az ,
         "Gorstià"@ca ,
@@ -1508,7 +1715,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "高斯特阶"@zh ;
 .
 
-<http://resource.geosciml.org/classifier/ics/ischart/Greenlandian>
+ischart:Greenlandian
     skos:prefLabel
         "Qrenlandiya"@az ,
         "Grenlandià"@ca ,
@@ -1537,7 +1744,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "格陵兰阶"@zh ;
 .
 
-<http://resource.geosciml.org/classifier/ics/ischart/Guadalupian>
+ischart:Guadalupian
     skos:prefLabel
         "Qvadelupa"@az ,
         "Guadalupià"@ca ,
@@ -1566,7 +1773,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "瓜德鲁普统"@zh ;
 .
 
-<http://resource.geosciml.org/classifier/ics/ischart/Guzhangian>
+ischart:Guzhangian
     skos:prefLabel
         "Quzhanq"@az ,
         "Guzhanguià"@ca ,
@@ -1595,7 +1802,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "古丈阶"@zh ;
 .
 
-<http://resource.geosciml.org/classifier/ics/ischart/Gzhelian>
+ischart:Gzhelian
     skos:prefLabel
         "Qjel"@az ,
         "Gjelià"@ca ,
@@ -1624,7 +1831,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "格舍尔阶"@zh ;
 .
 
-<http://resource.geosciml.org/classifier/ics/ischart/Hadean>
+ischart:Hadean
     skos:prefLabel
         "Hade"@az ,
         "Hadeà"@ca ,
@@ -1653,7 +1860,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "冥古宇"@zh ;
 .
 
-<http://resource.geosciml.org/classifier/ics/ischart/Hauterivian>
+ischart:Hauterivian
     skos:prefLabel
         "Hoteriv"@az ,
         "Hauterivià"@ca ,
@@ -1682,7 +1889,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "欧特里夫阶"@zh ;
 .
 
-<http://resource.geosciml.org/classifier/ics/ischart/Hettangian>
+ischart:Hettangian
     skos:prefLabel
         "Hettanq"@az ,
         "Hettangià"@ca ,
@@ -1711,7 +1918,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "赫塘阶"@zh ;
 .
 
-<http://resource.geosciml.org/classifier/ics/ischart/Hirnantian>
+ischart:Hirnantian
     skos:prefLabel
         "Hirnant"@az ,
         "Hirnantià"@ca ,
@@ -1740,7 +1947,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "赫南特阶"@zh ;
 .
 
-<http://resource.geosciml.org/classifier/ics/ischart/Holocene>
+ischart:Holocene
     skos:prefLabel
         "Holosen"@az ,
         "Holocè"@ca ,
@@ -1769,7 +1976,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "全新统"@zh ;
 .
 
-<http://resource.geosciml.org/classifier/ics/ischart/Homerian>
+ischart:Homerian
     skos:prefLabel
         "Homer"@az ,
         "Homerià"@ca ,
@@ -1798,7 +2005,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "侯墨阶"@zh ;
 .
 
-<http://resource.geosciml.org/classifier/ics/ischart/Induan>
+ischart:Induan
     skos:prefLabel
         "İnd"@az ,
         "Indià"@ca ,
@@ -1827,7 +2034,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "印度阶"@zh ;
 .
 
-<http://resource.geosciml.org/classifier/ics/ischart/Jiangshanian>
+ischart:Jiangshanian
     skos:prefLabel
         "Jianqşan"@az ,
         "Jiangshanià"@ca ,
@@ -1856,7 +2063,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "江山阶"@zh ;
 .
 
-<http://resource.geosciml.org/classifier/ics/ischart/Jurassic>
+ischart:Jurassic
     skos:prefLabel
         "Yura"@az ,
         "Juràssic"@ca ,
@@ -1885,7 +2092,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "侏罗 系"@zh ;
 .
 
-<http://resource.geosciml.org/classifier/ics/ischart/Kasimovian>
+ischart:Kasimovian
     skos:prefLabel
         "Qasımov"@az ,
         "Kasimovià"@ca ,
@@ -1914,7 +2121,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "卡西莫夫阶"@zh ;
 .
 
-<http://resource.geosciml.org/classifier/ics/ischart/Katian>
+ischart:Katian
     skos:prefLabel
         "Kati"@az ,
         "Katià"@ca ,
@@ -1943,7 +2150,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "凯迪阶"@zh ;
 .
 
-<http://resource.geosciml.org/classifier/ics/ischart/Kimmeridgian>
+ischart:Kimmeridgian
     skos:prefLabel
         "Kimeric"@az ,
         "Kimmeridgià"@ca ,
@@ -1972,7 +2179,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "钦莫利阶"@zh ;
 .
 
-<http://resource.geosciml.org/classifier/ics/ischart/Kungurian>
+ischart:Kungurian
     skos:prefLabel
         "Kunqur"@az ,
         "Kungurià"@ca ,
@@ -2001,7 +2208,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "空谷阶"@zh ;
 .
 
-<http://resource.geosciml.org/classifier/ics/ischart/Ladinian>
+ischart:Ladinian
     skos:prefLabel
         "Ladin"@az ,
         "Ladinià"@ca ,
@@ -2030,7 +2237,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "拉丁阶"@zh ;
 .
 
-<http://resource.geosciml.org/classifier/ics/ischart/Langhian>
+ischart:Langhian
     skos:prefLabel
         "Lanqiy"@az ,
         "Languià"@ca ,
@@ -2059,7 +2266,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "兰盖阶"@zh ;
 .
 
-<http://resource.geosciml.org/classifier/ics/ischart/Llandovery>
+ischart:Llandovery
     skos:prefLabel
         "Landoveriy"@az ,
         "Llandoverià"@ca ,
@@ -2088,7 +2295,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "兰多维列统"@zh ;
 .
 
-<http://resource.geosciml.org/classifier/ics/ischart/Lochkovian>
+ischart:Lochkovian
     skos:prefLabel
         "Loxkov"@az ,
         "Lochkovià"@ca ,
@@ -2117,7 +2324,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "洛赫考夫阶"@zh ;
 .
 
-<http://resource.geosciml.org/classifier/ics/ischart/Lopingian>
+ischart:Lopingian
     skos:prefLabel
         "Lepinq"@az ,
         "Lopingià"@ca ,
@@ -2146,7 +2353,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "乐平统"@zh ;
 .
 
-<http://resource.geosciml.org/classifier/ics/ischart/Ludfordian>
+ischart:Ludfordian
     skos:prefLabel
         "Ludford"@az ,
         "Ludfordià"@ca ,
@@ -2175,7 +2382,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "卢德福特阶"@zh ;
 .
 
-<http://resource.geosciml.org/classifier/ics/ischart/Ludlow>
+ischart:Ludlow
     skos:prefLabel
         "Ludlov"@az ,
         "Ludlowià"@ca ,
@@ -2204,7 +2411,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "罗德洛统"@zh ;
 .
 
-<http://resource.geosciml.org/classifier/ics/ischart/Lutetian>
+ischart:Lutetian
     skos:prefLabel
         "Lyutet"@az ,
         "Lutecià"@ca ,
@@ -2233,7 +2440,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "卢泰特阶"@zh ;
 .
 
-<http://resource.geosciml.org/classifier/ics/ischart/Maastrichtian>
+ischart:Maastrichtian
     skos:prefLabel
         "Maastrixt"@az ,
         "Maastrichtià"@ca ,
@@ -2262,7 +2469,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "马斯特里赫特阶"@zh ;
 .
 
-<http://resource.geosciml.org/classifier/ics/ischart/Meghalayan>
+ischart:Meghalayan
     skos:prefLabel
         "Meqhalaya"@az ,
         "Megalaià"@ca ,
@@ -2291,7 +2498,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "梅加拉亚阶"@zh ;
 .
 
-<http://resource.geosciml.org/classifier/ics/ischart/Mesoarchean>
+ischart:Mesoarchean
     skos:prefLabel
         "Mezoarxey"@az ,
         "Mesoarqueà"@ca ,
@@ -2320,7 +2527,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "中太古界"@zh ;
 .
 
-<http://resource.geosciml.org/classifier/ics/ischart/Mesoproterozoic>
+ischart:Mesoproterozoic
     skos:prefLabel
         "Mezoproterozoy"@az ,
         "Mesoproterozoic"@ca ,
@@ -2349,7 +2556,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "中元古界"@zh ;
 .
 
-<http://resource.geosciml.org/classifier/ics/ischart/Mesozoic>
+ischart:Mesozoic
     skos:prefLabel
         "Mezozoy"@az ,
         "Mesozoic"@ca ,
@@ -2378,7 +2585,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "中 生 界"@zh ;
 .
 
-<http://resource.geosciml.org/classifier/ics/ischart/Messinian>
+ischart:Messinian
     skos:prefLabel
         "Messin"@az ,
         "Messinià"@ca ,
@@ -2407,7 +2614,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "墨西拿阶"@zh ;
 .
 
-<http://resource.geosciml.org/classifier/ics/ischart/Miaolingian>
+ischart:Miaolingian
     skos:prefLabel
         "Miaolinq"@az ,
         "Miaolingià"@ca ,
@@ -2436,7 +2643,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "苗岭统"@zh ;
 .
 
-<http://resource.geosciml.org/classifier/ics/ischart/Miocene>
+ischart:Miocene
     skos:prefLabel
         "Miosen"@az ,
         "Miocè"@ca ,
@@ -2465,7 +2672,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "中新统"@zh ;
 .
 
-<http://resource.geosciml.org/classifier/ics/ischart/Mississippian>
+ischart:Mississippian
     skos:prefLabel
         "Missisipi"@az ,
         "Mississippià"@ca ,
@@ -2494,7 +2701,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "密 西 西 比 亚 系"@zh ;
 .
 
-<http://resource.geosciml.org/classifier/ics/ischart/Moscovian>
+ischart:Moscovian
     skos:prefLabel
         "Moskva"@az ,
         "Moscovià"@ca ,
@@ -2523,7 +2730,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "莫斯科阶"@zh ;
 .
 
-<http://resource.geosciml.org/classifier/ics/ischart/Neoarchean>
+ischart:Neoarchean
     skos:prefLabel
         "Neoarxey"@az ,
         "Neoarqueà"@ca ,
@@ -2552,7 +2759,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "新太古界"@zh ;
 .
 
-<http://resource.geosciml.org/classifier/ics/ischart/Neogene>
+ischart:Neogene
     skos:prefLabel
         "Neogen"@az ,
         "Neogen"@ca ,
@@ -2581,7 +2788,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "新 近 系"@zh ;
 .
 
-<http://resource.geosciml.org/classifier/ics/ischart/Neoproterozoic>
+ischart:Neoproterozoic
     skos:prefLabel
         "Neoproterozoy"@az ,
         "Neoproterozoic"@ca ,
@@ -2610,7 +2817,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "新元古界"@zh ;
 .
 
-<http://resource.geosciml.org/classifier/ics/ischart/Norian>
+ischart:Norian
     skos:prefLabel
         "Noriy"@az ,
         "Norià"@ca ,
@@ -2639,7 +2846,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "诺利阶"@zh ;
 .
 
-<http://resource.geosciml.org/classifier/ics/ischart/Northgrippian>
+ischart:Northgrippian
     skos:prefLabel
         "Nortqrip"@az ,
         "Norgripià"@ca ,
@@ -2668,7 +2875,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "诺斯格瑞比阶"@zh ;
 .
 
-<http://resource.geosciml.org/classifier/ics/ischart/Olenekian>
+ischart:Olenekian
     skos:prefLabel
         "Olenek"@az ,
         "Oleniokià"@ca ,
@@ -2697,7 +2904,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "奥伦尼克阶"@zh ;
 .
 
-<http://resource.geosciml.org/classifier/ics/ischart/Oligocene>
+ischart:Oligocene
     skos:prefLabel
         "Oliqosen"@az ,
         "Oligocè"@ca ,
@@ -2726,7 +2933,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "渐新统"@zh ;
 .
 
-<http://resource.geosciml.org/classifier/ics/ischart/Ordovician>
+ischart:Ordovician
     skos:prefLabel
         "Ordovik"@az ,
         "Ordovicià"@ca ,
@@ -2755,7 +2962,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "奥 陶 系"@zh ;
 .
 
-<http://resource.geosciml.org/classifier/ics/ischart/Orosirian>
+ischart:Orosirian
     skos:prefLabel
         "Orozir"@az ,
         "Orosirià"@ca ,
@@ -2784,7 +2991,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "造山系"@zh ;
 .
 
-<http://resource.geosciml.org/classifier/ics/ischart/Oxfordian>
+ischart:Oxfordian
     skos:prefLabel
         "Oksford"@az ,
         "Oxfordià"@ca ,
@@ -2813,7 +3020,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "牛津阶"@zh ;
 .
 
-<http://resource.geosciml.org/classifier/ics/ischart/Paibian>
+ischart:Paibian
     skos:prefLabel
         "Paibi"@az ,
         "Paibià"@ca ,
@@ -2842,7 +3049,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "排碧阶"@zh ;
 .
 
-<http://resource.geosciml.org/classifier/ics/ischart/Paleoarchean>
+ischart:Paleoarchean
     skos:prefLabel
         "Paleoarxey"@az ,
         "Paleoarqueà"@ca ,
@@ -2871,7 +3078,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "古太古界"@zh ;
 .
 
-<http://resource.geosciml.org/classifier/ics/ischart/Paleocene>
+ischart:Paleocene
     skos:prefLabel
         "Paleosen"@az ,
         "Paleocè"@ca ,
@@ -2900,7 +3107,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "古新统"@zh ;
 .
 
-<http://resource.geosciml.org/classifier/ics/ischart/Paleogene>
+ischart:Paleogene
     skos:prefLabel
         "Paleogen"@az ,
         "Paleogen"@ca ,
@@ -2929,7 +3136,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "古 近 系"@zh ;
 .
 
-<http://resource.geosciml.org/classifier/ics/ischart/Paleoproterozoic>
+ischart:Paleoproterozoic
     skos:prefLabel
         "Paleoproterozoy"@az ,
         "Paleoproterozoic"@ca ,
@@ -2958,7 +3165,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "古元古界"@zh ;
 .
 
-<http://resource.geosciml.org/classifier/ics/ischart/Paleozoic>
+ischart:Paleozoic
     skos:prefLabel
         "Paleozoy"@az ,
         "Paleozoic"@ca ,
@@ -2987,7 +3194,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "古 生 界"@zh ;
 .
 
-<http://resource.geosciml.org/classifier/ics/ischart/Pennsylvanian>
+ischart:Pennsylvanian
     skos:prefLabel
         "Pensilvaniya"@az ,
         "Pennsylvanià"@ca ,
@@ -3016,7 +3223,36 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "宾 夕 法 尼 亚 亚 系"@zh ;
 .
 
-<http://resource.geosciml.org/classifier/ics/ischart/Permian>
+ischart:Periods
+    skos:prefLabel
+        "Periodlar"@az ,
+        "Períodes"@ca ,
+        "Periody"@cs ,
+        "Perioden"@de ,
+        "Periods"@en ,
+        "Períodos"@es ,
+        "Períodos"@es-a ,
+        "Periodoak"@eu ,
+        "Periodit"@fi ,
+        "Périodes"@fr ,
+        "Időszakok"@hu ,
+        "Periode"@id ,
+        "Periodi"@it ,
+        "紀"@ja ,
+        "기"@ko ,
+        "Periodai"@lt ,
+        "Perioden"@nl ,
+        "Perioden"@nl-be ,
+        "Perioder"@no ,
+        "Períodos"@pt ,
+        "Períodos"@pt-br ,
+        "Периоды"@ru ,
+        "Periódy"@sk ,
+        "Periyotlar"@tr ,
+        "纪"@zh ;
+.
+
+ischart:Permian
     skos:prefLabel
         "Perm"@az ,
         "Permià"@ca ,
@@ -3045,7 +3281,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "二 叠 系"@zh ;
 .
 
-<http://resource.geosciml.org/classifier/ics/ischart/Phanerozoic>
+ischart:Phanerozoic
     skos:prefLabel
         "Fanerozoy"@az ,
         "Fanerozoic"@ca ,
@@ -3074,7 +3310,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "显 生 宇"@zh ;
 .
 
-<http://resource.geosciml.org/classifier/ics/ischart/Piacenzian>
+ischart:Piacenzian
     skos:prefLabel
         "Pyaçens"@az ,
         "Plasencià"@ca ,
@@ -3103,7 +3339,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "皮亚琴察阶"@zh ;
 .
 
-<http://resource.geosciml.org/classifier/ics/ischart/Pleistocene>
+ischart:Pleistocene
     skos:prefLabel
         "Pleystosen"@az ,
         "Plistocè"@ca ,
@@ -3132,7 +3368,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "更新统"@zh ;
 .
 
-<http://resource.geosciml.org/classifier/ics/ischart/Pliensbachian>
+ischart:Pliensbachian
     skos:prefLabel
         "Plinsbax"@az ,
         "Pliensbaquià"@ca ,
@@ -3161,7 +3397,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "普林斯巴阶"@zh ;
 .
 
-<http://resource.geosciml.org/classifier/ics/ischart/Pliocene>
+ischart:Pliocene
     skos:prefLabel
         "Pliosen"@az ,
         "Pliocè"@ca ,
@@ -3190,7 +3426,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "上新统"@zh ;
 .
 
-<http://resource.geosciml.org/classifier/ics/ischart/Pragian>
+ischart:Pragian
     skos:prefLabel
         "Praqa"@az ,
         "Praguià"@ca ,
@@ -3219,7 +3455,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "布拉格阶"@zh ;
 .
 
-<http://resource.geosciml.org/classifier/ics/ischart/Precambrian>
+ischart:Precambrian
     skos:prefLabel
         "Kembriyəqədər"@az ,
         "Precambrià"@ca ,
@@ -3248,7 +3484,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "前 寒 武 系"@zh ;
 .
 
-<http://resource.geosciml.org/classifier/ics/ischart/Priabonian>
+ischart:Priabonian
     skos:prefLabel
         "Priabon"@az ,
         "Priabonià"@ca ,
@@ -3277,7 +3513,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "普利亚本阶"@zh ;
 .
 
-<http://resource.geosciml.org/classifier/ics/ischart/Pridoli>
+ischart:Pridoli
     skos:prefLabel
         "Prjidol"@az ,
         "Pridolià"@ca ,
@@ -3306,7 +3542,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "普里道利统"@zh ;
 .
 
-<http://resource.geosciml.org/classifier/ics/ischart/Proterozoic>
+ischart:Proterozoic
     skos:prefLabel
         "Proterozoy"@az ,
         "Proterozoic"@ca ,
@@ -3335,7 +3571,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "元 古 宇"@zh ;
 .
 
-<http://resource.geosciml.org/classifier/ics/ischart/Quaternary>
+ischart:Quaternary
     skos:prefLabel
         "Dördüncü dövr"@az ,
         "Quaternari"@ca ,
@@ -3364,7 +3600,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "第 四 系"@zh ;
 .
 
-<http://resource.geosciml.org/classifier/ics/ischart/Rhaetian>
+ischart:Rhaetian
     skos:prefLabel
         "Ret"@az ,
         "Retià"@ca ,
@@ -3393,7 +3629,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "瑞替阶"@zh ;
 .
 
-<http://resource.geosciml.org/classifier/ics/ischart/Rhuddanian>
+ischart:Rhuddanian
     skos:prefLabel
         "Raddan"@az ,
         "Rhuddanià"@ca ,
@@ -3422,7 +3658,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "鲁丹阶"@zh ;
 .
 
-<http://resource.geosciml.org/classifier/ics/ischart/Rhyacian>
+ischart:Rhyacian
     skos:prefLabel
         "Rias"@az ,
         "Riacià"@ca ,
@@ -3451,7 +3687,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "层侵系"@zh ;
 .
 
-<http://resource.geosciml.org/classifier/ics/ischart/Roadian>
+ischart:Roadian
     skos:prefLabel
         "Road"@az ,
         "Roadià"@ca ,
@@ -3480,7 +3716,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "罗德阶"@zh ;
 .
 
-<http://resource.geosciml.org/classifier/ics/ischart/Rupelian>
+ischart:Rupelian
     skos:prefLabel
         "Ryupel"@az ,
         "Rupelià"@ca ,
@@ -3509,7 +3745,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "吕珀尔阶"@zh ;
 .
 
-<http://resource.geosciml.org/classifier/ics/ischart/Sakmarian>
+ischart:Sakmarian
     skos:prefLabel
         "Sakmar"@az ,
         "Sakmarià"@ca ,
@@ -3538,7 +3774,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "萨克马尔阶"@zh ;
 .
 
-<http://resource.geosciml.org/classifier/ics/ischart/Sandbian>
+ischart:Sandbian
     skos:prefLabel
         "Sandbi"@az ,
         "Sandbià"@ca ,
@@ -3567,7 +3803,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "桑比阶"@zh ;
 .
 
-<http://resource.geosciml.org/classifier/ics/ischart/Santonian>
+ischart:Santonian
     skos:prefLabel
         "Santon"@az ,
         "Santonià"@ca ,
@@ -3596,7 +3832,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "圣通阶"@zh ;
 .
 
-<http://resource.geosciml.org/classifier/ics/ischart/Selandian>
+ischart:Selandian
     skos:prefLabel
         "Zeland"@az ,
         "Selandià"@ca ,
@@ -3625,7 +3861,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "塞兰特阶"@zh ;
 .
 
-<http://resource.geosciml.org/classifier/ics/ischart/Series2>
+ischart:Series2
     skos:prefLabel
         "Şöbə 2"@az ,
         "Segona sèrie"@ca ,
@@ -3654,7 +3890,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "第二统"@zh ;
 .
 
-<http://resource.geosciml.org/classifier/ics/ischart/Serpukhovian>
+ischart:Serpukhovian
     skos:prefLabel
         "Serpuxov"@az ,
         "Serpukhovià"@ca ,
@@ -3683,7 +3919,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "谢尔普霍夫阶"@zh ;
 .
 
-<http://resource.geosciml.org/classifier/ics/ischart/Serravallian>
+ischart:Serravallian
     skos:prefLabel
         "Serraval"@az ,
         "Serraval·lià"@ca ,
@@ -3712,7 +3948,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "塞拉瓦莱阶"@zh ;
 .
 
-<http://resource.geosciml.org/classifier/ics/ischart/Sheinwoodian>
+ischart:Sheinwoodian
     skos:prefLabel
         "Şeynvud"@az ,
         "Sheinwoodià"@ca ,
@@ -3741,7 +3977,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "申伍德阶"@zh ;
 .
 
-<http://resource.geosciml.org/classifier/ics/ischart/Siderian>
+ischart:Siderian
     skos:prefLabel
         "Sider"@az ,
         "Siderià"@ca ,
@@ -3770,7 +4006,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "成铁系"@zh ;
 .
 
-<http://resource.geosciml.org/classifier/ics/ischart/Silurian>
+ischart:Silurian
     skos:prefLabel
         "Silur"@az ,
         "Silurià"@ca ,
@@ -3799,7 +4035,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "志 留 系"@zh ;
 .
 
-<http://resource.geosciml.org/classifier/ics/ischart/Sinemurian>
+ischart:Sinemurian
     skos:prefLabel
         "Sinemyur"@az ,
         "Sinemurià"@ca ,
@@ -3828,7 +4064,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "辛涅缪尔阶"@zh ;
 .
 
-<http://resource.geosciml.org/classifier/ics/ischart/Stage10>
+ischart:Stage10
     skos:prefLabel
         "Mərtəbə 10"@az ,
         "Desè estatge"@ca ,
@@ -3857,7 +4093,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "第十阶"@zh ;
 .
 
-<http://resource.geosciml.org/classifier/ics/ischart/Stage2>
+ischart:Stage2
     skos:prefLabel
         "Mərtəbə 2"@az ,
         "Segon estatge"@ca ,
@@ -3886,7 +4122,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "第二阶"@zh ;
 .
 
-<http://resource.geosciml.org/classifier/ics/ischart/Stage3>
+ischart:Stage3
     skos:prefLabel
         "Mərtəbə 3"@az ,
         "Tercer estatge"@ca ,
@@ -3915,7 +4151,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "第三阶"@zh ;
 .
 
-<http://resource.geosciml.org/classifier/ics/ischart/Stage4>
+ischart:Stage4
     skos:prefLabel
         "Mərtəbə 4"@az ,
         "Quart estatge"@ca ,
@@ -3944,7 +4180,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "第四阶"@zh ;
 .
 
-<http://resource.geosciml.org/classifier/ics/ischart/Statherian>
+ischart:Statherian
     skos:prefLabel
         "Stater"@az ,
         "Estaterià"@ca ,
@@ -3973,7 +4209,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "固结系"@zh ;
 .
 
-<http://resource.geosciml.org/classifier/ics/ischart/Stenian>
+ischart:Stenian
     skos:prefLabel
         "Sten"@az ,
         "Estenià"@ca ,
@@ -4002,7 +4238,65 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "狭带系"@zh ;
 .
 
-<http://resource.geosciml.org/classifier/ics/ischart/Telychian>
+ischart:SubPeriods
+    skos:prefLabel
+        "Alt periodlar"@az ,
+        "Subperíodes"@ca ,
+        "Podperiody"@cs ,
+        "Unterperioden"@de ,
+        "Sub Periods"@en ,
+        "Subperíodos"@es ,
+        "Subperíodos"@es-a ,
+        "Azpiperiodoak"@eu ,
+        "Alaperiodit"@fi ,
+        "Sous-périodes"@fr ,
+        "Alidőszakok"@hu ,
+        "Subperiode"@id ,
+        "Sotto-periodi"@it ,
+        "亜紀"@ja ,
+        "아기"@ko ,
+        "Subperiodai"@lt ,
+        "Subperioden"@nl ,
+        "Subperioden"@nl-be ,
+        "Underperioder"@no ,
+        "Subperíodos"@pt ,
+        "Subperíodos"@pt-br ,
+        "Подпериоды"@ru ,
+        "Podperiódy"@sk ,
+        "Alt periyotlar"@tr ,
+        "亚纪"@zh ;
+.
+
+ischart:SuperEons
+    skos:prefLabel
+        "Super eonlar"@az ,
+        "Supereons"@ca ,
+        "Supereony"@cs ,
+        "Superäonen"@de ,
+        "Super Eons"@en ,
+        "Supereones"@es ,
+        "Supereones"@es-a ,
+        "Supereoiak"@eu ,
+        "Supereonit"@fi ,
+        "Superéons"@fr ,
+        "Szupereonok"@hu ,
+        "Supereon"@id ,
+        "Super-eoni"@it ,
+        "超累代"@ja ,
+        "초누대"@ko ,
+        "Supereonai"@lt ,
+        "Supereonen"@nl ,
+        "Supereonen"@nl-be ,
+        "Supereoner"@no ,
+        "Supereons"@pt ,
+        "Supereons"@pt-br ,
+        "Суперэоны"@ru ,
+        "Supereóny"@sk ,
+        "Süper eonlar"@tr ,
+        "超宙"@zh ;
+.
+
+ischart:Telychian
     skos:prefLabel
         "Teliç"@az ,
         "Telychià"@ca ,
@@ -4031,7 +4325,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "特列奇阶"@zh ;
 .
 
-<http://resource.geosciml.org/classifier/ics/ischart/Terreneuvian>
+ischart:Terreneuvian
     skos:prefLabel
         "Terrenev"@az ,
         "Terranovià"@ca ,
@@ -4060,7 +4354,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "纽芬兰统"@zh ;
 .
 
-<http://resource.geosciml.org/classifier/ics/ischart/Thanetian>
+ischart:Thanetian
     skos:prefLabel
         "Tanet"@az ,
         "Thanetià"@ca ,
@@ -4089,7 +4383,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "坦尼特阶"@zh ;
 .
 
-<http://resource.geosciml.org/classifier/ics/ischart/Tithonian>
+ischart:Tithonian
     skos:prefLabel
         "Titon"@az ,
         "Titonià"@ca ,
@@ -4118,7 +4412,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "提塘阶"@zh ;
 .
 
-<http://resource.geosciml.org/classifier/ics/ischart/Toarcian>
+ischart:Toarcian
     skos:prefLabel
         "Toar"@az ,
         "Toarcià"@ca ,
@@ -4147,7 +4441,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "托阿尔阶"@zh ;
 .
 
-<http://resource.geosciml.org/classifier/ics/ischart/Tonian>
+ischart:Tonian
     skos:prefLabel
         "Toni"@az ,
         "Tonià"@ca ,
@@ -4176,7 +4470,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "拉伸系"@zh ;
 .
 
-<http://resource.geosciml.org/classifier/ics/ischart/Tortonian>
+ischart:Tortonian
     skos:prefLabel
         "Torton"@az ,
         "Tortonià"@ca ,
@@ -4205,7 +4499,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "托尔托纳阶"@zh ;
 .
 
-<http://resource.geosciml.org/classifier/ics/ischart/Tournaisian>
+ischart:Tournaisian
     skos:prefLabel
         "Turne"@az ,
         "Tournaisià"@ca ,
@@ -4234,7 +4528,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "杜内阶"@zh ;
 .
 
-<http://resource.geosciml.org/classifier/ics/ischart/Tremadocian>
+ischart:Tremadocian
     skos:prefLabel
         "Tremadok"@az ,
         "Tremadocià"@ca ,
@@ -4263,7 +4557,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "特马豆克阶"@zh ;
 .
 
-<http://resource.geosciml.org/classifier/ics/ischart/Triassic>
+ischart:Triassic
     skos:prefLabel
         "Trias"@az ,
         "Triàsic"@ca ,
@@ -4292,7 +4586,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "三 叠 系"@zh ;
 .
 
-<http://resource.geosciml.org/classifier/ics/ischart/Turonian>
+ischart:Turonian
     skos:prefLabel
         "Turon"@az ,
         "Turonià"@ca ,
@@ -4321,7 +4615,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "土伦阶"@zh ;
 .
 
-<http://resource.geosciml.org/classifier/ics/ischart/Valanginian>
+ischart:Valanginian
     skos:prefLabel
         "Valanjin"@az ,
         "Valanginià"@ca ,
@@ -4350,7 +4644,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "瓦兰今阶"@zh ;
 .
 
-<http://resource.geosciml.org/classifier/ics/ischart/Visean>
+ischart:Visean
     skos:prefLabel
         "Vize"@az ,
         "Viseà"@ca ,
@@ -4379,7 +4673,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "维宪阶"@zh ;
 .
 
-<http://resource.geosciml.org/classifier/ics/ischart/Wenlock>
+ischart:Wenlock
     skos:prefLabel
         "Venlok"@az ,
         "Wenlockià"@ca ,
@@ -4408,7 +4702,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "温洛克统"@zh ;
 .
 
-<http://resource.geosciml.org/classifier/ics/ischart/Wordian>
+ischart:Wordian
     skos:prefLabel
         "Vord"@az ,
         "Wordià"@ca ,
@@ -4437,7 +4731,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "沃德阶"@zh ;
 .
 
-<http://resource.geosciml.org/classifier/ics/ischart/Wuchiapingian>
+ischart:Wuchiapingian
     skos:prefLabel
         "Vuçiapinq"@az ,
         "Wuchiapingià"@ca ,
@@ -4466,7 +4760,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "吴家坪阶"@zh ;
 .
 
-<http://resource.geosciml.org/classifier/ics/ischart/Wuliuan>
+ischart:Wuliuan
     skos:prefLabel
         "Vuliu"@az ,
         "Wuliuà"@ca ,
@@ -4495,7 +4789,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "乌溜阶"@zh ;
 .
 
-<http://resource.geosciml.org/classifier/ics/ischart/Ypresian>
+ischart:Ypresian
     skos:prefLabel
         "İpr"@az ,
         "Ipresià"@ca ,
@@ -4524,7 +4818,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "伊普里斯阶"@zh ;
 .
 
-<http://resource.geosciml.org/classifier/ics/ischart/Zanclean>
+ischart:Zanclean
     skos:prefLabel
         "Zankl"@az ,
         "Zanclià"@ca ,
@@ -4553,7 +4847,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "赞克勒阶"@zh ;
 .
 
-<http://resource.geosciml.org/ontology/gssp/GSSA>
+gssp:GSSA
     skos:prefLabel
         "GSSP"@az ,
         "GSSP"@ca ,
@@ -4582,7 +4876,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "GSSP"@zh ;
 .
 
-<http://resource.geosciml.org/ontology/gssp/GSSP>
+gssp:GSSP
     skos:prefLabel
         "GSSA"@az ,
         "GSSA"@ca ,
@@ -4611,7 +4905,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "GSSA"@zh ;
 .
 
-<http://resource.geosciml.org/ontology/ics-visual-chart/Blurb>
+vis:Blurb
     skos:prefLabel
         """Qlobal Standard Stratiqrafik Yaşlar (Global Standard Stratigraphic Ages – GSSA) tərəfindən əvvəl təyin edilmiş Arxey və Proterozoy eraları daxil olmaqla, Stratotip Kəsilişlərin Qlobal Sərhədləri və Nöqtələri (Global Boundary Stratotype Section and Points – GSSP) tərəfindən təyin edilən bütün geoxronoloji vahidlərinin alt sərhədləri daimi dəqiqləşdirilir. Təsdiq edilmiş Yarımşöbələr / Yarımepoxalar Ü/G (Üst/Gec), O (Orta) və A/E (Alt/Erkən) olaraq qısaldılmışdır. Kursiv şriftlər qeyri-rəsmi vahidləri və adsız vahidlər üçün istifadə olunan müvəqqəti əvəzediciləri işarələyir. Əvvəlki versiyalar və təsdiqlənmiş GSSP-lər haqqında ətraflı məlumat http://www.stratigraphy.org saytında mövcuddur. Şkalanın keçidi aşağıda göstərilib.
 
@@ -4813,8 +5107,6 @@ URL: https://stratigraphy.org/ICSchart/ChronostratChart2024-12Japanese.pdf"""@ja
 
 국제층서위원회 직원인 K.M. Cohen와 N. Car가 이 표의 초안을 작성하고온라인 상에서 표를 관리하고 있다.
 
-이 표는 현재와 과거 국제층서위원회 모든 구성원들의 집단적인 작업결과물이다.
-
 인용: Cohen, K.M., Finney, S.C., Gibbard, P.L. & Fan, J.-X. (2013; updated) The ICS International Chronostratigraphic Chart. Episodes 36: 199-204.
 
 URL: https://www.stratigraphy.org/ICSchart/ChronostratChart2024-12Korean.pdf"""@ko ,
@@ -4962,7 +5254,7 @@ URL: http://www.stratigraphy.org/ICSchart/ChronostratChart2023-09Turkish.pdf"""@
 本图件网址：http://www.stratigraphy.org/ICSchart/ChronostratChart2023-09Chinese.pdf"""@zh ;
 .
 
-<http://resource.geosciml.org/ontology/ics-visual-chart/ChartTitle>
+vis:ChartTitle
     skos:prefLabel
         "Beynəlxalq Xronostratiqrafik Şkala"@az ,
         "Taula Cronoestratigràfica Internacional"@ca ,
@@ -4991,7 +5283,7 @@ URL: http://www.stratigraphy.org/ICSchart/ChronostratChart2023-09Turkish.pdf"""@
         "International Chronostratigraphic Chart（国 际 年 代 地 层 表）"@zh ;
 .
 
-<http://resource.geosciml.org/ontology/ics-visual-chart/ColumnHeadings>
+vis:ColumnHeadings
     skos:prefLabel
         "Sütun başlıqları"@az ,
         "Encapçalaments de columna"@ca ,
@@ -5020,7 +5312,7 @@ URL: http://www.stratigraphy.org/ICSchart/ChronostratChart2023-09Turkish.pdf"""@
         "列标题"@zh ;
 .
 
-<http://resource.geosciml.org/ontology/ics-visual-chart/Download>
+vis:Download
     skos:prefLabel
         "Yükləyin"@az ,
         "Descarrega"@ca ,
@@ -5049,7 +5341,7 @@ URL: http://www.stratigraphy.org/ICSchart/ChronostratChart2023-09Turkish.pdf"""@
         "下载"@zh ;
 .
 
-<http://resource.geosciml.org/ontology/ics-visual-chart/Language>
+vis:Language
     skos:prefLabel
         "Dil"@az ,
         "Llengua"@ca ,
@@ -5078,7 +5370,7 @@ URL: http://www.stratigraphy.org/ICSchart/ChronostratChart2023-09Turkish.pdf"""@
         "语言"@zh ;
 .
 
-<http://resource.geosciml.org/ontology/ics-visual-chart/NumericAge>
+vis:NumericAge
     skos:prefLabel
         "Rəqəmsal Yaş"@az ,
         "Edat numèrica"@ca ,
@@ -5107,7 +5399,7 @@ URL: http://www.stratigraphy.org/ICSchart/ChronostratChart2023-09Turkish.pdf"""@
         "数字年龄"@zh ;
 .
 
-<http://resource.geosciml.org/ontology/ics-visual-chart/Scaling>
+vis:Scaling
     skos:prefLabel
         "Miqyaslama"@az ,
         "Escalat"@ca ,
@@ -5136,7 +5428,41 @@ URL: http://www.stratigraphy.org/ICSchart/ChronostratChart2023-09Turkish.pdf"""@
         "规模化"@zh ;
 .
 
-<http://resource.geosciml.org/ontology/stratigraphy/Chronometric>
+vis:ccgm
+    skos:prefLabel
+        "Şkalanın rəngləri Ümumdünya Geoloji Xəritə Komissiyasının (Commission for the Geological Map of the World (www.ccgm.org)) qaydalarına uyğundur."@az ,
+        "Barvy jednotek převzaty podle Komise pro geologickou mapu světa (Commission for the Geological Map of the World; www.ccgm.org)."@cs ,
+        "Farben: Commission for the Geological Map of the World (CGMW, /www.ccgm.org)."@de ,
+        "Colouring follows the Commission for the Geological Map of the World (www.ccgm.org)"@en ,
+        "Väritys noudattaa Maailman geologisen karttakomission Geological Map of World (www.ccgm.org) värejä"@fi ,
+        "Les couleurs suivent les recommendations de la Commission de la Carte Géologique du Monde (www.ccgm.org)"@fr ,
+        "A színek a Földtani Világtérkép Bizottság (CGMW) rendszerét követik. (www.ccgm.org)"@hu ,
+        "Pewarnaan mengikuti Komisi untuk Peta Geologi Dunia (https://www.ccgm.org)"@id ,
+        "I colori seguono le indicazioni della Commission for the Geological Map of the World (www.ccgm.org)"@it ,
+        "表の色は，国際地質図委員会（Commission for the Geological Map of the World (www.cgmw.org）の推奨に従う."@ja ,
+        "이 표의 색채는 세계지질도위원회(www.ccgm.org)를따랐다."@ko ,
+        "Spalvos suderintos su Pasauline geologinio kartografavimo komisija (/www.ccgm.org)."@lt ,
+        "De kleuren volgen deze van de Commissie voor de Geologische Kaart van de Wereld www.ccgm.org"@nl ,
+        "De kleuren volgen deze van de Commissie voor de Geologische Kaart van de Wereld www.ccgm.org"@nl-be ,
+        "Fargeskalaen følger retningslinjene til The Commission for the Geological Map of the World www.ccgm.org"@no ,
+        "Цвета шкалы соответствуют требованиям Комиссии по геологической карте Мира (www.ccgm.org)"@ru ,
+        "Farby podľa Komisie pre geologickú mapu sveta (www.ccgm.org)"@sk ,
+        "Renklendirme kodları için Dünya Jeoloji Haritası Komisyonu (/www.ccgm.org) temel alınmıştır."@tr ,
+        "所图中各单位的颜色参照了世界地质图委员会 发布的色谱(http://www.ccgm.org)。"@zh ;
+.
+
+vis:translator
+    skos:prefLabel
+        "Traducció al català per iniciativa de Juan Carlos Gutiérrez-Marco (CSIC)."@ca ,
+        "Version in Deutsch: Österreichische Kommission fur Stratigraphie (ASC, W. Piller), Deutsche Stratigraphische Kommission (DSK, R.T. Becker)"@de ,
+        "Traduzione a cura della Commissione Italiana di Stratigrafia"@en ;
+.
+
+vis:translatorURL
+    skos:prefLabel "https://www.socgeol.it/273/commissione-italiana-di-stratigrafia.html"@en ;
+.
+
+strat:Chronometric
     skos:prefLabel
         "Xronometrik"@az ,
         "Cronomètric"@ca ,
@@ -5165,7 +5491,7 @@ URL: http://www.stratigraphy.org/ICSchart/ChronostratChart2023-09Turkish.pdf"""@
         "计时"@zh ;
 .
 
-<http://resource.geosciml.org/ontology/stratigraphy/Early>
+strat:Early
     skos:prefLabel
         "Erkən"@az ,
         "D'hora"@ca ,
@@ -5194,7 +5520,7 @@ URL: http://www.stratigraphy.org/ICSchart/ChronostratChart2023-09Turkish.pdf"""@
         "早期的"@zh ;
 .
 
-<http://resource.geosciml.org/ontology/stratigraphy/Eonothem>
+strat:Eonothem
     skos:prefLabel
         "Eonotem"@az ,
         "Eonotema"@ca ,
@@ -5223,7 +5549,7 @@ URL: http://www.stratigraphy.org/ICSchart/ChronostratChart2023-09Turkish.pdf"""@
         "宇 （宙）"@zh ;
 .
 
-<http://resource.geosciml.org/ontology/stratigraphy/Erathem>
+strat:Erathem
     skos:prefLabel
         "Eratem"@az ,
         "Eratema"@ca ,
@@ -5249,10 +5575,10 @@ URL: http://www.stratigraphy.org/ICSchart/ChronostratChart2023-09Turkish.pdf"""@
         "Эратема"@ru ,
         "Eratem"@sk ,
         "Eratem"@tr ,
-        "界（代）"@zh ;
+        " 界 （代）"@zh ;
 .
 
-<http://resource.geosciml.org/ontology/stratigraphy/Late>
+strat:Late
     skos:prefLabel
         "Gec"@az ,
         "Tard"@ca ,
@@ -5281,7 +5607,7 @@ URL: http://www.stratigraphy.org/ICSchart/ChronostratChart2023-09Turkish.pdf"""@
         "晚的"@zh ;
 .
 
-<http://resource.geosciml.org/ontology/stratigraphy/Lower>
+strat:Lower
     skos:prefLabel
         "Alt"@az ,
         "Inferior"@ca ,
@@ -5310,7 +5636,7 @@ URL: http://www.stratigraphy.org/ICSchart/ChronostratChart2023-09Turkish.pdf"""@
         "下侏罗统"@zh ;
 .
 
-<http://resource.geosciml.org/ontology/stratigraphy/Middle>
+strat:Middle
     skos:prefLabel
         "Orta"@az ,
         "Mitjà"@ca ,
@@ -5339,7 +5665,7 @@ URL: http://www.stratigraphy.org/ICSchart/ChronostratChart2023-09Turkish.pdf"""@
         "中侏罗统"@zh ;
 .
 
-<http://resource.geosciml.org/ontology/stratigraphy/Series>
+strat:Series
     skos:prefLabel
         "Şöbə"@az ,
         "Sèrie"@ca ,
@@ -5368,7 +5694,7 @@ URL: http://www.stratigraphy.org/ICSchart/ChronostratChart2023-09Turkish.pdf"""@
         "统 （世）"@zh ;
 .
 
-<http://resource.geosciml.org/ontology/stratigraphy/Stage>
+strat:Stage
     skos:prefLabel
         "Mərtəbə"@az ,
         "Estatge"@ca ,
@@ -5397,7 +5723,7 @@ URL: http://www.stratigraphy.org/ICSchart/ChronostratChart2023-09Turkish.pdf"""@
         "阶 （期）"@zh ;
 .
 
-<http://resource.geosciml.org/ontology/stratigraphy/Stratigraphic>
+strat:Stratigraphic
     skos:prefLabel
         "Stratiqrafik"@az ,
         "Estratigràfic"@ca ,
@@ -5426,7 +5752,7 @@ URL: http://www.stratigraphy.org/ICSchart/ChronostratChart2023-09Turkish.pdf"""@
         "地层学"@zh ;
 .
 
-<http://resource.geosciml.org/ontology/stratigraphy/System>
+strat:System
     skos:prefLabel
         "Sistem"@az ,
         "Sistema"@ca ,
@@ -5455,7 +5781,7 @@ URL: http://www.stratigraphy.org/ICSchart/ChronostratChart2023-09Turkish.pdf"""@
         "系 （纪）"@zh ;
 .
 
-<http://resource.geosciml.org/ontology/stratigraphy/Upper>
+strat:Upper
     skos:prefLabel
         "Üst"@az ,
         "Superior"@ca ,
@@ -5484,7 +5810,7 @@ URL: http://www.stratigraphy.org/ICSchart/ChronostratChart2023-09Turkish.pdf"""@
         "上侏罗统"@zh ;
 .
 
-<http://resource.geosciml.org/ontology/timescale/gts#Age>
+gts:Age
     skos:prefLabel
         "Əsr"@az ,
         "Edat"@ca ,
@@ -5513,7 +5839,7 @@ URL: http://www.stratigraphy.org/ICSchart/ChronostratChart2023-09Turkish.pdf"""@
         "年龄"@zh ;
 .
 
-<http://resource.geosciml.org/ontology/timescale/gts#Eon>
+gts:Eon
     skos:prefLabel
         "Eon"@az ,
         "Eó"@ca ,
@@ -5542,7 +5868,7 @@ URL: http://www.stratigraphy.org/ICSchart/ChronostratChart2023-09Turkish.pdf"""@
         "宇 （宙）"@zh ;
 .
 
-<http://resource.geosciml.org/ontology/timescale/gts#Epoch>
+gts:Epoch
     skos:prefLabel
         "Epoxa"@az ,
         "Època"@ca ,
@@ -5571,7 +5897,7 @@ URL: http://www.stratigraphy.org/ICSchart/ChronostratChart2023-09Turkish.pdf"""@
         "统 （世）"@zh ;
 .
 
-<http://resource.geosciml.org/ontology/timescale/gts#Era>
+gts:Era
     skos:prefLabel
         "Era"@az ,
         "Era"@ca ,
@@ -5600,7 +5926,7 @@ URL: http://www.stratigraphy.org/ICSchart/ChronostratChart2023-09Turkish.pdf"""@
         " 界 （代）"@zh ;
 .
 
-<http://resource.geosciml.org/ontology/timescale/gts#Period>
+gts:Period
     skos:prefLabel
         "Dövr"@az ,
         "Període"@ca ,
@@ -5627,4 +5953,62 @@ URL: http://www.stratigraphy.org/ICSchart/ChronostratChart2023-09Turkish.pdf"""@
         "Perióda"@sk ,
         "Dönem"@tr ,
         "系 （纪）"@zh ;
+.
+
+schema:copyrightNotice
+    skos:prefLabel
+        "© Beynəlxalq Stratiqrafiya Komissiyası (International Commission on Stratigraphy), 2026"@az ,
+        "© Comissió Internacional d’Estratigrafia, 2026"@ca ,
+        "© Mezinárodní stratigrafická komise, září 2026"@cs ,
+        "© International Commission on Stratigraphy, 2026"@de ,
+        "© International Commission on Stratigraphy, 2026"@en ,
+        "© International Commission on Stratigraphy, 2026"@es ,
+        "© International Commission on Stratigraphy, 2026"@es-a ,
+        "© International Commission on Stratigraphy, 2026"@eu ,
+        "© International Commission on Stratigraphy, 2026"@fi ,
+        "© International Commission on Stratigraphy, 2026"@fr ,
+        "© Nemzetközi Rétegtani Bizottság, 2026"@hu ,
+        "© International Commission on Stratigraphy, 2026"@id ,
+        "© International Commission on Stratigraphy, 2026"@it ,
+        "© 国際層序委員会，2026年12月"@ja ,
+        "© 국제층서위원회, 2026년 12월"@ko ,
+        "© International Commission on Stratigraphy, 2026"@lt ,
+        "© International Commission on Stratigraphy, 2026"@nl ,
+        "© International Commission on Stratigraphy, 2026"@nl-be ,
+        "© International Commission on Stratigraphy, 2026"@no ,
+        "© International Commission on Stratigraphy, 2026"@pt ,
+        "© International Commission on Stratigraphy, 2026"@pt-br ,
+        "© Международная комиссия по стратиграфии, февраль 20126 г"@ru ,
+        "© Medzinárodná stratigrafická komisia, 2026"@sk ,
+        "© International Commission on Stratigraphy, 2026"@tr ,
+        "© 国际地层委员会，2026年09月（英文版）"@zh ;
+.
+
+schema:license
+    skos:prefLabel
+        "Bu Cədvəl Creative Commons BY 4.0 lisenziyasına uyğun olaraq istifadə üçün mövcuddur (https://creativecommons.org/licenses/by/4.0/)"@az ,
+        "Aquest gràfic està disponible per al seu ús d'acord amb la llicència Creative Commons BY 4.0 (https://creativecommons.org/licenses/by/4.0/)"@ca ,
+        "Tento graf je k dispozici pro použití v souladu s licencí Creative Commons BY 4.0 (https://creativecommons.org/licenses/by/4.0/)"@cs ,
+        "Dieses Diagramm kann gemäß der Creative Commons BY 4.0-Lizenz verwendet werden (https://creativecommons.org/licenses/by/4.0/)"@de ,
+        "This Chart is available for use in accordance with the Creative Commons BY 4.0 license (https://creativecommons.org/licenses/by/4.0/)"@en ,
+        "Este gráfico está disponible para su uso de acuerdo con la licencia Creative Commons BY 4.0 license (https://creativecommons.org/licenses/by/4.0/)"@es ,
+        "Este gráfico está disponible para su uso de acuerdo con la licencia Creative Commons BY 4.0 license (https://creativecommons.org/licenses/by/4.0/)"@es-a ,
+        "Grafiko hau Creative Commons BY 4.0 lizentziaren arabera erabil daiteke (https://creativecommons.org/licenses/by/4.0/)"@eu ,
+        "Tätä kaaviota saa käyttää Creative Commons BY 4.0 -lisenssin mukaisesti. (https://creativecommons.org/licenses/by/4.0/)"@fi ,
+        "Ce graphique est disponible pour une utilisation conformément à la licence Creative Commons BY 4.0 (https://creativecommons.org/licenses/by/4.0/)"@fr ,
+        "Ez a diagram a Creative Commons BY 4.0 licencnek megfelelően használható (https://creativecommons.org/licenses/by/4.0/)"@hu ,
+        "Grafik ini tersedia untuk digunakan sesuai dengan lisensi Creative Commons BY 4.0 (https://creativecommons.org/licenses/by/4.0/)"@id ,
+        "Questo grafico è disponibile per l’uso in conformità con la licenza Creative Commons BY 4.0 (https://creativecommons.org/licenses/by/4.0/)"@it ,
+        "この図表は、Creative Commons BY 4.0 ライセンスに従って使用できます (https://creativecommons.org/licenses/by/4.0/)"@ja ,
+        "이 차트는 Creative Commons BY 4.0 라이선스에 따라 사용할 수 있습니다 (https://creativecommons.org/licenses/by/4.0/)"@ko ,
+        "Šią diagramą galima naudoti pagal „Creative Commons BY 4.0“ licenciją (https://creativecommons.org/licenses/by/4.0/)"@lt ,
+        "Deze grafiek is beschikbaar voor gebruik in overeenstemming met de Creative Commons BY 4.0-licentie (https://creativecommons.org/licenses/by/4.0/)"@nl ,
+        "Deze grafiek is beschikbaar voor gebruik in overeenstemming met de Creative Commons BY 4.0-licentie (https://creativecommons.org/licenses/by/4.0/)"@nl-be ,
+        "Dette diagrammet er tilgjengelig for bruk i samsvar med Creative Commons BY 4.0-lisensen (https://creativecommons.org/licenses/by/4.0/)"@no ,
+        "Este gráfico está disponível para uso de acordo com a licença Creative Commons BY 4.0 (https://creativecommons.org/licenses/by/4.0/)"@pt ,
+        "Este gráfico está disponível para uso de acordo com a licença Creative Commons BY 4.0 (https://creativecommons.org/licenses/by/4.0/)"@pt-br ,
+        "Эта диаграмма доступна для использования в соответствии с лицензией Creative Commons BY 4.0 (https://creativecommons.org/licenses/by/4.0/)"@ru ,
+        "Tento graf je k dispozícii na použitie v súlade s licenciou Creative Commons BY 4.0 (https://creativecommons.org/licenses/by/4.0/)"@sk ,
+        "Bu grafik, Creative Commons BY 4.0 lisansı uyarınca kullanıma sunulmuştur (https://creativecommons.org/licenses/by/4.0/)"@tr ,
+        "此图表可根据 Creative Commons BY 4.0 许可协议使用 (https://creativecommons.org/licenses/by/4.0/)"@zh ;
 .

@@ -42,5 +42,5 @@ for sheet_name in xls.sheet_names:
 
 for k, v in namespaces.items():
     g.bind(k, v)
-g.serialize(destination="chart-multilang.ttl", format="longturtle")
+g.serialize(destination=str(Path(__file__).parent / "multilang/chart-multilang.ttl"), format="longturtle")
 print(len(g))

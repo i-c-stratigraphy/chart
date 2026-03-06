@@ -6,7 +6,7 @@ PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX prov: <http://www.w3.org/ns/prov#>
 PREFIX rank: <http://resource.geosciml.org/ontology/timescale/rank/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX schema: <https://schema.org/>
+PREFIX sdo: <https://schema.org/>
 PREFIX sh: <http://www.w3.org/ns/shacl#>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX time: <http://www.w3.org/2006/time#>
@@ -122,7 +122,6 @@ ischart:Ages
         ischart:Wuliuan ,
         ischart:Ypresian ,
         ischart:Zanclean ;
-    skos:prefLabel "Ages"@en ;
 .
 
 ischart:Eons
@@ -136,7 +135,6 @@ ischart:Eons
         ischart:Hadean ,
         ischart:Phanerozoic ,
         ischart:Proterozoic ;
-    skos:prefLabel "Eons"@en ;
 .
 
 ischart:Epochs
@@ -184,7 +182,6 @@ ischart:Epochs
         ischart:UpperPennsylvanian ,
         ischart:UpperTriassic ,
         ischart:Wenlock ;
-    skos:prefLabel "Epochs"@en ;
 .
 
 ischart:Eras
@@ -204,7 +201,6 @@ ischart:Eras
         ischart:Paleoarchean ,
         ischart:Paleoproterozoic ,
         ischart:Paleozoic ;
-    skos:prefLabel "Eras"@en ;
 .
 
 ischart:Periods
@@ -236,7 +232,6 @@ ischart:Periods
         ischart:Stenian ,
         ischart:Tonian ,
         ischart:Triassic ;
-    skos:prefLabel "Periods"@en ;
 .
 
 ischart:RGBHex
@@ -256,7 +251,6 @@ ischart:SubPeriod
     skos:member
         ischart:Mississippian ,
         ischart:Pennsylvanian ;
-    skos:prefLabel "Sub Periods"@en ;
 .
 
 ischart:SuperEons
@@ -266,7 +260,6 @@ ischart:SuperEons
     skos:historyNote "This Collection was created from the age ranks of the Chart" ;
     skos:inScheme cs: ;
     skos:member ischart:Precambrian ;
-    skos:prefLabel "Super Eons"@en ;
 .
 
 ischart:inMYA
@@ -281,21 +274,22 @@ ischart:Aalenian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:MiddleJurassic ;
+    skos:definition "A time period from 174.7 to 170.9 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "j1"^^ischart:ccgmShortCode ;
     time:hasBeginning
         [
             ischart:inMYA 174.7 ;
-            schema:marginOfError 0.8 ;
+            sdo:marginOfError 0.8 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 170.9 ;
-            schema:marginOfError 0.8 ;
+            sdo:marginOfError 0.8 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 58 ;
-    schema:color "#9AD9DD"^^ischart:RGBHex ;
+    sdo:color "#9AD9DD"^^ischart:RGBHex ;
 .
 
 ischart:Aeronian
@@ -304,21 +298,22 @@ ischart:Aeronian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Llandovery ;
+    skos:definition "A time period from 440.5 to 438.6 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "s2"^^ischart:ccgmShortCode ;
     time:hasBeginning
         [
             ischart:inMYA 440.5 ;
-            schema:marginOfError 1.0 ;
+            sdo:marginOfError 1.0 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 438.6 ;
-            schema:marginOfError 1.0 ;
+            sdo:marginOfError 1.0 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 127 ;
-    schema:color "#B3E1C2"^^ischart:RGBHex ;
+    sdo:color "#B3E1C2"^^ischart:RGBHex ;
 .
 
 ischart:Albian
@@ -327,21 +322,22 @@ ischart:Albian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:LowerCretaceous ;
+    skos:definition "A time period from 113.2 to 100.5 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "b6"^^ischart:ccgmShortCode ;
     time:hasBeginning
         [
             ischart:inMYA 113.2 ;
-            schema:marginOfError 0.3 ;
+            sdo:marginOfError 0.3 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 100.5 ;
-            schema:marginOfError 0.1 ;
+            sdo:marginOfError 0.1 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 43 ;
-    schema:color "#CCEA97"^^ischart:RGBHex ;
+    sdo:color "#CCEA97"^^ischart:RGBHex ;
 .
 
 ischart:Anisian
@@ -349,6 +345,7 @@ ischart:Anisian
     gts:rank rank:Age ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:MiddleTriassic ;
+    skos:definition "A time period from 246.7 to 241.464 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "t3"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -358,11 +355,11 @@ ischart:Anisian
     time:hasEnd
         [
             ischart:inMYA 241.464 ;
-            schema:marginOfError 0.28 ;
+            sdo:marginOfError 0.28 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 71 ;
-    schema:color "#BC75B7"^^ischart:RGBHex ;
+    sdo:color "#BC75B7"^^ischart:RGBHex ;
 .
 
 ischart:Aptian
@@ -370,21 +367,22 @@ ischart:Aptian
     gts:rank rank:Age ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:LowerCretaceous ;
+    skos:definition "A time period from 121.4 to 113.2 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "b5"^^ischart:ccgmShortCode ;
     time:hasBeginning
         [
             ischart:inMYA 121.4 ;
-            schema:marginOfError 0.6 ;
+            sdo:marginOfError 0.6 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 113.2 ;
-            schema:marginOfError 0.3 ;
+            sdo:marginOfError 0.3 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 44 ;
-    schema:color "#BFE48A"^^ischart:RGBHex ;
+    sdo:color "#BFE48A"^^ischart:RGBHex ;
 .
 
 ischart:Aquitanian
@@ -393,6 +391,7 @@ ischart:Aquitanian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Miocene ;
+    skos:definition "A time period from 23.03 to 20.45 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "n1"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -405,7 +404,7 @@ ischart:Aquitanian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 19 ;
-    schema:color "#FFFF33"^^ischart:RGBHex ;
+    sdo:color "#FFFF33"^^ischart:RGBHex ;
 .
 
 ischart:Artinskian
@@ -414,21 +413,22 @@ ischart:Artinskian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Cisuralian ;
+    skos:definition "A time period from 290.1 to 283.3 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "p3"^^ischart:ccgmShortCode ;
     time:hasBeginning
         [
             ischart:inMYA 290.1 ;
-            schema:marginOfError 0.26 ;
+            sdo:marginOfError 0.26 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 283.3 ;
-            schema:marginOfError 0.4 ;
+            sdo:marginOfError 0.4 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 87 ;
-    schema:color "#E37B68"^^ischart:RGBHex ;
+    sdo:color "#E37B68"^^ischart:RGBHex ;
 .
 
 ischart:Asselian
@@ -437,21 +437,22 @@ ischart:Asselian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Cisuralian ;
+    skos:definition "A time period from 298.9 to 293.52 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "p1"^^ischart:ccgmShortCode ;
     time:hasBeginning
         [
             ischart:inMYA 298.9 ;
-            schema:marginOfError 0.15 ;
+            sdo:marginOfError 0.15 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 293.52 ;
-            schema:marginOfError 0.17 ;
+            sdo:marginOfError 0.17 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 89 ;
-    schema:color "#E36350"^^ischart:RGBHex ;
+    sdo:color "#E36350"^^ischart:RGBHex ;
 .
 
 ischart:Bajocian
@@ -460,21 +461,22 @@ ischart:Bajocian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:MiddleJurassic ;
+    skos:definition "A time period from 170.9 to 168.2 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "j2"^^ischart:ccgmShortCode ;
     time:hasBeginning
         [
             ischart:inMYA 170.9 ;
-            schema:marginOfError 0.8 ;
+            sdo:marginOfError 0.8 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 168.2 ;
-            schema:marginOfError 1.2 ;
+            sdo:marginOfError 1.2 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 57 ;
-    schema:color "#A6DDE0"^^ischart:RGBHex ;
+    sdo:color "#A6DDE0"^^ischart:RGBHex ;
 .
 
 ischart:Barremian
@@ -483,6 +485,7 @@ ischart:Barremian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:LowerCretaceous ;
+    skos:definition "A time period from 125.77 to 121.4 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "b4"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -492,11 +495,11 @@ ischart:Barremian
     time:hasEnd
         [
             ischart:inMYA 121.4 ;
-            schema:marginOfError 0.6 ;
+            sdo:marginOfError 0.6 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 45 ;
-    schema:color "#B3DF7F"^^ischart:RGBHex ;
+    sdo:color "#B3DF7F"^^ischart:RGBHex ;
 .
 
 ischart:Bartonian
@@ -504,6 +507,7 @@ ischart:Bartonian
     gts:rank rank:Age ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Eocene ;
+    skos:definition "A time period from 41.03 to 37.71 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "e6"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -516,7 +520,7 @@ ischart:Bartonian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 26 ;
-    schema:color "#FDC091"^^ischart:RGBHex ;
+    sdo:color "#FDC091"^^ischart:RGBHex ;
 .
 
 ischart:Bashkirian
@@ -525,21 +529,22 @@ ischart:Bashkirian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:LowerPennsylvanian ;
+    skos:definition "A time period from 323.4 to 315.2 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "c4"^^ischart:ccgmShortCode ;
     time:hasBeginning
         [
             ischart:inMYA 323.4 ;
-            schema:marginOfError 0.4 ;
+            sdo:marginOfError 0.4 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 315.2 ;
-            schema:marginOfError 0.2 ;
+            sdo:marginOfError 0.2 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 97 ;
-    schema:color "#99C2B5"^^ischart:RGBHex ;
+    sdo:color "#99C2B5"^^ischart:RGBHex ;
 .
 
 ischart:Bathonian
@@ -548,21 +553,22 @@ ischart:Bathonian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:MiddleJurassic ;
+    skos:definition "A time period from 168.2 to 165.3 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "j3"^^ischart:ccgmShortCode ;
     time:hasBeginning
         [
             ischart:inMYA 168.2 ;
-            schema:marginOfError 1.2 ;
+            sdo:marginOfError 1.2 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 165.3 ;
-            schema:marginOfError 1.1 ;
+            sdo:marginOfError 1.1 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 56 ;
-    schema:color "#B3E2E3"^^ischart:RGBHex ;
+    sdo:color "#B3E2E3"^^ischart:RGBHex ;
 .
 
 ischart:Berriasian
@@ -570,21 +576,22 @@ ischart:Berriasian
     gts:rank rank:Age ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:LowerCretaceous ;
+    skos:definition "A time period from 143.1 to 137.05 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "b1"^^ischart:ccgmShortCode ;
     time:hasBeginning
         [
             ischart:inMYA 143.1 ;
-            schema:marginOfError 0.6 ;
+            sdo:marginOfError 0.6 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 137.05 ;
-            schema:marginOfError 0.2 ;
+            sdo:marginOfError 0.2 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 48 ;
-    schema:color "#8CCD60"^^ischart:RGBHex ;
+    sdo:color "#8CCD60"^^ischart:RGBHex ;
 .
 
 ischart:Burdigalian
@@ -592,6 +599,7 @@ ischart:Burdigalian
     gts:rank rank:Age ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Miocene ;
+    skos:definition "A time period from 20.45 to 15.98 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "n2"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -604,7 +612,7 @@ ischart:Burdigalian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 18 ;
-    schema:color "#FFFF41"^^ischart:RGBHex ;
+    sdo:color "#FFFF41"^^ischart:RGBHex ;
 .
 
 ischart:Calabrian
@@ -613,6 +621,7 @@ ischart:Calabrian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Pleistocene ;
+    skos:definition "A time period from 1.80 to 0.774 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "q2"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -625,7 +634,7 @@ ischart:Calabrian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 7 ;
-    schema:color "#FFF2BA"^^ischart:RGBHex ;
+    sdo:color "#FFF2BA"^^ischart:RGBHex ;
 .
 
 ischart:Callovian
@@ -633,21 +642,22 @@ ischart:Callovian
     gts:rank rank:Age ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:MiddleJurassic ;
+    skos:definition "A time period from 165.3 to 161.5 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "j4"^^ischart:ccgmShortCode ;
     time:hasBeginning
         [
             ischart:inMYA 165.3 ;
-            schema:marginOfError 1.1 ;
+            sdo:marginOfError 1.1 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 161.5 ;
-            schema:marginOfError 1.0 ;
+            sdo:marginOfError 1.0 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 55 ;
-    schema:color "#BFE7E5"^^ischart:RGBHex ;
+    sdo:color "#BFE7E5"^^ischart:RGBHex ;
 .
 
 ischart:Calymmian
@@ -656,6 +666,7 @@ ischart:Calymmian
     gts:ratifiedGSSA true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Mesoproterozoic ;
+    skos:definition "A time period from 1600 to 1400 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "MP1"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -668,7 +679,7 @@ ischart:Calymmian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 164 ;
-    schema:color "#FDC07A"^^ischart:RGBHex ;
+    sdo:color "#FDC07A"^^ischart:RGBHex ;
 .
 
 ischart:CambrianStage10
@@ -676,6 +687,7 @@ ischart:CambrianStage10
     gts:rank rank:Age ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Furongian ;
+    skos:definition "A time period from 491.0 to 486.85 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "ep10"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -686,11 +698,11 @@ ischart:CambrianStage10
     time:hasEnd
         [
             ischart:inMYA 486.85 ;
-            schema:marginOfError 1.5 ;
+            sdo:marginOfError 1.5 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 142 ;
-    schema:color "#E6F5C9"^^ischart:RGBHex ;
+    sdo:color "#E6F5C9"^^ischart:RGBHex ;
 .
 
 ischart:CambrianStage2
@@ -698,6 +710,7 @@ ischart:CambrianStage2
     gts:rank rank:Age ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Terreneuvian ;
+    skos:definition "A time period from 529.0 to 521.0 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "ep3"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -712,7 +725,7 @@ ischart:CambrianStage2
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 152 ;
-    schema:color "#A6BA80"^^ischart:RGBHex ;
+    sdo:color "#A6BA80"^^ischart:RGBHex ;
 .
 
 ischart:CambrianStage3
@@ -720,6 +733,7 @@ ischart:CambrianStage3
     gts:rank rank:Age ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:CambrianSeries2 ;
+    skos:definition "A time period from 521.0 to 514.5 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "ep2"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -734,7 +748,7 @@ ischart:CambrianStage3
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 153 ;
-    schema:color "#A6C583"^^ischart:RGBHex ;
+    sdo:color "#A6C583"^^ischart:RGBHex ;
 .
 
 ischart:CambrianStage4
@@ -742,6 +756,7 @@ ischart:CambrianStage4
     gts:rank rank:Age ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:CambrianSeries2 ;
+    skos:definition "A time period from 514.5 to 506.5 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "ep4"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -756,7 +771,7 @@ ischart:CambrianStage4
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 150 ;
-    schema:color "#B3CA8E"^^ischart:RGBHex ;
+    sdo:color "#B3CA8E"^^ischart:RGBHex ;
 .
 
 ischart:Campanian
@@ -765,21 +780,22 @@ ischart:Campanian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:UpperCretaceous ;
+    skos:definition "A time period from 83.6 to 72.2 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "k5"^^ischart:ccgmShortCode ;
     time:hasBeginning
         [
             ischart:inMYA 83.6 ;
-            schema:marginOfError 0.2 ;
+            sdo:marginOfError 0.2 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 72.2 ;
-            schema:marginOfError 0.2 ;
+            sdo:marginOfError 0.2 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 37 ;
-    schema:color "#E6F47F"^^ischart:RGBHex ;
+    sdo:color "#E6F47F"^^ischart:RGBHex ;
 .
 
 ischart:Capitanian
@@ -788,21 +804,22 @@ ischart:Capitanian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Guadalupian ;
+    skos:definition "A time period from 264.28 to 259.51 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "p7"^^ischart:ccgmShortCode ;
     time:hasBeginning
         [
             ischart:inMYA 264.28 ;
-            schema:marginOfError 0.16 ;
+            sdo:marginOfError 0.16 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 259.51 ;
-            schema:marginOfError 0.21 ;
+            sdo:marginOfError 0.21 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 82 ;
-    schema:color "#FB9A85"^^ischart:RGBHex ;
+    sdo:color "#FB9A85"^^ischart:RGBHex ;
 .
 
 ischart:Carnian
@@ -811,6 +828,7 @@ ischart:Carnian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:UpperTriassic ;
+    skos:definition "A time period from 237 to 227.3 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "t5"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -825,7 +843,7 @@ ischart:Carnian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 68 ;
-    schema:color "#C99BCB"^^ischart:RGBHex ;
+    sdo:color "#C99BCB"^^ischart:RGBHex ;
 .
 
 ischart:Cenomanian
@@ -834,21 +852,22 @@ ischart:Cenomanian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:UpperCretaceous ;
+    skos:definition "A time period from 100.5 to 93.9 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "k1"^^ischart:ccgmShortCode ;
     time:hasBeginning
         [
             ischart:inMYA 100.5 ;
-            schema:marginOfError 0.1 ;
+            sdo:marginOfError 0.1 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 93.9 ;
-            schema:marginOfError 0.2 ;
+            sdo:marginOfError 0.2 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 41 ;
-    schema:color "#B3DE53"^^ischart:RGBHex ;
+    sdo:color "#B3DE53"^^ischart:RGBHex ;
 .
 
 ischart:Changhsingian
@@ -857,21 +876,22 @@ ischart:Changhsingian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Lopingian ;
+    skos:definition "A time period from 254.14 to 251.902 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "p9"^^ischart:ccgmShortCode ;
     time:hasBeginning
         [
             ischart:inMYA 254.14 ;
-            schema:marginOfError 0.07 ;
+            sdo:marginOfError 0.07 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 251.902 ;
-            schema:marginOfError 0.024 ;
+            sdo:marginOfError 0.024 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 79 ;
-    schema:color "#FCC0B2"^^ischart:RGBHex ;
+    sdo:color "#FCC0B2"^^ischart:RGBHex ;
 .
 
 ischart:Chattian
@@ -880,6 +900,7 @@ ischart:Chattian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Oligocene ;
+    skos:definition "A time period from 27.30 to 23.04 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "e9"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -892,7 +913,7 @@ ischart:Chattian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 22 ;
-    schema:color "#FEE6AA"^^ischart:RGBHex ;
+    sdo:color "#FEE6AA"^^ischart:RGBHex ;
 .
 
 ischart:Chibanian
@@ -901,6 +922,7 @@ ischart:Chibanian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Pleistocene ;
+    skos:definition "A time period from 0.774 to 0.129 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "q3"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -913,7 +935,7 @@ ischart:Chibanian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 6 ;
-    schema:color "#FFF2C7"^^ischart:RGBHex ;
+    sdo:color "#FFF2C7"^^ischart:RGBHex ;
 .
 
 ischart:Coniacian
@@ -922,21 +944,22 @@ ischart:Coniacian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:UpperCretaceous ;
+    skos:definition "A time period from 89.8 to 85.7 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "k3"^^ischart:ccgmShortCode ;
     time:hasBeginning
         [
             ischart:inMYA 89.8 ;
-            schema:marginOfError 0.3 ;
+            sdo:marginOfError 0.3 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 85.7 ;
-            schema:marginOfError 0.2 ;
+            sdo:marginOfError 0.2 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 39 ;
-    schema:color "#CCE968"^^ischart:RGBHex ;
+    sdo:color "#CCE968"^^ischart:RGBHex ;
 .
 
 ischart:Cryogenian
@@ -944,6 +967,7 @@ ischart:Cryogenian
     gts:rank rank:Period ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Neoproterozoic ;
+    skos:definition "A time period from 720 to 635 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "NP2"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -958,7 +982,7 @@ ischart:Cryogenian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 159 ;
-    schema:color "#FECC5C"^^ischart:RGBHex ;
+    sdo:color "#FECC5C"^^ischart:RGBHex ;
 .
 
 ischart:Danian
@@ -967,6 +991,7 @@ ischart:Danian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Paleocene ;
+    skos:definition "A time period from 66.00 to 61.66 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "e1"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -979,7 +1004,7 @@ ischart:Danian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 33 ;
-    schema:color "#FDB462"^^ischart:RGBHex ;
+    sdo:color "#FDB462"^^ischart:RGBHex ;
 .
 
 ischart:Dapingian
@@ -988,21 +1013,22 @@ ischart:Dapingian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:MiddleOrdovician ;
+    skos:definition "A time period from 471.3 to 469.4 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "o3"^^ischart:ccgmShortCode ;
     time:hasBeginning
         [
             ischart:inMYA 471.3 ;
-            schema:marginOfError 1.4 ;
+            sdo:marginOfError 1.4 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 469.4 ;
-            schema:marginOfError 0.9 ;
+            sdo:marginOfError 0.9 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 136 ;
-    schema:color "#66C092"^^ischart:RGBHex ;
+    sdo:color "#66C092"^^ischart:RGBHex ;
 .
 
 ischart:Darriwilian
@@ -1011,21 +1037,22 @@ ischart:Darriwilian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:MiddleOrdovician ;
+    skos:definition "A time period from 469.4 to 458.2 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "o4"^^ischart:ccgmShortCode ;
     time:hasBeginning
         [
             ischart:inMYA 469.4 ;
-            schema:marginOfError 0.9 ;
+            sdo:marginOfError 0.9 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 458.2 ;
-            schema:marginOfError 0.7 ;
+            sdo:marginOfError 0.7 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 135 ;
-    schema:color "#74C69C"^^ischart:RGBHex ;
+    sdo:color "#74C69C"^^ischart:RGBHex ;
 .
 
 ischart:Drumian
@@ -1034,6 +1061,7 @@ ischart:Drumian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Miaolingian ;
+    skos:definition "A time period from 504.5 to 500.5 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "ep6"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -1048,7 +1076,7 @@ ischart:Drumian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 147 ;
-    schema:color "#BFD99D"^^ischart:RGBHex ;
+    sdo:color "#BFD99D"^^ischart:RGBHex ;
 .
 
 ischart:Ectasian
@@ -1057,6 +1085,7 @@ ischart:Ectasian
     gts:ratifiedGSSA true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Mesoproterozoic ;
+    skos:definition "A time period from 1400 to 1200 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "MP2"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -1069,7 +1098,7 @@ ischart:Ectasian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 163 ;
-    schema:color "#FDCC8A"^^ischart:RGBHex ;
+    sdo:color "#FDCC8A"^^ischart:RGBHex ;
 .
 
 ischart:Ediacaran
@@ -1078,6 +1107,7 @@ ischart:Ediacaran
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Neoproterozoic ;
+    skos:definition "A time period from 635 to 538.8 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "NP3"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -1088,11 +1118,11 @@ ischart:Ediacaran
     time:hasEnd
         [
             ischart:inMYA 538.8 ;
-            schema:marginOfError 0.6 ;
+            sdo:marginOfError 0.6 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 158 ;
-    schema:color "#FED96A"^^ischart:RGBHex ;
+    sdo:color "#FED96A"^^ischart:RGBHex ;
 .
 
 ischart:Eifelian
@@ -1101,21 +1131,22 @@ ischart:Eifelian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:MiddleDevonian ;
+    skos:definition "A time period from 393.47 to 387.95 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "d4"^^ischart:ccgmShortCode ;
     time:hasBeginning
         [
             ischart:inMYA 393.47 ;
-            schema:marginOfError 0.99 ;
+            sdo:marginOfError 0.99 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 387.95 ;
-            schema:marginOfError 1.04 ;
+            sdo:marginOfError 1.04 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 112 ;
-    schema:color "#F1D576"^^ischart:RGBHex ;
+    sdo:color "#F1D576"^^ischart:RGBHex ;
 .
 
 ischart:Emsian
@@ -1124,21 +1155,22 @@ ischart:Emsian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:LowerDevonian ;
+    skos:definition "A time period from 410.62 to 393.47 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "d3"^^ischart:ccgmShortCode ;
     time:hasBeginning
         [
             ischart:inMYA 410.62 ;
-            schema:marginOfError 1.95 ;
+            sdo:marginOfError 1.95 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 393.47 ;
-            schema:marginOfError 0.99 ;
+            sdo:marginOfError 0.99 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 114 ;
-    schema:color "#E5D075"^^ischart:RGBHex ;
+    sdo:color "#E5D075"^^ischart:RGBHex ;
 .
 
 ischart:Eoarchean
@@ -1147,12 +1179,13 @@ ischart:Eoarchean
     gts:ratifiedGSSA true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Archean ;
+    skos:definition "A time period from 4031 to 3600 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "EA"^^ischart:ccgmShortCode ;
     time:hasBeginning
         [
             ischart:inMYA 4031 ;
-            schema:marginOfError 3 ;
+            sdo:marginOfError 3 ;
         ] ;
     time:hasEnd
         [
@@ -1160,7 +1193,7 @@ ischart:Eoarchean
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 176 ;
-    schema:color "#DA037F"^^ischart:RGBHex ;
+    sdo:color "#DA037F"^^ischart:RGBHex ;
 .
 
 ischart:Famennian
@@ -1169,21 +1202,22 @@ ischart:Famennian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:UpperDevonian ;
+    skos:definition "A time period from 372.15 to 358.86 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "d7"^^ischart:ccgmShortCode ;
     time:hasBeginning
         [
             ischart:inMYA 372.15 ;
-            schema:marginOfError 0.46 ;
+            sdo:marginOfError 0.46 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 358.86 ;
-            schema:marginOfError 0.19 ;
+            sdo:marginOfError 0.19 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 108 ;
-    schema:color "#F2EDB3"^^ischart:RGBHex ;
+    sdo:color "#F2EDB3"^^ischart:RGBHex ;
 .
 
 ischart:Floian
@@ -1192,21 +1226,22 @@ ischart:Floian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:LowerOrdovician ;
+    skos:definition "A time period from 477.1 to 471.3 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "o2"^^ischart:ccgmShortCode ;
     time:hasBeginning
         [
             ischart:inMYA 477.1 ;
-            schema:marginOfError 1.2 ;
+            sdo:marginOfError 1.2 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 471.3 ;
-            schema:marginOfError 1.4 ;
+            sdo:marginOfError 1.4 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 138 ;
-    schema:color "#41B087"^^ischart:RGBHex ;
+    sdo:color "#41B087"^^ischart:RGBHex ;
 .
 
 ischart:Fortunian
@@ -1215,12 +1250,13 @@ ischart:Fortunian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Terreneuvian ;
+    skos:definition "A time period from 538.8 to 529.0 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "ep1"^^ischart:ccgmShortCode ;
     time:hasBeginning
         [
             ischart:inMYA 538.8 ;
-            schema:marginOfError 0.6 ;
+            sdo:marginOfError 0.6 ;
         ] ;
     time:hasEnd
         [
@@ -1229,7 +1265,7 @@ ischart:Fortunian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 155 ;
-    schema:color "#99B575"^^ischart:RGBHex ;
+    sdo:color "#99B575"^^ischart:RGBHex ;
 .
 
 ischart:Frasnian
@@ -1238,21 +1274,22 @@ ischart:Frasnian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:UpperDevonian ;
+    skos:definition "A time period from 382.31 to 372.15 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "d6"^^ischart:ccgmShortCode ;
     time:hasBeginning
         [
             ischart:inMYA 382.31 ;
-            schema:marginOfError 1.36 ;
+            sdo:marginOfError 1.36 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 372.15 ;
-            schema:marginOfError 0.46 ;
+            sdo:marginOfError 0.46 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 109 ;
-    schema:color "#F2EDAD"^^ischart:RGBHex ;
+    sdo:color "#F2EDAD"^^ischart:RGBHex ;
 .
 
 ischart:Gelasian
@@ -1261,6 +1298,7 @@ ischart:Gelasian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Pleistocene ;
+    skos:definition "A time period from 2.58 to 1.80 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "q1"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -1273,7 +1311,7 @@ ischart:Gelasian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 8 ;
-    schema:color "#FFEDB3"^^ischart:RGBHex ;
+    sdo:color "#FFEDB3"^^ischart:RGBHex ;
 .
 
 ischart:Givetian
@@ -1282,21 +1320,22 @@ ischart:Givetian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:MiddleDevonian ;
+    skos:definition "A time period from 387.95 to 382.31 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "d5"^^ischart:ccgmShortCode ;
     time:hasBeginning
         [
             ischart:inMYA 387.95 ;
-            schema:marginOfError 1.04 ;
+            sdo:marginOfError 1.04 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 382.31 ;
-            schema:marginOfError 1.36 ;
+            sdo:marginOfError 1.36 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 111 ;
-    schema:color "#F1E185"^^ischart:RGBHex ;
+    sdo:color "#F1E185"^^ischart:RGBHex ;
 .
 
 ischart:Gorstian
@@ -1305,21 +1344,22 @@ ischart:Gorstian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Ludlow ;
+    skos:definition "A time period from 426.7 to 425.0 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "s6"^^ischart:ccgmShortCode ;
     time:hasBeginning
         [
             ischart:inMYA 426.7 ;
-            schema:marginOfError 1.5 ;
+            sdo:marginOfError 1.5 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 425.0 ;
-            schema:marginOfError 1.5 ;
+            sdo:marginOfError 1.5 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 121 ;
-    schema:color "#CCECDD"^^ischart:RGBHex ;
+    sdo:color "#CCECDD"^^ischart:RGBHex ;
 .
 
 ischart:Greenlandian
@@ -1328,6 +1368,7 @@ ischart:Greenlandian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Holocene ;
+    skos:definition "A time period from 0.0117 to 0.0082 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "q5"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -1340,7 +1381,7 @@ ischart:Greenlandian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 3 ;
-    schema:color "#FEECDB"^^ischart:RGBHex ;
+    sdo:color "#FEECDB"^^ischart:RGBHex ;
 .
 
 ischart:Guzhangian
@@ -1349,6 +1390,7 @@ ischart:Guzhangian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Miaolingian ;
+    skos:definition "A time period from 500.5 to 497.0 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "ep7"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -1363,7 +1405,7 @@ ischart:Guzhangian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 146 ;
-    schema:color "#CCDFAA"^^ischart:RGBHex ;
+    sdo:color "#CCDFAA"^^ischart:RGBHex ;
 .
 
 ischart:Gzhelian
@@ -1371,21 +1413,22 @@ ischart:Gzhelian
     gts:rank rank:Age ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:UpperPennsylvanian ;
+    skos:definition "A time period from 303.7 to 298.9 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "c7"^^ischart:ccgmShortCode ;
     time:hasBeginning
         [
             ischart:inMYA 303.7 ;
-            schema:marginOfError 0.1 ;
+            sdo:marginOfError 0.1 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 298.9 ;
-            schema:marginOfError 0.15 ;
+            sdo:marginOfError 0.15 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 92 ;
-    schema:color "#CCD4C7"^^ischart:RGBHex ;
+    sdo:color "#CCD4C7"^^ischart:RGBHex ;
 .
 
 ischart:Hadean
@@ -1394,6 +1437,7 @@ ischart:Hadean
     gts:ratifiedGSSA true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Precambrian ;
+    skos:definition "A time period from 4567 to 4031 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "HA"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -1403,11 +1447,11 @@ ischart:Hadean
     time:hasEnd
         [
             ischart:inMYA 4031 ;
-            schema:marginOfError 3 ;
+            sdo:marginOfError 3 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 177 ;
-    schema:color "#AE027E"^^ischart:RGBHex ;
+    sdo:color "#AE027E"^^ischart:RGBHex ;
 .
 
 ischart:Hauterivian
@@ -1416,12 +1460,13 @@ ischart:Hauterivian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:LowerCretaceous ;
+    skos:definition "A time period from 132.6 to 125.77 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "b3"^^ischart:ccgmShortCode ;
     time:hasBeginning
         [
             ischart:inMYA 132.6 ;
-            schema:marginOfError 0.6 ;
+            sdo:marginOfError 0.6 ;
         ] ;
     time:hasEnd
         [
@@ -1429,7 +1474,7 @@ ischart:Hauterivian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 46 ;
-    schema:color "#A6D975"^^ischart:RGBHex ;
+    sdo:color "#A6D975"^^ischart:RGBHex ;
 .
 
 ischart:Hettangian
@@ -1438,21 +1483,22 @@ ischart:Hettangian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:LowerJurassic ;
+    skos:definition "A time period from 201.4 to 199.5 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "I1"^^ischart:ccgmShortCode ;
     time:hasBeginning
         [
             ischart:inMYA 201.4 ;
-            schema:marginOfError 0.2 ;
+            sdo:marginOfError 0.2 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 199.5 ;
-            schema:marginOfError 0.3 ;
+            sdo:marginOfError 0.3 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 63 ;
-    schema:color "#4EB3D3"^^ischart:RGBHex ;
+    sdo:color "#4EB3D3"^^ischart:RGBHex ;
 .
 
 ischart:Hirnantian
@@ -1461,21 +1507,22 @@ ischart:Hirnantian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:UpperOrdovician ;
+    skos:definition "A time period from 445.2 to 443.1 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "o7"^^ischart:ccgmShortCode ;
     time:hasBeginning
         [
             ischart:inMYA 445.2 ;
-            schema:marginOfError 0.9 ;
+            sdo:marginOfError 0.9 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 443.1 ;
-            schema:marginOfError 1.0 ;
+            sdo:marginOfError 1.0 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 131 ;
-    schema:color "#A6DBAB"^^ischart:RGBHex ;
+    sdo:color "#A6DBAB"^^ischart:RGBHex ;
 .
 
 ischart:Homerian
@@ -1484,21 +1531,22 @@ ischart:Homerian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Wenlock ;
+    skos:definition "A time period from 430.6 to 426.7 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "s5"^^ischart:ccgmShortCode ;
     time:hasBeginning
         [
             ischart:inMYA 430.6 ;
-            schema:marginOfError 1.3 ;
+            sdo:marginOfError 1.3 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 426.7 ;
-            schema:marginOfError 1.5 ;
+            sdo:marginOfError 1.5 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 123 ;
-    schema:color "#CCEBD1"^^ischart:RGBHex ;
+    sdo:color "#CCEBD1"^^ischart:RGBHex ;
 .
 
 ischart:Induan
@@ -1507,12 +1555,13 @@ ischart:Induan
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:LowerTriassic ;
+    skos:definition "A time period from 251.902 to 249.9 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "t1"^^ischart:ccgmShortCode ;
     time:hasBeginning
         [
             ischart:inMYA 251.902 ;
-            schema:marginOfError 0.024 ;
+            sdo:marginOfError 0.024 ;
         ] ;
     time:hasEnd
         [
@@ -1520,7 +1569,7 @@ ischart:Induan
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 74 ;
-    schema:color "#A4469F"^^ischart:RGBHex ;
+    sdo:color "#A4469F"^^ischart:RGBHex ;
 .
 
 ischart:Jiangshanian
@@ -1529,6 +1578,7 @@ ischart:Jiangshanian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Furongian ;
+    skos:definition "A time period from 494.2 to 491.0 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "ep9"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -1543,7 +1593,7 @@ ischart:Jiangshanian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 143 ;
-    schema:color "#D9F0BB"^^ischart:RGBHex ;
+    sdo:color "#D9F0BB"^^ischart:RGBHex ;
 .
 
 ischart:Kasimovian
@@ -1551,21 +1601,22 @@ ischart:Kasimovian
     gts:rank rank:Age ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:UpperPennsylvanian ;
+    skos:definition "A time period from 307.0 to 303.7 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "c6"^^ischart:ccgmShortCode ;
     time:hasBeginning
         [
             ischart:inMYA 307.0 ;
-            schema:marginOfError 0.1 ;
+            sdo:marginOfError 0.1 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 303.7 ;
-            schema:marginOfError 0.1 ;
+            sdo:marginOfError 0.1 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 93 ;
-    schema:color "#BFD0C5"^^ischart:RGBHex ;
+    sdo:color "#BFD0C5"^^ischart:RGBHex ;
 .
 
 ischart:Katian
@@ -1574,21 +1625,22 @@ ischart:Katian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:UpperOrdovician ;
+    skos:definition "A time period from 452.8 to 445.2 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "o6"^^ischart:ccgmShortCode ;
     time:hasBeginning
         [
             ischart:inMYA 452.8 ;
-            schema:marginOfError 0.7 ;
+            sdo:marginOfError 0.7 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 445.2 ;
-            schema:marginOfError 0.9 ;
+            sdo:marginOfError 0.9 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 132 ;
-    schema:color "#99D69F"^^ischart:RGBHex ;
+    sdo:color "#99D69F"^^ischart:RGBHex ;
 .
 
 ischart:Kimmeridgian
@@ -1597,21 +1649,22 @@ ischart:Kimmeridgian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:UpperJurassic ;
+    skos:definition "A time period from 154.8 to 149.2 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "j6"^^ischart:ccgmShortCode ;
     time:hasBeginning
         [
             ischart:inMYA 154.8 ;
-            schema:marginOfError 0.8 ;
+            sdo:marginOfError 0.8 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 149.2 ;
-            schema:marginOfError 0.7 ;
+            sdo:marginOfError 0.7 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 52 ;
-    schema:color "#CCECF4"^^ischart:RGBHex ;
+    sdo:color "#CCECF4"^^ischart:RGBHex ;
 .
 
 ischart:Kungurian
@@ -1619,21 +1672,22 @@ ischart:Kungurian
     gts:rank rank:Age ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Cisuralian ;
+    skos:definition "A time period from 283.3 to 274.4 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "p4"^^ischart:ccgmShortCode ;
     time:hasBeginning
         [
             ischart:inMYA 283.3 ;
-            schema:marginOfError 0.4 ;
+            sdo:marginOfError 0.4 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 274.4 ;
-            schema:marginOfError 0.4 ;
+            sdo:marginOfError 0.4 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 86 ;
-    schema:color "#E38776"^^ischart:RGBHex ;
+    sdo:color "#E38776"^^ischart:RGBHex ;
 .
 
 ischart:Ladinian
@@ -1642,12 +1696,13 @@ ischart:Ladinian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:MiddleTriassic ;
+    skos:definition "A time period from 241.464 to 237 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "t4"^^ischart:ccgmShortCode ;
     time:hasBeginning
         [
             ischart:inMYA 241.464 ;
-            schema:marginOfError 0.28 ;
+            sdo:marginOfError 0.28 ;
         ] ;
     time:hasEnd
         [
@@ -1656,7 +1711,7 @@ ischart:Ladinian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 70 ;
-    schema:color "#C983BF"^^ischart:RGBHex ;
+    sdo:color "#C983BF"^^ischart:RGBHex ;
 .
 
 ischart:Langhian
@@ -1665,6 +1720,7 @@ ischart:Langhian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Miocene ;
+    skos:definition "A time period from 15.98 to 13.82 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "n3"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -1677,7 +1733,7 @@ ischart:Langhian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 17 ;
-    schema:color "#FFFF4D"^^ischart:RGBHex ;
+    sdo:color "#FFFF4D"^^ischart:RGBHex ;
 .
 
 ischart:Lochkovian
@@ -1686,21 +1742,22 @@ ischart:Lochkovian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:LowerDevonian ;
+    skos:definition "A time period from 419.62 to 413.02 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "d1"^^ischart:ccgmShortCode ;
     time:hasBeginning
         [
             ischart:inMYA 419.62 ;
-            schema:marginOfError 1.36 ;
+            sdo:marginOfError 1.36 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 413.02 ;
-            schema:marginOfError 1.91 ;
+            sdo:marginOfError 1.91 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 117 ;
-    schema:color "#E5B75A"^^ischart:RGBHex ;
+    sdo:color "#E5B75A"^^ischart:RGBHex ;
 .
 
 ischart:Ludfordian
@@ -1709,21 +1766,22 @@ ischart:Ludfordian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Ludlow ;
+    skos:definition "A time period from 425.0 to 422.7 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "s7"^^ischart:ccgmShortCode ;
     time:hasBeginning
         [
             ischart:inMYA 425.0 ;
-            schema:marginOfError 1.5 ;
+            sdo:marginOfError 1.5 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 422.7 ;
-            schema:marginOfError 1.6 ;
+            sdo:marginOfError 1.6 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 120 ;
-    schema:color "#D9F0DF"^^ischart:RGBHex ;
+    sdo:color "#D9F0DF"^^ischart:RGBHex ;
 .
 
 ischart:Lutetian
@@ -1732,6 +1790,7 @@ ischart:Lutetian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Eocene ;
+    skos:definition "A time period from 48.07 to 41.03 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "e5"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -1744,7 +1803,7 @@ ischart:Lutetian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 27 ;
-    schema:color "#FDB482"^^ischart:RGBHex ;
+    sdo:color "#FDB482"^^ischart:RGBHex ;
 .
 
 ischart:Maastrichtian
@@ -1753,12 +1812,13 @@ ischart:Maastrichtian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:UpperCretaceous ;
+    skos:definition "A time period from 72.2 to 66.00 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "k6"^^ischart:ccgmShortCode ;
     time:hasBeginning
         [
             ischart:inMYA 72.2 ;
-            schema:marginOfError 0.2 ;
+            sdo:marginOfError 0.2 ;
         ] ;
     time:hasEnd
         [
@@ -1766,7 +1826,7 @@ ischart:Maastrichtian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 36 ;
-    schema:color "#F2FA8C"^^ischart:RGBHex ;
+    sdo:color "#F2FA8C"^^ischart:RGBHex ;
 .
 
 ischart:Meghalayan
@@ -1775,6 +1835,7 @@ ischart:Meghalayan
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Holocene ;
+    skos:definition "A time period from 0.0042 million years ago to the present" ;
     skos:inScheme cs: ;
     skos:notation "q7"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -1787,7 +1848,7 @@ ischart:Meghalayan
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 1 ;
-    schema:color "#FDEDEC"^^ischart:RGBHex ;
+    sdo:color "#FDEDEC"^^ischart:RGBHex ;
 .
 
 ischart:Mesoarchean
@@ -1796,6 +1857,7 @@ ischart:Mesoarchean
     gts:ratifiedGSSA true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Archean ;
+    skos:definition "A time period from 3200 to 2800 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "MA"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -1808,7 +1870,7 @@ ischart:Mesoarchean
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 173 ;
-    schema:color "#F768A9"^^ischart:RGBHex ;
+    sdo:color "#F768A9"^^ischart:RGBHex ;
 .
 
 ischart:Messinian
@@ -1817,6 +1879,7 @@ ischart:Messinian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Miocene ;
+    skos:definition "A time period from 7.246 to 5.333 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "n6"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -1829,7 +1892,7 @@ ischart:Messinian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 14 ;
-    schema:color "#FFFF73"^^ischart:RGBHex ;
+    sdo:color "#FFFF73"^^ischart:RGBHex ;
 .
 
 ischart:Moscovian
@@ -1837,21 +1900,22 @@ ischart:Moscovian
     gts:rank rank:Age ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:MiddlePennsylvanian ;
+    skos:definition "A time period from 315.2 to 307.0 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "c5"^^ischart:ccgmShortCode ;
     time:hasBeginning
         [
             ischart:inMYA 315.2 ;
-            schema:marginOfError 0.2 ;
+            sdo:marginOfError 0.2 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 307.0 ;
-            schema:marginOfError 0.1 ;
+            sdo:marginOfError 0.1 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 96 ;
-    schema:color "#B3CBB9"^^ischart:RGBHex ;
+    sdo:color "#B3CBB9"^^ischart:RGBHex ;
 .
 
 ischart:Neoarchean
@@ -1860,6 +1924,7 @@ ischart:Neoarchean
     gts:ratifiedGSSA true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Archean ;
+    skos:definition "A time period from 2800 to 2500 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "NA"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -1872,7 +1937,7 @@ ischart:Neoarchean
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 172 ;
-    schema:color "#F99BC1"^^ischart:RGBHex ;
+    sdo:color "#F99BC1"^^ischart:RGBHex ;
 .
 
 ischart:Norian
@@ -1880,6 +1945,7 @@ ischart:Norian
     gts:rank rank:Age ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:UpperTriassic ;
+    skos:definition "A time period from 227.3 to 205.7 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "t6"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -1894,7 +1960,7 @@ ischart:Norian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 67 ;
-    schema:color "#D6AAD3"^^ischart:RGBHex ;
+    sdo:color "#D6AAD3"^^ischart:RGBHex ;
 .
 
 ischart:Northgrippian
@@ -1903,6 +1969,7 @@ ischart:Northgrippian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Holocene ;
+    skos:definition "A time period from 0.0082 to 0.0042 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "q6"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -1915,7 +1982,7 @@ ischart:Northgrippian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 2 ;
-    schema:color "#FDECE4"^^ischart:RGBHex ;
+    sdo:color "#FDECE4"^^ischart:RGBHex ;
 .
 
 ischart:Olenekian
@@ -1923,6 +1990,7 @@ ischart:Olenekian
     gts:rank rank:Age ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:LowerTriassic ;
+    skos:definition "A time period from 246.7 to 249.9 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "t2"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -1935,7 +2003,7 @@ ischart:Olenekian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 73 ;
-    schema:color "#B051A5"^^ischart:RGBHex ;
+    sdo:color "#B051A5"^^ischart:RGBHex ;
 .
 
 ischart:Orosirian
@@ -1944,6 +2012,7 @@ ischart:Orosirian
     gts:ratifiedGSSA true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Paleoproterozoic ;
+    skos:definition "A time period from 2050 to 1800 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "PP3"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -1956,7 +2025,7 @@ ischart:Orosirian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 167 ;
-    schema:color "#F76898"^^ischart:RGBHex ;
+    sdo:color "#F76898"^^ischart:RGBHex ;
 .
 
 ischart:Oxfordian
@@ -1964,21 +2033,22 @@ ischart:Oxfordian
     gts:rank rank:Age ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:UpperJurassic ;
+    skos:definition "A time period from 161.5 to 154.8 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "j5"^^ischart:ccgmShortCode ;
     time:hasBeginning
         [
             ischart:inMYA 161.5 ;
-            schema:marginOfError 1.0 ;
+            sdo:marginOfError 1.0 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 154.8 ;
-            schema:marginOfError 0.8 ;
+            sdo:marginOfError 0.8 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 53 ;
-    schema:color "#BFE7F1"^^ischart:RGBHex ;
+    sdo:color "#BFE7F1"^^ischart:RGBHex ;
 .
 
 ischart:Paibian
@@ -1987,6 +2057,7 @@ ischart:Paibian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Furongian ;
+    skos:definition "A time period from 497.0 to 494.2 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "ep8"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -2001,7 +2072,7 @@ ischart:Paibian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 145 ;
-    schema:color "#CCEBAE"^^ischart:RGBHex ;
+    sdo:color "#CCEBAE"^^ischart:RGBHex ;
 .
 
 ischart:Paleoarchean
@@ -2010,6 +2081,7 @@ ischart:Paleoarchean
     gts:ratifiedGSSA true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Archean ;
+    skos:definition "A time period from 3600 to 3200 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "PA"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -2022,7 +2094,7 @@ ischart:Paleoarchean
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 174 ;
-    schema:color "#F4449F"^^ischart:RGBHex ;
+    sdo:color "#F4449F"^^ischart:RGBHex ;
 .
 
 ischart:Piacenzian
@@ -2031,6 +2103,7 @@ ischart:Piacenzian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Pliocene ;
+    skos:definition "A time period from 3.600 to 2.58 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "n8"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -2043,7 +2116,7 @@ ischart:Piacenzian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 11 ;
-    schema:color "#FFFFBF"^^ischart:RGBHex ;
+    sdo:color "#FFFFBF"^^ischart:RGBHex ;
 .
 
 ischart:Pliensbachian
@@ -2052,21 +2125,22 @@ ischart:Pliensbachian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:LowerJurassic ;
+    skos:definition "A time period from 192.9 to 184.2 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "I3"^^ischart:ccgmShortCode ;
     time:hasBeginning
         [
             ischart:inMYA 192.9 ;
-            schema:marginOfError 0.3 ;
+            sdo:marginOfError 0.3 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 184.2 ;
-            schema:marginOfError 0.3 ;
+            sdo:marginOfError 0.3 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 61 ;
-    schema:color "#80C5DD"^^ischart:RGBHex ;
+    sdo:color "#80C5DD"^^ischart:RGBHex ;
 .
 
 ischart:Pragian
@@ -2075,21 +2149,22 @@ ischart:Pragian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:LowerDevonian ;
+    skos:definition "A time period from 413.02 to 410.62 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "d2"^^ischart:ccgmShortCode ;
     time:hasBeginning
         [
             ischart:inMYA 413.02 ;
-            schema:marginOfError 1.91 ;
+            sdo:marginOfError 1.91 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 410.62 ;
-            schema:marginOfError 1.95 ;
+            sdo:marginOfError 1.95 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 115 ;
-    schema:color "#E5C468"^^ischart:RGBHex ;
+    sdo:color "#E5C468"^^ischart:RGBHex ;
 .
 
 ischart:Priabonian
@@ -2098,6 +2173,7 @@ ischart:Priabonian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Eocene ;
+    skos:definition "A time period from 37.71 to 33.9 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "e7"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -2110,7 +2186,7 @@ ischart:Priabonian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 25 ;
-    schema:color "#FDCDA1"^^ischart:RGBHex ;
+    sdo:color "#FDCDA1"^^ischart:RGBHex ;
 .
 
 ischart:Rhaetian
@@ -2118,6 +2194,7 @@ ischart:Rhaetian
     gts:rank rank:Age ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:UpperTriassic ;
+    skos:definition "A time period from 205.7 to 201.4 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "t7"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -2128,11 +2205,11 @@ ischart:Rhaetian
     time:hasEnd
         [
             ischart:inMYA 201.4 ;
-            schema:marginOfError 0.2 ;
+            sdo:marginOfError 0.2 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 66 ;
-    schema:color "#E3B9DB"^^ischart:RGBHex ;
+    sdo:color "#E3B9DB"^^ischart:RGBHex ;
 .
 
 ischart:Rhuddanian
@@ -2141,21 +2218,22 @@ ischart:Rhuddanian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Llandovery ;
+    skos:definition "A time period from 443.1 to 440.5 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "s1"^^ischart:ccgmShortCode ;
     time:hasBeginning
         [
             ischart:inMYA 443.1 ;
-            schema:marginOfError 1.0 ;
+            sdo:marginOfError 1.0 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 440.5 ;
-            schema:marginOfError 1.0 ;
+            sdo:marginOfError 1.0 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 129 ;
-    schema:color "#A6DCB5"^^ischart:RGBHex ;
+    sdo:color "#A6DCB5"^^ischart:RGBHex ;
 .
 
 ischart:Rhyacian
@@ -2164,6 +2242,7 @@ ischart:Rhyacian
     gts:ratifiedGSSA true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Paleoproterozoic ;
+    skos:definition "A time period from 2300 to 2050 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "PP2"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -2176,7 +2255,7 @@ ischart:Rhyacian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 168 ;
-    schema:color "#F75B89"^^ischart:RGBHex ;
+    sdo:color "#F75B89"^^ischart:RGBHex ;
 .
 
 ischart:Roadian
@@ -2185,21 +2264,22 @@ ischart:Roadian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Guadalupian ;
+    skos:definition "A time period from 274.4 to 266.9 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "p5"^^ischart:ccgmShortCode ;
     time:hasBeginning
         [
             ischart:inMYA 274.4 ;
-            schema:marginOfError 0.4 ;
+            sdo:marginOfError 0.4 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 266.9 ;
-            schema:marginOfError 0.4 ;
+            sdo:marginOfError 0.4 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 85 ;
-    schema:color "#FB8069"^^ischart:RGBHex ;
+    sdo:color "#FB8069"^^ischart:RGBHex ;
 .
 
 ischart:Rupelian
@@ -2208,6 +2288,7 @@ ischart:Rupelian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Oligocene ;
+    skos:definition "A time period from 33.9 to 27.30 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "e8"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -2220,7 +2301,7 @@ ischart:Rupelian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 24 ;
-    schema:color "#FED99A"^^ischart:RGBHex ;
+    sdo:color "#FED99A"^^ischart:RGBHex ;
 .
 
 ischart:Sakmarian
@@ -2229,21 +2310,22 @@ ischart:Sakmarian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Cisuralian ;
+    skos:definition "A time period from 293.52 to 290.1 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "p2"^^ischart:ccgmShortCode ;
     time:hasBeginning
         [
             ischart:inMYA 293.52 ;
-            schema:marginOfError 0.17 ;
+            sdo:marginOfError 0.17 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 290.1 ;
-            schema:marginOfError 0.26 ;
+            sdo:marginOfError 0.26 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 88 ;
-    schema:color "#E36F5C"^^ischart:RGBHex ;
+    sdo:color "#E36F5C"^^ischart:RGBHex ;
 .
 
 ischart:Sandbian
@@ -2252,21 +2334,22 @@ ischart:Sandbian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:UpperOrdovician ;
+    skos:definition "A time period from 458.2 to 452.8 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "o5"^^ischart:ccgmShortCode ;
     time:hasBeginning
         [
             ischart:inMYA 458.2 ;
-            schema:marginOfError 0.7 ;
+            sdo:marginOfError 0.7 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 452.8 ;
-            schema:marginOfError 0.7 ;
+            sdo:marginOfError 0.7 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 133 ;
-    schema:color "#8CD094"^^ischart:RGBHex ;
+    sdo:color "#8CD094"^^ischart:RGBHex ;
 .
 
 ischart:Santonian
@@ -2275,21 +2358,22 @@ ischart:Santonian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:UpperCretaceous ;
+    skos:definition "A time period from 85.7 to 83.6 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "k4"^^ischart:ccgmShortCode ;
     time:hasBeginning
         [
             ischart:inMYA 85.7 ;
-            schema:marginOfError 0.2 ;
+            sdo:marginOfError 0.2 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 83.6 ;
-            schema:marginOfError 0.2 ;
+            sdo:marginOfError 0.2 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 38 ;
-    schema:color "#D9EF74"^^ischart:RGBHex ;
+    sdo:color "#D9EF74"^^ischart:RGBHex ;
 .
 
 ischart:Selandian
@@ -2298,6 +2382,7 @@ ischart:Selandian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Paleocene ;
+    skos:definition "A time period from 61.66 to 59.24 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "e2"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -2310,7 +2395,7 @@ ischart:Selandian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 31 ;
-    schema:color "#FEBF65"^^ischart:RGBHex ;
+    sdo:color "#FEBF65"^^ischart:RGBHex ;
 .
 
 ischart:Serpukhovian
@@ -2318,21 +2403,22 @@ ischart:Serpukhovian
     gts:rank rank:Age ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:UpperMississippian ;
+    skos:definition "A time period from 330.3 to 323.4 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "c3"^^ischart:ccgmShortCode ;
     time:hasBeginning
         [
             ischart:inMYA 330.3 ;
-            schema:marginOfError 0.4 ;
+            sdo:marginOfError 0.4 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 323.4 ;
-            schema:marginOfError 0.4 ;
+            sdo:marginOfError 0.4 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 100 ;
-    schema:color "#BFC26B"^^ischart:RGBHex ;
+    sdo:color "#BFC26B"^^ischart:RGBHex ;
 .
 
 ischart:Serravallian
@@ -2341,6 +2427,7 @@ ischart:Serravallian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Miocene ;
+    skos:definition "A time period from 13.82 to 11.63 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "n4"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -2353,7 +2440,7 @@ ischart:Serravallian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 16 ;
-    schema:color "#FFFF59"^^ischart:RGBHex ;
+    sdo:color "#FFFF59"^^ischart:RGBHex ;
 .
 
 ischart:Sheinwoodian
@@ -2362,21 +2449,22 @@ ischart:Sheinwoodian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Wenlock ;
+    skos:definition "A time period from 432.9 to 430.6 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "s4"^^ischart:ccgmShortCode ;
     time:hasBeginning
         [
             ischart:inMYA 432.9 ;
-            schema:marginOfError 1.2 ;
+            sdo:marginOfError 1.2 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 430.6 ;
-            schema:marginOfError 1.3 ;
+            sdo:marginOfError 1.3 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 124 ;
-    schema:color "#BFE6C3"^^ischart:RGBHex ;
+    sdo:color "#BFE6C3"^^ischart:RGBHex ;
 .
 
 ischart:Siderian
@@ -2385,6 +2473,7 @@ ischart:Siderian
     gts:ratifiedGSSA true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Paleoproterozoic ;
+    skos:definition "A time period from 2500 to 2300 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "PP1"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -2397,7 +2486,7 @@ ischart:Siderian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 171 ;
-    schema:color "#F74F7C"^^ischart:RGBHex ;
+    sdo:color "#F74F7C"^^ischart:RGBHex ;
 .
 
 ischart:Sinemurian
@@ -2406,21 +2495,22 @@ ischart:Sinemurian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:LowerJurassic ;
+    skos:definition "A time period from 199.5 to 192.9 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "I2"^^ischart:ccgmShortCode ;
     time:hasBeginning
         [
             ischart:inMYA 199.5 ;
-            schema:marginOfError 0.3 ;
+            sdo:marginOfError 0.3 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 192.9 ;
-            schema:marginOfError 0.3 ;
+            sdo:marginOfError 0.3 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 62 ;
-    schema:color "#67BCD8"^^ischart:RGBHex ;
+    sdo:color "#67BCD8"^^ischart:RGBHex ;
 .
 
 ischart:Statherian
@@ -2429,6 +2519,7 @@ ischart:Statherian
     gts:ratifiedGSSA true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Paleoproterozoic ;
+    skos:definition "A time period from 1800 to 1600 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "PP4"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -2441,7 +2532,7 @@ ischart:Statherian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 166 ;
-    schema:color "#F875A7"^^ischart:RGBHex ;
+    sdo:color "#F875A7"^^ischart:RGBHex ;
 .
 
 ischart:Stenian
@@ -2450,6 +2541,7 @@ ischart:Stenian
     gts:ratifiedGSSA true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Mesoproterozoic ;
+    skos:definition "A time period from 1200 to 1000 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "MP3"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -2462,7 +2554,7 @@ ischart:Stenian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 162 ;
-    schema:color "#FED99A"^^ischart:RGBHex ;
+    sdo:color "#FED99A"^^ischart:RGBHex ;
 .
 
 ischart:Telychian
@@ -2471,21 +2563,22 @@ ischart:Telychian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Llandovery ;
+    skos:definition "A time period from 438.6 to 432.9 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "s3"^^ischart:ccgmShortCode ;
     time:hasBeginning
         [
             ischart:inMYA 438.6 ;
-            schema:marginOfError 1.0 ;
+            sdo:marginOfError 1.0 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 432.9 ;
-            schema:marginOfError 1.2 ;
+            sdo:marginOfError 1.2 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 126 ;
-    schema:color "#BFE6CF"^^ischart:RGBHex ;
+    sdo:color "#BFE6CF"^^ischart:RGBHex ;
 .
 
 ischart:Thanetian
@@ -2494,6 +2587,7 @@ ischart:Thanetian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Paleocene ;
+    skos:definition "A time period from 59.24 to 56.00 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "e3"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -2506,7 +2600,7 @@ ischart:Thanetian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 30 ;
-    schema:color "#FDBF6F"^^ischart:RGBHex ;
+    sdo:color "#FDBF6F"^^ischart:RGBHex ;
 .
 
 ischart:Tithonian
@@ -2514,21 +2608,22 @@ ischart:Tithonian
     gts:rank rank:Age ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:UpperJurassic ;
+    skos:definition "A time period from 149.2 to 143.1 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "j7"^^ischart:ccgmShortCode ;
     time:hasBeginning
         [
             ischart:inMYA 149.2 ;
-            schema:marginOfError 0.7 ;
+            sdo:marginOfError 0.7 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 143.1 ;
-            schema:marginOfError 0.6 ;
+            sdo:marginOfError 0.6 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 51 ;
-    schema:color "#D9F1F7"^^ischart:RGBHex ;
+    sdo:color "#D9F1F7"^^ischart:RGBHex ;
 .
 
 ischart:Toarcian
@@ -2537,21 +2632,22 @@ ischart:Toarcian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:LowerJurassic ;
+    skos:definition "A time period from 184.2 to 174.7 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "I4"^^ischart:ccgmShortCode ;
     time:hasBeginning
         [
             ischart:inMYA 184.2 ;
-            schema:marginOfError 0.3 ;
+            sdo:marginOfError 0.3 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 174.7 ;
-            schema:marginOfError 0.8 ;
+            sdo:marginOfError 0.8 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 60 ;
-    schema:color "#99CEE3"^^ischart:RGBHex ;
+    sdo:color "#99CEE3"^^ischart:RGBHex ;
 .
 
 ischart:Tonian
@@ -2560,6 +2656,7 @@ ischart:Tonian
     gts:ratifiedGSSA true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Neoproterozoic ;
+    skos:definition "A time period from 1000 to 720 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "NP1"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -2573,7 +2670,7 @@ ischart:Tonian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 161 ;
-    schema:color "#FEBF4E"^^ischart:RGBHex ;
+    sdo:color "#FEBF4E"^^ischart:RGBHex ;
 .
 
 ischart:Tortonian
@@ -2582,6 +2679,7 @@ ischart:Tortonian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Miocene ;
+    skos:definition "A time period from 11.63 to 7.246 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "n5"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -2594,7 +2692,7 @@ ischart:Tortonian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 15 ;
-    schema:color "#FFFF66"^^ischart:RGBHex ;
+    sdo:color "#FFFF66"^^ischart:RGBHex ;
 .
 
 ischart:Tournaisian
@@ -2603,21 +2701,22 @@ ischart:Tournaisian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:LowerMississippian ;
+    skos:definition "A time period from 358.86 to 346.7 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "c1"^^ischart:ccgmShortCode ;
     time:hasBeginning
         [
             ischart:inMYA 358.86 ;
-            schema:marginOfError 0.19 ;
+            sdo:marginOfError 0.19 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 346.7 ;
-            schema:marginOfError 0.4 ;
+            sdo:marginOfError 0.4 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 107 ;
-    schema:color "#8CB06C"^^ischart:RGBHex ;
+    sdo:color "#8CB06C"^^ischart:RGBHex ;
 .
 
 ischart:Tremadocian
@@ -2626,21 +2725,22 @@ ischart:Tremadocian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:LowerOrdovician ;
+    skos:definition "A time period from 486.85 to 477.1 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "o1"^^ischart:ccgmShortCode ;
     time:hasBeginning
         [
             ischart:inMYA 486.85 ;
-            schema:marginOfError 1.5 ;
+            sdo:marginOfError 1.5 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 477.1 ;
-            schema:marginOfError 1.2 ;
+            sdo:marginOfError 1.2 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 141 ;
-    schema:color "#33A97E"^^ischart:RGBHex ;
+    sdo:color "#33A97E"^^ischart:RGBHex ;
 .
 
 ischart:Turonian
@@ -2649,21 +2749,22 @@ ischart:Turonian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:UpperCretaceous ;
+    skos:definition "A time period from 93.9 to 89.8 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "k2"^^ischart:ccgmShortCode ;
     time:hasBeginning
         [
             ischart:inMYA 93.9 ;
-            schema:marginOfError 0.2 ;
+            sdo:marginOfError 0.2 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 89.8 ;
-            schema:marginOfError 0.3 ;
+            sdo:marginOfError 0.3 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 40 ;
-    schema:color "#BFE35D"^^ischart:RGBHex ;
+    sdo:color "#BFE35D"^^ischart:RGBHex ;
 .
 
 ischart:UpperPleistocene
@@ -2671,6 +2772,7 @@ ischart:UpperPleistocene
     gts:rank rank:Age ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Pleistocene ;
+    skos:definition "A time period from 0.129 to 0.0117 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "q4"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -2683,7 +2785,7 @@ ischart:UpperPleistocene
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 5 ;
-    schema:color "#FFF2D3"^^ischart:RGBHex ;
+    sdo:color "#FFF2D3"^^ischart:RGBHex ;
 .
 
 ischart:Valanginian
@@ -2692,21 +2794,22 @@ ischart:Valanginian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:LowerCretaceous ;
+    skos:definition "A time period from 132.6 to 137.05 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "b2"^^ischart:ccgmShortCode ;
     time:hasBeginning
         [
             ischart:inMYA 137.05 ;
-            schema:marginOfError 0.2 ;
+            sdo:marginOfError 0.2 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 132.6 ;
-            schema:marginOfError 0.6 ;
+            sdo:marginOfError 0.6 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 47 ;
-    schema:color "#99D36A"^^ischart:RGBHex ;
+    sdo:color "#99D36A"^^ischart:RGBHex ;
 .
 
 ischart:Visean
@@ -2715,21 +2818,22 @@ ischart:Visean
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:MiddleMississippian ;
+    skos:definition "A time period from 346.7 to 330.3 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "c2"^^ischart:ccgmShortCode ;
     time:hasBeginning
         [
             ischart:inMYA 346.7 ;
-            schema:marginOfError 0.4 ;
+            sdo:marginOfError 0.4 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 330.3 ;
-            schema:marginOfError 0.4 ;
+            sdo:marginOfError 0.4 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 103 ;
-    schema:color "#A6B96C"^^ischart:RGBHex ;
+    sdo:color "#A6B96C"^^ischart:RGBHex ;
 .
 
 ischart:Wordian
@@ -2738,21 +2842,22 @@ ischart:Wordian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Guadalupian ;
+    skos:definition "A time period from 266.9 to 264.28 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "p6"^^ischart:ccgmShortCode ;
     time:hasBeginning
         [
             ischart:inMYA 266.9 ;
-            schema:marginOfError 0.4 ;
+            sdo:marginOfError 0.4 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 264.28 ;
-            schema:marginOfError 0.16 ;
+            sdo:marginOfError 0.16 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 83 ;
-    schema:color "#FB8D76"^^ischart:RGBHex ;
+    sdo:color "#FB8D76"^^ischart:RGBHex ;
 .
 
 ischart:Wuchiapingian
@@ -2761,21 +2866,22 @@ ischart:Wuchiapingian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Lopingian ;
+    skos:definition "A time period from 259.51 to 254.14 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "p8"^^ischart:ccgmShortCode ;
     time:hasBeginning
         [
             ischart:inMYA 259.51 ;
-            schema:marginOfError 0.21 ;
+            sdo:marginOfError 0.21 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 254.14 ;
-            schema:marginOfError 0.07 ;
+            sdo:marginOfError 0.07 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 81 ;
-    schema:color "#FCB4A2"^^ischart:RGBHex ;
+    sdo:color "#FCB4A2"^^ischart:RGBHex ;
 .
 
 ischart:Wuliuan
@@ -2784,6 +2890,7 @@ ischart:Wuliuan
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Miaolingian ;
+    skos:definition "A time period from 506.5 to 504.5 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "ep5"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -2798,7 +2905,7 @@ ischart:Wuliuan
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 149 ;
-    schema:color "#B3D492"^^ischart:RGBHex ;
+    sdo:color "#B3D492"^^ischart:RGBHex ;
 .
 
 ischart:Ypresian
@@ -2807,6 +2914,7 @@ ischart:Ypresian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Eocene ;
+    skos:definition "A time period from 56.00 to 48.07 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "e4"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -2819,7 +2927,7 @@ ischart:Ypresian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 29 ;
-    schema:color "#FCA773"^^ischart:RGBHex ;
+    sdo:color "#FCA773"^^ischart:RGBHex ;
 .
 
 ischart:Zanclean
@@ -2828,6 +2936,7 @@ ischart:Zanclean
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Pliocene ;
+    skos:definition "A time period from 5.333 to 3.600 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "n7"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -2840,7 +2949,7 @@ ischart:Zanclean
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 13 ;
-    schema:color "#FFFFB3"^^ischart:RGBHex ;
+    sdo:color "#FFFFB3"^^ischart:RGBHex ;
 .
 
 ischart:LowerMississippian
@@ -2849,22 +2958,23 @@ ischart:LowerMississippian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Mississippian ;
+    skos:definition "A time period from 358.86 to 346.7 million years ago" ;
     skos:inScheme cs: ;
     skos:narrower ischart:Tournaisian ;
     skos:notation "C1c1"^^ischart:ccgmShortCode ;
     time:hasBeginning
         [
             ischart:inMYA 358.86 ;
-            schema:marginOfError 0.19 ;
+            sdo:marginOfError 0.19 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 346.7 ;
-            schema:marginOfError 0.4 ;
+            sdo:marginOfError 0.4 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 105 ;
-    schema:color "#80AB6C"^^ischart:RGBHex ;
+    sdo:color "#80AB6C"^^ischart:RGBHex ;
 .
 
 ischart:LowerPennsylvanian
@@ -2873,22 +2983,23 @@ ischart:LowerPennsylvanian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Pennsylvanian ;
+    skos:definition "A time period from 323.4 to 315.2 million years ago" ;
     skos:inScheme cs: ;
     skos:narrower ischart:Bashkirian ;
     skos:notation "C2c4"^^ischart:ccgmShortCode ;
     time:hasBeginning
         [
             ischart:inMYA 323.4 ;
-            schema:marginOfError 0.4 ;
+            sdo:marginOfError 0.4 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 315.2 ;
-            schema:marginOfError 0.2 ;
+            sdo:marginOfError 0.2 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 98 ;
-    schema:color "#8CBEB4"^^ischart:RGBHex ;
+    sdo:color "#8CBEB4"^^ischart:RGBHex ;
 .
 
 ischart:MiddleMississippian
@@ -2897,22 +3008,23 @@ ischart:MiddleMississippian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Mississippian ;
+    skos:definition "A time period from 346.7 to 330.3 million years ago" ;
     skos:inScheme cs: ;
     skos:narrower ischart:Visean ;
     skos:notation "C1c2"^^ischart:ccgmShortCode ;
     time:hasBeginning
         [
             ischart:inMYA 346.7 ;
-            schema:marginOfError 0.4 ;
+            sdo:marginOfError 0.4 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 330.3 ;
-            schema:marginOfError 0.4 ;
+            sdo:marginOfError 0.4 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 102 ;
-    schema:color "#99B46C"^^ischart:RGBHex ;
+    sdo:color "#99B46C"^^ischart:RGBHex ;
 .
 
 ischart:MiddlePennsylvanian
@@ -2920,22 +3032,23 @@ ischart:MiddlePennsylvanian
     gts:rank rank:Epoch ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Pennsylvanian ;
+    skos:definition "A time period from 315.2 to 307.0 million years ago" ;
     skos:inScheme cs: ;
     skos:narrower ischart:Moscovian ;
     skos:notation "C2c5"^^ischart:ccgmShortCode ;
     time:hasBeginning
         [
             ischart:inMYA 315.2 ;
-            schema:marginOfError 0.2 ;
+            sdo:marginOfError 0.2 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 307.0 ;
-            schema:marginOfError 0.1 ;
+            sdo:marginOfError 0.1 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 95 ;
-    schema:color "#A6C7B7"^^ischart:RGBHex ;
+    sdo:color "#A6C7B7"^^ischart:RGBHex ;
 .
 
 ischart:Pridoli
@@ -2946,21 +3059,22 @@ ischart:Pridoli
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Silurian ;
+    skos:definition "A time period from 422.7 to 419.62 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "S4"^^ischart:ccgmShortCode ;
     time:hasBeginning
         [
             ischart:inMYA 422.7 ;
-            schema:marginOfError 1.6 ;
+            sdo:marginOfError 1.6 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 419.62 ;
-            schema:marginOfError 1.36 ;
+            sdo:marginOfError 1.36 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 119 ;
-    schema:color "#E6F5E1"^^ischart:RGBHex ;
+    sdo:color "#E6F5E1"^^ischart:RGBHex ;
 .
 
 ischart:UpperMississippian
@@ -2968,27 +3082,28 @@ ischart:UpperMississippian
     gts:rank rank:Epoch ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Mississippian ;
+    skos:definition "A time period from 330.3 to 323.4 million years ago" ;
     skos:inScheme cs: ;
     skos:narrower ischart:Serpukhovian ;
     skos:notation "C1c3"^^ischart:ccgmShortCode ;
     time:hasBeginning
         [
             ischart:inMYA 330.3 ;
-            schema:marginOfError 0.4 ;
+            sdo:marginOfError 0.4 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 323.4 ;
-            schema:marginOfError 0.4 ;
+            sdo:marginOfError 0.4 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 101 ;
-    schema:color "#B3BE6C"^^ischart:RGBHex ;
+    sdo:color "#B3BE6C"^^ischart:RGBHex ;
 .
 
 <https://linked.data.gov.au/org/ics>
-    a schema:Organization ;
-    schema:alternateName
+    a sdo:Organization ;
+    sdo:alternateName
         "Comissió Internacional d’Estratigrafia"@ca ,
         "Mezinárodní stratigrafická komise"@cz ,
         "Internationale Stratigraphische Kommission"@de ,
@@ -3008,8 +3123,8 @@ ischart:UpperMississippian
         "Medzinárodná stratigrafická komisia"@sk ,
         "Uluslararası Stratigrafi Komisyonu"@tr ,
         "国 际 地 层 委 员 会"@zh ;
-    schema:name "International Commission on Stratigraphy" ;
-    schema:url "https://stratigraphy.org"^^xsd:anyURI ;
+    sdo:name "International Commission on Stratigraphy" ;
+    sdo:url "https://stratigraphy.org"^^xsd:anyURI ;
 .
 
 ischart:CambrianSeries2
@@ -3017,6 +3132,7 @@ ischart:CambrianSeries2
     gts:rank rank:Epoch ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Cambrian ;
+    skos:definition "A time period from 521.0 to 506.5 million years ago" ;
     skos:inScheme cs: ;
     skos:narrower
         ischart:CambrianStage3 ,
@@ -3034,7 +3150,7 @@ ischart:CambrianSeries2
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 151 ;
-    schema:color "#99C078"^^ischart:RGBHex ;
+    sdo:color "#99C078"^^ischart:RGBHex ;
 .
 
 ischart:Carboniferous
@@ -3043,6 +3159,7 @@ ischart:Carboniferous
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Paleozoic ;
+    skos:definition "A time period from 358.86 to 298.9 million years ago" ;
     skos:inScheme cs: ;
     skos:narrower
         ischart:Mississippian ,
@@ -3051,16 +3168,16 @@ ischart:Carboniferous
     time:hasBeginning
         [
             ischart:inMYA 358.86 ;
-            schema:marginOfError 0.19 ;
+            sdo:marginOfError 0.19 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 298.9 ;
-            schema:marginOfError 0.15 ;
+            sdo:marginOfError 0.15 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 104 ;
-    schema:color "#67A599"^^ischart:RGBHex ;
+    sdo:color "#67A599"^^ischart:RGBHex ;
 .
 
 ischart:Cretaceous
@@ -3068,6 +3185,7 @@ ischart:Cretaceous
     gts:rank rank:Period ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Mesozoic ;
+    skos:definition "A time period from 143.1 to 66.00 million years ago" ;
     skos:inScheme cs: ;
     skos:narrower
         ischart:LowerCretaceous ,
@@ -3076,7 +3194,7 @@ ischart:Cretaceous
     time:hasBeginning
         [
             ischart:inMYA 143.1 ;
-            schema:marginOfError 0.6 ;
+            sdo:marginOfError 0.6 ;
         ] ;
     time:hasEnd
         [
@@ -3084,7 +3202,7 @@ ischart:Cretaceous
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 49 ;
-    schema:color "#7FC64E"^^ischart:RGBHex ;
+    sdo:color "#7FC64E"^^ischart:RGBHex ;
 .
 
 ischart:Lopingian
@@ -3093,6 +3211,7 @@ ischart:Lopingian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Permian ;
+    skos:definition "A time period from 259.51 to 251.902 million years ago" ;
     skos:inScheme cs: ;
     skos:narrower
         ischart:Changhsingian ,
@@ -3101,16 +3220,16 @@ ischart:Lopingian
     time:hasBeginning
         [
             ischart:inMYA 259.51 ;
-            schema:marginOfError 0.21 ;
+            sdo:marginOfError 0.21 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 251.902 ;
-            schema:marginOfError 0.024 ;
+            sdo:marginOfError 0.024 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 80 ;
-    schema:color "#FBA794"^^ischart:RGBHex ;
+    sdo:color "#FBA794"^^ischart:RGBHex ;
 .
 
 ischart:LowerOrdovician
@@ -3119,6 +3238,7 @@ ischart:LowerOrdovician
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Ordovician ;
+    skos:definition "A time period from 486.85 to 471.3 million years ago" ;
     skos:inScheme cs: ;
     skos:narrower
         ischart:Floian ,
@@ -3127,16 +3247,16 @@ ischart:LowerOrdovician
     time:hasBeginning
         [
             ischart:inMYA 486.85 ;
-            schema:marginOfError 1.5 ;
+            sdo:marginOfError 1.5 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 471.3 ;
-            schema:marginOfError 1.4 ;
+            sdo:marginOfError 1.4 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 139 ;
-    schema:color "#1A9D6F"^^ischart:RGBHex ;
+    sdo:color "#1A9D6F"^^ischart:RGBHex ;
 .
 
 ischart:LowerTriassic
@@ -3145,6 +3265,7 @@ ischart:LowerTriassic
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Triassic ;
+    skos:definition "A time period from 251.902 to 246.7 million years ago" ;
     skos:inScheme cs: ;
     skos:narrower
         ischart:Induan ,
@@ -3153,7 +3274,7 @@ ischart:LowerTriassic
     time:hasBeginning
         [
             ischart:inMYA 251.902 ;
-            schema:marginOfError 0.024 ;
+            sdo:marginOfError 0.024 ;
         ] ;
     time:hasEnd
         [
@@ -3161,7 +3282,7 @@ ischart:LowerTriassic
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 75 ;
-    schema:color "#983999"^^ischart:RGBHex ;
+    sdo:color "#983999"^^ischart:RGBHex ;
 .
 
 ischart:Ludlow
@@ -3170,6 +3291,7 @@ ischart:Ludlow
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Silurian ;
+    skos:definition "A time period from 426.7 to 419.62 million years ago" ;
     skos:inScheme cs: ;
     skos:narrower
         ischart:Gorstian ,
@@ -3178,16 +3300,16 @@ ischart:Ludlow
     time:hasBeginning
         [
             ischart:inMYA 426.7 ;
-            schema:marginOfError 1.5 ;
+            sdo:marginOfError 1.5 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 419.62 ;
-            schema:marginOfError 1.36 ;
+            sdo:marginOfError 1.36 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 122 ;
-    schema:color "#BFE6CF"^^ischart:RGBHex ;
+    sdo:color "#BFE6CF"^^ischart:RGBHex ;
 .
 
 ischart:MiddleDevonian
@@ -3196,6 +3318,7 @@ ischart:MiddleDevonian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Devonian ;
+    skos:definition "A time period from 393.47 to 382.31 million years ago" ;
     skos:inScheme cs: ;
     skos:narrower
         ischart:Eifelian ,
@@ -3204,16 +3327,16 @@ ischart:MiddleDevonian
     time:hasBeginning
         [
             ischart:inMYA 393.47 ;
-            schema:marginOfError 0.99 ;
+            sdo:marginOfError 0.99 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 382.31 ;
-            schema:marginOfError 1.36 ;
+            sdo:marginOfError 1.36 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 113 ;
-    schema:color "#F1C868"^^ischart:RGBHex ;
+    sdo:color "#F1C868"^^ischart:RGBHex ;
 .
 
 ischart:MiddleOrdovician
@@ -3222,6 +3345,7 @@ ischart:MiddleOrdovician
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Ordovician ;
+    skos:definition "A time period from 471.3 to 458.2 million years ago" ;
     skos:inScheme cs: ;
     skos:narrower
         ischart:Dapingian ,
@@ -3230,16 +3354,16 @@ ischart:MiddleOrdovician
     time:hasBeginning
         [
             ischart:inMYA 471.3 ;
-            schema:marginOfError 1.4 ;
+            sdo:marginOfError 1.4 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 458.2 ;
-            schema:marginOfError 0.7 ;
+            sdo:marginOfError 0.7 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 137 ;
-    schema:color "#4DB47E"^^ischart:RGBHex ;
+    sdo:color "#4DB47E"^^ischart:RGBHex ;
 .
 
 ischart:MiddleTriassic
@@ -3247,6 +3371,7 @@ ischart:MiddleTriassic
     gts:rank rank:Epoch ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Triassic ;
+    skos:definition "A time period from 246.7 to 237 million years ago" ;
     skos:inScheme cs: ;
     skos:narrower
         ischart:Anisian ,
@@ -3263,7 +3388,7 @@ ischart:MiddleTriassic
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 72 ;
-    schema:color "#B168B1"^^ischart:RGBHex ;
+    sdo:color "#B168B1"^^ischart:RGBHex ;
 .
 
 ischart:Neogene
@@ -3272,6 +3397,7 @@ ischart:Neogene
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Cenozoic ;
+    skos:definition "A time period from 23.04 to 2.58 million years ago" ;
     skos:inScheme cs: ;
     skos:narrower
         ischart:Miocene ,
@@ -3287,7 +3413,7 @@ ischart:Neogene
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 21 ;
-    schema:color "#FFE619"^^ischart:RGBHex ;
+    sdo:color "#FFE619"^^ischart:RGBHex ;
 .
 
 ischart:Oligocene
@@ -3296,6 +3422,7 @@ ischart:Oligocene
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Paleogene ;
+    skos:definition "A time period from 33.9 to 23.04 million years ago" ;
     skos:inScheme cs: ;
     skos:narrower
         ischart:Chattian ,
@@ -3311,7 +3438,7 @@ ischart:Oligocene
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 23 ;
-    schema:color "#FEC07A"^^ischart:RGBHex ;
+    sdo:color "#FEC07A"^^ischart:RGBHex ;
 .
 
 ischart:Pliocene
@@ -3320,6 +3447,7 @@ ischart:Pliocene
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Neogene ;
+    skos:definition "A time period from 5.333 to 2.58 million years ago" ;
     skos:inScheme cs: ;
     skos:narrower
         ischart:Piacenzian ,
@@ -3335,7 +3463,7 @@ ischart:Pliocene
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 12 ;
-    schema:color "#FFFF99"^^ischart:RGBHex ;
+    sdo:color "#FFFF99"^^ischart:RGBHex ;
 .
 
 ischart:Quaternary
@@ -3344,6 +3472,7 @@ ischart:Quaternary
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Cenozoic ;
+    skos:definition "A time period from 2.58 million years ago to the present" ;
     skos:inScheme cs: ;
     skos:narrower
         ischart:Holocene ,
@@ -3359,7 +3488,7 @@ ischart:Quaternary
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 10 ;
-    schema:color "#F9F97F"^^ischart:RGBHex ;
+    sdo:color "#F9F97F"^^ischart:RGBHex ;
 .
 
 ischart:Terreneuvian
@@ -3368,6 +3497,7 @@ ischart:Terreneuvian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Cambrian ;
+    skos:definition "A time period from 538.8 to 521.0 million years ago" ;
     skos:inScheme cs: ;
     skos:narrower
         ischart:CambrianStage2 ,
@@ -3376,7 +3506,7 @@ ischart:Terreneuvian
     time:hasBeginning
         [
             ischart:inMYA 538.8 ;
-            schema:marginOfError 0.6 ;
+            sdo:marginOfError 0.6 ;
         ] ;
     time:hasEnd
         [
@@ -3385,7 +3515,7 @@ ischart:Terreneuvian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 157 ;
-    schema:color "#8CB06C"^^ischart:RGBHex ;
+    sdo:color "#8CB06C"^^ischart:RGBHex ;
 .
 
 ischart:UpperDevonian
@@ -3394,6 +3524,7 @@ ischart:UpperDevonian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Devonian ;
+    skos:definition "A time period from 382.31 to 358.86 million years ago" ;
     skos:inScheme cs: ;
     skos:narrower
         ischart:Famennian ,
@@ -3402,16 +3533,16 @@ ischart:UpperDevonian
     time:hasBeginning
         [
             ischart:inMYA 382.31 ;
-            schema:marginOfError 1.36 ;
+            sdo:marginOfError 1.36 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 358.86 ;
-            schema:marginOfError 0.19 ;
+            sdo:marginOfError 0.19 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 110 ;
-    schema:color "#F1E19D"^^ischart:RGBHex ;
+    sdo:color "#F1E19D"^^ischart:RGBHex ;
 .
 
 ischart:UpperPennsylvanian
@@ -3419,6 +3550,7 @@ ischart:UpperPennsylvanian
     gts:rank rank:Epoch ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Pennsylvanian ;
+    skos:definition "A time period from 307.0 to 298.9 million years ago" ;
     skos:inScheme cs: ;
     skos:narrower
         ischart:Gzhelian ,
@@ -3427,16 +3559,16 @@ ischart:UpperPennsylvanian
     time:hasBeginning
         [
             ischart:inMYA 307.0 ;
-            schema:marginOfError 0.1 ;
+            sdo:marginOfError 0.1 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 298.9 ;
-            schema:marginOfError 0.15 ;
+            sdo:marginOfError 0.15 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 94 ;
-    schema:color "#BFD0BA"^^ischart:RGBHex ;
+    sdo:color "#BFD0BA"^^ischart:RGBHex ;
 .
 
 ischart:Wenlock
@@ -3445,6 +3577,7 @@ ischart:Wenlock
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Silurian ;
+    skos:definition "A time period from 432.9 to 426.7 million years ago" ;
     skos:inScheme cs: ;
     skos:narrower
         ischart:Homerian ,
@@ -3453,16 +3586,16 @@ ischart:Wenlock
     time:hasBeginning
         [
             ischart:inMYA 432.9 ;
-            schema:marginOfError 1.2 ;
+            sdo:marginOfError 1.2 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 426.7 ;
-            schema:marginOfError 1.5 ;
+            sdo:marginOfError 1.5 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 125 ;
-    schema:color "#B3E1C2"^^ischart:RGBHex ;
+    sdo:color "#B3E1C2"^^ischart:RGBHex ;
 .
 
 ischart:Cenozoic
@@ -3471,6 +3604,7 @@ ischart:Cenozoic
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Phanerozoic ;
+    skos:definition "A time period from 66.00 million years ago to the present" ;
     skos:inScheme cs: ;
     skos:narrower
         ischart:Neogene ,
@@ -3487,7 +3621,7 @@ ischart:Cenozoic
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 32 ;
-    schema:color "#F2F91D"^^ischart:RGBHex ;
+    sdo:color "#F2F91D"^^ischart:RGBHex ;
 .
 
 ischart:Devonian
@@ -3496,6 +3630,7 @@ ischart:Devonian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Paleozoic ;
+    skos:definition "A time period from 419.62 to 358.86 million years ago" ;
     skos:inScheme cs: ;
     skos:narrower
         ischart:LowerDevonian ,
@@ -3505,16 +3640,16 @@ ischart:Devonian
     time:hasBeginning
         [
             ischart:inMYA 419.62 ;
-            schema:marginOfError 1.36 ;
+            sdo:marginOfError 1.36 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 358.86 ;
-            schema:marginOfError 0.19 ;
+            sdo:marginOfError 0.19 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 116 ;
-    schema:color "#CB8C37"^^ischart:RGBHex ;
+    sdo:color "#CB8C37"^^ischart:RGBHex ;
 .
 
 ischart:Furongian
@@ -3523,6 +3658,7 @@ ischart:Furongian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Cambrian ;
+    skos:definition "A time period from 497.0 to 486.85 million years ago" ;
     skos:inScheme cs: ;
     skos:narrower
         ischart:CambrianStage10 ,
@@ -3537,11 +3673,11 @@ ischart:Furongian
     time:hasEnd
         [
             ischart:inMYA 486.85 ;
-            schema:marginOfError 1.5 ;
+            sdo:marginOfError 1.5 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 144 ;
-    schema:color "#B3E095"^^ischart:RGBHex ;
+    sdo:color "#B3E095"^^ischart:RGBHex ;
 .
 
 ischart:Guadalupian
@@ -3550,6 +3686,7 @@ ischart:Guadalupian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Permian ;
+    skos:definition "A time period from 274.4 to 259.51 million years ago" ;
     skos:inScheme cs: ;
     skos:narrower
         ischart:Capitanian ,
@@ -3559,16 +3696,16 @@ ischart:Guadalupian
     time:hasBeginning
         [
             ischart:inMYA 274.4 ;
-            schema:marginOfError 0.4 ;
+            sdo:marginOfError 0.4 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 259.51 ;
-            schema:marginOfError 0.21 ;
+            sdo:marginOfError 0.21 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 84 ;
-    schema:color "#FB745C"^^ischart:RGBHex ;
+    sdo:color "#FB745C"^^ischart:RGBHex ;
 .
 
 ischart:Holocene
@@ -3577,6 +3714,7 @@ ischart:Holocene
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Quaternary ;
+    skos:definition "A time period from 0.0117 million years ago to the present" ;
     skos:inScheme cs: ;
     skos:narrower
         ischart:Greenlandian ,
@@ -3593,7 +3731,7 @@ ischart:Holocene
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 4 ;
-    schema:color "#FEEBD2"^^ischart:RGBHex ;
+    sdo:color "#FEEBD2"^^ischart:RGBHex ;
 .
 
 ischart:Jurassic
@@ -3602,6 +3740,7 @@ ischart:Jurassic
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Mesozoic ;
+    skos:definition "A time period from 201.4 to 143.1 million years ago" ;
     skos:inScheme cs: ;
     skos:narrower
         ischart:LowerJurassic ,
@@ -3611,16 +3750,16 @@ ischart:Jurassic
     time:hasBeginning
         [
             ischart:inMYA 201.4 ;
-            schema:marginOfError 0.2 ;
+            sdo:marginOfError 0.2 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 143.1 ;
-            schema:marginOfError 0.6 ;
+            sdo:marginOfError 0.6 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 64 ;
-    schema:color "#34B2C9"^^ischart:RGBHex ;
+    sdo:color "#34B2C9"^^ischart:RGBHex ;
 .
 
 ischart:Llandovery
@@ -3629,6 +3768,7 @@ ischart:Llandovery
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Silurian ;
+    skos:definition "A time period from 443.1 to 432.9 million years ago" ;
     skos:inScheme cs: ;
     skos:narrower
         ischart:Aeronian ,
@@ -3638,16 +3778,16 @@ ischart:Llandovery
     time:hasBeginning
         [
             ischart:inMYA 443.1 ;
-            schema:marginOfError 1.0 ;
+            sdo:marginOfError 1.0 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 432.9 ;
-            schema:marginOfError 1.2 ;
+            sdo:marginOfError 1.2 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 128 ;
-    schema:color "#99D7B3"^^ischart:RGBHex ;
+    sdo:color "#99D7B3"^^ischart:RGBHex ;
 .
 
 ischart:LowerDevonian
@@ -3656,6 +3796,7 @@ ischart:LowerDevonian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Devonian ;
+    skos:definition "A time period from 419.62 to 393.47 million years ago" ;
     skos:inScheme cs: ;
     skos:narrower
         ischart:Emsian ,
@@ -3665,16 +3806,16 @@ ischart:LowerDevonian
     time:hasBeginning
         [
             ischart:inMYA 419.62 ;
-            schema:marginOfError 1.36 ;
+            sdo:marginOfError 1.36 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 393.47 ;
-            schema:marginOfError 0.99 ;
+            sdo:marginOfError 0.99 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 118 ;
-    schema:color "#E5AC4D"^^ischart:RGBHex ;
+    sdo:color "#E5AC4D"^^ischart:RGBHex ;
 .
 
 ischart:Mesoproterozoic
@@ -3683,6 +3824,7 @@ ischart:Mesoproterozoic
     gts:ratifiedGSSA true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Proterozoic ;
+    skos:definition "A time period from 1600 to 1000 million years ago" ;
     skos:inScheme cs: ;
     skos:narrower
         ischart:Calymmian ,
@@ -3699,7 +3841,7 @@ ischart:Mesoproterozoic
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 165 ;
-    schema:color "#FDB462"^^ischart:RGBHex ;
+    sdo:color "#FDB462"^^ischart:RGBHex ;
 .
 
 ischart:Mesozoic
@@ -3708,6 +3850,7 @@ ischart:Mesozoic
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Phanerozoic ;
+    skos:definition "A time period from 251.902 to 66.00 million years ago" ;
     skos:inScheme cs: ;
     skos:narrower
         ischart:Cretaceous ,
@@ -3717,7 +3860,7 @@ ischart:Mesozoic
     time:hasBeginning
         [
             ischart:inMYA 251.902 ;
-            schema:marginOfError 0.024 ;
+            sdo:marginOfError 0.024 ;
         ] ;
     time:hasEnd
         [
@@ -3725,7 +3868,7 @@ ischart:Mesozoic
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 76 ;
-    schema:color "#67C5CA"^^ischart:RGBHex ;
+    sdo:color "#67C5CA"^^ischart:RGBHex ;
 .
 
 ischart:Miaolingian
@@ -3734,6 +3877,7 @@ ischart:Miaolingian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Cambrian ;
+    skos:definition "A time period from 506.5 to 497.0 million years ago" ;
     skos:inScheme cs: ;
     skos:narrower
         ischart:Drumian ,
@@ -3752,7 +3896,7 @@ ischart:Miaolingian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 148 ;
-    schema:color "#A6CF86"^^ischart:RGBHex ;
+    sdo:color "#A6CF86"^^ischart:RGBHex ;
 .
 
 ischart:Mississippian
@@ -3761,6 +3905,7 @@ ischart:Mississippian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Carboniferous ;
+    skos:definition "A time period from 358.86 to 323.4 million years ago" ;
     skos:inScheme cs: ;
     skos:narrower
         ischart:LowerMississippian ,
@@ -3770,16 +3915,16 @@ ischart:Mississippian
     time:hasBeginning
         [
             ischart:inMYA 358.86 ;
-            schema:marginOfError 0.19 ;
+            sdo:marginOfError 0.19 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 323.4 ;
-            schema:marginOfError 0.4 ;
+            sdo:marginOfError 0.4 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 106 ;
-    schema:color "#678F66"^^ischart:RGBHex ;
+    sdo:color "#678F66"^^ischart:RGBHex ;
 .
 
 ischart:Neoproterozoic
@@ -3789,6 +3934,7 @@ ischart:Neoproterozoic
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Proterozoic ;
+    skos:definition "A time period from 1000 to 538.8 million years ago" ;
     skos:inScheme cs: ;
     skos:narrower
         ischart:Cryogenian ,
@@ -3802,11 +3948,11 @@ ischart:Neoproterozoic
     time:hasEnd
         [
             ischart:inMYA 538.8 ;
-            schema:marginOfError 0.6 ;
+            sdo:marginOfError 0.6 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 160 ;
-    schema:color "#FEB342"^^ischart:RGBHex ;
+    sdo:color "#FEB342"^^ischart:RGBHex ;
 .
 
 ischart:Ordovician
@@ -3815,6 +3961,7 @@ ischart:Ordovician
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Paleozoic ;
+    skos:definition "A time period from 486.85 to 443.1 million years ago" ;
     skos:inScheme cs: ;
     skos:narrower
         ischart:LowerOrdovician ,
@@ -3824,16 +3971,16 @@ ischart:Ordovician
     time:hasBeginning
         [
             ischart:inMYA 486.85 ;
-            schema:marginOfError 1.5 ;
+            sdo:marginOfError 1.5 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 443.1 ;
-            schema:marginOfError 1.0 ;
+            sdo:marginOfError 1.0 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 140 ;
-    schema:color "#009270"^^ischart:RGBHex ;
+    sdo:color "#009270"^^ischart:RGBHex ;
 .
 
 ischart:Paleocene
@@ -3842,6 +3989,7 @@ ischart:Paleocene
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Paleogene ;
+    skos:definition "A time period from 66.00 to 56.00 million years ago" ;
     skos:inScheme cs: ;
     skos:narrower
         ischart:Danian ,
@@ -3858,7 +4006,7 @@ ischart:Paleocene
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 34 ;
-    schema:color "#FDA75F"^^ischart:RGBHex ;
+    sdo:color "#FDA75F"^^ischart:RGBHex ;
 .
 
 ischart:Paleogene
@@ -3867,6 +4015,7 @@ ischart:Paleogene
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Cenozoic ;
+    skos:definition "A time period from 66.00 to 23.04 million years ago" ;
     skos:inScheme cs: ;
     skos:narrower
         ischart:Eocene ,
@@ -3883,7 +4032,7 @@ ischart:Paleogene
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 35 ;
-    schema:color "#FD9A52"^^ischart:RGBHex ;
+    sdo:color "#FD9A52"^^ischart:RGBHex ;
 .
 
 ischart:Pennsylvanian
@@ -3892,6 +4041,7 @@ ischart:Pennsylvanian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Carboniferous ;
+    skos:definition "A time period from 323.4 to 298.9 million years ago" ;
     skos:inScheme cs: ;
     skos:narrower
         ischart:LowerPennsylvanian ,
@@ -3901,16 +4051,16 @@ ischart:Pennsylvanian
     time:hasBeginning
         [
             ischart:inMYA 323.4 ;
-            schema:marginOfError 0.4 ;
+            sdo:marginOfError 0.4 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 298.9 ;
-            schema:marginOfError 0.15 ;
+            sdo:marginOfError 0.15 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 99 ;
-    schema:color "#7EBCC6"^^ischart:RGBHex ;
+    sdo:color "#7EBCC6"^^ischart:RGBHex ;
 .
 
 ischart:Permian
@@ -3919,6 +4069,7 @@ ischart:Permian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Paleozoic ;
+    skos:definition "A time period from 298.9 to 251.902 million years ago" ;
     skos:inScheme cs: ;
     skos:narrower
         ischart:Cisuralian ,
@@ -3928,16 +4079,16 @@ ischart:Permian
     time:hasBeginning
         [
             ischart:inMYA 298.9 ;
-            schema:marginOfError 0.15 ;
+            sdo:marginOfError 0.15 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 251.902 ;
-            schema:marginOfError 0.024 ;
+            sdo:marginOfError 0.024 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 91 ;
-    schema:color "#F04028"^^ischart:RGBHex ;
+    sdo:color "#F04028"^^ischart:RGBHex ;
 .
 
 ischart:Phanerozoic
@@ -3945,6 +4096,7 @@ ischart:Phanerozoic
     gts:rank rank:Eon ;
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
+    skos:definition "A time period from 538.8 million years ago to the present" ;
     skos:inScheme cs: ;
     skos:narrower
         ischart:Cenozoic ,
@@ -3954,7 +4106,7 @@ ischart:Phanerozoic
     time:hasBeginning
         [
             ischart:inMYA 538.8 ;
-            schema:marginOfError 0.6 ;
+            sdo:marginOfError 0.6 ;
         ] ;
     time:hasEnd
         [
@@ -3962,7 +4114,7 @@ ischart:Phanerozoic
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 156 ;
-    schema:color "#9AD9DD"^^ischart:RGBHex ;
+    sdo:color "#9AD9DD"^^ischart:RGBHex ;
 .
 
 ischart:Precambrian
@@ -3970,6 +4122,7 @@ ischart:Precambrian
     gts:rank rank:Super-Eon ;
     gts:ratifiedGSSA true ;
     rdfs:isDefinedBy ts:gts2020 ;
+    skos:definition "A time period from 4567 to 538.8 million years ago" ;
     skos:inScheme cs: ;
     skos:narrower
         ischart:Archean ,
@@ -3983,11 +4136,11 @@ ischart:Precambrian
     time:hasEnd
         [
             ischart:inMYA 538.8 ;
-            schema:marginOfError 0.6 ;
+            sdo:marginOfError 0.6 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 178 ;
-    schema:color "#F74370"^^ischart:RGBHex ;
+    sdo:color "#F74370"^^ischart:RGBHex ;
 .
 
 ischart:Proterozoic
@@ -3996,6 +4149,7 @@ ischart:Proterozoic
     gts:ratifiedGSSA true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Precambrian ;
+    skos:definition "A time period from 2500 to 538.8 million years ago" ;
     skos:inScheme cs: ;
     skos:narrower
         ischart:Mesoproterozoic ,
@@ -4009,11 +4163,11 @@ ischart:Proterozoic
     time:hasEnd
         [
             ischart:inMYA 538.8 ;
-            schema:marginOfError 0.6 ;
+            sdo:marginOfError 0.6 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 170 ;
-    schema:color "#F73563"^^ischart:RGBHex ;
+    sdo:color "#F73563"^^ischart:RGBHex ;
 .
 
 ischart:Triassic
@@ -4022,6 +4176,7 @@ ischart:Triassic
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Mesozoic ;
+    skos:definition "A time period from 251.902 to 201.4 million years ago" ;
     skos:inScheme cs: ;
     skos:narrower
         ischart:LowerTriassic ,
@@ -4031,16 +4186,16 @@ ischart:Triassic
     time:hasBeginning
         [
             ischart:inMYA 251.902 ;
-            schema:marginOfError 0.024 ;
+            sdo:marginOfError 0.024 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 201.4 ;
-            schema:marginOfError 0.2 ;
+            sdo:marginOfError 0.2 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 78 ;
-    schema:color "#812B92"^^ischart:RGBHex ;
+    sdo:color "#812B92"^^ischart:RGBHex ;
 .
 
 ischart:UpperJurassic
@@ -4048,6 +4203,7 @@ ischart:UpperJurassic
     gts:rank rank:Epoch ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Jurassic ;
+    skos:definition "A time period from 161.5 to 143.1 million years ago" ;
     skos:inScheme cs: ;
     skos:narrower
         ischart:Kimmeridgian ,
@@ -4057,16 +4213,16 @@ ischart:UpperJurassic
     time:hasBeginning
         [
             ischart:inMYA 161.5 ;
-            schema:marginOfError 1.0 ;
+            sdo:marginOfError 1.0 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 143.1 ;
-            schema:marginOfError 0.6 ;
+            sdo:marginOfError 0.6 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 54 ;
-    schema:color "#B3E3EE"^^ischart:RGBHex ;
+    sdo:color "#B3E3EE"^^ischart:RGBHex ;
 .
 
 ischart:UpperOrdovician
@@ -4075,6 +4231,7 @@ ischart:UpperOrdovician
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Ordovician ;
+    skos:definition "A time period from 458.2 to 443.1 million years ago" ;
     skos:inScheme cs: ;
     skos:narrower
         ischart:Hirnantian ,
@@ -4084,16 +4241,16 @@ ischart:UpperOrdovician
     time:hasBeginning
         [
             ischart:inMYA 458.2 ;
-            schema:marginOfError 0.7 ;
+            sdo:marginOfError 0.7 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 443.1 ;
-            schema:marginOfError 1.0 ;
+            sdo:marginOfError 1.0 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 134 ;
-    schema:color "#7FCA93"^^ischart:RGBHex ;
+    sdo:color "#7FCA93"^^ischart:RGBHex ;
 .
 
 ischart:UpperTriassic
@@ -4102,6 +4259,7 @@ ischart:UpperTriassic
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Triassic ;
+    skos:definition "A time period from 237 to 201.4 million years ago" ;
     skos:inScheme cs: ;
     skos:narrower
         ischart:Carnian ,
@@ -4116,11 +4274,11 @@ ischart:UpperTriassic
     time:hasEnd
         [
             ischart:inMYA 201.4 ;
-            schema:marginOfError 0.2 ;
+            sdo:marginOfError 0.2 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 69 ;
-    schema:color "#BD8CC3"^^ischart:RGBHex ;
+    sdo:color "#BD8CC3"^^ischart:RGBHex ;
 .
 
 ischart:Archean
@@ -4129,6 +4287,7 @@ ischart:Archean
     gts:ratifiedGSSA true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Precambrian ;
+    skos:definition "A time period from 4031 to 2500 million years ago" ;
     skos:inScheme cs: ;
     skos:narrower
         ischart:Eoarchean ,
@@ -4139,7 +4298,7 @@ ischart:Archean
     time:hasBeginning
         [
             ischart:inMYA 4031 ;
-            schema:marginOfError 3 ;
+            sdo:marginOfError 3 ;
         ] ;
     time:hasEnd
         [
@@ -4147,7 +4306,7 @@ ischart:Archean
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 175 ;
-    schema:color "#F0047F"^^ischart:RGBHex ;
+    sdo:color "#F0047F"^^ischart:RGBHex ;
 .
 
 ischart:Cambrian
@@ -4156,6 +4315,7 @@ ischart:Cambrian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Paleozoic ;
+    skos:definition "A time period from 538.8 to 486.85 million years ago" ;
     skos:inScheme cs: ;
     skos:narrower
         ischart:CambrianSeries2 ,
@@ -4166,16 +4326,16 @@ ischart:Cambrian
     time:hasBeginning
         [
             ischart:inMYA 538.8 ;
-            schema:marginOfError 0.6 ;
+            sdo:marginOfError 0.6 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 486.85 ;
-            schema:marginOfError 1.5 ;
+            sdo:marginOfError 1.5 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 154 ;
-    schema:color "#7FA056"^^ischart:RGBHex ;
+    sdo:color "#7FA056"^^ischart:RGBHex ;
 .
 
 ischart:Cisuralian
@@ -4184,6 +4344,7 @@ ischart:Cisuralian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Permian ;
+    skos:definition "A time period from 298.9 to 274.4 million years ago" ;
     skos:inScheme cs: ;
     skos:narrower
         ischart:Artinskian ,
@@ -4194,16 +4355,16 @@ ischart:Cisuralian
     time:hasBeginning
         [
             ischart:inMYA 298.9 ;
-            schema:marginOfError 0.15 ;
+            sdo:marginOfError 0.15 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 274.4 ;
-            schema:marginOfError 0.4 ;
+            sdo:marginOfError 0.4 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 90 ;
-    schema:color "#EF5845"^^ischart:RGBHex ;
+    sdo:color "#EF5845"^^ischart:RGBHex ;
 .
 
 ischart:Eocene
@@ -4212,6 +4373,7 @@ ischart:Eocene
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Paleogene ;
+    skos:definition "A time period from 56.00 to 33.9 million years ago" ;
     skos:inScheme cs: ;
     skos:narrower
         ischart:Bartonian ,
@@ -4229,7 +4391,7 @@ ischart:Eocene
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 28 ;
-    schema:color "#FDB46C"^^ischart:RGBHex ;
+    sdo:color "#FDB46C"^^ischart:RGBHex ;
 .
 
 ischart:LowerJurassic
@@ -4238,6 +4400,7 @@ ischart:LowerJurassic
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Jurassic ;
+    skos:definition "A time period from 201.4 to 174.7 million years ago" ;
     skos:inScheme cs: ;
     skos:narrower
         ischart:Hettangian ,
@@ -4248,16 +4411,16 @@ ischart:LowerJurassic
     time:hasBeginning
         [
             ischart:inMYA 201.4 ;
-            schema:marginOfError 0.2 ;
+            sdo:marginOfError 0.2 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 174.7 ;
-            schema:marginOfError 0.8 ;
+            sdo:marginOfError 0.8 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 65 ;
-    schema:color "#42AED0"^^ischart:RGBHex ;
+    sdo:color "#42AED0"^^ischart:RGBHex ;
 .
 
 ischart:MiddleJurassic
@@ -4266,6 +4429,7 @@ ischart:MiddleJurassic
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Jurassic ;
+    skos:definition "A time period from 174.7 to 161.5 million years ago" ;
     skos:inScheme cs: ;
     skos:narrower
         ischart:Aalenian ,
@@ -4276,16 +4440,16 @@ ischart:MiddleJurassic
     time:hasBeginning
         [
             ischart:inMYA 174.7 ;
-            schema:marginOfError 0.8 ;
+            sdo:marginOfError 0.8 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 161.5 ;
-            schema:marginOfError 1.0 ;
+            sdo:marginOfError 1.0 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 59 ;
-    schema:color "#80CFD8"^^ischart:RGBHex ;
+    sdo:color "#80CFD8"^^ischart:RGBHex ;
 .
 
 ischart:Paleoproterozoic
@@ -4294,6 +4458,7 @@ ischart:Paleoproterozoic
     gts:ratifiedGSSA true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Proterozoic ;
+    skos:definition "A time period from 2500 to 1600 million years ago" ;
     skos:inScheme cs: ;
     skos:narrower
         ischart:Orosirian ,
@@ -4311,7 +4476,7 @@ ischart:Paleoproterozoic
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 169 ;
-    schema:color "#F74370"^^ischart:RGBHex ;
+    sdo:color "#F74370"^^ischart:RGBHex ;
 .
 
 ischart:Pleistocene
@@ -4320,6 +4485,7 @@ ischart:Pleistocene
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Quaternary ;
+    skos:definition "A time period from 2.58 to 0.0117 million years ago" ;
     skos:inScheme cs: ;
     skos:narrower
         ischart:Calabrian ,
@@ -4337,7 +4503,7 @@ ischart:Pleistocene
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 9 ;
-    schema:color "#FFEFAF"^^ischart:RGBHex ;
+    sdo:color "#FFEFAF"^^ischart:RGBHex ;
 .
 
 ischart:Silurian
@@ -4346,6 +4512,7 @@ ischart:Silurian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Paleozoic ;
+    skos:definition "A time period from 443.1 to 419.62 million years ago" ;
     skos:inScheme cs: ;
     skos:narrower
         ischart:Llandovery ,
@@ -4356,16 +4523,16 @@ ischart:Silurian
     time:hasBeginning
         [
             ischart:inMYA 443.1 ;
-            schema:marginOfError 1.0 ;
+            sdo:marginOfError 1.0 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 419.62 ;
-            schema:marginOfError 1.36 ;
+            sdo:marginOfError 1.36 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 130 ;
-    schema:color "#B3E1B6"^^ischart:RGBHex ;
+    sdo:color "#B3E1B6"^^ischart:RGBHex ;
 .
 
 ischart:LowerCretaceous
@@ -4373,6 +4540,7 @@ ischart:LowerCretaceous
     gts:rank rank:Epoch ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Cretaceous ;
+    skos:definition "A time period from 143.1 to 100.5 million years ago" ;
     skos:inScheme cs: ;
     skos:narrower
         ischart:Albian ,
@@ -4385,16 +4553,16 @@ ischart:LowerCretaceous
     time:hasBeginning
         [
             ischart:inMYA 143.1 ;
-            schema:marginOfError 0.6 ;
+            sdo:marginOfError 0.6 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 100.5 ;
-            schema:marginOfError 0.1 ;
+            sdo:marginOfError 0.1 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 50 ;
-    schema:color "#8CCD57"^^ischart:RGBHex ;
+    sdo:color "#8CCD57"^^ischart:RGBHex ;
 .
 
 ischart:Miocene
@@ -4403,6 +4571,7 @@ ischart:Miocene
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Neogene ;
+    skos:definition "A time period from 23.04 to 5.333 million years ago" ;
     skos:inScheme cs: ;
     skos:narrower
         ischart:Aquitanian ,
@@ -4422,7 +4591,7 @@ ischart:Miocene
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 20 ;
-    schema:color "#FFFF00"^^ischart:RGBHex ;
+    sdo:color "#FFFF00"^^ischart:RGBHex ;
 .
 
 ischart:Paleozoic
@@ -4431,6 +4600,7 @@ ischart:Paleozoic
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Phanerozoic ;
+    skos:definition "A time period from 251.902 to 538.8 million years ago" ;
     skos:inScheme cs: ;
     skos:narrower
         ischart:Cambrian ,
@@ -4443,16 +4613,16 @@ ischart:Paleozoic
     time:hasBeginning
         [
             ischart:inMYA 538.8 ;
-            schema:marginOfError 0.6 ;
+            sdo:marginOfError 0.6 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 251.902 ;
-            schema:marginOfError 0.024 ;
+            sdo:marginOfError 0.024 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 77 ;
-    schema:color "#99C08D"^^ischart:RGBHex ;
+    sdo:color "#99C08D"^^ischart:RGBHex ;
 .
 
 ischart:UpperCretaceous
@@ -4461,6 +4631,7 @@ ischart:UpperCretaceous
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Cretaceous ;
+    skos:definition "A time period from 100.5 to 66.00 million years ago" ;
     skos:inScheme cs: ;
     skos:narrower
         ischart:Campanian ,
@@ -4473,7 +4644,7 @@ ischart:UpperCretaceous
     time:hasBeginning
         [
             ischart:inMYA 100.5 ;
-            schema:marginOfError 0.1 ;
+            sdo:marginOfError 0.1 ;
         ] ;
     time:hasEnd
         [
@@ -4481,7 +4652,7 @@ ischart:UpperCretaceous
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 42 ;
-    schema:color "#A6D84A"^^ischart:RGBHex ;
+    sdo:color "#A6D84A"^^ischart:RGBHex ;
 .
 
 cs:
@@ -4498,17 +4669,16 @@ cs:
         ischart:Phanerozoic ,
         ischart:Precambrian ;
     skos:historyNote "This vocabulary uses IRIs originally created for the Geologic Timescale (2020) data (see http://resource.geosciml.org/vocabulary/timescale/)" ;
-    skos:prefLabel "International Chronostratigraphic Chart"@en ;
     skos:versionInfo """2024-12: Updated Chart to include:
 
 * ratification of the Valanginian GSSP
 * numeric age of Valanginian updated to 137.05 +/- 0.2
 
-2023-09: updated form of the Geologic Timescale (2020) (see http://resource.geosciml.org/vocabulary/timescale/) to match the 2023-09 Chart, as released at https://stratigraphy.org/chart in late
-2023.""" ;
+2023-09: updated form of the Geologic Timescale (2020) (see http://resource.geosciml.org/vocabulary/timescale/) to match the 2023-09 Chart, as released at https://stratigraphy.org/chart in late 2023.""" ;
     prov:wasDerivedFrom ts:gts2020 ;
-    schema:citation "https://stratigraphy.org/chart"^^xsd:anyURI ;
-    schema:copyrightHolder <https://linked.data.gov.au/org/ics> ;
-    schema:copyrightNotice "(c) International Commission on Stratigraphy, 2024"@en ;
-    schema:license <https://creativecommons.org/licenses/by/4.0/> ;
+    sdo:citation "https://stratigraphy.org/chart"^^xsd:anyURI ;
+    sdo:copyrightHolder <https://linked.data.gov.au/org/ics> ;
+    sdo:copyrightNotice "(c) International Commission on Stratigraphy, 2024"@en ;
+    sdo:license <https://creativecommons.org/licenses/by/4.0/> ;
 .
+
