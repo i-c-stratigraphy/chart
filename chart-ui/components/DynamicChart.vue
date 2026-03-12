@@ -19,6 +19,7 @@ const NS = {
   skos: "http://www.w3.org/2004/02/skos/core#",
   cs: "http://resource.geosciml.org/classifier/ics/ischart",
   icsVisual: "http://resource.geosciml.org/ontology/ics-visual-chart/",
+  strat: "http://resource.geosciml.org/ontology/stratigraphy/",
 };
 
 const target = useRouteQuery("target", "");
@@ -44,8 +45,16 @@ const setChartReadyState = (state) => {
 };
 
 const labelTypeOptions = [
-  { label: "Stratigraphic", value: "stratigraphic" },
-  { label: "Chronometric", value: "chronometric" },
+  {
+    iri: `${NS.strat}Stratigraphic`,
+    fallback: "Stratigraphic",
+    value: "stratigraphic",
+  },
+  {
+    iri: `${NS.strat}Chronometric`,
+    fallback: "Chronometric",
+    value: "chronometric",
+  },
 ];
 const labelType = ref(labelTypeOptions[0].value);
 
@@ -198,6 +207,25 @@ const languageFieldLabel = computed(() => {
   return getUiLabel(`${NS.icsVisual}Language`, "Language");
 });
 
+const columnHeadingsFieldLabel = computed(() => {
+  return getUiLabel(`${NS.icsVisual}ColumnHeadings`, "Column headings");
+});
+
+const scalingFieldLabel = computed(() => {
+  return getUiLabel(`${NS.icsVisual}Scaling`, "Scaling");
+});
+
+const downloadFieldLabel = computed(() => {
+  return getUiLabel(`${NS.icsVisual}Download`, "Download");
+});
+
+const localizedLabelTypeOptions = computed(() => {
+  return labelTypeOptions.map((option) => ({
+    ...option,
+    label: getUiLabel(option.iri, option.fallback),
+  }));
+});
+
 const commissionTitle = computed(() => {
   if (!meta.value) return "loading";
   // Simplified for now, could resolve from a specific IRI if needed
@@ -280,7 +308,7 @@ const downloadPdf = () => {
             </select>
           </label>
           <label>
-            Scaling:
+            {{ scalingFieldLabel }}:
             <select v-model="selectedScale">
               <option v-for="scale in scaleOptions" :key="scale" :value="scale">
                 {{ getScaleOptionLabel(scale) }}
@@ -288,19 +316,19 @@ const downloadPdf = () => {
             </select>
           </label>
           <label>
-            Column headings:
+            {{ columnHeadingsFieldLabel }}:
             <select v-model="labelType">
               <option
-                v-for="label in labelTypeOptions"
-                :key="label.value"
-                :value="label.value"
+                v-for="option in localizedLabelTypeOptions"
+                :key="option.value"
+                :value="option.value"
               >
-                {{ label.label }}
+                {{ option.label }}
               </option>
             </select>
           </label>
           <label>
-            Download:
+            {{ downloadFieldLabel }}:
             <select v-model="downloadVersion">
               <option value="">Main</option>
               <option v-for="lang in langs" :key="lang" :value="lang">

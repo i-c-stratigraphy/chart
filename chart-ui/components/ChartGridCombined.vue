@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { type chartNode, type scalingFactor } from "@/utils/util"
-import type { LabelType } from "@/utils/label"
+import { useLabelContext, type LabelType } from "@/utils/label"
 
 const props = defineProps<{
     node: chartNode,
@@ -15,6 +15,12 @@ const emit = defineEmits<{
     (e: 'view', node: string): void
 }>()
 
+const NS = {
+    icsVisual: "http://resource.geosciml.org/ontology/ics-visual-chart/",
+}
+
+const { getUiLabel } = useLabelContext()
+
 </script>
 <template>
     <div class="grid-wrapper">
@@ -27,7 +33,7 @@ const emit = defineEmits<{
                 <ChartHeader tag="span" class="header" iri="http://resource.geosciml.org/classifier/ics/ischart/Ages" :label-type="props.labelType" />
                 <span class="gssp-text v-text">GSSP</span>
             </div>
-            <div class="header center age-text">Numeric Age</div>
+            <div class="header center age-text">{{ getUiLabel(`${NS.icsVisual}NumericAge`, "Numeric Age") }}</div>
             <ChartGridCell :lang="props.lang" :node="props.node" :parent-rank="''" :scaling="props.scaling"
                 @view="n => emit('view', n)" />
         </div>
@@ -40,7 +46,7 @@ const emit = defineEmits<{
                     <ChartHeader tag="span" class="header" iri="http://resource.geosciml.org/classifier/ics/ischart/Periods" :label-type="props.labelType" />
                     <span class="v-text gssp-text ">GSSP<br/> GSSA</span>
                 </div>
-                <div class="header center age-text">Numeric Age</div>
+                <div class="header center age-text">{{ getUiLabel(`${NS.icsVisual}NumericAge`, "Numeric Age") }}</div>
                 <ChartGridPrecambrianCell :lang="props.lang" :node="props.node" :parent-rank="''"
                     :scaling="props.scaling" @view="x => emit('view', x)" />
             </div>
