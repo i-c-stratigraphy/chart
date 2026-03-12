@@ -12,7 +12,7 @@ const { namedNode } = n3.DataFactory;
 
 const labelContextKey = Symbol("LabelContext");
 
-export type LabelType = "stratigraphic" | "timescale";
+export type LabelType = "stratigraphic" | "chronometric";
 
 type GetLabelFunction = (
   iri: string,
@@ -92,7 +92,7 @@ export function createLabelProvider(
     for (const adj of agesStages) {
       if (localName.startsWith(adj)) {
         let uml = adj;
-        if (type === "timescale") {
+        if (type === "chronometric") {
           if (adj === "Upper") uml = "Late";
           else if (adj === "Lower") uml = "Early";
         }

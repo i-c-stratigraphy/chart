@@ -312,36 +312,36 @@ const colNames = {
     'Super-Eon':{},
     Eon: {
         stratigraphic: "Eonothem",
-        timescale: "Eon",
+        chronometric: "Eon",
     },
     Era: {
         stratigraphic: "Erathem",
-        timescale: "Era",
+        chronometric: "Era",
     },
     Period: {
         stratigraphic: "System",
-        timescale: "Period",
+        chronometric: "Period",
     },
     Epoch: {
         stratigraphic: "Series",
-        timescale: "Epoch",
+        chronometric: "Epoch",
     },
     Age: {
         stratigraphic: "Stage",
-        timescale: "Age",
+        chronometric: "Age",
     },
 }
-export function getColLabel(col: keyof typeof colNames,mode: "stratigraphic" | "timescale" | "both"):string {
+export function getColLabel(col: keyof typeof colNames,mode: "stratigraphic" | "chronometric" | "both"):string {
     if (col === 'Super-Eon'){
         return ""
     }
     switch (mode) {
         case "stratigraphic":
             return colNames[col].stratigraphic
-        case "timescale":
-            return colNames[col].timescale
+        case "chronometric":
+            return colNames[col].chronometric
         case "both":
-            return colNames[col].stratigraphic+" / "+colNames[col].timescale
+            return colNames[col].stratigraphic+" / "+colNames[col].chronometric
 
     }
 }

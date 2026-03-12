@@ -45,7 +45,7 @@ const setChartReadyState = (state) => {
 
 const labelTypeOptions = [
   { label: "Stratigraphic", value: "stratigraphic" },
-  { label: "Chronometric", value: "timescale" },
+  { label: "Chronometric", value: "chronometric" },
 ];
 const labelType = ref(labelTypeOptions[0].value);
 
