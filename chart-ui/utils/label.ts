@@ -25,6 +25,12 @@ type GetDefinitionFunction = (
   language?: string
 ) => string | undefined;
 
+type GetUiLabelFunction = (
+  iri: string,
+  fallback?: string,
+  language?: string
+) => string;
+
 export function createLabelProvider(
   cf: Ref<AnyPointer | null>,
   currentLang: Ref<string>,
@@ -68,6 +74,16 @@ export function createLabelProvider(
     }
 
     return undefined;
+  }
+
+  function getUiLabel(iri: string, fallback?: string, lang?: string): string {
+    const language = lang || currentLang.value;
+    const label = getDirectLabel(iri, language);
+
+    if (label) return label;
+    if (fallback) return fallback;
+
+    return iri.split("/").pop() || iri;
   }
 
   function resolveLabel(iri: string, type: LabelType, lang: string): string {
@@ -116,11 +132,13 @@ export function createLabelProvider(
   provide(labelContextKey, {
     getLabel,
     getDefinition,
+    getUiLabel,
   });
 
   return {
     getLabel,
     getDefinition,
+    getUiLabel,
   };
 }
 
@@ -128,6 +146,7 @@ export function useLabelContext() {
   const context = inject<{
     getLabel: GetLabelFunction;
     getDefinition: GetDefinitionFunction;
+    getUiLabel: GetUiLabelFunction;
   }>(labelContextKey);
   if (!context) throw new Error("Label context not found");
   return context;

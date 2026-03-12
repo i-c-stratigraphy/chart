@@ -50,7 +50,7 @@ const labelTypeOptions = [
 const labelType = ref(labelTypeOptions[0].value);
 
 const { cf, loadStore, error: rdfError } = useRDFStore();
-const { getLabel } = createLabelProvider(cf, selectedLang, labelType);
+const { getLabel, getUiLabel } = createLabelProvider(cf, selectedLang, labelType);
 
 watch(
   [ready, error, rdfError],
@@ -194,6 +194,10 @@ const chartTitle = computed(() => {
   return getLabel(NS.cs);
 });
 
+const languageFieldLabel = computed(() => {
+  return getUiLabel(`${NS.icsVisual}Language`, "Language");
+});
+
 const commissionTitle = computed(() => {
   if (!meta.value) return "loading";
   // Simplified for now, could resolve from a specific IRI if needed
@@ -268,7 +272,7 @@ const downloadPdf = () => {
       <div v-else>
         <div class="no-print chart-controls widther">
           <label>
-            Language:
+            {{ languageFieldLabel }}:
             <select v-model="selectedLang">
               <option v-for="lang in langs" :key="lang" :value="lang">
                 {{ languageNames.of(lang) }} ({{ getLocalLangName(lang) }})
