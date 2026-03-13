@@ -179,6 +179,12 @@ div.header:not(.v-text) {
     font-size:0.8em;
     line-height: 1em;
 }
+.chart-notes p {
+    margin: 0 0 0.6em;
+}
+.chart-notes p:last-child {
+    margin-bottom: 0;
+}
 .chart-notes a {
     color: inherit;
 }
@@ -192,6 +198,17 @@ div.header:not(.v-text) {
 .chart-notes:lang(ja) {
     font-size: 1.1rem;
     /* line-height: 1.1em; */
+}
+
+@media print {
+    .chart-notes {
+        font-size: 0.76em;
+        line-height: 0.95em;
+    }
+
+    .chart-notes p {
+        margin-bottom: 0.4em;
+    }
 }
 
 </style>
