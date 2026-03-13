@@ -11,9 +11,9 @@ This data form of the Chart will soon be used to produce all PDF and other visua
 
 == Creating a Release
 
-To publish a release, go to the GitHub releases page and create a new release. this release should be set to create a new tag with the format of SemVer preceded with a 'v', however the major and minor should reflect the stratigraphic versions. I.e `v2023.09.1`
+To publish a release, go to the GitHub releases page and create a new release. This release should be set to create a new tag using SemVer preceded by `v`, but the major and minor versions should reflect the stratigraphic versions, for example `v2023.09.1`.
 
-Creating this tag will trigger a workflow which in turn will generate the PDfs and publish them to the release. 
+Creating this tag will trigger a workflow that generates the PDFs and publishes them to the release.
 
 
 == Copyright & License
@@ -34,3 +34,28 @@ A local copy of the license deed is stored in the file LICENSE in this repositor
 Please contact the executive of the International Commission on Stratigraphy with all questions via https://stratigraphy.org/executive
 
 You may also log any issues with the data at https://github.com/i-c-stratigraphy/chart/issues.
+
+
+== Development
+
+Make UI changes in `chart-ui/`.
+
+Install dependencies and run the UI locally from that directory:
+
+[source,bash]
+----
+cd chart-ui
+pnpm install
+pnpm run dev
+----
+
+The development server runs at http://localhost:3000.
+
+Visual changes affect the generated PDFs, so any layout, typography, spacing, or other presentation change should be tested locally by running:
+
+[source,bash]
+----
+task test-pdfs
+----
+
+This runs the local PDF generation workflow and prints the path to the generated `chart-pdf.zip` artifact so it can be inspected before opening a PR or cutting a release.
