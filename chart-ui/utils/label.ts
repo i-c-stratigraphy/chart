@@ -31,15 +31,21 @@ type GetUiLabelFunction = (
   language?: string
 ) => string;
 
+type GetUiLabelOptionalFunction = (
+  iri: string,
+  language?: string,
+  fallbackToEnglish?: boolean
+) => string | undefined;
+
 export function createLabelProvider(
   cf: Ref<AnyPointer | null>,
   currentLang: Ref<string>,
   currentLabelType: Ref<LabelType>
 ) {
-  function getDirectLabel(iri: string, lang: string): string | undefined {
+  function getDirectLabelInLanguage(iri: string, lang: string): string | undefined {
     if (!cf.value) return undefined;
     const node = cf.value.node(namedNode(iri));
-    
+
     // Try preferred label in target language
     const pref = node.out(namedNode(NS.skos + "prefLabel"))
       .terms.find(t => t.termType === "Literal" && t.language === lang)?.value;
@@ -50,9 +56,16 @@ export function createLabelProvider(
       .terms.find(t => t.termType === "Literal" && t.language === lang)?.value;
     if (alt) return alt;
 
+    return undefined;
+  }
+
+  function getDirectLabel(iri: string, lang: string): string | undefined {
+    const direct = getDirectLabelInLanguage(iri, lang);
+    if (direct) return direct;
+
     // Fallback to English
     if (lang !== "en") {
-      return getDirectLabel(iri, "en");
+      return getDirectLabelInLanguage(iri, "en");
     }
 
     return undefined;
@@ -76,9 +89,24 @@ export function createLabelProvider(
     return undefined;
   }
 
-  function getUiLabel(iri: string, fallback?: string, lang?: string): string {
+  function getUiLabelOptional(
+    iri: string,
+    lang?: string,
+    fallbackToEnglish = true
+  ): string | undefined {
     const language = lang || currentLang.value;
-    const label = getDirectLabel(iri, language);
+    const label = getDirectLabelInLanguage(iri, language);
+
+    if (label) return label;
+    if (fallbackToEnglish && language !== "en") {
+      return getDirectLabelInLanguage(iri, "en");
+    }
+
+    return undefined;
+  }
+
+  function getUiLabel(iri: string, fallback?: string, lang?: string): string {
+    const label = getUiLabelOptional(iri, lang, true);
 
     if (label) return label;
     if (fallback) return fallback;
@@ -133,12 +161,14 @@ export function createLabelProvider(
     getLabel,
     getDefinition,
     getUiLabel,
+    getUiLabelOptional,
   });
 
   return {
     getLabel,
     getDefinition,
     getUiLabel,
+    getUiLabelOptional,
   };
 }
 
@@ -147,6 +177,7 @@ export function useLabelContext() {
     getLabel: GetLabelFunction;
     getDefinition: GetDefinitionFunction;
     getUiLabel: GetUiLabelFunction;
+    getUiLabelOptional: GetUiLabelOptionalFunction;
   }>(labelContextKey);
   if (!context) throw new Error("Label context not found");
   return context;

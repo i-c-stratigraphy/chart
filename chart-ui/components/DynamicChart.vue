@@ -106,15 +106,6 @@ watch(
 
 function extractMeta(pointer) {
   const cs = pointer.node(namedNode(NS.cs));
-  const blurb = pointer.node(namedNode(`${NS.icsVisual}Blurb`));
-  // Keep `scopeNote` key for compatibility with existing rendering helpers.
-  const scopeNote = blurb
-    .out(namedNode(NS.skos + "prefLabel"))
-    .terms.filter((t) => t.termType === "Literal" && t.value !== "")
-    .map((t) => ({
-      language: t.language,
-      value: t.value,
-    }));
 
   return {
     id: NS.cs,
@@ -127,7 +118,6 @@ function extractMeta(pointer) {
         cs.out(namedNode(NS.dcterms + "creator")).term?.value ||
         "www.stratigraphy.org",
     },
-    scopeNote,
   };
 }
 
