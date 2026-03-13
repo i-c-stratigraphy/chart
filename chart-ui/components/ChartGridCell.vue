@@ -82,7 +82,7 @@ const label = computed(() => {
 </template>
 <style scoped>
 .label{
-    /* margin-top:0.25rem; */
+    padding: 0.12rem 0.18rem 0;
     font-size: 0.8rem;
     line-height: 1;
 }
@@ -152,9 +152,9 @@ p {
 
 .gss-icon {
     position: absolute;
-    bottom: 0;
-    right: 0;
-    margin-bottom: -5px;
+    bottom: 0.12rem;
+    right: 0.12rem;
+    margin-bottom: 0;
 }
 
 .num-age {

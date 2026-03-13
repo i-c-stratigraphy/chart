@@ -176,6 +176,7 @@ div.header:not(.v-text) {
 }
 .chart-notes{
     text-align: left;
+    padding-top: 1rem;
     font-size:0.8em;
     line-height: 1em;
 }
