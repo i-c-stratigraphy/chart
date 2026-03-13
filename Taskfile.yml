@@ -7,4 +7,4 @@ tasks:
     desc: Run build + publish-pdfs jobs locally to validate PDF generation
     cmds:
       - gh act release -W .github/workflows/deploy-chart.yml -j publish-pdfs --artifact-server-path /tmp/github-artifacts --artifact-server-port 34568 --action-cache-path /tmp/act-cache
-      - find /tmp/github-artifacts -type d -path '*/chart-pdf' -print
+      - find /tmp/github-artifacts -type f -name 'chart-pdf.zip' -print
