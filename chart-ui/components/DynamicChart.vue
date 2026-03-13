@@ -1,7 +1,6 @@
 <script setup>
 import {
   scaleOptions,
-  getScaleOptionLabel,
   getScaleObj,
 } from "~/utils/util";
 import { useRouteQuery } from "@vueuse/router";
@@ -57,6 +56,34 @@ const labelTypeOptions = [
   },
 ];
 const labelType = ref(labelTypeOptions[0].value);
+
+const scalingOptions = [
+  {
+    iri: `${NS.icsVisual}irregular`,
+    fallback: "Irregular",
+    value: "irregular",
+  },
+  {
+    iri: `${NS.icsVisual}equal-columns`,
+    fallback: "Equal Columns",
+    value: "equal",
+  },
+  {
+    iri: `${NS.icsVisual}equal-rows`,
+    fallback: "Equal Rows",
+    value: "equal-rows",
+  },
+  {
+    iri: `${NS.icsVisual}logarithmic`,
+    fallback: "Logarithmic",
+    value: "log",
+  },
+  {
+    iri: `${NS.icsVisual}linear`,
+    fallback: "Linear",
+    value: "linear",
+  },
+];
 
 const { cf, loadStore, error: rdfError } = useRDFStore();
 const { getLabel, getUiLabel } = createLabelProvider(cf, selectedLang, labelType);
@@ -226,6 +253,13 @@ const localizedLabelTypeOptions = computed(() => {
   }));
 });
 
+const localizedScalingOptions = computed(() => {
+  return scalingOptions.map((option) => ({
+    ...option,
+    label: getUiLabel(option.iri, option.fallback),
+  }));
+});
+
 const commissionTitle = computed(() => {
   if (!meta.value) return "loading";
   // Simplified for now, could resolve from a specific IRI if needed
@@ -235,6 +269,14 @@ const commissionTitle = computed(() => {
 watch(target, (newTarget) => {
   infoTarget.value = resolveInfoTarget(newTarget);
 });
+
+watch(
+  [selectedLang, langs],
+  ([lang, availableLangs]) => {
+    downloadVersion.value = availableLangs.includes(lang) ? lang : "";
+  },
+  { immediate: true }
+);
 
 const downloadPdf = () => {
   if (!chartReleaseVersion.value || !meta.value?.versionInfo) {
@@ -310,8 +352,12 @@ const downloadPdf = () => {
           <label>
             {{ scalingFieldLabel }}:
             <select v-model="selectedScale">
-              <option v-for="scale in scaleOptions" :key="scale" :value="scale">
-                {{ getScaleOptionLabel(scale) }}
+              <option
+                v-for="option in localizedScalingOptions"
+                :key="option.value"
+                :value="option.value"
+              >
+                {{ option.label }}
               </option>
             </select>
           </label>
@@ -336,7 +382,7 @@ const downloadPdf = () => {
               </option>
             </select>
             <button @click="downloadPdf">
-              Data-generated PDF (test version)
+              Data-generated PDF
             </button>
             <small v-if="pdfVersionError && chartReleaseVersion">
               Using fallback version from chart metadata.
