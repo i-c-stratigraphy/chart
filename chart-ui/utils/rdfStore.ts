@@ -2,8 +2,7 @@ import { ref, shallowRef } from 'vue'
 import n3 from 'n3'
 import clownface from 'clownface'
 import type { AnyPointer } from 'clownface'
-import chartTtl from '../../source/multilang/chart-nolang.ttl?raw'
-import prefLabelsTtl from '../../source/multilang/prefLabels.ttl?raw'
+import chartTtl from '../../chart.ttl?raw'
 import definitionsTtl from '../../source/multilang/definitions.ttl?raw'
 
 export function useRDFStore() {
@@ -20,7 +19,6 @@ export function useRDFStore() {
     try {
       const quads: n3.Quad[] = [
         ...parser.parse(chartTtl),
-        ...parser.parse(prefLabelsTtl),
         ...parser.parse(definitionsTtl),
       ]
 

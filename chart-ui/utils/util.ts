@@ -52,39 +52,12 @@ export interface sdoname {
 }
 export type chartMeta = {
     id: string
-    type: string
-    conformsTo: string
-    created: string
     creator: {
-        id: string
-        type: string
-        name: string
         url: string
-        alternateName: chartLanguage[]
     }
-    modified: string
-    publisher: string
-    versionURI: string
     versionInfo: string
-    altLabel: chartLanguage[]
-    definition: chartLanguage
-    historyNote: string
+    altLabel?: chartLanguage[]
     prefLabel: chartLanguage
-    scopeNote: chartLanguage[]
-    skosVersionInfo: string
-    wasDerivedFrom: string
-    citation: {
-        type: string
-        value: string
-    }
-    copyrightHolder: {
-        id: string
-    }
-    copyrightNotice: chartLanguage
-    license: {
-        id: string
-    }
-
 }
 
 export type root = {
@@ -295,53 +268,40 @@ export function getCachedInfo(target: string) {
 
 }
 
-export function getScopedNote(meta: chartMeta, lang: string) {
-    if (!meta || !meta.scopeNote) return { value: "" }
-    const scopeNote = meta.scopeNote.filter(x => x.language === lang)
-    if (scopeNote.length >= 1) {
-        return scopeNote[0]
-    }
-    const enNote = meta.scopeNote.filter(x => x.language === "en")
-    if (enNote.length >= 1) {
-        return enNote[0]
-    }
-    return meta.scopeNote[0] || { value: "" }
-}
-
 const colNames = {
     'Super-Eon':{},
     Eon: {
         stratigraphic: "Eonothem",
-        timescale: "Eon",
+        chronometric: "Eon",
     },
     Era: {
         stratigraphic: "Erathem",
-        timescale: "Era",
+        chronometric: "Era",
     },
     Period: {
         stratigraphic: "System",
-        timescale: "Period",
+        chronometric: "Period",
     },
     Epoch: {
         stratigraphic: "Series",
-        timescale: "Epoch",
+        chronometric: "Epoch",
     },
     Age: {
         stratigraphic: "Stage",
-        timescale: "Age",
+        chronometric: "Age",
     },
 }
-export function getColLabel(col: keyof typeof colNames,mode: "stratigraphic" | "timescale" | "both"):string {
+export function getColLabel(col: keyof typeof colNames,mode: "stratigraphic" | "chronometric" | "both"):string {
     if (col === 'Super-Eon'){
         return ""
     }
     switch (mode) {
         case "stratigraphic":
             return colNames[col].stratigraphic
-        case "timescale":
-            return colNames[col].timescale
+        case "chronometric":
+            return colNames[col].chronometric
         case "both":
-            return colNames[col].stratigraphic+" / "+colNames[col].timescale
+            return colNames[col].stratigraphic+" / "+colNames[col].chronometric
 
     }
 }

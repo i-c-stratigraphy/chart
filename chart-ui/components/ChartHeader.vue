@@ -9,30 +9,30 @@ const NS = {
 
 const headerRankMap: Record<
   string,
-  { timescale: string; stratigraphic: string }
+  { chronometric: string; stratigraphic: string }
 > = {
   "http://resource.geosciml.org/classifier/ics/ischart/Ages": {
-    timescale: `${NS.gts}Age`,
+    chronometric: `${NS.gts}Age`,
     stratigraphic: `${NS.strat}Stage`,
   },
   "http://resource.geosciml.org/classifier/ics/ischart/Epochs": {
-    timescale: `${NS.gts}Epoch`,
+    chronometric: `${NS.gts}Epoch`,
     stratigraphic: `${NS.strat}Series`,
   },
   "http://resource.geosciml.org/classifier/ics/ischart/Periods": {
-    timescale: `${NS.gts}Period`,
+    chronometric: `${NS.gts}Period`,
     stratigraphic: `${NS.strat}System`,
   },
   "http://resource.geosciml.org/classifier/ics/ischart/Eras": {
-    timescale: `${NS.gts}Era`,
+    chronometric: `${NS.gts}Era`,
     stratigraphic: `${NS.strat}Erathem`,
   },
   "http://resource.geosciml.org/classifier/ics/ischart/Eons": {
-    timescale: `${NS.gts}Eon`,
+    chronometric: `${NS.gts}Eon`,
     stratigraphic: `${NS.strat}Eonothem`,
   },
   "http://resource.geosciml.org/classifier/ics/ischart/SuperEons": {
-    timescale: `${NS.strat}Supereon`,
+    chronometric: `${NS.strat}Supereon`,
     stratigraphic: `${NS.strat}Supereonothem`,
   },
 };
