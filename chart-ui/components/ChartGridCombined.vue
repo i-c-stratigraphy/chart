@@ -1,6 +1,7 @@
 <script setup lang="ts">
-import { type chartNode, type scalingFactor } from "@/utils/util"
-import type { LabelType } from "@/utils/label"
+import { computed } from "vue"
+import { type chartNode, type chartMeta, type scalingFactor } from "@/utils/util"
+import { useLabelContext, type LabelType } from "@/utils/label"
 
 const props = defineProps<{
     node: chartNode,
@@ -15,6 +16,49 @@ const emit = defineEmits<{
     (e: 'view', node: string): void
 }>()
 
+const NS = {
+    dcterms: "http://purl.org/dc/terms/",
+    icsVisual: "http://resource.geosciml.org/ontology/ics-visual-chart/",
+    schema: "https://schema.org/",
+}
+
+const BLURB_SECTIONS = [
+    { iri: `${NS.icsVisual}Blurb`, kind: "text", fallbackToEnglish: true },
+    { iri: `${NS.icsVisual}ccgm`, kind: "text", fallbackToEnglish: true },
+    { iri: `${NS.dcterms}contributor`, kind: "text", fallbackToEnglish: true },
+    { iri: `${NS.dcterms}bibliographicCitation`, kind: "text", fallbackToEnglish: true },
+    { iri: `${NS.schema}copyrightNotice`, kind: "text", fallbackToEnglish: true },
+    { iri: `${NS.schema}license`, kind: "text", fallbackToEnglish: true },
+    { iri: `${NS.icsVisual}translator`, kind: "text", fallbackToEnglish: false },
+    { iri: `${NS.icsVisual}translatorURL`, kind: "link", fallbackToEnglish: false },
+    { iri: `${NS.icsVisual}translatorLogo`, kind: "image", fallbackToEnglish: false },
+] as const
+
+const { getUiLabel, getUiLabelOptional } = useLabelContext()
+
+const blurbSections = computed(() => {
+    return BLURB_SECTIONS.flatMap((section) => {
+        const value = getUiLabelOptional(section.iri, props.lang, section.fallbackToEnglish)
+        if (!value) {
+            return []
+        }
+
+        if (section.iri === `${NS.icsVisual}Blurb`) {
+            return value
+                .split(/\n\s*\n/)
+                .map((paragraph) => paragraph.trim())
+                .filter((paragraph) => paragraph !== "")
+                .map((paragraph, index) => ({
+                    ...section,
+                    iri: `${section.iri}#${index}`,
+                    value: paragraph,
+                }))
+        }
+
+        return [{ ...section, value }]
+    })
+})
+
 </script>
 <template>
     <div class="grid-wrapper">
@@ -27,7 +71,7 @@ const emit = defineEmits<{
                 <ChartHeader tag="span" class="header" iri="http://resource.geosciml.org/classifier/ics/ischart/Ages" :label-type="props.labelType" />
                 <span class="gssp-text v-text">GSSP</span>
             </div>
-            <div class="header center age-text">Numeric Age</div>
+            <div class="header center age-text">{{ getUiLabel(`${NS.icsVisual}NumericAge`, "Numeric Age") }}</div>
             <ChartGridCell :lang="props.lang" :node="props.node" :parent-rank="''" :scaling="props.scaling"
                 @view="n => emit('view', n)" />
         </div>
@@ -40,14 +84,27 @@ const emit = defineEmits<{
                     <ChartHeader tag="span" class="header" iri="http://resource.geosciml.org/classifier/ics/ischart/Periods" :label-type="props.labelType" />
                     <span class="v-text gssp-text ">GSSP<br/> GSSA</span>
                 </div>
-                <div class="header center age-text">Numeric Age</div>
+                <div class="header center age-text">{{ getUiLabel(`${NS.icsVisual}NumericAge`, "Numeric Age") }}</div>
                 <ChartGridPrecambrianCell :lang="props.lang" :node="props.node" :parent-rank="''"
                     :scaling="props.scaling" @view="x => emit('view', x)" />
             </div>
             <div class="chart-notes" v-if="props.meta" :lang="props.lang">
-                <p v-for="line in getScopedNote(props.meta, props.lang).value.split('\n')">
-                    {{ line }}
-                </p>
+                <template v-for="section in blurbSections" :key="section.iri">
+                    <p v-if="section.kind === 'text'">
+                        {{ section.value }}
+                    </p>
+                    <p v-else-if="section.kind === 'link'">
+                        <a :href="section.value" target="_blank" rel="noreferrer">
+                            {{ section.value }}
+                        </a>
+                    </p>
+                    <img
+                        v-else
+                        :src="section.value"
+                        alt=""
+                        class="translator-logo"
+                    />
+                </template>
             </div>
         </template>
     </div>
@@ -119,13 +176,40 @@ div.header:not(.v-text) {
 }
 .chart-notes{
     text-align: left;
+    padding-top: 1rem;
     font-size:0.8em;
     line-height: 1em;
+}
+.chart-notes p {
+    margin: 0 0 0.6em;
+}
+.chart-notes p:last-child {
+    margin-bottom: 0;
+}
+.chart-notes a {
+    color: inherit;
+}
+.translator-logo {
+    display: block;
+    max-width: 100%;
+    max-height: 4rem;
+    margin: 0.5rem 0;
 }
 .chart-notes:lang(zh),
 .chart-notes:lang(ja) {
     font-size: 1.1rem;
     /* line-height: 1.1em; */
+}
+
+@media print {
+    .chart-notes {
+        font-size: 0.76em;
+        line-height: 0.95em;
+    }
+
+    .chart-notes p {
+        margin-bottom: 0.4em;
+    }
 }
 
 </style>

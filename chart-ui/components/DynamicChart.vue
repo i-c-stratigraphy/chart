@@ -1,7 +1,6 @@
 <script setup>
 import {
   scaleOptions,
-  getScaleOptionLabel,
   getScaleObj,
 } from "~/utils/util";
 import { useRouteQuery } from "@vueuse/router";
@@ -19,6 +18,7 @@ const NS = {
   skos: "http://www.w3.org/2004/02/skos/core#",
   cs: "http://resource.geosciml.org/classifier/ics/ischart",
   icsVisual: "http://resource.geosciml.org/ontology/ics-visual-chart/",
+  strat: "http://resource.geosciml.org/ontology/stratigraphy/",
 };
 
 const target = useRouteQuery("target", "");
@@ -44,13 +44,49 @@ const setChartReadyState = (state) => {
 };
 
 const labelTypeOptions = [
-  { label: "Stratigraphic", value: "stratigraphic" },
-  { label: "Chronometric", value: "timescale" },
+  {
+    iri: `${NS.strat}Stratigraphic`,
+    fallback: "Stratigraphic",
+    value: "stratigraphic",
+  },
+  {
+    iri: `${NS.strat}Chronometric`,
+    fallback: "Chronometric",
+    value: "chronometric",
+  },
 ];
 const labelType = ref(labelTypeOptions[0].value);
 
+const scalingOptions = [
+  {
+    iri: `${NS.icsVisual}irregular`,
+    fallback: "Irregular",
+    value: "irregular",
+  },
+  {
+    iri: `${NS.icsVisual}equal-columns`,
+    fallback: "Equal Columns",
+    value: "equal",
+  },
+  {
+    iri: `${NS.icsVisual}equal-rows`,
+    fallback: "Equal Rows",
+    value: "equal-rows",
+  },
+  {
+    iri: `${NS.icsVisual}logarithmic`,
+    fallback: "Logarithmic",
+    value: "log",
+  },
+  {
+    iri: `${NS.icsVisual}linear`,
+    fallback: "Linear",
+    value: "linear",
+  },
+];
+
 const { cf, loadStore, error: rdfError } = useRDFStore();
-const { getLabel } = createLabelProvider(cf, selectedLang, labelType);
+const { getLabel, getUiLabel } = createLabelProvider(cf, selectedLang, labelType);
 
 watch(
   [ready, error, rdfError],
@@ -70,15 +106,6 @@ watch(
 
 function extractMeta(pointer) {
   const cs = pointer.node(namedNode(NS.cs));
-  const blurb = pointer.node(namedNode(`${NS.icsVisual}Blurb`));
-  // Keep `scopeNote` key for compatibility with existing rendering helpers.
-  const scopeNote = blurb
-    .out(namedNode(NS.skos + "prefLabel"))
-    .terms.filter((t) => t.termType === "Literal" && t.value !== "")
-    .map((t) => ({
-      language: t.language,
-      value: t.value,
-    }));
 
   return {
     id: NS.cs,
@@ -91,7 +118,6 @@ function extractMeta(pointer) {
         cs.out(namedNode(NS.dcterms + "creator")).term?.value ||
         "www.stratigraphy.org",
     },
-    scopeNote,
   };
 }
 
@@ -194,6 +220,36 @@ const chartTitle = computed(() => {
   return getLabel(NS.cs);
 });
 
+const languageFieldLabel = computed(() => {
+  return getUiLabel(`${NS.icsVisual}Language`, "Language");
+});
+
+const columnHeadingsFieldLabel = computed(() => {
+  return getUiLabel(`${NS.icsVisual}ColumnHeadings`, "Column headings");
+});
+
+const scalingFieldLabel = computed(() => {
+  return getUiLabel(`${NS.icsVisual}Scaling`, "Scaling");
+});
+
+const downloadFieldLabel = computed(() => {
+  return getUiLabel(`${NS.icsVisual}Download`, "Download");
+});
+
+const localizedLabelTypeOptions = computed(() => {
+  return labelTypeOptions.map((option) => ({
+    ...option,
+    label: getUiLabel(option.iri, option.fallback),
+  }));
+});
+
+const localizedScalingOptions = computed(() => {
+  return scalingOptions.map((option) => ({
+    ...option,
+    label: getUiLabel(option.iri, option.fallback),
+  }));
+});
+
 const commissionTitle = computed(() => {
   if (!meta.value) return "loading";
   // Simplified for now, could resolve from a specific IRI if needed
@@ -203,6 +259,14 @@ const commissionTitle = computed(() => {
 watch(target, (newTarget) => {
   infoTarget.value = resolveInfoTarget(newTarget);
 });
+
+watch(
+  [selectedLang, langs],
+  ([lang, availableLangs]) => {
+    downloadVersion.value = availableLangs.includes(lang) ? lang : "";
+  },
+  { immediate: true }
+);
 
 const downloadPdf = () => {
   if (!chartReleaseVersion.value || !meta.value?.versionInfo) {
@@ -268,7 +332,7 @@ const downloadPdf = () => {
       <div v-else>
         <div class="no-print chart-controls widther">
           <label>
-            Language:
+            {{ languageFieldLabel }}:
             <select v-model="selectedLang">
               <option v-for="lang in langs" :key="lang" :value="lang">
                 {{ languageNames.of(lang) }} ({{ getLocalLangName(lang) }})
@@ -276,27 +340,31 @@ const downloadPdf = () => {
             </select>
           </label>
           <label>
-            Scaling:
+            {{ scalingFieldLabel }}:
             <select v-model="selectedScale">
-              <option v-for="scale in scaleOptions" :key="scale" :value="scale">
-                {{ getScaleOptionLabel(scale) }}
+              <option
+                v-for="option in localizedScalingOptions"
+                :key="option.value"
+                :value="option.value"
+              >
+                {{ option.label }}
               </option>
             </select>
           </label>
           <label>
-            Column headings:
+            {{ columnHeadingsFieldLabel }}:
             <select v-model="labelType">
               <option
-                v-for="label in labelTypeOptions"
-                :key="label.value"
-                :value="label.value"
+                v-for="option in localizedLabelTypeOptions"
+                :key="option.value"
+                :value="option.value"
               >
-                {{ label.label }}
+                {{ option.label }}
               </option>
             </select>
           </label>
           <label>
-            Download:
+            {{ downloadFieldLabel }}:
             <select v-model="downloadVersion">
               <option value="">Main</option>
               <option v-for="lang in langs" :key="lang" :value="lang">
@@ -304,7 +372,7 @@ const downloadPdf = () => {
               </option>
             </select>
             <button @click="downloadPdf">
-              Data-generated PDF (test version)
+              Data-generated PDF
             </button>
             <small v-if="pdfVersionError && chartReleaseVersion">
               Using fallback version from chart metadata.
