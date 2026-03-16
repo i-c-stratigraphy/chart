@@ -1,9 +1,0 @@
-PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
-
-DELETE {
-    ?x skos:altLabel ?l .
-    ?x skos:prefLabel ?l .
-}
-WHERE {
-    ?x skos:altLabel|skos:prefLabel ?l .
-}

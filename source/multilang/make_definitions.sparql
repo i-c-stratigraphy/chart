@@ -1,0 +1,118 @@
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+CONSTRUCT {
+    ?age
+        skos:definition
+            ?en ,
+            ?az ,
+            ?ca ,
+            ?cs ,
+            ?de ,
+            ?es ,
+            ?es_419 ,
+            ?eu ,
+            ?fi ,
+            ?fr ,
+            ?hu ,
+            ?id ,
+            ?it ,
+            ?ja ,
+            ?ko ,
+            ?lt ,
+            ?nl ,
+            ?nl_be ,
+            ?no ,
+            ?pl ,
+            ?pt ,
+            ?pt_br ,
+            ?ru ,
+            ?sk ,
+            ?tr ,
+            ?zh ;
+    .
+}
+WHERE {
+    ?age
+        a skos:Concept ;
+        time:hasBeginning/ischart:inMYA ?beginning ;
+        time:hasEnd/ischart:inMYA ?end ;
+    .
+    BIND ("A time period from X to Y million years ago" AS ?template_en)
+    BIND (STRLANG(REPLACE(REPLACE(?template_en, "X", STR(?beginning)), "Y", STR(?end)), "en") AS ?en)
+
+    BIND ("X-dən Y milyon il əvvələ qədər olan zaman dövrü" AS ?template_az)
+    BIND (STRLANG(REPLACE(REPLACE(?template_az, "X", STR(?beginning)), "Y", STR(?end)), "az") AS ?az)
+
+    BIND ("Un període de temps de X a Y milions d'anys enrere" AS ?template_ca)
+    BIND (STRLANG(REPLACE(REPLACE(?template_ca, "X", STR(?beginning)), "Y", STR(?end)), "ca") AS ?ca)
+
+    BIND ("Časové období od X do Y milionů let před naším letopočtem" AS ?template_cs)
+    BIND (STRLANG(REPLACE(REPLACE(?template_cs, "X", STR(?beginning)), "Y", STR(?end)), "cs") AS ?cs)
+
+    BIND ("Ein Zeitraum von X bis Y Millionen Jahren" AS ?template_de)
+    BIND (STRLANG(REPLACE(REPLACE(?template_de, "X", STR(?beginning)), "Y", STR(?end)), "de") AS ?de)
+
+    BIND ("Un período de tiempo de X a Y millones de años atrás" AS ?template_es)
+    BIND (STRLANG(REPLACE(REPLACE(?template_es, "X", STR(?beginning)), "Y", STR(?end)), "es") AS ?es)
+
+    BIND ("Un período de tiempo de X a Y millones de años atrás" AS ?template_es_419)
+    BIND (STRLANG(REPLACE(REPLACE(?template_es_419, "X", STR(?beginning)), "Y", STR(?end)), "es-419") AS ?es_419)
+
+    BIND ("X eta Y milioi urte arteko denbora-tartea" AS ?template_eu)
+    BIND (STRLANG(REPLACE(REPLACE(?template_eu, "X", STR(?beginning)), "Y", STR(?end)), "eu") AS ?eu)
+
+    BIND ("Aikajakso X–Y miljoonaa vuotta sitten" AS ?template_fi)
+    BIND (STRLANG(REPLACE(REPLACE(?template_fi, "X", STR(?beginning)), "Y", STR(?end)), "fi") AS ?fi)
+
+    BIND ("Une période de temps de X à Y millions d'années" AS ?template_fr)
+    BIND (STRLANG(REPLACE(REPLACE(?template_fr, "X", STR(?beginning)), "Y", STR(?end)), "fr") AS ?fr)
+
+    BIND ("Egy X-tól Y millió évig tartó időszak ezelőtt" AS ?template_hu)
+    BIND (STRLANG(REPLACE(REPLACE(?template_hu, "X", STR(?beginning)), "Y", STR(?end)), "hu") AS ?hu)
+
+    BIND ("Suatu periode waktu dari X hingga Y juta tahun yang lalu" AS ?template_id)
+    BIND (STRLANG(REPLACE(REPLACE(?template_id, "X", STR(?beginning)), "Y", STR(?end)), "id") AS ?id)
+
+    BIND ("Un periodo di tempo da X a Y milioni di anni fa" AS ?template_it)
+    BIND (STRLANG(REPLACE(REPLACE(?template_it, "X", STR(?beginning)), "Y", STR(?end)), "it") AS ?it)
+
+    BIND ("X百万年前からY百万年前までの時代" AS ?template_ja)
+    BIND (STRLANG(REPLACE(REPLACE(?template_ja, "X", STR(?beginning)), "Y", STR(?end)), "ja") AS ?ja)
+
+    BIND ("X백만 년 전부터 Y백만 년 전까지의 시기" AS ?template_ko)
+    BIND (STRLANG(REPLACE(REPLACE(?template_ko, "X", STR(?beginning)), "Y", STR(?end)), "ko") AS ?ko)
+
+    BIND ("Laikotarpis nuo X iki Y milijonų metų prieš dabartį" AS ?template_lt)
+    BIND (STRLANG(REPLACE(REPLACE(?template_lt, "X", STR(?beginning)), "Y", STR(?end)), "lt") AS ?lt)
+
+    BIND ("Een tijdperiode van X tot Y miljoen jaar geleden" AS ?template_nl)
+    BIND (STRLANG(REPLACE(REPLACE(?template_nl, "X", STR(?beginning)), "Y", STR(?end)), "nl") AS ?nl)
+
+    BIND ("Een tijdsperiode van X tot Y miljoen jaar geleden" AS ?template_nl_be)
+    BIND (STRLANG(REPLACE(REPLACE(?template_nl_be, "X", STR(?beginning)), "Y", STR(?end)), "nl-be") AS ?nl_be)
+
+    BIND ("En tidsperiode fra X til Y millioner år siden" AS ?template_no)
+    BIND (STRLANG(REPLACE(REPLACE(?template_no, "X", STR(?beginning)), "Y", STR(?end)), "no") AS ?no)
+
+    BIND ("Okres czasu od X do Y milionów lat temu" AS ?template_pl)
+    BIND (STRLANG(REPLACE(REPLACE(?template_pl, "X", STR(?beginning)), "Y", STR(?end)), "pl") AS ?pl)
+
+    BIND ("Um período de tempo de X a Y milhões de anos atrás" AS ?template_pt)
+    BIND (STRLANG(REPLACE(REPLACE(?template_pt, "X", STR(?beginning)), "Y", STR(?end)), "pt") AS ?pt)
+
+    BIND ("Um período de tempo de X a Y milhões de anos atrás" AS ?template_pt_br)
+    BIND (STRLANG(REPLACE(REPLACE(?template_pt_br, "X", STR(?beginning)), "Y", STR(?end)), "pt-br") AS ?pt_br)
+
+    BIND ("Временной период от X до Y миллионов лет назад" AS ?template_ru)
+    BIND (STRLANG(REPLACE(REPLACE(?template_ru, "X", STR(?beginning)), "Y", STR(?end)), "ru") AS ?ru)
+
+    BIND ("Časové obdobie od X do Y miliónov rokov pred naším letopočtom" AS ?template_sk)
+    BIND (STRLANG(REPLACE(REPLACE(?template_sk, "X", STR(?beginning)), "Y", STR(?end)), "sk") AS ?sk)
+
+    BIND ("X ile Y milyon yıl önce arasındaki zaman dilimi" AS ?template_tr)
+    BIND (STRLANG(REPLACE(REPLACE(?template_tr, "X", STR(?beginning)), "Y", STR(?end)), "tr") AS ?tr)
+
+    BIND ("距今X至Y百万年前的时期" AS ?template_zh)
+    BIND (STRLANG(REPLACE(REPLACE(?template_zh, "X", STR(?beginning)), "Y", STR(?end)), "zh") AS ?zh)
+
+}

@@ -21,26 +21,27 @@ namespaces = {
 # load existing content
 g = Graph()
 
-xls = pd.ExcelFile(Path(__file__).parent / "multilang/source-multilang.xlsx")
+xls = pd.ExcelFile(Path(__file__).parent / "multilang.xlsx")
 
 for sheet_name in xls.sheet_names:
-    if sheet_name not in ["README", "default", "languages"]:
+    if sheet_name not in ["README", "languages", "prefixes"]:
         print(f"Sheet: {sheet_name}")
         df = pd.read_excel(xls, sheet_name=sheet_name)
 
         for i, row in df.iterrows():
-            if row.IRI not in [
-                "vis:mainBlurb",
-            ]:
-                if not pd.isna(row.IRI):
-                    parts = row.IRI.split(":")
-                    iri = URIRef(namespaces[parts[0]] + parts[1])
-                    #assert iri in g.subjects(), f"IRI {iri} not in graph"
-                    if not pd.isna(row.Language):
-                        pl = Literal(row.Language, lang=sheet_name)
-                        g.add((iri, SKOS.prefLabel, pl))
+            if not pd.isna(row.IRI):
+                # ICS' org names
+                if row.IRI == "dcterms:created":
+                    g.add((URIRef("https://linked.data.gov.au/org/ics"), SDO.alternateName, Literal(row.Language, lang=sheet_name)))
+
+                parts = row.IRI.split(":")
+                iri = URIRef(namespaces[parts[0]] + parts[1])
+                #assert iri in g.subjects(), f"IRI {iri} not in graph"
+                if not pd.isna(row.Language):
+                    pl = Literal(row.Language, lang=sheet_name)
+                    g.add((iri, SKOS.prefLabel, pl))
 
 for k, v in namespaces.items():
     g.bind(k, v)
-g.serialize(destination=str(Path(__file__).parent / "multilang/chart-multilang.ttl"), format="longturtle")
+g.serialize(destination=str(Path(__file__).parent / "chart-prefLabels.ttl"), format="longturtle")
 print(len(g))

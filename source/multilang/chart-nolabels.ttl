@@ -1,3 +1,4 @@
+
 PREFIX cs: <http://resource.geosciml.org/classifier/ics/ischart>
 PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX gts: <http://resource.geosciml.org/ontology/timescale/gts#>
@@ -274,7 +275,6 @@ ischart:Aalenian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:MiddleJurassic ;
-    skos:definition "A time period from 174.7 to 170.9 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "j1"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -298,7 +298,6 @@ ischart:Aeronian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Llandovery ;
-    skos:definition "A time period from 440.5 to 438.6 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "s2"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -322,7 +321,6 @@ ischart:Albian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:LowerCretaceous ;
-    skos:definition "A time period from 113.2 to 100.5 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "b6"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -345,7 +343,6 @@ ischart:Anisian
     gts:rank rank:Age ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:MiddleTriassic ;
-    skos:definition "A time period from 246.7 to 241.464 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "t3"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -367,7 +364,6 @@ ischart:Aptian
     gts:rank rank:Age ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:LowerCretaceous ;
-    skos:definition "A time period from 121.4 to 113.2 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "b5"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -391,7 +387,6 @@ ischart:Aquitanian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Miocene ;
-    skos:definition "A time period from 23.03 to 20.45 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "n1"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -413,7 +408,6 @@ ischart:Artinskian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Cisuralian ;
-    skos:definition "A time period from 290.1 to 283.3 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "p3"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -437,7 +431,6 @@ ischart:Asselian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Cisuralian ;
-    skos:definition "A time period from 298.9 to 293.52 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "p1"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -461,7 +454,6 @@ ischart:Bajocian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:MiddleJurassic ;
-    skos:definition "A time period from 170.9 to 168.2 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "j2"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -485,7 +477,6 @@ ischart:Barremian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:LowerCretaceous ;
-    skos:definition "A time period from 125.77 to 121.4 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "b4"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -507,7 +498,6 @@ ischart:Bartonian
     gts:rank rank:Age ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Eocene ;
-    skos:definition "A time period from 41.03 to 37.71 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "e6"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -529,7 +519,6 @@ ischart:Bashkirian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:LowerPennsylvanian ;
-    skos:definition "A time period from 323.4 to 315.2 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "c4"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -553,7 +542,6 @@ ischart:Bathonian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:MiddleJurassic ;
-    skos:definition "A time period from 168.2 to 165.3 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "j3"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -576,7 +564,6 @@ ischart:Berriasian
     gts:rank rank:Age ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:LowerCretaceous ;
-    skos:definition "A time period from 143.1 to 137.05 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "b1"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -599,7 +586,6 @@ ischart:Burdigalian
     gts:rank rank:Age ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Miocene ;
-    skos:definition "A time period from 20.45 to 15.98 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "n2"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -621,7 +607,6 @@ ischart:Calabrian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Pleistocene ;
-    skos:definition "A time period from 1.80 to 0.774 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "q2"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -642,7 +627,6 @@ ischart:Callovian
     gts:rank rank:Age ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:MiddleJurassic ;
-    skos:definition "A time period from 165.3 to 161.5 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "j4"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -666,7 +650,6 @@ ischart:Calymmian
     gts:ratifiedGSSA true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Mesoproterozoic ;
-    skos:definition "A time period from 1600 to 1400 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "MP1"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -687,7 +670,6 @@ ischart:CambrianStage10
     gts:rank rank:Age ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Furongian ;
-    skos:definition "A time period from 491.0 to 486.85 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "ep10"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -710,7 +692,6 @@ ischart:CambrianStage2
     gts:rank rank:Age ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Terreneuvian ;
-    skos:definition "A time period from 529.0 to 521.0 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "ep3"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -733,7 +714,6 @@ ischart:CambrianStage3
     gts:rank rank:Age ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:CambrianSeries2 ;
-    skos:definition "A time period from 521.0 to 514.5 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "ep2"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -756,7 +736,6 @@ ischart:CambrianStage4
     gts:rank rank:Age ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:CambrianSeries2 ;
-    skos:definition "A time period from 514.5 to 506.5 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "ep4"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -780,7 +759,6 @@ ischart:Campanian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:UpperCretaceous ;
-    skos:definition "A time period from 83.6 to 72.2 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "k5"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -804,7 +782,6 @@ ischart:Capitanian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Guadalupian ;
-    skos:definition "A time period from 264.28 to 259.51 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "p7"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -828,7 +805,6 @@ ischart:Carnian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:UpperTriassic ;
-    skos:definition "A time period from 237 to 227.3 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "t5"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -852,7 +828,6 @@ ischart:Cenomanian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:UpperCretaceous ;
-    skos:definition "A time period from 100.5 to 93.9 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "k1"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -876,7 +851,6 @@ ischart:Changhsingian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Lopingian ;
-    skos:definition "A time period from 254.14 to 251.902 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "p9"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -900,7 +874,6 @@ ischart:Chattian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Oligocene ;
-    skos:definition "A time period from 27.30 to 23.04 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "e9"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -922,7 +895,6 @@ ischart:Chibanian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Pleistocene ;
-    skos:definition "A time period from 0.774 to 0.129 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "q3"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -944,7 +916,6 @@ ischart:Coniacian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:UpperCretaceous ;
-    skos:definition "A time period from 89.8 to 85.7 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "k3"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -967,7 +938,6 @@ ischart:Cryogenian
     gts:rank rank:Period ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Neoproterozoic ;
-    skos:definition "A time period from 720 to 635 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "NP2"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -991,7 +961,6 @@ ischart:Danian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Paleocene ;
-    skos:definition "A time period from 66.00 to 61.66 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "e1"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -1013,7 +982,6 @@ ischart:Dapingian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:MiddleOrdovician ;
-    skos:definition "A time period from 471.3 to 469.4 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "o3"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -1037,7 +1005,6 @@ ischart:Darriwilian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:MiddleOrdovician ;
-    skos:definition "A time period from 469.4 to 458.2 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "o4"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -1061,7 +1028,6 @@ ischart:Drumian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Miaolingian ;
-    skos:definition "A time period from 504.5 to 500.5 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "ep6"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -1085,7 +1051,6 @@ ischart:Ectasian
     gts:ratifiedGSSA true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Mesoproterozoic ;
-    skos:definition "A time period from 1400 to 1200 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "MP2"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -1107,7 +1072,6 @@ ischart:Ediacaran
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Neoproterozoic ;
-    skos:definition "A time period from 635 to 538.8 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "NP3"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -1131,7 +1095,6 @@ ischart:Eifelian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:MiddleDevonian ;
-    skos:definition "A time period from 393.47 to 387.95 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "d4"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -1155,7 +1118,6 @@ ischart:Emsian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:LowerDevonian ;
-    skos:definition "A time period from 410.62 to 393.47 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "d3"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -1179,7 +1141,6 @@ ischart:Eoarchean
     gts:ratifiedGSSA true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Archean ;
-    skos:definition "A time period from 4031 to 3600 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "EA"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -1202,7 +1163,6 @@ ischart:Famennian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:UpperDevonian ;
-    skos:definition "A time period from 372.15 to 358.86 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "d7"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -1226,7 +1186,6 @@ ischart:Floian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:LowerOrdovician ;
-    skos:definition "A time period from 477.1 to 471.3 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "o2"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -1250,7 +1209,6 @@ ischart:Fortunian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Terreneuvian ;
-    skos:definition "A time period from 538.8 to 529.0 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "ep1"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -1274,7 +1232,6 @@ ischart:Frasnian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:UpperDevonian ;
-    skos:definition "A time period from 382.31 to 372.15 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "d6"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -1298,7 +1255,6 @@ ischart:Gelasian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Pleistocene ;
-    skos:definition "A time period from 2.58 to 1.80 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "q1"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -1320,7 +1276,6 @@ ischart:Givetian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:MiddleDevonian ;
-    skos:definition "A time period from 387.95 to 382.31 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "d5"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -1344,7 +1299,6 @@ ischart:Gorstian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Ludlow ;
-    skos:definition "A time period from 426.7 to 425.0 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "s6"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -1368,7 +1322,6 @@ ischart:Greenlandian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Holocene ;
-    skos:definition "A time period from 0.0117 to 0.0082 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "q5"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -1390,7 +1343,6 @@ ischart:Guzhangian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Miaolingian ;
-    skos:definition "A time period from 500.5 to 497.0 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "ep7"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -1413,7 +1365,6 @@ ischart:Gzhelian
     gts:rank rank:Age ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:UpperPennsylvanian ;
-    skos:definition "A time period from 303.7 to 298.9 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "c7"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -1437,7 +1388,6 @@ ischart:Hadean
     gts:ratifiedGSSA true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Precambrian ;
-    skos:definition "A time period from 4567 to 4031 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "HA"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -1460,7 +1410,6 @@ ischart:Hauterivian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:LowerCretaceous ;
-    skos:definition "A time period from 132.6 to 125.77 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "b3"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -1483,7 +1432,6 @@ ischart:Hettangian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:LowerJurassic ;
-    skos:definition "A time period from 201.4 to 199.5 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "I1"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -1507,7 +1455,6 @@ ischart:Hirnantian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:UpperOrdovician ;
-    skos:definition "A time period from 445.2 to 443.1 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "o7"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -1531,7 +1478,6 @@ ischart:Homerian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Wenlock ;
-    skos:definition "A time period from 430.6 to 426.7 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "s5"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -1555,7 +1501,6 @@ ischart:Induan
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:LowerTriassic ;
-    skos:definition "A time period from 251.902 to 249.9 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "t1"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -1578,7 +1523,6 @@ ischart:Jiangshanian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Furongian ;
-    skos:definition "A time period from 494.2 to 491.0 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "ep9"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -1601,7 +1545,6 @@ ischart:Kasimovian
     gts:rank rank:Age ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:UpperPennsylvanian ;
-    skos:definition "A time period from 307.0 to 303.7 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "c6"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -1625,7 +1568,6 @@ ischart:Katian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:UpperOrdovician ;
-    skos:definition "A time period from 452.8 to 445.2 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "o6"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -1649,7 +1591,6 @@ ischart:Kimmeridgian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:UpperJurassic ;
-    skos:definition "A time period from 154.8 to 149.2 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "j6"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -1672,7 +1613,6 @@ ischart:Kungurian
     gts:rank rank:Age ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Cisuralian ;
-    skos:definition "A time period from 283.3 to 274.4 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "p4"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -1696,7 +1636,6 @@ ischart:Ladinian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:MiddleTriassic ;
-    skos:definition "A time period from 241.464 to 237 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "t4"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -1720,7 +1659,6 @@ ischart:Langhian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Miocene ;
-    skos:definition "A time period from 15.98 to 13.82 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "n3"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -1742,7 +1680,6 @@ ischart:Lochkovian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:LowerDevonian ;
-    skos:definition "A time period from 419.62 to 413.02 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "d1"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -1766,7 +1703,6 @@ ischart:Ludfordian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Ludlow ;
-    skos:definition "A time period from 425.0 to 422.7 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "s7"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -1790,7 +1726,6 @@ ischart:Lutetian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Eocene ;
-    skos:definition "A time period from 48.07 to 41.03 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "e5"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -1812,7 +1747,6 @@ ischart:Maastrichtian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:UpperCretaceous ;
-    skos:definition "A time period from 72.2 to 66.00 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "k6"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -1835,7 +1769,6 @@ ischart:Meghalayan
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Holocene ;
-    skos:definition "A time period from 0.0042 million years ago to the present" ;
     skos:inScheme cs: ;
     skos:notation "q7"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -1857,7 +1790,6 @@ ischart:Mesoarchean
     gts:ratifiedGSSA true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Archean ;
-    skos:definition "A time period from 3200 to 2800 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "MA"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -1879,7 +1811,6 @@ ischart:Messinian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Miocene ;
-    skos:definition "A time period from 7.246 to 5.333 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "n6"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -1900,7 +1831,6 @@ ischart:Moscovian
     gts:rank rank:Age ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:MiddlePennsylvanian ;
-    skos:definition "A time period from 315.2 to 307.0 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "c5"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -1924,7 +1854,6 @@ ischart:Neoarchean
     gts:ratifiedGSSA true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Archean ;
-    skos:definition "A time period from 2800 to 2500 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "NA"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -1945,7 +1874,6 @@ ischart:Norian
     gts:rank rank:Age ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:UpperTriassic ;
-    skos:definition "A time period from 227.3 to 205.7 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "t6"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -1969,7 +1897,6 @@ ischart:Northgrippian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Holocene ;
-    skos:definition "A time period from 0.0082 to 0.0042 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "q6"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -1990,7 +1917,6 @@ ischart:Olenekian
     gts:rank rank:Age ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:LowerTriassic ;
-    skos:definition "A time period from 246.7 to 249.9 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "t2"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -2012,7 +1938,6 @@ ischart:Orosirian
     gts:ratifiedGSSA true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Paleoproterozoic ;
-    skos:definition "A time period from 2050 to 1800 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "PP3"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -2033,7 +1958,6 @@ ischart:Oxfordian
     gts:rank rank:Age ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:UpperJurassic ;
-    skos:definition "A time period from 161.5 to 154.8 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "j5"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -2057,7 +1981,6 @@ ischart:Paibian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Furongian ;
-    skos:definition "A time period from 497.0 to 494.2 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "ep8"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -2081,7 +2004,6 @@ ischart:Paleoarchean
     gts:ratifiedGSSA true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Archean ;
-    skos:definition "A time period from 3600 to 3200 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "PA"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -2103,7 +2025,6 @@ ischart:Piacenzian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Pliocene ;
-    skos:definition "A time period from 3.600 to 2.58 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "n8"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -2125,7 +2046,6 @@ ischart:Pliensbachian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:LowerJurassic ;
-    skos:definition "A time period from 192.9 to 184.2 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "I3"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -2149,7 +2069,6 @@ ischart:Pragian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:LowerDevonian ;
-    skos:definition "A time period from 413.02 to 410.62 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "d2"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -2173,7 +2092,6 @@ ischart:Priabonian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Eocene ;
-    skos:definition "A time period from 37.71 to 33.9 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "e7"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -2194,7 +2112,6 @@ ischart:Rhaetian
     gts:rank rank:Age ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:UpperTriassic ;
-    skos:definition "A time period from 205.7 to 201.4 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "t7"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -2218,7 +2135,6 @@ ischart:Rhuddanian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Llandovery ;
-    skos:definition "A time period from 443.1 to 440.5 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "s1"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -2242,7 +2158,6 @@ ischart:Rhyacian
     gts:ratifiedGSSA true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Paleoproterozoic ;
-    skos:definition "A time period from 2300 to 2050 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "PP2"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -2264,7 +2179,6 @@ ischart:Roadian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Guadalupian ;
-    skos:definition "A time period from 274.4 to 266.9 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "p5"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -2288,7 +2202,6 @@ ischart:Rupelian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Oligocene ;
-    skos:definition "A time period from 33.9 to 27.30 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "e8"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -2310,7 +2223,6 @@ ischart:Sakmarian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Cisuralian ;
-    skos:definition "A time period from 293.52 to 290.1 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "p2"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -2334,7 +2246,6 @@ ischart:Sandbian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:UpperOrdovician ;
-    skos:definition "A time period from 458.2 to 452.8 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "o5"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -2358,7 +2269,6 @@ ischart:Santonian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:UpperCretaceous ;
-    skos:definition "A time period from 85.7 to 83.6 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "k4"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -2382,7 +2292,6 @@ ischart:Selandian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Paleocene ;
-    skos:definition "A time period from 61.66 to 59.24 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "e2"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -2403,7 +2312,6 @@ ischart:Serpukhovian
     gts:rank rank:Age ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:UpperMississippian ;
-    skos:definition "A time period from 330.3 to 323.4 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "c3"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -2427,7 +2335,6 @@ ischart:Serravallian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Miocene ;
-    skos:definition "A time period from 13.82 to 11.63 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "n4"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -2449,7 +2356,6 @@ ischart:Sheinwoodian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Wenlock ;
-    skos:definition "A time period from 432.9 to 430.6 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "s4"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -2473,7 +2379,6 @@ ischart:Siderian
     gts:ratifiedGSSA true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Paleoproterozoic ;
-    skos:definition "A time period from 2500 to 2300 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "PP1"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -2495,7 +2400,6 @@ ischart:Sinemurian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:LowerJurassic ;
-    skos:definition "A time period from 199.5 to 192.9 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "I2"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -2519,7 +2423,6 @@ ischart:Statherian
     gts:ratifiedGSSA true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Paleoproterozoic ;
-    skos:definition "A time period from 1800 to 1600 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "PP4"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -2541,7 +2444,6 @@ ischart:Stenian
     gts:ratifiedGSSA true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Mesoproterozoic ;
-    skos:definition "A time period from 1200 to 1000 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "MP3"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -2563,7 +2465,6 @@ ischart:Telychian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Llandovery ;
-    skos:definition "A time period from 438.6 to 432.9 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "s3"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -2587,7 +2488,6 @@ ischart:Thanetian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Paleocene ;
-    skos:definition "A time period from 59.24 to 56.00 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "e3"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -2608,7 +2508,6 @@ ischart:Tithonian
     gts:rank rank:Age ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:UpperJurassic ;
-    skos:definition "A time period from 149.2 to 143.1 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "j7"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -2632,7 +2531,6 @@ ischart:Toarcian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:LowerJurassic ;
-    skos:definition "A time period from 184.2 to 174.7 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "I4"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -2656,7 +2554,6 @@ ischart:Tonian
     gts:ratifiedGSSA true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Neoproterozoic ;
-    skos:definition "A time period from 1000 to 720 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "NP1"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -2679,7 +2576,6 @@ ischart:Tortonian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Miocene ;
-    skos:definition "A time period from 11.63 to 7.246 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "n5"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -2701,7 +2597,6 @@ ischart:Tournaisian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:LowerMississippian ;
-    skos:definition "A time period from 358.86 to 346.7 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "c1"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -2725,7 +2620,6 @@ ischart:Tremadocian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:LowerOrdovician ;
-    skos:definition "A time period from 486.85 to 477.1 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "o1"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -2749,7 +2643,6 @@ ischart:Turonian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:UpperCretaceous ;
-    skos:definition "A time period from 93.9 to 89.8 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "k2"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -2772,7 +2665,6 @@ ischart:UpperPleistocene
     gts:rank rank:Age ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Pleistocene ;
-    skos:definition "A time period from 0.129 to 0.0117 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "q4"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -2794,7 +2686,6 @@ ischart:Valanginian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:LowerCretaceous ;
-    skos:definition "A time period from 132.6 to 137.05 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "b2"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -2818,7 +2709,6 @@ ischart:Visean
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:MiddleMississippian ;
-    skos:definition "A time period from 346.7 to 330.3 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "c2"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -2842,7 +2732,6 @@ ischart:Wordian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Guadalupian ;
-    skos:definition "A time period from 266.9 to 264.28 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "p6"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -2866,7 +2755,6 @@ ischart:Wuchiapingian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Lopingian ;
-    skos:definition "A time period from 259.51 to 254.14 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "p8"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -2890,7 +2778,6 @@ ischart:Wuliuan
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Miaolingian ;
-    skos:definition "A time period from 506.5 to 504.5 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "ep5"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -2914,7 +2801,6 @@ ischart:Ypresian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Eocene ;
-    skos:definition "A time period from 56.00 to 48.07 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "e4"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -2936,7 +2822,6 @@ ischart:Zanclean
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Pliocene ;
-    skos:definition "A time period from 5.333 to 3.600 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "n7"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -2958,7 +2843,6 @@ ischart:LowerMississippian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Mississippian ;
-    skos:definition "A time period from 358.86 to 346.7 million years ago" ;
     skos:inScheme cs: ;
     skos:narrower ischart:Tournaisian ;
     skos:notation "C1c1"^^ischart:ccgmShortCode ;
@@ -2983,7 +2867,6 @@ ischart:LowerPennsylvanian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Pennsylvanian ;
-    skos:definition "A time period from 323.4 to 315.2 million years ago" ;
     skos:inScheme cs: ;
     skos:narrower ischart:Bashkirian ;
     skos:notation "C2c4"^^ischart:ccgmShortCode ;
@@ -3008,7 +2891,6 @@ ischart:MiddleMississippian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Mississippian ;
-    skos:definition "A time period from 346.7 to 330.3 million years ago" ;
     skos:inScheme cs: ;
     skos:narrower ischart:Visean ;
     skos:notation "C1c2"^^ischart:ccgmShortCode ;
@@ -3032,7 +2914,6 @@ ischart:MiddlePennsylvanian
     gts:rank rank:Epoch ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Pennsylvanian ;
-    skos:definition "A time period from 315.2 to 307.0 million years ago" ;
     skos:inScheme cs: ;
     skos:narrower ischart:Moscovian ;
     skos:notation "C2c5"^^ischart:ccgmShortCode ;
@@ -3059,7 +2940,6 @@ ischart:Pridoli
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Silurian ;
-    skos:definition "A time period from 422.7 to 419.62 million years ago" ;
     skos:inScheme cs: ;
     skos:notation "S4"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -3082,7 +2962,6 @@ ischart:UpperMississippian
     gts:rank rank:Epoch ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Mississippian ;
-    skos:definition "A time period from 330.3 to 323.4 million years ago" ;
     skos:inScheme cs: ;
     skos:narrower ischart:Serpukhovian ;
     skos:notation "C1c3"^^ischart:ccgmShortCode ;
@@ -3103,26 +2982,6 @@ ischart:UpperMississippian
 
 <https://linked.data.gov.au/org/ics>
     a sdo:Organization ;
-    sdo:alternateName
-        "Comissió Internacional d’Estratigrafia"@ca ,
-        "Mezinárodní stratigrafická komise"@cz ,
-        "Internationale Stratigraphische Kommission"@de ,
-        "Comisión Internacional de Estratigrafía"@es ,
-        "Estratigrafiako Nazioarteko Batzordea"@eu ,
-        "Kansainvälinen stratigrafian komitea"@fi ,
-        "Commission Internationale de Stratigraphie"@fr ,
-        "Nemzetközi Rétegtani Bizottság"@hu ,
-        "Commissione Internazionale di Stratigrafia"@it ,
-        "国際層序委員会"@jp ,
-        "국 제 층 서 위 원 회"@ko ,
-        "Tarptautinė stratigrafijos komisija"@lt ,
-        "Internationale Commissie voor Stratigrafie"@nl ,
-        "Den internasjonale stratigrafiske kommisjon"@no ,
-        "Comissão Internacional de Estratigrafia"@pt ,
-        "Международная комиссия по стратиграфии"@ru ,
-        "Medzinárodná stratigrafická komisia"@sk ,
-        "Uluslararası Stratigrafi Komisyonu"@tr ,
-        "国 际 地 层 委 员 会"@zh ;
     sdo:name "International Commission on Stratigraphy" ;
     sdo:url "https://stratigraphy.org"^^xsd:anyURI ;
 .
@@ -3132,7 +2991,6 @@ ischart:CambrianSeries2
     gts:rank rank:Epoch ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Cambrian ;
-    skos:definition "A time period from 521.0 to 506.5 million years ago" ;
     skos:inScheme cs: ;
     skos:narrower
         ischart:CambrianStage3 ,
@@ -3159,7 +3017,6 @@ ischart:Carboniferous
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Paleozoic ;
-    skos:definition "A time period from 358.86 to 298.9 million years ago" ;
     skos:inScheme cs: ;
     skos:narrower
         ischart:Mississippian ,
@@ -3185,7 +3042,6 @@ ischart:Cretaceous
     gts:rank rank:Period ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Mesozoic ;
-    skos:definition "A time period from 143.1 to 66.00 million years ago" ;
     skos:inScheme cs: ;
     skos:narrower
         ischart:LowerCretaceous ,
@@ -3211,7 +3067,6 @@ ischart:Lopingian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Permian ;
-    skos:definition "A time period from 259.51 to 251.902 million years ago" ;
     skos:inScheme cs: ;
     skos:narrower
         ischart:Changhsingian ,
@@ -3238,7 +3093,6 @@ ischart:LowerOrdovician
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Ordovician ;
-    skos:definition "A time period from 486.85 to 471.3 million years ago" ;
     skos:inScheme cs: ;
     skos:narrower
         ischart:Floian ,
@@ -3265,7 +3119,6 @@ ischart:LowerTriassic
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Triassic ;
-    skos:definition "A time period from 251.902 to 246.7 million years ago" ;
     skos:inScheme cs: ;
     skos:narrower
         ischart:Induan ,
@@ -3291,7 +3144,6 @@ ischart:Ludlow
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Silurian ;
-    skos:definition "A time period from 426.7 to 419.62 million years ago" ;
     skos:inScheme cs: ;
     skos:narrower
         ischart:Gorstian ,
@@ -3318,7 +3170,6 @@ ischart:MiddleDevonian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Devonian ;
-    skos:definition "A time period from 393.47 to 382.31 million years ago" ;
     skos:inScheme cs: ;
     skos:narrower
         ischart:Eifelian ,
@@ -3345,7 +3196,6 @@ ischart:MiddleOrdovician
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Ordovician ;
-    skos:definition "A time period from 471.3 to 458.2 million years ago" ;
     skos:inScheme cs: ;
     skos:narrower
         ischart:Dapingian ,
@@ -3371,7 +3221,6 @@ ischart:MiddleTriassic
     gts:rank rank:Epoch ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Triassic ;
-    skos:definition "A time period from 246.7 to 237 million years ago" ;
     skos:inScheme cs: ;
     skos:narrower
         ischart:Anisian ,
@@ -3397,7 +3246,6 @@ ischart:Neogene
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Cenozoic ;
-    skos:definition "A time period from 23.04 to 2.58 million years ago" ;
     skos:inScheme cs: ;
     skos:narrower
         ischart:Miocene ,
@@ -3422,7 +3270,6 @@ ischart:Oligocene
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Paleogene ;
-    skos:definition "A time period from 33.9 to 23.04 million years ago" ;
     skos:inScheme cs: ;
     skos:narrower
         ischart:Chattian ,
@@ -3447,7 +3294,6 @@ ischart:Pliocene
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Neogene ;
-    skos:definition "A time period from 5.333 to 2.58 million years ago" ;
     skos:inScheme cs: ;
     skos:narrower
         ischart:Piacenzian ,
@@ -3472,7 +3318,6 @@ ischart:Quaternary
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Cenozoic ;
-    skos:definition "A time period from 2.58 million years ago to the present" ;
     skos:inScheme cs: ;
     skos:narrower
         ischart:Holocene ,
@@ -3497,7 +3342,6 @@ ischart:Terreneuvian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Cambrian ;
-    skos:definition "A time period from 538.8 to 521.0 million years ago" ;
     skos:inScheme cs: ;
     skos:narrower
         ischart:CambrianStage2 ,
@@ -3524,7 +3368,6 @@ ischart:UpperDevonian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Devonian ;
-    skos:definition "A time period from 382.31 to 358.86 million years ago" ;
     skos:inScheme cs: ;
     skos:narrower
         ischart:Famennian ,
@@ -3550,7 +3393,6 @@ ischart:UpperPennsylvanian
     gts:rank rank:Epoch ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Pennsylvanian ;
-    skos:definition "A time period from 307.0 to 298.9 million years ago" ;
     skos:inScheme cs: ;
     skos:narrower
         ischart:Gzhelian ,
@@ -3577,7 +3419,6 @@ ischart:Wenlock
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Silurian ;
-    skos:definition "A time period from 432.9 to 426.7 million years ago" ;
     skos:inScheme cs: ;
     skos:narrower
         ischart:Homerian ,
@@ -3604,7 +3445,6 @@ ischart:Cenozoic
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Phanerozoic ;
-    skos:definition "A time period from 66.00 million years ago to the present" ;
     skos:inScheme cs: ;
     skos:narrower
         ischart:Neogene ,
@@ -3630,7 +3470,6 @@ ischart:Devonian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Paleozoic ;
-    skos:definition "A time period from 419.62 to 358.86 million years ago" ;
     skos:inScheme cs: ;
     skos:narrower
         ischart:LowerDevonian ,
@@ -3658,7 +3497,6 @@ ischart:Furongian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Cambrian ;
-    skos:definition "A time period from 497.0 to 486.85 million years ago" ;
     skos:inScheme cs: ;
     skos:narrower
         ischart:CambrianStage10 ,
@@ -3686,7 +3524,6 @@ ischart:Guadalupian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Permian ;
-    skos:definition "A time period from 274.4 to 259.51 million years ago" ;
     skos:inScheme cs: ;
     skos:narrower
         ischart:Capitanian ,
@@ -3714,7 +3551,6 @@ ischart:Holocene
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Quaternary ;
-    skos:definition "A time period from 0.0117 million years ago to the present" ;
     skos:inScheme cs: ;
     skos:narrower
         ischart:Greenlandian ,
@@ -3740,7 +3576,6 @@ ischart:Jurassic
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Mesozoic ;
-    skos:definition "A time period from 201.4 to 143.1 million years ago" ;
     skos:inScheme cs: ;
     skos:narrower
         ischart:LowerJurassic ,
@@ -3768,7 +3603,6 @@ ischart:Llandovery
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Silurian ;
-    skos:definition "A time period from 443.1 to 432.9 million years ago" ;
     skos:inScheme cs: ;
     skos:narrower
         ischart:Aeronian ,
@@ -3796,7 +3630,6 @@ ischart:LowerDevonian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Devonian ;
-    skos:definition "A time period from 419.62 to 393.47 million years ago" ;
     skos:inScheme cs: ;
     skos:narrower
         ischart:Emsian ,
@@ -3824,7 +3657,6 @@ ischart:Mesoproterozoic
     gts:ratifiedGSSA true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Proterozoic ;
-    skos:definition "A time period from 1600 to 1000 million years ago" ;
     skos:inScheme cs: ;
     skos:narrower
         ischart:Calymmian ,
@@ -3850,7 +3682,6 @@ ischart:Mesozoic
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Phanerozoic ;
-    skos:definition "A time period from 251.902 to 66.00 million years ago" ;
     skos:inScheme cs: ;
     skos:narrower
         ischart:Cretaceous ,
@@ -3877,7 +3708,6 @@ ischart:Miaolingian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Cambrian ;
-    skos:definition "A time period from 506.5 to 497.0 million years ago" ;
     skos:inScheme cs: ;
     skos:narrower
         ischart:Drumian ,
@@ -3905,7 +3735,6 @@ ischart:Mississippian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Carboniferous ;
-    skos:definition "A time period from 358.86 to 323.4 million years ago" ;
     skos:inScheme cs: ;
     skos:narrower
         ischart:LowerMississippian ,
@@ -3934,7 +3763,6 @@ ischart:Neoproterozoic
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Proterozoic ;
-    skos:definition "A time period from 1000 to 538.8 million years ago" ;
     skos:inScheme cs: ;
     skos:narrower
         ischart:Cryogenian ,
@@ -3961,7 +3789,6 @@ ischart:Ordovician
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Paleozoic ;
-    skos:definition "A time period from 486.85 to 443.1 million years ago" ;
     skos:inScheme cs: ;
     skos:narrower
         ischart:LowerOrdovician ,
@@ -3989,7 +3816,6 @@ ischart:Paleocene
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Paleogene ;
-    skos:definition "A time period from 66.00 to 56.00 million years ago" ;
     skos:inScheme cs: ;
     skos:narrower
         ischart:Danian ,
@@ -4015,7 +3841,6 @@ ischart:Paleogene
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Cenozoic ;
-    skos:definition "A time period from 66.00 to 23.04 million years ago" ;
     skos:inScheme cs: ;
     skos:narrower
         ischart:Eocene ,
@@ -4041,7 +3866,6 @@ ischart:Pennsylvanian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Carboniferous ;
-    skos:definition "A time period from 323.4 to 298.9 million years ago" ;
     skos:inScheme cs: ;
     skos:narrower
         ischart:LowerPennsylvanian ,
@@ -4069,7 +3893,6 @@ ischart:Permian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Paleozoic ;
-    skos:definition "A time period from 298.9 to 251.902 million years ago" ;
     skos:inScheme cs: ;
     skos:narrower
         ischart:Cisuralian ,
@@ -4096,7 +3919,6 @@ ischart:Phanerozoic
     gts:rank rank:Eon ;
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
-    skos:definition "A time period from 538.8 million years ago to the present" ;
     skos:inScheme cs: ;
     skos:narrower
         ischart:Cenozoic ,
@@ -4122,7 +3944,6 @@ ischart:Precambrian
     gts:rank rank:Super-Eon ;
     gts:ratifiedGSSA true ;
     rdfs:isDefinedBy ts:gts2020 ;
-    skos:definition "A time period from 4567 to 538.8 million years ago" ;
     skos:inScheme cs: ;
     skos:narrower
         ischart:Archean ,
@@ -4149,7 +3970,6 @@ ischart:Proterozoic
     gts:ratifiedGSSA true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Precambrian ;
-    skos:definition "A time period from 2500 to 538.8 million years ago" ;
     skos:inScheme cs: ;
     skos:narrower
         ischart:Mesoproterozoic ,
@@ -4176,7 +3996,6 @@ ischart:Triassic
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Mesozoic ;
-    skos:definition "A time period from 251.902 to 201.4 million years ago" ;
     skos:inScheme cs: ;
     skos:narrower
         ischart:LowerTriassic ,
@@ -4203,7 +4022,6 @@ ischart:UpperJurassic
     gts:rank rank:Epoch ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Jurassic ;
-    skos:definition "A time period from 161.5 to 143.1 million years ago" ;
     skos:inScheme cs: ;
     skos:narrower
         ischart:Kimmeridgian ,
@@ -4231,7 +4049,6 @@ ischart:UpperOrdovician
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Ordovician ;
-    skos:definition "A time period from 458.2 to 443.1 million years ago" ;
     skos:inScheme cs: ;
     skos:narrower
         ischart:Hirnantian ,
@@ -4259,7 +4076,6 @@ ischart:UpperTriassic
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Triassic ;
-    skos:definition "A time period from 237 to 201.4 million years ago" ;
     skos:inScheme cs: ;
     skos:narrower
         ischart:Carnian ,
@@ -4287,7 +4103,6 @@ ischart:Archean
     gts:ratifiedGSSA true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Precambrian ;
-    skos:definition "A time period from 4031 to 2500 million years ago" ;
     skos:inScheme cs: ;
     skos:narrower
         ischart:Eoarchean ,
@@ -4315,7 +4130,6 @@ ischart:Cambrian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Paleozoic ;
-    skos:definition "A time period from 538.8 to 486.85 million years ago" ;
     skos:inScheme cs: ;
     skos:narrower
         ischart:CambrianSeries2 ,
@@ -4344,7 +4158,6 @@ ischart:Cisuralian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Permian ;
-    skos:definition "A time period from 298.9 to 274.4 million years ago" ;
     skos:inScheme cs: ;
     skos:narrower
         ischart:Artinskian ,
@@ -4373,7 +4186,6 @@ ischart:Eocene
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Paleogene ;
-    skos:definition "A time period from 56.00 to 33.9 million years ago" ;
     skos:inScheme cs: ;
     skos:narrower
         ischart:Bartonian ,
@@ -4400,7 +4212,6 @@ ischart:LowerJurassic
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Jurassic ;
-    skos:definition "A time period from 201.4 to 174.7 million years ago" ;
     skos:inScheme cs: ;
     skos:narrower
         ischart:Hettangian ,
@@ -4429,7 +4240,6 @@ ischart:MiddleJurassic
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Jurassic ;
-    skos:definition "A time period from 174.7 to 161.5 million years ago" ;
     skos:inScheme cs: ;
     skos:narrower
         ischart:Aalenian ,
@@ -4458,7 +4268,6 @@ ischart:Paleoproterozoic
     gts:ratifiedGSSA true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Proterozoic ;
-    skos:definition "A time period from 2500 to 1600 million years ago" ;
     skos:inScheme cs: ;
     skos:narrower
         ischart:Orosirian ,
@@ -4485,7 +4294,6 @@ ischart:Pleistocene
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Quaternary ;
-    skos:definition "A time period from 2.58 to 0.0117 million years ago" ;
     skos:inScheme cs: ;
     skos:narrower
         ischart:Calabrian ,
@@ -4512,7 +4320,6 @@ ischart:Silurian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Paleozoic ;
-    skos:definition "A time period from 443.1 to 419.62 million years ago" ;
     skos:inScheme cs: ;
     skos:narrower
         ischart:Llandovery ,
@@ -4540,7 +4347,6 @@ ischart:LowerCretaceous
     gts:rank rank:Epoch ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Cretaceous ;
-    skos:definition "A time period from 143.1 to 100.5 million years ago" ;
     skos:inScheme cs: ;
     skos:narrower
         ischart:Albian ,
@@ -4571,7 +4377,6 @@ ischart:Miocene
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Neogene ;
-    skos:definition "A time period from 23.04 to 5.333 million years ago" ;
     skos:inScheme cs: ;
     skos:narrower
         ischart:Aquitanian ,
@@ -4600,7 +4405,6 @@ ischart:Paleozoic
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Phanerozoic ;
-    skos:definition "A time period from 251.902 to 538.8 million years ago" ;
     skos:inScheme cs: ;
     skos:narrower
         ischart:Cambrian ,
@@ -4631,7 +4435,6 @@ ischart:UpperCretaceous
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Cretaceous ;
-    skos:definition "A time period from 100.5 to 66.00 million years ago" ;
     skos:inScheme cs: ;
     skos:narrower
         ischart:Campanian ,
@@ -4681,4 +4484,3 @@ cs:
     sdo:copyrightNotice "(c) International Commission on Stratigraphy, 2024"@en ;
     sdo:license <https://creativecommons.org/licenses/by/4.0/> ;
 .
-
