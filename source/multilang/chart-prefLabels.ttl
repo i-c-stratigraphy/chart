@@ -223,7 +223,7 @@ ischart:Anisian
         "Anisian"@en ,
         "Anisiense"@es ,
         "Anisiano"@es-a ,
-        "Albiar"@eu ,
+        "Anisiar"@eu ,
         "Anis"@fi ,
         "Anisien"@fr ,
         "anisusi"@hu ,
