@@ -389,7 +389,7 @@ ischart:Asselian
         "Asseliano"@pt ,
         "Asseliano"@pt-br ,
         "Ассельский"@ru ,
-        "artinsk"@sk ,
+        "assel"@sk ,
         "Asseliyen"@tr ,
         "阿瑟尔阶"@zh ;
 .
@@ -2151,7 +2151,7 @@ ischart:Jurassic
         "Giurassico"@it ,
         "ジュラ系／紀"@ja ,
         "쥐라기"@ko ,
-        "Mezozojus"@lt ,
+        "Jura"@lt ,
         "Jura"@nl ,
         "Jura"@nl-be ,
         "Jura"@no ,
@@ -2906,8 +2906,8 @@ ischart:Neoproterozoic
         "Neoproterozoïcum"@nl-be ,
         "Neoproterozoikum"@no ,
         "Neoproterozoik"@pl ,
-        "Neoarqueano"@pt ,
-        "Neoarqueano"@pt-br ,
+        "Neoproterozoico"@pt ,
+        "Neoproterozoico"@pt-br ,
         "Неопротерозойская"@ru ,
         "neoproterozoikum"@sk ,
         "Neo proterozoyik"@tr ,

@@ -2440,7 +2440,7 @@ ischart:Asselian
         "Asseliano"@pt ,
         "Asseliano"@pt-br ,
         "Ассельский"@ru ,
-        "artinsk"@sk ,
+        "assel"@sk ,
         "Asseliyen"@tr ,
         "阿瑟尔阶"@zh ;
     time:hasBeginning
@@ -12574,7 +12574,7 @@ ischart:Jurassic
         "Giurassico"@it ,
         "ジュラ系／紀"@ja ,
         "쥐라기"@ko ,
-        "Mezozojus"@lt ,
+        "Jura"@lt ,
         "Jura"@nl ,
         "Jura"@nl-be ,
         "Jura"@no ,
