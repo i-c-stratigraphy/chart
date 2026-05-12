@@ -38,7 +38,7 @@ dcterms:bibliographicCitation
         "Citeren: Cohen, K.M., Finney, S.C., Gibbard, P.L. & Fan, J.-X. (2013; updated). The ICS International Chronostratigraphic Chart. Episodes 36: 199-204."@nl-be ,
         "Referanse: Cohen, K.M., Finney, S.C., Gibbard, P.L. & Fan, J.-X. (2013; updated). The ICS International Chronostratigraphic Chart. Episodes 36: 199-204."@no ,
         "Cohen K, Harper D, Gibbard P, Car N. The ICS international chronostratigraphic chart this decade. Episodes 2025;48:105-115. https://doi.org/10.18814/epiiugs/2025/025001. Zmieniono 2024-12."@pl ,
-        "Citar: Cohen, K.M., Finney, S.C., Gibbard, P.L. & Fan, J.-X. (2013; atualizada) The ICS International chronostratigraphic Chart. Episodes 36: 199-204."@pt-br ,
+        "Citar: Cohen, K.M., Harper, D.A.T., Gibbard, P.L. & Car, N. (2025) The ICS international chronostratigraphic chart this decade. Episodes 48: 105-115."@pt-br ,
         "Цитировать: Cohen, K.M., Finney, S.C., Gibbard, P.L. & Fan, J.-X. (2013; с дополнениями) The ICS International Chronostratigraphic Chart. Episodes 36: 199-204."@ru ,
         "Citovať ako: Cohen, K.M., Finney, S.C., Gibbard, P.L. & Fan, J.-X. (2013; updated) The ICS International Chronostratigraphic Chart. Episodes 36"@sk ,
         "Kaynak gösterimi: Cohen, K.M., Finney, S.C., Gibbard, P.L. & Fan, J.-X. (2013; updated) The ICS International Chronostratigraphic Chart. Episodes 36: 199-204."@tr ,
@@ -67,7 +67,7 @@ dcterms:contributor
         "Tabellen er tegnet av K.M. Cohen, D.A.T. Harper, P.L. Gibbard & J.-X. Fan"@no ,
         "Tablica wygenerowana na podstawie danych ze strony www.stratigraphy.org, prowadzonej przez oficerów ICS (N. Car, K.M. Cohen) i zarząd ICS. Tablica jest dziełem wszystkich obecnych i byłych członków ICS."@pl ,
         "Tabela desenhada por K.M. Cohen, D.A.T. Harper, P.L. Gibbard e N. Car"@pt ,
-        "Tabela desenhada por K.M. Cohen, D.A.T. Harper, P.L. Gibbard e N. Car"@pt-br ,
+        "Tabela desenhada e mantida online pelos oficiais K.M. Cohen e N. Car."@pt-br ,
         "Шкала представлена K.M. Cohen, D.A.T. Harper, P.L. Gibbard"@ru ,
         "Anglickú tabuľku nakreslili K.M. Cohen, D.A.T. Harper, P.L. Gibbard a N. Car"@sk ,
         "Çizelge tasarımı: K.M. Cohen, D.A.T. Harper, P.L. Gibbard"@tr ,
@@ -1233,8 +1233,7 @@ ser revistos no futuro ou serem recalibrados geocronometricamente. Os valores in
 
 A Tabela original e os detalhes sobre os GSSP (critério de definição de cada um, localização geográfica e geológica, correlação, etc.), atualizam-se regularmente na web page: http://www.stratigraphy.org.
 
-A datação absoluta em milhões de anos (Ma) para a base do Ediacárico e das restantes unidades do Fanerozoico é apenas orientadora, em especial para os limites sem GSSP formal (~Ma). Estes valores poderão
-ser revistos no futuro ou serem recalibrados geocronometricamente. Os valores indicados são provenientes de Gradstein et al. (A Geologic Time Scale 2012), excetuando as datações do Pleistoceno, Paleógeno Superior, Cretáceo, Jurássico, Triássico, Permiano e Pré-Cambriano, fornecidas pelas subcomissões respetivas da ICS-IUGS."""@pt-br ,
+A datação absoluta em milhões de anos (Ma) para a base do Ediacárico e das restantes unidades do Fanerozoico é apenas orientadora, em especial para os limites sem GSSP formal (~Ma). Estes valores poderão ser revistos no futuro ou serem recalibrados geocronometricamente. A maioria dos valores indicados são provenientes de Gradstein et al. (A Geologic Time Scale 2024), embora algumas divirjam conforme estabelecido pelos subcomitês relevantes da ICS, com o parecer do Subcomitê de Calibração da Escala Temporal. Estas idades foram aprovadas pelo ICS como o consenso atual. A tabela é o resultado do esforço coletivo de todos os membros atuais e antigos do ICS."""@pt-br ,
         """Нижние границы всех подразделений, определяемые Точкой глобального стратотипа границ (ТГСГ) постоянно уточняются, в том числе подразделения архея и протерозоя, давно определяемые геохронологическими данными (ГССВ /GSSA).
 
 Шкалы и подробная информация о ратифицированных GSSP доступна на сайте: http://www.stratigraphy.org. URL-адрес данной шкалы приводится ниже.
@@ -1269,7 +1268,8 @@ vis:translator
         "Traducció al català per iniciativa de Juan Carlos Gutiérrez-Marco (CSIC)."@ca ,
         "Version in Deutsch: Österreichische Kommission fur Stratigraphie (ASC, W. Piller), Deutsche Stratigraphische Kommission (DSK, R.T. Becker)"@de ,
         "Traduzione a cura della Commissione Italiana di Stratigrafia"@en ,
-        "Tłumaczenie: Polska Komisja Stratygraficzna"@pl ;
+        "Tłumaczenie: Polska Komisja Stratygraficzna"@pl ,
+        "Tradução para Português (BR) efetuada por I.S. Carvalho, J.A.C. Almeida e A.M.F. Barreto (2013) em colaboração com Universidade Federal do Rio de Janerio (UFRJ) e PALEOLAB - Universidade Federal de Penambucao UFPE. Atualizada 2017-02; 2022-10; 2024-12: C. Zabini (Universidade Estadual de Campinas), K.M. Cohen (IUGS-ICS)."@pt-br ;
 .
 
 vis:translatorURL
@@ -13117,8 +13117,8 @@ ischart:Neoproterozoic
         "Neoproterozoïcum"@nl-be ,
         "Neoproterozoikum"@no ,
         "Neoproterozoik"@pl ,
-        "Neoarqueano"@pt ,
-        "Neoarqueano"@pt-br ,
+        "Neoproterozoico"@pt ,
+        "Neoproterozoico"@pt-br ,
         "Неопротерозойская"@ru ,
         "neoproterozoikum"@sk ,
         "Neo proterozoyik"@tr ,

@@ -29,7 +29,7 @@ run `sh combine.sh`
 
 ### 5. Check output
 
-Chect the new `chart.ttl` in the multilang folder. See if it's correct according to the main `chart.ttl` file in the repo root dir
+Check the new `chart.ttl` in the multilang folder. See if it's correct according to the main `chart.ttl` file in the repo root dir
 
 
 ### 6. Replace
