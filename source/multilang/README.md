@@ -3,7 +3,7 @@
 
 ## 1. Make the labels
 
-Add a new sheet tomultilang.xlsx named for the new language, e.g. "pl" for Polish.
+Add a new sheet to multilang.xlsx named for the new language, e.g. "pl" for Polish.
 
 Fill in all the labels, e.g. using Claude:
 
