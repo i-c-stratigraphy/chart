@@ -1,0 +1,39 @@
+<http://sweetontology.net/stateTime/GeologicTimeUnit>
+
+<http://sweetontology.net/stateTime/Age>
+Epochs are divided into ages [millions of years]
+
+<http://sweetontology.net/stateTime/Eon>
+Supereons are divided into eons. [billions of years]
+
+<http://sweetontology.net/stateTime/Epoch>
+Periods are divided into epochs [tens of millions of years]
+
+<http://sweetontology.net/stateTime/Era>
+Eons are divided into eras [several hundred million years]
+
+<http://sweetontology.net/stateTime/Period>
+Eras are divided into periods
+
+<http://sweetontology.net/stateTime/Supereon>
+The largest defined unit of time is the supereon, composed of eons.
+
+
+<http://sweetontology.net/propTime/TimeInterval>
+<http://sweetontology.net/reprTime/TemporalEntity>
+<http://sweetontology.net/propTime/TemporalExtent>
+<http://sweetontology.net/reprTime/TemporalReference>
+<http://sweetontology.net/reprTime/TimeReference>
+<http://sweetontology.net/propTime/GeologicTime>
+The geologic time scale is a chronologic schema (or idealized model) relating stratigraphy to time that is used by geologists, paleontologists and other earth scientists to describe the timing and relationships between events that have occurred during the history of the Earth.
+
+<http://sweetontology.net/stateTime/NeotectonicPeriod>
+
+<http://sweetontology.net/reprDataModel/TemporalRepresentation>
+
+
+<http://sweetontology.net/phenGeol/StratigraphicSequence>
+
+<http://sweetontology.net/realmGeol/GeologicFeature>
+
+
