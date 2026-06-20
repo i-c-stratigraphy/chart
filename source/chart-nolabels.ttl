@@ -343,11 +343,12 @@ ischart:Anisian
     gts:rank rank:Age ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:MiddleTriassic ;
+    skos:changeNote "2026-06: hasBeginning 246.7 -> 247.0" ;
     skos:inScheme cs: ;
     skos:notation "t3"^^ischart:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 246.7 ;
+            ischart:inMYA 247.0 ;
         ] ;
     time:hasEnd
         [
@@ -782,6 +783,7 @@ ischart:Capitanian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Guadalupian ;
+    skos:changeNote "2026-06: hasEnd 259.51 -> 259.857" ;
     skos:inScheme cs: ;
     skos:notation "p7"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -791,8 +793,8 @@ ischart:Capitanian
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 259.51 ;
-            sdo:marginOfError 0.21 ;
+            ischart:inMYA 259.857 ;
+            sdo:marginOfError 0.084 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 82 ;
@@ -1501,6 +1503,7 @@ ischart:Induan
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:LowerTriassic ;
+    skos:changeNote "2026-06: hasEnd 249.9 -> 250.8" ;
     skos:inScheme cs: ;
     skos:notation "t1"^^ischart:ccgmShortCode ;
     time:hasBeginning
@@ -1510,7 +1513,7 @@ ischart:Induan
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 249.9 ;
+            ischart:inMYA 250.8 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 74 ;
@@ -1917,15 +1920,16 @@ ischart:Olenekian
     gts:rank rank:Age ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:LowerTriassic ;
+    skos:changeNote "2026-06: hasBeginning 249.9 -> 250.8, hasEnd 246.7 -> 247.0" ;
     skos:inScheme cs: ;
     skos:notation "t2"^^ischart:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 249.9 ;
+            ischart:inMYA 250.8 ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 246.7 ;
+            ischart:inMYA 247.0 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 73 ;
@@ -2755,12 +2759,13 @@ ischart:Wuchiapingian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Lopingian ;
+    skos:changeNote "2026-06: hasBeginning 259.51 -> 259.857" ;
     skos:inScheme cs: ;
     skos:notation "p8"^^ischart:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 259.51 ;
-            sdo:marginOfError 0.21 ;
+            ischart:inMYA 259.857 ;
+            sdo:marginOfError 0.084 ;
         ] ;
     time:hasEnd
         [
@@ -3067,6 +3072,7 @@ ischart:Lopingian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Permian ;
+    skos:changeNote "2026-06: hasBeginning 259.51 -> 259.857" ;
     skos:inScheme cs: ;
     skos:narrower
         ischart:Changhsingian ,
@@ -3074,8 +3080,8 @@ ischart:Lopingian
     skos:notation "P3"^^ischart:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 259.51 ;
-            sdo:marginOfError 0.21 ;
+            ischart:inMYA 259.857 ;
+            sdo:marginOfError 0.084 ;
         ] ;
     time:hasEnd
         [
@@ -3119,6 +3125,7 @@ ischart:LowerTriassic
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Triassic ;
+    skos:changeNote "2026-06: hasEnd 246.7 -> 247.0" ;
     skos:inScheme cs: ;
     skos:narrower
         ischart:Induan ,
@@ -3131,7 +3138,7 @@ ischart:LowerTriassic
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 246.7 ;
+            ischart:inMYA 247.0 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 75 ;
@@ -3221,6 +3228,7 @@ ischart:MiddleTriassic
     gts:rank rank:Epoch ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Triassic ;
+    skos:changeNote "2026-06: hasBeginning 246.7 -> 247.0" ;
     skos:inScheme cs: ;
     skos:narrower
         ischart:Anisian ,
@@ -3228,7 +3236,7 @@ ischart:MiddleTriassic
     skos:notation "T2"^^ischart:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 246.7 ;
+            ischart:inMYA 247.0 ;
         ] ;
     time:hasEnd
         [
@@ -3524,6 +3532,7 @@ ischart:Guadalupian
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader ischart:Permian ;
+    skos:changeNote "2026-06: hasEnd 259.51 -> 259.857" ;
     skos:inScheme cs: ;
     skos:narrower
         ischart:Capitanian ,
@@ -3537,8 +3546,8 @@ ischart:Guadalupian
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 259.51 ;
-            sdo:marginOfError 0.21 ;
+            ischart:inMYA 259.857 ;
+            sdo:marginOfError 0.084 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 84 ;
@@ -4472,7 +4481,9 @@ cs:
         ischart:Phanerozoic ,
         ischart:Precambrian ;
     skos:historyNote "This vocabulary uses IRIs originally created for the Geologic Timescale (2020) data (see http://resource.geosciml.org/vocabulary/timescale/)" ;
-    skos:versionInfo """2024-12: Updated Chart to include:
+    skos:versionInfo """2026-06: Strati2026 version of the Chart with updates indicated in element changeNotes
+
+2024-12: Updated Chart to include:
 
 * ratification of the Valanginian GSSP
 * numeric age of Valanginian updated to 137.05 +/- 0.2
