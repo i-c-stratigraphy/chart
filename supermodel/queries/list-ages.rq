@@ -1,0 +1,17 @@
+# List all Ages (not Periods etc.), newest to oldest
+
+PREFIX gts: <http://resource.geosciml.org/ontology/timescale/gts#>
+PREFIX ischart: <http://resource.geosciml.org/classifier/ics/ischart/>
+PREFIX time: <http://www.w3.org/2006/time#>
+
+SELECT ?iri ?beginning ?pl
+WHERE {
+    ?iri
+        gts:rank rank:Age ;
+        time:hasBeginning/ischart:inMYA ?beginning ;
+        skos:prefLabel ?pl ;
+    .
+
+    FILTER (LANG(?pl) = "en")
+}
+ORDER BY ?beginning

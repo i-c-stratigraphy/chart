@@ -1,0 +1,24 @@
+# Find the Age immediately before "Tithonian"
+
+PREFIX gts: <http://resource.geosciml.org/ontology/timescale/gts#>
+PREFIX ischart: <http://resource.geosciml.org/classifier/ics/ischart/>
+PREFIX time: <http://www.w3.org/2006/time#>
+
+SELECT ?iri ?beginning ?pl
+WHERE {
+    ?ref_age
+        skos:prefLabel "Tithonian"@en ;
+        time:hasBeginning/ischart:inMYA ?ref_beginning ;
+    .
+
+    ?iri
+        gts:rank rank:Age ;
+        time:hasBeginning/ischart:inMYA ?beginning ;
+        skos:prefLabel ?pl ;
+    .
+
+    FILTER (?beginning > ?ref_beginning)
+    FILTER (LANG(?pl) = "en")
+}
+ORDER BY ?beginning
+LIMIT 1
