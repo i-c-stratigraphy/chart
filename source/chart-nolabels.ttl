@@ -7,7 +7,7 @@ PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX prov: <http://www.w3.org/ns/prov#>
 PREFIX rank: <http://resource.geosciml.org/ontology/timescale/rank/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX sdo: <https://schema.org/>
+PREFIX schema: <https://schema.org/>
 PREFIX sh: <http://www.w3.org/ns/shacl#>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX time: <http://www.w3.org/2006/time#>
@@ -280,16 +280,16 @@ ischart:Aalenian
     time:hasBeginning
         [
             ischart:inMYA 174.7 ;
-            sdo:marginOfError 0.8 ;
+            schema:marginOfError 0.8 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 170.9 ;
-            sdo:marginOfError 0.8 ;
+            schema:marginOfError 0.8 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 58 ;
-    sdo:color "#9AD9DD"^^ischart:RGBHex ;
+    schema:color "#9AD9DD"^^ischart:RGBHex ;
 .
 
 ischart:Aeronian
@@ -303,16 +303,16 @@ ischart:Aeronian
     time:hasBeginning
         [
             ischart:inMYA 440.5 ;
-            sdo:marginOfError 1.0 ;
+            schema:marginOfError 1.0 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 438.6 ;
-            sdo:marginOfError 1.0 ;
+            schema:marginOfError 1.0 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 127 ;
-    sdo:color "#B3E1C2"^^ischart:RGBHex ;
+    schema:color "#B3E1C2"^^ischart:RGBHex ;
 .
 
 ischart:Albian
@@ -326,16 +326,16 @@ ischart:Albian
     time:hasBeginning
         [
             ischart:inMYA 113.2 ;
-            sdo:marginOfError 0.3 ;
+            schema:marginOfError 0.3 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 100.5 ;
-            sdo:marginOfError 0.1 ;
+            schema:marginOfError 0.1 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 43 ;
-    sdo:color "#CCEA97"^^ischart:RGBHex ;
+    schema:color "#CCEA97"^^ischart:RGBHex ;
 .
 
 ischart:Anisian
@@ -353,11 +353,11 @@ ischart:Anisian
     time:hasEnd
         [
             ischart:inMYA 241.464 ;
-            sdo:marginOfError 0.28 ;
+            schema:marginOfError 0.28 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 71 ;
-    sdo:color "#BC75B7"^^ischart:RGBHex ;
+    schema:color "#BC75B7"^^ischart:RGBHex ;
 .
 
 ischart:Aptian
@@ -370,16 +370,16 @@ ischart:Aptian
     time:hasBeginning
         [
             ischart:inMYA 121.4 ;
-            sdo:marginOfError 0.6 ;
+            schema:marginOfError 0.6 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 113.2 ;
-            sdo:marginOfError 0.3 ;
+            schema:marginOfError 0.3 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 44 ;
-    sdo:color "#BFE48A"^^ischart:RGBHex ;
+    schema:color "#BFE48A"^^ischart:RGBHex ;
 .
 
 ischart:Aquitanian
@@ -400,7 +400,7 @@ ischart:Aquitanian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 19 ;
-    sdo:color "#FFFF33"^^ischart:RGBHex ;
+    schema:color "#FFFF33"^^ischart:RGBHex ;
 .
 
 ischart:Artinskian
@@ -414,16 +414,16 @@ ischart:Artinskian
     time:hasBeginning
         [
             ischart:inMYA 290.1 ;
-            sdo:marginOfError 0.26 ;
+            schema:marginOfError 0.26 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 283.3 ;
-            sdo:marginOfError 0.4 ;
+            schema:marginOfError 0.4 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 87 ;
-    sdo:color "#E37B68"^^ischart:RGBHex ;
+    schema:color "#E37B68"^^ischart:RGBHex ;
 .
 
 ischart:Asselian
@@ -437,16 +437,16 @@ ischart:Asselian
     time:hasBeginning
         [
             ischart:inMYA 298.9 ;
-            sdo:marginOfError 0.15 ;
+            schema:marginOfError 0.15 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 293.52 ;
-            sdo:marginOfError 0.17 ;
+            schema:marginOfError 0.17 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 89 ;
-    sdo:color "#E36350"^^ischart:RGBHex ;
+    schema:color "#E36350"^^ischart:RGBHex ;
 .
 
 ischart:Bajocian
@@ -460,16 +460,16 @@ ischart:Bajocian
     time:hasBeginning
         [
             ischart:inMYA 170.9 ;
-            sdo:marginOfError 0.8 ;
+            schema:marginOfError 0.8 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 168.2 ;
-            sdo:marginOfError 1.2 ;
+            schema:marginOfError 1.2 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 57 ;
-    sdo:color "#A6DDE0"^^ischart:RGBHex ;
+    schema:color "#A6DDE0"^^ischart:RGBHex ;
 .
 
 ischart:Barremian
@@ -487,11 +487,11 @@ ischart:Barremian
     time:hasEnd
         [
             ischart:inMYA 121.4 ;
-            sdo:marginOfError 0.6 ;
+            schema:marginOfError 0.6 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 45 ;
-    sdo:color "#B3DF7F"^^ischart:RGBHex ;
+    schema:color "#B3DF7F"^^ischart:RGBHex ;
 .
 
 ischart:Bartonian
@@ -511,7 +511,7 @@ ischart:Bartonian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 26 ;
-    sdo:color "#FDC091"^^ischart:RGBHex ;
+    schema:color "#FDC091"^^ischart:RGBHex ;
 .
 
 ischart:Bashkirian
@@ -525,16 +525,16 @@ ischart:Bashkirian
     time:hasBeginning
         [
             ischart:inMYA 323.4 ;
-            sdo:marginOfError 0.4 ;
+            schema:marginOfError 0.4 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 315.2 ;
-            sdo:marginOfError 0.2 ;
+            schema:marginOfError 0.2 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 97 ;
-    sdo:color "#99C2B5"^^ischart:RGBHex ;
+    schema:color "#99C2B5"^^ischart:RGBHex ;
 .
 
 ischart:Bathonian
@@ -548,16 +548,16 @@ ischart:Bathonian
     time:hasBeginning
         [
             ischart:inMYA 168.2 ;
-            sdo:marginOfError 1.2 ;
+            schema:marginOfError 1.2 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 165.3 ;
-            sdo:marginOfError 1.1 ;
+            schema:marginOfError 1.1 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 56 ;
-    sdo:color "#B3E2E3"^^ischart:RGBHex ;
+    schema:color "#B3E2E3"^^ischart:RGBHex ;
 .
 
 ischart:Berriasian
@@ -570,16 +570,16 @@ ischart:Berriasian
     time:hasBeginning
         [
             ischart:inMYA 143.1 ;
-            sdo:marginOfError 0.6 ;
+            schema:marginOfError 0.6 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 137.05 ;
-            sdo:marginOfError 0.2 ;
+            schema:marginOfError 0.2 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 48 ;
-    sdo:color "#8CCD60"^^ischart:RGBHex ;
+    schema:color "#8CCD60"^^ischart:RGBHex ;
 .
 
 ischart:Burdigalian
@@ -599,7 +599,7 @@ ischart:Burdigalian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 18 ;
-    sdo:color "#FFFF41"^^ischart:RGBHex ;
+    schema:color "#FFFF41"^^ischart:RGBHex ;
 .
 
 ischart:Calabrian
@@ -620,7 +620,7 @@ ischart:Calabrian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 7 ;
-    sdo:color "#FFF2BA"^^ischart:RGBHex ;
+    schema:color "#FFF2BA"^^ischart:RGBHex ;
 .
 
 ischart:Callovian
@@ -633,16 +633,16 @@ ischart:Callovian
     time:hasBeginning
         [
             ischart:inMYA 165.3 ;
-            sdo:marginOfError 1.1 ;
+            schema:marginOfError 1.1 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 161.5 ;
-            sdo:marginOfError 1.0 ;
+            schema:marginOfError 1.0 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 55 ;
-    sdo:color "#BFE7E5"^^ischart:RGBHex ;
+    schema:color "#BFE7E5"^^ischart:RGBHex ;
 .
 
 ischart:Calymmian
@@ -663,7 +663,7 @@ ischart:Calymmian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 164 ;
-    sdo:color "#FDC07A"^^ischart:RGBHex ;
+    schema:color "#FDC07A"^^ischart:RGBHex ;
 .
 
 ischart:CambrianStage10
@@ -681,11 +681,11 @@ ischart:CambrianStage10
     time:hasEnd
         [
             ischart:inMYA 486.85 ;
-            sdo:marginOfError 1.5 ;
+            schema:marginOfError 1.5 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 142 ;
-    sdo:color "#E6F5C9"^^ischart:RGBHex ;
+    schema:color "#E6F5C9"^^ischart:RGBHex ;
 .
 
 ischart:CambrianStage2
@@ -707,7 +707,7 @@ ischart:CambrianStage2
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 152 ;
-    sdo:color "#A6BA80"^^ischart:RGBHex ;
+    schema:color "#A6BA80"^^ischart:RGBHex ;
 .
 
 ischart:CambrianStage3
@@ -729,7 +729,7 @@ ischart:CambrianStage3
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 153 ;
-    sdo:color "#A6C583"^^ischart:RGBHex ;
+    schema:color "#A6C583"^^ischart:RGBHex ;
 .
 
 ischart:CambrianStage4
@@ -751,7 +751,7 @@ ischart:CambrianStage4
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 150 ;
-    sdo:color "#B3CA8E"^^ischart:RGBHex ;
+    schema:color "#B3CA8E"^^ischart:RGBHex ;
 .
 
 ischart:Campanian
@@ -765,16 +765,16 @@ ischart:Campanian
     time:hasBeginning
         [
             ischart:inMYA 83.6 ;
-            sdo:marginOfError 0.2 ;
+            schema:marginOfError 0.2 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 72.2 ;
-            sdo:marginOfError 0.2 ;
+            schema:marginOfError 0.2 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 37 ;
-    sdo:color "#E6F47F"^^ischart:RGBHex ;
+    schema:color "#E6F47F"^^ischart:RGBHex ;
 .
 
 ischart:Capitanian
@@ -789,16 +789,16 @@ ischart:Capitanian
     time:hasBeginning
         [
             ischart:inMYA 264.28 ;
-            sdo:marginOfError 0.16 ;
+            schema:marginOfError 0.16 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 259.857 ;
-            sdo:marginOfError 0.084 ;
+            schema:marginOfError 0.084 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 82 ;
-    sdo:color "#FB9A85"^^ischart:RGBHex ;
+    schema:color "#FB9A85"^^ischart:RGBHex ;
 .
 
 ischart:Carnian
@@ -821,7 +821,7 @@ ischart:Carnian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 68 ;
-    sdo:color "#C99BCB"^^ischart:RGBHex ;
+    schema:color "#C99BCB"^^ischart:RGBHex ;
 .
 
 ischart:Cenomanian
@@ -835,16 +835,16 @@ ischart:Cenomanian
     time:hasBeginning
         [
             ischart:inMYA 100.5 ;
-            sdo:marginOfError 0.1 ;
+            schema:marginOfError 0.1 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 93.9 ;
-            sdo:marginOfError 0.2 ;
+            schema:marginOfError 0.2 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 41 ;
-    sdo:color "#B3DE53"^^ischart:RGBHex ;
+    schema:color "#B3DE53"^^ischart:RGBHex ;
 .
 
 ischart:Changhsingian
@@ -858,16 +858,16 @@ ischart:Changhsingian
     time:hasBeginning
         [
             ischart:inMYA 254.14 ;
-            sdo:marginOfError 0.07 ;
+            schema:marginOfError 0.07 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 251.902 ;
-            sdo:marginOfError 0.024 ;
+            schema:marginOfError 0.024 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 79 ;
-    sdo:color "#FCC0B2"^^ischart:RGBHex ;
+    schema:color "#FCC0B2"^^ischart:RGBHex ;
 .
 
 ischart:Chattian
@@ -888,7 +888,7 @@ ischart:Chattian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 22 ;
-    sdo:color "#FEE6AA"^^ischart:RGBHex ;
+    schema:color "#FEE6AA"^^ischart:RGBHex ;
 .
 
 ischart:Chibanian
@@ -909,7 +909,7 @@ ischart:Chibanian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 6 ;
-    sdo:color "#FFF2C7"^^ischart:RGBHex ;
+    schema:color "#FFF2C7"^^ischart:RGBHex ;
 .
 
 ischart:Coniacian
@@ -923,16 +923,16 @@ ischart:Coniacian
     time:hasBeginning
         [
             ischart:inMYA 89.8 ;
-            sdo:marginOfError 0.3 ;
+            schema:marginOfError 0.3 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 85.7 ;
-            sdo:marginOfError 0.2 ;
+            schema:marginOfError 0.2 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 39 ;
-    sdo:color "#CCE968"^^ischart:RGBHex ;
+    schema:color "#CCE968"^^ischart:RGBHex ;
 .
 
 ischart:Cryogenian
@@ -954,7 +954,7 @@ ischart:Cryogenian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 159 ;
-    sdo:color "#FECC5C"^^ischart:RGBHex ;
+    schema:color "#FECC5C"^^ischart:RGBHex ;
 .
 
 ischart:Danian
@@ -975,7 +975,7 @@ ischart:Danian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 33 ;
-    sdo:color "#FDB462"^^ischart:RGBHex ;
+    schema:color "#FDB462"^^ischart:RGBHex ;
 .
 
 ischart:Dapingian
@@ -989,16 +989,16 @@ ischart:Dapingian
     time:hasBeginning
         [
             ischart:inMYA 471.3 ;
-            sdo:marginOfError 1.4 ;
+            schema:marginOfError 1.4 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 469.4 ;
-            sdo:marginOfError 0.9 ;
+            schema:marginOfError 0.9 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 136 ;
-    sdo:color "#66C092"^^ischart:RGBHex ;
+    schema:color "#66C092"^^ischart:RGBHex ;
 .
 
 ischart:Darriwilian
@@ -1012,16 +1012,16 @@ ischart:Darriwilian
     time:hasBeginning
         [
             ischart:inMYA 469.4 ;
-            sdo:marginOfError 0.9 ;
+            schema:marginOfError 0.9 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 458.2 ;
-            sdo:marginOfError 0.7 ;
+            schema:marginOfError 0.7 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 135 ;
-    sdo:color "#74C69C"^^ischart:RGBHex ;
+    schema:color "#74C69C"^^ischart:RGBHex ;
 .
 
 ischart:Drumian
@@ -1044,7 +1044,7 @@ ischart:Drumian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 147 ;
-    sdo:color "#BFD99D"^^ischart:RGBHex ;
+    schema:color "#BFD99D"^^ischart:RGBHex ;
 .
 
 ischart:Ectasian
@@ -1065,7 +1065,7 @@ ischart:Ectasian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 163 ;
-    sdo:color "#FDCC8A"^^ischart:RGBHex ;
+    schema:color "#FDCC8A"^^ischart:RGBHex ;
 .
 
 ischart:Ediacaran
@@ -1084,11 +1084,11 @@ ischart:Ediacaran
     time:hasEnd
         [
             ischart:inMYA 538.8 ;
-            sdo:marginOfError 0.6 ;
+            schema:marginOfError 0.6 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 158 ;
-    sdo:color "#FED96A"^^ischart:RGBHex ;
+    schema:color "#FED96A"^^ischart:RGBHex ;
 .
 
 ischart:Eifelian
@@ -1102,16 +1102,16 @@ ischart:Eifelian
     time:hasBeginning
         [
             ischart:inMYA 393.47 ;
-            sdo:marginOfError 0.99 ;
+            schema:marginOfError 0.99 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 387.95 ;
-            sdo:marginOfError 1.04 ;
+            schema:marginOfError 1.04 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 112 ;
-    sdo:color "#F1D576"^^ischart:RGBHex ;
+    schema:color "#F1D576"^^ischart:RGBHex ;
 .
 
 ischart:Emsian
@@ -1125,16 +1125,16 @@ ischart:Emsian
     time:hasBeginning
         [
             ischart:inMYA 410.62 ;
-            sdo:marginOfError 1.95 ;
+            schema:marginOfError 1.95 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 393.47 ;
-            sdo:marginOfError 0.99 ;
+            schema:marginOfError 0.99 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 114 ;
-    sdo:color "#E5D075"^^ischart:RGBHex ;
+    schema:color "#E5D075"^^ischart:RGBHex ;
 .
 
 ischart:Eoarchean
@@ -1148,7 +1148,7 @@ ischart:Eoarchean
     time:hasBeginning
         [
             ischart:inMYA 4031 ;
-            sdo:marginOfError 3 ;
+            schema:marginOfError 3 ;
         ] ;
     time:hasEnd
         [
@@ -1156,7 +1156,7 @@ ischart:Eoarchean
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 176 ;
-    sdo:color "#DA037F"^^ischart:RGBHex ;
+    schema:color "#DA037F"^^ischart:RGBHex ;
 .
 
 ischart:Famennian
@@ -1170,16 +1170,16 @@ ischart:Famennian
     time:hasBeginning
         [
             ischart:inMYA 372.15 ;
-            sdo:marginOfError 0.46 ;
+            schema:marginOfError 0.46 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 358.86 ;
-            sdo:marginOfError 0.19 ;
+            schema:marginOfError 0.19 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 108 ;
-    sdo:color "#F2EDB3"^^ischart:RGBHex ;
+    schema:color "#F2EDB3"^^ischart:RGBHex ;
 .
 
 ischart:Floian
@@ -1193,16 +1193,16 @@ ischart:Floian
     time:hasBeginning
         [
             ischart:inMYA 477.1 ;
-            sdo:marginOfError 1.2 ;
+            schema:marginOfError 1.2 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 471.3 ;
-            sdo:marginOfError 1.4 ;
+            schema:marginOfError 1.4 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 138 ;
-    sdo:color "#41B087"^^ischart:RGBHex ;
+    schema:color "#41B087"^^ischart:RGBHex ;
 .
 
 ischart:Fortunian
@@ -1216,7 +1216,7 @@ ischart:Fortunian
     time:hasBeginning
         [
             ischart:inMYA 538.8 ;
-            sdo:marginOfError 0.6 ;
+            schema:marginOfError 0.6 ;
         ] ;
     time:hasEnd
         [
@@ -1225,7 +1225,7 @@ ischart:Fortunian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 155 ;
-    sdo:color "#99B575"^^ischart:RGBHex ;
+    schema:color "#99B575"^^ischart:RGBHex ;
 .
 
 ischart:Frasnian
@@ -1239,16 +1239,16 @@ ischart:Frasnian
     time:hasBeginning
         [
             ischart:inMYA 382.31 ;
-            sdo:marginOfError 1.36 ;
+            schema:marginOfError 1.36 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 372.15 ;
-            sdo:marginOfError 0.46 ;
+            schema:marginOfError 0.46 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 109 ;
-    sdo:color "#F2EDAD"^^ischart:RGBHex ;
+    schema:color "#F2EDAD"^^ischart:RGBHex ;
 .
 
 ischart:Gelasian
@@ -1269,7 +1269,7 @@ ischart:Gelasian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 8 ;
-    sdo:color "#FFEDB3"^^ischart:RGBHex ;
+    schema:color "#FFEDB3"^^ischart:RGBHex ;
 .
 
 ischart:Givetian
@@ -1283,16 +1283,16 @@ ischart:Givetian
     time:hasBeginning
         [
             ischart:inMYA 387.95 ;
-            sdo:marginOfError 1.04 ;
+            schema:marginOfError 1.04 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 382.31 ;
-            sdo:marginOfError 1.36 ;
+            schema:marginOfError 1.36 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 111 ;
-    sdo:color "#F1E185"^^ischart:RGBHex ;
+    schema:color "#F1E185"^^ischart:RGBHex ;
 .
 
 ischart:Gorstian
@@ -1306,16 +1306,16 @@ ischart:Gorstian
     time:hasBeginning
         [
             ischart:inMYA 426.7 ;
-            sdo:marginOfError 1.5 ;
+            schema:marginOfError 1.5 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 425.0 ;
-            sdo:marginOfError 1.5 ;
+            schema:marginOfError 1.5 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 121 ;
-    sdo:color "#CCECDD"^^ischart:RGBHex ;
+    schema:color "#CCECDD"^^ischart:RGBHex ;
 .
 
 ischart:Greenlandian
@@ -1336,7 +1336,7 @@ ischart:Greenlandian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 3 ;
-    sdo:color "#FEECDB"^^ischart:RGBHex ;
+    schema:color "#FEECDB"^^ischart:RGBHex ;
 .
 
 ischart:Guzhangian
@@ -1359,7 +1359,7 @@ ischart:Guzhangian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 146 ;
-    sdo:color "#CCDFAA"^^ischart:RGBHex ;
+    schema:color "#CCDFAA"^^ischart:RGBHex ;
 .
 
 ischart:Gzhelian
@@ -1372,16 +1372,16 @@ ischart:Gzhelian
     time:hasBeginning
         [
             ischart:inMYA 303.7 ;
-            sdo:marginOfError 0.1 ;
+            schema:marginOfError 0.1 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 298.9 ;
-            sdo:marginOfError 0.15 ;
+            schema:marginOfError 0.15 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 92 ;
-    sdo:color "#CCD4C7"^^ischart:RGBHex ;
+    schema:color "#CCD4C7"^^ischart:RGBHex ;
 .
 
 ischart:Hadean
@@ -1399,11 +1399,11 @@ ischart:Hadean
     time:hasEnd
         [
             ischart:inMYA 4031 ;
-            sdo:marginOfError 3 ;
+            schema:marginOfError 3 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 177 ;
-    sdo:color "#AE027E"^^ischart:RGBHex ;
+    schema:color "#AE027E"^^ischart:RGBHex ;
 .
 
 ischart:Hauterivian
@@ -1417,7 +1417,7 @@ ischart:Hauterivian
     time:hasBeginning
         [
             ischart:inMYA 132.6 ;
-            sdo:marginOfError 0.6 ;
+            schema:marginOfError 0.6 ;
         ] ;
     time:hasEnd
         [
@@ -1425,7 +1425,7 @@ ischart:Hauterivian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 46 ;
-    sdo:color "#A6D975"^^ischart:RGBHex ;
+    schema:color "#A6D975"^^ischart:RGBHex ;
 .
 
 ischart:Hettangian
@@ -1439,16 +1439,16 @@ ischart:Hettangian
     time:hasBeginning
         [
             ischart:inMYA 201.4 ;
-            sdo:marginOfError 0.2 ;
+            schema:marginOfError 0.2 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 199.5 ;
-            sdo:marginOfError 0.3 ;
+            schema:marginOfError 0.3 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 63 ;
-    sdo:color "#4EB3D3"^^ischart:RGBHex ;
+    schema:color "#4EB3D3"^^ischart:RGBHex ;
 .
 
 ischart:Hirnantian
@@ -1462,16 +1462,16 @@ ischart:Hirnantian
     time:hasBeginning
         [
             ischart:inMYA 445.2 ;
-            sdo:marginOfError 0.9 ;
+            schema:marginOfError 0.9 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 443.1 ;
-            sdo:marginOfError 1.0 ;
+            schema:marginOfError 1.0 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 131 ;
-    sdo:color "#A6DBAB"^^ischart:RGBHex ;
+    schema:color "#A6DBAB"^^ischart:RGBHex ;
 .
 
 ischart:Homerian
@@ -1485,16 +1485,16 @@ ischart:Homerian
     time:hasBeginning
         [
             ischart:inMYA 430.6 ;
-            sdo:marginOfError 1.3 ;
+            schema:marginOfError 1.3 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 426.7 ;
-            sdo:marginOfError 1.5 ;
+            schema:marginOfError 1.5 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 123 ;
-    sdo:color "#CCEBD1"^^ischart:RGBHex ;
+    schema:color "#CCEBD1"^^ischart:RGBHex ;
 .
 
 ischart:Induan
@@ -1509,7 +1509,7 @@ ischart:Induan
     time:hasBeginning
         [
             ischart:inMYA 251.902 ;
-            sdo:marginOfError 0.024 ;
+            schema:marginOfError 0.024 ;
         ] ;
     time:hasEnd
         [
@@ -1517,7 +1517,7 @@ ischart:Induan
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 74 ;
-    sdo:color "#A4469F"^^ischart:RGBHex ;
+    schema:color "#A4469F"^^ischart:RGBHex ;
 .
 
 ischart:Jiangshanian
@@ -1540,7 +1540,7 @@ ischart:Jiangshanian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 143 ;
-    sdo:color "#D9F0BB"^^ischart:RGBHex ;
+    schema:color "#D9F0BB"^^ischart:RGBHex ;
 .
 
 ischart:Kasimovian
@@ -1553,16 +1553,16 @@ ischart:Kasimovian
     time:hasBeginning
         [
             ischart:inMYA 307.0 ;
-            sdo:marginOfError 0.1 ;
+            schema:marginOfError 0.1 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 303.7 ;
-            sdo:marginOfError 0.1 ;
+            schema:marginOfError 0.1 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 93 ;
-    sdo:color "#BFD0C5"^^ischart:RGBHex ;
+    schema:color "#BFD0C5"^^ischart:RGBHex ;
 .
 
 ischart:Katian
@@ -1576,16 +1576,16 @@ ischart:Katian
     time:hasBeginning
         [
             ischart:inMYA 452.8 ;
-            sdo:marginOfError 0.7 ;
+            schema:marginOfError 0.7 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 445.2 ;
-            sdo:marginOfError 0.9 ;
+            schema:marginOfError 0.9 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 132 ;
-    sdo:color "#99D69F"^^ischart:RGBHex ;
+    schema:color "#99D69F"^^ischart:RGBHex ;
 .
 
 ischart:Kimmeridgian
@@ -1599,16 +1599,16 @@ ischart:Kimmeridgian
     time:hasBeginning
         [
             ischart:inMYA 154.8 ;
-            sdo:marginOfError 0.8 ;
+            schema:marginOfError 0.8 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 149.2 ;
-            sdo:marginOfError 0.7 ;
+            schema:marginOfError 0.7 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 52 ;
-    sdo:color "#CCECF4"^^ischart:RGBHex ;
+    schema:color "#CCECF4"^^ischart:RGBHex ;
 .
 
 ischart:Kungurian
@@ -1621,16 +1621,16 @@ ischart:Kungurian
     time:hasBeginning
         [
             ischart:inMYA 283.3 ;
-            sdo:marginOfError 0.4 ;
+            schema:marginOfError 0.4 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 274.4 ;
-            sdo:marginOfError 0.4 ;
+            schema:marginOfError 0.4 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 86 ;
-    sdo:color "#E38776"^^ischart:RGBHex ;
+    schema:color "#E38776"^^ischart:RGBHex ;
 .
 
 ischart:Ladinian
@@ -1644,7 +1644,7 @@ ischart:Ladinian
     time:hasBeginning
         [
             ischart:inMYA 241.464 ;
-            sdo:marginOfError 0.28 ;
+            schema:marginOfError 0.28 ;
         ] ;
     time:hasEnd
         [
@@ -1653,7 +1653,7 @@ ischart:Ladinian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 70 ;
-    sdo:color "#C983BF"^^ischart:RGBHex ;
+    schema:color "#C983BF"^^ischart:RGBHex ;
 .
 
 ischart:Langhian
@@ -1674,7 +1674,7 @@ ischart:Langhian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 17 ;
-    sdo:color "#FFFF4D"^^ischart:RGBHex ;
+    schema:color "#FFFF4D"^^ischart:RGBHex ;
 .
 
 ischart:Lochkovian
@@ -1688,16 +1688,16 @@ ischart:Lochkovian
     time:hasBeginning
         [
             ischart:inMYA 419.62 ;
-            sdo:marginOfError 1.36 ;
+            schema:marginOfError 1.36 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 413.02 ;
-            sdo:marginOfError 1.91 ;
+            schema:marginOfError 1.91 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 117 ;
-    sdo:color "#E5B75A"^^ischart:RGBHex ;
+    schema:color "#E5B75A"^^ischart:RGBHex ;
 .
 
 ischart:Ludfordian
@@ -1711,16 +1711,16 @@ ischart:Ludfordian
     time:hasBeginning
         [
             ischart:inMYA 425.0 ;
-            sdo:marginOfError 1.5 ;
+            schema:marginOfError 1.5 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 422.7 ;
-            sdo:marginOfError 1.6 ;
+            schema:marginOfError 1.6 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 120 ;
-    sdo:color "#D9F0DF"^^ischart:RGBHex ;
+    schema:color "#D9F0DF"^^ischart:RGBHex ;
 .
 
 ischart:Lutetian
@@ -1741,7 +1741,7 @@ ischart:Lutetian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 27 ;
-    sdo:color "#FDB482"^^ischart:RGBHex ;
+    schema:color "#FDB482"^^ischart:RGBHex ;
 .
 
 ischart:Maastrichtian
@@ -1755,7 +1755,7 @@ ischart:Maastrichtian
     time:hasBeginning
         [
             ischart:inMYA 72.2 ;
-            sdo:marginOfError 0.2 ;
+            schema:marginOfError 0.2 ;
         ] ;
     time:hasEnd
         [
@@ -1763,7 +1763,7 @@ ischart:Maastrichtian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 36 ;
-    sdo:color "#F2FA8C"^^ischart:RGBHex ;
+    schema:color "#F2FA8C"^^ischart:RGBHex ;
 .
 
 ischart:Meghalayan
@@ -1784,7 +1784,7 @@ ischart:Meghalayan
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 1 ;
-    sdo:color "#FDEDEC"^^ischart:RGBHex ;
+    schema:color "#FDEDEC"^^ischart:RGBHex ;
 .
 
 ischart:Mesoarchean
@@ -1805,7 +1805,7 @@ ischart:Mesoarchean
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 173 ;
-    sdo:color "#F768A9"^^ischart:RGBHex ;
+    schema:color "#F768A9"^^ischart:RGBHex ;
 .
 
 ischart:Messinian
@@ -1826,7 +1826,7 @@ ischart:Messinian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 14 ;
-    sdo:color "#FFFF73"^^ischart:RGBHex ;
+    schema:color "#FFFF73"^^ischart:RGBHex ;
 .
 
 ischart:Moscovian
@@ -1839,16 +1839,16 @@ ischart:Moscovian
     time:hasBeginning
         [
             ischart:inMYA 315.2 ;
-            sdo:marginOfError 0.2 ;
+            schema:marginOfError 0.2 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 307.0 ;
-            sdo:marginOfError 0.1 ;
+            schema:marginOfError 0.1 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 96 ;
-    sdo:color "#B3CBB9"^^ischart:RGBHex ;
+    schema:color "#B3CBB9"^^ischart:RGBHex ;
 .
 
 ischart:Neoarchean
@@ -1869,7 +1869,7 @@ ischart:Neoarchean
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 172 ;
-    sdo:color "#F99BC1"^^ischart:RGBHex ;
+    schema:color "#F99BC1"^^ischart:RGBHex ;
 .
 
 ischart:Norian
@@ -1891,7 +1891,7 @@ ischart:Norian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 67 ;
-    sdo:color "#D6AAD3"^^ischart:RGBHex ;
+    schema:color "#D6AAD3"^^ischart:RGBHex ;
 .
 
 ischart:Northgrippian
@@ -1912,7 +1912,7 @@ ischart:Northgrippian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 2 ;
-    sdo:color "#FDECE4"^^ischart:RGBHex ;
+    schema:color "#FDECE4"^^ischart:RGBHex ;
 .
 
 ischart:Olenekian
@@ -1933,7 +1933,7 @@ ischart:Olenekian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 73 ;
-    sdo:color "#B051A5"^^ischart:RGBHex ;
+    schema:color "#B051A5"^^ischart:RGBHex ;
 .
 
 ischart:Orosirian
@@ -1954,7 +1954,7 @@ ischart:Orosirian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 167 ;
-    sdo:color "#F76898"^^ischart:RGBHex ;
+    schema:color "#F76898"^^ischart:RGBHex ;
 .
 
 ischart:Oxfordian
@@ -1967,16 +1967,16 @@ ischart:Oxfordian
     time:hasBeginning
         [
             ischart:inMYA 161.5 ;
-            sdo:marginOfError 1.0 ;
+            schema:marginOfError 1.0 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 154.8 ;
-            sdo:marginOfError 0.8 ;
+            schema:marginOfError 0.8 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 53 ;
-    sdo:color "#BFE7F1"^^ischart:RGBHex ;
+    schema:color "#BFE7F1"^^ischart:RGBHex ;
 .
 
 ischart:Paibian
@@ -1999,7 +1999,7 @@ ischart:Paibian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 145 ;
-    sdo:color "#CCEBAE"^^ischart:RGBHex ;
+    schema:color "#CCEBAE"^^ischart:RGBHex ;
 .
 
 ischart:Paleoarchean
@@ -2020,7 +2020,7 @@ ischart:Paleoarchean
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 174 ;
-    sdo:color "#F4449F"^^ischart:RGBHex ;
+    schema:color "#F4449F"^^ischart:RGBHex ;
 .
 
 ischart:Piacenzian
@@ -2041,7 +2041,7 @@ ischart:Piacenzian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 11 ;
-    sdo:color "#FFFFBF"^^ischart:RGBHex ;
+    schema:color "#FFFFBF"^^ischart:RGBHex ;
 .
 
 ischart:Pliensbachian
@@ -2055,16 +2055,16 @@ ischart:Pliensbachian
     time:hasBeginning
         [
             ischart:inMYA 192.9 ;
-            sdo:marginOfError 0.3 ;
+            schema:marginOfError 0.3 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 184.2 ;
-            sdo:marginOfError 0.3 ;
+            schema:marginOfError 0.3 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 61 ;
-    sdo:color "#80C5DD"^^ischart:RGBHex ;
+    schema:color "#80C5DD"^^ischart:RGBHex ;
 .
 
 ischart:Pragian
@@ -2078,16 +2078,16 @@ ischart:Pragian
     time:hasBeginning
         [
             ischart:inMYA 413.02 ;
-            sdo:marginOfError 1.91 ;
+            schema:marginOfError 1.91 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 410.62 ;
-            sdo:marginOfError 1.95 ;
+            schema:marginOfError 1.95 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 115 ;
-    sdo:color "#E5C468"^^ischart:RGBHex ;
+    schema:color "#E5C468"^^ischart:RGBHex ;
 .
 
 ischart:Priabonian
@@ -2108,7 +2108,7 @@ ischart:Priabonian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 25 ;
-    sdo:color "#FDCDA1"^^ischart:RGBHex ;
+    schema:color "#FDCDA1"^^ischart:RGBHex ;
 .
 
 ischart:Rhaetian
@@ -2126,11 +2126,11 @@ ischart:Rhaetian
     time:hasEnd
         [
             ischart:inMYA 201.4 ;
-            sdo:marginOfError 0.2 ;
+            schema:marginOfError 0.2 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 66 ;
-    sdo:color "#E3B9DB"^^ischart:RGBHex ;
+    schema:color "#E3B9DB"^^ischart:RGBHex ;
 .
 
 ischart:Rhuddanian
@@ -2144,16 +2144,16 @@ ischart:Rhuddanian
     time:hasBeginning
         [
             ischart:inMYA 443.1 ;
-            sdo:marginOfError 1.0 ;
+            schema:marginOfError 1.0 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 440.5 ;
-            sdo:marginOfError 1.0 ;
+            schema:marginOfError 1.0 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 129 ;
-    sdo:color "#A6DCB5"^^ischart:RGBHex ;
+    schema:color "#A6DCB5"^^ischart:RGBHex ;
 .
 
 ischart:Rhyacian
@@ -2174,7 +2174,7 @@ ischart:Rhyacian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 168 ;
-    sdo:color "#F75B89"^^ischart:RGBHex ;
+    schema:color "#F75B89"^^ischart:RGBHex ;
 .
 
 ischart:Roadian
@@ -2188,16 +2188,16 @@ ischart:Roadian
     time:hasBeginning
         [
             ischart:inMYA 274.4 ;
-            sdo:marginOfError 0.4 ;
+            schema:marginOfError 0.4 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 266.9 ;
-            sdo:marginOfError 0.4 ;
+            schema:marginOfError 0.4 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 85 ;
-    sdo:color "#FB8069"^^ischart:RGBHex ;
+    schema:color "#FB8069"^^ischart:RGBHex ;
 .
 
 ischart:Rupelian
@@ -2218,7 +2218,7 @@ ischart:Rupelian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 24 ;
-    sdo:color "#FED99A"^^ischart:RGBHex ;
+    schema:color "#FED99A"^^ischart:RGBHex ;
 .
 
 ischart:Sakmarian
@@ -2232,16 +2232,16 @@ ischart:Sakmarian
     time:hasBeginning
         [
             ischart:inMYA 293.52 ;
-            sdo:marginOfError 0.17 ;
+            schema:marginOfError 0.17 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 290.1 ;
-            sdo:marginOfError 0.26 ;
+            schema:marginOfError 0.26 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 88 ;
-    sdo:color "#E36F5C"^^ischart:RGBHex ;
+    schema:color "#E36F5C"^^ischart:RGBHex ;
 .
 
 ischart:Sandbian
@@ -2255,16 +2255,16 @@ ischart:Sandbian
     time:hasBeginning
         [
             ischart:inMYA 458.2 ;
-            sdo:marginOfError 0.7 ;
+            schema:marginOfError 0.7 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 452.8 ;
-            sdo:marginOfError 0.7 ;
+            schema:marginOfError 0.7 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 133 ;
-    sdo:color "#8CD094"^^ischart:RGBHex ;
+    schema:color "#8CD094"^^ischart:RGBHex ;
 .
 
 ischart:Santonian
@@ -2278,16 +2278,16 @@ ischart:Santonian
     time:hasBeginning
         [
             ischart:inMYA 85.7 ;
-            sdo:marginOfError 0.2 ;
+            schema:marginOfError 0.2 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 83.6 ;
-            sdo:marginOfError 0.2 ;
+            schema:marginOfError 0.2 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 38 ;
-    sdo:color "#D9EF74"^^ischart:RGBHex ;
+    schema:color "#D9EF74"^^ischart:RGBHex ;
 .
 
 ischart:Selandian
@@ -2308,7 +2308,7 @@ ischart:Selandian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 31 ;
-    sdo:color "#FEBF65"^^ischart:RGBHex ;
+    schema:color "#FEBF65"^^ischart:RGBHex ;
 .
 
 ischart:Serpukhovian
@@ -2321,16 +2321,16 @@ ischart:Serpukhovian
     time:hasBeginning
         [
             ischart:inMYA 330.3 ;
-            sdo:marginOfError 0.4 ;
+            schema:marginOfError 0.4 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 323.4 ;
-            sdo:marginOfError 0.4 ;
+            schema:marginOfError 0.4 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 100 ;
-    sdo:color "#BFC26B"^^ischart:RGBHex ;
+    schema:color "#BFC26B"^^ischart:RGBHex ;
 .
 
 ischart:Serravallian
@@ -2351,7 +2351,7 @@ ischart:Serravallian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 16 ;
-    sdo:color "#FFFF59"^^ischart:RGBHex ;
+    schema:color "#FFFF59"^^ischart:RGBHex ;
 .
 
 ischart:Sheinwoodian
@@ -2365,16 +2365,16 @@ ischart:Sheinwoodian
     time:hasBeginning
         [
             ischart:inMYA 432.9 ;
-            sdo:marginOfError 1.2 ;
+            schema:marginOfError 1.2 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 430.6 ;
-            sdo:marginOfError 1.3 ;
+            schema:marginOfError 1.3 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 124 ;
-    sdo:color "#BFE6C3"^^ischart:RGBHex ;
+    schema:color "#BFE6C3"^^ischart:RGBHex ;
 .
 
 ischart:Siderian
@@ -2395,7 +2395,7 @@ ischart:Siderian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 171 ;
-    sdo:color "#F74F7C"^^ischart:RGBHex ;
+    schema:color "#F74F7C"^^ischart:RGBHex ;
 .
 
 ischart:Sinemurian
@@ -2409,16 +2409,16 @@ ischart:Sinemurian
     time:hasBeginning
         [
             ischart:inMYA 199.5 ;
-            sdo:marginOfError 0.3 ;
+            schema:marginOfError 0.3 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 192.9 ;
-            sdo:marginOfError 0.3 ;
+            schema:marginOfError 0.3 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 62 ;
-    sdo:color "#67BCD8"^^ischart:RGBHex ;
+    schema:color "#67BCD8"^^ischart:RGBHex ;
 .
 
 ischart:Statherian
@@ -2439,7 +2439,7 @@ ischart:Statherian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 166 ;
-    sdo:color "#F875A7"^^ischart:RGBHex ;
+    schema:color "#F875A7"^^ischart:RGBHex ;
 .
 
 ischart:Stenian
@@ -2460,7 +2460,7 @@ ischart:Stenian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 162 ;
-    sdo:color "#FED99A"^^ischart:RGBHex ;
+    schema:color "#FED99A"^^ischart:RGBHex ;
 .
 
 ischart:Telychian
@@ -2474,16 +2474,16 @@ ischart:Telychian
     time:hasBeginning
         [
             ischart:inMYA 438.6 ;
-            sdo:marginOfError 1.0 ;
+            schema:marginOfError 1.0 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 432.9 ;
-            sdo:marginOfError 1.2 ;
+            schema:marginOfError 1.2 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 126 ;
-    sdo:color "#BFE6CF"^^ischart:RGBHex ;
+    schema:color "#BFE6CF"^^ischart:RGBHex ;
 .
 
 ischart:Thanetian
@@ -2504,7 +2504,7 @@ ischart:Thanetian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 30 ;
-    sdo:color "#FDBF6F"^^ischart:RGBHex ;
+    schema:color "#FDBF6F"^^ischart:RGBHex ;
 .
 
 ischart:Tithonian
@@ -2517,16 +2517,16 @@ ischart:Tithonian
     time:hasBeginning
         [
             ischart:inMYA 149.2 ;
-            sdo:marginOfError 0.7 ;
+            schema:marginOfError 0.7 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 143.1 ;
-            sdo:marginOfError 0.6 ;
+            schema:marginOfError 0.6 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 51 ;
-    sdo:color "#D9F1F7"^^ischart:RGBHex ;
+    schema:color "#D9F1F7"^^ischart:RGBHex ;
 .
 
 ischart:Toarcian
@@ -2540,16 +2540,16 @@ ischart:Toarcian
     time:hasBeginning
         [
             ischart:inMYA 184.2 ;
-            sdo:marginOfError 0.3 ;
+            schema:marginOfError 0.3 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 174.7 ;
-            sdo:marginOfError 0.8 ;
+            schema:marginOfError 0.8 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 60 ;
-    sdo:color "#99CEE3"^^ischart:RGBHex ;
+    schema:color "#99CEE3"^^ischart:RGBHex ;
 .
 
 ischart:Tonian
@@ -2571,7 +2571,7 @@ ischart:Tonian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 161 ;
-    sdo:color "#FEBF4E"^^ischart:RGBHex ;
+    schema:color "#FEBF4E"^^ischart:RGBHex ;
 .
 
 ischart:Tortonian
@@ -2592,7 +2592,7 @@ ischart:Tortonian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 15 ;
-    sdo:color "#FFFF66"^^ischart:RGBHex ;
+    schema:color "#FFFF66"^^ischart:RGBHex ;
 .
 
 ischart:Tournaisian
@@ -2606,16 +2606,16 @@ ischart:Tournaisian
     time:hasBeginning
         [
             ischart:inMYA 358.86 ;
-            sdo:marginOfError 0.19 ;
+            schema:marginOfError 0.19 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 346.7 ;
-            sdo:marginOfError 0.4 ;
+            schema:marginOfError 0.4 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 107 ;
-    sdo:color "#8CB06C"^^ischart:RGBHex ;
+    schema:color "#8CB06C"^^ischart:RGBHex ;
 .
 
 ischart:Tremadocian
@@ -2629,16 +2629,16 @@ ischart:Tremadocian
     time:hasBeginning
         [
             ischart:inMYA 486.85 ;
-            sdo:marginOfError 1.5 ;
+            schema:marginOfError 1.5 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 477.1 ;
-            sdo:marginOfError 1.2 ;
+            schema:marginOfError 1.2 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 141 ;
-    sdo:color "#33A97E"^^ischart:RGBHex ;
+    schema:color "#33A97E"^^ischart:RGBHex ;
 .
 
 ischart:Turonian
@@ -2652,16 +2652,16 @@ ischart:Turonian
     time:hasBeginning
         [
             ischart:inMYA 93.9 ;
-            sdo:marginOfError 0.2 ;
+            schema:marginOfError 0.2 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 89.8 ;
-            sdo:marginOfError 0.3 ;
+            schema:marginOfError 0.3 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 40 ;
-    sdo:color "#BFE35D"^^ischart:RGBHex ;
+    schema:color "#BFE35D"^^ischart:RGBHex ;
 .
 
 ischart:UpperPleistocene
@@ -2681,7 +2681,7 @@ ischart:UpperPleistocene
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 5 ;
-    sdo:color "#FFF2D3"^^ischart:RGBHex ;
+    schema:color "#FFF2D3"^^ischart:RGBHex ;
 .
 
 ischart:Valanginian
@@ -2695,16 +2695,16 @@ ischart:Valanginian
     time:hasBeginning
         [
             ischart:inMYA 137.05 ;
-            sdo:marginOfError 0.2 ;
+            schema:marginOfError 0.2 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 132.6 ;
-            sdo:marginOfError 0.6 ;
+            schema:marginOfError 0.6 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 47 ;
-    sdo:color "#99D36A"^^ischart:RGBHex ;
+    schema:color "#99D36A"^^ischart:RGBHex ;
 .
 
 ischart:Visean
@@ -2718,16 +2718,16 @@ ischart:Visean
     time:hasBeginning
         [
             ischart:inMYA 346.7 ;
-            sdo:marginOfError 0.4 ;
+            schema:marginOfError 0.4 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 330.3 ;
-            sdo:marginOfError 0.4 ;
+            schema:marginOfError 0.4 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 103 ;
-    sdo:color "#A6B96C"^^ischart:RGBHex ;
+    schema:color "#A6B96C"^^ischart:RGBHex ;
 .
 
 ischart:Wordian
@@ -2741,16 +2741,16 @@ ischart:Wordian
     time:hasBeginning
         [
             ischart:inMYA 266.9 ;
-            sdo:marginOfError 0.4 ;
+            schema:marginOfError 0.4 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 264.28 ;
-            sdo:marginOfError 0.16 ;
+            schema:marginOfError 0.16 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 83 ;
-    sdo:color "#FB8D76"^^ischart:RGBHex ;
+    schema:color "#FB8D76"^^ischart:RGBHex ;
 .
 
 ischart:Wuchiapingian
@@ -2765,16 +2765,16 @@ ischart:Wuchiapingian
     time:hasBeginning
         [
             ischart:inMYA 259.857 ;
-            sdo:marginOfError 0.084 ;
+            schema:marginOfError 0.084 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 254.14 ;
-            sdo:marginOfError 0.07 ;
+            schema:marginOfError 0.07 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 81 ;
-    sdo:color "#FCB4A2"^^ischart:RGBHex ;
+    schema:color "#FCB4A2"^^ischart:RGBHex ;
 .
 
 ischart:Wuliuan
@@ -2797,7 +2797,7 @@ ischart:Wuliuan
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 149 ;
-    sdo:color "#B3D492"^^ischart:RGBHex ;
+    schema:color "#B3D492"^^ischart:RGBHex ;
 .
 
 ischart:Ypresian
@@ -2818,7 +2818,7 @@ ischart:Ypresian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 29 ;
-    sdo:color "#FCA773"^^ischart:RGBHex ;
+    schema:color "#FCA773"^^ischart:RGBHex ;
 .
 
 ischart:Zanclean
@@ -2839,7 +2839,7 @@ ischart:Zanclean
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 13 ;
-    sdo:color "#FFFFB3"^^ischart:RGBHex ;
+    schema:color "#FFFFB3"^^ischart:RGBHex ;
 .
 
 ischart:LowerMississippian
@@ -2854,16 +2854,16 @@ ischart:LowerMississippian
     time:hasBeginning
         [
             ischart:inMYA 358.86 ;
-            sdo:marginOfError 0.19 ;
+            schema:marginOfError 0.19 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 346.7 ;
-            sdo:marginOfError 0.4 ;
+            schema:marginOfError 0.4 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 105 ;
-    sdo:color "#80AB6C"^^ischart:RGBHex ;
+    schema:color "#80AB6C"^^ischart:RGBHex ;
 .
 
 ischart:LowerPennsylvanian
@@ -2878,16 +2878,16 @@ ischart:LowerPennsylvanian
     time:hasBeginning
         [
             ischart:inMYA 323.4 ;
-            sdo:marginOfError 0.4 ;
+            schema:marginOfError 0.4 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 315.2 ;
-            sdo:marginOfError 0.2 ;
+            schema:marginOfError 0.2 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 98 ;
-    sdo:color "#8CBEB4"^^ischart:RGBHex ;
+    schema:color "#8CBEB4"^^ischart:RGBHex ;
 .
 
 ischart:MiddleMississippian
@@ -2902,16 +2902,16 @@ ischart:MiddleMississippian
     time:hasBeginning
         [
             ischart:inMYA 346.7 ;
-            sdo:marginOfError 0.4 ;
+            schema:marginOfError 0.4 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 330.3 ;
-            sdo:marginOfError 0.4 ;
+            schema:marginOfError 0.4 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 102 ;
-    sdo:color "#99B46C"^^ischart:RGBHex ;
+    schema:color "#99B46C"^^ischart:RGBHex ;
 .
 
 ischart:MiddlePennsylvanian
@@ -2925,16 +2925,16 @@ ischart:MiddlePennsylvanian
     time:hasBeginning
         [
             ischart:inMYA 315.2 ;
-            sdo:marginOfError 0.2 ;
+            schema:marginOfError 0.2 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 307.0 ;
-            sdo:marginOfError 0.1 ;
+            schema:marginOfError 0.1 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 95 ;
-    sdo:color "#A6C7B7"^^ischart:RGBHex ;
+    schema:color "#A6C7B7"^^ischart:RGBHex ;
 .
 
 ischart:Pridoli
@@ -2950,16 +2950,16 @@ ischart:Pridoli
     time:hasBeginning
         [
             ischart:inMYA 422.7 ;
-            sdo:marginOfError 1.6 ;
+            schema:marginOfError 1.6 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 419.62 ;
-            sdo:marginOfError 1.36 ;
+            schema:marginOfError 1.36 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 119 ;
-    sdo:color "#E6F5E1"^^ischart:RGBHex ;
+    schema:color "#E6F5E1"^^ischart:RGBHex ;
 .
 
 ischart:UpperMississippian
@@ -2973,22 +2973,22 @@ ischart:UpperMississippian
     time:hasBeginning
         [
             ischart:inMYA 330.3 ;
-            sdo:marginOfError 0.4 ;
+            schema:marginOfError 0.4 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 323.4 ;
-            sdo:marginOfError 0.4 ;
+            schema:marginOfError 0.4 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 101 ;
-    sdo:color "#B3BE6C"^^ischart:RGBHex ;
+    schema:color "#B3BE6C"^^ischart:RGBHex ;
 .
 
 <https://linked.data.gov.au/org/ics>
-    a sdo:Organization ;
-    sdo:name "International Commission on Stratigraphy" ;
-    sdo:url "https://stratigraphy.org"^^xsd:anyURI ;
+    a schema:Organization ;
+    schema:name "International Commission on Stratigraphy" ;
+    schema:url "https://stratigraphy.org"^^xsd:anyURI ;
 .
 
 ischart:CambrianSeries2
@@ -3013,7 +3013,7 @@ ischart:CambrianSeries2
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 151 ;
-    sdo:color "#99C078"^^ischart:RGBHex ;
+    schema:color "#99C078"^^ischart:RGBHex ;
 .
 
 ischart:Carboniferous
@@ -3030,16 +3030,16 @@ ischart:Carboniferous
     time:hasBeginning
         [
             ischart:inMYA 358.86 ;
-            sdo:marginOfError 0.19 ;
+            schema:marginOfError 0.19 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 298.9 ;
-            sdo:marginOfError 0.15 ;
+            schema:marginOfError 0.15 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 104 ;
-    sdo:color "#67A599"^^ischart:RGBHex ;
+    schema:color "#67A599"^^ischart:RGBHex ;
 .
 
 ischart:Cretaceous
@@ -3055,7 +3055,7 @@ ischart:Cretaceous
     time:hasBeginning
         [
             ischart:inMYA 143.1 ;
-            sdo:marginOfError 0.6 ;
+            schema:marginOfError 0.6 ;
         ] ;
     time:hasEnd
         [
@@ -3063,7 +3063,7 @@ ischart:Cretaceous
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 49 ;
-    sdo:color "#7FC64E"^^ischart:RGBHex ;
+    schema:color "#7FC64E"^^ischart:RGBHex ;
 .
 
 ischart:Lopingian
@@ -3081,16 +3081,16 @@ ischart:Lopingian
     time:hasBeginning
         [
             ischart:inMYA 259.857 ;
-            sdo:marginOfError 0.084 ;
+            schema:marginOfError 0.084 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 251.902 ;
-            sdo:marginOfError 0.024 ;
+            schema:marginOfError 0.024 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 80 ;
-    sdo:color "#FBA794"^^ischart:RGBHex ;
+    schema:color "#FBA794"^^ischart:RGBHex ;
 .
 
 ischart:LowerOrdovician
@@ -3107,16 +3107,16 @@ ischart:LowerOrdovician
     time:hasBeginning
         [
             ischart:inMYA 486.85 ;
-            sdo:marginOfError 1.5 ;
+            schema:marginOfError 1.5 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 471.3 ;
-            sdo:marginOfError 1.4 ;
+            schema:marginOfError 1.4 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 139 ;
-    sdo:color "#1A9D6F"^^ischart:RGBHex ;
+    schema:color "#1A9D6F"^^ischart:RGBHex ;
 .
 
 ischart:LowerTriassic
@@ -3134,7 +3134,7 @@ ischart:LowerTriassic
     time:hasBeginning
         [
             ischart:inMYA 251.902 ;
-            sdo:marginOfError 0.024 ;
+            schema:marginOfError 0.024 ;
         ] ;
     time:hasEnd
         [
@@ -3142,7 +3142,7 @@ ischart:LowerTriassic
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 75 ;
-    sdo:color "#983999"^^ischart:RGBHex ;
+    schema:color "#983999"^^ischart:RGBHex ;
 .
 
 ischart:Ludlow
@@ -3159,16 +3159,16 @@ ischart:Ludlow
     time:hasBeginning
         [
             ischart:inMYA 426.7 ;
-            sdo:marginOfError 1.5 ;
+            schema:marginOfError 1.5 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 419.62 ;
-            sdo:marginOfError 1.36 ;
+            schema:marginOfError 1.36 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 122 ;
-    sdo:color "#BFE6CF"^^ischart:RGBHex ;
+    schema:color "#BFE6CF"^^ischart:RGBHex ;
 .
 
 ischart:MiddleDevonian
@@ -3185,16 +3185,16 @@ ischart:MiddleDevonian
     time:hasBeginning
         [
             ischart:inMYA 393.47 ;
-            sdo:marginOfError 0.99 ;
+            schema:marginOfError 0.99 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 382.31 ;
-            sdo:marginOfError 1.36 ;
+            schema:marginOfError 1.36 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 113 ;
-    sdo:color "#F1C868"^^ischart:RGBHex ;
+    schema:color "#F1C868"^^ischart:RGBHex ;
 .
 
 ischart:MiddleOrdovician
@@ -3211,16 +3211,16 @@ ischart:MiddleOrdovician
     time:hasBeginning
         [
             ischart:inMYA 471.3 ;
-            sdo:marginOfError 1.4 ;
+            schema:marginOfError 1.4 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 458.2 ;
-            sdo:marginOfError 0.7 ;
+            schema:marginOfError 0.7 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 137 ;
-    sdo:color "#4DB47E"^^ischart:RGBHex ;
+    schema:color "#4DB47E"^^ischart:RGBHex ;
 .
 
 ischart:MiddleTriassic
@@ -3245,7 +3245,7 @@ ischart:MiddleTriassic
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 72 ;
-    sdo:color "#B168B1"^^ischart:RGBHex ;
+    schema:color "#B168B1"^^ischart:RGBHex ;
 .
 
 ischart:Neogene
@@ -3269,7 +3269,7 @@ ischart:Neogene
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 21 ;
-    sdo:color "#FFE619"^^ischart:RGBHex ;
+    schema:color "#FFE619"^^ischart:RGBHex ;
 .
 
 ischart:Oligocene
@@ -3293,7 +3293,7 @@ ischart:Oligocene
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 23 ;
-    sdo:color "#FEC07A"^^ischart:RGBHex ;
+    schema:color "#FEC07A"^^ischart:RGBHex ;
 .
 
 ischart:Pliocene
@@ -3317,7 +3317,7 @@ ischart:Pliocene
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 12 ;
-    sdo:color "#FFFF99"^^ischart:RGBHex ;
+    schema:color "#FFFF99"^^ischart:RGBHex ;
 .
 
 ischart:Quaternary
@@ -3341,7 +3341,7 @@ ischart:Quaternary
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 10 ;
-    sdo:color "#F9F97F"^^ischart:RGBHex ;
+    schema:color "#F9F97F"^^ischart:RGBHex ;
 .
 
 ischart:Terreneuvian
@@ -3358,7 +3358,7 @@ ischart:Terreneuvian
     time:hasBeginning
         [
             ischart:inMYA 538.8 ;
-            sdo:marginOfError 0.6 ;
+            schema:marginOfError 0.6 ;
         ] ;
     time:hasEnd
         [
@@ -3367,7 +3367,7 @@ ischart:Terreneuvian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 157 ;
-    sdo:color "#8CB06C"^^ischart:RGBHex ;
+    schema:color "#8CB06C"^^ischart:RGBHex ;
 .
 
 ischart:UpperDevonian
@@ -3384,16 +3384,16 @@ ischart:UpperDevonian
     time:hasBeginning
         [
             ischart:inMYA 382.31 ;
-            sdo:marginOfError 1.36 ;
+            schema:marginOfError 1.36 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 358.86 ;
-            sdo:marginOfError 0.19 ;
+            schema:marginOfError 0.19 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 110 ;
-    sdo:color "#F1E19D"^^ischart:RGBHex ;
+    schema:color "#F1E19D"^^ischart:RGBHex ;
 .
 
 ischart:UpperPennsylvanian
@@ -3409,16 +3409,16 @@ ischart:UpperPennsylvanian
     time:hasBeginning
         [
             ischart:inMYA 307.0 ;
-            sdo:marginOfError 0.1 ;
+            schema:marginOfError 0.1 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 298.9 ;
-            sdo:marginOfError 0.15 ;
+            schema:marginOfError 0.15 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 94 ;
-    sdo:color "#BFD0BA"^^ischart:RGBHex ;
+    schema:color "#BFD0BA"^^ischart:RGBHex ;
 .
 
 ischart:Wenlock
@@ -3435,16 +3435,16 @@ ischart:Wenlock
     time:hasBeginning
         [
             ischart:inMYA 432.9 ;
-            sdo:marginOfError 1.2 ;
+            schema:marginOfError 1.2 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 426.7 ;
-            sdo:marginOfError 1.5 ;
+            schema:marginOfError 1.5 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 125 ;
-    sdo:color "#B3E1C2"^^ischart:RGBHex ;
+    schema:color "#B3E1C2"^^ischart:RGBHex ;
 .
 
 ischart:Cenozoic
@@ -3469,7 +3469,7 @@ ischart:Cenozoic
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 32 ;
-    sdo:color "#F2F91D"^^ischart:RGBHex ;
+    schema:color "#F2F91D"^^ischart:RGBHex ;
 .
 
 ischart:Devonian
@@ -3487,16 +3487,16 @@ ischart:Devonian
     time:hasBeginning
         [
             ischart:inMYA 419.62 ;
-            sdo:marginOfError 1.36 ;
+            schema:marginOfError 1.36 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 358.86 ;
-            sdo:marginOfError 0.19 ;
+            schema:marginOfError 0.19 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 116 ;
-    sdo:color "#CB8C37"^^ischart:RGBHex ;
+    schema:color "#CB8C37"^^ischart:RGBHex ;
 .
 
 ischart:Furongian
@@ -3519,11 +3519,11 @@ ischart:Furongian
     time:hasEnd
         [
             ischart:inMYA 486.85 ;
-            sdo:marginOfError 1.5 ;
+            schema:marginOfError 1.5 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 144 ;
-    sdo:color "#B3E095"^^ischart:RGBHex ;
+    schema:color "#B3E095"^^ischart:RGBHex ;
 .
 
 ischart:Guadalupian
@@ -3542,16 +3542,16 @@ ischart:Guadalupian
     time:hasBeginning
         [
             ischart:inMYA 274.4 ;
-            sdo:marginOfError 0.4 ;
+            schema:marginOfError 0.4 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 259.857 ;
-            sdo:marginOfError 0.084 ;
+            schema:marginOfError 0.084 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 84 ;
-    sdo:color "#FB745C"^^ischart:RGBHex ;
+    schema:color "#FB745C"^^ischart:RGBHex ;
 .
 
 ischart:Holocene
@@ -3576,7 +3576,7 @@ ischart:Holocene
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 4 ;
-    sdo:color "#FEEBD2"^^ischart:RGBHex ;
+    schema:color "#FEEBD2"^^ischart:RGBHex ;
 .
 
 ischart:Jurassic
@@ -3594,16 +3594,16 @@ ischart:Jurassic
     time:hasBeginning
         [
             ischart:inMYA 201.4 ;
-            sdo:marginOfError 0.2 ;
+            schema:marginOfError 0.2 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 143.1 ;
-            sdo:marginOfError 0.6 ;
+            schema:marginOfError 0.6 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 64 ;
-    sdo:color "#34B2C9"^^ischart:RGBHex ;
+    schema:color "#34B2C9"^^ischart:RGBHex ;
 .
 
 ischart:Llandovery
@@ -3621,16 +3621,16 @@ ischart:Llandovery
     time:hasBeginning
         [
             ischart:inMYA 443.1 ;
-            sdo:marginOfError 1.0 ;
+            schema:marginOfError 1.0 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 432.9 ;
-            sdo:marginOfError 1.2 ;
+            schema:marginOfError 1.2 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 128 ;
-    sdo:color "#99D7B3"^^ischart:RGBHex ;
+    schema:color "#99D7B3"^^ischart:RGBHex ;
 .
 
 ischart:LowerDevonian
@@ -3648,16 +3648,16 @@ ischart:LowerDevonian
     time:hasBeginning
         [
             ischart:inMYA 419.62 ;
-            sdo:marginOfError 1.36 ;
+            schema:marginOfError 1.36 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 393.47 ;
-            sdo:marginOfError 0.99 ;
+            schema:marginOfError 0.99 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 118 ;
-    sdo:color "#E5AC4D"^^ischart:RGBHex ;
+    schema:color "#E5AC4D"^^ischart:RGBHex ;
 .
 
 ischart:Mesoproterozoic
@@ -3682,7 +3682,7 @@ ischart:Mesoproterozoic
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 165 ;
-    sdo:color "#FDB462"^^ischart:RGBHex ;
+    schema:color "#FDB462"^^ischart:RGBHex ;
 .
 
 ischart:Mesozoic
@@ -3700,7 +3700,7 @@ ischart:Mesozoic
     time:hasBeginning
         [
             ischart:inMYA 251.902 ;
-            sdo:marginOfError 0.024 ;
+            schema:marginOfError 0.024 ;
         ] ;
     time:hasEnd
         [
@@ -3708,7 +3708,7 @@ ischart:Mesozoic
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 76 ;
-    sdo:color "#67C5CA"^^ischart:RGBHex ;
+    schema:color "#67C5CA"^^ischart:RGBHex ;
 .
 
 ischart:Miaolingian
@@ -3735,7 +3735,7 @@ ischart:Miaolingian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 148 ;
-    sdo:color "#A6CF86"^^ischart:RGBHex ;
+    schema:color "#A6CF86"^^ischart:RGBHex ;
 .
 
 ischart:Mississippian
@@ -3753,16 +3753,16 @@ ischart:Mississippian
     time:hasBeginning
         [
             ischart:inMYA 358.86 ;
-            sdo:marginOfError 0.19 ;
+            schema:marginOfError 0.19 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 323.4 ;
-            sdo:marginOfError 0.4 ;
+            schema:marginOfError 0.4 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 106 ;
-    sdo:color "#678F66"^^ischart:RGBHex ;
+    schema:color "#678F66"^^ischart:RGBHex ;
 .
 
 ischart:Neoproterozoic
@@ -3785,11 +3785,11 @@ ischart:Neoproterozoic
     time:hasEnd
         [
             ischart:inMYA 538.8 ;
-            sdo:marginOfError 0.6 ;
+            schema:marginOfError 0.6 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 160 ;
-    sdo:color "#FEB342"^^ischart:RGBHex ;
+    schema:color "#FEB342"^^ischart:RGBHex ;
 .
 
 ischart:Ordovician
@@ -3807,16 +3807,16 @@ ischart:Ordovician
     time:hasBeginning
         [
             ischart:inMYA 486.85 ;
-            sdo:marginOfError 1.5 ;
+            schema:marginOfError 1.5 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 443.1 ;
-            sdo:marginOfError 1.0 ;
+            schema:marginOfError 1.0 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 140 ;
-    sdo:color "#009270"^^ischart:RGBHex ;
+    schema:color "#009270"^^ischart:RGBHex ;
 .
 
 ischart:Paleocene
@@ -3841,7 +3841,7 @@ ischart:Paleocene
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 34 ;
-    sdo:color "#FDA75F"^^ischart:RGBHex ;
+    schema:color "#FDA75F"^^ischart:RGBHex ;
 .
 
 ischart:Paleogene
@@ -3866,7 +3866,7 @@ ischart:Paleogene
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 35 ;
-    sdo:color "#FD9A52"^^ischart:RGBHex ;
+    schema:color "#FD9A52"^^ischart:RGBHex ;
 .
 
 ischart:Pennsylvanian
@@ -3884,16 +3884,16 @@ ischart:Pennsylvanian
     time:hasBeginning
         [
             ischart:inMYA 323.4 ;
-            sdo:marginOfError 0.4 ;
+            schema:marginOfError 0.4 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 298.9 ;
-            sdo:marginOfError 0.15 ;
+            schema:marginOfError 0.15 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 99 ;
-    sdo:color "#7EBCC6"^^ischart:RGBHex ;
+    schema:color "#7EBCC6"^^ischart:RGBHex ;
 .
 
 ischart:Permian
@@ -3911,16 +3911,16 @@ ischart:Permian
     time:hasBeginning
         [
             ischart:inMYA 298.9 ;
-            sdo:marginOfError 0.15 ;
+            schema:marginOfError 0.15 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 251.902 ;
-            sdo:marginOfError 0.024 ;
+            schema:marginOfError 0.024 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 91 ;
-    sdo:color "#F04028"^^ischart:RGBHex ;
+    schema:color "#F04028"^^ischart:RGBHex ;
 .
 
 ischart:Phanerozoic
@@ -3937,7 +3937,7 @@ ischart:Phanerozoic
     time:hasBeginning
         [
             ischart:inMYA 538.8 ;
-            sdo:marginOfError 0.6 ;
+            schema:marginOfError 0.6 ;
         ] ;
     time:hasEnd
         [
@@ -3945,7 +3945,7 @@ ischart:Phanerozoic
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 156 ;
-    sdo:color "#9AD9DD"^^ischart:RGBHex ;
+    schema:color "#9AD9DD"^^ischart:RGBHex ;
 .
 
 ischart:Precambrian
@@ -3966,11 +3966,11 @@ ischart:Precambrian
     time:hasEnd
         [
             ischart:inMYA 538.8 ;
-            sdo:marginOfError 0.6 ;
+            schema:marginOfError 0.6 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 178 ;
-    sdo:color "#F74370"^^ischart:RGBHex ;
+    schema:color "#F74370"^^ischart:RGBHex ;
 .
 
 ischart:Proterozoic
@@ -3992,11 +3992,11 @@ ischart:Proterozoic
     time:hasEnd
         [
             ischart:inMYA 538.8 ;
-            sdo:marginOfError 0.6 ;
+            schema:marginOfError 0.6 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 170 ;
-    sdo:color "#F73563"^^ischart:RGBHex ;
+    schema:color "#F73563"^^ischart:RGBHex ;
 .
 
 ischart:Triassic
@@ -4014,16 +4014,16 @@ ischart:Triassic
     time:hasBeginning
         [
             ischart:inMYA 251.902 ;
-            sdo:marginOfError 0.024 ;
+            schema:marginOfError 0.024 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 201.4 ;
-            sdo:marginOfError 0.2 ;
+            schema:marginOfError 0.2 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 78 ;
-    sdo:color "#812B92"^^ischart:RGBHex ;
+    schema:color "#812B92"^^ischart:RGBHex ;
 .
 
 ischart:UpperJurassic
@@ -4040,16 +4040,16 @@ ischart:UpperJurassic
     time:hasBeginning
         [
             ischart:inMYA 161.5 ;
-            sdo:marginOfError 1.0 ;
+            schema:marginOfError 1.0 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 143.1 ;
-            sdo:marginOfError 0.6 ;
+            schema:marginOfError 0.6 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 54 ;
-    sdo:color "#B3E3EE"^^ischart:RGBHex ;
+    schema:color "#B3E3EE"^^ischart:RGBHex ;
 .
 
 ischart:UpperOrdovician
@@ -4067,16 +4067,16 @@ ischart:UpperOrdovician
     time:hasBeginning
         [
             ischart:inMYA 458.2 ;
-            sdo:marginOfError 0.7 ;
+            schema:marginOfError 0.7 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 443.1 ;
-            sdo:marginOfError 1.0 ;
+            schema:marginOfError 1.0 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 134 ;
-    sdo:color "#7FCA93"^^ischart:RGBHex ;
+    schema:color "#7FCA93"^^ischart:RGBHex ;
 .
 
 ischart:UpperTriassic
@@ -4099,11 +4099,11 @@ ischart:UpperTriassic
     time:hasEnd
         [
             ischart:inMYA 201.4 ;
-            sdo:marginOfError 0.2 ;
+            schema:marginOfError 0.2 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 69 ;
-    sdo:color "#BD8CC3"^^ischart:RGBHex ;
+    schema:color "#BD8CC3"^^ischart:RGBHex ;
 .
 
 ischart:Archean
@@ -4122,7 +4122,7 @@ ischart:Archean
     time:hasBeginning
         [
             ischart:inMYA 4031 ;
-            sdo:marginOfError 3 ;
+            schema:marginOfError 3 ;
         ] ;
     time:hasEnd
         [
@@ -4130,7 +4130,7 @@ ischart:Archean
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 175 ;
-    sdo:color "#F0047F"^^ischart:RGBHex ;
+    schema:color "#F0047F"^^ischart:RGBHex ;
 .
 
 ischart:Cambrian
@@ -4149,16 +4149,16 @@ ischart:Cambrian
     time:hasBeginning
         [
             ischart:inMYA 538.8 ;
-            sdo:marginOfError 0.6 ;
+            schema:marginOfError 0.6 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 486.85 ;
-            sdo:marginOfError 1.5 ;
+            schema:marginOfError 1.5 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 154 ;
-    sdo:color "#7FA056"^^ischart:RGBHex ;
+    schema:color "#7FA056"^^ischart:RGBHex ;
 .
 
 ischart:Cisuralian
@@ -4177,16 +4177,16 @@ ischart:Cisuralian
     time:hasBeginning
         [
             ischart:inMYA 298.9 ;
-            sdo:marginOfError 0.15 ;
+            schema:marginOfError 0.15 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 274.4 ;
-            sdo:marginOfError 0.4 ;
+            schema:marginOfError 0.4 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 90 ;
-    sdo:color "#EF5845"^^ischart:RGBHex ;
+    schema:color "#EF5845"^^ischart:RGBHex ;
 .
 
 ischart:Eocene
@@ -4212,7 +4212,7 @@ ischart:Eocene
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 28 ;
-    sdo:color "#FDB46C"^^ischart:RGBHex ;
+    schema:color "#FDB46C"^^ischart:RGBHex ;
 .
 
 ischart:LowerJurassic
@@ -4231,16 +4231,16 @@ ischart:LowerJurassic
     time:hasBeginning
         [
             ischart:inMYA 201.4 ;
-            sdo:marginOfError 0.2 ;
+            schema:marginOfError 0.2 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 174.7 ;
-            sdo:marginOfError 0.8 ;
+            schema:marginOfError 0.8 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 65 ;
-    sdo:color "#42AED0"^^ischart:RGBHex ;
+    schema:color "#42AED0"^^ischart:RGBHex ;
 .
 
 ischart:MiddleJurassic
@@ -4259,16 +4259,16 @@ ischart:MiddleJurassic
     time:hasBeginning
         [
             ischart:inMYA 174.7 ;
-            sdo:marginOfError 0.8 ;
+            schema:marginOfError 0.8 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 161.5 ;
-            sdo:marginOfError 1.0 ;
+            schema:marginOfError 1.0 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 59 ;
-    sdo:color "#80CFD8"^^ischart:RGBHex ;
+    schema:color "#80CFD8"^^ischart:RGBHex ;
 .
 
 ischart:Paleoproterozoic
@@ -4294,7 +4294,7 @@ ischart:Paleoproterozoic
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 169 ;
-    sdo:color "#F74370"^^ischart:RGBHex ;
+    schema:color "#F74370"^^ischart:RGBHex ;
 .
 
 ischart:Pleistocene
@@ -4320,7 +4320,7 @@ ischart:Pleistocene
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 9 ;
-    sdo:color "#FFEFAF"^^ischart:RGBHex ;
+    schema:color "#FFEFAF"^^ischart:RGBHex ;
 .
 
 ischart:Silurian
@@ -4339,16 +4339,16 @@ ischart:Silurian
     time:hasBeginning
         [
             ischart:inMYA 443.1 ;
-            sdo:marginOfError 1.0 ;
+            schema:marginOfError 1.0 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 419.62 ;
-            sdo:marginOfError 1.36 ;
+            schema:marginOfError 1.36 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 130 ;
-    sdo:color "#B3E1B6"^^ischart:RGBHex ;
+    schema:color "#B3E1B6"^^ischart:RGBHex ;
 .
 
 ischart:LowerCretaceous
@@ -4368,16 +4368,16 @@ ischart:LowerCretaceous
     time:hasBeginning
         [
             ischart:inMYA 143.1 ;
-            sdo:marginOfError 0.6 ;
+            schema:marginOfError 0.6 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 100.5 ;
-            sdo:marginOfError 0.1 ;
+            schema:marginOfError 0.1 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 50 ;
-    sdo:color "#8CCD57"^^ischart:RGBHex ;
+    schema:color "#8CCD57"^^ischart:RGBHex ;
 .
 
 ischart:Miocene
@@ -4405,7 +4405,7 @@ ischart:Miocene
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 20 ;
-    sdo:color "#FFFF00"^^ischart:RGBHex ;
+    schema:color "#FFFF00"^^ischart:RGBHex ;
 .
 
 ischart:Paleozoic
@@ -4426,16 +4426,16 @@ ischart:Paleozoic
     time:hasBeginning
         [
             ischart:inMYA 538.8 ;
-            sdo:marginOfError 0.6 ;
+            schema:marginOfError 0.6 ;
         ] ;
     time:hasEnd
         [
             ischart:inMYA 251.902 ;
-            sdo:marginOfError 0.024 ;
+            schema:marginOfError 0.024 ;
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 77 ;
-    sdo:color "#99C08D"^^ischart:RGBHex ;
+    schema:color "#99C08D"^^ischart:RGBHex ;
 .
 
 ischart:UpperCretaceous
@@ -4456,7 +4456,7 @@ ischart:UpperCretaceous
     time:hasBeginning
         [
             ischart:inMYA 100.5 ;
-            sdo:marginOfError 0.1 ;
+            schema:marginOfError 0.1 ;
         ] ;
     time:hasEnd
         [
@@ -4464,7 +4464,7 @@ ischart:UpperCretaceous
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 42 ;
-    sdo:color "#A6D84A"^^ischart:RGBHex ;
+    schema:color "#A6D84A"^^ischart:RGBHex ;
 .
 
 cs:
@@ -4490,8 +4490,8 @@ cs:
 
 2023-09: updated form of the Geologic Timescale (2020) (see http://resource.geosciml.org/vocabulary/timescale/) to match the 2023-09 Chart, as released at https://stratigraphy.org/chart in late 2023.""" ;
     prov:wasDerivedFrom ts:gts2020 ;
-    sdo:citation "https://stratigraphy.org/chart"^^xsd:anyURI ;
-    sdo:copyrightHolder <https://linked.data.gov.au/org/ics> ;
-    sdo:copyrightNotice "(c) International Commission on Stratigraphy, 2024"@en ;
-    sdo:license <https://creativecommons.org/licenses/by/4.0/> ;
+    schema:citation "https://stratigraphy.org/chart"^^xsd:anyURI ;
+    schema:copyrightHolder <https://linked.data.gov.au/org/ics> ;
+    schema:copyrightNotice "(c) International Commission on Stratigraphy, 2024"@en ;
+    schema:license <https://creativecommons.org/licenses/by/4.0/> ;
 .

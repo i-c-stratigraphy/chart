@@ -14,7 +14,7 @@
 @prefix rank: <http://resource.geosciml.org/ontology/timescale/rank/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix sdo: <https://schema.org/> .
+@prefix schema: <https://schema.org/> .
 @prefix sf: <http://www.opengis.net/ont/sf#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix thors: <http://resource.geosciml.org/ontology/timescale/thors#> .
@@ -14579,7 +14579,7 @@ Also: changed samfl:shape --> geo:hasGeometry"""@en ;
   skos:hasTopConcept isc:Precambrian ;
   skos:hasTopConcept isc:Stratotype-unspecified ;
   skos:prefLabel "Geological Timescale (2020)"@en ;
-  sdo:codeRepository <https://github.com/CGI-IUGS/timescale-data.git> ;
+  schema:codeRepository <https://github.com/CGI-IUGS/timescale-data.git> ;
 .
 time:TimePosition
   rdfs:subClassOf skos:Concept ;
