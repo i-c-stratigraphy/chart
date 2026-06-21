@@ -51,7 +51,7 @@ The permitted nesting relationships between eras of different ranks are axiomati
   owl:versionIRI gts:2.0 ;
 .
 
-:2.0 schema:name "2.0" .
+gts:2.0 schema:name "2.0" .
 
 gts:Age
   a owl:Class ;

@@ -13,7 +13,6 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     schema:email "nick@kurrawong.ai"^^xsd:anyURI ;
 .
 
-
 <https://orcid.org/0000-0002-3884-3420>
     a schema:Person ;
     schema:email "dr.shorthair@pm.me"^^xsd:anyURI ;

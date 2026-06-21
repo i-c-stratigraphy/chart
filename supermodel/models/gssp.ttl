@@ -1,41 +1,72 @@
 PREFIX : <http://resource.geosciml.org/ontology/gssp/>
+PREFIX gts: <http://resource.geosciml.org/ontology/timescale/gts#>
+PREFIX ont: <http://resource.geosciml.org/ontology/gssp>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
-PREFIX ont: <http://resource.geosciml.org/ontology/gssp>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-:gssp
-    a owl:Class ;
-    schema:name "GSSP" ;
-    schema:description "Global Boundary Stratotype Sections and Points" ;
-    rdfs:isDefinedBy ont: ;
+:1.0
+    schema:name "1.0" ;
 .
 
-:gssa
+:GSSA
     a owl:Class ;
-    schema:name "GSSA" ;
-    schema:description "GSSA" ;
     rdfs:isDefinedBy ont: ;
+    schema:alternateName "GSSA" ;
+    schema:description "GSSAs are boundaries of intervals in geologic time defined by by assigning them a specific numerical age (usually in millions of years ago)" ;
+    schema:name "Global Standard Stratigraphic Age" ;
+    schema:citation "Definition from stratigraphy.org" ;
 .
 
-:1.0 schema:name "1.0" .
+:GSSP
+    a owl:Class ;
+    rdfs:isDefinedBy ont: ;
+    schema:alternateName "GSSP" ;
+    schema:description "GSSPs are reference points on stratigraphic sections of rock which define the lower boundaries of stages on the International Chronostratigraphic Chart" ;
+    schema:name "Global Boundary Stratotype Sections and Point" ;
+    owl:equivalentClass gts:StratigraphicPoint ;
+    schema:citation "Definition from stratigraphy.org" ;
+.
 
 ont:
     a owl:Ontology ;
+    owl:versionIRI :1.0 ;
+    skos:changeNote """2026-06: Added in definitions of GSSP & GSSA from literature
+
+2025-12: Created for the Data Chart and GSSPs DB release, late 2025""" ;
+    schema:codeRepository "https://github.com/i-c-stratigraphy/chart"^^xsd:anyURI ;
     schema:copyrightHolder <https://stratigraphy.org> ;
     schema:copyrightNotice "(c) 2025 International Commission on Stratigraphy" ;
+    schema:copyrightYear 2025 ;
     schema:creator <https://orcid.org/0000-0002-8742-7730> ;
     schema:dateCreated "2025-12-01"^^xsd:date ;
-    schema:dateModified "2025-12-02"^^xsd:date ;
     schema:dateIssued "2026-01-01"^^xsd:date ;
-    schema:description """An ontology for describing Global Boundary Stratotype Sections and Points and related objects""" ;
+    schema:dateModified "2026-06-21"^^xsd:date ;
+    schema:description "An ontology for describing Global Boundary Stratotype Sections and Points and related objects" ;
+    schema:hasPart
+        :GSSA ,
+        :GSSP ;
     schema:license <http://purl.org/NET/rdflicense/cc-by4.0> ;
     schema:name "GSSP Model" ;
     schema:publisher <https://stratigraphy.org> ;
     schema:version "1.0" ;
-    owl:versionIRI :1.0 ;
-    skos:historyNote "Created for the Data Chart and GSSPs DB release, late 2025" ;
-    schema:codeRepository "https://github.com/i-c-stratigraphy/chart"^^xsd:anyURI ;
+.
+
+<https://stratigraphy.org>
+    a schema:Organization ;
+    schema:name "International Commission on Stratigraphy" ;
+    schema:url "https://stratigraphy.org"^^xsd:anyURI ;
+.
+
+<https://orcid.org/0000-0002-8742-7730>
+    a schema:Person ;
+    schema:name "Nicholas J. Car" ;
+    schema:email "nick@kurrawong.ai"^^xsd:anyURI ;
+.
+
+<http://purl.org/NET/rdflicense/cc-by4.0>
+    schema:name "Creative Commons - Attribution 4.0 International"@en ;
+    schema:url "http://creativecommons.org/licenses/by/4.0/legalcode"^^xsd:anyURI ;
 .
