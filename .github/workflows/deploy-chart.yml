@@ -13,7 +13,7 @@ jobs:
       - name: Setup pnpm & install workspace
         uses: pnpm/action-setup@v3
         with:
-          version: latest
+          version: 10.28.2
           run_install: true
       - name: Build chart ui
         working-directory: ./chart-ui
