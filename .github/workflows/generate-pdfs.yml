@@ -2,6 +2,10 @@ name: Generate PDFs on release
 
 on:
   workflow_call:
+    inputs:
+      tag_name:
+        required: true
+        type: string
 
 jobs:
   build:
@@ -143,5 +147,6 @@ jobs:
         if: ${{ !env.ACT }}
         uses: softprops/action-gh-release@v2
         with:
+          tag_name: ${{ inputs.tag_name }}
           files: |
             *.pdf
