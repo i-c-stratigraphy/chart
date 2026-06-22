@@ -54,7 +54,7 @@ onUnmounted(() => {
 
             <h1>International Chronostratigraphic Chart</h1>
             <p>
-                This page contains the latest version of the International Chronostratigraphic Chart (v2026-106) which visually presents the time periods and hierarchy of stratigraphic names of Earth's geological history. It is available in multiple languages.</p>
+                This page contains the latest version of the International Chronostratigraphic Chart (v2026-06) which visually presents the time periods and hierarchy of stratigraphic names of Earth's geological history. It is available in multiple languages.</p>
             <p>
                 If you are looking for older versions or other supporting material, please see the <a href="/supplementary">Supplementary Chart Information</a> page.
             </p>
