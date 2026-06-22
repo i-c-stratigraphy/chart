@@ -3,7 +3,6 @@ import n3 from 'n3'
 import clownface from 'clownface'
 import type { AnyPointer } from 'clownface'
 import chartTtl from '../../chart.ttl?raw'
-import definitionsTtl from '../../source/multilang/definitions.ttl?raw'
 
 export function useRDFStore() {
   const store = shallowRef<n3.Store>(new n3.Store())
@@ -19,7 +18,6 @@ export function useRDFStore() {
     try {
       const quads: n3.Quad[] = [
         ...parser.parse(chartTtl),
-        ...parser.parse(definitionsTtl),
       ]
 
       const newStore = new n3.Store(quads)
