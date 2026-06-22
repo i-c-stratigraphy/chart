@@ -56,5 +56,7 @@ jobs:
   publish-pdfs:
     needs: build
     uses: ./.github/workflows/generate-pdfs.yml
+    with:
+      tag_name: ${{ github.event.release.tag_name }}
     permissions:
       contents: write # Required to upload PDFs to the GitHub release
