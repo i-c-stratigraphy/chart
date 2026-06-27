@@ -22,7 +22,7 @@ dcterms:bibliographicCitation
         "Citacio: Cohen, K.M., Finney, S.C., Gibbard, P.L., y Fan, J.-X. (2013; actualilzat) The ICS Intemational Chronostratigraphic Chart. Episodes 36: 199-204."@ca ,
         "Způsob citace původní tabulky: Cohen, K.M., Finney, S.C., Gibbard, P.L. & Fan, J.-X. (2013; updated) The ICS International Chronostratigraphic Chart. Episodes 36:199-204"@cs ,
         "Zitierweise: Cohen, K.M., Finney, S.C., Gibbard, P.L. & Fan, J.-X. (2013; aktualisiert). The ICS International Chronostratigraphic Chart. Episodes 36: 199-204. www.stratigraphy.org/ICSchart/ChronostratChart2024-12.pdf"@de ,
-        "Cohen K, Harper D, Gibbard P, Car N. The ICS international chronostratigraphic chart this decade. Episodes 2025;48:105-115. https://doi.org/10.18814/epiiugs/2025/025001. Modified 2024-12."@en ,
+        "Cite: Cohen K, Harper D, Gibbard P, Car N. The ICS international chronostratigraphic chart this decade. Episodes 2025;48:105-115. https://doi.org/10.18814/epiiugs/2025/025001. Modified 2024-12."@en ,
         "Citar como: Cohen, K.M., Harper, D., Gibbard, P. & Car, N. (2025). The ICS International Chronostratigraphic Chart this decade. Episodes 48: 105-115. "@es ,
         "Citar como: Cohen, K.M., Finney, S.C., Gibbard, P.L. y Fan, J.-X. (2013; actualizado) The ICS International Chronostratigraphic Chart. Episodes 36: 199-204."@es-a ,
         "Aipamena egiteko: Cohen, K.M., Finney, S.C., Gibbard, P.L. eta Fan, J.-X. (2013; eguneratua) The ICS International Chronostratigraphic Chart. Episodes 36: 199-204."@eu ,
@@ -38,6 +38,7 @@ dcterms:bibliographicCitation
         "Citeren: Cohen, K.M., Finney, S.C., Gibbard, P.L. & Fan, J.-X. (2013; updated). The ICS International Chronostratigraphic Chart. Episodes 36: 199-204."@nl-be ,
         "Referanse: Cohen, K.M., Finney, S.C., Gibbard, P.L. & Fan, J.-X. (2013; updated). The ICS International Chronostratigraphic Chart. Episodes 36: 199-204."@no ,
         "Cohen K, Harper D, Gibbard P, Car N. The ICS international chronostratigraphic chart this decade. Episodes 2025;48:105-115. https://doi.org/10.18814/epiiugs/2025/025001. Zmieniono 2024-12."@pl ,
+        "Citar: Cohen, K.M., Harper, D.A.T., Gibbard, P.L. & Car, N. (2025) The ICS international chronostratigraphic chart this decade. Episodes 48: 105-115."@pt ,
         "Citar: Cohen, K.M., Harper, D.A.T., Gibbard, P.L. & Car, N. (2025) The ICS international chronostratigraphic chart this decade. Episodes 48: 105-115."@pt-br ,
         "Цитировать: Cohen, K.M., Finney, S.C., Gibbard, P.L. & Fan, J.-X. (2013; с дополнениями) The ICS International Chronostratigraphic Chart. Episodes 36: 199-204."@ru ,
         "Citovať ako: Cohen, K.M., Finney, S.C., Gibbard, P.L. & Fan, J.-X. (2013; updated) The ICS International Chronostratigraphic Chart. Episodes 36"@sk ,
@@ -1267,14 +1268,12 @@ vis:translator
     skos:prefLabel
         "Traducció al català per iniciativa de Juan Carlos Gutiérrez-Marco (CSIC)."@ca ,
         "Version in Deutsch: Österreichische Kommission fur Stratigraphie (ASC, W. Piller), Deutsche Stratigraphische Kommission (DSK, R.T. Becker)"@de ,
-        "Traduzione a cura della Commissione Italiana di Stratigrafia"@en ,
         "Tłumaczenie: Polska Komisja Stratygraficzna"@pl ,
         "Tradução para Português (BR) efetuada por I.S. Carvalho, J.A.C. Almeida e A.M.F. Barreto (2013) em colaboração com Universidade Federal do Rio de Janerio (UFRJ) e PALEOLAB - Universidade Federal de Penambucao UFPE. Atualizada 2017-02; 2022-10; 2024-12: C. Zabini (Universidade Estadual de Campinas), K.M. Cohen (IUGS-ICS)."@pt-br ;
 .
 
 vis:translatorURL
     skos:prefLabel
-        "https://www.socgeol.it/273/commissione-italiana-di-stratigrafia.html"@en ,
         "https://www.ptgeol.pl"@pl ;
 .
 

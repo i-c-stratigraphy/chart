@@ -23,12 +23,12 @@ const NS = {
 }
 
 const BLURB_SECTIONS = [
-    { iri: `${NS.icsVisual}Blurb`, kind: "text", fallbackToEnglish: true },
+    { iri: `${NS.icsVisual}mainBlurb`, kind: "text", fallbackToEnglish: true },
     { iri: `${NS.icsVisual}ccgm`, kind: "text", fallbackToEnglish: true },
     { iri: `${NS.dcterms}contributor`, kind: "text", fallbackToEnglish: true },
-    { iri: `${NS.dcterms}bibliographicCitation`, kind: "text", fallbackToEnglish: true },
     { iri: `${NS.schema}copyrightNotice`, kind: "text", fallbackToEnglish: true },
     { iri: `${NS.schema}license`, kind: "text", fallbackToEnglish: true },
+    { iri: `${NS.dcterms}bibliographicCitation`, kind: "text", fallbackToEnglish: true },
     { iri: `${NS.icsVisual}translator`, kind: "text", fallbackToEnglish: false },
     { iri: `${NS.icsVisual}translatorURL`, kind: "link", fallbackToEnglish: false },
     { iri: `${NS.icsVisual}translatorLogo`, kind: "image", fallbackToEnglish: false },
@@ -40,10 +40,10 @@ const blurbSections = computed(() => {
     return BLURB_SECTIONS.flatMap((section) => {
         const value = getUiLabelOptional(section.iri, props.lang, section.fallbackToEnglish)
         if (!value) {
-            return []
+          return []
         }
 
-        if (section.iri === `${NS.icsVisual}Blurb`) {
+        if (section.iri === `${NS.icsVisual}mainBlurb`) {
             return value
                 .split(/\n\s*\n/)
                 .map((paragraph) => paragraph.trim())
