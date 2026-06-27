@@ -12,7 +12,7 @@ classifiers = [
     "Programming Language :: Python :: 3.14",
 ]
 dependencies = [
-    "kurra>=2.3.5,<3",
+    "kurra>=2.3.6,<3",
     "pandas>=2.2.3,<3",
     "openpyxl>=3.1.5,<4",
 ]
