@@ -1,6 +1,6 @@
 [project]
 name = "chart"
-version = "1.0.0"
+version = "2026-06.5"
 description = ""
 authors = [{ name = "Nicholas Car", email = "nick@kurrawong.ai" }]
 requires-python = ">=3.12,<4"

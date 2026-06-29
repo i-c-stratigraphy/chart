@@ -274,7 +274,7 @@ const downloadPdf = () => {
   }
 
   const versionInfo = meta.value?.versionInfo || "";
-  const link = `https://github.com/i-c-stratigraphy/chart/releases/download/v2026-06.4/ICS_Chart_${versionInfo}${downloadVersion.value ? `_${downloadVersion.value}` : ""}.pdf`;
+  const link = `https://github.com/i-c-stratigraphy/chart/releases/download/v2026-06.5/ICS_Chart_${versionInfo}${downloadVersion.value ? `_${downloadVersion.value}` : ""}.pdf`;
   const a = document.createElement("a");
   a.href = link;
   a.download = link.split("/").pop() || "chart.pdf";
