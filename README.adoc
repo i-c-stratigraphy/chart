@@ -20,7 +20,7 @@ Creating this tag will trigger a workflow that generates the PDFs and publishes 
 
 This data is copyrighted as follows:
 
-&copy; International Commission on Stratigraphy, 2024
+&copy; International Commission on Stratigraphy, 2026
 
 This data is licensed for use with the Creative Commons Attribution 4.0 license:
 
