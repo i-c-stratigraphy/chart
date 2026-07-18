@@ -3,18 +3,18 @@ import pandas as pd
 from rdflib import Graph, URIRef, Literal, BNode, Namespace
 from rdflib.namespace import RDF, SDO, SKOS
 
+VIS = Namespace("https://data.stratigraphy.org/data/vis/")
 
 prefixes = {
     "dcterms":  "http://purl.org/dc/terms/",
-    "gssp":     "http://resource.geosciml.org/ontology/gssp/",
+    "gssp":     "https://data.stratigraphy.org/data/gssps",
     "gts":      "http://resource.geosciml.org/ontology/timescale/gts#",
-    "ischart":  "http://resource.geosciml.org/classifier/ics/ischart/",
-    "strat":    "http://resource.geosciml.org/ontology/stratigraphy/",
+    "gtsd":     "https://data.stratigraphy.org/data/gtsd/",
+    "strat":    "https://data.stratigraphy.org/data/strat/",
     "schema":   "https://schema.org/",
-    "vis":      "http://resource.geosciml.org/ontology/ics-visual-chart/",
+    "vis":      str(VIS),
 }
 
-VIS = Namespace("http://resource.geosciml.org/ontology/ics-visual-chart/")
 
 def load_nolabels(g):
     print("Loading chart without labels")
@@ -55,10 +55,10 @@ def make_definitions(g):
     print("Making definitions")
 
     q = """
-        PREFIX ischart: <http://resource.geosciml.org/classifier/ics/ischart/>
+        PREFIX gtsd: <https://data.stratigraphy.org/data/gtsd/>
         PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         PREFIX time: <http://www.w3.org/2006/time#>
-        PREFIX vis: <http://resource.geosciml.org/ontology/ics-visual-chart/>
+        PREFIX vis: <https://data.stratigraphy.org/data/vis/>
         
         INSERT {
             ?element skos:definition ?definition .
@@ -70,8 +70,8 @@ def make_definitions(g):
                 WHERE {
                     ?element 
                         a skos:Concept ;
-                        time:hasBeginning/ischart:inMYA ?hasBeginning ;
-                        time:hasEnd/ischart:inMYA ?hasEnd ;
+                        time:hasBeginning/gtsd:inMYA ?hasBeginning ;
+                        time:hasEnd/gtsd:inMYA ?hasEnd ;
                     .
                 }
                 

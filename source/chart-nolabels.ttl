@@ -1,8 +1,8 @@
-
-PREFIX cs: <http://resource.geosciml.org/classifier/ics/ischart>
+PREFIX cs: <https://data.stratigraphy.org/def/chart>
 PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX gts: <http://resource.geosciml.org/ontology/timescale/gts#>
-PREFIX ischart: <http://resource.geosciml.org/classifier/ics/ischart/>
+PREFIX gtsd: <https://data.stratigraphy.org/data/gts/>
+PREFIX ds: <https://data.stratigraphy.org/data/gts>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX prov: <http://www.w3.org/ns/prov#>
 PREFIX rank: <http://resource.geosciml.org/ontology/timescale/rank/>
@@ -11,231 +11,230 @@ PREFIX schema: <https://schema.org/>
 PREFIX sh: <http://www.w3.org/ns/shacl#>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX time: <http://www.w3.org/2006/time#>
-PREFIX ts: <http://resource.geosciml.org/vocabulary/timescale/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-ischart:Ages
+gtsd:Ages
     a skos:Collection ;
-    rdfs:isDefinedBy cs: ;
+    rdfs:isDefinedBy ds: ;
     skos:definition "An age is the smallest hierarchical geochronologic unit and is equivalent to a chronostratigraphic stage. These are thousands to millions of years in length"@en ;
     skos:historyNote "This Collection was created from the age ranks of the Chart" ;
     skos:inScheme cs: ;
     skos:member
-        ischart:Aalenian ,
-        ischart:Aeronian ,
-        ischart:Albian ,
-        ischart:Anisian ,
-        ischart:Aptian ,
-        ischart:Aquitanian ,
-        ischart:Artinskian ,
-        ischart:Asselian ,
-        ischart:Bajocian ,
-        ischart:Barremian ,
-        ischart:Bartonian ,
-        ischart:Bashkirian ,
-        ischart:Bathonian ,
-        ischart:Berriasian ,
-        ischart:Burdigalian ,
-        ischart:Calabrian ,
-        ischart:Callovian ,
-        ischart:CambrianStage10 ,
-        ischart:CambrianStage2 ,
-        ischart:CambrianStage3 ,
-        ischart:CambrianStage4 ,
-        ischart:Campanian ,
-        ischart:Capitanian ,
-        ischart:Carnian ,
-        ischart:Cenomanian ,
-        ischart:Changhsingian ,
-        ischart:Chattian ,
-        ischart:Chibanian ,
-        ischart:Coniacian ,
-        ischart:Danian ,
-        ischart:Dapingian ,
-        ischart:Darriwilian ,
-        ischart:Drumian ,
-        ischart:Eifelian ,
-        ischart:Emsian ,
-        ischart:Famennian ,
-        ischart:Floian ,
-        ischart:Fortunian ,
-        ischart:Frasnian ,
-        ischart:Gelasian ,
-        ischart:Givetian ,
-        ischart:Gorstian ,
-        ischart:Greenlandian ,
-        ischart:Guzhangian ,
-        ischart:Gzhelian ,
-        ischart:Hauterivian ,
-        ischart:Hettangian ,
-        ischart:Hirnantian ,
-        ischart:Homerian ,
-        ischart:Induan ,
-        ischart:Jiangshanian ,
-        ischart:Kasimovian ,
-        ischart:Katian ,
-        ischart:Kimmeridgian ,
-        ischart:Kungurian ,
-        ischart:Ladinian ,
-        ischart:Langhian ,
-        ischart:Lochkovian ,
-        ischart:Ludfordian ,
-        ischart:Lutetian ,
-        ischart:Maastrichtian ,
-        ischart:Meghalayan ,
-        ischart:Messinian ,
-        ischart:Moscovian ,
-        ischart:Norian ,
-        ischart:Northgrippian ,
-        ischart:Olenekian ,
-        ischart:Oxfordian ,
-        ischart:Paibian ,
-        ischart:Piacenzian ,
-        ischart:Pliensbachian ,
-        ischart:Pragian ,
-        ischart:Priabonian ,
-        ischart:Pridoli ,
-        ischart:Rhaetian ,
-        ischart:Rhuddanian ,
-        ischart:Roadian ,
-        ischart:Rupelian ,
-        ischart:Sakmarian ,
-        ischart:Sandbian ,
-        ischart:Santonian ,
-        ischart:Selandian ,
-        ischart:Serpukhovian ,
-        ischart:Serravallian ,
-        ischart:Sheinwoodian ,
-        ischart:Sinemurian ,
-        ischart:Telychian ,
-        ischart:Thanetian ,
-        ischart:Tithonian ,
-        ischart:Toarcian ,
-        ischart:Tortonian ,
-        ischart:Tournaisian ,
-        ischart:Tremadocian ,
-        ischart:Turonian ,
-        ischart:UpperPleistocene ,
-        ischart:Valanginian ,
-        ischart:Visean ,
-        ischart:Wordian ,
-        ischart:Wuchiapingian ,
-        ischart:Wuliuan ,
-        ischart:Ypresian ,
-        ischart:Zanclean ;
+        gtsd:Aalenian ,
+        gtsd:Aeronian ,
+        gtsd:Albian ,
+        gtsd:Anisian ,
+        gtsd:Aptian ,
+        gtsd:Aquitanian ,
+        gtsd:Artinskian ,
+        gtsd:Asselian ,
+        gtsd:Bajocian ,
+        gtsd:Barremian ,
+        gtsd:Bartonian ,
+        gtsd:Bashkirian ,
+        gtsd:Bathonian ,
+        gtsd:Berriasian ,
+        gtsd:Burdigalian ,
+        gtsd:Calabrian ,
+        gtsd:Callovian ,
+        gtsd:CambrianStage10 ,
+        gtsd:CambrianStage2 ,
+        gtsd:CambrianStage3 ,
+        gtsd:CambrianStage4 ,
+        gtsd:Campanian ,
+        gtsd:Capitanian ,
+        gtsd:Carnian ,
+        gtsd:Cenomanian ,
+        gtsd:Changhsingian ,
+        gtsd:Chattian ,
+        gtsd:Chibanian ,
+        gtsd:Coniacian ,
+        gtsd:Danian ,
+        gtsd:Dapingian ,
+        gtsd:Darriwilian ,
+        gtsd:Drumian ,
+        gtsd:Eifelian ,
+        gtsd:Emsian ,
+        gtsd:Famennian ,
+        gtsd:Floian ,
+        gtsd:Fortunian ,
+        gtsd:Frasnian ,
+        gtsd:Gelasian ,
+        gtsd:Givetian ,
+        gtsd:Gorstian ,
+        gtsd:Greenlandian ,
+        gtsd:Guzhangian ,
+        gtsd:Gzhelian ,
+        gtsd:Hauterivian ,
+        gtsd:Hettangian ,
+        gtsd:Hirnantian ,
+        gtsd:Homerian ,
+        gtsd:Induan ,
+        gtsd:Jiangshanian ,
+        gtsd:Kasimovian ,
+        gtsd:Katian ,
+        gtsd:Kimmeridgian ,
+        gtsd:Kungurian ,
+        gtsd:Ladinian ,
+        gtsd:Langhian ,
+        gtsd:Lochkovian ,
+        gtsd:Ludfordian ,
+        gtsd:Lutetian ,
+        gtsd:Maastrichtian ,
+        gtsd:Meghalayan ,
+        gtsd:Messinian ,
+        gtsd:Moscovian ,
+        gtsd:Norian ,
+        gtsd:Northgrippian ,
+        gtsd:Olenekian ,
+        gtsd:Oxfordian ,
+        gtsd:Paibian ,
+        gtsd:Piacenzian ,
+        gtsd:Pliensbachian ,
+        gtsd:Pragian ,
+        gtsd:Priabonian ,
+        gtsd:Pridoli ,
+        gtsd:Rhaetian ,
+        gtsd:Rhuddanian ,
+        gtsd:Roadian ,
+        gtsd:Rupelian ,
+        gtsd:Sakmarian ,
+        gtsd:Sandbian ,
+        gtsd:Santonian ,
+        gtsd:Selandian ,
+        gtsd:Serpukhovian ,
+        gtsd:Serravallian ,
+        gtsd:Sheinwoodian ,
+        gtsd:Sinemurian ,
+        gtsd:Telychian ,
+        gtsd:Thanetian ,
+        gtsd:Tithonian ,
+        gtsd:Toarcian ,
+        gtsd:Tortonian ,
+        gtsd:Tournaisian ,
+        gtsd:Tremadocian ,
+        gtsd:Turonian ,
+        gtsd:UpperPleistocene ,
+        gtsd:Valanginian ,
+        gtsd:Visean ,
+        gtsd:Wordian ,
+        gtsd:Wuchiapingian ,
+        gtsd:Wuliuan ,
+        gtsd:Ypresian ,
+        gtsd:Zanclean ;
 .
 
-ischart:Eons
+gtsd:Eons
     a skos:Collection ;
-    rdfs:isDefinedBy cs: ;
+    rdfs:isDefinedBy ds: ;
     skos:definition "An eon is the largest formal geochronologic time unit and is equivalent to a chronostratigraphic eonothem. These are several hundred million years to two billion years in length"@en ;
     skos:historyNote "This Collection was created from the age ranks of the Chart" ;
     skos:inScheme cs: ;
     skos:member
-        ischart:Archean ,
-        ischart:Hadean ,
-        ischart:Phanerozoic ,
-        ischart:Proterozoic ;
+        gtsd:Archean ,
+        gtsd:Hadean ,
+        gtsd:Phanerozoic ,
+        gtsd:Proterozoic ;
 .
 
-ischart:Epochs
+gtsd:Epochs
     a skos:Collection ;
-    rdfs:isDefinedBy cs: ;
+    rdfs:isDefinedBy ds: ;
     skos:definition "An epoch is the second smallest geochronologic unit. It is equivalent to a chronostratigraphic series. These are hundreds of thousands to tens of millions of years length"@en ;
     skos:historyNote "This Collection was created from the age ranks of the Chart" ;
     skos:inScheme cs: ;
     skos:member
-        ischart:CambrianSeries2 ,
-        ischart:Cisuralian ,
-        ischart:Eocene ,
-        ischart:Furongian ,
-        ischart:Guadalupian ,
-        ischart:Holocene ,
-        ischart:Llandovery ,
-        ischart:Lopingian ,
-        ischart:LowerCretaceous ,
-        ischart:LowerDevonian ,
-        ischart:LowerJurassic ,
-        ischart:LowerMississippian ,
-        ischart:LowerOrdovician ,
-        ischart:LowerPennsylvanian ,
-        ischart:LowerTriassic ,
-        ischart:Ludlow ,
-        ischart:Miaolingian ,
-        ischart:MiddleDevonian ,
-        ischart:MiddleJurassic ,
-        ischart:MiddleMississippian ,
-        ischart:MiddleOrdovician ,
-        ischart:MiddlePennsylvanian ,
-        ischart:MiddleTriassic ,
-        ischart:Miocene ,
-        ischart:Oligocene ,
-        ischart:Paleocene ,
-        ischart:Pleistocene ,
-        ischart:Pliocene ,
-        ischart:Pridoli ,
-        ischart:Terreneuvian ,
-        ischart:UpperCretaceous ,
-        ischart:UpperDevonian ,
-        ischart:UpperJurassic ,
-        ischart:UpperMississippian ,
-        ischart:UpperOrdovician ,
-        ischart:UpperPennsylvanian ,
-        ischart:UpperTriassic ,
-        ischart:Wenlock ;
+        gtsd:CambrianSeries2 ,
+        gtsd:Cisuralian ,
+        gtsd:Eocene ,
+        gtsd:Furongian ,
+        gtsd:Guadalupian ,
+        gtsd:Holocene ,
+        gtsd:Llandovery ,
+        gtsd:Lopingian ,
+        gtsd:LowerCretaceous ,
+        gtsd:LowerDevonian ,
+        gtsd:LowerJurassic ,
+        gtsd:LowerMississippian ,
+        gtsd:LowerOrdovician ,
+        gtsd:LowerPennsylvanian ,
+        gtsd:LowerTriassic ,
+        gtsd:Ludlow ,
+        gtsd:Miaolingian ,
+        gtsd:MiddleDevonian ,
+        gtsd:MiddleJurassic ,
+        gtsd:MiddleMississippian ,
+        gtsd:MiddleOrdovician ,
+        gtsd:MiddlePennsylvanian ,
+        gtsd:MiddleTriassic ,
+        gtsd:Miocene ,
+        gtsd:Oligocene ,
+        gtsd:Paleocene ,
+        gtsd:Pleistocene ,
+        gtsd:Pliocene ,
+        gtsd:Pridoli ,
+        gtsd:Terreneuvian ,
+        gtsd:UpperCretaceous ,
+        gtsd:UpperDevonian ,
+        gtsd:UpperJurassic ,
+        gtsd:UpperMississippian ,
+        gtsd:UpperOrdovician ,
+        gtsd:UpperPennsylvanian ,
+        gtsd:UpperTriassic ,
+        gtsd:Wenlock ;
 .
 
-ischart:Eras
+gtsd:Eras
     a skos:Collection ;
-    rdfs:isDefinedBy cs: ;
+    rdfs:isDefinedBy ds: ;
     skos:definition "An era is the second largest geochronologic time unit and is equivalent to a chronostratigraphic erathem. These are tens to hundreds of millions of years in length"@en ;
     skos:historyNote "This Collection was created from the age ranks of the Chart" ;
     skos:inScheme cs: ;
     skos:member
-        ischart:Cenozoic ,
-        ischart:Eoarchean ,
-        ischart:Mesoarchean ,
-        ischart:Mesoproterozoic ,
-        ischart:Mesozoic ,
-        ischart:Neoarchean ,
-        ischart:Neoproterozoic ,
-        ischart:Paleoarchean ,
-        ischart:Paleoproterozoic ,
-        ischart:Paleozoic ;
+        gtsd:Cenozoic ,
+        gtsd:Eoarchean ,
+        gtsd:Mesoarchean ,
+        gtsd:Mesoproterozoic ,
+        gtsd:Mesozoic ,
+        gtsd:Neoarchean ,
+        gtsd:Neoproterozoic ,
+        gtsd:Paleoarchean ,
+        gtsd:Paleoproterozoic ,
+        gtsd:Paleozoic ;
 .
 
-ischart:Periods
+gtsd:Periods
     a skos:Collection ;
-    rdfs:isDefinedBy cs: ;
+    rdfs:isDefinedBy ds: ;
     skos:definition "A period is equivalent to a chronostratigraphic system. These are millions to tens of millions of years in length"@en ;
     skos:historyNote "This Collection was created from the age ranks of the Chart" ;
     skos:inScheme cs: ;
     skos:member
-        ischart:Calymmian ,
-        ischart:Cambrian ,
-        ischart:Carboniferous ,
-        ischart:Cretaceous ,
-        ischart:Cryogenian ,
-        ischart:Devonian ,
-        ischart:Ectasian ,
-        ischart:Ediacaran ,
-        ischart:Jurassic ,
-        ischart:Neogene ,
-        ischart:Ordovician ,
-        ischart:Orosirian ,
-        ischart:Paleogene ,
-        ischart:Permian ,
-        ischart:Quaternary ,
-        ischart:Rhyacian ,
-        ischart:Siderian ,
-        ischart:Silurian ,
-        ischart:Statherian ,
-        ischart:Stenian ,
-        ischart:Tonian ,
-        ischart:Triassic ;
+        gtsd:Calymmian ,
+        gtsd:Cambrian ,
+        gtsd:Carboniferous ,
+        gtsd:Cretaceous ,
+        gtsd:Cryogenian ,
+        gtsd:Devonian ,
+        gtsd:Ectasian ,
+        gtsd:Ediacaran ,
+        gtsd:Jurassic ,
+        gtsd:Neogene ,
+        gtsd:Ordovician ,
+        gtsd:Orosirian ,
+        gtsd:Paleogene ,
+        gtsd:Permian ,
+        gtsd:Quaternary ,
+        gtsd:Rhyacian ,
+        gtsd:Siderian ,
+        gtsd:Silurian ,
+        gtsd:Statherian ,
+        gtsd:Stenian ,
+        gtsd:Tonian ,
+        gtsd:Triassic ;
 .
 
-ischart:RGBHex
+gtsd:RGBHex
     a owl:Datatype ;
     rdfs:label "CMYK colour notation" ;
     rdfs:comment """An 8-bit per channel, hexidecimal representation of RGB colours.
@@ -243,2746 +242,2624 @@ ischart:RGBHex
 This datatype uses a microformat of "#{R}{G}{B}" with hexidecimal value for {R}, {G} & {B} between 00 and FF."""@en ;
 .
 
-ischart:SubPeriod
+gtsd:SubPeriods
     a skos:Collection ;
-    rdfs:isDefinedBy cs: ;
+    rdfs:isDefinedBy ds: ;
     skos:definition "A sub-period an informal geochronologic time unit that is only defined for the Carboniferous Period. the two instances are tens of millions of years in length"@en ;
     skos:historyNote "This Collection was created from the age ranks of the Chart" ;
     skos:inScheme cs: ;
     skos:member
-        ischart:Mississippian ,
-        ischart:Pennsylvanian ;
+        gtsd:Mississippian ,
+        gtsd:Pennsylvanian ;
 .
 
-ischart:SuperEons
+gtsd:SuperEons
     a skos:Collection ;
-    rdfs:isDefinedBy cs: ;
+    rdfs:isDefinedBy ds: ;
     skos:definition "A super eon is an informal time unit that contains all of the eons before any evidence of life. The sole supereon is about two billion years in length"@en ;
     skos:historyNote "This Collection was created from the age ranks of the Chart" ;
     skos:inScheme cs: ;
-    skos:member ischart:Precambrian ;
+    skos:member gtsd:Precambrian ;
 .
 
-ischart:inMYA
+gtsd:inMYA
     a owl:Datatype ;
     rdfs:label "Millions of Years Ago" ;
     rdfs:comment "The expression of a time instant millions of years before the present as a floating point number."@en ;
 .
 
-ischart:Aalenian
+gtsd:Aalenian
     a skos:Concept ;
     gts:rank rank:Age ;
     gts:ratifiedGSSP true ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:MiddleJurassic ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:MiddleJurassic ;
     skos:inScheme cs: ;
-    skos:notation "j1"^^ischart:ccgmShortCode ;
+    skos:notation "j1"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 174.7 ;
+            gtsd:inMYA 174.7 ;
             schema:marginOfError 0.8 ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 170.9 ;
+            gtsd:inMYA 170.9 ;
             schema:marginOfError 0.8 ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 58 ;
-    schema:color "#9AD9DD"^^ischart:RGBHex ;
+    schema:color "#9AD9DD"^^gtsd:RGBHex ;
 .
 
-ischart:Aeronian
+gtsd:Aeronian
     a skos:Concept ;
     gts:rank rank:Age ;
     gts:ratifiedGSSP true ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:Llandovery ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:Llandovery ;
     skos:inScheme cs: ;
-    skos:notation "s2"^^ischart:ccgmShortCode ;
+    skos:notation "s2"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 440.5 ;
+            gtsd:inMYA 440.5 ;
             schema:marginOfError 1.0 ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 438.6 ;
+            gtsd:inMYA 438.6 ;
             schema:marginOfError 1.0 ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 127 ;
-    schema:color "#B3E1C2"^^ischart:RGBHex ;
+    schema:color "#B3E1C2"^^gtsd:RGBHex ;
 .
 
-ischart:Albian
+gtsd:Albian
     a skos:Concept ;
     gts:rank rank:Age ;
     gts:ratifiedGSSP true ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:LowerCretaceous ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:LowerCretaceous ;
     skos:inScheme cs: ;
-    skos:notation "b6"^^ischart:ccgmShortCode ;
+    skos:notation "b6"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 113.2 ;
+            gtsd:inMYA 113.2 ;
             schema:marginOfError 0.3 ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 100.5 ;
+            gtsd:inMYA 100.5 ;
             schema:marginOfError 0.1 ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 43 ;
-    schema:color "#CCEA97"^^ischart:RGBHex ;
+    schema:color "#CCEA97"^^gtsd:RGBHex ;
 .
 
-ischart:Anisian
+gtsd:Anisian
     a skos:Concept ;
     gts:rank rank:Age ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:MiddleTriassic ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:MiddleTriassic ;
     skos:changeNote "2026-06: hasBeginning 246.7 -> 247.0" ;
     skos:inScheme cs: ;
-    skos:notation "t3"^^ischart:ccgmShortCode ;
+    skos:notation "t3"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 247.0 ;
+            gtsd:inMYA 247.0 ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 241.464 ;
+            gtsd:inMYA 241.464 ;
             schema:marginOfError 0.28 ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 71 ;
-    schema:color "#BC75B7"^^ischart:RGBHex ;
+    schema:color "#BC75B7"^^gtsd:RGBHex ;
 .
 
-ischart:Aptian
+gtsd:Aptian
     a skos:Concept ;
     gts:rank rank:Age ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:LowerCretaceous ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:LowerCretaceous ;
     skos:inScheme cs: ;
-    skos:notation "b5"^^ischart:ccgmShortCode ;
+    skos:notation "b5"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 121.4 ;
+            gtsd:inMYA 121.4 ;
             schema:marginOfError 0.6 ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 113.2 ;
+            gtsd:inMYA 113.2 ;
             schema:marginOfError 0.3 ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 44 ;
-    schema:color "#BFE48A"^^ischart:RGBHex ;
+    schema:color "#BFE48A"^^gtsd:RGBHex ;
 .
 
-ischart:Aquitanian
+gtsd:Aquitanian
     a skos:Concept ;
     gts:rank rank:Age ;
     gts:ratifiedGSSP true ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:Miocene ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:Miocene ;
     skos:inScheme cs: ;
-    skos:notation "n1"^^ischart:ccgmShortCode ;
+    skos:notation "n1"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 23.03 ;
+            gtsd:inMYA 23.03 ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 20.45 ;
+            gtsd:inMYA 20.45 ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 19 ;
-    schema:color "#FFFF33"^^ischart:RGBHex ;
+    schema:color "#FFFF33"^^gtsd:RGBHex ;
 .
 
-ischart:Artinskian
+gtsd:Artinskian
     a skos:Concept ;
     gts:rank rank:Age ;
     gts:ratifiedGSSP true ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:Cisuralian ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:Cisuralian ;
     skos:inScheme cs: ;
-    skos:notation "p3"^^ischart:ccgmShortCode ;
+    skos:notation "p3"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 290.1 ;
+            gtsd:inMYA 290.1 ;
             schema:marginOfError 0.26 ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 283.3 ;
+            gtsd:inMYA 283.3 ;
             schema:marginOfError 0.4 ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 87 ;
-    schema:color "#E37B68"^^ischart:RGBHex ;
+    schema:color "#E37B68"^^gtsd:RGBHex ;
 .
 
-ischart:Asselian
+gtsd:Asselian
     a skos:Concept ;
     gts:rank rank:Age ;
     gts:ratifiedGSSP true ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:Cisuralian ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:Cisuralian ;
     skos:inScheme cs: ;
-    skos:notation "p1"^^ischart:ccgmShortCode ;
+    skos:notation "p1"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 298.9 ;
+            gtsd:inMYA 298.9 ;
             schema:marginOfError 0.15 ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 293.52 ;
+            gtsd:inMYA 293.52 ;
             schema:marginOfError 0.17 ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 89 ;
-    schema:color "#E36350"^^ischart:RGBHex ;
+    schema:color "#E36350"^^gtsd:RGBHex ;
 .
 
-ischart:Bajocian
+gtsd:Bajocian
     a skos:Concept ;
     gts:rank rank:Age ;
     gts:ratifiedGSSP true ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:MiddleJurassic ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:MiddleJurassic ;
     skos:inScheme cs: ;
-    skos:notation "j2"^^ischart:ccgmShortCode ;
+    skos:notation "j2"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 170.9 ;
+            gtsd:inMYA 170.9 ;
             schema:marginOfError 0.8 ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 168.2 ;
+            gtsd:inMYA 168.2 ;
             schema:marginOfError 1.2 ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 57 ;
-    schema:color "#A6DDE0"^^ischart:RGBHex ;
+    schema:color "#A6DDE0"^^gtsd:RGBHex ;
 .
 
-ischart:Barremian
+gtsd:Barremian
     a skos:Concept ;
     gts:rank rank:Age ;
     gts:ratifiedGSSP true ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:LowerCretaceous ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:LowerCretaceous ;
     skos:inScheme cs: ;
-    skos:notation "b4"^^ischart:ccgmShortCode ;
+    skos:notation "b4"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 125.77 ;
+            gtsd:inMYA 125.77 ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 121.4 ;
+            gtsd:inMYA 121.4 ;
             schema:marginOfError 0.6 ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 45 ;
-    schema:color "#B3DF7F"^^ischart:RGBHex ;
+    schema:color "#B3DF7F"^^gtsd:RGBHex ;
 .
 
-ischart:Bartonian
+gtsd:Bartonian
     a skos:Concept ;
     gts:rank rank:Age ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:Eocene ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:Eocene ;
     skos:inScheme cs: ;
-    skos:notation "e6"^^ischart:ccgmShortCode ;
+    skos:notation "e6"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 41.03 ;
+            gtsd:inMYA 41.03 ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 37.71 ;
+            gtsd:inMYA 37.71 ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 26 ;
-    schema:color "#FDC091"^^ischart:RGBHex ;
+    schema:color "#FDC091"^^gtsd:RGBHex ;
 .
 
-ischart:Bashkirian
+gtsd:Bashkirian
     a skos:Concept ;
     gts:rank rank:Age ;
     gts:ratifiedGSSP true ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:LowerPennsylvanian ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:LowerPennsylvanian ;
     skos:inScheme cs: ;
-    skos:notation "c4"^^ischart:ccgmShortCode ;
+    skos:notation "c4"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 323.4 ;
+            gtsd:inMYA 323.4 ;
             schema:marginOfError 0.4 ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 315.2 ;
+            gtsd:inMYA 315.2 ;
             schema:marginOfError 0.2 ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 97 ;
-    schema:color "#99C2B5"^^ischart:RGBHex ;
+    schema:color "#99C2B5"^^gtsd:RGBHex ;
 .
 
-ischart:Bathonian
+gtsd:Bathonian
     a skos:Concept ;
     gts:rank rank:Age ;
     gts:ratifiedGSSP true ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:MiddleJurassic ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:MiddleJurassic ;
     skos:inScheme cs: ;
-    skos:notation "j3"^^ischart:ccgmShortCode ;
+    skos:notation "j3"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 168.2 ;
+            gtsd:inMYA 168.2 ;
             schema:marginOfError 1.2 ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 165.3 ;
+            gtsd:inMYA 165.3 ;
             schema:marginOfError 1.1 ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 56 ;
-    schema:color "#B3E2E3"^^ischart:RGBHex ;
+    schema:color "#B3E2E3"^^gtsd:RGBHex ;
 .
 
-ischart:Berriasian
+gtsd:Berriasian
     a skos:Concept ;
     gts:rank rank:Age ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:LowerCretaceous ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:LowerCretaceous ;
     skos:inScheme cs: ;
-    skos:notation "b1"^^ischart:ccgmShortCode ;
+    skos:notation "b1"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 143.1 ;
+            gtsd:inMYA 143.1 ;
             schema:marginOfError 0.6 ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 137.05 ;
+            gtsd:inMYA 137.05 ;
             schema:marginOfError 0.2 ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 48 ;
-    schema:color "#8CCD60"^^ischart:RGBHex ;
+    schema:color "#8CCD60"^^gtsd:RGBHex ;
 .
 
-ischart:Burdigalian
+gtsd:Burdigalian
     a skos:Concept ;
     gts:rank rank:Age ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:Miocene ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:Miocene ;
     skos:inScheme cs: ;
-    skos:notation "n2"^^ischart:ccgmShortCode ;
+    skos:notation "n2"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 20.45 ;
+            gtsd:inMYA 20.45 ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 15.98 ;
+            gtsd:inMYA 15.98 ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 18 ;
-    schema:color "#FFFF41"^^ischart:RGBHex ;
+    schema:color "#FFFF41"^^gtsd:RGBHex ;
 .
 
-ischart:Calabrian
+gtsd:Calabrian
     a skos:Concept ;
     gts:rank rank:Age ;
     gts:ratifiedGSSP true ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:Pleistocene ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:Pleistocene ;
     skos:inScheme cs: ;
-    skos:notation "q2"^^ischart:ccgmShortCode ;
+    skos:notation "q2"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 1.80 ;
+            gtsd:inMYA 1.80 ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 0.774 ;
+            gtsd:inMYA 0.774 ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 7 ;
-    schema:color "#FFF2BA"^^ischart:RGBHex ;
+    schema:color "#FFF2BA"^^gtsd:RGBHex ;
 .
 
-ischart:Callovian
+gtsd:Callovian
     a skos:Concept ;
     gts:rank rank:Age ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:MiddleJurassic ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:MiddleJurassic ;
     skos:inScheme cs: ;
-    skos:notation "j4"^^ischart:ccgmShortCode ;
+    skos:notation "j4"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 165.3 ;
+            gtsd:inMYA 165.3 ;
             schema:marginOfError 1.1 ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 161.5 ;
+            gtsd:inMYA 161.5 ;
             schema:marginOfError 1.0 ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 55 ;
-    schema:color "#BFE7E5"^^ischart:RGBHex ;
+    schema:color "#BFE7E5"^^gtsd:RGBHex ;
 .
 
-ischart:Calymmian
+gtsd:Calymmian
     a skos:Concept ;
     gts:rank rank:Period ;
     gts:ratifiedGSSA true ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:Mesoproterozoic ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:Mesoproterozoic ;
     skos:inScheme cs: ;
-    skos:notation "MP1"^^ischart:ccgmShortCode ;
+    skos:notation "MP1"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 1600 ;
+            gtsd:inMYA 1600 ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 1400 ;
+            gtsd:inMYA 1400 ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 164 ;
-    schema:color "#FDC07A"^^ischart:RGBHex ;
+    schema:color "#FDC07A"^^gtsd:RGBHex ;
 .
 
-ischart:CambrianStage10
+gtsd:CambrianStage10
     a skos:Concept ;
     gts:rank rank:Age ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:Furongian ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:Furongian ;
     skos:inScheme cs: ;
-    skos:notation "ep10"^^ischart:ccgmShortCode ;
+    skos:notation "ep10"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 491.0 ;
+            gtsd:inMYA 491.0 ;
             skos:note "uncertain" ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 486.85 ;
+            gtsd:inMYA 486.85 ;
             schema:marginOfError 1.5 ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 142 ;
-    schema:color "#E6F5C9"^^ischart:RGBHex ;
+    schema:color "#E6F5C9"^^gtsd:RGBHex ;
 .
 
-ischart:CambrianStage2
+gtsd:CambrianStage2
     a skos:Concept ;
     gts:rank rank:Age ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:Terreneuvian ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:Terreneuvian ;
     skos:inScheme cs: ;
-    skos:notation "ep3"^^ischart:ccgmShortCode ;
+    skos:notation "ep3"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 529.0 ;
+            gtsd:inMYA 529.0 ;
             skos:note "uncertain" ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 521.0 ;
+            gtsd:inMYA 521.0 ;
             skos:note "uncertain" ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 152 ;
-    schema:color "#A6BA80"^^ischart:RGBHex ;
+    schema:color "#A6BA80"^^gtsd:RGBHex ;
 .
 
-ischart:CambrianStage3
+gtsd:CambrianStage3
     a skos:Concept ;
     gts:rank rank:Age ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:CambrianSeries2 ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:CambrianSeries2 ;
     skos:inScheme cs: ;
-    skos:notation "ep2"^^ischart:ccgmShortCode ;
+    skos:notation "ep2"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 521.0 ;
+            gtsd:inMYA 521.0 ;
             skos:note "uncertain" ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 514.5 ;
+            gtsd:inMYA 514.5 ;
             skos:note "uncertain" ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 153 ;
-    schema:color "#A6C583"^^ischart:RGBHex ;
+    schema:color "#A6C583"^^gtsd:RGBHex ;
 .
 
-ischart:CambrianStage4
+gtsd:CambrianStage4
     a skos:Concept ;
     gts:rank rank:Age ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:CambrianSeries2 ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:CambrianSeries2 ;
     skos:inScheme cs: ;
-    skos:notation "ep4"^^ischart:ccgmShortCode ;
+    skos:notation "ep4"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 514.5 ;
+            gtsd:inMYA 514.5 ;
             skos:note "uncertain" ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 506.5 ;
+            gtsd:inMYA 506.5 ;
             skos:note "uncertain" ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 150 ;
-    schema:color "#B3CA8E"^^ischart:RGBHex ;
+    schema:color "#B3CA8E"^^gtsd:RGBHex ;
 .
 
-ischart:Campanian
+gtsd:Campanian
     a skos:Concept ;
     gts:rank rank:Age ;
     gts:ratifiedGSSP true ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:UpperCretaceous ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:UpperCretaceous ;
     skos:inScheme cs: ;
-    skos:notation "k5"^^ischart:ccgmShortCode ;
+    skos:notation "k5"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 83.6 ;
+            gtsd:inMYA 83.6 ;
             schema:marginOfError 0.2 ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 72.2 ;
+            gtsd:inMYA 72.2 ;
             schema:marginOfError 0.2 ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 37 ;
-    schema:color "#E6F47F"^^ischart:RGBHex ;
+    schema:color "#E6F47F"^^gtsd:RGBHex ;
 .
 
-ischart:Capitanian
+gtsd:Capitanian
     a skos:Concept ;
     gts:rank rank:Age ;
     gts:ratifiedGSSP true ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:Guadalupian ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:Guadalupian ;
     skos:changeNote "2026-06: hasEnd 259.51 -> 259.857" ;
     skos:inScheme cs: ;
-    skos:notation "p7"^^ischart:ccgmShortCode ;
+    skos:notation "p7"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 264.28 ;
+            gtsd:inMYA 264.28 ;
             schema:marginOfError 0.16 ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 259.857 ;
+            gtsd:inMYA 259.857 ;
             schema:marginOfError 0.084 ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 82 ;
-    schema:color "#FB9A85"^^ischart:RGBHex ;
+    schema:color "#FB9A85"^^gtsd:RGBHex ;
 .
 
-ischart:Carnian
+gtsd:Carnian
     a skos:Concept ;
     gts:rank rank:Age ;
     gts:ratifiedGSSP true ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:UpperTriassic ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:UpperTriassic ;
     skos:inScheme cs: ;
-    skos:notation "t5"^^ischart:ccgmShortCode ;
+    skos:notation "t5"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 237 ;
+            gtsd:inMYA 237 ;
             skos:note "uncertain" ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 227.3 ;
+            gtsd:inMYA 227.3 ;
             skos:note "uncertain" ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 68 ;
-    schema:color "#C99BCB"^^ischart:RGBHex ;
+    schema:color "#C99BCB"^^gtsd:RGBHex ;
 .
 
-ischart:Cenomanian
+gtsd:Cenomanian
     a skos:Concept ;
     gts:rank rank:Age ;
     gts:ratifiedGSSP true ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:UpperCretaceous ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:UpperCretaceous ;
     skos:inScheme cs: ;
-    skos:notation "k1"^^ischart:ccgmShortCode ;
+    skos:notation "k1"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 100.5 ;
+            gtsd:inMYA 100.5 ;
             schema:marginOfError 0.1 ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 93.9 ;
+            gtsd:inMYA 93.9 ;
             schema:marginOfError 0.2 ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 41 ;
-    schema:color "#B3DE53"^^ischart:RGBHex ;
+    schema:color "#B3DE53"^^gtsd:RGBHex ;
 .
 
-ischart:Changhsingian
+gtsd:Changhsingian
     a skos:Concept ;
     gts:rank rank:Age ;
     gts:ratifiedGSSP true ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:Lopingian ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:Lopingian ;
     skos:inScheme cs: ;
-    skos:notation "p9"^^ischart:ccgmShortCode ;
+    skos:notation "p9"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 254.14 ;
+            gtsd:inMYA 254.14 ;
             schema:marginOfError 0.07 ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 251.902 ;
+            gtsd:inMYA 251.902 ;
             schema:marginOfError 0.024 ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 79 ;
-    schema:color "#FCC0B2"^^ischart:RGBHex ;
+    schema:color "#FCC0B2"^^gtsd:RGBHex ;
 .
 
-ischart:Chattian
+gtsd:Chattian
     a skos:Concept ;
     gts:rank rank:Age ;
     gts:ratifiedGSSP true ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:Oligocene ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:Oligocene ;
     skos:inScheme cs: ;
-    skos:notation "e9"^^ischart:ccgmShortCode ;
+    skos:notation "e9"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 27.30 ;
+            gtsd:inMYA 27.30 ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 23.04 ;
+            gtsd:inMYA 23.04 ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 22 ;
-    schema:color "#FEE6AA"^^ischart:RGBHex ;
+    schema:color "#FEE6AA"^^gtsd:RGBHex ;
 .
 
-ischart:Chibanian
+gtsd:Chibanian
     a skos:Concept ;
     gts:rank rank:Age ;
     gts:ratifiedGSSP true ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:Pleistocene ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:Pleistocene ;
     skos:inScheme cs: ;
-    skos:notation "q3"^^ischart:ccgmShortCode ;
+    skos:notation "q3"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 0.774 ;
+            gtsd:inMYA 0.774 ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 0.129 ;
+            gtsd:inMYA 0.129 ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 6 ;
-    schema:color "#FFF2C7"^^ischart:RGBHex ;
+    schema:color "#FFF2C7"^^gtsd:RGBHex ;
 .
 
-ischart:Coniacian
+gtsd:Coniacian
     a skos:Concept ;
     gts:rank rank:Age ;
     gts:ratifiedGSSP true ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:UpperCretaceous ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:UpperCretaceous ;
     skos:inScheme cs: ;
-    skos:notation "k3"^^ischart:ccgmShortCode ;
+    skos:notation "k3"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 89.8 ;
+            gtsd:inMYA 89.8 ;
             schema:marginOfError 0.3 ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 85.7 ;
+            gtsd:inMYA 85.7 ;
             schema:marginOfError 0.2 ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 39 ;
-    schema:color "#CCE968"^^ischart:RGBHex ;
+    schema:color "#CCE968"^^gtsd:RGBHex ;
 .
 
-ischart:Cryogenian
+gtsd:Cryogenian
     a skos:Concept ;
     gts:rank rank:Period ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:Neoproterozoic ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:Neoproterozoic ;
     skos:inScheme cs: ;
-    skos:notation "NP2"^^ischart:ccgmShortCode ;
+    skos:notation "NP2"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 720 ;
+            gtsd:inMYA 720 ;
             skos:note "uncertain" ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 635 ;
+            gtsd:inMYA 635 ;
             skos:note "uncertain" ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 159 ;
-    schema:color "#FECC5C"^^ischart:RGBHex ;
+    schema:color "#FECC5C"^^gtsd:RGBHex ;
 .
 
-ischart:Danian
+gtsd:Danian
     a skos:Concept ;
     gts:rank rank:Age ;
     gts:ratifiedGSSP true ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:Paleocene ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:Paleocene ;
     skos:inScheme cs: ;
-    skos:notation "e1"^^ischart:ccgmShortCode ;
+    skos:notation "e1"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 66.00 ;
+            gtsd:inMYA 66.00 ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 61.66 ;
+            gtsd:inMYA 61.66 ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 33 ;
-    schema:color "#FDB462"^^ischart:RGBHex ;
+    schema:color "#FDB462"^^gtsd:RGBHex ;
 .
 
-ischart:Dapingian
+gtsd:Dapingian
     a skos:Concept ;
     gts:rank rank:Age ;
     gts:ratifiedGSSP true ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:MiddleOrdovician ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:MiddleOrdovician ;
     skos:inScheme cs: ;
-    skos:notation "o3"^^ischart:ccgmShortCode ;
+    skos:notation "o3"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 471.3 ;
+            gtsd:inMYA 471.3 ;
             schema:marginOfError 1.4 ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 469.4 ;
+            gtsd:inMYA 469.4 ;
             schema:marginOfError 0.9 ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 136 ;
-    schema:color "#66C092"^^ischart:RGBHex ;
+    schema:color "#66C092"^^gtsd:RGBHex ;
 .
 
-ischart:Darriwilian
+gtsd:Darriwilian
     a skos:Concept ;
     gts:rank rank:Age ;
     gts:ratifiedGSSP true ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:MiddleOrdovician ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:MiddleOrdovician ;
     skos:inScheme cs: ;
-    skos:notation "o4"^^ischart:ccgmShortCode ;
+    skos:notation "o4"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 469.4 ;
+            gtsd:inMYA 469.4 ;
             schema:marginOfError 0.9 ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 458.2 ;
+            gtsd:inMYA 458.2 ;
             schema:marginOfError 0.7 ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 135 ;
-    schema:color "#74C69C"^^ischart:RGBHex ;
+    schema:color "#74C69C"^^gtsd:RGBHex ;
 .
 
-ischart:Drumian
+gtsd:Drumian
     a skos:Concept ;
     gts:rank rank:Age ;
     gts:ratifiedGSSP true ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:Miaolingian ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:Miaolingian ;
     skos:inScheme cs: ;
-    skos:notation "ep6"^^ischart:ccgmShortCode ;
+    skos:notation "ep6"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 504.5 ;
+            gtsd:inMYA 504.5 ;
             skos:note "uncertain" ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 500.5 ;
+            gtsd:inMYA 500.5 ;
             skos:note "uncertain" ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 147 ;
-    schema:color "#BFD99D"^^ischart:RGBHex ;
+    schema:color "#BFD99D"^^gtsd:RGBHex ;
 .
 
-ischart:Ectasian
+gtsd:Ectasian
     a skos:Concept ;
     gts:rank rank:Period ;
     gts:ratifiedGSSA true ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:Mesoproterozoic ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:Mesoproterozoic ;
     skos:inScheme cs: ;
-    skos:notation "MP2"^^ischart:ccgmShortCode ;
+    skos:notation "MP2"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 1400 ;
+            gtsd:inMYA 1400 ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 1200 ;
+            gtsd:inMYA 1200 ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 163 ;
-    schema:color "#FDCC8A"^^ischart:RGBHex ;
+    schema:color "#FDCC8A"^^gtsd:RGBHex ;
 .
 
-ischart:Ediacaran
+gtsd:Ediacaran
     a skos:Concept ;
     gts:rank rank:Period ;
     gts:ratifiedGSSP true ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:Neoproterozoic ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:Neoproterozoic ;
     skos:inScheme cs: ;
-    skos:notation "NP3"^^ischart:ccgmShortCode ;
+    skos:notation "NP3"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 635 ;
+            gtsd:inMYA 635 ;
             skos:note "uncertain" ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 538.8 ;
+            gtsd:inMYA 538.8 ;
             schema:marginOfError 0.6 ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 158 ;
-    schema:color "#FED96A"^^ischart:RGBHex ;
+    schema:color "#FED96A"^^gtsd:RGBHex ;
 .
 
-ischart:Eifelian
+gtsd:Eifelian
     a skos:Concept ;
     gts:rank rank:Age ;
     gts:ratifiedGSSP true ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:MiddleDevonian ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:MiddleDevonian ;
     skos:inScheme cs: ;
-    skos:notation "d4"^^ischart:ccgmShortCode ;
+    skos:notation "d4"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 393.47 ;
+            gtsd:inMYA 393.47 ;
             schema:marginOfError 0.99 ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 387.95 ;
+            gtsd:inMYA 387.95 ;
             schema:marginOfError 1.04 ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 112 ;
-    schema:color "#F1D576"^^ischart:RGBHex ;
+    schema:color "#F1D576"^^gtsd:RGBHex ;
 .
 
-ischart:Emsian
+gtsd:Emsian
     a skos:Concept ;
     gts:rank rank:Age ;
     gts:ratifiedGSSP true ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:LowerDevonian ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:LowerDevonian ;
     skos:inScheme cs: ;
-    skos:notation "d3"^^ischart:ccgmShortCode ;
+    skos:notation "d3"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 410.62 ;
+            gtsd:inMYA 410.62 ;
             schema:marginOfError 1.95 ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 393.47 ;
+            gtsd:inMYA 393.47 ;
             schema:marginOfError 0.99 ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 114 ;
-    schema:color "#E5D075"^^ischart:RGBHex ;
+    schema:color "#E5D075"^^gtsd:RGBHex ;
 .
 
-ischart:Eoarchean
+gtsd:Eoarchean
     a skos:Concept ;
     gts:rank rank:Era ;
     gts:ratifiedGSSA true ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:Archean ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:Archean ;
     skos:inScheme cs: ;
-    skos:notation "EA"^^ischart:ccgmShortCode ;
+    skos:notation "EA"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 4031 ;
+            gtsd:inMYA 4031 ;
             schema:marginOfError 3 ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 3600 ;
+            gtsd:inMYA 3600 ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 176 ;
-    schema:color "#DA037F"^^ischart:RGBHex ;
+    schema:color "#DA037F"^^gtsd:RGBHex ;
 .
 
-ischart:Famennian
+gtsd:Famennian
     a skos:Concept ;
     gts:rank rank:Age ;
     gts:ratifiedGSSP true ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:UpperDevonian ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:UpperDevonian ;
     skos:inScheme cs: ;
-    skos:notation "d7"^^ischart:ccgmShortCode ;
+    skos:notation "d7"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 372.15 ;
+            gtsd:inMYA 372.15 ;
             schema:marginOfError 0.46 ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 358.86 ;
+            gtsd:inMYA 358.86 ;
             schema:marginOfError 0.19 ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 108 ;
-    schema:color "#F2EDB3"^^ischart:RGBHex ;
+    schema:color "#F2EDB3"^^gtsd:RGBHex ;
 .
 
-ischart:Floian
+gtsd:Floian
     a skos:Concept ;
     gts:rank rank:Age ;
     gts:ratifiedGSSP true ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:LowerOrdovician ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:LowerOrdovician ;
     skos:inScheme cs: ;
-    skos:notation "o2"^^ischart:ccgmShortCode ;
+    skos:notation "o2"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 477.1 ;
+            gtsd:inMYA 477.1 ;
             schema:marginOfError 1.2 ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 471.3 ;
+            gtsd:inMYA 471.3 ;
             schema:marginOfError 1.4 ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 138 ;
-    schema:color "#41B087"^^ischart:RGBHex ;
+    schema:color "#41B087"^^gtsd:RGBHex ;
 .
 
-ischart:Fortunian
+gtsd:Fortunian
     a skos:Concept ;
     gts:rank rank:Age ;
     gts:ratifiedGSSP true ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:Terreneuvian ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:Terreneuvian ;
     skos:inScheme cs: ;
-    skos:notation "ep1"^^ischart:ccgmShortCode ;
+    skos:notation "ep1"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 538.8 ;
+            gtsd:inMYA 538.8 ;
             schema:marginOfError 0.6 ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 529.0 ;
+            gtsd:inMYA 529.0 ;
             skos:note "uncertain" ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 155 ;
-    schema:color "#99B575"^^ischart:RGBHex ;
+    schema:color "#99B575"^^gtsd:RGBHex ;
 .
 
-ischart:Frasnian
+gtsd:Frasnian
     a skos:Concept ;
     gts:rank rank:Age ;
     gts:ratifiedGSSP true ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:UpperDevonian ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:UpperDevonian ;
     skos:inScheme cs: ;
-    skos:notation "d6"^^ischart:ccgmShortCode ;
+    skos:notation "d6"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 382.31 ;
+            gtsd:inMYA 382.31 ;
             schema:marginOfError 1.36 ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 372.15 ;
+            gtsd:inMYA 372.15 ;
             schema:marginOfError 0.46 ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 109 ;
-    schema:color "#F2EDAD"^^ischart:RGBHex ;
+    schema:color "#F2EDAD"^^gtsd:RGBHex ;
 .
 
-ischart:Gelasian
+gtsd:Gelasian
     a skos:Concept ;
     gts:rank rank:Age ;
     gts:ratifiedGSSP true ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:Pleistocene ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:Pleistocene ;
     skos:inScheme cs: ;
-    skos:notation "q1"^^ischart:ccgmShortCode ;
+    skos:notation "q1"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 2.58 ;
+            gtsd:inMYA 2.58 ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 1.80 ;
+            gtsd:inMYA 1.80 ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 8 ;
-    schema:color "#FFEDB3"^^ischart:RGBHex ;
+    schema:color "#FFEDB3"^^gtsd:RGBHex ;
 .
 
-ischart:Givetian
+gtsd:Givetian
     a skos:Concept ;
     gts:rank rank:Age ;
     gts:ratifiedGSSP true ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:MiddleDevonian ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:MiddleDevonian ;
     skos:inScheme cs: ;
-    skos:notation "d5"^^ischart:ccgmShortCode ;
+    skos:notation "d5"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 387.95 ;
+            gtsd:inMYA 387.95 ;
             schema:marginOfError 1.04 ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 382.31 ;
+            gtsd:inMYA 382.31 ;
             schema:marginOfError 1.36 ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 111 ;
-    schema:color "#F1E185"^^ischart:RGBHex ;
+    schema:color "#F1E185"^^gtsd:RGBHex ;
 .
 
-ischart:Gorstian
+gtsd:Gorstian
     a skos:Concept ;
     gts:rank rank:Age ;
     gts:ratifiedGSSP true ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:Ludlow ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:Ludlow ;
     skos:inScheme cs: ;
-    skos:notation "s6"^^ischart:ccgmShortCode ;
+    skos:notation "s6"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 426.7 ;
+            gtsd:inMYA 426.7 ;
             schema:marginOfError 1.5 ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 425.0 ;
+            gtsd:inMYA 425.0 ;
             schema:marginOfError 1.5 ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 121 ;
-    schema:color "#CCECDD"^^ischart:RGBHex ;
+    schema:color "#CCECDD"^^gtsd:RGBHex ;
 .
 
-ischart:Greenlandian
+gtsd:Greenlandian
     a skos:Concept ;
     gts:rank rank:Age ;
     gts:ratifiedGSSP true ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:Holocene ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:Holocene ;
     skos:inScheme cs: ;
-    skos:notation "q5"^^ischart:ccgmShortCode ;
+    skos:notation "q5"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 0.0117 ;
+            gtsd:inMYA 0.0117 ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 0.0082 ;
+            gtsd:inMYA 0.0082 ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 3 ;
-    schema:color "#FEECDB"^^ischart:RGBHex ;
+    schema:color "#FEECDB"^^gtsd:RGBHex ;
 .
 
-ischart:Guzhangian
+gtsd:Guzhangian
     a skos:Concept ;
     gts:rank rank:Age ;
     gts:ratifiedGSSP true ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:Miaolingian ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:Miaolingian ;
     skos:inScheme cs: ;
-    skos:notation "ep7"^^ischart:ccgmShortCode ;
+    skos:notation "ep7"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 500.5 ;
+            gtsd:inMYA 500.5 ;
             skos:note "uncertain" ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 497.0 ;
+            gtsd:inMYA 497.0 ;
             skos:note "uncertain" ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 146 ;
-    schema:color "#CCDFAA"^^ischart:RGBHex ;
+    schema:color "#CCDFAA"^^gtsd:RGBHex ;
 .
 
-ischart:Gzhelian
+gtsd:Gzhelian
     a skos:Concept ;
     gts:rank rank:Age ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:UpperPennsylvanian ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:UpperPennsylvanian ;
     skos:inScheme cs: ;
-    skos:notation "c7"^^ischart:ccgmShortCode ;
+    skos:notation "c7"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 303.7 ;
+            gtsd:inMYA 303.7 ;
             schema:marginOfError 0.1 ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 298.9 ;
+            gtsd:inMYA 298.9 ;
             schema:marginOfError 0.15 ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 92 ;
-    schema:color "#CCD4C7"^^ischart:RGBHex ;
+    schema:color "#CCD4C7"^^gtsd:RGBHex ;
 .
 
-ischart:Hadean
+gtsd:Hadean
     a skos:Concept ;
     gts:rank rank:Eon ;
     gts:ratifiedGSSA true ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:Precambrian ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:Precambrian ;
     skos:inScheme cs: ;
-    skos:notation "HA"^^ischart:ccgmShortCode ;
+    skos:notation "HA"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 4567 ;
+            gtsd:inMYA 4567 ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 4031 ;
+            gtsd:inMYA 4031 ;
             schema:marginOfError 3 ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 177 ;
-    schema:color "#AE027E"^^ischart:RGBHex ;
+    schema:color "#AE027E"^^gtsd:RGBHex ;
 .
 
-ischart:Hauterivian
+gtsd:Hauterivian
     a skos:Concept ;
     gts:rank rank:Age ;
     gts:ratifiedGSSP true ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:LowerCretaceous ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:LowerCretaceous ;
     skos:inScheme cs: ;
-    skos:notation "b3"^^ischart:ccgmShortCode ;
+    skos:notation "b3"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 132.6 ;
+            gtsd:inMYA 132.6 ;
             schema:marginOfError 0.6 ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 125.77 ;
+            gtsd:inMYA 125.77 ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 46 ;
-    schema:color "#A6D975"^^ischart:RGBHex ;
+    schema:color "#A6D975"^^gtsd:RGBHex ;
 .
 
-ischart:Hettangian
+gtsd:Hettangian
     a skos:Concept ;
     gts:rank rank:Age ;
     gts:ratifiedGSSP true ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:LowerJurassic ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:LowerJurassic ;
     skos:inScheme cs: ;
-    skos:notation "I1"^^ischart:ccgmShortCode ;
+    skos:notation "I1"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 201.4 ;
+            gtsd:inMYA 201.4 ;
             schema:marginOfError 0.2 ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 199.5 ;
+            gtsd:inMYA 199.5 ;
             schema:marginOfError 0.3 ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 63 ;
-    schema:color "#4EB3D3"^^ischart:RGBHex ;
+    schema:color "#4EB3D3"^^gtsd:RGBHex ;
 .
 
-ischart:Hirnantian
+gtsd:Hirnantian
     a skos:Concept ;
     gts:rank rank:Age ;
     gts:ratifiedGSSP true ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:UpperOrdovician ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:UpperOrdovician ;
     skos:inScheme cs: ;
-    skos:notation "o7"^^ischart:ccgmShortCode ;
+    skos:notation "o7"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 445.2 ;
+            gtsd:inMYA 445.2 ;
             schema:marginOfError 0.9 ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 443.1 ;
+            gtsd:inMYA 443.1 ;
             schema:marginOfError 1.0 ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 131 ;
-    schema:color "#A6DBAB"^^ischart:RGBHex ;
+    schema:color "#A6DBAB"^^gtsd:RGBHex ;
 .
 
-ischart:Homerian
+gtsd:Homerian
     a skos:Concept ;
     gts:rank rank:Age ;
     gts:ratifiedGSSP true ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:Wenlock ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:Wenlock ;
     skos:inScheme cs: ;
-    skos:notation "s5"^^ischart:ccgmShortCode ;
+    skos:notation "s5"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 430.6 ;
+            gtsd:inMYA 430.6 ;
             schema:marginOfError 1.3 ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 426.7 ;
+            gtsd:inMYA 426.7 ;
             schema:marginOfError 1.5 ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 123 ;
-    schema:color "#CCEBD1"^^ischart:RGBHex ;
+    schema:color "#CCEBD1"^^gtsd:RGBHex ;
 .
 
-ischart:Induan
+gtsd:Induan
     a skos:Concept ;
     gts:rank rank:Age ;
     gts:ratifiedGSSP true ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:LowerTriassic ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:LowerTriassic ;
     skos:changeNote "2026-06: hasEnd 249.9 -> 250.8" ;
     skos:inScheme cs: ;
-    skos:notation "t1"^^ischart:ccgmShortCode ;
+    skos:notation "t1"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 251.902 ;
+            gtsd:inMYA 251.902 ;
             schema:marginOfError 0.024 ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 250.8 ;
+            gtsd:inMYA 250.8 ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 74 ;
-    schema:color "#A4469F"^^ischart:RGBHex ;
+    schema:color "#A4469F"^^gtsd:RGBHex ;
 .
 
-ischart:Jiangshanian
+gtsd:Jiangshanian
     a skos:Concept ;
     gts:rank rank:Age ;
     gts:ratifiedGSSP true ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:Furongian ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:Furongian ;
     skos:inScheme cs: ;
-    skos:notation "ep9"^^ischart:ccgmShortCode ;
+    skos:notation "ep9"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 494.2 ;
+            gtsd:inMYA 494.2 ;
             skos:note "uncertain" ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 491.0 ;
+            gtsd:inMYA 491.0 ;
             skos:note "uncertain" ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 143 ;
-    schema:color "#D9F0BB"^^ischart:RGBHex ;
+    schema:color "#D9F0BB"^^gtsd:RGBHex ;
 .
 
-ischart:Kasimovian
+gtsd:Kasimovian
     a skos:Concept ;
     gts:rank rank:Age ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:UpperPennsylvanian ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:UpperPennsylvanian ;
     skos:inScheme cs: ;
-    skos:notation "c6"^^ischart:ccgmShortCode ;
+    skos:notation "c6"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 307.0 ;
+            gtsd:inMYA 307.0 ;
             schema:marginOfError 0.1 ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 303.7 ;
+            gtsd:inMYA 303.7 ;
             schema:marginOfError 0.1 ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 93 ;
-    schema:color "#BFD0C5"^^ischart:RGBHex ;
+    schema:color "#BFD0C5"^^gtsd:RGBHex ;
 .
 
-ischart:Katian
+gtsd:Katian
     a skos:Concept ;
     gts:rank rank:Age ;
     gts:ratifiedGSSP true ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:UpperOrdovician ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:UpperOrdovician ;
     skos:inScheme cs: ;
-    skos:notation "o6"^^ischart:ccgmShortCode ;
+    skos:notation "o6"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 452.8 ;
+            gtsd:inMYA 452.8 ;
             schema:marginOfError 0.7 ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 445.2 ;
+            gtsd:inMYA 445.2 ;
             schema:marginOfError 0.9 ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 132 ;
-    schema:color "#99D69F"^^ischart:RGBHex ;
+    schema:color "#99D69F"^^gtsd:RGBHex ;
 .
 
-ischart:Kimmeridgian
+gtsd:Kimmeridgian
     a skos:Concept ;
     gts:rank rank:Age ;
     gts:ratifiedGSSP true ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:UpperJurassic ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:UpperJurassic ;
     skos:inScheme cs: ;
-    skos:notation "j6"^^ischart:ccgmShortCode ;
+    skos:notation "j6"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 154.8 ;
+            gtsd:inMYA 154.8 ;
             schema:marginOfError 0.8 ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 149.2 ;
+            gtsd:inMYA 149.2 ;
             schema:marginOfError 0.7 ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 52 ;
-    schema:color "#CCECF4"^^ischart:RGBHex ;
+    schema:color "#CCECF4"^^gtsd:RGBHex ;
 .
 
-ischart:Kungurian
+gtsd:Kungurian
     a skos:Concept ;
     gts:rank rank:Age ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:Cisuralian ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:Cisuralian ;
     skos:inScheme cs: ;
-    skos:notation "p4"^^ischart:ccgmShortCode ;
+    skos:notation "p4"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 283.3 ;
+            gtsd:inMYA 283.3 ;
             schema:marginOfError 0.4 ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 274.4 ;
+            gtsd:inMYA 274.4 ;
             schema:marginOfError 0.4 ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 86 ;
-    schema:color "#E38776"^^ischart:RGBHex ;
+    schema:color "#E38776"^^gtsd:RGBHex ;
 .
 
-ischart:Ladinian
+gtsd:Ladinian
     a skos:Concept ;
     gts:rank rank:Age ;
     gts:ratifiedGSSP true ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:MiddleTriassic ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:MiddleTriassic ;
     skos:inScheme cs: ;
-    skos:notation "t4"^^ischart:ccgmShortCode ;
+    skos:notation "t4"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 241.464 ;
+            gtsd:inMYA 241.464 ;
             schema:marginOfError 0.28 ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 237 ;
+            gtsd:inMYA 237 ;
             skos:note "uncertain" ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 70 ;
-    schema:color "#C983BF"^^ischart:RGBHex ;
+    schema:color "#C983BF"^^gtsd:RGBHex ;
 .
 
-ischart:Langhian
+gtsd:Langhian
     a skos:Concept ;
     gts:rank rank:Age ;
     gts:ratifiedGSSP true ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:Miocene ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:Miocene ;
     skos:inScheme cs: ;
-    skos:notation "n3"^^ischart:ccgmShortCode ;
+    skos:notation "n3"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 15.98 ;
+            gtsd:inMYA 15.98 ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 13.82 ;
+            gtsd:inMYA 13.82 ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 17 ;
-    schema:color "#FFFF4D"^^ischart:RGBHex ;
+    schema:color "#FFFF4D"^^gtsd:RGBHex ;
 .
 
-ischart:Lochkovian
+gtsd:Lochkovian
     a skos:Concept ;
     gts:rank rank:Age ;
     gts:ratifiedGSSP true ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:LowerDevonian ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:LowerDevonian ;
     skos:inScheme cs: ;
-    skos:notation "d1"^^ischart:ccgmShortCode ;
+    skos:notation "d1"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 419.62 ;
+            gtsd:inMYA 419.62 ;
             schema:marginOfError 1.36 ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 413.02 ;
+            gtsd:inMYA 413.02 ;
             schema:marginOfError 1.91 ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 117 ;
-    schema:color "#E5B75A"^^ischart:RGBHex ;
+    schema:color "#E5B75A"^^gtsd:RGBHex ;
 .
 
-ischart:Ludfordian
+gtsd:Ludfordian
     a skos:Concept ;
     gts:rank rank:Age ;
     gts:ratifiedGSSP true ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:Ludlow ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:Ludlow ;
     skos:inScheme cs: ;
-    skos:notation "s7"^^ischart:ccgmShortCode ;
+    skos:notation "s7"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 425.0 ;
+            gtsd:inMYA 425.0 ;
             schema:marginOfError 1.5 ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 422.7 ;
+            gtsd:inMYA 422.7 ;
             schema:marginOfError 1.6 ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 120 ;
-    schema:color "#D9F0DF"^^ischart:RGBHex ;
+    schema:color "#D9F0DF"^^gtsd:RGBHex ;
 .
 
-ischart:Lutetian
+gtsd:Lutetian
     a skos:Concept ;
     gts:rank rank:Age ;
     gts:ratifiedGSSP true ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:Eocene ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:Eocene ;
     skos:inScheme cs: ;
-    skos:notation "e5"^^ischart:ccgmShortCode ;
+    skos:notation "e5"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 48.07 ;
+            gtsd:inMYA 48.07 ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 41.03 ;
+            gtsd:inMYA 41.03 ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 27 ;
-    schema:color "#FDB482"^^ischart:RGBHex ;
+    schema:color "#FDB482"^^gtsd:RGBHex ;
 .
 
-ischart:Maastrichtian
+gtsd:Maastrichtian
     a skos:Concept ;
     gts:rank rank:Age ;
     gts:ratifiedGSSP true ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:UpperCretaceous ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:UpperCretaceous ;
     skos:inScheme cs: ;
-    skos:notation "k6"^^ischart:ccgmShortCode ;
+    skos:notation "k6"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 72.2 ;
+            gtsd:inMYA 72.2 ;
             schema:marginOfError 0.2 ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 66.00 ;
+            gtsd:inMYA 66.00 ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 36 ;
-    schema:color "#F2FA8C"^^ischart:RGBHex ;
+    schema:color "#F2FA8C"^^gtsd:RGBHex ;
 .
 
-ischart:Meghalayan
+gtsd:Meghalayan
     a skos:Concept ;
     gts:rank rank:Age ;
     gts:ratifiedGSSP true ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:Holocene ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:Holocene ;
     skos:inScheme cs: ;
-    skos:notation "q7"^^ischart:ccgmShortCode ;
+    skos:notation "q7"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 0.0042 ;
+            gtsd:inMYA 0.0042 ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 0 ;
+            gtsd:inMYA 0 ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 1 ;
-    schema:color "#FDEDEC"^^ischart:RGBHex ;
+    schema:color "#FDEDEC"^^gtsd:RGBHex ;
 .
 
-ischart:Mesoarchean
+gtsd:Mesoarchean
     a skos:Concept ;
     gts:rank rank:Era ;
     gts:ratifiedGSSA true ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:Archean ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:Archean ;
     skos:inScheme cs: ;
-    skos:notation "MA"^^ischart:ccgmShortCode ;
+    skos:notation "MA"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 3200 ;
+            gtsd:inMYA 3200 ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 2800 ;
+            gtsd:inMYA 2800 ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 173 ;
-    schema:color "#F768A9"^^ischart:RGBHex ;
+    schema:color "#F768A9"^^gtsd:RGBHex ;
 .
 
-ischart:Messinian
+gtsd:Messinian
     a skos:Concept ;
     gts:rank rank:Age ;
     gts:ratifiedGSSP true ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:Miocene ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:Miocene ;
     skos:inScheme cs: ;
-    skos:notation "n6"^^ischart:ccgmShortCode ;
+    skos:notation "n6"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 7.246 ;
+            gtsd:inMYA 7.246 ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 5.333 ;
+            gtsd:inMYA 5.333 ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 14 ;
-    schema:color "#FFFF73"^^ischart:RGBHex ;
+    schema:color "#FFFF73"^^gtsd:RGBHex ;
 .
 
-ischart:Moscovian
+gtsd:Moscovian
     a skos:Concept ;
     gts:rank rank:Age ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:MiddlePennsylvanian ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:MiddlePennsylvanian ;
     skos:inScheme cs: ;
-    skos:notation "c5"^^ischart:ccgmShortCode ;
+    skos:notation "c5"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 315.2 ;
+            gtsd:inMYA 315.2 ;
             schema:marginOfError 0.2 ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 307.0 ;
+            gtsd:inMYA 307.0 ;
             schema:marginOfError 0.1 ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 96 ;
-    schema:color "#B3CBB9"^^ischart:RGBHex ;
+    schema:color "#B3CBB9"^^gtsd:RGBHex ;
 .
 
-ischart:Neoarchean
+gtsd:Neoarchean
     a skos:Concept ;
     gts:rank rank:Era ;
     gts:ratifiedGSSA true ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:Archean ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:Archean ;
     skos:inScheme cs: ;
-    skos:notation "NA"^^ischart:ccgmShortCode ;
+    skos:notation "NA"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 2800 ;
+            gtsd:inMYA 2800 ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 2500 ;
+            gtsd:inMYA 2500 ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 172 ;
-    schema:color "#F99BC1"^^ischart:RGBHex ;
+    schema:color "#F99BC1"^^gtsd:RGBHex ;
 .
 
-ischart:Norian
+gtsd:Norian
     a skos:Concept ;
     gts:rank rank:Age ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:UpperTriassic ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:UpperTriassic ;
     skos:inScheme cs: ;
-    skos:notation "t6"^^ischart:ccgmShortCode ;
+    skos:notation "t6"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 227.3 ;
+            gtsd:inMYA 227.3 ;
             skos:note "uncertain" ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 205.7 ;
+            gtsd:inMYA 205.7 ;
             skos:note "uncertain" ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 67 ;
-    schema:color "#D6AAD3"^^ischart:RGBHex ;
+    schema:color "#D6AAD3"^^gtsd:RGBHex ;
 .
 
-ischart:Northgrippian
+gtsd:Northgrippian
     a skos:Concept ;
     gts:rank rank:Age ;
     gts:ratifiedGSSP true ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:Holocene ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:Holocene ;
     skos:inScheme cs: ;
-    skos:notation "q6"^^ischart:ccgmShortCode ;
+    skos:notation "q6"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 0.0082 ;
+            gtsd:inMYA 0.0082 ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 0.0042 ;
+            gtsd:inMYA 0.0042 ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 2 ;
-    schema:color "#FDECE4"^^ischart:RGBHex ;
+    schema:color "#FDECE4"^^gtsd:RGBHex ;
 .
 
-ischart:Olenekian
+gtsd:Olenekian
     a skos:Concept ;
     gts:rank rank:Age ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:LowerTriassic ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:LowerTriassic ;
     skos:changeNote "2026-06: hasBeginning 249.9 -> 250.8, hasEnd 246.7 -> 247.0" ;
     skos:inScheme cs: ;
-    skos:notation "t2"^^ischart:ccgmShortCode ;
+    skos:notation "t2"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 250.8 ;
+            gtsd:inMYA 250.8 ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 247.0 ;
+            gtsd:inMYA 247.0 ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 73 ;
-    schema:color "#B051A5"^^ischart:RGBHex ;
+    schema:color "#B051A5"^^gtsd:RGBHex ;
 .
 
-ischart:Orosirian
+gtsd:Orosirian
     a skos:Concept ;
     gts:rank rank:Period ;
     gts:ratifiedGSSA true ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:Paleoproterozoic ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:Paleoproterozoic ;
     skos:inScheme cs: ;
-    skos:notation "PP3"^^ischart:ccgmShortCode ;
+    skos:notation "PP3"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 2050 ;
+            gtsd:inMYA 2050 ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 1800 ;
+            gtsd:inMYA 1800 ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 167 ;
-    schema:color "#F76898"^^ischart:RGBHex ;
+    schema:color "#F76898"^^gtsd:RGBHex ;
 .
 
-ischart:Oxfordian
+gtsd:Oxfordian
     a skos:Concept ;
     gts:rank rank:Age ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:UpperJurassic ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:UpperJurassic ;
     skos:inScheme cs: ;
-    skos:notation "j5"^^ischart:ccgmShortCode ;
+    skos:notation "j5"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 161.5 ;
+            gtsd:inMYA 161.5 ;
             schema:marginOfError 1.0 ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 154.8 ;
+            gtsd:inMYA 154.8 ;
             schema:marginOfError 0.8 ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 53 ;
-    schema:color "#BFE7F1"^^ischart:RGBHex ;
+    schema:color "#BFE7F1"^^gtsd:RGBHex ;
 .
 
-ischart:Paibian
+gtsd:Paibian
     a skos:Concept ;
     gts:rank rank:Age ;
     gts:ratifiedGSSP true ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:Furongian ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:Furongian ;
     skos:inScheme cs: ;
-    skos:notation "ep8"^^ischart:ccgmShortCode ;
+    skos:notation "ep8"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 497.0 ;
+            gtsd:inMYA 497.0 ;
             skos:note "uncertain" ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 494.2 ;
+            gtsd:inMYA 494.2 ;
             skos:note "uncertain" ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 145 ;
-    schema:color "#CCEBAE"^^ischart:RGBHex ;
+    schema:color "#CCEBAE"^^gtsd:RGBHex ;
 .
 
-ischart:Paleoarchean
+gtsd:Paleoarchean
     a skos:Concept ;
     gts:rank rank:Era ;
     gts:ratifiedGSSA true ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:Archean ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:Archean ;
     skos:inScheme cs: ;
-    skos:notation "PA"^^ischart:ccgmShortCode ;
+    skos:notation "PA"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 3600 ;
+            gtsd:inMYA 3600 ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 3200 ;
+            gtsd:inMYA 3200 ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 174 ;
-    schema:color "#F4449F"^^ischart:RGBHex ;
+    schema:color "#F4449F"^^gtsd:RGBHex ;
 .
 
-ischart:Piacenzian
+gtsd:Piacenzian
     a skos:Concept ;
     gts:rank rank:Age ;
     gts:ratifiedGSSP true ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:Pliocene ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:Pliocene ;
     skos:inScheme cs: ;
-    skos:notation "n8"^^ischart:ccgmShortCode ;
+    skos:notation "n8"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 3.600 ;
+            gtsd:inMYA 3.600 ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 2.58 ;
+            gtsd:inMYA 2.58 ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 11 ;
-    schema:color "#FFFFBF"^^ischart:RGBHex ;
+    schema:color "#FFFFBF"^^gtsd:RGBHex ;
 .
 
-ischart:Pliensbachian
+gtsd:Pliensbachian
     a skos:Concept ;
     gts:rank rank:Age ;
     gts:ratifiedGSSP true ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:LowerJurassic ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:LowerJurassic ;
     skos:inScheme cs: ;
-    skos:notation "I3"^^ischart:ccgmShortCode ;
+    skos:notation "I3"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 192.9 ;
+            gtsd:inMYA 192.9 ;
             schema:marginOfError 0.3 ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 184.2 ;
+            gtsd:inMYA 184.2 ;
             schema:marginOfError 0.3 ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 61 ;
-    schema:color "#80C5DD"^^ischart:RGBHex ;
+    schema:color "#80C5DD"^^gtsd:RGBHex ;
 .
 
-ischart:Pragian
+gtsd:Pragian
     a skos:Concept ;
     gts:rank rank:Age ;
     gts:ratifiedGSSP true ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:LowerDevonian ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:LowerDevonian ;
     skos:inScheme cs: ;
-    skos:notation "d2"^^ischart:ccgmShortCode ;
+    skos:notation "d2"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 413.02 ;
+            gtsd:inMYA 413.02 ;
             schema:marginOfError 1.91 ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 410.62 ;
+            gtsd:inMYA 410.62 ;
             schema:marginOfError 1.95 ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 115 ;
-    schema:color "#E5C468"^^ischart:RGBHex ;
+    schema:color "#E5C468"^^gtsd:RGBHex ;
 .
 
-ischart:Priabonian
+gtsd:Priabonian
     a skos:Concept ;
     gts:rank rank:Age ;
     gts:ratifiedGSSP true ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:Eocene ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:Eocene ;
     skos:inScheme cs: ;
-    skos:notation "e7"^^ischart:ccgmShortCode ;
+    skos:notation "e7"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 37.71 ;
+            gtsd:inMYA 37.71 ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 33.9 ;
+            gtsd:inMYA 33.9 ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 25 ;
-    schema:color "#FDCDA1"^^ischart:RGBHex ;
+    schema:color "#FDCDA1"^^gtsd:RGBHex ;
 .
 
-ischart:Rhaetian
+gtsd:Rhaetian
     a skos:Concept ;
     gts:rank rank:Age ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:UpperTriassic ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:UpperTriassic ;
     skos:inScheme cs: ;
-    skos:notation "t7"^^ischart:ccgmShortCode ;
+    skos:notation "t7"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 205.7 ;
+            gtsd:inMYA 205.7 ;
             skos:note "uncertain" ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 201.4 ;
+            gtsd:inMYA 201.4 ;
             schema:marginOfError 0.2 ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 66 ;
-    schema:color "#E3B9DB"^^ischart:RGBHex ;
+    schema:color "#E3B9DB"^^gtsd:RGBHex ;
 .
 
-ischart:Rhuddanian
+gtsd:Rhuddanian
     a skos:Concept ;
     gts:rank rank:Age ;
     gts:ratifiedGSSP true ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:Llandovery ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:Llandovery ;
     skos:inScheme cs: ;
-    skos:notation "s1"^^ischart:ccgmShortCode ;
+    skos:notation "s1"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 443.1 ;
+            gtsd:inMYA 443.1 ;
             schema:marginOfError 1.0 ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 440.5 ;
+            gtsd:inMYA 440.5 ;
             schema:marginOfError 1.0 ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 129 ;
-    schema:color "#A6DCB5"^^ischart:RGBHex ;
+    schema:color "#A6DCB5"^^gtsd:RGBHex ;
 .
 
-ischart:Rhyacian
+gtsd:Rhyacian
     a skos:Concept ;
     gts:rank rank:Period ;
     gts:ratifiedGSSA true ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:Paleoproterozoic ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:Paleoproterozoic ;
     skos:inScheme cs: ;
-    skos:notation "PP2"^^ischart:ccgmShortCode ;
+    skos:notation "PP2"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 2300 ;
+            gtsd:inMYA 2300 ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 2050 ;
+            gtsd:inMYA 2050 ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 168 ;
-    schema:color "#F75B89"^^ischart:RGBHex ;
+    schema:color "#F75B89"^^gtsd:RGBHex ;
 .
 
-ischart:Roadian
+gtsd:Roadian
     a skos:Concept ;
     gts:rank rank:Age ;
     gts:ratifiedGSSP true ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:Guadalupian ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:Guadalupian ;
     skos:inScheme cs: ;
-    skos:notation "p5"^^ischart:ccgmShortCode ;
+    skos:notation "p5"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 274.4 ;
+            gtsd:inMYA 274.4 ;
             schema:marginOfError 0.4 ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 266.9 ;
+            gtsd:inMYA 266.9 ;
             schema:marginOfError 0.4 ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 85 ;
-    schema:color "#FB8069"^^ischart:RGBHex ;
+    schema:color "#FB8069"^^gtsd:RGBHex ;
 .
 
-ischart:Rupelian
+gtsd:Rupelian
     a skos:Concept ;
     gts:rank rank:Age ;
     gts:ratifiedGSSP true ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:Oligocene ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:Oligocene ;
     skos:inScheme cs: ;
-    skos:notation "e8"^^ischart:ccgmShortCode ;
+    skos:notation "e8"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 33.9 ;
+            gtsd:inMYA 33.9 ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 27.30 ;
+            gtsd:inMYA 27.30 ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 24 ;
-    schema:color "#FED99A"^^ischart:RGBHex ;
+    schema:color "#FED99A"^^gtsd:RGBHex ;
 .
 
-ischart:Sakmarian
+gtsd:Sakmarian
     a skos:Concept ;
     gts:rank rank:Age ;
     gts:ratifiedGSSP true ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:Cisuralian ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:Cisuralian ;
     skos:inScheme cs: ;
-    skos:notation "p2"^^ischart:ccgmShortCode ;
+    skos:notation "p2"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 293.52 ;
+            gtsd:inMYA 293.52 ;
             schema:marginOfError 0.17 ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 290.1 ;
+            gtsd:inMYA 290.1 ;
             schema:marginOfError 0.26 ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 88 ;
-    schema:color "#E36F5C"^^ischart:RGBHex ;
+    schema:color "#E36F5C"^^gtsd:RGBHex ;
 .
 
-ischart:Sandbian
+gtsd:Sandbian
     a skos:Concept ;
     gts:rank rank:Age ;
     gts:ratifiedGSSP true ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:UpperOrdovician ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:UpperOrdovician ;
     skos:inScheme cs: ;
-    skos:notation "o5"^^ischart:ccgmShortCode ;
+    skos:notation "o5"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 458.2 ;
+            gtsd:inMYA 458.2 ;
             schema:marginOfError 0.7 ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 452.8 ;
+            gtsd:inMYA 452.8 ;
             schema:marginOfError 0.7 ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 133 ;
-    schema:color "#8CD094"^^ischart:RGBHex ;
+    schema:color "#8CD094"^^gtsd:RGBHex ;
 .
 
-ischart:Santonian
+gtsd:Santonian
     a skos:Concept ;
     gts:rank rank:Age ;
     gts:ratifiedGSSP true ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:UpperCretaceous ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:UpperCretaceous ;
     skos:inScheme cs: ;
-    skos:notation "k4"^^ischart:ccgmShortCode ;
+    skos:notation "k4"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 85.7 ;
+            gtsd:inMYA 85.7 ;
             schema:marginOfError 0.2 ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 83.6 ;
+            gtsd:inMYA 83.6 ;
             schema:marginOfError 0.2 ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 38 ;
-    schema:color "#D9EF74"^^ischart:RGBHex ;
+    schema:color "#D9EF74"^^gtsd:RGBHex ;
 .
 
-ischart:Selandian
+gtsd:Selandian
     a skos:Concept ;
     gts:rank rank:Age ;
     gts:ratifiedGSSP true ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:Paleocene ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:Paleocene ;
     skos:inScheme cs: ;
-    skos:notation "e2"^^ischart:ccgmShortCode ;
+    skos:notation "e2"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 61.66 ;
+            gtsd:inMYA 61.66 ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 59.24 ;
+            gtsd:inMYA 59.24 ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 31 ;
-    schema:color "#FEBF65"^^ischart:RGBHex ;
+    schema:color "#FEBF65"^^gtsd:RGBHex ;
 .
 
-ischart:Serpukhovian
+gtsd:Serpukhovian
     a skos:Concept ;
     gts:rank rank:Age ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:UpperMississippian ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:UpperMississippian ;
     skos:inScheme cs: ;
-    skos:notation "c3"^^ischart:ccgmShortCode ;
+    skos:notation "c3"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 330.3 ;
+            gtsd:inMYA 330.3 ;
             schema:marginOfError 0.4 ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 323.4 ;
+            gtsd:inMYA 323.4 ;
             schema:marginOfError 0.4 ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 100 ;
-    schema:color "#BFC26B"^^ischart:RGBHex ;
+    schema:color "#BFC26B"^^gtsd:RGBHex ;
 .
 
-ischart:Serravallian
+gtsd:Serravallian
     a skos:Concept ;
     gts:rank rank:Age ;
     gts:ratifiedGSSP true ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:Miocene ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:Miocene ;
     skos:inScheme cs: ;
-    skos:notation "n4"^^ischart:ccgmShortCode ;
+    skos:notation "n4"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 13.82 ;
+            gtsd:inMYA 13.82 ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 11.63 ;
+            gtsd:inMYA 11.63 ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 16 ;
-    schema:color "#FFFF59"^^ischart:RGBHex ;
+    schema:color "#FFFF59"^^gtsd:RGBHex ;
 .
 
-ischart:Sheinwoodian
+gtsd:Sheinwoodian
     a skos:Concept ;
     gts:rank rank:Age ;
     gts:ratifiedGSSP true ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:Wenlock ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:Wenlock ;
     skos:inScheme cs: ;
-    skos:notation "s4"^^ischart:ccgmShortCode ;
+    skos:notation "s4"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 432.9 ;
+            gtsd:inMYA 432.9 ;
             schema:marginOfError 1.2 ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 430.6 ;
+            gtsd:inMYA 430.6 ;
             schema:marginOfError 1.3 ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 124 ;
-    schema:color "#BFE6C3"^^ischart:RGBHex ;
+    schema:color "#BFE6C3"^^gtsd:RGBHex ;
 .
 
-ischart:Siderian
+gtsd:Siderian
     a skos:Concept ;
     gts:rank rank:Period ;
     gts:ratifiedGSSA true ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:Paleoproterozoic ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:Paleoproterozoic ;
     skos:inScheme cs: ;
-    skos:notation "PP1"^^ischart:ccgmShortCode ;
+    skos:notation "PP1"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 2500 ;
+            gtsd:inMYA 2500 ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 2300 ;
+            gtsd:inMYA 2300 ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 171 ;
-    schema:color "#F74F7C"^^ischart:RGBHex ;
+    schema:color "#F74F7C"^^gtsd:RGBHex ;
 .
 
-ischart:Sinemurian
+gtsd:Sinemurian
     a skos:Concept ;
     gts:rank rank:Age ;
     gts:ratifiedGSSP true ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:LowerJurassic ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:LowerJurassic ;
     skos:inScheme cs: ;
-    skos:notation "I2"^^ischart:ccgmShortCode ;
+    skos:notation "I2"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 199.5 ;
+            gtsd:inMYA 199.5 ;
             schema:marginOfError 0.3 ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 192.9 ;
+            gtsd:inMYA 192.9 ;
             schema:marginOfError 0.3 ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 62 ;
-    schema:color "#67BCD8"^^ischart:RGBHex ;
+    schema:color "#67BCD8"^^gtsd:RGBHex ;
 .
 
-ischart:Statherian
+gtsd:Statherian
     a skos:Concept ;
     gts:rank rank:Period ;
     gts:ratifiedGSSA true ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:Paleoproterozoic ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:Paleoproterozoic ;
     skos:inScheme cs: ;
-    skos:notation "PP4"^^ischart:ccgmShortCode ;
+    skos:notation "PP4"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 1800 ;
+            gtsd:inMYA 1800 ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 1600 ;
+            gtsd:inMYA 1600 ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 166 ;
-    schema:color "#F875A7"^^ischart:RGBHex ;
+    schema:color "#F875A7"^^gtsd:RGBHex ;
 .
 
-ischart:Stenian
+gtsd:Stenian
     a skos:Concept ;
     gts:rank rank:Period ;
     gts:ratifiedGSSA true ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:Mesoproterozoic ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:Mesoproterozoic ;
     skos:inScheme cs: ;
-    skos:notation "MP3"^^ischart:ccgmShortCode ;
+    skos:notation "MP3"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 1200 ;
+            gtsd:inMYA 1200 ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 1000 ;
+            gtsd:inMYA 1000 ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 162 ;
-    schema:color "#FED99A"^^ischart:RGBHex ;
+    schema:color "#FED99A"^^gtsd:RGBHex ;
 .
 
-ischart:Telychian
+gtsd:Telychian
     a skos:Concept ;
     gts:rank rank:Age ;
     gts:ratifiedGSSP true ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:Llandovery ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:Llandovery ;
     skos:inScheme cs: ;
-    skos:notation "s3"^^ischart:ccgmShortCode ;
+    skos:notation "s3"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 438.6 ;
+            gtsd:inMYA 438.6 ;
             schema:marginOfError 1.0 ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 432.9 ;
+            gtsd:inMYA 432.9 ;
             schema:marginOfError 1.2 ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 126 ;
-    schema:color "#BFE6CF"^^ischart:RGBHex ;
+    schema:color "#BFE6CF"^^gtsd:RGBHex ;
 .
 
-ischart:Thanetian
+gtsd:Thanetian
     a skos:Concept ;
     gts:rank rank:Age ;
     gts:ratifiedGSSP true ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:Paleocene ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:Paleocene ;
     skos:inScheme cs: ;
-    skos:notation "e3"^^ischart:ccgmShortCode ;
+    skos:notation "e3"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 59.24 ;
+            gtsd:inMYA 59.24 ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 56.00 ;
+            gtsd:inMYA 56.00 ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 30 ;
-    schema:color "#FDBF6F"^^ischart:RGBHex ;
+    schema:color "#FDBF6F"^^gtsd:RGBHex ;
 .
 
-ischart:Tithonian
+gtsd:Tithonian
     a skos:Concept ;
     gts:rank rank:Age ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:UpperJurassic ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:UpperJurassic ;
     skos:inScheme cs: ;
-    skos:notation "j7"^^ischart:ccgmShortCode ;
+    skos:notation "j7"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 149.2 ;
+            gtsd:inMYA 149.2 ;
             schema:marginOfError 0.7 ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 143.1 ;
+            gtsd:inMYA 143.1 ;
             schema:marginOfError 0.6 ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 51 ;
-    schema:color "#D9F1F7"^^ischart:RGBHex ;
+    schema:color "#D9F1F7"^^gtsd:RGBHex ;
 .
 
-ischart:Toarcian
+gtsd:Toarcian
     a skos:Concept ;
     gts:rank rank:Age ;
     gts:ratifiedGSSP true ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:LowerJurassic ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:LowerJurassic ;
     skos:inScheme cs: ;
-    skos:notation "I4"^^ischart:ccgmShortCode ;
+    skos:notation "I4"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 184.2 ;
+            gtsd:inMYA 184.2 ;
             schema:marginOfError 0.3 ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 174.7 ;
+            gtsd:inMYA 174.7 ;
             schema:marginOfError 0.8 ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 60 ;
-    schema:color "#99CEE3"^^ischart:RGBHex ;
+    schema:color "#99CEE3"^^gtsd:RGBHex ;
 .
 
-ischart:Tonian
+gtsd:Tonian
     a skos:Concept ;
     gts:rank rank:Period ;
     gts:ratifiedGSSA true ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:Neoproterozoic ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:Neoproterozoic ;
     skos:inScheme cs: ;
-    skos:notation "NP1"^^ischart:ccgmShortCode ;
+    skos:notation "NP1"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 1000 ;
+            gtsd:inMYA 1000 ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 720 ;
+            gtsd:inMYA 720 ;
             skos:note "uncertain" ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 161 ;
-    schema:color "#FEBF4E"^^ischart:RGBHex ;
+    schema:color "#FEBF4E"^^gtsd:RGBHex ;
 .
 
-ischart:Tortonian
+gtsd:Tortonian
     a skos:Concept ;
     gts:rank rank:Age ;
     gts:ratifiedGSSP true ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:Miocene ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:Miocene ;
     skos:inScheme cs: ;
-    skos:notation "n5"^^ischart:ccgmShortCode ;
+    skos:notation "n5"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 11.63 ;
+            gtsd:inMYA 11.63 ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 7.246 ;
+            gtsd:inMYA 7.246 ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 15 ;
-    schema:color "#FFFF66"^^ischart:RGBHex ;
+    schema:color "#FFFF66"^^gtsd:RGBHex ;
 .
 
-ischart:Tournaisian
+gtsd:Tournaisian
     a skos:Concept ;
     gts:rank rank:Age ;
     gts:ratifiedGSSP true ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:LowerMississippian ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:LowerMississippian ;
     skos:inScheme cs: ;
-    skos:notation "c1"^^ischart:ccgmShortCode ;
+    skos:notation "c1"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 358.86 ;
+            gtsd:inMYA 358.86 ;
             schema:marginOfError 0.19 ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 346.7 ;
+            gtsd:inMYA 346.7 ;
             schema:marginOfError 0.4 ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 107 ;
-    schema:color "#8CB06C"^^ischart:RGBHex ;
+    schema:color "#8CB06C"^^gtsd:RGBHex ;
 .
 
-ischart:Tremadocian
+gtsd:Tremadocian
     a skos:Concept ;
     gts:rank rank:Age ;
     gts:ratifiedGSSP true ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:LowerOrdovician ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:LowerOrdovician ;
     skos:inScheme cs: ;
-    skos:notation "o1"^^ischart:ccgmShortCode ;
+    skos:notation "o1"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 486.85 ;
+            gtsd:inMYA 486.85 ;
             schema:marginOfError 1.5 ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 477.1 ;
+            gtsd:inMYA 477.1 ;
             schema:marginOfError 1.2 ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 141 ;
-    schema:color "#33A97E"^^ischart:RGBHex ;
+    schema:color "#33A97E"^^gtsd:RGBHex ;
 .
 
-ischart:Turonian
+gtsd:Turonian
     a skos:Concept ;
     gts:rank rank:Age ;
     gts:ratifiedGSSP true ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:UpperCretaceous ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:UpperCretaceous ;
     skos:inScheme cs: ;
-    skos:notation "k2"^^ischart:ccgmShortCode ;
+    skos:notation "k2"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 93.9 ;
+            gtsd:inMYA 93.9 ;
             schema:marginOfError 0.2 ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 89.8 ;
+            gtsd:inMYA 89.8 ;
             schema:marginOfError 0.3 ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 40 ;
-    schema:color "#BFE35D"^^ischart:RGBHex ;
+    schema:color "#BFE35D"^^gtsd:RGBHex ;
 .
 
-ischart:UpperPleistocene
+gtsd:UpperPleistocene
     a skos:Concept ;
     gts:rank rank:Age ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:Pleistocene ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:Pleistocene ;
     skos:inScheme cs: ;
-    skos:notation "q4"^^ischart:ccgmShortCode ;
+    skos:notation "q4"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 0.129 ;
+            gtsd:inMYA 0.129 ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 0.0117 ;
+            gtsd:inMYA 0.0117 ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 5 ;
-    schema:color "#FFF2D3"^^ischart:RGBHex ;
+    schema:color "#FFF2D3"^^gtsd:RGBHex ;
 .
 
-ischart:Valanginian
+gtsd:Valanginian
     a skos:Concept ;
     gts:rank rank:Age ;
     gts:ratifiedGSSP true ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:LowerCretaceous ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:LowerCretaceous ;
     skos:inScheme cs: ;
-    skos:notation "b2"^^ischart:ccgmShortCode ;
+    skos:notation "b2"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 137.05 ;
+            gtsd:inMYA 137.05 ;
             schema:marginOfError 0.2 ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 132.6 ;
+            gtsd:inMYA 132.6 ;
             schema:marginOfError 0.6 ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 47 ;
-    schema:color "#99D36A"^^ischart:RGBHex ;
+    schema:color "#99D36A"^^gtsd:RGBHex ;
 .
 
-ischart:Visean
+gtsd:Visean
     a skos:Concept ;
     gts:rank rank:Age ;
     gts:ratifiedGSSP true ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:MiddleMississippian ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:MiddleMississippian ;
     skos:inScheme cs: ;
-    skos:notation "c2"^^ischart:ccgmShortCode ;
+    skos:notation "c2"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 346.7 ;
+            gtsd:inMYA 346.7 ;
             schema:marginOfError 0.4 ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 330.3 ;
+            gtsd:inMYA 330.3 ;
             schema:marginOfError 0.4 ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 103 ;
-    schema:color "#A6B96C"^^ischart:RGBHex ;
+    schema:color "#A6B96C"^^gtsd:RGBHex ;
 .
 
-ischart:Wordian
+gtsd:Wordian
     a skos:Concept ;
     gts:rank rank:Age ;
     gts:ratifiedGSSP true ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:Guadalupian ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:Guadalupian ;
     skos:inScheme cs: ;
-    skos:notation "p6"^^ischart:ccgmShortCode ;
+    skos:notation "p6"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 266.9 ;
+            gtsd:inMYA 266.9 ;
             schema:marginOfError 0.4 ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 264.28 ;
+            gtsd:inMYA 264.28 ;
             schema:marginOfError 0.16 ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 83 ;
-    schema:color "#FB8D76"^^ischart:RGBHex ;
+    schema:color "#FB8D76"^^gtsd:RGBHex ;
 .
 
-ischart:Wuchiapingian
+gtsd:Wuchiapingian
     a skos:Concept ;
     gts:rank rank:Age ;
     gts:ratifiedGSSP true ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:Lopingian ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:Lopingian ;
     skos:changeNote "2026-06: hasBeginning 259.51 -> 259.857" ;
     skos:inScheme cs: ;
-    skos:notation "p8"^^ischart:ccgmShortCode ;
+    skos:notation "p8"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 259.857 ;
+            gtsd:inMYA 259.857 ;
             schema:marginOfError 0.084 ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 254.14 ;
+            gtsd:inMYA 254.14 ;
             schema:marginOfError 0.07 ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 81 ;
-    schema:color "#FCB4A2"^^ischart:RGBHex ;
+    schema:color "#FCB4A2"^^gtsd:RGBHex ;
 .
 
-ischart:Wuliuan
+gtsd:Wuliuan
     a skos:Concept ;
     gts:rank rank:Age ;
     gts:ratifiedGSSP true ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:Miaolingian ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:Miaolingian ;
     skos:inScheme cs: ;
-    skos:notation "ep5"^^ischart:ccgmShortCode ;
+    skos:notation "ep5"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 506.5 ;
+            gtsd:inMYA 506.5 ;
             skos:note "uncertain" ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 504.5 ;
+            gtsd:inMYA 504.5 ;
             skos:note "uncertain" ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 149 ;
-    schema:color "#B3D492"^^ischart:RGBHex ;
+    schema:color "#B3D492"^^gtsd:RGBHex ;
 .
 
-ischart:Ypresian
+gtsd:Ypresian
     a skos:Concept ;
     gts:rank rank:Age ;
     gts:ratifiedGSSP true ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:Eocene ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:Eocene ;
     skos:inScheme cs: ;
-    skos:notation "e4"^^ischart:ccgmShortCode ;
+    skos:notation "e4"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 56.00 ;
+            gtsd:inMYA 56.00 ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 48.07 ;
+            gtsd:inMYA 48.07 ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 29 ;
-    schema:color "#FCA773"^^ischart:RGBHex ;
+    schema:color "#FCA773"^^gtsd:RGBHex ;
 .
 
-ischart:Zanclean
+gtsd:Zanclean
     a skos:Concept ;
     gts:rank rank:Age ;
     gts:ratifiedGSSP true ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:Pliocene ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:Pliocene ;
     skos:inScheme cs: ;
-    skos:notation "n7"^^ischart:ccgmShortCode ;
+    skos:notation "n7"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 5.333 ;
+            gtsd:inMYA 5.333 ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 3.600 ;
+            gtsd:inMYA 3.600 ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 13 ;
-    schema:color "#FFFFB3"^^ischart:RGBHex ;
+    schema:color "#FFFFB3"^^gtsd:RGBHex ;
 .
 
-ischart:LowerMississippian
+gtsd:LowerMississippian
     a skos:Concept ;
     gts:rank rank:Epoch ;
     gts:ratifiedGSSP true ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:Mississippian ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:Mississippian ;
     skos:inScheme cs: ;
-    skos:narrower ischart:Tournaisian ;
-    skos:notation "C1c1"^^ischart:ccgmShortCode ;
+    skos:narrower gtsd:Tournaisian ;
+    skos:notation "C1c1"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 358.86 ;
+            gtsd:inMYA 358.86 ;
             schema:marginOfError 0.19 ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 346.7 ;
+            gtsd:inMYA 346.7 ;
             schema:marginOfError 0.4 ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 105 ;
-    schema:color "#80AB6C"^^ischart:RGBHex ;
+    schema:color "#80AB6C"^^gtsd:RGBHex ;
 .
 
-ischart:LowerPennsylvanian
+gtsd:LowerPennsylvanian
     a skos:Concept ;
     gts:rank rank:Epoch ;
     gts:ratifiedGSSP true ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:Pennsylvanian ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:Pennsylvanian ;
     skos:inScheme cs: ;
-    skos:narrower ischart:Bashkirian ;
-    skos:notation "C2c4"^^ischart:ccgmShortCode ;
+    skos:narrower gtsd:Bashkirian ;
+    skos:notation "C2c4"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 323.4 ;
+            gtsd:inMYA 323.4 ;
             schema:marginOfError 0.4 ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 315.2 ;
+            gtsd:inMYA 315.2 ;
             schema:marginOfError 0.2 ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 98 ;
-    schema:color "#8CBEB4"^^ischart:RGBHex ;
+    schema:color "#8CBEB4"^^gtsd:RGBHex ;
 .
 
-ischart:MiddleMississippian
+gtsd:MiddleMississippian
     a skos:Concept ;
     gts:rank rank:Epoch ;
     gts:ratifiedGSSP true ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:Mississippian ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:Mississippian ;
     skos:inScheme cs: ;
-    skos:narrower ischart:Visean ;
-    skos:notation "C1c2"^^ischart:ccgmShortCode ;
+    skos:narrower gtsd:Visean ;
+    skos:notation "C1c2"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 346.7 ;
+            gtsd:inMYA 346.7 ;
             schema:marginOfError 0.4 ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 330.3 ;
+            gtsd:inMYA 330.3 ;
             schema:marginOfError 0.4 ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 102 ;
-    schema:color "#99B46C"^^ischart:RGBHex ;
+    schema:color "#99B46C"^^gtsd:RGBHex ;
 .
 
-ischart:MiddlePennsylvanian
+gtsd:MiddlePennsylvanian
     a skos:Concept ;
     gts:rank rank:Epoch ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:Pennsylvanian ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:Pennsylvanian ;
     skos:inScheme cs: ;
-    skos:narrower ischart:Moscovian ;
-    skos:notation "C2c5"^^ischart:ccgmShortCode ;
+    skos:narrower gtsd:Moscovian ;
+    skos:notation "C2c5"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 315.2 ;
+            gtsd:inMYA 315.2 ;
             schema:marginOfError 0.2 ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 307.0 ;
+            gtsd:inMYA 307.0 ;
             schema:marginOfError 0.1 ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 95 ;
-    schema:color "#A6C7B7"^^ischart:RGBHex ;
+    schema:color "#A6C7B7"^^gtsd:RGBHex ;
 .
 
-ischart:Pridoli
+gtsd:Pridoli
     a skos:Concept ;
     gts:rank
         rank:Age ,
         rank:Epoch ;
     gts:ratifiedGSSP true ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:Silurian ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:Silurian ;
     skos:inScheme cs: ;
-    skos:notation "S4"^^ischart:ccgmShortCode ;
+    skos:notation "S4"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 422.7 ;
+            gtsd:inMYA 422.7 ;
             schema:marginOfError 1.6 ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 419.62 ;
+            gtsd:inMYA 419.62 ;
             schema:marginOfError 1.36 ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 119 ;
-    schema:color "#E6F5E1"^^ischart:RGBHex ;
+    schema:color "#E6F5E1"^^gtsd:RGBHex ;
 .
 
-ischart:UpperMississippian
+gtsd:UpperMississippian
     a skos:Concept ;
     gts:rank rank:Epoch ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:Mississippian ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:Mississippian ;
     skos:inScheme cs: ;
-    skos:narrower ischart:Serpukhovian ;
-    skos:notation "C1c3"^^ischart:ccgmShortCode ;
+    skos:narrower gtsd:Serpukhovian ;
+    skos:notation "C1c3"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 330.3 ;
+            gtsd:inMYA 330.3 ;
             schema:marginOfError 0.4 ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 323.4 ;
+            gtsd:inMYA 323.4 ;
             schema:marginOfError 0.4 ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 101 ;
-    schema:color "#B3BE6C"^^ischart:RGBHex ;
+    schema:color "#B3BE6C"^^gtsd:RGBHex ;
 .
 
 <https://linked.data.gov.au/org/ics>
@@ -2991,1495 +2868,1439 @@ ischart:UpperMississippian
     schema:url "https://stratigraphy.org"^^xsd:anyURI ;
 .
 
-ischart:CambrianSeries2
+gtsd:CambrianSeries2
     a skos:Concept ;
     gts:rank rank:Epoch ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:Cambrian ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:Cambrian ;
     skos:inScheme cs: ;
     skos:narrower
-        ischart:CambrianStage3 ,
-        ischart:CambrianStage4 ;
-    skos:notation "Ep2"^^ischart:ccgmShortCode ;
+        gtsd:CambrianStage3 ,
+        gtsd:CambrianStage4 ;
+    skos:notation "Ep2"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 521.0 ;
+            gtsd:inMYA 521.0 ;
             skos:note "uncertain" ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 506.5 ;
+            gtsd:inMYA 506.5 ;
             skos:note "uncertain" ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 151 ;
-    schema:color "#99C078"^^ischart:RGBHex ;
+    schema:color "#99C078"^^gtsd:RGBHex ;
 .
 
-ischart:Carboniferous
+gtsd:Carboniferous
     a skos:Concept ;
     gts:rank rank:Period ;
     gts:ratifiedGSSP true ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:Paleozoic ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:Paleozoic ;
     skos:inScheme cs: ;
     skos:narrower
-        ischart:Mississippian ,
-        ischart:Pennsylvanian ;
-    skos:notation "C"^^ischart:ccgmShortCode ;
+        gtsd:Mississippian ,
+        gtsd:Pennsylvanian ;
+    skos:notation "C"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 358.86 ;
+            gtsd:inMYA 358.86 ;
             schema:marginOfError 0.19 ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 298.9 ;
+            gtsd:inMYA 298.9 ;
             schema:marginOfError 0.15 ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 104 ;
-    schema:color "#67A599"^^ischart:RGBHex ;
+    schema:color "#67A599"^^gtsd:RGBHex ;
 .
 
-ischart:Cretaceous
+gtsd:Cretaceous
     a skos:Concept ;
     gts:rank rank:Period ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:Mesozoic ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:Mesozoic ;
     skos:inScheme cs: ;
     skos:narrower
-        ischart:LowerCretaceous ,
-        ischart:UpperCretaceous ;
-    skos:notation "K"^^ischart:ccgmShortCode ;
+        gtsd:LowerCretaceous ,
+        gtsd:UpperCretaceous ;
+    skos:notation "K"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 143.1 ;
+            gtsd:inMYA 143.1 ;
             schema:marginOfError 0.6 ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 66.00 ;
+            gtsd:inMYA 66.00 ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 49 ;
-    schema:color "#7FC64E"^^ischart:RGBHex ;
+    schema:color "#7FC64E"^^gtsd:RGBHex ;
 .
 
-ischart:Lopingian
+gtsd:Lopingian
     a skos:Concept ;
     gts:rank rank:Epoch ;
     gts:ratifiedGSSP true ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:Permian ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:Permian ;
     skos:changeNote "2026-06: hasBeginning 259.51 -> 259.857" ;
     skos:inScheme cs: ;
     skos:narrower
-        ischart:Changhsingian ,
-        ischart:Wuchiapingian ;
-    skos:notation "P3"^^ischart:ccgmShortCode ;
+        gtsd:Changhsingian ,
+        gtsd:Wuchiapingian ;
+    skos:notation "P3"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 259.857 ;
+            gtsd:inMYA 259.857 ;
             schema:marginOfError 0.084 ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 251.902 ;
+            gtsd:inMYA 251.902 ;
             schema:marginOfError 0.024 ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 80 ;
-    schema:color "#FBA794"^^ischart:RGBHex ;
+    schema:color "#FBA794"^^gtsd:RGBHex ;
 .
 
-ischart:LowerOrdovician
+gtsd:LowerOrdovician
     a skos:Concept ;
     gts:rank rank:Epoch ;
     gts:ratifiedGSSP true ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:Ordovician ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:Ordovician ;
     skos:inScheme cs: ;
     skos:narrower
-        ischart:Floian ,
-        ischart:Tremadocian ;
-    skos:notation "O1"^^ischart:ccgmShortCode ;
+        gtsd:Floian ,
+        gtsd:Tremadocian ;
+    skos:notation "O1"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 486.85 ;
+            gtsd:inMYA 486.85 ;
             schema:marginOfError 1.5 ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 471.3 ;
+            gtsd:inMYA 471.3 ;
             schema:marginOfError 1.4 ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 139 ;
-    schema:color "#1A9D6F"^^ischart:RGBHex ;
+    schema:color "#1A9D6F"^^gtsd:RGBHex ;
 .
 
-ischart:LowerTriassic
+gtsd:LowerTriassic
     a skos:Concept ;
     gts:rank rank:Epoch ;
     gts:ratifiedGSSP true ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:Triassic ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:Triassic ;
     skos:changeNote "2026-06: hasEnd 246.7 -> 247.0" ;
     skos:inScheme cs: ;
     skos:narrower
-        ischart:Induan ,
-        ischart:Olenekian ;
-    skos:notation "T1"^^ischart:ccgmShortCode ;
+        gtsd:Induan ,
+        gtsd:Olenekian ;
+    skos:notation "T1"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 251.902 ;
+            gtsd:inMYA 251.902 ;
             schema:marginOfError 0.024 ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 247.0 ;
+            gtsd:inMYA 247.0 ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 75 ;
-    schema:color "#983999"^^ischart:RGBHex ;
+    schema:color "#983999"^^gtsd:RGBHex ;
 .
 
-ischart:Ludlow
+gtsd:Ludlow
     a skos:Concept ;
     gts:rank rank:Epoch ;
     gts:ratifiedGSSP true ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:Silurian ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:Silurian ;
     skos:inScheme cs: ;
     skos:narrower
-        ischart:Gorstian ,
-        ischart:Ludfordian ;
-    skos:notation "S3"^^ischart:ccgmShortCode ;
+        gtsd:Gorstian ,
+        gtsd:Ludfordian ;
+    skos:notation "S3"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 426.7 ;
+            gtsd:inMYA 426.7 ;
             schema:marginOfError 1.5 ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 419.62 ;
+            gtsd:inMYA 419.62 ;
             schema:marginOfError 1.36 ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 122 ;
-    schema:color "#BFE6CF"^^ischart:RGBHex ;
+    schema:color "#BFE6CF"^^gtsd:RGBHex ;
 .
 
-ischart:MiddleDevonian
+gtsd:MiddleDevonian
     a skos:Concept ;
     gts:rank rank:Epoch ;
     gts:ratifiedGSSP true ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:Devonian ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:Devonian ;
     skos:inScheme cs: ;
     skos:narrower
-        ischart:Eifelian ,
-        ischart:Givetian ;
-    skos:notation "D2"^^ischart:ccgmShortCode ;
+        gtsd:Eifelian ,
+        gtsd:Givetian ;
+    skos:notation "D2"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 393.47 ;
+            gtsd:inMYA 393.47 ;
             schema:marginOfError 0.99 ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 382.31 ;
+            gtsd:inMYA 382.31 ;
             schema:marginOfError 1.36 ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 113 ;
-    schema:color "#F1C868"^^ischart:RGBHex ;
+    schema:color "#F1C868"^^gtsd:RGBHex ;
 .
 
-ischart:MiddleOrdovician
+gtsd:MiddleOrdovician
     a skos:Concept ;
     gts:rank rank:Epoch ;
     gts:ratifiedGSSP true ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:Ordovician ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:Ordovician ;
     skos:inScheme cs: ;
     skos:narrower
-        ischart:Dapingian ,
-        ischart:Darriwilian ;
-    skos:notation "O2"^^ischart:ccgmShortCode ;
+        gtsd:Dapingian ,
+        gtsd:Darriwilian ;
+    skos:notation "O2"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 471.3 ;
+            gtsd:inMYA 471.3 ;
             schema:marginOfError 1.4 ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 458.2 ;
+            gtsd:inMYA 458.2 ;
             schema:marginOfError 0.7 ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 137 ;
-    schema:color "#4DB47E"^^ischart:RGBHex ;
+    schema:color "#4DB47E"^^gtsd:RGBHex ;
 .
 
-ischart:MiddleTriassic
+gtsd:MiddleTriassic
     a skos:Concept ;
     gts:rank rank:Epoch ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:Triassic ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:Triassic ;
     skos:changeNote "2026-06: hasBeginning 246.7 -> 247.0" ;
     skos:inScheme cs: ;
     skos:narrower
-        ischart:Anisian ,
-        ischart:Ladinian ;
-    skos:notation "T2"^^ischart:ccgmShortCode ;
+        gtsd:Anisian ,
+        gtsd:Ladinian ;
+    skos:notation "T2"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 247.0 ;
+            gtsd:inMYA 247.0 ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 237 ;
+            gtsd:inMYA 237 ;
             skos:note "uncertain" ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 72 ;
-    schema:color "#B168B1"^^ischart:RGBHex ;
+    schema:color "#B168B1"^^gtsd:RGBHex ;
 .
 
-ischart:Neogene
+gtsd:Neogene
     a skos:Concept ;
     gts:rank rank:Period ;
     gts:ratifiedGSSP true ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:Cenozoic ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:Cenozoic ;
     skos:inScheme cs: ;
     skos:narrower
-        ischart:Miocene ,
-        ischart:Pliocene ;
-    skos:notation "N"^^ischart:ccgmShortCode ;
+        gtsd:Miocene ,
+        gtsd:Pliocene ;
+    skos:notation "N"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 23.04 ;
+            gtsd:inMYA 23.04 ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 2.58 ;
+            gtsd:inMYA 2.58 ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 21 ;
-    schema:color "#FFE619"^^ischart:RGBHex ;
+    schema:color "#FFE619"^^gtsd:RGBHex ;
 .
 
-ischart:Oligocene
+gtsd:Oligocene
     a skos:Concept ;
     gts:rank rank:Epoch ;
     gts:ratifiedGSSP true ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:Paleogene ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:Paleogene ;
     skos:inScheme cs: ;
     skos:narrower
-        ischart:Chattian ,
-        ischart:Rupelian ;
-    skos:notation "E3"^^ischart:ccgmShortCode ;
+        gtsd:Chattian ,
+        gtsd:Rupelian ;
+    skos:notation "E3"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 33.9 ;
+            gtsd:inMYA 33.9 ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 23.04 ;
+            gtsd:inMYA 23.04 ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 23 ;
-    schema:color "#FEC07A"^^ischart:RGBHex ;
+    schema:color "#FEC07A"^^gtsd:RGBHex ;
 .
 
-ischart:Pliocene
+gtsd:Pliocene
     a skos:Concept ;
     gts:rank rank:Epoch ;
     gts:ratifiedGSSP true ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:Neogene ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:Neogene ;
     skos:inScheme cs: ;
     skos:narrower
-        ischart:Piacenzian ,
-        ischart:Zanclean ;
-    skos:notation "N2"^^ischart:ccgmShortCode ;
+        gtsd:Piacenzian ,
+        gtsd:Zanclean ;
+    skos:notation "N2"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 5.333 ;
+            gtsd:inMYA 5.333 ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 2.58 ;
+            gtsd:inMYA 2.58 ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 12 ;
-    schema:color "#FFFF99"^^ischart:RGBHex ;
+    schema:color "#FFFF99"^^gtsd:RGBHex ;
 .
 
-ischart:Quaternary
+gtsd:Quaternary
     a skos:Concept ;
     gts:rank rank:Period ;
     gts:ratifiedGSSP true ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:Cenozoic ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:Cenozoic ;
     skos:inScheme cs: ;
     skos:narrower
-        ischart:Holocene ,
-        ischart:Pleistocene ;
-    skos:notation "Q"^^ischart:ccgmShortCode ;
+        gtsd:Holocene ,
+        gtsd:Pleistocene ;
+    skos:notation "Q"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 2.58 ;
+            gtsd:inMYA 2.58 ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 0 ;
+            gtsd:inMYA 0 ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 10 ;
-    schema:color "#F9F97F"^^ischart:RGBHex ;
+    schema:color "#F9F97F"^^gtsd:RGBHex ;
 .
 
-ischart:Terreneuvian
+gtsd:Terreneuvian
     a skos:Concept ;
     gts:rank rank:Epoch ;
     gts:ratifiedGSSP true ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:Cambrian ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:Cambrian ;
     skos:inScheme cs: ;
     skos:narrower
-        ischart:CambrianStage2 ,
-        ischart:Fortunian ;
-    skos:notation "Ep1"^^ischart:ccgmShortCode ;
+        gtsd:CambrianStage2 ,
+        gtsd:Fortunian ;
+    skos:notation "Ep1"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 538.8 ;
+            gtsd:inMYA 538.8 ;
             schema:marginOfError 0.6 ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 521.0 ;
+            gtsd:inMYA 521.0 ;
             skos:note "uncertain" ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 157 ;
-    schema:color "#8CB06C"^^ischart:RGBHex ;
+    schema:color "#8CB06C"^^gtsd:RGBHex ;
 .
 
-ischart:UpperDevonian
+gtsd:UpperDevonian
     a skos:Concept ;
     gts:rank rank:Epoch ;
     gts:ratifiedGSSP true ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:Devonian ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:Devonian ;
     skos:inScheme cs: ;
     skos:narrower
-        ischart:Famennian ,
-        ischart:Frasnian ;
-    skos:notation "D3"^^ischart:ccgmShortCode ;
+        gtsd:Famennian ,
+        gtsd:Frasnian ;
+    skos:notation "D3"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 382.31 ;
+            gtsd:inMYA 382.31 ;
             schema:marginOfError 1.36 ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 358.86 ;
+            gtsd:inMYA 358.86 ;
             schema:marginOfError 0.19 ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 110 ;
-    schema:color "#F1E19D"^^ischart:RGBHex ;
+    schema:color "#F1E19D"^^gtsd:RGBHex ;
 .
 
-ischart:UpperPennsylvanian
+gtsd:UpperPennsylvanian
     a skos:Concept ;
     gts:rank rank:Epoch ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:Pennsylvanian ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:Pennsylvanian ;
     skos:inScheme cs: ;
     skos:narrower
-        ischart:Gzhelian ,
-        ischart:Kasimovian ;
-    skos:notation "C2c6c7"^^ischart:ccgmShortCode ;
+        gtsd:Gzhelian ,
+        gtsd:Kasimovian ;
+    skos:notation "C2c6c7"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 307.0 ;
+            gtsd:inMYA 307.0 ;
             schema:marginOfError 0.1 ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 298.9 ;
+            gtsd:inMYA 298.9 ;
             schema:marginOfError 0.15 ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 94 ;
-    schema:color "#BFD0BA"^^ischart:RGBHex ;
+    schema:color "#BFD0BA"^^gtsd:RGBHex ;
 .
 
-ischart:Wenlock
+gtsd:Wenlock
     a skos:Concept ;
     gts:rank rank:Epoch ;
     gts:ratifiedGSSP true ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:Silurian ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:Silurian ;
     skos:inScheme cs: ;
     skos:narrower
-        ischart:Homerian ,
-        ischart:Sheinwoodian ;
-    skos:notation "S2"^^ischart:ccgmShortCode ;
+        gtsd:Homerian ,
+        gtsd:Sheinwoodian ;
+    skos:notation "S2"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 432.9 ;
+            gtsd:inMYA 432.9 ;
             schema:marginOfError 1.2 ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 426.7 ;
+            gtsd:inMYA 426.7 ;
             schema:marginOfError 1.5 ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 125 ;
-    schema:color "#B3E1C2"^^ischart:RGBHex ;
+    schema:color "#B3E1C2"^^gtsd:RGBHex ;
 .
 
-ischart:Cenozoic
+gtsd:Cenozoic
     a skos:Concept ;
     gts:rank rank:Era ;
     gts:ratifiedGSSP true ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:Phanerozoic ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:Phanerozoic ;
     skos:inScheme cs: ;
     skos:narrower
-        ischart:Neogene ,
-        ischart:Paleogene ,
-        ischart:Quaternary ;
-    skos:notation "CZ"^^ischart:ccgmShortCode ;
+        gtsd:Neogene ,
+        gtsd:Paleogene ,
+        gtsd:Quaternary ;
+    skos:notation "CZ"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 66.00 ;
+            gtsd:inMYA 66.00 ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 0 ;
+            gtsd:inMYA 0 ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 32 ;
-    schema:color "#F2F91D"^^ischart:RGBHex ;
+    schema:color "#F2F91D"^^gtsd:RGBHex ;
 .
 
-ischart:Devonian
+gtsd:Devonian
     a skos:Concept ;
     gts:rank rank:Period ;
     gts:ratifiedGSSP true ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:Paleozoic ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:Paleozoic ;
     skos:inScheme cs: ;
     skos:narrower
-        ischart:LowerDevonian ,
-        ischart:MiddleDevonian ,
-        ischart:UpperDevonian ;
-    skos:notation "D"^^ischart:ccgmShortCode ;
+        gtsd:LowerDevonian ,
+        gtsd:MiddleDevonian ,
+        gtsd:UpperDevonian ;
+    skos:notation "D"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 419.62 ;
+            gtsd:inMYA 419.62 ;
             schema:marginOfError 1.36 ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 358.86 ;
+            gtsd:inMYA 358.86 ;
             schema:marginOfError 0.19 ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 116 ;
-    schema:color "#CB8C37"^^ischart:RGBHex ;
+    schema:color "#CB8C37"^^gtsd:RGBHex ;
 .
 
-ischart:Furongian
+gtsd:Furongian
     a skos:Concept ;
     gts:rank rank:Epoch ;
     gts:ratifiedGSSP true ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:Cambrian ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:Cambrian ;
     skos:inScheme cs: ;
     skos:narrower
-        ischart:CambrianStage10 ,
-        ischart:Jiangshanian ,
-        ischart:Paibian ;
-    skos:notation "Ep4"^^ischart:ccgmShortCode ;
+        gtsd:CambrianStage10 ,
+        gtsd:Jiangshanian ,
+        gtsd:Paibian ;
+    skos:notation "Ep4"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 497.0 ;
+            gtsd:inMYA 497.0 ;
             skos:note "uncertain" ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 486.85 ;
+            gtsd:inMYA 486.85 ;
             schema:marginOfError 1.5 ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 144 ;
-    schema:color "#B3E095"^^ischart:RGBHex ;
+    schema:color "#B3E095"^^gtsd:RGBHex ;
 .
 
-ischart:Guadalupian
+gtsd:Guadalupian
     a skos:Concept ;
     gts:rank rank:Epoch ;
     gts:ratifiedGSSP true ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:Permian ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:Permian ;
     skos:changeNote "2026-06: hasEnd 259.51 -> 259.857" ;
     skos:inScheme cs: ;
     skos:narrower
-        ischart:Capitanian ,
-        ischart:Roadian ,
-        ischart:Wordian ;
-    skos:notation "P2"^^ischart:ccgmShortCode ;
+        gtsd:Capitanian ,
+        gtsd:Roadian ,
+        gtsd:Wordian ;
+    skos:notation "P2"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 274.4 ;
+            gtsd:inMYA 274.4 ;
             schema:marginOfError 0.4 ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 259.857 ;
+            gtsd:inMYA 259.857 ;
             schema:marginOfError 0.084 ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 84 ;
-    schema:color "#FB745C"^^ischart:RGBHex ;
+    schema:color "#FB745C"^^gtsd:RGBHex ;
 .
 
-ischart:Holocene
+gtsd:Holocene
     a skos:Concept ;
     gts:rank rank:Epoch ;
     gts:ratifiedGSSP true ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:Quaternary ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:Quaternary ;
     skos:inScheme cs: ;
     skos:narrower
-        ischart:Greenlandian ,
-        ischart:Meghalayan ,
-        ischart:Northgrippian ;
-    skos:notation "Q2"^^ischart:ccgmShortCode ;
+        gtsd:Greenlandian ,
+        gtsd:Meghalayan ,
+        gtsd:Northgrippian ;
+    skos:notation "Q2"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 0.0117 ;
+            gtsd:inMYA 0.0117 ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 0 ;
+            gtsd:inMYA 0 ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 4 ;
-    schema:color "#FEEBD2"^^ischart:RGBHex ;
+    schema:color "#FEEBD2"^^gtsd:RGBHex ;
 .
 
-ischart:Jurassic
+gtsd:Jurassic
     a skos:Concept ;
     gts:rank rank:Period ;
     gts:ratifiedGSSP true ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:Mesozoic ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:Mesozoic ;
     skos:inScheme cs: ;
     skos:narrower
-        ischart:LowerJurassic ,
-        ischart:MiddleJurassic ,
-        ischart:UpperJurassic ;
-    skos:notation "J"^^ischart:ccgmShortCode ;
+        gtsd:LowerJurassic ,
+        gtsd:MiddleJurassic ,
+        gtsd:UpperJurassic ;
+    skos:notation "J"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 201.4 ;
+            gtsd:inMYA 201.4 ;
             schema:marginOfError 0.2 ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 143.1 ;
+            gtsd:inMYA 143.1 ;
             schema:marginOfError 0.6 ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 64 ;
-    schema:color "#34B2C9"^^ischart:RGBHex ;
+    schema:color "#34B2C9"^^gtsd:RGBHex ;
 .
 
-ischart:Llandovery
+gtsd:Llandovery
     a skos:Concept ;
     gts:rank rank:Epoch ;
     gts:ratifiedGSSP true ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:Silurian ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:Silurian ;
     skos:inScheme cs: ;
     skos:narrower
-        ischart:Aeronian ,
-        ischart:Rhuddanian ,
-        ischart:Telychian ;
-    skos:notation "S1"^^ischart:ccgmShortCode ;
+        gtsd:Aeronian ,
+        gtsd:Rhuddanian ,
+        gtsd:Telychian ;
+    skos:notation "S1"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 443.1 ;
+            gtsd:inMYA 443.1 ;
             schema:marginOfError 1.0 ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 432.9 ;
+            gtsd:inMYA 432.9 ;
             schema:marginOfError 1.2 ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 128 ;
-    schema:color "#99D7B3"^^ischart:RGBHex ;
+    schema:color "#99D7B3"^^gtsd:RGBHex ;
 .
 
-ischart:LowerDevonian
+gtsd:LowerDevonian
     a skos:Concept ;
     gts:rank rank:Epoch ;
     gts:ratifiedGSSP true ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:Devonian ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:Devonian ;
     skos:inScheme cs: ;
     skos:narrower
-        ischart:Emsian ,
-        ischart:Lochkovian ,
-        ischart:Pragian ;
-    skos:notation "D1"^^ischart:ccgmShortCode ;
+        gtsd:Emsian ,
+        gtsd:Lochkovian ,
+        gtsd:Pragian ;
+    skos:notation "D1"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 419.62 ;
+            gtsd:inMYA 419.62 ;
             schema:marginOfError 1.36 ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 393.47 ;
+            gtsd:inMYA 393.47 ;
             schema:marginOfError 0.99 ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 118 ;
-    schema:color "#E5AC4D"^^ischart:RGBHex ;
+    schema:color "#E5AC4D"^^gtsd:RGBHex ;
 .
 
-ischart:Mesoproterozoic
+gtsd:Mesoproterozoic
     a skos:Concept ;
     gts:rank rank:Era ;
     gts:ratifiedGSSA true ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:Proterozoic ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:Proterozoic ;
     skos:inScheme cs: ;
     skos:narrower
-        ischart:Calymmian ,
-        ischart:Ectasian ,
-        ischart:Stenian ;
-    skos:notation "MP"^^ischart:ccgmShortCode ;
+        gtsd:Calymmian ,
+        gtsd:Ectasian ,
+        gtsd:Stenian ;
+    skos:notation "MP"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 1600 ;
+            gtsd:inMYA 1600 ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 1000 ;
+            gtsd:inMYA 1000 ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 165 ;
-    schema:color "#FDB462"^^ischart:RGBHex ;
+    schema:color "#FDB462"^^gtsd:RGBHex ;
 .
 
-ischart:Mesozoic
+gtsd:Mesozoic
     a skos:Concept ;
     gts:rank rank:Era ;
     gts:ratifiedGSSP true ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:Phanerozoic ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:Phanerozoic ;
     skos:inScheme cs: ;
     skos:narrower
-        ischart:Cretaceous ,
-        ischart:Jurassic ,
-        ischart:Triassic ;
-    skos:notation "MZ"^^ischart:ccgmShortCode ;
+        gtsd:Cretaceous ,
+        gtsd:Jurassic ,
+        gtsd:Triassic ;
+    skos:notation "MZ"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 251.902 ;
+            gtsd:inMYA 251.902 ;
             schema:marginOfError 0.024 ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 66.00 ;
+            gtsd:inMYA 66.00 ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 76 ;
-    schema:color "#67C5CA"^^ischart:RGBHex ;
+    schema:color "#67C5CA"^^gtsd:RGBHex ;
 .
 
-ischart:Miaolingian
+gtsd:Miaolingian
     a skos:Concept ;
     gts:rank rank:Epoch ;
     gts:ratifiedGSSP true ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:Cambrian ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:Cambrian ;
     skos:inScheme cs: ;
     skos:narrower
-        ischart:Drumian ,
-        ischart:Guzhangian ,
-        ischart:Wuliuan ;
-    skos:notation "Ep3"^^ischart:ccgmShortCode ;
+        gtsd:Drumian ,
+        gtsd:Guzhangian ,
+        gtsd:Wuliuan ;
+    skos:notation "Ep3"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 506.5 ;
+            gtsd:inMYA 506.5 ;
             skos:note "uncertain" ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 497.0 ;
+            gtsd:inMYA 497.0 ;
             skos:note "uncertain" ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 148 ;
-    schema:color "#A6CF86"^^ischart:RGBHex ;
+    schema:color "#A6CF86"^^gtsd:RGBHex ;
 .
 
-ischart:Mississippian
+gtsd:Mississippian
     a skos:Concept ;
     gts:rank rank:Sub-Period ;
     gts:ratifiedGSSP true ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:Carboniferous ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:Carboniferous ;
     skos:inScheme cs: ;
     skos:narrower
-        ischart:LowerMississippian ,
-        ischart:MiddleMississippian ,
-        ischart:UpperMississippian ;
-    skos:notation "C1"^^ischart:ccgmShortCode ;
+        gtsd:LowerMississippian ,
+        gtsd:MiddleMississippian ,
+        gtsd:UpperMississippian ;
+    skos:notation "C1"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 358.86 ;
+            gtsd:inMYA 358.86 ;
             schema:marginOfError 0.19 ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 323.4 ;
+            gtsd:inMYA 323.4 ;
             schema:marginOfError 0.4 ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 106 ;
-    schema:color "#678F66"^^ischart:RGBHex ;
+    schema:color "#678F66"^^gtsd:RGBHex ;
 .
 
-ischart:Neoproterozoic
+gtsd:Neoproterozoic
     a skos:Concept ;
     gts:rank rank:Era ;
     gts:ratifiedGSSA true ;
     gts:ratifiedGSSP true ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:Proterozoic ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:Proterozoic ;
     skos:inScheme cs: ;
     skos:narrower
-        ischart:Cryogenian ,
-        ischart:Ediacaran ,
-        ischart:Tonian ;
-    skos:notation "NP"^^ischart:ccgmShortCode ;
+        gtsd:Cryogenian ,
+        gtsd:Ediacaran ,
+        gtsd:Tonian ;
+    skos:notation "NP"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 1000 ;
+            gtsd:inMYA 1000 ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 538.8 ;
+            gtsd:inMYA 538.8 ;
             schema:marginOfError 0.6 ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 160 ;
-    schema:color "#FEB342"^^ischart:RGBHex ;
+    schema:color "#FEB342"^^gtsd:RGBHex ;
 .
 
-ischart:Ordovician
+gtsd:Ordovician
     a skos:Concept ;
     gts:rank rank:Period ;
     gts:ratifiedGSSP true ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:Paleozoic ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:Paleozoic ;
     skos:inScheme cs: ;
     skos:narrower
-        ischart:LowerOrdovician ,
-        ischart:MiddleOrdovician ,
-        ischart:UpperOrdovician ;
-    skos:notation "O"^^ischart:ccgmShortCode ;
+        gtsd:LowerOrdovician ,
+        gtsd:MiddleOrdovician ,
+        gtsd:UpperOrdovician ;
+    skos:notation "O"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 486.85 ;
+            gtsd:inMYA 486.85 ;
             schema:marginOfError 1.5 ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 443.1 ;
+            gtsd:inMYA 443.1 ;
             schema:marginOfError 1.0 ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 140 ;
-    schema:color "#009270"^^ischart:RGBHex ;
+    schema:color "#009270"^^gtsd:RGBHex ;
 .
 
-ischart:Paleocene
+gtsd:Paleocene
     a skos:Concept ;
     gts:rank rank:Epoch ;
     gts:ratifiedGSSP true ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:Paleogene ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:Paleogene ;
     skos:inScheme cs: ;
     skos:narrower
-        ischart:Danian ,
-        ischart:Selandian ,
-        ischart:Thanetian ;
-    skos:notation "E1"^^ischart:ccgmShortCode ;
+        gtsd:Danian ,
+        gtsd:Selandian ,
+        gtsd:Thanetian ;
+    skos:notation "E1"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 66.00 ;
+            gtsd:inMYA 66.00 ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 56.00 ;
+            gtsd:inMYA 56.00 ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 34 ;
-    schema:color "#FDA75F"^^ischart:RGBHex ;
+    schema:color "#FDA75F"^^gtsd:RGBHex ;
 .
 
-ischart:Paleogene
+gtsd:Paleogene
     a skos:Concept ;
     gts:rank rank:Period ;
     gts:ratifiedGSSP true ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:Cenozoic ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:Cenozoic ;
     skos:inScheme cs: ;
     skos:narrower
-        ischart:Eocene ,
-        ischart:Oligocene ,
-        ischart:Paleocene ;
-    skos:notation "E"^^ischart:ccgmShortCode ;
+        gtsd:Eocene ,
+        gtsd:Oligocene ,
+        gtsd:Paleocene ;
+    skos:notation "E"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 66.00 ;
+            gtsd:inMYA 66.00 ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 23.04 ;
+            gtsd:inMYA 23.04 ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 35 ;
-    schema:color "#FD9A52"^^ischart:RGBHex ;
+    schema:color "#FD9A52"^^gtsd:RGBHex ;
 .
 
-ischart:Pennsylvanian
+gtsd:Pennsylvanian
     a skos:Concept ;
     gts:rank rank:Sub-Period ;
     gts:ratifiedGSSP true ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:Carboniferous ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:Carboniferous ;
     skos:inScheme cs: ;
     skos:narrower
-        ischart:LowerPennsylvanian ,
-        ischart:MiddlePennsylvanian ,
-        ischart:UpperPennsylvanian ;
-    skos:notation "C2"^^ischart:ccgmShortCode ;
+        gtsd:LowerPennsylvanian ,
+        gtsd:MiddlePennsylvanian ,
+        gtsd:UpperPennsylvanian ;
+    skos:notation "C2"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 323.4 ;
+            gtsd:inMYA 323.4 ;
             schema:marginOfError 0.4 ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 298.9 ;
+            gtsd:inMYA 298.9 ;
             schema:marginOfError 0.15 ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 99 ;
-    schema:color "#7EBCC6"^^ischart:RGBHex ;
+    schema:color "#7EBCC6"^^gtsd:RGBHex ;
 .
 
-ischart:Permian
+gtsd:Permian
     a skos:Concept ;
     gts:rank rank:Period ;
     gts:ratifiedGSSP true ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:Paleozoic ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:Paleozoic ;
     skos:inScheme cs: ;
     skos:narrower
-        ischart:Cisuralian ,
-        ischart:Guadalupian ,
-        ischart:Lopingian ;
-    skos:notation "P"^^ischart:ccgmShortCode ;
+        gtsd:Cisuralian ,
+        gtsd:Guadalupian ,
+        gtsd:Lopingian ;
+    skos:notation "P"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 298.9 ;
+            gtsd:inMYA 298.9 ;
             schema:marginOfError 0.15 ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 251.902 ;
+            gtsd:inMYA 251.902 ;
             schema:marginOfError 0.024 ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 91 ;
-    schema:color "#F04028"^^ischart:RGBHex ;
+    schema:color "#F04028"^^gtsd:RGBHex ;
 .
 
-ischart:Phanerozoic
+gtsd:Phanerozoic
     a skos:Concept ;
     gts:rank rank:Eon ;
     gts:ratifiedGSSP true ;
-    rdfs:isDefinedBy ts:gts2020 ;
+    rdfs:isDefinedBy ds: ;
     skos:inScheme cs: ;
     skos:narrower
-        ischart:Cenozoic ,
-        ischart:Mesozoic ,
-        ischart:Paleozoic ;
-    skos:notation "PH"^^ischart:ccgmShortCode ;
+        gtsd:Cenozoic ,
+        gtsd:Mesozoic ,
+        gtsd:Paleozoic ;
+    skos:notation "PH"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 538.8 ;
+            gtsd:inMYA 538.8 ;
             schema:marginOfError 0.6 ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 0 ;
+            gtsd:inMYA 0 ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 156 ;
-    schema:color "#9AD9DD"^^ischart:RGBHex ;
+    schema:color "#9AD9DD"^^gtsd:RGBHex ;
 .
 
-ischart:Precambrian
+gtsd:Precambrian
     a skos:Concept ;
     gts:rank rank:Super-Eon ;
     gts:ratifiedGSSA true ;
-    rdfs:isDefinedBy ts:gts2020 ;
+    rdfs:isDefinedBy ds: ;
     skos:inScheme cs: ;
     skos:narrower
-        ischart:Archean ,
-        ischart:Hadean ,
-        ischart:Proterozoic ;
-    skos:notation "PE"^^ischart:ccgmShortCode ;
+        gtsd:Archean ,
+        gtsd:Hadean ,
+        gtsd:Proterozoic ;
+    skos:notation "PE"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 4567 ;
+            gtsd:inMYA 4567 ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 538.8 ;
+            gtsd:inMYA 538.8 ;
             schema:marginOfError 0.6 ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 178 ;
-    schema:color "#F74370"^^ischart:RGBHex ;
+    schema:color "#F74370"^^gtsd:RGBHex ;
 .
 
-ischart:Proterozoic
+gtsd:Proterozoic
     a skos:Concept ;
     gts:rank rank:Eon ;
     gts:ratifiedGSSA true ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:Precambrian ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:Precambrian ;
     skos:inScheme cs: ;
     skos:narrower
-        ischart:Mesoproterozoic ,
-        ischart:Neoproterozoic ,
-        ischart:Paleoproterozoic ;
-    skos:notation "PR"^^ischart:ccgmShortCode ;
+        gtsd:Mesoproterozoic ,
+        gtsd:Neoproterozoic ,
+        gtsd:Paleoproterozoic ;
+    skos:notation "PR"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 2500 ;
+            gtsd:inMYA 2500 ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 538.8 ;
+            gtsd:inMYA 538.8 ;
             schema:marginOfError 0.6 ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 170 ;
-    schema:color "#F73563"^^ischart:RGBHex ;
+    schema:color "#F73563"^^gtsd:RGBHex ;
 .
 
-ischart:Triassic
+gtsd:Triassic
     a skos:Concept ;
     gts:rank rank:Period ;
     gts:ratifiedGSSP true ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:Mesozoic ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:Mesozoic ;
     skos:inScheme cs: ;
     skos:narrower
-        ischart:LowerTriassic ,
-        ischart:MiddleTriassic ,
-        ischart:UpperTriassic ;
-    skos:notation "T"^^ischart:ccgmShortCode ;
+        gtsd:LowerTriassic ,
+        gtsd:MiddleTriassic ,
+        gtsd:UpperTriassic ;
+    skos:notation "T"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 251.902 ;
+            gtsd:inMYA 251.902 ;
             schema:marginOfError 0.024 ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 201.4 ;
+            gtsd:inMYA 201.4 ;
             schema:marginOfError 0.2 ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 78 ;
-    schema:color "#812B92"^^ischart:RGBHex ;
+    schema:color "#812B92"^^gtsd:RGBHex ;
 .
 
-ischart:UpperJurassic
+gtsd:UpperJurassic
     a skos:Concept ;
     gts:rank rank:Epoch ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:Jurassic ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:Jurassic ;
     skos:inScheme cs: ;
     skos:narrower
-        ischart:Kimmeridgian ,
-        ischart:Oxfordian ,
-        ischart:Tithonian ;
-    skos:notation "J3"^^ischart:ccgmShortCode ;
+        gtsd:Kimmeridgian ,
+        gtsd:Oxfordian ,
+        gtsd:Tithonian ;
+    skos:notation "J3"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 161.5 ;
+            gtsd:inMYA 161.5 ;
             schema:marginOfError 1.0 ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 143.1 ;
+            gtsd:inMYA 143.1 ;
             schema:marginOfError 0.6 ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 54 ;
-    schema:color "#B3E3EE"^^ischart:RGBHex ;
+    schema:color "#B3E3EE"^^gtsd:RGBHex ;
 .
 
-ischart:UpperOrdovician
+gtsd:UpperOrdovician
     a skos:Concept ;
     gts:rank rank:Epoch ;
     gts:ratifiedGSSP true ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:Ordovician ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:Ordovician ;
     skos:inScheme cs: ;
     skos:narrower
-        ischart:Hirnantian ,
-        ischart:Katian ,
-        ischart:Sandbian ;
-    skos:notation "O3"^^ischart:ccgmShortCode ;
+        gtsd:Hirnantian ,
+        gtsd:Katian ,
+        gtsd:Sandbian ;
+    skos:notation "O3"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 458.2 ;
+            gtsd:inMYA 458.2 ;
             schema:marginOfError 0.7 ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 443.1 ;
+            gtsd:inMYA 443.1 ;
             schema:marginOfError 1.0 ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 134 ;
-    schema:color "#7FCA93"^^ischart:RGBHex ;
+    schema:color "#7FCA93"^^gtsd:RGBHex ;
 .
 
-ischart:UpperTriassic
+gtsd:UpperTriassic
     a skos:Concept ;
     gts:rank rank:Epoch ;
     gts:ratifiedGSSP true ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:Triassic ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:Triassic ;
     skos:inScheme cs: ;
     skos:narrower
-        ischart:Carnian ,
-        ischart:Norian ,
-        ischart:Rhaetian ;
-    skos:notation "T3"^^ischart:ccgmShortCode ;
+        gtsd:Carnian ,
+        gtsd:Norian ,
+        gtsd:Rhaetian ;
+    skos:notation "T3"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 237 ;
+            gtsd:inMYA 237 ;
             skos:note "uncertain" ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 201.4 ;
+            gtsd:inMYA 201.4 ;
             schema:marginOfError 0.2 ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 69 ;
-    schema:color "#BD8CC3"^^ischart:RGBHex ;
+    schema:color "#BD8CC3"^^gtsd:RGBHex ;
 .
 
-ischart:Archean
+gtsd:Archean
     a skos:Concept ;
     gts:rank rank:Eon ;
     gts:ratifiedGSSA true ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:Precambrian ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:Precambrian ;
     skos:inScheme cs: ;
     skos:narrower
-        ischart:Eoarchean ,
-        ischart:Mesoarchean ,
-        ischart:Neoarchean ,
-        ischart:Paleoarchean ;
-    skos:notation "AR"^^ischart:ccgmShortCode ;
+        gtsd:Eoarchean ,
+        gtsd:Mesoarchean ,
+        gtsd:Neoarchean ,
+        gtsd:Paleoarchean ;
+    skos:notation "AR"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 4031 ;
+            gtsd:inMYA 4031 ;
             schema:marginOfError 3 ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 2500 ;
+            gtsd:inMYA 2500 ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 175 ;
-    schema:color "#F0047F"^^ischart:RGBHex ;
+    schema:color "#F0047F"^^gtsd:RGBHex ;
 .
 
-ischart:Cambrian
+gtsd:Cambrian
     a skos:Concept ;
     gts:rank rank:Period ;
     gts:ratifiedGSSP true ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:Paleozoic ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:Paleozoic ;
     skos:inScheme cs: ;
     skos:narrower
-        ischart:CambrianSeries2 ,
-        ischart:Furongian ,
-        ischart:Miaolingian ,
-        ischart:Terreneuvian ;
-    skos:notation "Ep"^^ischart:ccgmShortCode ;
+        gtsd:CambrianSeries2 ,
+        gtsd:Furongian ,
+        gtsd:Miaolingian ,
+        gtsd:Terreneuvian ;
+    skos:notation "Ep"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 538.8 ;
+            gtsd:inMYA 538.8 ;
             schema:marginOfError 0.6 ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 486.85 ;
+            gtsd:inMYA 486.85 ;
             schema:marginOfError 1.5 ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 154 ;
-    schema:color "#7FA056"^^ischart:RGBHex ;
+    schema:color "#7FA056"^^gtsd:RGBHex ;
 .
 
-ischart:Cisuralian
+gtsd:Cisuralian
     a skos:Concept ;
     gts:rank rank:Epoch ;
     gts:ratifiedGSSP true ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:Permian ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:Permian ;
     skos:inScheme cs: ;
     skos:narrower
-        ischart:Artinskian ,
-        ischart:Asselian ,
-        ischart:Kungurian ,
-        ischart:Sakmarian ;
-    skos:notation "P1"^^ischart:ccgmShortCode ;
+        gtsd:Artinskian ,
+        gtsd:Asselian ,
+        gtsd:Kungurian ,
+        gtsd:Sakmarian ;
+    skos:notation "P1"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 298.9 ;
+            gtsd:inMYA 298.9 ;
             schema:marginOfError 0.15 ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 274.4 ;
+            gtsd:inMYA 274.4 ;
             schema:marginOfError 0.4 ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 90 ;
-    schema:color "#EF5845"^^ischart:RGBHex ;
+    schema:color "#EF5845"^^gtsd:RGBHex ;
 .
 
-ischart:Eocene
+gtsd:Eocene
     a skos:Concept ;
     gts:rank rank:Epoch ;
     gts:ratifiedGSSP true ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:Paleogene ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:Paleogene ;
     skos:inScheme cs: ;
     skos:narrower
-        ischart:Bartonian ,
-        ischart:Lutetian ,
-        ischart:Priabonian ,
-        ischart:Ypresian ;
-    skos:notation "E2"^^ischart:ccgmShortCode ;
+        gtsd:Bartonian ,
+        gtsd:Lutetian ,
+        gtsd:Priabonian ,
+        gtsd:Ypresian ;
+    skos:notation "E2"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 56.00 ;
+            gtsd:inMYA 56.00 ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 33.9 ;
+            gtsd:inMYA 33.9 ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 28 ;
-    schema:color "#FDB46C"^^ischart:RGBHex ;
+    schema:color "#FDB46C"^^gtsd:RGBHex ;
 .
 
-ischart:LowerJurassic
+gtsd:LowerJurassic
     a skos:Concept ;
     gts:rank rank:Epoch ;
     gts:ratifiedGSSP true ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:Jurassic ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:Jurassic ;
     skos:inScheme cs: ;
     skos:narrower
-        ischart:Hettangian ,
-        ischart:Pliensbachian ,
-        ischart:Sinemurian ,
-        ischart:Toarcian ;
-    skos:notation "J1"^^ischart:ccgmShortCode ;
+        gtsd:Hettangian ,
+        gtsd:Pliensbachian ,
+        gtsd:Sinemurian ,
+        gtsd:Toarcian ;
+    skos:notation "J1"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 201.4 ;
+            gtsd:inMYA 201.4 ;
             schema:marginOfError 0.2 ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 174.7 ;
+            gtsd:inMYA 174.7 ;
             schema:marginOfError 0.8 ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 65 ;
-    schema:color "#42AED0"^^ischart:RGBHex ;
+    schema:color "#42AED0"^^gtsd:RGBHex ;
 .
 
-ischart:MiddleJurassic
+gtsd:MiddleJurassic
     a skos:Concept ;
     gts:rank rank:Epoch ;
     gts:ratifiedGSSP true ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:Jurassic ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:Jurassic ;
     skos:inScheme cs: ;
     skos:narrower
-        ischart:Aalenian ,
-        ischart:Bajocian ,
-        ischart:Bathonian ,
-        ischart:Callovian ;
-    skos:notation "J2"^^ischart:ccgmShortCode ;
+        gtsd:Aalenian ,
+        gtsd:Bajocian ,
+        gtsd:Bathonian ,
+        gtsd:Callovian ;
+    skos:notation "J2"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 174.7 ;
+            gtsd:inMYA 174.7 ;
             schema:marginOfError 0.8 ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 161.5 ;
+            gtsd:inMYA 161.5 ;
             schema:marginOfError 1.0 ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 59 ;
-    schema:color "#80CFD8"^^ischart:RGBHex ;
+    schema:color "#80CFD8"^^gtsd:RGBHex ;
 .
 
-ischart:Paleoproterozoic
+gtsd:Paleoproterozoic
     a skos:Concept ;
     gts:rank rank:Era ;
     gts:ratifiedGSSA true ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:Proterozoic ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:Proterozoic ;
     skos:inScheme cs: ;
     skos:narrower
-        ischart:Orosirian ,
-        ischart:Rhyacian ,
-        ischart:Siderian ,
-        ischart:Statherian ;
-    skos:notation "PP"^^ischart:ccgmShortCode ;
+        gtsd:Orosirian ,
+        gtsd:Rhyacian ,
+        gtsd:Siderian ,
+        gtsd:Statherian ;
+    skos:notation "PP"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 2500 ;
+            gtsd:inMYA 2500 ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 1600 ;
+            gtsd:inMYA 1600 ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 169 ;
-    schema:color "#F74370"^^ischart:RGBHex ;
+    schema:color "#F74370"^^gtsd:RGBHex ;
 .
 
-ischart:Pleistocene
+gtsd:Pleistocene
     a skos:Concept ;
     gts:rank rank:Epoch ;
     gts:ratifiedGSSP true ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:Quaternary ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:Quaternary ;
     skos:inScheme cs: ;
     skos:narrower
-        ischart:Calabrian ,
-        ischart:Chibanian ,
-        ischart:Gelasian ,
-        ischart:UpperPleistocene ;
-    skos:notation "Q1"^^ischart:ccgmShortCode ;
+        gtsd:Calabrian ,
+        gtsd:Chibanian ,
+        gtsd:Gelasian ,
+        gtsd:UpperPleistocene ;
+    skos:notation "Q1"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 2.58 ;
+            gtsd:inMYA 2.58 ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 0.0117 ;
+            gtsd:inMYA 0.0117 ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 9 ;
-    schema:color "#FFEFAF"^^ischart:RGBHex ;
+    schema:color "#FFEFAF"^^gtsd:RGBHex ;
 .
 
-ischart:Silurian
+gtsd:Silurian
     a skos:Concept ;
     gts:rank rank:Period ;
     gts:ratifiedGSSP true ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:Paleozoic ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:Paleozoic ;
     skos:inScheme cs: ;
     skos:narrower
-        ischart:Llandovery ,
-        ischart:Ludlow ,
-        ischart:Pridoli ,
-        ischart:Wenlock ;
-    skos:notation "S"^^ischart:ccgmShortCode ;
+        gtsd:Llandovery ,
+        gtsd:Ludlow ,
+        gtsd:Pridoli ,
+        gtsd:Wenlock ;
+    skos:notation "S"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 443.1 ;
+            gtsd:inMYA 443.1 ;
             schema:marginOfError 1.0 ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 419.62 ;
+            gtsd:inMYA 419.62 ;
             schema:marginOfError 1.36 ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 130 ;
-    schema:color "#B3E1B6"^^ischart:RGBHex ;
+    schema:color "#B3E1B6"^^gtsd:RGBHex ;
 .
 
-ischart:LowerCretaceous
+gtsd:LowerCretaceous
     a skos:Concept ;
     gts:rank rank:Epoch ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:Cretaceous ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:Cretaceous ;
     skos:inScheme cs: ;
     skos:narrower
-        ischart:Albian ,
-        ischart:Aptian ,
-        ischart:Barremian ,
-        ischart:Berriasian ,
-        ischart:Hauterivian ,
-        ischart:Valanginian ;
-    skos:notation "K1"^^ischart:ccgmShortCode ;
+        gtsd:Albian ,
+        gtsd:Aptian ,
+        gtsd:Barremian ,
+        gtsd:Berriasian ,
+        gtsd:Hauterivian ,
+        gtsd:Valanginian ;
+    skos:notation "K1"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 143.1 ;
+            gtsd:inMYA 143.1 ;
             schema:marginOfError 0.6 ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 100.5 ;
+            gtsd:inMYA 100.5 ;
             schema:marginOfError 0.1 ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 50 ;
-    schema:color "#8CCD57"^^ischart:RGBHex ;
+    schema:color "#8CCD57"^^gtsd:RGBHex ;
 .
 
-ischart:Miocene
+gtsd:Miocene
     a skos:Concept ;
     gts:rank rank:Epoch ;
     gts:ratifiedGSSP true ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:Neogene ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:Neogene ;
     skos:inScheme cs: ;
     skos:narrower
-        ischart:Aquitanian ,
-        ischart:Burdigalian ,
-        ischart:Langhian ,
-        ischart:Messinian ,
-        ischart:Serravallian ,
-        ischart:Tortonian ;
-    skos:notation "N1"^^ischart:ccgmShortCode ;
+        gtsd:Aquitanian ,
+        gtsd:Burdigalian ,
+        gtsd:Langhian ,
+        gtsd:Messinian ,
+        gtsd:Serravallian ,
+        gtsd:Tortonian ;
+    skos:notation "N1"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 23.04 ;
+            gtsd:inMYA 23.04 ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 5.333 ;
+            gtsd:inMYA 5.333 ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 20 ;
-    schema:color "#FFFF00"^^ischart:RGBHex ;
+    schema:color "#FFFF00"^^gtsd:RGBHex ;
 .
 
-ischart:Paleozoic
+gtsd:Paleozoic
     a skos:Concept ;
     gts:rank rank:Era ;
     gts:ratifiedGSSP true ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:Phanerozoic ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:Phanerozoic ;
     skos:inScheme cs: ;
     skos:narrower
-        ischart:Cambrian ,
-        ischart:Carboniferous ,
-        ischart:Devonian ,
-        ischart:Ordovician ,
-        ischart:Permian ,
-        ischart:Silurian ;
-    skos:notation "PZ"^^ischart:ccgmShortCode ;
+        gtsd:Cambrian ,
+        gtsd:Carboniferous ,
+        gtsd:Devonian ,
+        gtsd:Ordovician ,
+        gtsd:Permian ,
+        gtsd:Silurian ;
+    skos:notation "PZ"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 538.8 ;
+            gtsd:inMYA 538.8 ;
             schema:marginOfError 0.6 ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 251.902 ;
+            gtsd:inMYA 251.902 ;
             schema:marginOfError 0.024 ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 77 ;
-    schema:color "#99C08D"^^ischart:RGBHex ;
+    schema:color "#99C08D"^^gtsd:RGBHex ;
 .
 
-ischart:UpperCretaceous
+gtsd:UpperCretaceous
     a skos:Concept ;
     gts:rank rank:Epoch ;
     gts:ratifiedGSSP true ;
-    rdfs:isDefinedBy ts:gts2020 ;
-    skos:broader ischart:Cretaceous ;
+    rdfs:isDefinedBy ds: ;
+    skos:broader gtsd:Cretaceous ;
     skos:inScheme cs: ;
     skos:narrower
-        ischart:Campanian ,
-        ischart:Cenomanian ,
-        ischart:Coniacian ,
-        ischart:Maastrichtian ,
-        ischart:Santonian ,
-        ischart:Turonian ;
-    skos:notation "K2"^^ischart:ccgmShortCode ;
+        gtsd:Campanian ,
+        gtsd:Cenomanian ,
+        gtsd:Coniacian ,
+        gtsd:Maastrichtian ,
+        gtsd:Santonian ,
+        gtsd:Turonian ;
+    skos:notation "K2"^^gtsd:ccgmShortCode ;
     time:hasBeginning
         [
-            ischart:inMYA 100.5 ;
+            gtsd:inMYA 100.5 ;
             schema:marginOfError 0.1 ;
         ] ;
     time:hasEnd
         [
-            ischart:inMYA 66.00 ;
+            gtsd:inMYA 66.00 ;
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sh:order 42 ;
-    schema:color "#A6D84A"^^ischart:RGBHex ;
+    schema:color "#A6D84A"^^gtsd:RGBHex ;
 .
 
 cs:
     a skos:ConceptScheme ;
-    dcterms:conformsTo <https://w3id.org/profile/vocpub/4.6> ;
+    dcterms:conformsTo <https://w3id.org/profile/vocpub/5.1> ;
     dcterms:created "2024-11-26"^^xsd:date ;
     dcterms:creator <https://linked.data.gov.au/org/ics> ;
     dcterms:modified "2026-06-20"^^xsd:date ;
     dcterms:publisher <https://linked.data.gov.au/org/ics> ;
-    owl:versionIRI ischart:2026-06 ;
+    owl:versionIRI gtsd:2026-06 ;
     owl:versionInfo "2026-06" ;
     skos:definition "This is a SKOS vocabulary presentation of the time units of the International Chronostratigraphic Chart represented as SKOS Concepts. Beginning and End ages are given for each unit in units of Millions of Years Ago (MYA)."@en ;
     skos:hasTopConcept
-        ischart:Phanerozoic ,
-        ischart:Precambrian ;
+        gtsd:Phanerozoic ,
+        gtsd:Precambrian ;
     skos:historyNote "This vocabulary uses IRIs originally created for the Geologic Timescale (2020) data (see http://resource.geosciml.org/vocabulary/timescale/)" ;
     skos:versionInfo """2026-06: Strati2026 version of the Chart with updates indicated in element changeNotes
 
@@ -4489,7 +4310,6 @@ cs:
 * numeric age of Valanginian updated to 137.05 +/- 0.2
 
 2023-09: updated form of the Geologic Timescale (2020) (see http://resource.geosciml.org/vocabulary/timescale/) to match the 2023-09 Chart, as released at https://stratigraphy.org/chart in late 2023.""" ;
-    prov:wasDerivedFrom ts:gts2020 ;
     schema:citation "https://stratigraphy.org/chart"^^xsd:anyURI ;
     schema:copyrightHolder <https://linked.data.gov.au/org/ics> ;
     schema:copyrightNotice "(c) International Commission on Stratigraphy, 2024"@en ;
