@@ -1,16 +1,21 @@
 from pathlib import Path
 import pandas as pd
-from rdflib import Graph, URIRef, Literal, BNode, Namespace
+from rdflib import Graph, URIRef, Literal, BNode, Namespace, DCTERMS
 from rdflib.namespace import RDF, SDO, SKOS
 
+CS = URIRef("https://data.stratigraphy.org/def/chart")
+GSSP = Namespace("https://data.stratigraphy.org/data/gssps/")
+GTS = Namespace("http://resource.geosciml.org/ontology/timescale/gts#")
+STRAT = Namespace("https://data.stratigraphy.org/data/strat/")
 VIS = Namespace("https://data.stratigraphy.org/data/vis/")
 
 prefixes = {
+    "cs":       str(CS),
     "dcterms":  "http://purl.org/dc/terms/",
-    "gssp":     "https://data.stratigraphy.org/data/gssps",
-    "gts":      "http://resource.geosciml.org/ontology/timescale/gts#",
-    "gtsd":     "https://data.stratigraphy.org/data/gtsd/",
-    "strat":    "https://data.stratigraphy.org/data/strat/",
+    "gssp":     str(GSSP),
+    "gts":      str(GTS),
+    "gtsd":     "https://data.stratigraphy.org/data/gts/",
+    "strat":    str(STRAT),
     "schema":   "https://schema.org/",
     "vis":      str(VIS),
 }
@@ -55,7 +60,7 @@ def make_definitions(g):
     print("Making definitions")
 
     q = """
-        PREFIX gtsd: <https://data.stratigraphy.org/data/gtsd/>
+        PREFIX gtsd: <https://data.stratigraphy.org/data/gts/>
         PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         PREFIX time: <http://www.w3.org/2006/time#>
         PREFIX vis: <https://data.stratigraphy.org/data/vis/>
@@ -96,6 +101,79 @@ def remove_definition_template(g):
         g.remove((s, p, o))
 
 
+def make_vocpub_version(g):
+    print()
+    print("Making VocPub version")
+
+    for p, o in g.predicate_objects(VIS.ChartTitle):
+        g.add((CS, SKOS.prefLabel, o))
+        g.remove((VIS.ChartTitle, p, o))
+
+    g.remove((CS, SKOS.definition, None))
+    for p, o in g.predicate_objects(VIS.mainBlurb):
+        g.add((CS, SKOS.definition, o))
+        g.remove((VIS.mainBlurb, p, o))
+
+    g.remove((CS, SDO.copyrightNotice, None))
+    for p, o in g.predicate_objects(SDO.copyrightNotice):
+        g.add((CS, SDO.copyrightNotice, o))
+
+    subjects_to_strip = [
+        DCTERMS.bibliographicCitation,
+        DCTERMS.contributor,
+        DCTERMS.created,
+        GTS.Age,
+        GTS.Eon,
+        GTS.Epoch,
+        GTS.Era,
+        GTS.Period,
+        GSSP.GSSA,
+        GSSP.GSSP,
+        STRAT.Chronometric,
+        STRAT.Early,
+        STRAT.Eonothem,
+        STRAT.Erathem,
+        STRAT.Late,
+        STRAT.Lower,
+        STRAT.Middle,
+        STRAT.Series,
+        STRAT.Stage,
+        STRAT.Stratigraphic,
+        STRAT.System,
+        STRAT.Upper,
+        VIS.ChartTitle,
+        VIS.ColumnHeadings,
+        VIS.Download,
+        VIS.Language,
+        VIS.NumericAge,
+        VIS.Scaling,
+        VIS.ccgm,
+        VIS["equal-columns"],
+        VIS["equal-rows"],
+        VIS.irregular,
+        VIS.linear,
+        VIS.logarithmic,
+        VIS.mainBlurb,
+        VIS.translator,
+        VIS.translatorLogo,
+        VIS.translatorURL,
+        SDO.copyrightNotice,
+        SDO.license,
+    ]
+
+    for s in subjects_to_strip:
+        g.remove((s, None, None))
+
+    for s, o in g.subject_objects(SKOS.prefLabel):
+        if o.language == "en":
+            pass
+        else:
+            g.remove((s, SKOS.prefLabel, o))
+            g.add((s, SKOS.altLabel, o))
+
+    g.serialize(destination=Path(__file__).parent.parent / "chart.vocpub.ttl", format="longturtle")
+
+
 if __name__ == '__main__':
     Path("interim").mkdir(parents=True, exist_ok=True)
 
@@ -112,3 +190,7 @@ if __name__ == '__main__':
     print()
     print("Making complete chart")
     g.serialize(destination=Path(__file__).parent.parent / "chart.ttl", format="longturtle")
+
+    print()
+    make_vocpub_version(g)
+    print("Finished")
