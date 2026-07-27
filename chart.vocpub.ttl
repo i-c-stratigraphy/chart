@@ -376,156 +376,6 @@ gtsd:RGBHex
 This datatype uses a microformat of "#{R}{G}{B}" with hexidecimal value for {R}, {G} & {B} between 00 and FF."""@en ;
 .
 
-gtsd:Series2
-    skos:altLabel
-        "Şöbə 2"@az ,
-        "Segona sèrie"@ca ,
-        "oddělení 2"@cs ,
-        "Serie 2"@de ,
-        "Serie 2"@es ,
-        "Serie 2"@es-a ,
-        "2 Serie"@eu ,
-        "Sarja 2"@fi ,
-        "Séries 2"@fr ,
-        "2. sorozat"@hu ,
-        "Seri 2"@id ,
-        "Serie 2"@it ,
-        "シリーズ 2"@ja ,
-        "제2세"@ko ,
-        "2 skyrius"@lt ,
-        "Serie 2"@nl ,
-        "Serie 2"@nl-be ,
-        "Serie 2"@no ,
-        "Seria 2"@pl ,
-        "Série 2"@pt ,
-        "Série 2"@pt-br ,
-        "Отдел 2"@ru ,
-        "séria 2"@sk ,
-        "Seri 2"@tr ,
-        "第二统"@zh ;
-    skos:prefLabel "Series 2"@en ;
-.
-
-gtsd:Stage10
-    skos:altLabel
-        "Mərtəbə 10"@az ,
-        "Desè estatge"@ca ,
-        "stupeň 10"@cs ,
-        "Stufe 10"@de ,
-        "Piso 10"@es ,
-        "Piso 10"@es-a ,
-        "10 Estai"@eu ,
-        "Vaihe 10"@fi ,
-        "Étage 10"@fr ,
-        "10. emelet"@hu ,
-        "Jenjang 10"@id ,
-        "Piano 10"@it ,
-        "ステージ 10"@ja ,
-        "제10절"@ko ,
-        "10 aukštas"@lt ,
-        "Etage 10"@nl ,
-        "Etage 10"@nl-be ,
-        "Etasje 10"@no ,
-        "Piętro 10"@pl ,
-        "Andar 10"@pt ,
-        "Andar 10"@pt-br ,
-        "Ярус 10"@ru ,
-        "stupeň 10"@sk ,
-        "Kat 10"@tr ,
-        "第十阶"@zh ;
-    skos:prefLabel "Stage 10"@en ;
-.
-
-gtsd:Stage2
-    skos:altLabel
-        "Mərtəbə 2"@az ,
-        "Segon estatge"@ca ,
-        "stupeň 2"@cs ,
-        "Stufe 2"@de ,
-        "Piso 2"@es ,
-        "Piso 2"@es-a ,
-        "2 Estai"@eu ,
-        "Vaihe 2"@fi ,
-        "Étage 2"@fr ,
-        "2. emelet"@hu ,
-        "Jenjang 2"@id ,
-        "Piano 2"@it ,
-        "ステージ 2"@ja ,
-        "제2절"@ko ,
-        "2 aukštas"@lt ,
-        "Etage 2"@nl ,
-        "Etage 2"@nl-be ,
-        "Etasje 2"@no ,
-        "Piętro 2"@pl ,
-        "Andar 2"@pt ,
-        "Andar 2"@pt-br ,
-        "Ярус 2"@ru ,
-        "stupeň 2"@sk ,
-        "Kat 2"@tr ,
-        "第二阶"@zh ;
-    skos:prefLabel "Stage 2"@en ;
-.
-
-gtsd:Stage3
-    skos:altLabel
-        "Mərtəbə 3"@az ,
-        "Tercer estatge"@ca ,
-        "stupeň 3"@cs ,
-        "Stufe 3"@de ,
-        "Piso 3"@es ,
-        "Piso 3"@es-a ,
-        "3 Estai"@eu ,
-        "Vaihe 3"@fi ,
-        "Étage 3"@fr ,
-        "3. emelet"@hu ,
-        "Jenjang 3"@id ,
-        "Piano 3"@it ,
-        "ステージ 3"@ja ,
-        "제3절"@ko ,
-        "3 aukštas"@lt ,
-        "Etage 3"@nl ,
-        "Etage 3"@nl-be ,
-        "Etasje 3"@no ,
-        "Piętro 3"@pl ,
-        "Andar 3"@pt ,
-        "Andar 3"@pt-br ,
-        "Ярус 3"@ru ,
-        "stupeň 3"@sk ,
-        "Kat 3"@tr ,
-        "第三阶"@zh ;
-    skos:prefLabel "Stage 3"@en ;
-.
-
-gtsd:Stage4
-    skos:altLabel
-        "Mərtəbə 4"@az ,
-        "Quart estatge"@ca ,
-        "stupeň 4"@cs ,
-        "Stufe 4"@de ,
-        "Piso 4"@es ,
-        "Piso 4"@es-a ,
-        "4 Estai"@eu ,
-        "Vaihe 4"@fi ,
-        "Étage 4"@fr ,
-        "4. emelet"@hu ,
-        "Jenjang 4"@id ,
-        "Piano 4"@it ,
-        "ステージ 4"@ja ,
-        "제4절"@ko ,
-        "4 aukštas"@lt ,
-        "Etage 4"@nl ,
-        "Etage 4"@nl-be ,
-        "Etasje 4"@no ,
-        "Piętro 4"@pl ,
-        "Andar 4"@pt ,
-        "Andar 4"@pt-br ,
-        "Ярус 4"@ru ,
-        "stupeň 4"@sk ,
-        "Kat 4"@tr ,
-        "第四阶"@zh ;
-    skos:prefLabel "Stage 4"@en ;
-.
-
 gtsd:SubPeriods
     a skos:Collection ;
     rdfs:isDefinedBy ds: ;
@@ -1960,6 +1810,32 @@ gtsd:CambrianStage10
     a skos:Concept ;
     gts:rank rank:Age ;
     rdfs:isDefinedBy ds: ;
+    skos:altLabel
+        "Mərtəbə 10"@az ,
+        "Desè estatge"@ca ,
+        "stupeň 10"@cs ,
+        "Stufe 10"@de ,
+        "Piso 10"@es ,
+        "Piso 10"@es-a ,
+        "10 Estai"@eu ,
+        "Vaihe 10"@fi ,
+        "Étage 10"@fr ,
+        "10. emelet"@hu ,
+        "Jenjang 10"@id ,
+        "Piano 10"@it ,
+        "ステージ 10"@ja ,
+        "제10절"@ko ,
+        "10 aukštas"@lt ,
+        "Etage 10"@nl ,
+        "Etage 10"@nl-be ,
+        "Etasje 10"@no ,
+        "Piętro 10"@pl ,
+        "Andar 10"@pt ,
+        "Andar 10"@pt-br ,
+        "Ярус 10"@ru ,
+        "stupeň 10"@sk ,
+        "Kat 10"@tr ,
+        "第十阶"@zh ;
     skos:broader gtsd:Furongian ;
     skos:definition
         "491.0-dən 486.85 milyon il əvvələ qədər olan zaman dövrü"@az ,
@@ -1990,6 +1866,7 @@ gtsd:CambrianStage10
         "距今 491.0 至 486.85 百万年前的时期"@zh ;
     skos:inScheme cs: ;
     skos:notation "ep10"^^gtsd:ccgmShortCode ;
+    skos:prefLabel "Stage 10"@en ;
     time:hasBeginning
         [
             skos:note "uncertain" ;
@@ -2008,6 +1885,32 @@ gtsd:CambrianStage2
     a skos:Concept ;
     gts:rank rank:Age ;
     rdfs:isDefinedBy ds: ;
+    skos:altLabel
+        "Mərtəbə 2"@az ,
+        "Segon estatge"@ca ,
+        "stupeň 2"@cs ,
+        "Stufe 2"@de ,
+        "Piso 2"@es ,
+        "Piso 2"@es-a ,
+        "2 Estai"@eu ,
+        "Vaihe 2"@fi ,
+        "Étage 2"@fr ,
+        "2. emelet"@hu ,
+        "Jenjang 2"@id ,
+        "Piano 2"@it ,
+        "ステージ 2"@ja ,
+        "제2절"@ko ,
+        "2 aukštas"@lt ,
+        "Etage 2"@nl ,
+        "Etage 2"@nl-be ,
+        "Etasje 2"@no ,
+        "Piętro 2"@pl ,
+        "Andar 2"@pt ,
+        "Andar 2"@pt-br ,
+        "Ярус 2"@ru ,
+        "stupeň 2"@sk ,
+        "Kat 2"@tr ,
+        "第二阶"@zh ;
     skos:broader gtsd:Terreneuvian ;
     skos:definition
         "529.0-dən 521.0 milyon il əvvələ qədər olan zaman dövrü"@az ,
@@ -2038,6 +1941,7 @@ gtsd:CambrianStage2
         "距今 529.0 至 521.0 百万年前的时期"@zh ;
     skos:inScheme cs: ;
     skos:notation "ep3"^^gtsd:ccgmShortCode ;
+    skos:prefLabel "Stage 2"@en ;
     time:hasBeginning
         [
             skos:note "uncertain" ;
@@ -2056,6 +1960,32 @@ gtsd:CambrianStage3
     a skos:Concept ;
     gts:rank rank:Age ;
     rdfs:isDefinedBy ds: ;
+    skos:altLabel
+        "Mərtəbə 3"@az ,
+        "Tercer estatge"@ca ,
+        "stupeň 3"@cs ,
+        "Stufe 3"@de ,
+        "Piso 3"@es ,
+        "Piso 3"@es-a ,
+        "3 Estai"@eu ,
+        "Vaihe 3"@fi ,
+        "Étage 3"@fr ,
+        "3. emelet"@hu ,
+        "Jenjang 3"@id ,
+        "Piano 3"@it ,
+        "ステージ 3"@ja ,
+        "제3절"@ko ,
+        "3 aukštas"@lt ,
+        "Etage 3"@nl ,
+        "Etage 3"@nl-be ,
+        "Etasje 3"@no ,
+        "Piętro 3"@pl ,
+        "Andar 3"@pt ,
+        "Andar 3"@pt-br ,
+        "Ярус 3"@ru ,
+        "stupeň 3"@sk ,
+        "Kat 3"@tr ,
+        "第三阶"@zh ;
     skos:broader gtsd:CambrianSeries2 ;
     skos:definition
         "521.0-dən 514.5 milyon il əvvələ qədər olan zaman dövrü"@az ,
@@ -2086,6 +2016,7 @@ gtsd:CambrianStage3
         "距今 521.0 至 514.5 百万年前的时期"@zh ;
     skos:inScheme cs: ;
     skos:notation "ep2"^^gtsd:ccgmShortCode ;
+    skos:prefLabel "Stage 3"@en ;
     time:hasBeginning
         [
             skos:note "uncertain" ;
@@ -2104,6 +2035,32 @@ gtsd:CambrianStage4
     a skos:Concept ;
     gts:rank rank:Age ;
     rdfs:isDefinedBy ds: ;
+    skos:altLabel
+        "Mərtəbə 4"@az ,
+        "Quart estatge"@ca ,
+        "stupeň 4"@cs ,
+        "Stufe 4"@de ,
+        "Piso 4"@es ,
+        "Piso 4"@es-a ,
+        "4 Estai"@eu ,
+        "Vaihe 4"@fi ,
+        "Étage 4"@fr ,
+        "4. emelet"@hu ,
+        "Jenjang 4"@id ,
+        "Piano 4"@it ,
+        "ステージ 4"@ja ,
+        "제4절"@ko ,
+        "4 aukštas"@lt ,
+        "Etage 4"@nl ,
+        "Etage 4"@nl-be ,
+        "Etasje 4"@no ,
+        "Piętro 4"@pl ,
+        "Andar 4"@pt ,
+        "Andar 4"@pt-br ,
+        "Ярус 4"@ru ,
+        "stupeň 4"@sk ,
+        "Kat 4"@tr ,
+        "第四阶"@zh ;
     skos:broader gtsd:CambrianSeries2 ;
     skos:definition
         "514.5-dən 506.5 milyon il əvvələ qədər olan zaman dövrü"@az ,
@@ -2134,6 +2091,7 @@ gtsd:CambrianStage4
         "距今 514.5 至 506.5 百万年前的时期"@zh ;
     skos:inScheme cs: ;
     skos:notation "ep4"^^gtsd:ccgmShortCode ;
+    skos:prefLabel "Stage 4"@en ;
     time:hasBeginning
         [
             skos:note "uncertain" ;
@@ -8620,6 +8578,32 @@ gtsd:UpperPleistocene
     a skos:Concept ;
     gts:rank rank:Age ;
     rdfs:isDefinedBy ds: ;
+    skos:altLabel
+        "Üst Pleystosen"@az ,
+        "Superior Plistocè"@ca ,
+        "svrchní pleistocén"@cs ,
+        "Obere Pleistozän"@de ,
+        "Superior Pleistocene"@es ,
+        "Superior Pleistoceno"@es-a ,
+        "Goi Pleistozeno"@eu ,
+        "Ylä Pleistoseeni"@fi ,
+        "Supérieur Pléistocène"@fr ,
+        "felső/késő pleisztocén"@hu ,
+        "Atas Pleistosen"@id ,
+        "Superiore Pleistocene"@it ,
+        "上部／後期 更新統／世"@ja ,
+        "높은 플라이스토세"@ko ,
+        "Viršutinė Pleistocenas"@lt ,
+        "Boven Pleistoceen"@nl ,
+        "Boven Pleistoceen"@nl-be ,
+        "Øvre Pleistocen"@no ,
+        "Górny Plejstocen"@pl ,
+        "Superior Pleistoceno"@pt ,
+        "Superior Pleistoceno"@pt-br ,
+        "Верхний Плейстоцен"@ru ,
+        "vrchná pleistocén"@sk ,
+        "Üst Pleyistosen"@tr ,
+        "上侏罗统 更新统"@zh ;
     skos:broader gtsd:Pleistocene ;
     skos:definition
         "0.129-dən 0.0117 milyon il əvvələ qədər olan zaman dövrü"@az ,
@@ -8650,6 +8634,7 @@ gtsd:UpperPleistocene
         "距今 0.129 至 0.0117 百万年前的时期"@zh ;
     skos:inScheme cs: ;
     skos:notation "q4"^^gtsd:ccgmShortCode ;
+    skos:prefLabel "Upper Pleistocene"@en ;
     time:hasBeginning
         [
             gtsd:inMYA 0.129 ;
@@ -9196,6 +9181,32 @@ gtsd:LowerMississippian
     gts:rank rank:Epoch ;
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ds: ;
+    skos:altLabel
+        "Alt Missisipi"@az ,
+        "Inferior Mississippià"@ca ,
+        "spodní mississipp"@cs ,
+        "Untere Mississippium"@de ,
+        "Inferior Misisípico"@es ,
+        "Inferior Misisipiano"@es-a ,
+        "Behe Mississippiar"@eu ,
+        "Ala Mississippi"@fi ,
+        "Inférieur Mississippien"@fr ,
+        "alsó/kora mississippi"@hu ,
+        "Lebih rendah Mississippian"@id ,
+        "Inferiore Mississippiano"@it ,
+        "下部／前期 ミシシッピアン 亜系／亜紀"@ja ,
+        "낮추다 기 미시시피아기"@ko ,
+        "Žemutinis Misisipas"@lt ,
+        "Onder Mississippien"@nl ,
+        "Onder Mississippiaan"@nl-be ,
+        "Undre Mississippi"@no ,
+        "Dolny Missisipi"@pl ,
+        "Inferior Mississíppico"@pt ,
+        "Inferior Mississíppico"@pt-br ,
+        "Нижний Мисиссипская"@ru ,
+        "spodná misisip"@sk ,
+        "Alt Misisipiyen"@tr ,
+        "下侏罗统 密 西 西 比 亚 系"@zh ;
     skos:broader gtsd:Mississippian ;
     skos:definition
         "358.86-dən 346.7 milyon il əvvələ qədər olan zaman dövrü"@az ,
@@ -9227,6 +9238,7 @@ gtsd:LowerMississippian
     skos:inScheme cs: ;
     skos:narrower gtsd:Tournaisian ;
     skos:notation "C1c1"^^gtsd:ccgmShortCode ;
+    skos:prefLabel "Lower Mississippian"@en ;
     time:hasBeginning
         [
             gtsd:inMYA 358.86 ;
@@ -9246,6 +9258,32 @@ gtsd:LowerPennsylvanian
     gts:rank rank:Epoch ;
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ds: ;
+    skos:altLabel
+        "Alt Pensilvaniya"@az ,
+        "Inferior Pennsylvanià"@ca ,
+        "spodní pennsylvan"@cs ,
+        "Untere Pennsylvanium"@de ,
+        "Inferior Pensilvánico"@es ,
+        "Inferior Pensilvaniano"@es-a ,
+        "Behe Pennsylvaniar"@eu ,
+        "Ala Pennsylvania"@fi ,
+        "Inférieur Pennsylvanie"@fr ,
+        "alsó/kora pennsylvaniai"@hu ,
+        "Lebih rendah Pennsylvanian"@id ,
+        "Inferiore Pennsylvaniano"@it ,
+        "下部／前期 ペンシルバニアン 亜系／亜紀"@ja ,
+        "낮추다 펜실베니아아기"@ko ,
+        "Žemutinis Pensilvanas"@lt ,
+        "Onder Pennsylvanien"@nl ,
+        "Onder Pennsylvaniaan"@nl-be ,
+        "Undre Pennsylvania"@no ,
+        "Dolny Pensylwan"@pl ,
+        "Inferior Pennsylvánico"@pt ,
+        "Inferior Pennsylvánico"@pt-br ,
+        "Нижний Пенсильванская"@ru ,
+        "spodná pensylván"@sk ,
+        "Alt Pensilvaniyen"@tr ,
+        "下侏罗统 宾 夕 法 尼 亚 亚 系"@zh ;
     skos:broader gtsd:Pennsylvanian ;
     skos:definition
         "323.4-dən 315.2 milyon il əvvələ qədər olan zaman dövrü"@az ,
@@ -9277,6 +9315,7 @@ gtsd:LowerPennsylvanian
     skos:inScheme cs: ;
     skos:narrower gtsd:Bashkirian ;
     skos:notation "C2c4"^^gtsd:ccgmShortCode ;
+    skos:prefLabel "Lower Pennsylvanian"@en ;
     time:hasBeginning
         [
             gtsd:inMYA 323.4 ;
@@ -9296,6 +9335,32 @@ gtsd:MiddleMississippian
     gts:rank rank:Epoch ;
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ds: ;
+    skos:altLabel
+        "Orta Missisipi"@az ,
+        "Mitjà Mississippià"@ca ,
+        "střední mississipp"@cs ,
+        "Mitte Mississippium"@de ,
+        "Medio Misisípico"@es ,
+        "Medio Misisipiano"@es-a ,
+        "Erdi Mississippiar"@eu ,
+        "Keski Mississippi"@fi ,
+        "Moyen Mississippien"@fr ,
+        "középső mississippi"@hu ,
+        "Tengah Mississippian"@id ,
+        "Medio Mississippiano"@it ,
+        "中部／中期 ミシシッピアン 亜系／亜紀"@ja ,
+        "가운데 기 미시시피아기"@ko ,
+        "Vidurys Misisipas"@lt ,
+        "Midden Mississippien"@nl ,
+        "Midden Mississippiaan"@nl-be ,
+        "Midtre Mississippi"@no ,
+        "Środkowy Missisipi"@pl ,
+        "Médio Mississíppico"@pt ,
+        "Médio Mississíppico"@pt-br ,
+        "Средний Мисиссипская"@ru ,
+        "stredná misisip"@sk ,
+        "Orta Misisipiyen"@tr ,
+        "中侏罗统 密 西 西 比 亚 系"@zh ;
     skos:broader gtsd:Mississippian ;
     skos:definition
         "346.7-dən 330.3 milyon il əvvələ qədər olan zaman dövrü"@az ,
@@ -9327,6 +9392,7 @@ gtsd:MiddleMississippian
     skos:inScheme cs: ;
     skos:narrower gtsd:Visean ;
     skos:notation "C1c2"^^gtsd:ccgmShortCode ;
+    skos:prefLabel "Middle Mississippian"@en ;
     time:hasBeginning
         [
             gtsd:inMYA 346.7 ;
@@ -9345,6 +9411,32 @@ gtsd:MiddlePennsylvanian
     a skos:Concept ;
     gts:rank rank:Epoch ;
     rdfs:isDefinedBy ds: ;
+    skos:altLabel
+        "Orta Pensilvaniya"@az ,
+        "Mitjà Pennsylvanià"@ca ,
+        "střední pennsylvan"@cs ,
+        "Mitte Pennsylvanium"@de ,
+        "Medio Pensilvánico"@es ,
+        "Medio Pensilvaniano"@es-a ,
+        "Erdi Pennsylvaniar"@eu ,
+        "Keski Pennsylvania"@fi ,
+        "Moyen Pennsylvanie"@fr ,
+        "középső pennsylvaniai"@hu ,
+        "Tengah Pennsylvanian"@id ,
+        "Medio Pennsylvaniano"@it ,
+        "中部／中期 ペンシルバニアン 亜系／亜紀"@ja ,
+        "가운데 펜실베니아아기"@ko ,
+        "Vidurys Pensilvanas"@lt ,
+        "Midden Pennsylvanien"@nl ,
+        "Midden Pennsylvaniaan"@nl-be ,
+        "Midtre Pennsylvania"@no ,
+        "Środkowy Pensylwan"@pl ,
+        "Médio Pennsylvánico"@pt ,
+        "Médio Pennsylvánico"@pt-br ,
+        "Средний Пенсильванская"@ru ,
+        "stredná pensylván"@sk ,
+        "Orta Pensilvaniyen"@tr ,
+        "中侏罗统 宾 夕 法 尼 亚 亚 系"@zh ;
     skos:broader gtsd:Pennsylvanian ;
     skos:definition
         "315.2-dən 307.0 milyon il əvvələ qədər olan zaman dövrü"@az ,
@@ -9376,6 +9468,7 @@ gtsd:MiddlePennsylvanian
     skos:inScheme cs: ;
     skos:narrower gtsd:Moscovian ;
     skos:notation "C2c5"^^gtsd:ccgmShortCode ;
+    skos:prefLabel "Middle Pennsylvanian"@en ;
     time:hasBeginning
         [
             gtsd:inMYA 315.2 ;
@@ -9472,6 +9565,32 @@ gtsd:UpperMississippian
     a skos:Concept ;
     gts:rank rank:Epoch ;
     rdfs:isDefinedBy ds: ;
+    skos:altLabel
+        "Üst Missisipi"@az ,
+        "Superior Mississippià"@ca ,
+        "svrchní mississipp"@cs ,
+        "Obere Mississippium"@de ,
+        "Superior Misisípico"@es ,
+        "Superior Misisipiano"@es-a ,
+        "Goi Mississippiar"@eu ,
+        "Ylä Mississippi"@fi ,
+        "Supérieur Mississippien"@fr ,
+        "felső/késő mississippi"@hu ,
+        "Atas Mississippian"@id ,
+        "Superiore Mississippiano"@it ,
+        "上部／後期 ミシシッピアン 亜系／亜紀"@ja ,
+        "높은 기 미시시피아기"@ko ,
+        "Viršutinė Misisipas"@lt ,
+        "Boven Mississippien"@nl ,
+        "Boven Mississippiaan"@nl-be ,
+        "Øvre Mississippi"@no ,
+        "Górny Missisipi"@pl ,
+        "Superior Mississíppico"@pt ,
+        "Superior Mississíppico"@pt-br ,
+        "Верхний Мисиссипская"@ru ,
+        "vrchná misisip"@sk ,
+        "Üst Misisipiyen"@tr ,
+        "上侏罗统 密 西 西 比 亚 系"@zh ;
     skos:broader gtsd:Mississippian ;
     skos:definition
         "330.3-dən 323.4 milyon il əvvələ qədər olan zaman dövrü"@az ,
@@ -9503,6 +9622,7 @@ gtsd:UpperMississippian
     skos:inScheme cs: ;
     skos:narrower gtsd:Serpukhovian ;
     skos:notation "C1c3"^^gtsd:ccgmShortCode ;
+    skos:prefLabel "Upper Mississippian"@en ;
     time:hasBeginning
         [
             gtsd:inMYA 330.3 ;
@@ -9554,6 +9674,32 @@ gtsd:CambrianSeries2
     a skos:Concept ;
     gts:rank rank:Epoch ;
     rdfs:isDefinedBy ds: ;
+    skos:altLabel
+        "Şöbə 2"@az ,
+        "Segona sèrie"@ca ,
+        "oddělení 2"@cs ,
+        "Serie 2"@de ,
+        "Serie 2"@es ,
+        "Serie 2"@es-a ,
+        "2 Serie"@eu ,
+        "Sarja 2"@fi ,
+        "Séries 2"@fr ,
+        "2. sorozat"@hu ,
+        "Seri 2"@id ,
+        "Serie 2"@it ,
+        "シリーズ 2"@ja ,
+        "제2세"@ko ,
+        "2 skyrius"@lt ,
+        "Serie 2"@nl ,
+        "Serie 2"@nl-be ,
+        "Serie 2"@no ,
+        "Seria 2"@pl ,
+        "Série 2"@pt ,
+        "Série 2"@pt-br ,
+        "Отдел 2"@ru ,
+        "séria 2"@sk ,
+        "Seri 2"@tr ,
+        "第二统"@zh ;
     skos:broader gtsd:Cambrian ;
     skos:definition
         "521.0-dən 506.5 milyon il əvvələ qədər olan zaman dövrü"@az ,
@@ -9587,6 +9733,7 @@ gtsd:CambrianSeries2
         gtsd:CambrianStage3 ,
         gtsd:CambrianStage4 ;
     skos:notation "Ep2"^^gtsd:ccgmShortCode ;
+    skos:prefLabel "Series 2"@en ;
     time:hasBeginning
         [
             skos:note "uncertain" ;
@@ -9842,6 +9989,32 @@ gtsd:LowerOrdovician
     gts:rank rank:Epoch ;
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ds: ;
+    skos:altLabel
+        "Alt Ordovik"@az ,
+        "Inferior Ordovicià"@ca ,
+        "spodní ordovik"@cs ,
+        "Untere Ordovizium"@de ,
+        "Inferior Ordovícico"@es ,
+        "Inferior Ordovícico"@es-a ,
+        "Behe Ordoviziar"@eu ,
+        "Ala Ordoviikki"@fi ,
+        "Inférieur Ordovicien"@fr ,
+        "alsó/kora ordovícium"@hu ,
+        "Lebih rendah Ordovisiu"@id ,
+        "Inferiore Ordoviciano"@it ,
+        "下部／前期 オルドビス系／紀"@ja ,
+        "낮추다 오르도비스기"@ko ,
+        "Žemutinis Ordovikas"@lt ,
+        "Onder Ordovicium"@nl ,
+        "Onder Ordovicium"@nl-be ,
+        "Undre Ordovicium"@no ,
+        "Dolny Ordowik"@pl ,
+        "Inferior Ordoviciano"@pt ,
+        "Inferior Ordoviciano"@pt-br ,
+        "Нижний Ордовикская"@ru ,
+        "spodná ordovik"@sk ,
+        "Alt Ordovisiyen"@tr ,
+        "下侏罗统 奥 陶 系"@zh ;
     skos:broader gtsd:Ordovician ;
     skos:definition
         "486.85-dən 471.3 milyon il əvvələ qədər olan zaman dövrü"@az ,
@@ -9875,6 +10048,7 @@ gtsd:LowerOrdovician
         gtsd:Floian ,
         gtsd:Tremadocian ;
     skos:notation "O1"^^gtsd:ccgmShortCode ;
+    skos:prefLabel "Lower Ordovician"@en ;
     time:hasBeginning
         [
             gtsd:inMYA 486.85 ;
@@ -9894,6 +10068,32 @@ gtsd:LowerTriassic
     gts:rank rank:Epoch ;
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ds: ;
+    skos:altLabel
+        "Alt Trias"@az ,
+        "Inferior Triàsic"@ca ,
+        "spodní trias"@cs ,
+        "Untere Trias"@de ,
+        "Inferior Triásico"@es ,
+        "Inferior Triásico"@es-a ,
+        "Behe Triasiko"@eu ,
+        "Ala Trias"@fi ,
+        "Inférieur Trias"@fr ,
+        "alsó/kora triász"@hu ,
+        "Lebih rendah Trias"@id ,
+        "Inferiore Triassico"@it ,
+        "下部／前期 三畳系／紀"@ja ,
+        "낮추다 트라이아스기"@ko ,
+        "Žemutinis Triasas"@lt ,
+        "Onder Trias"@nl ,
+        "Onder Trias"@nl-be ,
+        "Undre Trias"@no ,
+        "Dolny Trias"@pl ,
+        "Inferior Triássico"@pt ,
+        "Inferior Triássico"@pt-br ,
+        "Нижний Триасовая"@ru ,
+        "spodná trias"@sk ,
+        "Alt Triyas"@tr ,
+        "下侏罗统 三 叠 系"@zh ;
     skos:broader gtsd:Triassic ;
     skos:changeNote "2026-06: hasEnd 246.7 -> 247.0" ;
     skos:definition
@@ -9928,6 +10128,7 @@ gtsd:LowerTriassic
         gtsd:Induan ,
         gtsd:Olenekian ;
     skos:notation "T1"^^gtsd:ccgmShortCode ;
+    skos:prefLabel "Lower Triassic"@en ;
     time:hasBeginning
         [
             gtsd:inMYA 251.902 ;
@@ -10025,6 +10226,32 @@ gtsd:MiddleDevonian
     gts:rank rank:Epoch ;
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ds: ;
+    skos:altLabel
+        "Orta Devon"@az ,
+        "Mitjà Devonià"@ca ,
+        "střední devon"@cs ,
+        "Mitte Devon"@de ,
+        "Medio Devónico"@es ,
+        "Medio Devónico"@es-a ,
+        "Erdi Devoniar"@eu ,
+        "Keski Devoni"@fi ,
+        "Moyen Dévonien"@fr ,
+        "középső devon"@hu ,
+        "Tengah Devon"@id ,
+        "Medio Devoniano"@it ,
+        "中部／中期 デボン系／紀"@ja ,
+        "가운데 데본기"@ko ,
+        "Vidurys Devonas"@lt ,
+        "Midden Devoon"@nl ,
+        "Midden Devoon"@nl-be ,
+        "Midtre Devon"@no ,
+        "Środkowy Dewon"@pl ,
+        "Médio Devoniano"@pt ,
+        "Médio Devoniano"@pt-br ,
+        "Средний Девонская"@ru ,
+        "stredná devón"@sk ,
+        "Orta Devoniyen"@tr ,
+        "中侏罗统 泥 盆 系"@zh ;
     skos:broader gtsd:Devonian ;
     skos:definition
         "393.47-dən 382.31 milyon il əvvələ qədər olan zaman dövrü"@az ,
@@ -10058,6 +10285,7 @@ gtsd:MiddleDevonian
         gtsd:Eifelian ,
         gtsd:Givetian ;
     skos:notation "D2"^^gtsd:ccgmShortCode ;
+    skos:prefLabel "Middle Devonian"@en ;
     time:hasBeginning
         [
             gtsd:inMYA 393.47 ;
@@ -10077,6 +10305,32 @@ gtsd:MiddleOrdovician
     gts:rank rank:Epoch ;
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ds: ;
+    skos:altLabel
+        "Orta Ordovik"@az ,
+        "Mitjà Ordovicià"@ca ,
+        "střední ordovik"@cs ,
+        "Mitte Ordovizium"@de ,
+        "Medio Ordovícico"@es ,
+        "Medio Ordovícico"@es-a ,
+        "Erdi Ordoviziar"@eu ,
+        "Keski Ordoviikki"@fi ,
+        "Moyen Ordovicien"@fr ,
+        "középső ordovícium"@hu ,
+        "Tengah Ordovisiu"@id ,
+        "Medio Ordoviciano"@it ,
+        "中部／中期 オルドビス系／紀"@ja ,
+        "가운데 오르도비스기"@ko ,
+        "Vidurys Ordovikas"@lt ,
+        "Midden Ordovicium"@nl ,
+        "Midden Ordovicium"@nl-be ,
+        "Midtre Ordovicium"@no ,
+        "Środkowy Ordowik"@pl ,
+        "Médio Ordoviciano"@pt ,
+        "Médio Ordoviciano"@pt-br ,
+        "Средний Ордовикская"@ru ,
+        "stredná ordovik"@sk ,
+        "Orta Ordovisiyen"@tr ,
+        "中侏罗统 奥 陶 系"@zh ;
     skos:broader gtsd:Ordovician ;
     skos:definition
         "471.3-dən 458.2 milyon il əvvələ qədər olan zaman dövrü"@az ,
@@ -10110,6 +10364,7 @@ gtsd:MiddleOrdovician
         gtsd:Dapingian ,
         gtsd:Darriwilian ;
     skos:notation "O2"^^gtsd:ccgmShortCode ;
+    skos:prefLabel "Middle Ordovician"@en ;
     time:hasBeginning
         [
             gtsd:inMYA 471.3 ;
@@ -10128,6 +10383,32 @@ gtsd:MiddleTriassic
     a skos:Concept ;
     gts:rank rank:Epoch ;
     rdfs:isDefinedBy ds: ;
+    skos:altLabel
+        "Orta Trias"@az ,
+        "Mitjà Triàsic"@ca ,
+        "střední trias"@cs ,
+        "Mitte Trias"@de ,
+        "Medio Triásico"@es ,
+        "Medio Triásico"@es-a ,
+        "Erdi Triasiko"@eu ,
+        "Keski Trias"@fi ,
+        "Moyen Trias"@fr ,
+        "középső triász"@hu ,
+        "Tengah Trias"@id ,
+        "Medio Triassico"@it ,
+        "中部／中期 三畳系／紀"@ja ,
+        "가운데 트라이아스기"@ko ,
+        "Vidurys Triasas"@lt ,
+        "Midden Trias"@nl ,
+        "Midden Trias"@nl-be ,
+        "Midtre Trias"@no ,
+        "Środkowy Trias"@pl ,
+        "Médio Triássico"@pt ,
+        "Médio Triássico"@pt-br ,
+        "Средний Триасовая"@ru ,
+        "stredná trias"@sk ,
+        "Orta Triyas"@tr ,
+        "中侏罗统 三 叠 系"@zh ;
     skos:broader gtsd:Triassic ;
     skos:changeNote "2026-06: hasBeginning 246.7 -> 247.0" ;
     skos:definition
@@ -10162,6 +10443,7 @@ gtsd:MiddleTriassic
         gtsd:Anisian ,
         gtsd:Ladinian ;
     skos:notation "T2"^^gtsd:ccgmShortCode ;
+    skos:prefLabel "Middle Triassic"@en ;
     time:hasBeginning
         [
             gtsd:inMYA 247.0 ;
@@ -10567,6 +10849,32 @@ gtsd:UpperDevonian
     gts:rank rank:Epoch ;
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ds: ;
+    skos:altLabel
+        "Üst Devon"@az ,
+        "Superior Devonià"@ca ,
+        "svrchní devon"@cs ,
+        "Obere Devon"@de ,
+        "Superior Devónico"@es ,
+        "Superior Devónico"@es-a ,
+        "Goi Devoniar"@eu ,
+        "Ylä Devoni"@fi ,
+        "Supérieur Dévonien"@fr ,
+        "felső/késő devon"@hu ,
+        "Atas Devon"@id ,
+        "Superiore Devoniano"@it ,
+        "上部／後期 デボン系／紀"@ja ,
+        "높은 데본기"@ko ,
+        "Viršutinė Devonas"@lt ,
+        "Boven Devoon"@nl ,
+        "Boven Devoon"@nl-be ,
+        "Øvre Devon"@no ,
+        "Górny Dewon"@pl ,
+        "Superior Devoniano"@pt ,
+        "Superior Devoniano"@pt-br ,
+        "Верхний Девонская"@ru ,
+        "vrchná devón"@sk ,
+        "Üst Devoniyen"@tr ,
+        "上侏罗统 泥 盆 系"@zh ;
     skos:broader gtsd:Devonian ;
     skos:definition
         "382.31-dən 358.86 milyon il əvvələ qədər olan zaman dövrü"@az ,
@@ -10600,6 +10908,7 @@ gtsd:UpperDevonian
         gtsd:Famennian ,
         gtsd:Frasnian ;
     skos:notation "D3"^^gtsd:ccgmShortCode ;
+    skos:prefLabel "Upper Devonian"@en ;
     time:hasBeginning
         [
             gtsd:inMYA 382.31 ;
@@ -10618,6 +10927,32 @@ gtsd:UpperPennsylvanian
     a skos:Concept ;
     gts:rank rank:Epoch ;
     rdfs:isDefinedBy ds: ;
+    skos:altLabel
+        "Üst Pensilvaniya"@az ,
+        "Superior Pennsylvanià"@ca ,
+        "svrchní pennsylvan"@cs ,
+        "Obere Pennsylvanium"@de ,
+        "Superior Pensilvánico"@es ,
+        "Superior Pensilvaniano"@es-a ,
+        "Goi Pennsylvaniar"@eu ,
+        "Ylä Pennsylvania"@fi ,
+        "Supérieur Pennsylvanie"@fr ,
+        "felső/késő pennsylvaniai"@hu ,
+        "Atas Pennsylvanian"@id ,
+        "Superiore Pennsylvaniano"@it ,
+        "上部／後期 ペンシルバニアン 亜系／亜紀"@ja ,
+        "높은 펜실베니아아기"@ko ,
+        "Viršutinė Pensilvanas"@lt ,
+        "Boven Pennsylvanien"@nl ,
+        "Boven Pennsylvaniaan"@nl-be ,
+        "Øvre Pennsylvania"@no ,
+        "Górny Pensylwan"@pl ,
+        "Superior Pennsylvánico"@pt ,
+        "Superior Pennsylvánico"@pt-br ,
+        "Верхний Пенсильванская"@ru ,
+        "vrchná pensylván"@sk ,
+        "Üst Pensilvaniyen"@tr ,
+        "上侏罗统 宾 夕 法 尼 亚 亚 系"@zh ;
     skos:broader gtsd:Pennsylvanian ;
     skos:definition
         "307.0-dən 298.9 milyon il əvvələ qədər olan zaman dövrü"@az ,
@@ -10651,6 +10986,7 @@ gtsd:UpperPennsylvanian
         gtsd:Gzhelian ,
         gtsd:Kasimovian ;
     skos:notation "C2c6c7"^^gtsd:ccgmShortCode ;
+    skos:prefLabel "Upper Pennsylvanian"@en ;
     time:hasBeginning
         [
             gtsd:inMYA 307.0 ;
@@ -11306,6 +11642,32 @@ gtsd:LowerDevonian
     gts:rank rank:Epoch ;
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ds: ;
+    skos:altLabel
+        "Alt Devon"@az ,
+        "Inferior Devonià"@ca ,
+        "spodní devon"@cs ,
+        "Untere Devon"@de ,
+        "Inferior Devónico"@es ,
+        "Inferior Devónico"@es-a ,
+        "Behe Devoniar"@eu ,
+        "Ala Devoni"@fi ,
+        "Inférieur Dévonien"@fr ,
+        "alsó/kora devon"@hu ,
+        "Lebih rendah Devon"@id ,
+        "Inferiore Devoniano"@it ,
+        "下部／前期 デボン系／紀"@ja ,
+        "낮추다 데본기"@ko ,
+        "Žemutinis Devonas"@lt ,
+        "Onder Devoon"@nl ,
+        "Onder Devoon"@nl-be ,
+        "Undre Devon"@no ,
+        "Dolny Dewon"@pl ,
+        "Inferior Devoniano"@pt ,
+        "Inferior Devoniano"@pt-br ,
+        "Нижний Девонская"@ru ,
+        "spodná devón"@sk ,
+        "Alt Devoniyen"@tr ,
+        "下侏罗统 泥 盆 系"@zh ;
     skos:broader gtsd:Devonian ;
     skos:definition
         "419.62-dən 393.47 milyon il əvvələ qədər olan zaman dövrü"@az ,
@@ -11340,6 +11702,7 @@ gtsd:LowerDevonian
         gtsd:Lochkovian ,
         gtsd:Pragian ;
     skos:notation "D1"^^gtsd:ccgmShortCode ;
+    skos:prefLabel "Lower Devonian"@en ;
     time:hasBeginning
         [
             gtsd:inMYA 419.62 ;
@@ -12466,6 +12829,32 @@ gtsd:UpperJurassic
     a skos:Concept ;
     gts:rank rank:Epoch ;
     rdfs:isDefinedBy ds: ;
+    skos:altLabel
+        "Üst Yura"@az ,
+        "Superior Juràssic"@ca ,
+        "svrchní jura"@cs ,
+        "Obere Jura"@de ,
+        "Superior Jurásico"@es ,
+        "Superior Jurásico"@es-a ,
+        "Goi Jurasiko"@eu ,
+        "Ylä Jura"@fi ,
+        "Supérieur Jurassique"@fr ,
+        "felső/késő jura"@hu ,
+        "Atas Jura"@id ,
+        "Superiore Giurassico"@it ,
+        "上部／後期 ジュラ系／紀"@ja ,
+        "높은 쥐라기"@ko ,
+        "Viršutinė Jura"@lt ,
+        "Boven Jura"@nl ,
+        "Boven Jura"@nl-be ,
+        "Øvre Jura"@no ,
+        "Górny Jura"@pl ,
+        "Superior Jurássico"@pt ,
+        "Superior Jurássico"@pt-br ,
+        "Верхний Юрская"@ru ,
+        "vrchná jura"@sk ,
+        "Üst Jura"@tr ,
+        "上侏罗统 侏罗 系"@zh ;
     skos:broader gtsd:Jurassic ;
     skos:definition
         "161.5-dən 143.1 milyon il əvvələ qədər olan zaman dövrü"@az ,
@@ -12500,6 +12889,7 @@ gtsd:UpperJurassic
         gtsd:Oxfordian ,
         gtsd:Tithonian ;
     skos:notation "J3"^^gtsd:ccgmShortCode ;
+    skos:prefLabel "Upper Jurassic"@en ;
     time:hasBeginning
         [
             gtsd:inMYA 161.5 ;
@@ -12519,6 +12909,32 @@ gtsd:UpperOrdovician
     gts:rank rank:Epoch ;
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ds: ;
+    skos:altLabel
+        "Üst Ordovik"@az ,
+        "Superior Ordovicià"@ca ,
+        "svrchní ordovik"@cs ,
+        "Obere Ordovizium"@de ,
+        "Superior Ordovícico"@es ,
+        "Superior Ordovícico"@es-a ,
+        "Goi Ordoviziar"@eu ,
+        "Ylä Ordoviikki"@fi ,
+        "Supérieur Ordovicien"@fr ,
+        "felső/késő ordovícium"@hu ,
+        "Atas Ordovisiu"@id ,
+        "Superiore Ordoviciano"@it ,
+        "上部／後期 オルドビス系／紀"@ja ,
+        "높은 오르도비스기"@ko ,
+        "Viršutinė Ordovikas"@lt ,
+        "Boven Ordovicium"@nl ,
+        "Boven Ordovicium"@nl-be ,
+        "Øvre Ordovicium"@no ,
+        "Górny Ordowik"@pl ,
+        "Superior Ordoviciano"@pt ,
+        "Superior Ordoviciano"@pt-br ,
+        "Верхний Ордовикская"@ru ,
+        "vrchná ordovik"@sk ,
+        "Üst Ordovisiyen"@tr ,
+        "上侏罗统 奥 陶 系"@zh ;
     skos:broader gtsd:Ordovician ;
     skos:definition
         "458.2-dən 443.1 milyon il əvvələ qədər olan zaman dövrü"@az ,
@@ -12553,6 +12969,7 @@ gtsd:UpperOrdovician
         gtsd:Katian ,
         gtsd:Sandbian ;
     skos:notation "O3"^^gtsd:ccgmShortCode ;
+    skos:prefLabel "Upper Ordovician"@en ;
     time:hasBeginning
         [
             gtsd:inMYA 458.2 ;
@@ -12572,6 +12989,32 @@ gtsd:UpperTriassic
     gts:rank rank:Epoch ;
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ds: ;
+    skos:altLabel
+        "Üst Trias"@az ,
+        "Superior Triàsic"@ca ,
+        "svrchní trias"@cs ,
+        "Obere Trias"@de ,
+        "Superior Triásico"@es ,
+        "Superior Triásico"@es-a ,
+        "Goi Triasiko"@eu ,
+        "Ylä Trias"@fi ,
+        "Supérieur Trias"@fr ,
+        "felső/késő triász"@hu ,
+        "Atas Trias"@id ,
+        "Superiore Triassico"@it ,
+        "上部／後期 三畳系／紀"@ja ,
+        "높은 트라이아스기"@ko ,
+        "Viršutinė Triasas"@lt ,
+        "Boven Trias"@nl ,
+        "Boven Trias"@nl-be ,
+        "Øvre Trias"@no ,
+        "Górny Trias"@pl ,
+        "Superior Triássico"@pt ,
+        "Superior Triássico"@pt-br ,
+        "Верхний Триасовая"@ru ,
+        "vrchná trias"@sk ,
+        "Üst Triyas"@tr ,
+        "上侏罗统 三 叠 系"@zh ;
     skos:broader gtsd:Triassic ;
     skos:definition
         "237-dən 201.4 milyon il əvvələ qədər olan zaman dövrü"@az ,
@@ -12606,6 +13049,7 @@ gtsd:UpperTriassic
         gtsd:Norian ,
         gtsd:Rhaetian ;
     skos:notation "T3"^^gtsd:ccgmShortCode ;
+    skos:prefLabel "Upper Triassic"@en ;
     time:hasBeginning
         [
             skos:note "uncertain" ;
@@ -12946,6 +13390,32 @@ gtsd:LowerJurassic
     gts:rank rank:Epoch ;
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ds: ;
+    skos:altLabel
+        "Alt Yura"@az ,
+        "Inferior Juràssic"@ca ,
+        "spodní jura"@cs ,
+        "Untere Jura"@de ,
+        "Inferior Jurásico"@es ,
+        "Inferior Jurásico"@es-a ,
+        "Behe Jurasiko"@eu ,
+        "Ala Jura"@fi ,
+        "Inférieur Jurassique"@fr ,
+        "alsó/kora jura"@hu ,
+        "Lebih rendah Jura"@id ,
+        "Inferiore Giurassico"@it ,
+        "下部／前期 ジュラ系／紀"@ja ,
+        "낮추다 쥐라기"@ko ,
+        "Žemutinis Jura"@lt ,
+        "Onder Jura"@nl ,
+        "Onder Jura"@nl-be ,
+        "Undre Jura"@no ,
+        "Dolny Jura"@pl ,
+        "Inferior Jurássico"@pt ,
+        "Inferior Jurássico"@pt-br ,
+        "Нижний Юрская"@ru ,
+        "spodná jura"@sk ,
+        "Alt Jura"@tr ,
+        "下侏罗统 侏罗 系"@zh ;
     skos:broader gtsd:Jurassic ;
     skos:definition
         "201.4-dən 174.7 milyon il əvvələ qədər olan zaman dövrü"@az ,
@@ -12981,6 +13451,7 @@ gtsd:LowerJurassic
         gtsd:Sinemurian ,
         gtsd:Toarcian ;
     skos:notation "J1"^^gtsd:ccgmShortCode ;
+    skos:prefLabel "Lower Jurassic"@en ;
     time:hasBeginning
         [
             gtsd:inMYA 201.4 ;
@@ -13000,6 +13471,32 @@ gtsd:MiddleJurassic
     gts:rank rank:Epoch ;
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ds: ;
+    skos:altLabel
+        "Orta Yura"@az ,
+        "Mitjà Juràssic"@ca ,
+        "střední jura"@cs ,
+        "Mitte Jura"@de ,
+        "Medio Jurásico"@es ,
+        "Medio Jurásico"@es-a ,
+        "Erdi Jurasiko"@eu ,
+        "Keski Jura"@fi ,
+        "Moyen Jurassique"@fr ,
+        "középső jura"@hu ,
+        "Tengah Jura"@id ,
+        "Medio Giurassico"@it ,
+        "中部／中期 ジュラ系／紀"@ja ,
+        "가운데 쥐라기"@ko ,
+        "Vidurys Jura"@lt ,
+        "Midden Jura"@nl ,
+        "Midden Jura"@nl-be ,
+        "Midtre Jura"@no ,
+        "Środkowy Jura"@pl ,
+        "Médio Jurássico"@pt ,
+        "Médio Jurássico"@pt-br ,
+        "Средний Юрская"@ru ,
+        "stredná jura"@sk ,
+        "Orta Jura"@tr ,
+        "中侏罗统 侏罗 系"@zh ;
     skos:broader gtsd:Jurassic ;
     skos:definition
         "174.7-dən 161.5 milyon il əvvələ qədər olan zaman dövrü"@az ,
@@ -13035,6 +13532,7 @@ gtsd:MiddleJurassic
         gtsd:Bathonian ,
         gtsd:Callovian ;
     skos:notation "J2"^^gtsd:ccgmShortCode ;
+    skos:prefLabel "Middle Jurassic"@en ;
     time:hasBeginning
         [
             gtsd:inMYA 174.7 ;
@@ -13292,6 +13790,32 @@ gtsd:LowerCretaceous
     a skos:Concept ;
     gts:rank rank:Epoch ;
     rdfs:isDefinedBy ds: ;
+    skos:altLabel
+        "Alt Təbaşir"@az ,
+        "Inferior Cretaci"@ca ,
+        "spodní křída"@cs ,
+        "Untere Kreide"@de ,
+        "Inferior Cretácico"@es ,
+        "Inferior Cretácico"@es-a ,
+        "Behe Kretazeo"@eu ,
+        "Ala Liitu"@fi ,
+        "Inférieur Crétacé"@fr ,
+        "alsó/kora kréta"@hu ,
+        "Lebih rendah Kapur"@id ,
+        "Inferiore Cretacico"@it ,
+        "下部／前期 白亜系／紀"@ja ,
+        "낮추다 백악기"@ko ,
+        "Žemutinis Kreida"@lt ,
+        "Onder Krijt"@nl ,
+        "Onder Krijt"@nl-be ,
+        "Undre Kritt"@no ,
+        "Dolny Kreda"@pl ,
+        "Inferior Cretáceo"@pt ,
+        "Inferior Cretáceo"@pt-br ,
+        "Нижний Меловая"@ru ,
+        "spodná krieda"@sk ,
+        "Alt Kretase"@tr ,
+        "下侏罗统 白 垩系"@zh ;
     skos:broader gtsd:Cretaceous ;
     skos:definition
         "143.1-dən 100.5 milyon il əvvələ qədər olan zaman dövrü"@az ,
@@ -13329,6 +13853,7 @@ gtsd:LowerCretaceous
         gtsd:Hauterivian ,
         gtsd:Valanginian ;
     skos:notation "K1"^^gtsd:ccgmShortCode ;
+    skos:prefLabel "Lower Cretaceous"@en ;
     time:hasBeginning
         [
             gtsd:inMYA 143.1 ;
@@ -13512,6 +14037,32 @@ gtsd:UpperCretaceous
     gts:rank rank:Epoch ;
     gts:ratifiedGSSP true ;
     rdfs:isDefinedBy ds: ;
+    skos:altLabel
+        "Üst Təbaşir"@az ,
+        "Superior Cretaci"@ca ,
+        "svrchní křída"@cs ,
+        "Obere Kreide"@de ,
+        "Superior Cretácico"@es ,
+        "Superior Cretácico"@es-a ,
+        "Goi Kretazeo"@eu ,
+        "Ylä Liitu"@fi ,
+        "Supérieur Crétacé"@fr ,
+        "felső/késő kréta"@hu ,
+        "Atas Kapur"@id ,
+        "Superiore Cretacico"@it ,
+        "上部／後期 白亜系／紀"@ja ,
+        "높은 백악기"@ko ,
+        "Viršutinė Kreida"@lt ,
+        "Boven Krijt"@nl ,
+        "Boven Krijt"@nl-be ,
+        "Øvre Kritt"@no ,
+        "Górny Kreda"@pl ,
+        "Superior Cretáceo"@pt ,
+        "Superior Cretáceo"@pt-br ,
+        "Верхний Меловая"@ru ,
+        "vrchná krieda"@sk ,
+        "Üst Kretase"@tr ,
+        "上侏罗统 白 垩系"@zh ;
     skos:broader gtsd:Cretaceous ;
     skos:definition
         "100.5-dən 66.00 milyon il əvvələ qədər olan zaman dövrü"@az ,
@@ -13549,6 +14100,7 @@ gtsd:UpperCretaceous
         gtsd:Santonian ,
         gtsd:Turonian ;
     skos:notation "K2"^^gtsd:ccgmShortCode ;
+    skos:prefLabel "Upper Cretaceous"@en ;
     time:hasBeginning
         [
             gtsd:inMYA 100.5 ;

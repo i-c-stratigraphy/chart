@@ -6,6 +6,7 @@ from rdflib.namespace import RDF, SDO, SKOS
 CS = URIRef("https://data.stratigraphy.org/def/chart")
 GSSP = Namespace("https://data.stratigraphy.org/data/gssps/")
 GTS = Namespace("http://resource.geosciml.org/ontology/timescale/gts#")
+GTSD = Namespace("https://data.stratigraphy.org/data/gts/")
 STRAT = Namespace("https://data.stratigraphy.org/data/strat/")
 VIS = Namespace("https://data.stratigraphy.org/data/vis/")
 
@@ -14,7 +15,7 @@ prefixes = {
     "dcterms":  "http://purl.org/dc/terms/",
     "gssp":     str(GSSP),
     "gts":      str(GTS),
-    "gtsd":     "https://data.stratigraphy.org/data/gts/",
+    "gtsd":     str(GTSD),
     "strat":    str(STRAT),
     "schema":   "https://schema.org/",
     "vis":      str(VIS),
@@ -117,6 +118,60 @@ def make_vocpub_version(g):
     g.remove((CS, SDO.copyrightNotice, None))
     for p, o in g.predicate_objects(SDO.copyrightNotice):
         g.add((CS, SDO.copyrightNotice, o))
+
+    upper_middle_lower = [
+        GTSD.LowerPennsylvanian,
+        GTSD.UpperMississippian,
+        GTSD.UpperOrdovician,
+        GTSD.UpperCretaceous,
+        GTSD.UpperDevonian,
+        GTSD.MiddleMississippian,
+        GTSD.MiddleTriassic,
+        GTSD.MiddleJurassic,
+        GTSD.UpperJurassic,
+        GTSD.MiddleOrdovician,
+        GTSD.LowerCretaceous,
+        GTSD.UpperPennsylvanian,
+        GTSD.LowerDevonian,
+        GTSD.UpperTriassic,
+        GTSD.MiddlePennsylvanian,
+        GTSD.LowerTriassic,
+        GTSD.LowerOrdovician,
+        GTSD.LowerJurassic,
+        GTSD.UpperPleistocene,
+        GTSD.MiddleDevonian,
+        GTSD.LowerMississippian,
+    ]
+
+    uppers = [x for x in g.objects(STRAT.Upper, SKOS.prefLabel)]
+    middles = [x for x in g.objects(STRAT.Middle, SKOS.prefLabel)]
+    lowers = [x for x in g.objects(STRAT.Lower, SKOS.prefLabel)]
+
+    def get_by_lang(lst, lang):
+        for x in lst:
+            if x.language == lang:
+                return x
+        return None
+
+    for x in upper_middle_lower:
+        print(x)
+        if "Upper" in str(x):
+            bare = URIRef(str(x).replace("Upper", ""))
+            for o in g.objects(bare, SKOS.prefLabel):
+                new_pl = Literal(get_by_lang(uppers, o.language) + " " + str(o), lang=o.language)
+                g.add((x, SKOS.prefLabel, new_pl))
+
+        if "Middle" in str(x):
+            bare = URIRef(str(x).replace("Middle", ""))
+            for o in g.objects(bare, SKOS.prefLabel):
+                new_pl = Literal(get_by_lang(middles, o.language) + " " + str(o), lang=o.language)
+                g.add((x, SKOS.prefLabel, new_pl))
+
+        if "Lower" in str(x):
+            bare = URIRef(str(x).replace("Lower", ""))
+            for o in g.objects(bare, SKOS.prefLabel):
+                new_pl = Literal(get_by_lang(lowers, o.language) + " " + str(o), lang=o.language)
+                g.add((x, SKOS.prefLabel, new_pl))
 
     subjects_to_strip = [
         DCTERMS.bibliographicCitation,

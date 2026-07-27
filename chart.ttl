@@ -678,156 +678,6 @@ gtsd:RGBHex
 This datatype uses a microformat of "#{R}{G}{B}" with hexidecimal value for {R}, {G} & {B} between 00 and FF."""@en ;
 .
 
-gtsd:Series2
-    skos:prefLabel
-        "Şöbə 2"@az ,
-        "Segona sèrie"@ca ,
-        "oddělení 2"@cs ,
-        "Serie 2"@de ,
-        "Series 2"@en ,
-        "Serie 2"@es ,
-        "Serie 2"@es-a ,
-        "2 Serie"@eu ,
-        "Sarja 2"@fi ,
-        "Séries 2"@fr ,
-        "2. sorozat"@hu ,
-        "Seri 2"@id ,
-        "Serie 2"@it ,
-        "シリーズ 2"@ja ,
-        "제2세"@ko ,
-        "2 skyrius"@lt ,
-        "Serie 2"@nl ,
-        "Serie 2"@nl-be ,
-        "Serie 2"@no ,
-        "Seria 2"@pl ,
-        "Série 2"@pt ,
-        "Série 2"@pt-br ,
-        "Отдел 2"@ru ,
-        "séria 2"@sk ,
-        "Seri 2"@tr ,
-        "第二统"@zh ;
-.
-
-gtsd:Stage10
-    skos:prefLabel
-        "Mərtəbə 10"@az ,
-        "Desè estatge"@ca ,
-        "stupeň 10"@cs ,
-        "Stufe 10"@de ,
-        "Stage 10"@en ,
-        "Piso 10"@es ,
-        "Piso 10"@es-a ,
-        "10 Estai"@eu ,
-        "Vaihe 10"@fi ,
-        "Étage 10"@fr ,
-        "10. emelet"@hu ,
-        "Jenjang 10"@id ,
-        "Piano 10"@it ,
-        "ステージ 10"@ja ,
-        "제10절"@ko ,
-        "10 aukštas"@lt ,
-        "Etage 10"@nl ,
-        "Etage 10"@nl-be ,
-        "Etasje 10"@no ,
-        "Piętro 10"@pl ,
-        "Andar 10"@pt ,
-        "Andar 10"@pt-br ,
-        "Ярус 10"@ru ,
-        "stupeň 10"@sk ,
-        "Kat 10"@tr ,
-        "第十阶"@zh ;
-.
-
-gtsd:Stage2
-    skos:prefLabel
-        "Mərtəbə 2"@az ,
-        "Segon estatge"@ca ,
-        "stupeň 2"@cs ,
-        "Stufe 2"@de ,
-        "Stage 2"@en ,
-        "Piso 2"@es ,
-        "Piso 2"@es-a ,
-        "2 Estai"@eu ,
-        "Vaihe 2"@fi ,
-        "Étage 2"@fr ,
-        "2. emelet"@hu ,
-        "Jenjang 2"@id ,
-        "Piano 2"@it ,
-        "ステージ 2"@ja ,
-        "제2절"@ko ,
-        "2 aukštas"@lt ,
-        "Etage 2"@nl ,
-        "Etage 2"@nl-be ,
-        "Etasje 2"@no ,
-        "Piętro 2"@pl ,
-        "Andar 2"@pt ,
-        "Andar 2"@pt-br ,
-        "Ярус 2"@ru ,
-        "stupeň 2"@sk ,
-        "Kat 2"@tr ,
-        "第二阶"@zh ;
-.
-
-gtsd:Stage3
-    skos:prefLabel
-        "Mərtəbə 3"@az ,
-        "Tercer estatge"@ca ,
-        "stupeň 3"@cs ,
-        "Stufe 3"@de ,
-        "Stage 3"@en ,
-        "Piso 3"@es ,
-        "Piso 3"@es-a ,
-        "3 Estai"@eu ,
-        "Vaihe 3"@fi ,
-        "Étage 3"@fr ,
-        "3. emelet"@hu ,
-        "Jenjang 3"@id ,
-        "Piano 3"@it ,
-        "ステージ 3"@ja ,
-        "제3절"@ko ,
-        "3 aukštas"@lt ,
-        "Etage 3"@nl ,
-        "Etage 3"@nl-be ,
-        "Etasje 3"@no ,
-        "Piętro 3"@pl ,
-        "Andar 3"@pt ,
-        "Andar 3"@pt-br ,
-        "Ярус 3"@ru ,
-        "stupeň 3"@sk ,
-        "Kat 3"@tr ,
-        "第三阶"@zh ;
-.
-
-gtsd:Stage4
-    skos:prefLabel
-        "Mərtəbə 4"@az ,
-        "Quart estatge"@ca ,
-        "stupeň 4"@cs ,
-        "Stufe 4"@de ,
-        "Stage 4"@en ,
-        "Piso 4"@es ,
-        "Piso 4"@es-a ,
-        "4 Estai"@eu ,
-        "Vaihe 4"@fi ,
-        "Étage 4"@fr ,
-        "4. emelet"@hu ,
-        "Jenjang 4"@id ,
-        "Piano 4"@it ,
-        "ステージ 4"@ja ,
-        "제4절"@ko ,
-        "4 aukštas"@lt ,
-        "Etage 4"@nl ,
-        "Etage 4"@nl-be ,
-        "Etasje 4"@no ,
-        "Piętro 4"@pl ,
-        "Andar 4"@pt ,
-        "Andar 4"@pt-br ,
-        "Ярус 4"@ru ,
-        "stupeň 4"@sk ,
-        "Kat 4"@tr ,
-        "第四阶"@zh ;
-.
-
 gtsd:SubPeriods
     a skos:Collection ;
     rdfs:isDefinedBy ds: ;
@@ -3233,6 +3083,33 @@ gtsd:CambrianStage10
         "距今 491.0 至 486.85 百万年前的时期"@zh ;
     skos:inScheme cs: ;
     skos:notation "ep10"^^gtsd:ccgmShortCode ;
+    skos:prefLabel
+        "Mərtəbə 10"@az ,
+        "Desè estatge"@ca ,
+        "stupeň 10"@cs ,
+        "Stufe 10"@de ,
+        "Stage 10"@en ,
+        "Piso 10"@es ,
+        "Piso 10"@es-a ,
+        "10 Estai"@eu ,
+        "Vaihe 10"@fi ,
+        "Étage 10"@fr ,
+        "10. emelet"@hu ,
+        "Jenjang 10"@id ,
+        "Piano 10"@it ,
+        "ステージ 10"@ja ,
+        "제10절"@ko ,
+        "10 aukštas"@lt ,
+        "Etage 10"@nl ,
+        "Etage 10"@nl-be ,
+        "Etasje 10"@no ,
+        "Piętro 10"@pl ,
+        "Andar 10"@pt ,
+        "Andar 10"@pt-br ,
+        "Ярус 10"@ru ,
+        "stupeň 10"@sk ,
+        "Kat 10"@tr ,
+        "第十阶"@zh ;
     time:hasBeginning
         [
             skos:note "uncertain" ;
@@ -3281,6 +3158,33 @@ gtsd:CambrianStage2
         "距今 529.0 至 521.0 百万年前的时期"@zh ;
     skos:inScheme cs: ;
     skos:notation "ep3"^^gtsd:ccgmShortCode ;
+    skos:prefLabel
+        "Mərtəbə 2"@az ,
+        "Segon estatge"@ca ,
+        "stupeň 2"@cs ,
+        "Stufe 2"@de ,
+        "Stage 2"@en ,
+        "Piso 2"@es ,
+        "Piso 2"@es-a ,
+        "2 Estai"@eu ,
+        "Vaihe 2"@fi ,
+        "Étage 2"@fr ,
+        "2. emelet"@hu ,
+        "Jenjang 2"@id ,
+        "Piano 2"@it ,
+        "ステージ 2"@ja ,
+        "제2절"@ko ,
+        "2 aukštas"@lt ,
+        "Etage 2"@nl ,
+        "Etage 2"@nl-be ,
+        "Etasje 2"@no ,
+        "Piętro 2"@pl ,
+        "Andar 2"@pt ,
+        "Andar 2"@pt-br ,
+        "Ярус 2"@ru ,
+        "stupeň 2"@sk ,
+        "Kat 2"@tr ,
+        "第二阶"@zh ;
     time:hasBeginning
         [
             skos:note "uncertain" ;
@@ -3329,6 +3233,33 @@ gtsd:CambrianStage3
         "距今 521.0 至 514.5 百万年前的时期"@zh ;
     skos:inScheme cs: ;
     skos:notation "ep2"^^gtsd:ccgmShortCode ;
+    skos:prefLabel
+        "Mərtəbə 3"@az ,
+        "Tercer estatge"@ca ,
+        "stupeň 3"@cs ,
+        "Stufe 3"@de ,
+        "Stage 3"@en ,
+        "Piso 3"@es ,
+        "Piso 3"@es-a ,
+        "3 Estai"@eu ,
+        "Vaihe 3"@fi ,
+        "Étage 3"@fr ,
+        "3. emelet"@hu ,
+        "Jenjang 3"@id ,
+        "Piano 3"@it ,
+        "ステージ 3"@ja ,
+        "제3절"@ko ,
+        "3 aukštas"@lt ,
+        "Etage 3"@nl ,
+        "Etage 3"@nl-be ,
+        "Etasje 3"@no ,
+        "Piętro 3"@pl ,
+        "Andar 3"@pt ,
+        "Andar 3"@pt-br ,
+        "Ярус 3"@ru ,
+        "stupeň 3"@sk ,
+        "Kat 3"@tr ,
+        "第三阶"@zh ;
     time:hasBeginning
         [
             skos:note "uncertain" ;
@@ -3377,6 +3308,33 @@ gtsd:CambrianStage4
         "距今 514.5 至 506.5 百万年前的时期"@zh ;
     skos:inScheme cs: ;
     skos:notation "ep4"^^gtsd:ccgmShortCode ;
+    skos:prefLabel
+        "Mərtəbə 4"@az ,
+        "Quart estatge"@ca ,
+        "stupeň 4"@cs ,
+        "Stufe 4"@de ,
+        "Stage 4"@en ,
+        "Piso 4"@es ,
+        "Piso 4"@es-a ,
+        "4 Estai"@eu ,
+        "Vaihe 4"@fi ,
+        "Étage 4"@fr ,
+        "4. emelet"@hu ,
+        "Jenjang 4"@id ,
+        "Piano 4"@it ,
+        "ステージ 4"@ja ,
+        "제4절"@ko ,
+        "4 aukštas"@lt ,
+        "Etage 4"@nl ,
+        "Etage 4"@nl-be ,
+        "Etasje 4"@no ,
+        "Piętro 4"@pl ,
+        "Andar 4"@pt ,
+        "Andar 4"@pt-br ,
+        "Ярус 4"@ru ,
+        "stupeň 4"@sk ,
+        "Kat 4"@tr ,
+        "第四阶"@zh ;
     time:hasBeginning
         [
             skos:note "uncertain" ;
@@ -10830,6 +10788,33 @@ gtsd:CambrianSeries2
         gtsd:CambrianStage3 ,
         gtsd:CambrianStage4 ;
     skos:notation "Ep2"^^gtsd:ccgmShortCode ;
+    skos:prefLabel
+        "Şöbə 2"@az ,
+        "Segona sèrie"@ca ,
+        "oddělení 2"@cs ,
+        "Serie 2"@de ,
+        "Series 2"@en ,
+        "Serie 2"@es ,
+        "Serie 2"@es-a ,
+        "2 Serie"@eu ,
+        "Sarja 2"@fi ,
+        "Séries 2"@fr ,
+        "2. sorozat"@hu ,
+        "Seri 2"@id ,
+        "Serie 2"@it ,
+        "シリーズ 2"@ja ,
+        "제2세"@ko ,
+        "2 skyrius"@lt ,
+        "Serie 2"@nl ,
+        "Serie 2"@nl-be ,
+        "Serie 2"@no ,
+        "Seria 2"@pl ,
+        "Série 2"@pt ,
+        "Série 2"@pt-br ,
+        "Отдел 2"@ru ,
+        "séria 2"@sk ,
+        "Seri 2"@tr ,
+        "第二统"@zh ;
     time:hasBeginning
         [
             skos:note "uncertain" ;
