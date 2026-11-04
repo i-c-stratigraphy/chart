@@ -18,7 +18,7 @@ const emit = defineEmits<{
 
 const NS = {
     dcterms: "http://purl.org/dc/terms/",
-    icsVisual: "http://resource.geosciml.org/ontology/ics-visual-chart/",
+    icsVisual: "https://data.stratigraphy.org/data/vis/",
     schema: "https://schema.org/",
 }
 
@@ -63,12 +63,12 @@ const blurbSections = computed(() => {
 <template>
     <div class="grid-wrapper">
         <div class="grid-7" v-if="props.kind == 'default'">
-            <ChartHeader tag="div" class="header v-text" iri="http://resource.geosciml.org/classifier/ics/ischart/Eons" :label-type="props.labelType" />
-            <ChartHeader tag="div" class="header v-text" iri="http://resource.geosciml.org/classifier/ics/ischart/Eras" :label-type="props.labelType" />
-            <ChartHeader tag="div" class="header v-text" iri="http://resource.geosciml.org/classifier/ics/ischart/Periods" :label-type="props.labelType" />
-            <ChartHeader tag="div" class="headerx col-span-2" iri="http://resource.geosciml.org/classifier/ics/ischart/Epochs" :label-type="props.labelType" />
+            <ChartHeader tag="div" class="header v-text" iri="https://data.stratigraphy.org/data/gts/Eons" :label-type="props.labelType" />
+            <ChartHeader tag="div" class="header v-text" iri="https://data.stratigraphy.org/data/gts/Eras" :label-type="props.labelType" />
+            <ChartHeader tag="div" class="header v-text" iri="https://data.stratigraphy.org/data/gts/Periods" :label-type="props.labelType" />
+            <ChartHeader tag="div" class="headerx col-span-2" iri="https://data.stratigraphy.org/data/gts/Epochs" :label-type="props.labelType" />
             <div style="position:relative">
-                <ChartHeader tag="span" class="header" iri="http://resource.geosciml.org/classifier/ics/ischart/Ages" :label-type="props.labelType" />
+                <ChartHeader tag="span" class="header" iri="https://data.stratigraphy.org/data/gts/Ages" :label-type="props.labelType" />
                 <span class="gssp-text v-text">GSSP</span>
             </div>
             <div class="header center age-text">{{ getUiLabel(`${NS.icsVisual}NumericAge`, "Numeric Age") }}</div>
@@ -77,11 +77,11 @@ const blurbSections = computed(() => {
         </div>
         <template v-else>
             <div class="grid-5 precambrian-grid">
-                <ChartHeader tag="div" class="header v-text" iri="http://resource.geosciml.org/classifier/ics/ischart/SuperEons" :label-type="props.labelType" />
-                <ChartHeader tag="div" class="header v-text" iri="http://resource.geosciml.org/classifier/ics/ischart/Eons" :label-type="props.labelType" />
-                <ChartHeader tag="div" class="headerx" iri="http://resource.geosciml.org/classifier/ics/ischart/Eras" :label-type="props.labelType" />
+                <ChartHeader tag="div" class="header v-text" iri="https://data.stratigraphy.org/data/gts/SuperEons" :label-type="props.labelType" />
+                <ChartHeader tag="div" class="header v-text" iri="https://data.stratigraphy.org/data/gts/Eons" :label-type="props.labelType" />
+                <ChartHeader tag="div" class="headerx" iri="https://data.stratigraphy.org/data/gts/Eras" :label-type="props.labelType" />
                 <div  style="position:relative">
-                    <ChartHeader tag="span" class="header" iri="http://resource.geosciml.org/classifier/ics/ischart/Periods" :label-type="props.labelType" />
+                    <ChartHeader tag="span" class="header" iri="https://data.stratigraphy.org/data/gts/Periods" :label-type="props.labelType" />
                     <span class="v-text gssp-text ">GSSP<br/> GSSA</span>
                 </div>
                 <div class="header center age-text">{{ getUiLabel(`${NS.icsVisual}NumericAge`, "Numeric Age") }}</div>

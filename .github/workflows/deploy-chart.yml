@@ -1,62 +1,73 @@
-name: Publish GitHub Pages
-
+name: Publish themed chart and legacy archive
 on:
+  push:
+    branches: [main]
+  pull_request:
   release:
     types: [published]
-
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: github-pages
+  cancel-in-progress: false
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-
-      - name: Setup pnpm & install workspace
-        uses: pnpm/action-setup@v3
+      - uses: actions/checkout@v7
+      - name: Check out the last published static chart
+        uses: actions/checkout@v7
         with:
-          version: 10.28.2
-          run_install: true
-      - name: Build chart ui
-        working-directory: ./chart-ui
-        run: CI=false pnpm generate
-
-      - name: Verify final build output
-        run: |
-          echo "Final build output contents:"
-          ls -la ./chart-ui/.output/public/
-
-      - name: Upload static files as artifacts
-        id: deployment
-        uses: actions/upload-pages-artifact@v4
+          ref: ead96618bc233d50ad5a7b9b4465b0b20af4c4a7
+          path: legacy-site
+      - uses: actions/setup-node@v7
         with:
-          path: chart-ui/.output/public
-
-      - name: Upload chart-ui build for PDF generation
-        uses: actions/upload-artifact@v4
+          node-version: '24'
+      - name: Install pnpm
+        run: npm install --global pnpm@10.28.2
+      - name: Install locked chart dependencies
+        working-directory: chart-ui
+        run: pnpm install --frozen-lockfile
+      - name: Validate application and RDF compatibility
+        working-directory: chart-ui
+        run: node scripts/check-chart-data.mjs
+      - name: Generate the chart
+        working-directory: chart-ui
+        run: pnpm generate
+        env:
+          NUXT_APP_BASE_URL: /chart/
+      - name: Validate archive rebasing
+        run: ruby scripts/test_assemble_sites.rb
+      - name: Assemble current chart and /old
+        run: ruby scripts/assemble_sites.rb chart-ui/.output/public legacy-site _site /chart
+      - uses: actions/upload-pages-artifact@v5
+        with:
+          path: _site
+      - name: Upload chart for release PDF generation
+        if: github.event_name == 'release'
+        uses: actions/upload-artifact@v7
         with:
           name: chart-ui-build
           path: chart-ui/.output/public
-
   deploy:
-    runs-on: ubuntu-latest
+    if: github.event_name != 'pull_request'
     needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-    # Grant GITHUB_TOKEN the permissions required to make a Pages deployment
-    permissions:
-      pages: write # to deploy to Pages
-      id-token: write # to verify the deployment originates from an appropriate source
-
     steps:
-      - name: Deploy to GitHub Pages
+      - uses: actions/deploy-pages@v5
         id: deployment
-        if: ${{ !env.ACT }}
-        uses: actions/deploy-pages@v4
-
   publish-pdfs:
+    if: github.event_name == 'release'
     needs: build
     uses: ./.github/workflows/generate-pdfs.yml
     with:
       tag_name: ${{ github.event.release.tag_name }}
     permissions:
-      contents: write # Required to upload PDFs to the GitHub release
+      contents: write

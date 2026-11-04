@@ -8,7 +8,7 @@ const NS = {
   skos: 'http://www.w3.org/2004/02/skos/core#',
   time: 'http://www.w3.org/2006/time#',
   gts: 'http://resource.geosciml.org/ontology/timescale/gts#',
-  ischart: 'http://resource.geosciml.org/classifier/ics/ischart/',
+  ischart: 'https://data.stratigraphy.org/data/gts/',
   sdo: 'https://schema.org/',
   sh: 'http://www.w3.org/ns/shacl#',
   rank: 'http://resource.geosciml.org/ontology/timescale/rank/',

@@ -1,0 +1,77 @@
+[
+  {
+    "name": "About ICS",
+    "link": "https://stratigraphy.org/executive",
+    "dropdown": [
+      {
+        "name": "Executive",
+        "link": "https://stratigraphy.org/executive"
+      },
+      {
+        "name": "Subcommissions",
+        "link": "https://stratigraphy.org/subcommissions"
+      },
+      {
+        "name": "Statutes & Guidelines",
+        "link": "https://stratigraphy.org/statutes"
+      },
+      {
+        "name": "Prizes",
+        "link": "https://stratigraphy.org/prizes"
+      }
+    ]
+  },
+  {
+    "name": "Stratigraphy",
+    "link": "https://stratigraphy.org/chart",
+    "dropdown": [
+      {
+        "name": "Chart / Time Scale",
+        "link": "https://stratigraphy.org/chart"
+      },
+      {
+        "name": "Correlation Tables",
+        "link": "https://stratigraphy.org/correlations"
+      },
+      {
+        "name": "GSSPs",
+        "link": "https://stratigraphy.org/gssps/"
+      },
+      {
+        "name": "Data Models",
+        "link": "https://stratigraphy.org/data-models"
+      },
+      {
+        "name": "Stratigraphic Guide",
+        "link": "https://stratigraphy.org/guide/"
+      }
+    ]
+  },
+  {
+    "name": "Resources",
+    "link": "https://stratigraphy.org/publications",
+    "dropdown": [
+      {
+        "name": "Annual Reports",
+        "link": "https://stratigraphy.org/annual-reports"
+      },
+      {
+        "name": "Geobiodiversity Database",
+        "link": "https://stratigraphy.org/gbdb"
+      },
+      {
+        "name": "Publications",
+        "link": "https://stratigraphy.org/publications"
+      },
+      {
+        "name": "Links",
+        "link": "https://stratigraphy.org/links"
+      }
+    ]
+  },
+  {
+    "name": "Chart",
+    "link": "https://stratigraphy.org/chart",
+    "highlight": true
+  }
+]

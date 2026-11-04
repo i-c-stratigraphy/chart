@@ -16,9 +16,9 @@ const NS = {
   dcterms: "http://purl.org/dc/terms/",
   owl: "http://www.w3.org/2002/07/owl#",
   skos: "http://www.w3.org/2004/02/skos/core#",
-  cs: "http://resource.geosciml.org/classifier/ics/ischart",
-  icsVisual: "http://resource.geosciml.org/ontology/ics-visual-chart/",
-  strat: "http://resource.geosciml.org/ontology/stratigraphy/",
+  cs: "https://data.stratigraphy.org/def/chart",
+  icsVisual: "https://data.stratigraphy.org/data/vis/",
+  strat: "https://data.stratigraphy.org/data/strat/",
 };
 
 const target = useRouteQuery("target", "");

@@ -1,0 +1,45 @@
+/* Shared ICS branding, scoped to preserve scientific chart colours and print layouts. */
+html, body { margin: 0; padding: 0; background: #fff; font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", sans-serif; }
+.ics-site-header, .ics-site-footer { text-align: left; line-height: 1.5; color: #363636; }
+.ics-title-bar { display: flex; align-items: center; gap: 1.5rem; padding: 1.5rem 3rem; }
+.ics-title-bar h1 { color: #0404ff; font: 700 2.5rem/1.125 "Times New Roman", Times, serif; margin: 0; }
+.ics-logo { flex: 0 0 5rem; display: inline-flex; background: #0404ff; mask: center / contain no-repeat; }
+.ics-logo img { width: 5rem; height: auto; opacity: 0; }
+.ics-navbar { padding-inline: 1.5rem; background: #d45113; min-height: 3.25rem; }
+.ics-nav-items { display: flex; align-items: stretch; }
+.ics-navbar a { display: block; padding: .75rem; color: #fff; text-decoration: none; }
+.ics-navbar a:hover { background: #e77929; color: #242424; }
+.ics-nav-group { position: relative; }
+.ics-nav-dropdown { display: none; position: absolute; top: 100%; left: 0; z-index: 30; min-width: 15rem; background: #fff; box-shadow: 0 8px 8px #0002; border-radius: 0 0 6px 6px; padding: .5rem 0; }
+.ics-nav-dropdown a { color: #363636; padding: .375rem 1rem; white-space: nowrap; }
+.ics-nav-dropdown a:hover { background: #f9a03f; color: #242424; }
+.ics-nav-group:hover .ics-nav-dropdown, .ics-nav-group:focus-within .ics-nav-dropdown { display: block; }
+.ics-navbar a.ics-nav-highlight { background: #f9a03f; color: #242424; font-weight: 700; }
+.ics-hero { height: clamp(10rem, 22vw, 20rem); background-position: center; background-size: cover; }
+.ics-chart-introduction { padding: 3rem; }
+.ics-chart-introduction h2 { margin-top: 0; font-size: 2rem; }
+.ics-chart-introduction a, .ics-site-footer a { color: #d45113; }
+.ics-site-footer { padding: 3rem 1.5rem; background: #f8dda4; text-align: center; }
+.ics-site-footer nav { display: flex; flex-wrap: wrap; justify-content: center; gap: .5em 1em; margin-bottom: 1em; }
+.ics-site-footer a { white-space: nowrap; text-decoration: none; }
+.ics-site-footer a:hover { text-decoration: underline; }
+.ics-site-header a:focus-visible, .ics-site-footer a:focus-visible, .ics-menu-toggle:focus-visible { outline: 3px solid #f9a03f; outline-offset: 3px; }
+.ics-menu-toggle { display: none; padding: .75rem; border: 0; background: transparent; color: #fff; font: inherit; cursor: pointer; }
+.ics-skip-link { position: absolute; left: -10000px; }
+.ics-skip-link:focus { left: 1rem; top: 1rem; z-index: 50; background: white; padding: .75rem; }
+@media (max-width: 768px) {
+  .ics-title-bar { padding: 1.25rem 1rem; gap: 1rem; }
+  .ics-title-bar h1 { font-size: 1.75rem; }
+  .ics-logo { flex-basis: 3.5rem; }
+  .ics-logo img { width: 3.5rem; }
+  .ics-chart-introduction { padding: 1.5rem 1rem; }
+}
+@media (max-width: 1023px) {
+  .ics-menu-toggle { display: block; }
+  .ics-nav-items { display: none; }
+  .ics-nav-items.is-open { display: block; }
+  .ics-nav-dropdown { display: block; position: static; box-shadow: none; background: transparent; padding: 0 0 0 1rem; }
+  .ics-nav-dropdown a { color: white; white-space: normal; }
+}
+@media print { html, body { background: white; } }
+.ics-site-header, .ics-site-footer { font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", sans-serif; }

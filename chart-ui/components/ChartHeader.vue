@@ -4,34 +4,34 @@ import { useLabelContext, type LabelType } from "@/utils/label";
 
 const NS = {
   gts: "http://resource.geosciml.org/ontology/timescale/gts#",
-  strat: "http://resource.geosciml.org/ontology/stratigraphy/",
+  strat: "https://data.stratigraphy.org/data/strat/",
 };
 
 const headerRankMap: Record<
   string,
   { chronometric: string; stratigraphic: string }
 > = {
-  "http://resource.geosciml.org/classifier/ics/ischart/Ages": {
+  "https://data.stratigraphy.org/data/gts/Ages": {
     chronometric: `${NS.gts}Age`,
     stratigraphic: `${NS.strat}Stage`,
   },
-  "http://resource.geosciml.org/classifier/ics/ischart/Epochs": {
+  "https://data.stratigraphy.org/data/gts/Epochs": {
     chronometric: `${NS.gts}Epoch`,
     stratigraphic: `${NS.strat}Series`,
   },
-  "http://resource.geosciml.org/classifier/ics/ischart/Periods": {
+  "https://data.stratigraphy.org/data/gts/Periods": {
     chronometric: `${NS.gts}Period`,
     stratigraphic: `${NS.strat}System`,
   },
-  "http://resource.geosciml.org/classifier/ics/ischart/Eras": {
+  "https://data.stratigraphy.org/data/gts/Eras": {
     chronometric: `${NS.gts}Era`,
     stratigraphic: `${NS.strat}Erathem`,
   },
-  "http://resource.geosciml.org/classifier/ics/ischart/Eons": {
+  "https://data.stratigraphy.org/data/gts/Eons": {
     chronometric: `${NS.gts}Eon`,
     stratigraphic: `${NS.strat}Eonothem`,
   },
-  "http://resource.geosciml.org/classifier/ics/ischart/SuperEons": {
+  "https://data.stratigraphy.org/data/gts/SuperEons": {
     chronometric: `${NS.strat}Supereon`,
     stratigraphic: `${NS.strat}Supereonothem`,
   },

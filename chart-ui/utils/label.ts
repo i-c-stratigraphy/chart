@@ -4,8 +4,8 @@ import type { AnyPointer } from "clownface";
 
 const NS = {
   skos: "http://www.w3.org/2004/02/skos/core#",
-  strat: "http://resource.geosciml.org/ontology/stratigraphy/",
-  ischart: "http://resource.geosciml.org/classifier/ics/ischart/",
+  strat: "https://data.stratigraphy.org/data/strat/",
+  ischart: "https://data.stratigraphy.org/data/gts/",
 };
 
 const { namedNode } = n3.DataFactory;
