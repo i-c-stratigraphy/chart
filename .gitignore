@@ -1,0 +1,11 @@
+
+# Local tooling and generated files
+.DS_Store
+.idea/
+.venv/
+__pycache__/
+*.py[cod]
+node_modules/
+.env
+.env.*
+!.env.example

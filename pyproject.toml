@@ -1,16 +1,11 @@
 [project]
 name = "chart"
-version = "2026-06.5"
+version = "2026.6.5"
 description = ""
 authors = [{ name = "Nicholas Car", email = "nick@kurrawong.ai" }]
-requires-python = ">=3.12,<4"
+requires-python = ">=3.15,<3.16"
 readme = "README.md"
-classifiers = [
-    "Programming Language :: Python :: 3",
-    "Programming Language :: Python :: 3.12",
-    "Programming Language :: Python :: 3.13",
-    "Programming Language :: Python :: 3.14",
-]
+classifiers = ["Programming Language :: Python :: 3", "Programming Language :: Python :: 3.15"]
 dependencies = [
     "kurra>=2.3.6,<3",
     "pandas>=2.2.3,<3",
@@ -25,5 +20,5 @@ package = false
 default-groups = "all"
 
 [build-system]
-requires = ["uv_build>=0.9.1,<0.10.0"]
+requires = ["uv_build>=0.13.1,<0.14"]
 build-backend = "uv_build"

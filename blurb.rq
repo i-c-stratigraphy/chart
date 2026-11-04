@@ -1,0 +1,21 @@
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX vis: <http://resource.geosciml.org/ontology/ics-visual-chart/>
+
+SELECT *
+WHERE {
+    BIND ("en" AS ?l)
+    vis:mainBlurb skos:prefLabel ?a .
+    FILTER (LANG(?a) = ?l)
+
+    vis:ccgm skos:prefLabel ?b .
+    FILTER (LANG(?b) = ?l)
+
+    #dcterms:contributor skos:prefLabel ?c .
+    #dcterms:bibliographicCitation skos:prefLabel ?d .
+    #schema:copyrightNotice skos:prefLabel ?e .
+    #schema:license skos:prefLabel ?f .
+    #vis:translator skos:prefLabel ?g .
+    #vis:translatorURL skos:prefLabel ?h .
+    #vis:translatorLogo skos:prefLabel ?i .
+}
