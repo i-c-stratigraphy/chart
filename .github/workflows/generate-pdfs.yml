@@ -36,9 +36,10 @@ jobs:
       - name: Get chart version
         id: chart-version
         run: |
-          echo version="$(kurra sparql chart.ttl 'select * where { <http://resource.geosciml.org/classifier/ics/ischart> <http://www.w3.org/2002/07/owl#versionInfo> ?o } limit 1' --response-format json \
-          | python3 -c "import sys, ast, json; print(json.dumps(ast.literal_eval(sys.stdin.read())))" \
-          | jq -r '.results.bindings[0].o')" >> $GITHUB_OUTPUT
+          set -euo pipefail
+          version=$(kurra sparql chart.ttl 'SELECT ?version WHERE { <https://data.stratigraphy.org/def/chart> <http://www.w3.org/2002/07/owl#versionInfo> ?version } LIMIT 1' --response-format json \
+            | jq -er '.results.bindings[0].version | select(type == "string" and length > 0)')
+          echo "version=$version" >> "$GITHUB_OUTPUT"
 
       - name: Install Chrome dependencies (act only)
         if: ${{ env.ACT }}
