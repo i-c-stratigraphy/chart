@@ -74,6 +74,9 @@ Every export is checked for exactly one A3 landscape page. If the notes overflow
 available lower margin beneath the second and third chart columns, preserving the chart geometry and font sizes. If the
 result still does not fit, the build fails instead of saving or publishing a multiple-page chart.
 
+To regenerate PDFs for an existing release, run the publishing workflow manually on its tag and supply that tag as
+`release_tag`. Leaving the input empty only rebuilds the website.
+
 After dependencies are installed, you can also run the builder directly:
 
 [source,bash]

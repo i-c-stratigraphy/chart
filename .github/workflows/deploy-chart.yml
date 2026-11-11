@@ -6,6 +6,11 @@ on:
   release:
     types: [published]
   workflow_dispatch:
+    inputs:
+      release_tag:
+        description: Existing release tag to regenerate PDFs for (optional)
+        required: false
+        type: string
 permissions:
   contents: read
 concurrency:
@@ -45,7 +50,7 @@ jobs:
         with:
           path: _site
       - name: Upload chart for release PDF generation
-        if: github.event_name == 'release'
+        if: github.event_name == 'release' || (github.event_name == 'workflow_dispatch' && inputs.release_tag != '')
         uses: actions/upload-artifact@v7
         with:
           name: chart-ui-build
@@ -64,10 +69,10 @@ jobs:
       - uses: actions/deploy-pages@v5
         id: deployment
   publish-pdfs:
-    if: github.event_name == 'release'
+    if: github.event_name == 'release' || (github.event_name == 'workflow_dispatch' && inputs.release_tag != '')
     needs: build
     uses: ./.github/workflows/generate-pdfs.yml
     with:
-      tag_name: ${{ github.event.release.tag_name }}
+      tag_name: ${{ github.event.release.tag_name || inputs.release_tag }}
     permissions:
       contents: write

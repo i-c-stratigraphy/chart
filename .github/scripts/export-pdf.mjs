@@ -104,14 +104,14 @@ export async function exportPdf({ chromePath, url, output, timeoutMs = 180000 })
     };
     let pdf = await page.pdf(pdfOptions);
     let pageCount = (await PDFDocument.load(pdf)).getPageCount();
-    if (pageCount > 1) {
+    while (pageCount > 1) {
       const moved = await page.evaluate(() => {
         const destination = document.querySelector(".overflow-notes");
         const notes = document.querySelectorAll(".chart-notes .publication-note");
         if (!destination || !notes.length) return 0;
         const charts = Array.from(document.querySelectorAll(".grid-7, .precambrian-grid"));
         const before = charts.map(chart => chart.getBoundingClientRect().toJSON());
-        destination.append(...notes);
+        destination.prepend(notes[notes.length - 1]);
         for (const [index, chart] of charts.entries()) {
           const after = chart.getBoundingClientRect();
           for (const dimension of ["x", "y", "width", "height"]) {
@@ -120,12 +120,14 @@ export async function exportPdf({ chromePath, url, output, timeoutMs = 180000 })
             }
           }
         }
-        return notes.length;
+        return 1;
       });
       if (moved) {
         console.log(`[export-pdf] Reflowed ${moved} publication notes into the lower margin`);
         pdf = await page.pdf(pdfOptions);
         pageCount = (await PDFDocument.load(pdf)).getPageCount();
+      } else {
+        break;
       }
     }
     if (pageCount !== 1) {
