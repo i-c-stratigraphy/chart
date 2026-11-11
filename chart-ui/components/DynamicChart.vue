@@ -87,7 +87,12 @@ const scalingOptions = [
 ];
 
 const { cf, loadStore, error: rdfError } = useRDFStore();
-const { getLabel, getUiLabel } = createLabelProvider(cf, selectedLang, labelType);
+const { getLabel, getUiLabel, getUiLabelOptional } = createLabelProvider(cf, selectedLang, labelType);
+const appBaseURL = useRuntimeConfig().app.baseURL;
+const colourCredit = computed(() => getUiLabelOptional(`${NS.icsVisual}ccgm`));
+const translatorCredit = computed(() => getUiLabelOptional(`${NS.icsVisual}translator`, selectedLang.value, false));
+const translatorURL = computed(() => getUiLabelOptional(`${NS.icsVisual}translatorURL`, selectedLang.value, false));
+const translatorLogo = computed(() => getUiLabelOptional(`${NS.icsVisual}translatorLogo`, selectedLang.value, false));
 
 watch(
   [ready, error, rdfError],
@@ -388,17 +393,31 @@ const downloadPdf = () => {
           </label>
         </div>
         <div class="grid-4">
-          <ChartGridCombined
-            v-for="num in 4"
-            :node="data[num - 1]"
-            :lang="selectedLang"
-            :key="num - 1 + selectedLang"
-            :scaling="getScaleObj(selectedScale)"
-            :label-type="labelType"
-            :kind="num === 4 ? 'precambrian' : 'default'"
-            :meta="meta"
-            @view="handleView"
-          />
+          <div v-for="num in 4" :key="num - 1 + selectedLang" class="chart-column">
+            <ChartGridCombined
+              :node="data[num - 1]"
+              :lang="selectedLang"
+              :scaling="getScaleObj(selectedScale)"
+              :label-type="labelType"
+              :kind="num === 4 ? 'precambrian' : 'default'"
+              :meta="meta"
+              @view="handleView"
+            />
+            <div v-if="num === 1" class="print-column-footer colour-credit" :lang="selectedLang">
+              <p v-if="colourCredit"><LinkedText :text="colourCredit" /></p>
+              <img :src="`${appBaseURL}logo-ccgm.png`" alt="CCGM" class="ccgm-logo" />
+            </div>
+            <div
+              v-if="num === 2 && (translatorCredit || translatorURL || translatorLogo)"
+              class="print-column-footer translator-credit"
+              :lang="selectedLang"
+            >
+              <p v-if="translatorCredit"><LinkedText :text="translatorCredit" /></p>
+              <p v-if="translatorURL"><a :href="translatorURL">{{ translatorURL }}</a></p>
+              <img v-if="translatorLogo" :src="translatorLogo" alt="" class="translator-logo" />
+            </div>
+            <div v-if="num === 2" class="print-column-footer overflow-notes" :lang="selectedLang"></div>
+          </div>
         </div>
       </div>
     </div>
@@ -447,6 +466,14 @@ body {
 .grid-5 {
   display: grid;
   grid-template-columns: min-content repeat(3, 1fr) min-content;
+}
+
+.chart-column {
+  min-width: 0;
+}
+
+.print-column-footer {
+  display: none;
 }
 
 .cell {
@@ -542,15 +569,74 @@ body {
   }
 
   .grid-5 img {
-    max-height: 4rem;
+    max-height: 6rem;
+  }
+
+  .print-column-footer {
+    display: block;
+    padding-top: 1.5rem;
+    font-size: 0.8rem;
+    line-height: 1.25;
+    text-align: center;
+    overflow-wrap: anywhere;
+    break-inside: avoid;
+  }
+
+  .print-column-footer p {
+    font-size: inherit;
+    margin: 0;
+    white-space: pre-line;
+  }
+
+  .colour-credit {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+  }
+
+  .colour-credit p {
+    flex: 1;
+  }
+
+  .ccgm-logo {
+    width: 3.5rem;
+    height: 3.5rem;
+    flex: 0 0 auto;
+    object-fit: contain;
+  }
+
+  .translator-logo {
+    max-width: 100%;
+    max-height: 3.5rem;
+    object-fit: contain;
+  }
+
+  .overflow-notes {
+    width: calc(200% + 1rem);
+    text-align: left;
+    line-height: 1.1;
+  }
+
+  .overflow-notes:empty {
+    display: none;
+  }
+
+  .overflow-notes :deep(p) {
+    font-size: inherit;
+    margin: 0 0 0.3em;
+  }
+
+  .overflow-notes :deep(a) {
+    color: #0000ee;
   }
 
   .grid-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
   }
 
-  .chart-notes {
-    font-size: 0.6em;
+  .grid-5 a,
+  .print-column-footer a {
+    color: #0000ee;
   }
 }
 </style>

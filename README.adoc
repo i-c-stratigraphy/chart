@@ -12,7 +12,7 @@ This data form of the Chart will soon be used to produce all PDF and other visua
 
 To publish a release, go to the GitHub releases page and create a new release. This release should be set to create a new tag using SemVer preceded by `v`, but the major and minor versions should reflect the stratigraphic versions, for example `v2023.09.1`.
 
-Creating this tag will trigger a workflow that generates the PDFs and publishes them to the release.
+Publishing the release triggers a workflow that generates the PDFs and attaches them to the release.
 
 == Copyright & License
 
@@ -54,4 +54,29 @@ Visual changes affect the generated PDFs, so any layout, typography, spacing, or
 task test-pdfs
 ----
 
-This runs the local PDF generation workflow and prints the path to the generated `chart-pdf.zip` artifact so it can be inspected before opening a PR or cutting a release.
+This installs the locked chart dependencies and PDF tools, builds the static chart, and writes the Main PDF plus every
+language variant into `output/pdf/`. Google Chrome or Chromium must be installed. On macOS, Google Chrome is detected
+automatically; otherwise set `CHROME_PATH` or pass `--chrome-path /path/to/chrome`.
+
+To preview only English and European Portuguese, plus the Main PDF:
+
+[source,bash]
+----
+task test-pdfs -- --languages en,pt-pt
+----
+
+The local command and GitHub Actions both call `.github/scripts/build-pdfs.mjs`, which discovers the chart version and
+languages from `chart.ttl` and calls the same headless Chrome PDF exporter with `scale=print`. GitHub Actions supplies its
+already-generated static build through `--build-dir chart-ui-build`; local runs build the current source first. Nothing is
+published by the local command. Fonts available on your computer can differ from the GitHub runner's fonts.
+
+Every export is checked for exactly one A3 landscape page. If the notes overflow, publication credits are moved into the
+available lower margin beneath the second and third chart columns, preserving the chart geometry and font sizes. If the
+result still does not fit, the build fails instead of saving or publishing a multiple-page chart.
+
+After dependencies are installed, you can also run the builder directly:
+
+[source,bash]
+----
+node .github/scripts/build-pdfs.mjs --languages en,pt-pt
+----

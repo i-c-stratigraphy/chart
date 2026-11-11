@@ -4,7 +4,8 @@ version: "3"
 
 tasks:
   test-pdfs:
-    desc: Run build + publish-pdfs jobs locally to validate PDF generation
+    desc: Build the chart and export PDFs with the GitHub Actions exporter
     cmds:
-      - gh act release -W .github/workflows/deploy-chart.yml -j publish-pdfs --artifact-server-path /tmp/github-artifacts --artifact-server-port 34568 --action-cache-path /tmp/act-cache
-      - find /tmp/github-artifacts -type f -name 'chart-pdf.zip' -print
+      - npm exec --yes --package=pnpm@10.28.2 -- pnpm --dir chart-ui install --frozen-lockfile
+      - npm install --prefix .github/scripts --no-fund --no-audit --package-lock=false
+      - node .github/scripts/build-pdfs.mjs {{.CLI_ARGS}}

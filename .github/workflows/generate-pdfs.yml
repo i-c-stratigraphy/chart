@@ -14,36 +14,10 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version-file: "pyproject.toml"
-
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: "22"
-
-      - name: Install uv
-        uses: astral-sh/setup-uv@v6
-        with:
-          # Install a specific version of uv.
-          version: "0.8.13"
-
-      - name: Install kurra
-        run: uv tool install kurra
-
-      - name: Get chart version
-        id: chart-version
-        run: |
-          set -euo pipefail
-          version=$(kurra sparql chart.ttl 'SELECT ?version WHERE { <https://data.stratigraphy.org/def/chart> <http://www.w3.org/2002/07/owl#versionInfo> ?version } LIMIT 1' --response-format json \
-            | jq -er '.results.bindings[0].version | select(type == "string" and length > 0)')
-          echo "version=$version" >> "$GITHUB_OUTPUT"
-
-      - name: Install Chrome dependencies (act only)
-        if: ${{ env.ACT }}
-        run: sudo apt-get update && sudo apt-get install -y libnss3 libnspr4 libatk1.0-0 libatk-bridge2.0-0 libcups2 libdrm2 libxkbcommon0 libxcomposite1 libxdamage1 libxfixes3 libxrandr2 libgbm1 libasound2t64
+          node-version: "24"
 
       - uses: browser-actions/setup-chrome@v1
         id: setup-chrome
@@ -59,95 +33,21 @@ jobs:
       - name: Install PDF export dependencies
         run: npm install --prefix .github/scripts --no-fund --no-audit --package-lock=false
 
-      # Runs a set of commands using the runners shell
-      - name: Run a multi-line script
-        run: |
-          set -Eeuo pipefail
-
-          log() {
-            echo "[$(date -u '+%Y-%m-%dT%H:%M:%SZ')] $*"
-          }
-
-          run_pdf_export() {
-            local output="$1"
-            local url="$2"
-
-            log "START export output=${output} url=${url}"
-            rm -f "$output"
-
-            set +e
-            timeout --foreground 210s node .github/scripts/export-pdf.mjs \
-              --chrome-path "${{ steps.setup-chrome.outputs.chrome-path }}" \
-              --url "$url" \
-              --output "$output" \
-              --timeout-ms 180000
-            local status=$?
-            set -e
-
-            if [[ $status -ne 0 ]]; then
-              log "ERROR export failed output=${output} status=${status}"
-              log "DEBUG running chrome processes:"
-              ps -ef | grep -i '[c]hrom' || true
-              return "$status"
-            fi
-
-            if [[ ! -s "$output" ]]; then
-              log "ERROR export produced missing/empty file output=${output}"
-              ls -la
-              return 1
-            fi
-
-            log "DONE export output=${output}"
-            ls -lh "$output"
-          }
-
-          log "Preparing webroot"
-          mkdir webroot
-          mv chart-ui-build webroot/chart
-          log "Starting local HTTP server on :3000"
-          python3 -m http.server 3000 --directory webroot &
-          server_pid=$!
-          trap 'log "Stopping HTTP server pid=${server_pid}"; kill "${server_pid}" 2>/dev/null || true' EXIT
-          sleep 3
-          log "Chrome path: ${{ steps.setup-chrome.outputs.chrome-path }}"
-          ${{ steps.setup-chrome.outputs.chrome-path }} --version
-          log "Resolving available languages from chart.ttl"
-          langs=$(kurra sparql chart.ttl 'select distinct ?lang where { ?s <http://www.w3.org/2004/02/skos/core#prefLabel> ?o . bind(lang(?o) as ?lang) filter(?lang != "") } order by ?lang' --response-format json \
-            | python3 -c "import sys, ast, json; print(json.dumps(ast.literal_eval(sys.stdin.read())))" \
-            | jq -r '.results.bindings[].lang' \
-            | sort -u)
-          date=$(date '+%y.%m')
-          version=$date # $(git describe --tags --abbrev=0 )
-          log "langs: $langs"
-          log "date: $date"
-          log "version: $version"
-          log "Starting default language PDF export"
-          #get official version first
-          run_pdf_export "ICS_Chart_${{ steps.chart-version.outputs.version }}.pdf" "http://localhost:3000/chart/?scale=print"
-          log "Starting per-language PDF export loop"
-          for i in $langs
-          do
-            log "language: $i"
-            output="ICS_Chart_${{ steps.chart-version.outputs.version }}_$i.pdf"
-            log "creating $output"
-            #generate each language version
-            url="http://localhost:3000/chart/?scale=print&language=$i"
-            log "url: $url"
-            run_pdf_export "$output" "$url"
-            log "completed language: $i"
-          done
-          log "All PDF exports completed"
+      - name: Generate PDFs using the shared local and CI exporter
+        run: >-
+          node .github/scripts/build-pdfs.mjs
+          --build-dir chart-ui-build
+          --chrome-path "${{ steps.setup-chrome.outputs.chrome-path }}"
 
       - name: Upload a Build Artifact
         uses: actions/upload-artifact@v4
         with:
           name: chart-pdf
-          path: "*.pdf"
+          path: output/pdf/*.pdf
 
       - name: Release
         if: ${{ !env.ACT }}
         uses: softprops/action-gh-release@v2
         with:
           tag_name: ${{ inputs.tag_name }}
-          files: |
-            *.pdf
+          files: output/pdf/*.pdf

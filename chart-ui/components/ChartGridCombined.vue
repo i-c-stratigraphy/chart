@@ -52,10 +52,15 @@ const blurbSections = computed(() => {
                     ...section,
                     iri: `${section.iri}#${index}`,
                     value: paragraph,
+                    printInColumnFooter: false,
                 }))
         }
 
-        return [{ ...section, value }]
+        return [{
+            ...section,
+            value,
+            printInColumnFooter: section.iri === `${NS.icsVisual}ccgm` || section.iri.startsWith(`${NS.icsVisual}translator`),
+        }]
     })
 })
 
@@ -90,10 +95,16 @@ const blurbSections = computed(() => {
             </div>
             <div class="chart-notes" v-if="props.meta" :lang="props.lang">
                 <template v-for="section in blurbSections" :key="section.iri">
-                    <p v-if="section.kind === 'text'">
-                        {{ section.value }}
+                    <p
+                        v-if="section.kind === 'text'"
+                        :class="{
+                            'print-column-credit': section.printInColumnFooter,
+                            'publication-note': !section.printInColumnFooter && !section.iri.startsWith(`${NS.icsVisual}mainBlurb`),
+                        }"
+                    >
+                        <LinkedText :text="section.value" />
                     </p>
-                    <p v-else-if="section.kind === 'link'">
+                    <p v-else-if="section.kind === 'link'" :class="{ 'print-column-credit': section.printInColumnFooter }">
                         <a :href="section.value" target="_blank" rel="noreferrer">
                             {{ section.value }}
                         </a>
@@ -103,6 +114,7 @@ const blurbSections = computed(() => {
                         :src="section.value"
                         alt=""
                         class="translator-logo"
+                        :class="{ 'print-column-credit': section.printInColumnFooter }"
                     />
                 </template>
             </div>
@@ -186,8 +198,8 @@ div.header:not(.v-text) {
 .chart-notes p:last-child {
     margin-bottom: 0;
 }
-.chart-notes a {
-    color: inherit;
+.chart-notes :deep(a) {
+    color: #0000ee;
 }
 .translator-logo {
     display: block;
@@ -202,13 +214,21 @@ div.header:not(.v-text) {
 }
 
 @media print {
-    .chart-notes {
-        font-size: 0.76em;
-        line-height: 0.95em;
+    .print-column-credit {
+        display: none;
+    }
+
+    .chart-notes,
+    .chart-notes:lang(zh),
+    .chart-notes:lang(ja) {
+        font-size: 0.8rem;
+        line-height: 1.1;
+        margin-block: 0;
     }
 
     .chart-notes p {
-        margin-bottom: 0.4em;
+        font-size: inherit;
+        margin-bottom: 0.3em;
     }
 }
 
