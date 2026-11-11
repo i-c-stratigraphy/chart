@@ -47,7 +47,7 @@ jobs:
 
       - name: Release
         if: ${{ !env.ACT }}
-        uses: softprops/action-gh-release@v2
-        with:
-          tag_name: ${{ inputs.tag_name }}
-          files: output/pdf/*.pdf
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RELEASE_TAG: ${{ inputs.tag_name }}
+        run: gh release upload "$RELEASE_TAG" output/pdf/*.pdf --repo "$GITHUB_REPOSITORY" --clobber
