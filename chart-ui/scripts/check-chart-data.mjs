@@ -20,4 +20,21 @@ for (const name of ["Phanerozoic", "Precambrian", "Quaternary", "Jurassic"]) {
 }
 assert(store.countQuads(namedNode(scheme), namedNode("http://www.w3.org/2002/07/owl#versionInfo"), null, null) > 0,
   "Chart metadata does not match the UI namespace");
-console.log("PASS: chart roots, child units, numeric ages and version metadata match the application.");
+const prefLabel = namedNode(skos + "prefLabel");
+const title = namedNode("https://data.stratigraphy.org/data/vis/ChartTitle");
+const creator = store.getObjects(namedNode(scheme), namedNode("http://purl.org/dc/terms/creator"), null)[0];
+assert(creator, "Chart creator is missing");
+const names = store.getObjects(creator, namedNode("https://schema.org/alternateName"), null);
+for (const label of store.getObjects(title, prefLabel, null)) {
+  assert(store.countQuads(namedNode(scheme), prefLabel, label, null) > 0,
+    "Chart scheme title is missing for " + label.language);
+  assert(names.some(name => name.language === label.language && name.value),
+    "Translated creator name is missing for " + label.language);
+}
+for (const lang of ["en", "pt-pt"]) {
+  assert(store.getObjects(title, prefLabel, null).some(label => label.language === lang && label.value),
+    "Chart title is missing for " + lang);
+}
+assert.equal(store.countQuads(namedNode("http://purl.org/dc/terms/created"), prefLabel, null, null), 0,
+  "Organisation labels still use the old dcterms:created resource");
+console.log("PASS: chart structure, version, translated titles and creator names match the application.");

@@ -16,6 +16,7 @@ const NS = {
   dcterms: "http://purl.org/dc/terms/",
   owl: "http://www.w3.org/2002/07/owl#",
   skos: "http://www.w3.org/2004/02/skos/core#",
+  schema: "https://schema.org/",
   cs: "https://data.stratigraphy.org/def/chart",
   icsVisual: "https://data.stratigraphy.org/data/vis/",
   strat: "https://data.stratigraphy.org/data/strat/",
@@ -114,9 +115,9 @@ function extractMeta(pointer) {
       value: cs.out(namedNode(NS.skos + "prefLabel")).term?.value || "",
     },
     creator: {
-      url:
+      iri:
         cs.out(namedNode(NS.dcterms + "creator")).term?.value ||
-        "www.stratigraphy.org",
+        "https://linked.data.gov.au/org/ics",
     },
   };
 }
@@ -217,7 +218,7 @@ const handleView = (node) => {
 
 const chartTitle = computed(() => {
   if (!meta.value) return "loading";
-  return getLabel(NS.cs);
+  return getLabel(`${NS.icsVisual}ChartTitle`);
 });
 
 const languageFieldLabel = computed(() => {
@@ -251,9 +252,16 @@ const localizedScalingOptions = computed(() => {
 });
 
 const commissionTitle = computed(() => {
-  if (!meta.value) return "loading";
-  // Simplified for now, could resolve from a specific IRI if needed
-  return "International Commission on Stratigraphy";
+  if (!meta.value || !cf.value) return "loading";
+  const names = cf.value
+    .node(namedNode(meta.value.creator.iri))
+    .out(namedNode(`${NS.schema}alternateName`))
+    .terms;
+  return (
+    names.find((name) => name.language === selectedLang.value)?.value ||
+    names.find((name) => name.language === "en")?.value ||
+    "International Commission on Stratigraphy"
+  );
 });
 
 watch(target, (newTarget) => {
@@ -314,7 +322,7 @@ const downloadPdf = () => {
         <img src="/logo-ics-3D-dark.png" />
       </div>
       <div class="cell" style="--_col-span: 1; --_row-span: 1">
-        <h2>{{ meta.creator?.url }}</h2>
+        <h2><a href="https://stratigraphy.org">www.stratigraphy.org</a></h2>
       </div>
       <div class="cell" style="--_col-span: 1; --_row-span: 1">
         <h2>{{ commissionTitle }}</h2>

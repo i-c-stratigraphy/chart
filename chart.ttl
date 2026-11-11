@@ -74,7 +74,7 @@ dcterms:contributor
         "本图件由K.M. Cohen、D.A.T. Harper、 P.L. Gibbard和N. Car绘制"@zh ;
 .
 
-dcterms:created
+dcterms:creator
     skos:prefLabel
         "Beynəlxalq Stratiqrafiya Komissiyası"@az ,
         "Comissió Internacional de Estratigrafia"@ca ,
@@ -14805,6 +14805,33 @@ cs:
         gtsd:Phanerozoic ,
         gtsd:Precambrian ;
     skos:historyNote "This vocabulary uses IRIs originally created for the Geologic Timescale (2020) data (see http://resource.geosciml.org/vocabulary/timescale/)" ;
+    skos:prefLabel
+        "Beynəlxalq Xronostratiqrafik Şkala"@az ,
+        "Taula Cronoestratigràfica Internacional"@ca ,
+        "Mezinárodní Chronostratigrafická Tabulka"@cs ,
+        "Internationale Chronostratigraphische Tabelle"@de ,
+        "International Chronostratigraphic Chart"@en ,
+        "Tabla Cronoestratigráfica Internacional"@es ,
+        "Tabla Cronoestratigráfica Internacional"@es-a ,
+        "Nazioarteko Taula Kronoestratigrafikoa"@eu ,
+        "Kansainvälinen Kronostratigrafinen Taulu"@fi ,
+        "Charte Chronostratigraphique Internationale"@fr ,
+        "Nemzetközi Időrétegtani Táblázat"@hu ,
+        "Bagan Kronostratigrafi Internasional"@id ,
+        "Scala Cronostratigrafica Internazionale"@it ,
+        "国際年代層序表"@ja ,
+        "국제지질연대층서표"@ko ,
+        "Tarptautinė Chronostratigrafijos Skalė"@lt ,
+        "Internationale Chronostratigrafische Tabel"@nl ,
+        "Internationale Chronostratigrafische Tabel"@nl-be ,
+        "Internasjonal Kronostratigrafisk Tabell"@no ,
+        "Międzynarodowa Tablica Chronostratygraficzna"@pl ,
+        "Tabela Cronoestratigráfica Internacional"@pt-br ,
+        "Tabela Cronoestratigráfica Internacional"@pt-pt ,
+        "Международная Хроностратиграфическая Шкала"@ru ,
+        "Medzinárodná Chronostratigrafická Tabuľka"@sk ,
+        "Uluslararasi Kronostratigrafik Çizelge"@tr ,
+        "国 际 年 代 地 层 表"@zh ;
     skos:versionInfo """2026-06: Strati2026 version of the Chart with updates indicated in element changeNotes
 
 2024-12: Updated Chart to include:

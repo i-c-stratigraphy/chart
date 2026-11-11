@@ -1,7 +1,8 @@
 from pathlib import Path
+
 import pandas as pd
-from rdflib import Graph, URIRef, Literal, BNode, Namespace, DCTERMS
-from rdflib.namespace import RDF, SDO, SKOS
+from rdflib import DCTERMS, Graph, Literal, Namespace, URIRef
+from rdflib.namespace import SDO, SKOS
 
 CS = URIRef("https://data.stratigraphy.org/def/chart")
 GSSP = Namespace("https://data.stratigraphy.org/data/gssps/")
@@ -11,14 +12,14 @@ STRAT = Namespace("https://data.stratigraphy.org/data/strat/")
 VIS = Namespace("https://data.stratigraphy.org/data/vis/")
 
 prefixes = {
-    "cs":       str(CS),
-    "dcterms":  "http://purl.org/dc/terms/",
-    "gssp":     str(GSSP),
-    "gts":      str(GTS),
-    "gtsd":     str(GTSD),
-    "strat":    str(STRAT),
-    "schema":   "https://schema.org/",
-    "vis":      str(VIS),
+    "cs": str(CS),
+    "dcterms": "http://purl.org/dc/terms/",
+    "gssp": str(GSSP),
+    "gts": str(GTS),
+    "gtsd": str(GTSD),
+    "strat": str(STRAT),
+    "schema": "https://schema.org/",
+    "vis": str(VIS),
 }
 
 
@@ -41,9 +42,14 @@ def make_labels(g):
             for i, row in df.iterrows():
                 if not pd.isna(row.IRI):
                     # ICS' org names
-                    if row.IRI == "dcterms:created":
-                        g.add((URIRef("https://linked.data.gov.au/org/ics"), SDO.alternateName,
-                               Literal(row.Language, lang=sheet_name)))
+                    if row.IRI == "dcterms:creator":
+                        g.add(
+                            (
+                                URIRef("https://linked.data.gov.au/org/ics"),
+                                SDO.alternateName,
+                                Literal(row.Language, lang=sheet_name),
+                            )
+                        )
 
                     parts = row.IRI.split(":")
                     iri = URIRef(prefixes[parts[0]] + parts[1])
@@ -51,8 +57,13 @@ def make_labels(g):
                     if not pd.isna(row.Language):
                         pl = Literal(row.Language, lang=sheet_name)
                         g.add((iri, SKOS.prefLabel, pl))
+                        if iri == VIS.ChartTitle:
+                            g.add((CS, SKOS.prefLabel, pl))
 
-    g.serialize(destination=Path(__file__).parent / "interim/chart-labels.ttl", format="longturtle")
+    g.serialize(
+        destination=Path(__file__).parent / "interim/chart-labels.ttl",
+        format="longturtle",
+    )
 
 
 def make_definitions(g):
@@ -92,7 +103,10 @@ def make_definitions(g):
     g.update(q)
     print(f"Ended with {len(g)} triples.")
 
-    g.serialize(destination=Path(__file__).parent / "interim/chart-definitions.ttl", format="longturtle")
+    g.serialize(
+        destination=Path(__file__).parent / "interim/chart-definitions.ttl",
+        format="longturtle",
+    )
 
 
 def remove_definition_template(g):
@@ -158,25 +172,31 @@ def make_vocpub_version(g):
         if "Upper" in str(x):
             bare = URIRef(str(x).replace("Upper", ""))
             for o in g.objects(bare, SKOS.prefLabel):
-                new_pl = Literal(get_by_lang(uppers, o.language) + " " + str(o), lang=o.language)
+                new_pl = Literal(
+                    get_by_lang(uppers, o.language) + " " + str(o), lang=o.language
+                )
                 g.add((x, SKOS.prefLabel, new_pl))
 
         if "Middle" in str(x):
             bare = URIRef(str(x).replace("Middle", ""))
             for o in g.objects(bare, SKOS.prefLabel):
-                new_pl = Literal(get_by_lang(middles, o.language) + " " + str(o), lang=o.language)
+                new_pl = Literal(
+                    get_by_lang(middles, o.language) + " " + str(o), lang=o.language
+                )
                 g.add((x, SKOS.prefLabel, new_pl))
 
         if "Lower" in str(x):
             bare = URIRef(str(x).replace("Lower", ""))
             for o in g.objects(bare, SKOS.prefLabel):
-                new_pl = Literal(get_by_lang(lowers, o.language) + " " + str(o), lang=o.language)
+                new_pl = Literal(
+                    get_by_lang(lowers, o.language) + " " + str(o), lang=o.language
+                )
                 g.add((x, SKOS.prefLabel, new_pl))
 
     subjects_to_strip = [
         DCTERMS.bibliographicCitation,
         DCTERMS.contributor,
-        DCTERMS.created,
+        DCTERMS.creator,
         GTS.Age,
         GTS.Eon,
         GTS.Epoch,
@@ -226,10 +246,13 @@ def make_vocpub_version(g):
             g.remove((s, SKOS.prefLabel, o))
             g.add((s, SKOS.altLabel, o))
 
-    g.serialize(destination=Path(__file__).parent.parent / "chart.vocpub.ttl", format="longturtle")
+    g.serialize(
+        destination=Path(__file__).parent.parent / "chart.vocpub.ttl",
+        format="longturtle",
+    )
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     Path("interim").mkdir(parents=True, exist_ok=True)
 
     g = Graph()
@@ -244,7 +267,9 @@ if __name__ == '__main__':
 
     print()
     print("Making complete chart")
-    g.serialize(destination=Path(__file__).parent.parent / "chart.ttl", format="longturtle")
+    g.serialize(
+        destination=Path(__file__).parent.parent / "chart.ttl", format="longturtle"
+    )
 
     print()
     make_vocpub_version(g)
